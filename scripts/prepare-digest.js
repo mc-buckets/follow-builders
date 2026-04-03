@@ -53,6 +53,60 @@ async function fetchText(url) {
   return res.text();
 }
 
+// -- t.co URL resolver -------------------------------------------------------
+
+async function resolveTcoUrl(shortUrl) {
+  try {
+    const res = await fetch(shortUrl, { redirect: 'manual' });
+    const location = res.headers.get('location');
+    if (location && !location.includes('t.co/')) return location;
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+async function resolveTcoUrlsInTweets(builders) {
+  const tcoRegex = /https?:\/\/t\.co\/\w+/g;
+  const urlMap = new Map();
+
+  // Collect all unique t.co URLs
+  for (const builder of builders) {
+    for (const tweet of builder.tweets) {
+      const matches = tweet.text.match(tcoRegex) || [];
+      for (const url of matches) {
+        if (!urlMap.has(url)) urlMap.set(url, null);
+      }
+    }
+  }
+
+  // Resolve all t.co URLs in parallel (batched to avoid overwhelming)
+  const entries = [...urlMap.keys()];
+  const BATCH_SIZE = 20;
+  for (let i = 0; i < entries.length; i += BATCH_SIZE) {
+    const batch = entries.slice(i, i + BATCH_SIZE);
+    const results = await Promise.all(batch.map(resolveTcoUrl));
+    batch.forEach((url, idx) => { if (results[idx]) urlMap.set(url, results[idx]); });
+  }
+
+  // Add resolvedUrls field to each tweet
+  for (const builder of builders) {
+    for (const tweet of builder.tweets) {
+      const matches = tweet.text.match(tcoRegex) || [];
+      const resolved = {};
+      for (const url of matches) {
+        const real = urlMap.get(url);
+        if (real) resolved[url] = real;
+      }
+      if (Object.keys(resolved).length > 0) {
+        tweet.resolvedUrls = resolved;
+      }
+    }
+  }
+
+  return builders;
+}
+
 // -- Main --------------------------------------------------------------------
 
 async function main() {
@@ -82,6 +136,15 @@ async function main() {
   if (!feedX) errors.push('Could not fetch tweet feed');
   if (!feedPodcasts) errors.push('Could not fetch podcast feed');
   if (!feedBlogs) errors.push('Could not fetch blog feed');
+
+  // 2b. Resolve t.co URLs in tweets to their real destinations
+  if (feedX?.x) {
+    try {
+      await resolveTcoUrlsInTweets(feedX.x);
+    } catch (err) {
+      errors.push(`Could not resolve t.co URLs: ${err.message}`);
+    }
+  }
 
   // 3. Load prompts with priority: user custom > remote (GitHub) > local default
   //
