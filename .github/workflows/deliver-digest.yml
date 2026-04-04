@@ -1,0 +1,45 @@
+name: Deliver Digest to Slack
+
+on:
+  push:
+    paths:
+      - 'digests/latest.md'
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Post digest to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          DIGEST=$(cat digests/latest.md)
+
+          # Slack webhook payload — text field with mrkdwn
+          # Split into chunks if over 3000 chars (Slack limit ~4000)
+          if [ ${#DIGEST} -gt 3000 ]; then
+            # Split at the nearest newline before the midpoint
+            MIDPOINT=$(( ${#DIGEST} / 2 ))
+            PART1="${DIGEST:0:$MIDPOINT}"
+            # Find last newline in PART1
+            SPLIT_AT=$(echo "$PART1" | grep -bn '' | tail -1 | cut -d: -f1)
+            PART1=$(echo "$DIGEST" | head -n "$SPLIT_AT")
+            PART2=$(echo "$DIGEST" | tail -n +"$((SPLIT_AT + 1))")
+
+            curl -sf -X POST -H 'Content-Type: application/json' \
+              -d "$(jq -n --arg text "$PART1" '{text: $text}')" \
+              "$SLACK_WEBHOOK_URL"
+
+            sleep 1
+
+            curl -sf -X POST -H 'Content-Type: application/json' \
+              -d "$(jq -n --arg text "$PART2" '{text: $text}')" \
+              "$SLACK_WEBHOOK_URL"
+          else
+            curl -sf -X POST -H 'Content-Type: application/json' \
+              -d "$(jq -n --arg text "$DIGEST" '{text: $text}')" \
+              "$SLACK_WEBHOOK_URL"
+          fi
