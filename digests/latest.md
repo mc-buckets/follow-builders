@@ -1,79 +1,108 @@
-*AI Builders Digest — April 8, 2026*
+AI Builders Digest — April 8, 2026
 
-26 tweets across 12 builders · 1 podcast episode · No blog posts today
+*X / TWITTER*
 
+*Alex Albert — Research at Anthropic*
+The biggest news of the day: Anthropic unveiled *Claude Mythos Preview*, their most consequential new model. Alex announced that Mythos is now available to launch partners in Project Glasswing and described the moment as "possibly the most consequential event in the AI industry I've seen up close since joining Anthropic almost 3 years ago." He called it a "turning point in history." The announcement sent ripples across every corner of AI Twitter.
+- https://x.com/alexalbert__/status/2041579938537775160
+- https://x.com/alexalbert__/status/2041579950332113155
+- https://x.com/alexalbert__/status/2041578743769280811
 
-*X / Twitter*
+*Sam Altman — CEO at OpenAI*
+Celebrated hitting 3 million weekly Codex users by resetting usage limits — and promised to repeat the gesture every million users up to 10 million. A simple, clever milestone celebration that doubled as a product signal: Codex is growing fast.
+- https://x.com/sama/status/2041658719839383945
 
-*Andrej Karpathy* — AI researcher (formerly Director of AI at Tesla, founding team at OpenAI)
+*Aaron Levie — CEO at Box*
+Levie wrote the longest and most substantive take on Mythos, arguing that "there's absolutely no wall in model capability progress right now." He also shared a detailed demo of the Box Agent autonomously filling out an RFP response from an existing knowledge base — a task that used to take hours. His broader point: agents can now do long-horizon work that was impossible six months ago, thanks to models like GPT-5.4, Opus 4.6, and Gemini 3, and the window to build for this shift is now.
+- https://x.com/levie/status/2041732610179703100
+- https://x.com/levie/status/2041512156693201176
 
-Two substantial posts today. First, a quick vision sketch: every frontier LLM query could soon spawn a swarm of sub-agents that iteratively builds an ephemeral wiki, lints it, and outputs a full report — "way beyond a `.decode()`." <https://x.com/karpathy/status/2039808711452246261|link>
+*Kevin Weil — VP Science at OpenAI*
+Shared the launch of Paper Review inside Prism — an AI technical reviewer built on Codex that checks math, derivations, notation, units, structure, and consistency across sections, figures, and appendices. The review outputs as an editable LaTeX file directly in the paper's workspace. It was built by teammate Hemal in a few hours as a Prism skill.
+- https://x.com/kevinweil/status/2041573802212303053
+- https://x.com/kevinweil/status/2041592093718749659
 
-The bigger post was a detailed walkthrough of his personal LLM-powered knowledge base workflow. The setup: ingest raw source docs into a directory, have an LLM compile and maintain a wiki of `.md` files with summaries and backlinks, then run Q&A agents against it. He uses Obsidian as the IDE frontend, vibe-coded a naive search engine as a CLI tool for the LLM, and runs "health checks" to catch inconsistencies and surface new article ideas. Outputs — slides, charts, reports — get filed back into the wiki so every query compounds. At roughly 100 articles and 400K words, complex Q&A works without fancy RAG. His parting thought: "I think there is room here for an incredible new product instead of a hacky collection of scripts." <https://x.com/karpathy/status/2039805659525644595|Full thread>
+*Thariq — Claude Code at Anthropic*
+After reviewing ~10 user session transcripts, Thariq surfaced a key efficiency insight: it's very easy to burn tokens on open-ended verification that doesn't actually improve output quality. He promised to write more on how to verify efficiently. He's also hosting a technical writing workshop in SF in two weeks, co-hosted with Swyx.
+- https://x.com/trq212/status/2041722125510377705
+- https://x.com/trq212/status/2041677067117588871
 
-*Aaron Levie* — CEO at Box
+*Cat Wu — Claude Code at Anthropic*
+Shared a thread on the Claude Code team's favorite CLI features, available via the `/powerup` command in the CLI. Short and useful for anyone using Claude Code regularly.
+- https://x.com/_catwu/status/2041655441864978552
 
-A hard-earned lesson from shipping Box Agent: be brutally unsentimental about your architecture. The loop is: build scaffolding around the LLM to handle hard tasks → model improves and makes the scaffolding a constraint → strip it out to recapture gains → repeat. Components built for chunking, retrieval, and context handling had to be jettisoned multiple times between design and launch as frontier models improved at reasoning, search, and long-context work. "Always make sure you're taking advantage of the frontier capabilities and don't become nostalgic around the tech you've already built." <https://x.com/levie/status/2039931799414194621|Full thread>
+*Zara Zhang — Builder*
+Launched the *Personalized Podcast skill*: turn anything into a podcast with two AI hosts, publish it as an RSS feed, and listen on any podcast app. She's been using it to remix meeting transcripts into podcasts where the AIs "eavesdrop" on her conversations. She calls it the age of "content for one."
+- https://x.com/zarazhangrui/status/2041736869998948528
+- https://x.com/zarazhangrui/status/2041736976630739000
 
-*Ryo Lu* — Designer at Cursor
+*Peter Steinberger — Co-founder at OpenClaw*
+Released CodexBar 0.20 — the macOS menu bar app that tracks AI coding provider usage and costs. New in this version: Perplexity and OpenCode Go providers, the ability to switch Codex accounts without re-login, and a fix for Claude token/cost inflation from duplicates. Now tracking 16 providers. Was trending on Hacker News.
+- https://x.com/steipete/status/2041731875241066517
+- https://x.com/steipete/status/2041719008953606148
 
-Wrote the philosophical launch post for Cursor 3. The central frame: AI tools became black boxes ("type a wish and pull the lever — you see less and think less as the model got better"), while Cursor is "glass" — visible agents, editable plans, clear state, readable diffs. Different users engage at different depths: the PM watches the plan become real, the expert lets it flow and steers when something feels off, the new programmer reads every diff and builds intuition. "As AI gets more powerful, glass gets more important. Not because you need to watch every move. But because the best work happens when you know you can." <https://x.com/ryolu_/status/2039895634313187619|Glass vs. black box>
+*Swyx — AI Engineer and podcaster (latentspacepod, aiDotengineer)*
+Shared Simon Willison's argument about why "prompt injection" is self-evident naming while "lethal trifecta" isn't — a riff on the naming debate around AI security terminology. Also teased something interesting from Amazon that he was going to try.
+- https://x.com/swyx/status/2041739250421436591
+- https://x.com/swyx/status/2041675995665612954
 
-Cursor 3 is now live — simpler default interface that unfolds more tools on demand, works across local and cloud projects. <https://x.com/ryolu_/status/2039780768847958359|Cursor 3 launch>
+*Garry Tan — President and CEO at Y Combinator*
+Two sharp takes: first, that Claude Code's bash access creates a sandbox escape (agents can't write files outside the workspace but can use `cat >>` to any path in the filesystem). Second, a one-liner that's been circulating: "We live in LISPy times for a specific reason: code is data and data is code again. But the weird thing? It's Markdown."
+- https://x.com/garrytan/status/2041654662764609735
+- https://x.com/garrytan/status/2041653129020936328
 
-*Peter Steinberger* — Co-founder at OpenClaw
+*Nan Yu — Head of Product at Linear*
+Made an observation that resonated widely: designers and engineers can reason well about product in the abstract, but the moment they open Figma or an IDE, they jump straight to execution. His conclusion: more designers should become PMs — they'd be good at it.
+- https://x.com/thenanyu/status/2041495924682244275
 
-Flagged a real signal buried in OSS maintainer pain: AI-generated security bug reports to the Linux kernel list have exploded from 2–3/week two years ago to 5–10/day in early 2026 — and most are reportedly valid, forcing the kernel team to bring in extra maintainers. "Prediction: This is gonna kill some oss projects." <https://x.com/steipete/status/2039782190838686088|link>
+*Ryo Lu — Design at Cursor*
+Shared a demo of Cursor's new interaction model: no extra buttons, just click, draw, and chat — fully in flow. Short and visual.
+- https://x.com/ryolu_/status/2041564082034372956
 
-*Amjad Masad* — CEO at Replit
+*Nikunj Kothari — Partner at FPV Ventures*
+Shared a profile on the Varanasi brothers as "Silicon Valley's greatest secret." Also pushed back on founders optimizing for viral launches over actual customer retention: "the VCs follow" the founders who focus on customers.
+- https://x.com/nikunj/status/2041513787245949110
+- https://x.com/nikunj/status/2041757065354293760
 
-Highlighted a Replit agent that runs SEO audits on your site <https://x.com/amasad/status/2039838798671126728|link>. Announced a new sales office opening in Salt Lake City, Utah, with open roles <https://x.com/amasad/status/2039777772701413396|link>. Also shared a no-setup enterprise-grade auth solution now available on Replit <https://x.com/amasad/status/2039774118443421887|link>.
+*Peter Yang — Product at Roblox*
+Reacted to the Anthropic Mythos announcement with curiosity about whether Anthropic has been using Mythos internally to ship at their recent velocity. No notable original content beyond that.
+- https://x.com/petergyang/status/2041678988318543908
 
-*Sam Altman* — CEO at OpenAI
+*Aditya Agarwal — General Partner at SouthPark Commons*
+Called the Mythos model "absurd" and added a broader framing: the 2009 conversation was about making the web read/write and malleable — "we are living through that today but for all software." What if all software could be forked, remixed, and customized?
+- https://x.com/adityaag/status/2041771160359375001
+- https://x.com/adityaag/status/2041658196813869414
 
-Commented on OpenAI's involvement with TBPN (a tech show). Called it his favorite tech show, said he doesn't expect them to go easier on OpenAI: "am sure I'll do my part to help enable that with occasional stupid decisions." <https://x.com/sama/status/2039773740586918137|link>
+*Guillermo Rauch — CEO at Vercel*
+Spoke at Y Combinator and expressed strong conviction: "More bullish than ever. Exceptional founders. Best city, best time, best opportunity to build in generations."
+- https://x.com/rauchg/status/2041720266154504351
 
-*Dan Shipper* — CEO at Every
+*Dan Shipper — CEO at Every*
+Posted a short prompt to "be a model manager" and shared some behind-the-scenes build progress updates. Light on substance today.
+- https://x.com/danshipper/status/2041624900046106907
 
-Shared Every's week-long vibe check of Cursor 3.0, published the same day as the launch. <https://x.com/danshipper/status/2039770244361662920|Every's Cursor 3.0 vibe check>
+*PODCASTS*
 
-*Peter Yang* — Product at Roblox · AI newsletter (140K+ readers)
+*Latent Space — Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier & Symphony*
 
-Tried Cursor 3 and found the new interface much cleaner — "The old one had far too many buttons and toggles that got in the way of just talking to the agent." Wonders why the new view isn't the default. <https://x.com/petergyang/status/2039850011044016291|link>
+_The Takeaway:_ If you want agents to truly replace human engineers, you have to design your entire codebase and toolchain around agent behavior — not human convenience.
 
-*Swyx* — AI engineer · co-host at Latent Space
+Ryan Lopopolo is a senior engineer on OpenAI's Frontier team, the enterprise platform for deploying agents at scale. Over five months, his small team built a 1M+ line-of-code internal product using zero human-written code. The codebase processes roughly 1 billion tokens per day. No code was written by humans. No code was reviewed by humans. This wasn't a demo or a proof-of-concept — it's in production.
 
-Reacted to the TBPN acquisition news with "you guys are selling podcasts?!" and mused about a potential Dario Amodei × Dwarkesh Patel episode: "time for dario x dwarkesh?" <https://x.com/swyx/status/2039773480980480431|link>
+The path to get there was painful. The first month and a half was ten times _slower_ than writing code by hand. But by paying that upfront cost to build "the assembly station for the agent," the team eventually outpaced what any individual engineer could do alone.
 
-*Garry Tan* — President & CEO at Y Combinator
+A few counterintuitive lessons that came out of this:
 
-Called Perplexity Computer "quite special actually" <https://x.com/garrytan/status/2039943351278190840|link> and shared a brief riff on loving your work. <https://x.com/garrytan/status/2039948180977316164|link>
+First, repo architecture matters more than ever — but not for the reasons you'd expect. The repo is structured like a 10,000-person engineering org, with 500 npm packages and rigid interface boundaries. Why? Because each engineer is effectively running 10-50 parallel agents. You need the surface area to avoid trampling.
 
-*Nan Yu* — Head of Product at Linear
+Second, the inner loop has to be fast. When OpenAI shipped Codex with background shells (the ability to spawn commands asynchronously), the model became less patient with blocking builds. The team redesigned the entire build system to complete in under a minute — cycling through Make, Bazel, Turbo, and NX in weeks — because the goal was agent productivity, not human preferences.
 
-Riffing on LLMs as flexible product collaborators — "Or a PM you collaborate with" and "Or it can be a product marketer when you need" — pointing toward a broader mental model shift for how builders think about AI teammates. <https://x.com/thenanyu/status/2039823494398001448|link> Also pitched "TBPN for sports." <https://x.com/thenanyu/status/2039832290490994970|link>
+Third, agent behavior is shaped by your skill library. The team maintains just six skills. Every new capability gets encoded into an existing skill rather than creating a new one. This lets them change agent behavior without retraining humans.
 
-*Claude AI* — Anthropic
+Finally, Lopopolo's team runs agent loops daily across all Codex session logs from the entire team, feeding insights back into the repository so everyone benefits from everyone else's behavior automatically.
 
-Computer use in Claude Code and Claude Code Desktop is now available on Windows. <https://x.com/claudeai/status/2039836891508261106|link>
+"You can just codex things," Lopopolo said. "You can just prompt things. It's a glorious future to live in."
 
+https://www.youtube.com/@LatentSpacePod
 
-*Podcast*
-
-*Training Data — "How Autonomous Labs Will Transform Scientific Research: Ginkgo Bioworks' Jason Kelly"*
-<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch on YouTube>
-
-*The Takeaway:* AI is the first tech revolution that actually matters for biology — because it can finally run the experiments.
-
-Jason Kelly co-founded Ginkgo Bioworks in 2008 with the goal of making biology programmable. He bootstrapped for six years straight out of grad school before landing YC backing in 2014 ("biotech VCs really don't like young people"). Today he's making a sweeping case that biopharma — untouched by 30 years of tech — is finally about to get disrupted.
-
-His core argument is economic before it's scientific. Less than 5% of the $60–80 billion biopharma spends annually goes to actual reagents. The rest is overhead: people, lab space, and equipment that sits idle most of the week because every team duplicates everything and labs are structured around human schedules. Autonomous labs flip this — they run 24/7, utilization skyrockets, and the cost per experiment plummets.
-
-The more interesting advantage is informational. Kelly imagines 100 AI agents working in the same research area and sharing every experimental result — including failures — every single day. In human science, a failed experiment gets buried in a lab notebook. In an AI lab, that result is instantly shared across all 100 agents, and your neighbor's failed hypothesis might be the proof of concept for yours. "Your failed result might be relevant to my hypothesis, and I would never see that normally."
-
-He's also skeptical of humanoid robots in biology: "These things are no. Biology's a microscopic discipline." Purpose-built track systems with micron precision outperform anything bipedal — humans are the bottleneck, not a feature.
-
-The long-run vision: if experiment costs drop far enough, everyday people could order scientific experiments the way they Google a question. "If you rewind to the 1960s and told people that kids would program computers, they would say you're fucking insane." Kelly thinks the same inflection is coming for science.
-
-
-_Generated by the Follow Builders skill: https://github.com/mc-buckets/follow-builders_
+Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders
