@@ -1,103 +1,89 @@
-*AI Builders Digest — April 13, 2026*
-
+AI Builders Digest — April 14, 2026
 
 *X / TWITTER*
 
-*Andrej Karpathy* (former Director of AI at Tesla, founding team at OpenAI)
+*Andrej Karpathy* (researcher, formerly Director of AI at Tesla and founding team at OpenAI)
 
-Karpathy shared a detailed breakdown of how he's using LLMs to build personal knowledge bases — raw documents get ingested into a directory, an LLM "compiles" them into an interconnected Markdown wiki, and then further LLM agents run Q&A and health checks over the whole thing. He uses Obsidian as the frontend and vibe-coded a small search engine to hand off to the LLM as a tool. His conclusion: "I think there is room here for an incredible new product instead of a hacky collection of scripts." He followed up noting that the natural next step is spawning entire ephemeral teams of LLMs to build a full wiki, lint it, and produce a report — going way beyond a simple text decode.
+In a major thread, Karpathy laid out his system for using LLMs to build personal knowledge bases: raw sources (articles, papers, repos, images) are collected into a `raw/` directory, then an LLM "compiles" them into a structured wiki of markdown files — summaries, backlinks, concept articles, all maintained automatically. He uses Obsidian as the frontend to browse and view the data, a CLI search engine he vibe-coded as a tool for LLM queries, and runs "health check" passes to find inconsistencies and suggest new connections. Key insight: at ~100 articles and ~400K words, he finds no need for fancy RAG — the LLM handles it. He sees a major product opportunity here that's currently just a collection of hacky scripts. In a follow-up, he extrapolated further: future LLMs spawning entire ephemeral wiki-building teams to answer a single complex query — "way beyond a `.decode()`."
 
 - https://x.com/karpathy/status/2039805659525644595
 - https://x.com/karpathy/status/2039808711452246261
 
-*Aaron Levie* (CEO, Box)
+*Aaron Levie* (CEO at Box)
 
-Levie posted a sharp lesson from building Box Agent: be brutally unsentimental about your architecture. As models improve, the scaffolding you built to compensate for earlier limitations becomes a drag on performance — and you have to ruthlessly tear it out. The loop: build scaffolding → models improve and make it redundant → remove scaffolding → new harder problems emerge → repeat. "Always make sure you're taking advantage of the frontier capabilities and don't become nostalgic around the tech you've already built."
+Shared one of the most useful practitioner lessons on building AI agents: be "brutally unsentimental" about your architecture. The loop he describes — build scaffolding → model improves → scaffolding becomes redundant or harmful → strip it out → new capabilities emerge → repeat — is now the default rhythm of agent development. From the Box Agent experience: mitigations they built for finding data and chunking text ended up _lowering_ quality once the models got better. "The main lesson is always make sure you're taking advantage of the frontier capabilities and don't become nostalgic around the tech you've already built."
 
 - https://x.com/levie/status/2039931799414194621
 
-*Ryo Lu* (Design, Cursor)
+*Ryo Lu* (Designer at Cursor)
 
-Lu wrote a manifesto on Cursor's design philosophy around what he calls "glass" — making AI tools transparent and inspectable rather than a black box. His argument: as AI gets more capable, giving users full visibility into agents, diffs, and state becomes _more_ important, not less. "Give away the wheel and you get mediocre. Keep it and you get to build something great." He also announced Cursor 3, which launches with a simpler interface that unfolds more tools as needed, works across local and cloud projects.
+Announced Cursor 3 and shared the design philosophy behind it: "glass vs. black box." The terminal was a black box; AI kept the black box and made it more addictive. Cursor 3 breaks it open — agents are visible, diffs are shown, plans are editable, state is clear. "As AI gets more powerful, glass gets more important. Not because you need to watch every move. But because the best work happens when you know you can." The new interface starts simple and unfolds tools as needed, works across local and cloud projects.
 
 - https://x.com/ryolu_/status/2039895634313187619
 - https://x.com/ryolu_/status/2039780768847958359
 
-*Peter Yang* (Product at Roblox, newsletter author)
+*Peter Steinberger* (founder at Openclaw, formerly PSPDFKit)
 
-Yang tried out Cursor 3 and likes the cleaner interface — the old version had too many buttons and toggles cluttering the experience. He thinks the new agent-first view should just be the default. He also posted a practical thread of hard-won tips for surviving Disneyland with kids: get early access, sprint to the most popular ride, buy premier passes for the next two, nap at the hotel during peak hours, and head back to the park at 5pm when lines thin out.
+Flagged a dramatic and under-discussed development: AI-generated bug reports are flooding the Linux kernel security list — from 2–3 per week two years ago to 5–10 per _day_ now. The reports are mostly correct, forcing the project to bring in more maintainers. His prediction: "This is gonna kill some oss projects."
 
-- https://x.com/petergyang/status/2039850011044016291
-- https://x.com/petergyang/status/2039898958814974021
+- https://x.com/steipete/status/2039782190838686088
 
-*Amjad Masad* (CEO, Replit)
+*Sam Altman* (CEO at OpenAI)
 
-Masad shared that Replit is opening a sales office in Salt Lake City, Utah and encouraged locals to consider joining the team. He also highlighted a no-setup enterprise-grade auth solution and amplified an agent that can SEO-audit your site.
-
-- https://x.com/amasad/status/2039777772701413396
-- https://x.com/amasad/status/2039774118443421887
-- https://x.com/amasad/status/2039838798671126728
-
-*Sam Altman* (CEO, OpenAI)
-
-Altman gave a shoutout to TBPN, calling it his favorite tech show. OpenAI appears to have acquired or backed the podcast. "I don't expect them to go any easier on us, am sure I'll do my part to help enable that with occasional stupid decisions." The post drew 5,000+ likes.
+Commented on the TBPN acquisition, calling it his favorite tech show and expressing genuine support for them continuing hard-nosed coverage — including of OpenAI. Notably self-deprecating: "I don't expect them to go any easier on us, am sure I'll do my part to help enable that with occasional stupid decisions."
 
 - https://x.com/sama/status/2039773740586918137
 
-*Garry Tan* (President & CEO, Y Combinator)
+*Amjad Masad* (CEO at Replit)
 
-Tan flagged Perplexity Computer as "quite special actually" — a short but pointed endorsement. Also reposted a quote on loving your work.
+Three product moves: Replit now does SEO audits for your site, launched a no-setup enterprise-grade auth solution, and opened a new sales office in Salt Lake City, Utah (hiring).
 
-- https://x.com/garrytan/status/2039943351278190840
-- https://x.com/garrytan/status/2039948180977316164
+- https://x.com/amasad/status/2039838798671126728
+- https://x.com/amasad/status/2039774118443421887
+- https://x.com/amasad/status/2039777772701413396
 
-*Peter Steinberger* (co-founder, OpenClaw)
+*Dan Shipper* (CEO at Every)
 
-Steinberger flagged a concerning data point for open source maintainers: the Linux kernel security list has gone from 2-3 vulnerability reports per week two years ago, to 10 per week last year, to now 5-10 _per day_ — with AI-generated reports being the sole driver. He predicts this pace could kill some OSS projects. He also reacted with humor to a post asking whether AI-generated content counts as "hot people or slop cannon."
-
-- https://x.com/steipete/status/2039782190838686088
-- https://x.com/steipete/status/2039948914112209390
-
-*Dan Shipper* (CEO, Every)
-
-Shipper shared that Every has been beta-testing Cursor 3.0 for a week and published a full vibe check. He also posted two brief reactions to things shipping at Every, expressing genuine excitement as the product icons fill in.
+Shared a week-long Cursor 3.0 vibe check from the Every team.
 
 - https://x.com/danshipper/status/2039770244361662920
-- https://x.com/danshipper/status/2039876581015933226
-- https://x.com/danshipper/status/2039855704714985969
 
-*Claude / Anthropic*
+*Peter Yang* (Product at Roblox, creator)
 
-Computer use in Claude for Work and Claude Code Desktop is now available on Windows.
+Tried Cursor 3 and found the new interface significantly cleaner — far fewer buttons and toggles getting in the way of the agent. Questioned why the simplified mode isn't the default view.
+
+- https://x.com/petergyang/status/2039850011044016291
+
+*Claude* (Anthropic)
+
+Computer use in Claude Code Desktop and Claude Cowork is now available on Windows.
 
 - https://x.com/claudeai/status/2039836891508261106
 
-*Nan Yu* (Head of Product, Linear)
+*Garry Tan* (President & CEO at Y Combinator)
 
-Yu posted a series of brief quote tweets riffing on the idea that AI can flex into different roles — PM, product marketer, collaborator — depending on what you need. He also half-jokingly proposed "TBPN for sports."
+Brief endorsement: "Perplexity Computer is quite special actually."
 
-- https://x.com/thenanyu/status/2039832290490994970
-- https://x.com/thenanyu/status/2039823494398001448
-- https://x.com/thenanyu/status/2039820803722633589
-
+- https://x.com/garrytan/status/2039943351278190840
 
 *PODCASTS*
 
-*Training Data — "How Autonomous Labs Will Transform Scientific Research: Ginkgo Bioworks' Jason Kelly"*
+*Training Data — How Autonomous Labs Will Transform Scientific Research: Ginkgo Bioworks' Jason Kelly*
+
+_The Takeaway:_ Ginkgo Bioworks already has an AI reasoning model running autonomous experiments in a robotic lab — and after six rounds, it beat the Stanford benchmark for cell-free protein synthesis by 40%. This isn't a demo. It's a preview of how all experimental science gets done.
+
+Jason Kelly, founder and CEO of Ginkgo Bioworks, spent 15 years building toward one goal: remove humans from the lab bench so science can actually scale. He's now convinced AI makes that possible, and he's more aggressive about the timeline than most scientists.
+
+The key insight is structural, not technical. Today, labs are like a city where every car is custom-built for one driver. Equipment isn't shared. Experiments run five days a week, not twenty-four hours a day. Less than 5% of a typical research budget goes to actual reagents — the stuff you burn doing science. The rest is overhead: people, lab space, regulation. Autonomous robotic labs flip that ratio. If 90% of cost becomes reagents, you get roughly 10x more data per dollar — before the AI even has to be smarter than the human scientist.
+
+The 40% improvement over Stanford's benchmark came from something simpler than clever AI: the model could run experiments. It didn't need to simulate biology or model molecular dynamics. It just needed to design experiments logically, get the data back, and iterate. "What really let it break through wasn't that it was so smart. It was that it could run experiments."
+
+His vision for the near future: 100 AI scientists running in parallel on the same robotic lab, each pursuing a different hypothesis — say, for Alzheimer's — and sharing all raw experimental data with each other daily. Not polished papers every two years. Daily. Failed results from one line of inquiry become useful signal for another.
+
+Kelly draws a direct analogy to Waymo. Traditional lab automation is like a subway — high efficiency, zero flexibility. Human scientists are like cars — fully flexible, fully manual. AI-powered autonomous labs are the Waymo moment: the flexibility of a car, the efficiency of the subway. "Every part of our physical infrastructure, post-industrial revolution — everything has to get looked at again with that lens."
+
+Near-term applications he's most excited about: GLP-1 style consumer wellness drugs (not disease treatment — enhancement), longitudinal molecular monitoring (weekly blood tests vs. yearly doctor visits), and eventually, democratizing science entirely — letting everyday people design and run experiments the way kids today write code.
 
 https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
-
-_The Takeaway:_ AI reasoning models paired with robotic labs can already beat human scientists at experimental design — not because they're smarter, but because they never sleep, share data in real time, and cost a fraction as much to run.
-
-Jason Kelly founded Ginkgo Bioworks in 2008 straight out of grad school with no funding and a singular goal: make biology programmable. He bootstrapped for six years before Y Combinator (Sam Altman personally recruited him) unlocked their first real capital. Today Ginkgo operates what Kelly calls an "autonomous lab" — a robotic facility where AI agents design and run wet-lab experiments end to end, without a human touching the bench.
-
-The proof point: Ginkgo and OpenAI ran a reasoning model against a classic biochemistry optimization problem (cell-free protein synthesis). Over four rounds of 30,000 experiments each, the model beat the Stanford-published state of the art. After six rounds, it beat it by *40%*. Kelly's explanation: "What really let it break through wasn't that it was so smart. It was that it could run experiments."
-
-His broader argument is structural, not hype. Science today is brutally inefficient — labs run at low equipment utilization five days a week, every lab duplicates the same equipment, and researchers share conclusions once a year via published papers rather than sharing raw data daily. Kelly's vision: 100 AI scientists running in parallel on the same autonomous lab, each pursuing a different hypothesis, pooling raw experimental data _every day_, and publishing a weekly lab notebook. Right now, less than 5% of research budgets go to actual reagents (the real cost of doing experiments); the rest is overhead. Flip that ratio and you get 10x more data per dollar — without the AI even needing to be smarter than the scientists.
-
-"All of the previous revolutions in tech — Internet, social media, whatever — have been totally meaningless to biotechnology and biopharma. Not this. This is actually gonna change the fundamentals of how we do science."
-
-Kelly is candid that scientists will push back on creativity claims. His response: creativity isn't the point. The advantage is scale, speed, and frictionless information sharing — things that are simply socially and organizationally impossible for humans working in separate labs under separate budgets.
-
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
