@@ -1,4 +1,4 @@
-*AI Builders Digest — April 20, 2026*
+*AI Builders Digest — April 21, 2026*
 
 
 *X / TWITTER*
@@ -77,6 +77,14 @@ Called Perplexity Computer "quite special" — a notable signal from one of tech
 Reacted to TBPN selling their podcast: "wait… you guys are selling podcasts??! time for dario x dwarkesh?"
 
 - <https://x.com/swyx/status/2039773480980480431|Tweet>
+
+
+*Nan Yu* (Head of Product at Linear)
+
+Riffing on AI as a flexible collaborator: depending on what you need, it can be the PM you partner with or the product marketer you bring in on demand.
+
+- <https://x.com/thenanyu/status/2039823494398001448|On AI as PM>
+- <https://x.com/thenanyu/status/2039820803722633589|On AI as product marketer>
 
 
 *Claude* (Anthropic)
