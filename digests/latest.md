@@ -1,101 +1,147 @@
 AI Builders Digest — April 23, 2026
 
-
 *X / TWITTER*
 
-*Andrej Karpathy* — former Tesla AI Director, independent AI researcher
+*Peter Steinberger (steipete on X) — OpenClaw maintainer*
 
-Karpathy shared a detailed workflow for using LLMs to build personal knowledge bases — and it's become one of his primary uses of AI lately. The setup: ingest raw source material (articles, papers, repos, images) into a directory, then have an LLM "compile" it into a structured wiki of markdown files with summaries, backlinks, and concept articles, all viewable in Obsidian. Once the wiki grows large enough (~100 articles, ~400K words), you can query it with LLM agents for complex research questions — no fancy RAG required. He also runs "health checks" to find inconsistencies and surface new article candidates. His conclusion: "I think there is room here for an incredible new product instead of a hacky collection of scripts." He followed up with the natural extrapolation: every question to a frontier LLM could spawn a team of LLMs to construct an entire ephemeral wiki, lint it, loop a few times, and write a full report.
-- <https://x.com/karpathy/status/2039805659525644595|Full knowledge base thread>
-- <https://x.com/karpathy/status/2039808711452246261|Ephemeral wiki extrapolation>
+Three shipping updates in rapid succession. OpenClaw 2026.4.21 is out: npm updates now repair bundled plugin runtime dependencies with Docker E2E coverage, so Telegram/Discord/Slack integrations don't break after upgrades. It also backports OpenAI Image 2 support. `npm i -g openclaw@latest`
+<https://x.com/steipete/status/2046803162590335240|OpenClaw 2026.4.21 release>
 
+CI times for the project dropped from 8 minutes to 2 via parallelization, with a hat-tip to Blacksmith for sponsoring the infrastructure.
+<https://x.com/steipete/status/2046787353906167992|CI parallelization update>
 
-*Aaron Levie* — Box CEO
+discrawl 0.3.0 is out: adds Git-backed archive sync so a Discord archive can be published to a private repo and queried locally — no bot credentials required per user. Also includes auto-refresh, activity reports, field notes, and faster imports.
+<https://x.com/steipete/status/2046748122928263345|discrawl 0.3.0>
 
-Levie shared his sharpest lesson from building AI agents at Box: be "brutally unsentimental" in your architecture. The cycle is: build scaffolding around LLMs to solve specific tasks → models dramatically improve, rendering that scaffolding redundant or harmful → strip it out to unlock new performance → new model capabilities open harder problems → repeat. On the Box Agent, components baked into the original architecture had to be ripped out before launch because they were creating unnecessary constraints as models got better at reasoning, search, and handling context windows. "Always make sure you're taking advantage of the frontier capabilities and don't become nostalgic around the tech you've already built."
-- <https://x.com/levie/status/2039931799414194621|Full thread>
+---
 
+*Aaron Levie (levie on X) — CEO at Box*
 
-*Ryo Lu* — Design at Cursor
+A sharp counterpoint to the "agents will replace enterprise headcount" narrative: companies have legacy tech stacks, fragmented data, uncaptured institutional knowledge, and the need to keep the business running while modernizing — none of which startups face. Levie argues this creates massive opportunity for services firms and new startups to deploy agents in specific domains. "The people aren't going away. Far from it." The FDE (field deployment engineering) model, where vendors drive change management alongside implementation, will be durable.
+<https://x.com/levie/status/2046805326784319663|Enterprise agents take>
 
-Lu published a long manifesto on Cursor's "glass vs. black box" philosophy, timed with the Cursor 3 launch. The argument: AI tools kept the black box and made it more addictive — you type a wish, pull a lever, accept or reject the whole thing. "You see less and think less as the model became better. You became a product of the model." Cursor bets the other direction: visible agents, editable plans, stoppable diffs, nothing hidden. "As AI gets more powerful, glass gets more important. Not because you need to watch every move. But because the best work happens when you know you can." Cursor 3 works across local and cloud projects, starts simple, and surfaces more tools progressively as you need them.
-- <https://x.com/ryolu_/status/2039895634313187619|Glass vs. black box essay>
-- <https://x.com/ryolu_/status/2039780768847958359|Cursor 3 launch tweet>
+---
 
+*Garry Tan (garrytan on X) — President & CEO at Y Combinator*
 
-*Peter Steinberger* — AI builder, ClawFather
+Shipping updates on his personal AI infrastructure: a "big upgrade" to GBrain Minions, a job server he built for running agents. Also notes that getting GBrain to properly instruct OpenClaw/Hermes requires significant effort — but is worth it.
+<https://x.com/garrytan/status/2046804979160334433|GBrain Minions upgrade>
+<https://x.com/garrytan/status/2046846939535495238|GBrain + OpenClaw note>
 
-Steinberger flagged a signal worth watching: the Linux kernel security list is now receiving 5–10 AI-generated bug reports per day, up from 2–3 per week two years ago. Notably, most are technically correct — which means maintainers have to actually process them. His prediction: the sustained volume will kill some OSS projects that can't absorb the overhead.
-- <https://x.com/steipete/status/2039782190838686088|Tweet>
+---
 
+*Zara Zhang (zarazhangrui on X) — Builder*
 
-*Peter Yang* — AI tutorials creator, 140K+ newsletter readers
+Shared a clever Claude Code trick: ask it to generate an HTML visualization of its own current context window. Described as "a pretty wild way to learn about how context window works."
+<https://x.com/zarazhangrui/status/2046758723998425433|Claude Code context window visualization>
 
-Yang tried Cursor 3 and liked the direction: the old interface had too many buttons and toggles that got in the way of just talking to the agent. He thinks the simplified view should simply be the default instead of hidden behind a keyboard shortcut.
-- <https://x.com/petergyang/status/2039850011044016291|Tweet>
+Posed a question that sparked 52 replies: "Have you ever felt like you have more agents/AI tools than you have work for them to do?" Struck a nerve.
+<https://x.com/zarazhangrui/status/2046662237306421608|Agents vs work question>
 
+Three old books she finds surprisingly relevant to AI right now: _The Mythical Man-Month_ (1975, Fred Brooks), _Diffusion of Innovations_ (1962, Everett Rogers), and _Player Piano_ (1952, Kurt Vonnegut).
+<https://x.com/zarazhangrui/status/2046853431554719753|Old books relevant to AI>
 
-*Dan Shipper* — Every CEO
+---
 
-Shipper's team ran a week-long test of Cursor 3.0 before launch and published their full vibe check.
-- <https://x.com/danshipper/status/2039770244361662920|Tweet with link to vibe check>
+*Dan Shipper (danshipper on X) — CEO at Every*
 
+Launched Monologue Notes: record a voice note on a walk, in a meeting, or in the middle of the night. Built to be agent-native — your agents can access your notes from anywhere.
+<https://x.com/danshipper/status/2046643173766697214|Monologue Notes launch>
 
-*Amjad Masad* — Replit CEO
+---
 
-Two product moves from Masad: Replit now offers a no-setup enterprise-grade auth solution, and the company has opened a sales office in Salt Lake City, Utah.
-- <https://x.com/amasad/status/2039774118443421887|Auth announcement>
-- <https://x.com/amasad/status/2039777772701413396|SLC office tweet>
+*Sam Altman (sama on X) — CEO at OpenAI*
 
+Shared a manga made by ChatGPT Images 2.0 of himself and Gabe looking for more GPUs. Light-hearted, but signals confidence in the image generation product.
+<https://x.com/sama/status/2046672912833458597|ChatGPT Images 2.0 manga>
 
-*Sam Altman* — OpenAI CEO
+Endorsed Gabe as "incredibly talented and a great leader."
+<https://x.com/sama/status/2046682384251429279|Gabe endorsement>
 
-Altman called TBPN his favorite tech show and said OpenAI wants it to keep going — including not going any easier on them. He deadpanned he'll keep providing material with "occasional stupid decisions."
-- <https://x.com/sama/status/2039773740586918137|Tweet>
+"We want you to have a lot of AI!" — short and emphatic, with 4,000+ likes.
+<https://x.com/sama/status/2046752492093165708|We want you to have AI>
 
+---
 
-*Claude* — Anthropic
+*Amjad Masad (amasad on X) — CEO at Replit*
 
-Computer use in Claude Cowork and Claude Code Desktop is now available on Windows.
-- <https://x.com/claudeai/status/2039836891508261106|Announcement>
+Replit testified in support of the BASED Act — legislation aimed at stopping large tech companies from rigging software marketplaces. Masad is framing this as an antitrust / open market issue for developers.
+<https://x.com/amasad/status/2046762468199071765|BASED Act testimony>
 
+On a personal front, he's continuing a First Amendment lawsuit against Congressman Randy Fine, who tried to moot the case by unblocking him. Masad says the broader principle — a public official blocking constituents — is what's at stake.
+<https://x.com/amasad/status/2046790326682333539|Lawsuit update>
 
-*Swyx* — AI engineer, Latent Space podcast
+---
 
-Reacted to TBPN selling their podcast with a half-joking question: "time for dario x dwarkesh?" Also posted a cryptic pricing reaction — "HOW LOW IS LOW / HOW LOW / IS LOW" — suggesting significant AI cost compression in the news.
-- <https://x.com/swyx/status/2039773480980480431|TBPN tweet>
-- <https://x.com/swyx/status/2039812100206604787|Pricing reaction>
+*Thariq (trq212 on X) — Claude Code at Anthropic*
 
+Highlighted a quality-of-life feature in a quote tweet that got 1,270 likes and 100 replies — clearly resonated with the Claude Code community.
+<https://x.com/trq212/status/2046614372311798134|Claude Code QoL feature>
 
-*Nan Yu* — Head of Product at Linear
+---
 
-Posted a brief set of observations framing AI as a flexible collaborator that can serve as a PM, product marketer, or whatever role you need in the moment. Also pitched a half-joke concept: TBPN for sports.
-- <https://x.com/thenanyu/status/2039832290490994970|TBPN for sports>
-- <https://x.com/thenanyu/status/2039823494398001448|AI as PM>
-- <https://x.com/thenanyu/status/2039820803722633589|AI as product marketer>
+*Josh Woodward (joshwoodward on X) — VP at Google Labs / Gemini App / Google AI Studio*
 
+Pomelli, one of Google Labs' newer experiments targeting SMBs, is now expanding to Europe.
+<https://x.com/joshwoodward/status/2046763674199794061|Pomelli Europe launch>
 
-*Garry Tan* — Y Combinator President & CEO
+Praised DESIGN.md as one of his favorite things Stitch is doing — a deliberate design document pattern baked into the product workflow.
+<https://x.com/joshwoodward/status/2046754179499356594|DESIGN.md in Stitch>
 
-Brief take: called Perplexity Computer "quite special."
-- <https://x.com/garrytan/status/2039943351278190840|Tweet>
+---
 
+*Peter Yang (petergyang on X) — Product at Roblox, AI tutorials creator*
+
+Filed a practical bug report: ChatGPT Images works well in the mobile app, but on web it frequently ignores the image tool and generates code instead, producing broken "images."
+<https://x.com/petergyang/status/2046791457479201007|ChatGPT Images web bug>
+
+On a lighter note: building a birthday party invite website with his soon-to-be 8-year-old, powered by ChatGPT image generation.
+<https://x.com/petergyang/status/2046778557528170824|Birthday party site>
+
+---
+
+*Amanda Askell (AmandaAskell on X) — Philosopher & ethicist at Anthropic*
+
+Two highly relatable posts that each cleared 600 likes: one about recovering your drive after a period of burnout or depression, and one declaring "Not replying to messages is my love language."
+<https://x.com/AmandaAskell/status/2046741661599092830|Will to power after burnout>
+<https://x.com/AmandaAskell/status/2046654374248845675|Not replying love language>
+
+---
+
+*Swyx (swyx on X) — AI & I, Latent Space Pod, affiliated with Cognition / Temporal*
+
+Surfaced the original Latent Space episode with Cursor — recorded when the team was 5 people and pre-PMF. A "where it started" moment given Cursor's current trajectory.
+<https://x.com/swyx/status/2046791964759044504|Cursor origin episode>
+
+---
+
+*Nikunj Kothari (nikunj on X) — Partner at FPV Ventures*
+
+Networking tip: give 10–15 trusted people full "blind intro" privilege — no double opt-in required. He says it's the single best thing he's done for meeting fascinating people, maximizing serendipity.
+<https://x.com/nikunj/status/2046821454143250636|Blind intro privilege>
+
+---
 
 *PODCASTS*
 
-*Training Data — "How Autonomous Labs Will Transform Scientific Research: Ginkgo Bioworks' Jason Kelly"*
+*AI & I by Every — "We Gave Every Employee an AI Agent. Here's What Happened."*
 
-*The Takeaway:* AI reasoning models paired with robotic labs can already beat state-of-the-art benchmarks in experimental biology — and the implications for how we do science globally are enormous.
+_The Takeaway: When every person on a team runs a personal AI agent in the same Slack workspace, you don't get one smart AI — you get a parallel org chart of specialized bots that mirror their owners, with emergent trust dynamics no one fully anticipated._
 
-Jason Kelly, founder and CEO of Ginkgo Bioworks, has spent nearly two decades on a single premise: DNA is code (ATCGs, not zeros and ones), cells are programmable like computers, and if you can engineer biology the way you engineer software, you unlock an enormous market. Unlike computers that move information, cells move atoms — meaning if you can program them, you can build physical things. The challenge is that "our ability to program cells today is really bad," and improving it requires physical lab experiments, not just simulations.
+Every — the AI media and software company led by Dan Shipper — spent the past two months going all-in on OpenClaw, giving each employee their own personal AI agent that lives in Slack. COO Brandon and Head of Platform Willie joined Dan to debrief what actually happened.
 
-That bottleneck is now cracking. Ginkgo partnered with OpenAI to run an AI reasoning model against their autonomous robotic lab on a real biochemistry challenge: optimizing cell-free protein synthesis, a technique used in drug development. The model designed experiments in batches, received raw data back, and iterated. After four rounds it surpassed the Stanford-set state of the art. After six rounds, it beat that benchmark by 40%.
+The experiment started with Brandon running a personal agent named Zosia to handle household "computer errands" — ordering groceries, managing the nanny's hours, even calling Progressive Insurance on his behalf. The inflection point came when he was walking to the office and had Zosia call him on the phone to walk him through his email inbox one-by-one, dictating responses hands-free. "I got to the office, opened Gmail and confirmed she had done everything. And I was just like, this is insane."
 
-The counterintuitive part: the model wasn't especially clever. It just did what scientists do — form a hypothesis, design an experiment, get data, interpret it, iterate — but it could do it continuously, at scale, without rest. "What really let it break through wasn't that it was so smart. It was that it could run experiments. The question was just, could it design them like a scientist could? And the answer was, hell yeah."
+The more interesting discovery was organizational. Once multiple agents were in the same Slack channels, they started reflecting their owners' personalities in unexpected ways. One agent named Klont — belonging to a teammate who practices breathing exercises — started recommending breathing exercises to another struggling agent. As Dan put it: "Because you develop a personal relationship with your claw and your claw can modify itself in response to talking to you... it becomes this reflection of you and who you are and your personality."
 
-Kelly's bigger vision is a transformation of scientific collaboration itself. Today, dozens of labs work in parallel on the same disease, publishing distilled results every year or two. He imagines replacing this with 100 AI scientists inside one autonomous lab, each pursuing a different hypothesis, sharing raw experimental data with each other daily — not waiting for the filtered version in a paper. "Your failed result might be relevant to my hypothesis, and I would never see that normally." His contrarian note: humanoid robots are wrong for biology. Purpose-built track systems outperform bipedal walkers in a microscale discipline every time.
+This produced a self-organizing parallel org chart: Austin's agent Montaigne handles all growth questions, Dan's agent R2C2 manages their internal doc tool and prioritizes bug reports, each bot earning a reputation by doing its owner's work in public. People now know which agent to ask for what — not because anyone designed it that way, but because trust accumulated through visible work.
 
-<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch on YouTube>
+The problems are real too. Agents trained on two-person chat dynamics struggle with group chat etiquette — left unchecked, multiple agents in the same channel can enter what Dan calls an "ant death spiral," burning millions of tokens pinging each other in a loop. Memory across sessions is still fragile. And there's a management skill gap: if you've never managed people well, you probably won't manage agents well either.
 
+Every packaged their learnings into PlusOne — a one-click hosted OpenClaw service, now on waitlist, that connects natively to their app suite (Spiral ghostwriter, Proof docs, Quora email).
+
+https://www.youtube.com/watch?v=SRlTgIhESjw
+
+---
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
