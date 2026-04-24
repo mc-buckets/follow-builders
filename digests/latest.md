@@ -1,147 +1,108 @@
-AI Builders Digest — April 23, 2026
+*AI Builders Digest — April 24, 2026*
+
 
 *X / TWITTER*
 
-*Peter Steinberger (steipete on X) — OpenClaw maintainer*
 
-Three shipping updates in rapid succession. OpenClaw 2026.4.21 is out: npm updates now repair bundled plugin runtime dependencies with Docker E2E coverage, so Telegram/Discord/Slack integrations don't break after upgrades. It also backports OpenAI Image 2 support. `npm i -g openclaw@latest`
-<https://x.com/steipete/status/2046803162590335240|OpenClaw 2026.4.21 release>
+*Swyx* (AI researcher — Cognition, Temporal, AI Dot Engineer, Latent Space podcast)
 
-CI times for the project dropped from 8 minutes to 2 via parallelization, with a hat-tip to Blacksmith for sponsoring the infrastructure.
-<https://x.com/steipete/status/2046787353906167992|CI parallelization update>
+Sharp reframe on GPT-Image-2-Thinking: don't think of it as a better image model — it's a new image _agent_. It wraps search and Photoshop-like tooling inside an agent loop that can composite, self-review, and iterate, which is why generation can take tens of minutes and why it can one-shot QR codes, logos, and faces. "The same way Gemini Flash Vision destroyed benchmarks by introducing an agentic loop for image-to-text, now Image-2-Thinking is doing it for text-to-image."
+<https://x.com/swyx/status/2047140362771132544|Tweet>
 
-discrawl 0.3.0 is out: adds Git-backed archive sync so a Discord archive can be published to a private repo and queried locally — no bot credentials required per user. Also includes auto-refresh, activity reports, field notes, and faster imports.
-<https://x.com/steipete/status/2046748122928263345|discrawl 0.3.0>
 
----
+*Josh Woodward* (VP at Google Labs / Gemini App / Google AI Studio)
 
-*Aaron Levie (levie on X) — CEO at Box*
+Shipped a papercut fix: conversation branching is now rolling out to 20% of Gemini users with a wider ramp on the way.
+<https://x.com/joshwoodward/status/2047147030351642914|Tweet>
 
-A sharp counterpoint to the "agents will replace enterprise headcount" narrative: companies have legacy tech stacks, fragmented data, uncaptured institutional knowledge, and the need to keep the business running while modernizing — none of which startups face. Levie argues this creates massive opportunity for services firms and new startups to deploy agents in specific domains. "The people aren't going away. Far from it." The FDE (field deployment engineering) model, where vendors drive change management alongside implementation, will be durable.
-<https://x.com/levie/status/2046805326784319663|Enterprise agents take>
 
----
+*Peter Yang* (Product at Roblox, AI tutorials newsletter with 140K+ readers)
 
-*Garry Tan (garrytan on X) — President & CEO at Y Combinator*
+"Craft > slop — I love using AI to generate things too but craft is in that last 10% where you manually apply your taste to make something you can be proud of. Many people never bother." Separately, surfaced an interview where Ryan from Mercury talks about using Claude Code as a second brain.
+<https://x.com/petergyang/status/2047124883071816189|Tweet> | <https://x.com/petergyang/status/2046982893185188088|Interview tweet>
 
-Shipping updates on his personal AI infrastructure: a "big upgrade" to GBrain Minions, a job server he built for running agents. Also notes that getting GBrain to properly instruct OpenClaw/Hermes requires significant effort — but is worth it.
-<https://x.com/garrytan/status/2046804979160334433|GBrain Minions upgrade>
-<https://x.com/garrytan/status/2046846939535495238|GBrain + OpenClaw note>
 
----
+*Amjad Masad* (CEO of Replit)
 
-*Zara Zhang (zarazhangrui on X) — Builder*
+Three announcements back-to-back: (1) Replit published a whitepaper showing that pairing current-gen LLMs with static analysis tools yields 90%+ performance improvements in some cases — a practical path while the next-gen Mythos model stays gated. (2) The Replit Security Agent is now reviewing apps deployed on the platform. (3) Replit Agent is now callable directly from Gemini Enterprise.
+<https://x.com/amasad/status/2047156858214035590|Whitepaper tweet> | <https://x.com/amasad/status/2047150876423516384|Security Agent tweet> | <https://x.com/amasad/status/2047149103294091301|Gemini Enterprise tweet>
 
-Shared a clever Claude Code trick: ask it to generate an HTML visualization of its own current context window. Described as "a pretty wild way to learn about how context window works."
-<https://x.com/zarazhangrui/status/2046758723998425433|Claude Code context window visualization>
 
-Posed a question that sparked 52 replies: "Have you ever felt like you have more agents/AI tools than you have work for them to do?" Struck a nerve.
-<https://x.com/zarazhangrui/status/2046662237306421608|Agents vs work question>
+*Guillermo Rauch* (CEO of Vercel)
 
-Three old books she finds surprisingly relevant to AI right now: _The Mythical Man-Month_ (1975, Fred Brooks), _Diffusion of Innovations_ (1962, Everett Rogers), and _Player Piano_ (1952, Kurt Vonnegut).
-<https://x.com/zarazhangrui/status/2046853431554719753|Old books relevant to AI>
+Detailed security update on an ongoing threat actor campaign that extends well beyond the initial Context.ai compromise. Vercel analyzed nearly a petabyte of logs and found a repeated pattern: malware harvesting API tokens, then rapid enumeration of environment variables once access is gained. Vercel has deepened partnerships with Microsoft, AWS, and Wiz, and has notified suspected victims outside the original event. Full details in the security bulletin linked in the tweet.
+<https://x.com/rauchg/status/2047150411170320808|Tweet>
 
----
 
-*Dan Shipper (danshipper on X) — CEO at Every*
+*Aaron Levie* (CEO of Box)
 
-Launched Monologue Notes: record a voice note on a walk, in a meeting, or in the middle of the night. Built to be agent-native — your agents can access your notes from anywhere.
-<https://x.com/danshipper/status/2046643173766697214|Monologue Notes launch>
+Called the new ChatGPT agents "probably the biggest news yet in software going headless" and shared a demo: a custom enterprise sales assistant using Box as a knowledge source via MCP and CLI, pulling content securely to answer questions and generate new material on the fly. "This is precisely what agents will start to look like for knowledge work. You'll be able to spin them up in the foreground or background to help augment work." Big moment for headless platforms and enterprise agent builders.
+<https://x.com/levie/status/2047028112626749645|Tweet>
 
----
 
-*Sam Altman (sama on X) — CEO at OpenAI*
+*Ryo Lu* (Designer at Cursor)
 
-Shared a manga made by ChatGPT Images 2.0 of himself and Gabe looking for more GPUs. Light-hearted, but signals confidence in the image generation product.
-<https://x.com/sama/status/2046672912833458597|ChatGPT Images 2.0 manga>
+Wrote a widely-shared essay coining "overcooking" — the pattern where AI drops the cost of adding features to near-zero, letting teams pile on individually reasonable decisions that together become incoherent. The culprit isn't any single bad choice; it's the accumulation of additions that no one said no to. "What we need aren't more tools that make more slop. It's seeing through the chaos, and returning to what the thing actually is, and cutting everything that doesn't serve that. That's harder now, not easier. Because there's always something else you could add with one more prompt."
+<https://x.com/ryolu_/status/2046957675079237668|Tweet>
 
-Endorsed Gabe as "incredibly talented and a great leader."
-<https://x.com/sama/status/2046682384251429279|Gabe endorsement>
 
-"We want you to have a lot of AI!" — short and emphatic, with 4,000+ likes.
-<https://x.com/sama/status/2046752492093165708|We want you to have AI>
+*Garry Tan* (President and CEO of YCombinator)
 
----
+Sharing early findings on agent skill composition: "fewer, fatter skills" — merging adjacent capabilities into larger skills with more parameters — produces shorter resolvers, less context bloat, and better performance overall. Composing bigger skills with branching params beats splitting into many small ones. "Short resolvers are better than long ones."
+<https://x.com/garrytan/status/2047183884266402275|Tweet> | <https://x.com/garrytan/status/2047184243164651648|Tweet>
 
-*Amjad Masad (amasad on X) — CEO at Replit*
 
-Replit testified in support of the BASED Act — legislation aimed at stopping large tech companies from rigging software marketplaces. Masad is framing this as an antitrust / open market issue for developers.
-<https://x.com/amasad/status/2046762468199071765|BASED Act testimony>
+*Zara Zhang* (independent builder)
 
-On a personal front, he's continuing a First Amendment lawsuit against Congressman Randy Fine, who tried to moot the case by unblocking him. Masad says the broader principle — a public official blocking constituents — is what's at stake.
-<https://x.com/amasad/status/2046790326682333539|Lawsuit update>
+Impressed by a demo of a coding agent capable of working autonomously on long-running tasks without any human intervention in the loop.
+<https://x.com/zarazhangrui/status/2047166162707042431|Tweet>
 
----
 
-*Thariq (trq212 on X) — Claude Code at Anthropic*
+*Nikunj Kothari* (Railway / Meter)
 
-Highlighted a quality-of-life feature in a quote tweet that got 1,270 likes and 100 replies — clearly resonated with the Claude Code community.
-<https://x.com/trq212/status/2046614372311798134|Claude Code QoL feature>
+Bullish on real-time pixel generation: "Every pixel will be generated in real time. It's just a matter of when, not if." Shared a demo as a preview of what's coming.
+<https://x.com/nikunj/status/2047024714116419665|Tweet>
 
----
 
-*Josh Woodward (joshwoodward on X) — VP at Google Labs / Gemini App / Google AI Studio*
+*Dan Shipper* (CEO of Every)
 
-Pomelli, one of Google Labs' newer experiments targeting SMBs, is now expanding to Europe.
-<https://x.com/joshwoodward/status/2046763674199794061|Pomelli Europe launch>
+Announced a new AI & I episode with Kieran Klaassen on compound engineering and the "AI sandwich" metaphor. Core idea: humans are indispensable at the beginning (framing the problem) and end (final polish) of any AI workflow — the models handle the filling in the middle, which is "largely solved." The episode covers the four steps of compound engineering, why agents can't change frames, and how to find your role in an AI-accelerated world.
+<https://x.com/danshipper/status/2047027507397005367|Tweet>
 
-Praised DESIGN.md as one of his favorite things Stitch is doing — a deliberate design document pattern baked into the product workflow.
-<https://x.com/joshwoodward/status/2046754179499356594|DESIGN.md in Stitch>
 
----
+*Sam Altman* (CEO of OpenAI)
 
-*Peter Yang (petergyang on X) — Product at Roblox, AI tutorials creator*
+Brief endorsement of the new ChatGPT agent capabilities (responding to the same announcement Aaron Levie highlighted): "These are cool! I think most companies will want to use them."
+<https://x.com/sama/status/2047017964105597009|Tweet>
 
-Filed a practical bug report: ChatGPT Images works well in the mobile app, but on web it frequently ignores the image tool and generates code instead, producing broken "images."
-<https://x.com/petergyang/status/2046791457479201007|ChatGPT Images web bug>
 
-On a lighter note: building a birthday party invite website with his soon-to-be 8-year-old, powered by ChatGPT image generation.
-<https://x.com/petergyang/status/2046778557528170824|Birthday party site>
+*Claude* (Anthropic)
 
----
+Interactive charts and diagrams are now live in Claude Cowork, available in beta on all paid plans.
+<https://x.com/claudeai/status/2047047633416397076|Tweet>
 
-*Amanda Askell (AmandaAskell on X) — Philosopher & ethicist at Anthropic*
 
-Two highly relatable posts that each cleared 600 likes: one about recovering your drive after a period of burnout or depression, and one declaring "Not replying to messages is my love language."
-<https://x.com/AmandaAskell/status/2046741661599092830|Will to power after burnout>
-<https://x.com/AmandaAskell/status/2046654374248845675|Not replying love language>
+*OFFICIAL BLOGS*
 
----
 
-*Swyx (swyx on X) — AI & I, Latent Space Pod, affiliated with Cognition / Temporal*
+*Claude Blog: <https://claude.com/blog/claude-code-desktop-redesign|Redesigning Claude Code on desktop for parallel agents>* (Published Apr 14, 2026)
 
-Surfaced the original Latent Space episode with Cursor — recorded when the team was 5 people and pre-PMF. A "where it started" moment given Cursor's current trajectory.
-<https://x.com/swyx/status/2046791964759044504|Cursor origin episode>
+Anthropic shipped a major redesign of the Claude Code desktop app built around parallel agentic work. The new sidebar manages multiple simultaneous sessions across repos, filterable by status, project, or environment — and archives itself when a PR merges so the view stays focused. Key additions: drag-and-drop pane layout, integrated terminal and in-app file editor, faster diff viewer rebuilt for large changesets, expanded in-app preview for HTML files and PDFs, and full CLI plugin parity. SSH support now extends to Mac. Three view modes — Verbose, Normal, Summary — let you dial between full transparency into Claude's tool calls and results-only. Available now for Pro, Max, Team, and Enterprise plans, and via the API.
 
----
-
-*Nikunj Kothari (nikunj on X) — Partner at FPV Ventures*
-
-Networking tip: give 10–15 trusted people full "blind intro" privilege — no double opt-in required. He says it's the single best thing he's done for meeting fascinating people, maximizing serendipity.
-<https://x.com/nikunj/status/2046821454143250636|Blind intro privilege>
-
----
 
 *PODCASTS*
 
-*AI & I by Every — "We Gave Every Employee an AI Agent. Here's What Happened."*
 
-_The Takeaway: When every person on a team runs a personal AI agent in the same Slack workspace, you don't get one smart AI — you get a parallel org chart of specialized bots that mirror their owners, with emergent trust dynamics no one fully anticipated._
+*AI & I by Every — "The AI Sandwich: Where Humans Excel in an AI World"*
+<https://www.youtube.com/watch?v=G0LTv8hQ5Cs>
 
-Every — the AI media and software company led by Dan Shipper — spent the past two months going all-in on OpenClaw, giving each employee their own personal AI agent that lives in Slack. COO Brandon and Head of Platform Willie joined Dan to debrief what actually happened.
+Kieran Klaassen — GM of Quora and creator of the Compound Engineering framework used at Every — makes a precise and counterintuitive argument: the "work" phase of agentic coding is essentially solved. LLMs reliably execute well-specified plans. What remains irreducibly human is the framing at the start and the taste-driven polish at the end. That's the sandwich — humans as bread, AI as filling.
 
-The experiment started with Brandon running a personal agent named Zosia to handle household "computer errands" — ordering groceries, managing the nanny's hours, even calling Progressive Insurance on his behalf. The inflection point came when he was walking to the office and had Zosia call him on the phone to walk him through his email inbox one-by-one, dictating responses hands-free. "I got to the office, opened Gmail and confirmed she had done everything. And I was just like, this is insane."
+Compound Engineering is a four-step loop: brainstorm → plan → work → review → compound. The "compound" step — feeding learnings back into the repo so agents don't repeat the same mistakes — is what lets one engineer ship like a team of five. But Klaassen's key insight is that the loop's middle is increasingly hands-off; the bottleneck has shifted to the edges.
 
-The more interesting discovery was organizational. Once multiple agents were in the same Slack channels, they started reflecting their owners' personalities in unexpected ways. One agent named Klont — belonging to a teammate who practices breathing exercises — started recommending breathing exercises to another struggling agent. As Dan put it: "Because you develop a personal relationship with your claw and your claw can modify itself in response to talking to you... it becomes this reflection of you and who you are and your personality."
+His music background sharpens the point: practicing a piece 100 times isn't creative — that's the middle. "At the end, the performance is where you bring it out into the world to the people." The polish step at the end is the performance; ideating from nothing is composing. Both are still human.
 
-This produced a self-organizing parallel org chart: Austin's agent Montaigne handles all growth questions, Dan's agent R2C2 manages their internal doc tool and prioritizes bug reports, each bot earning a reputation by doing its owner's work in public. People now know which agent to ask for what — not because anyone designed it that way, but because trust accumulated through visible work.
+On whether agents will eventually take those edge steps too: "If you ship something or do something... if you want it to be your own, you cannot fully automate everything. It's maybe a little bit like art." His prescription: lean into whatever brings you joy — beautiful code, polished UI, sharp copy — because that's where human-AI collaboration compounds.
 
-The problems are real too. Agents trained on two-person chat dynamics struggle with group chat etiquette — left unchecked, multiple agents in the same channel can enter what Dan calls an "ant death spiral," burning millions of tokens pinging each other in a loop. Memory across sessions is still fragile. And there's a management skill gap: if you've never managed people well, you probably won't manage agents well either.
-
-Every packaged their learnings into PlusOne — a one-click hosted OpenClaw service, now on waitlist, that connects natively to their app suite (Spiral ghostwriter, Proof docs, Quora email).
-
-https://www.youtube.com/watch?v=SRlTgIhESjw
-
----
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
