@@ -1,108 +1,130 @@
-*AI Builders Digest — April 24, 2026*
+*AI Builders Digest — April 25, 2026*
 
 
 *X / TWITTER*
 
+*Swyx* (AI engineer at Cognition, Latent Space podcast host)
 
-*Swyx* (AI researcher — Cognition, Temporal, AI Dot Engineer, Latent Space podcast)
+Swyx flagged that the most underrated part of yesterday's OpenAI launch wasn't GPT-5.5 at all — he's pointing at something else in the release without spelling it out. He also noted the Codex app has become "unrecognizable... almost like it shouldve been Atlas the whole time," suggesting the rebrand was the real story. He also made a pitch to Anthropic to expand to Singapore, calling it "the most AI pilled country per capita."
+- <https://x.com/swyx/status/2047536499999346812|The underrated part of today's launch>
+- <https://x.com/swyx/status/2047461691580195310|Codex app is unrecognizable>
+- <https://x.com/swyx/status/2047545640180445400|Singapore pitch to Anthropic>
 
-Sharp reframe on GPT-Image-2-Thinking: don't think of it as a better image model — it's a new image _agent_. It wraps search and Photoshop-like tooling inside an agent loop that can composite, self-review, and iterate, which is why generation can take tens of minutes and why it can one-shot QR codes, logos, and faces. "The same way Gemini Flash Vision destroyed benchmarks by introducing an agentic loop for image-to-text, now Image-2-Thinking is doing it for text-to-image."
-<https://x.com/swyx/status/2047140362771132544|Tweet>
+*Peter Yang* (Roblox product manager and AI newsletter author with 140K+ readers)
 
+Peter Yang runs an F-Zero game-building benchmark every time a major model drops. GPT-5.5 + Codex is the first combo to actually produce a working game — complete with AI bots to race against. "What an insane time to be building." He shared full impressions in a video.
+- <https://x.com/petergyang/status/2047502885710410159|F-Zero benchmark result>
+- <https://x.com/petergyang/status/2047502897412468770|Full GPT-5.5 impressions video>
 
-*Josh Woodward* (VP at Google Labs / Gemini App / Google AI Studio)
+*Amanda Askell* (philosopher and ethicist at Anthropic)
 
-Shipped a papercut fix: conversation branching is now rolling out to 20% of Gemini users with a wider ramp on the way.
-<https://x.com/joshwoodward/status/2047147030351642914|Tweet>
+One post, 2,115 likes: "It's odd to be living through what feels like one of the most critical periods in human history and to feel all of the weight of it from the inside."
+- <https://x.com/AmandaAskell/status/2047429629263454377|Tweet>
 
+*Cat Wu* (Claude Code and Cowork product lead at Anthropic)
 
-*Peter Yang* (Product at Roblox, AI tutorials newsletter with 140K+ readers)
-
-"Craft > slop — I love using AI to generate things too but craft is in that last 10% where you manually apply your taste to make something you can be proud of. Many people never bother." Separately, surfaced an interview where Ryan from Mercury talks about using Claude Code as a second brain.
-<https://x.com/petergyang/status/2047124883071816189|Tweet> | <https://x.com/petergyang/status/2046982893185188088|Interview tweet>
-
+Cat Wu highlighted a conversation with Lenny Rachitsky covering how Claude Code maintains product velocity, how the PM role is shifting in the AI era, and the future of work.
+- <https://x.com/_catwu/status/2047427510091366533|Tweet>
 
 *Amjad Masad* (CEO of Replit)
 
-Three announcements back-to-back: (1) Replit published a whitepaper showing that pairing current-gen LLMs with static analysis tools yields 90%+ performance improvements in some cases — a practical path while the next-gen Mythos model stays gated. (2) The Replit Security Agent is now reviewing apps deployed on the platform. (3) Replit Agent is now callable directly from Gemini Enterprise.
-<https://x.com/amasad/status/2047156858214035590|Whitepaper tweet> | <https://x.com/amasad/status/2047150876423516384|Security Agent tweet> | <https://x.com/amasad/status/2047149103294091301|Gemini Enterprise tweet>
-
-
-*Guillermo Rauch* (CEO of Vercel)
-
-Detailed security update on an ongoing threat actor campaign that extends well beyond the initial Context.ai compromise. Vercel analyzed nearly a petabyte of logs and found a repeated pattern: malware harvesting API tokens, then rapid enumeration of environment variables once access is gained. Vercel has deepened partnerships with Microsoft, AWS, and Wiz, and has notified suspected victims outside the original event. Full details in the security bulletin linked in the tweet.
-<https://x.com/rauchg/status/2047150411170320808|Tweet>
-
+Replit CEO Amjad Masad pushed back hard on US political scaremongering about "Chinese distillation": Chinese scientists are actually sharing real AI breakthroughs in the open — advances with "nothing to do with data" that benefit everyone, including US labs. He also flagged DeepSeek v4 dropping. Separately, he's calling Apple's burial of "find on page" three clicks deep in Safari under Share "the dumbest design mistake in Apple history."
+- <https://x.com/amasad/status/2047547275682214384|On Chinese open AI research>
+- <https://x.com/amasad/status/2047519635063631914|DeepSeek v4 dropped>
+- <https://x.com/amasad/status/2047524053314109600|Apple design critique>
 
 *Aaron Levie* (CEO of Box)
 
-Called the new ChatGPT agents "probably the biggest news yet in software going headless" and shared a demo: a custom enterprise sales assistant using Box as a knowledge source via MCP and CLI, pulling content securely to answer questions and generate new material on the fly. "This is precisely what agents will start to look like for knowledge work. You'll be able to spin them up in the foreground or background to help augment work." Big moment for headless platforms and enterprise agent builders.
-<https://x.com/levie/status/2047028112626749645|Tweet>
+Box CEO Aaron Levie came with numbers: GPT-5.5 scored 10+ percentage points higher than GPT-5.4 on Box's enterprise evals — financial services 83% vs. 64%, healthcare 78% vs. 61%, public sector 72% vs. 59%. Now live in Box AI Studio. He also made a counter-intuitive argument: AI won't automatically reduce work because work isn't static. Agents make it easy to start projects that previously never got done, so you end up doing far more. "Most companies have far more they can do than they have today, it was just hard to get started on it all."
+- <https://x.com/levie/status/2047387742951313910|GPT-5.5 enterprise eval results>
+- <https://x.com/levie/status/2047540230694350958|AI makes us work more, not less>
 
+*Garry Tan* (President and CEO of Y Combinator)
 
-*Ryo Lu* (Designer at Cursor)
+YC's Garry Tan is building out GBrain, his personal AI infrastructure. He created new evals showing that combining graph AND vector search on top of grep on knowledge wikis is significantly more powerful. He's also migrating his OpenClaw cron jobs and subagents over to GBrain Minions with ongoing stability improvements.
+- <https://x.com/garrytan/status/2047578205528477711|GBrain graph + vector search evals>
+- <https://x.com/garrytan/status/2047578207629819919|OpenClaw to GBrain Minions migration>
 
-Wrote a widely-shared essay coining "overcooking" — the pattern where AI drops the cost of adding features to near-zero, letting teams pile on individually reasonable decisions that together become incoherent. The culprit isn't any single bad choice; it's the accumulation of additions that no one said no to. "What we need aren't more tools that make more slop. It's seeing through the chaos, and returning to what the thing actually is, and cutting everything that doesn't serve that. That's harder now, not easier. Because there's always something else you could add with one more prompt."
-<https://x.com/ryolu_/status/2046957675079237668|Tweet>
+*Matt Turck* (VC at FirstMark Capital, organizer of Data Driven NYC)
 
+FirstMark VC Matt Turck is hosting Data Driven NYC #121 this Tuesday at 6pm in NYC — featuring Ramp Labs (agentic innovation demo) and Estuary (unified data infra for AI). Worth attending if you're in the city.
+- <https://x.com/mattturck/status/2047444712546566393|Tweet + RSVP>
 
-*Garry Tan* (President and CEO of YCombinator)
+*Nikunj Kothari* (partner at FPV Ventures)
 
-Sharing early findings on agent skill composition: "fewer, fatter skills" — merging adjacent capabilities into larger skills with more parameters — produces shorter resolvers, less context bloat, and better performance overall. Composing bigger skills with branching params beats splitting into many small ones. "Short resolvers are better than long ones."
-<https://x.com/garrytan/status/2047183884266402275|Tweet> | <https://x.com/garrytan/status/2047184243164651648|Tweet>
-
-
-*Zara Zhang* (independent builder)
-
-Impressed by a demo of a coding agent capable of working autonomously on long-running tasks without any human intervention in the loop.
-<https://x.com/zarazhangrui/status/2047166162707042431|Tweet>
-
-
-*Nikunj Kothari* (Railway / Meter)
-
-Bullish on real-time pixel generation: "Every pixel will be generated in real time. It's just a matter of when, not if." Shared a demo as a preview of what's coming.
-<https://x.com/nikunj/status/2047024714116419665|Tweet>
-
+FPV partner Nikunj Kothari shared his current undefeated AI dev stack: Claude Opus for planning and frontend design, OpenAI Codex for engineering, Conductor to orchestrate, Railway to deploy. On the macro: he sees M&A hitting fever pitch, driven by the widening seed-to-Series A gap, zombie unicorns from 2021 finally coming due, and talent gravitating toward large AI labs. Sharp coda: "There are a lot of founders but very few entrepreneurs. Don't become a founder for the sake of being one — do it because you literally can't do anything else."
+- <https://x.com/nikunj/status/2047382587258364204|AI dev stack>
+- <https://x.com/nikunj/status/2047336067972624870|M&A fever pitch analysis>
 
 *Dan Shipper* (CEO of Every)
 
-Announced a new AI & I episode with Kieran Klaassen on compound engineering and the "AI sandwich" metaphor. Core idea: humans are indispensable at the beginning (framing the problem) and end (final polish) of any AI workflow — the models handle the filling in the middle, which is "largely solved." The episode covers the four steps of compound engineering, why agents can't change frames, and how to find your role in an AI-accelerated world.
-<https://x.com/danshipper/status/2047027507397005367|Tweet>
+Every CEO Dan Shipper's take on GPT-5.5: "many models write a great plan and then get scared of it. OpenAI's new GPT-5.5 just does the thing." He shared a full vibe check post as well.
+- <https://x.com/danshipper/status/2047388883823087633|GPT-5.5 just does the thing>
+- <https://x.com/danshipper/status/2047388895562842162|Full GPT-5.5 vibe check>
 
+*Aditya Agarwal* (General Partner at South Park Commons, former CTO of Dropbox)
+
+South Park Commons GP Aditya Agarwal reflected on why SF is the epicenter of AI value creation — 95% of it in a 4-mile radius. His answer isn't capital or universities alone: it's a culture that responds to wild ideas with "that is crazy but my god, if it works, then what could happen?" He witnessed design legends and a mind-bending every-pixel-generated demo in the same week at SPC.
+- <https://x.com/adityaag/status/2047421448449630379|Tweet>
 
 *Sam Altman* (CEO of OpenAI)
 
-Brief endorsement of the new ChatGPT agent capabilities (responding to the same announcement Aaron Levie highlighted): "These are cool! I think most companies will want to use them."
-<https://x.com/sama/status/2047017964105597009|Tweet>
+OpenAI's Sam Altman shared that OpenAI piloted rolling out Codex across an entire company in partnership with NVIDIA — and found it worked well. He's inviting other companies to reach out to try it.
+- <https://x.com/sama/status/2047395562501411058|Tweet>
 
+*Claude* (Anthropic's official AI account)
 
-*Claude* (Anthropic)
-
-Interactive charts and diagrams are now live in Claude Cowork, available in beta on all paid plans.
-<https://x.com/claudeai/status/2047047633416397076|Tweet>
+Anthropic announced that memory on Claude Managed Agents is now in public beta. Agents can learn across sessions using an intelligence-optimized memory layer. The key design choice: memories are stored as files, so developers can export them and manage them via the API with full control over what agents retain. Available on web, desktop, and mobile (beta) across all plans.
+- <https://x.com/claudeai/status/2047421844311949513|Memory public beta announcement>
+- <https://x.com/claudeai/status/2047421846463623579|Memories stored as files detail>
+- <https://x.com/claudeai/status/2047383767984038093|Availability details>
 
 
 *OFFICIAL BLOGS*
 
+*Anthropic Engineering*
 
-*Claude Blog: <https://claude.com/blog/claude-code-desktop-redesign|Redesigning Claude Code on desktop for parallel agents>* (Published Apr 14, 2026)
+<https://www.anthropic.com/engineering/april-23-postmortem|An update on recent Claude Code quality reports>
 
-Anthropic shipped a major redesign of the Claude Code desktop app built around parallel agentic work. The new sidebar manages multiple simultaneous sessions across repos, filterable by status, project, or environment — and archives itself when a PR merges so the view stays focused. Key additions: drag-and-drop pane layout, integrated terminal and in-app file editor, faster diff viewer rebuilt for large changesets, expanded in-app preview for HTML files and PDFs, and full CLI plugin parity. SSH support now extends to Mac. Three view modes — Verbose, Normal, Summary — let you dial between full transparency into Claude's tool calls and results-only. Available now for Pro, Max, Team, and Enterprise plans, and via the API.
+A transparent postmortem on the quality issues that hit Claude Code over the past six weeks. Three separate bugs compounded into what looked like broad, inconsistent degradation:
+
+1. *Reasoning effort downgrade (March 4):* The default was silently changed from _high_ to _medium_ to reduce long latency. Users found Claude felt less intelligent. Reverted April 7 — all models now default to high or xhigh effort.
+
+2. *Caching bug that cleared memory every turn (March 26):* A session-resume optimization had a bug — instead of clearing old thinking once when sessions went idle, it cleared reasoning on every subsequent turn for the rest of the session. Claude appeared forgetful and repetitive, and usage limits drained faster than expected. Fixed April 10.
+
+3. *System prompt verbosity cap (April 16):* A line added to reduce output length ("≤25 words between tool calls, ≤100 words final responses") caused a measurable 3% drop in coding quality across multiple models. Reverted April 20.
+
+As of April 23, Anthropic is resetting usage limits for all subscribers. Going forward: broader per-model evals for every system prompt change, soak periods for any intelligence-tradeoff change, and improved Code Review tooling shipping to customers.
+
+*Claude Blog*
+
+<https://claude.com/blog/connectors-for-everyday-life|New connectors in Claude for everyday life>
+
+Claude's connector directory has crossed 200 integrations and is now expanding beyond work tools into everyday life. New connectors live today: AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, TripAdvisor, Uber, Uber Eats, and Viator. Claude dynamically suggests the relevant connector mid-conversation and surfaces results inline — ask for a hike recommendation and AllTrails responds in the thread. When multiple apps could help, Claude shows all options. Ad-free, no paid placements. Available on all plans (mobile in beta). Full directory at claude.ai/directory/connectors.
+
+<https://claude.com/blog/claude-managed-agents-memory|Built-in memory for Claude Managed Agents>
+
+Memory on Claude Managed Agents is now in public beta — agents can learn from every session, carrying context and corrections forward rather than starting fresh each time. Memory mounts directly on a filesystem so agents can use bash and code execution alongside it. Memories are portable: exportable, versioned, rollback-capable, and fully manageable via API. Multiple agents can share stores with scoped read/write permissions and detailed audit logs. Early partner results: Rakuten cut first-pass errors by 97%, Wisedocs sped up document verification by 30%.
 
 
 *PODCASTS*
 
+*Unsupervised Learning — Ep 85: Has AI Infra Stabilized, FM Vibe Shift, & What's Next for Coding Agents*
 
-*AI & I by Every — "The AI Sandwich: Where Humans Excel in an AI World"*
-<https://www.youtube.com/watch?v=G0LTv8hQ5Cs>
+_The Takeaway:_ 2026 is the year coding agents break containment — and the winners will be the reckless explorers at the edges, not the cynics waiting for things to settle.
 
-Kieran Klaassen — GM of Quora and creator of the Compound Engineering framework used at Every — makes a precise and counterintuitive argument: the "work" phase of agentic coding is essentially solved. LLMs reliably execute well-specified plans. What remains irreducibly human is the framing at the start and the taste-driven polish at the end. That's the sandwich — humans as bread, AI as filling.
+In a crossover episode between Redpoint investor Jacob Efron (Unsupervised Learning) and Swyx (Latent Space, Cognition), the two map the current state of the AI ecosystem with unusual candor and specificity.
 
-Compound Engineering is a four-step loop: brainstorm → plan → work → review → compound. The "compound" step — feeding learnings back into the repo so agents don't repeat the same mistakes — is what lets one engineer ship like a team of five. But Klaassen's key insight is that the loop's middle is increasingly hands-off; the bottleneck has shifted to the edges.
+*On AI infra stability:* Swyx thinks harnesses may have stabilized — "the minimal viable format is just a markdown file with some scripts attached, and I don't see how it can be more simple" — but is careful not to stake his reputation on the thesis. The horizontal vs. vertical startup debate is live: verticals (like Legora) act as the outsourced AI team and are robust to shifting trends; horizontals face loyalty-free developers who will migrate workloads the moment something hotter appears.
 
-His music background sharpens the point: practicing a piece 100 times isn't creative — that's the middle. "At the end, the performance is where you bring it out into the world to the people." The polish step at the end is the performance; ideating from nothing is composing. Both are still human.
+*On the coding wars:* Anthropic Claude Code and OpenAI Codex are the two dominant players, both generating roughly $2B ARR in coding, with Cursor around $2B too. Swyx's contrarian point: don't bet on mean reversion from coding's 50% share of AI use cases. "Why if it went from 10 to 50% in the past year, why can't it keep going?"
 
-On whether agents will eventually take those edge steps too: "If you ship something or do something... if you want it to be your own, you cannot fully automate everything. It's maybe a little bit like art." His prescription: lean into whatever brings you joy — beautiful code, polished UI, sharp copy — because that's where human-AI collaboration compounds.
+*On token maxing:* The people who discover the next breakthrough are the ones spending wildly — like the OpenAI engineer who burns a billion tokens a day (~$10K at market rates). "The people who are going to discover the next hot thing are living at the edge."
 
+*On open models:* Swyx reversed his bearish stance from a year ago. Top-tier builders are increasingly using open models, fine-tuning-as-a-service is about to work, and alternative chips (Cerebras et al.) are unlocking inference speeds that change the quality/cost tradeoff entirely.
+
+*On "dark factories":* The frontier after zero-human-written code is zero-human-reviewed code. "When you have unlocked that in your companies, you are just gonna produce much more quantity of software than you've ever had." OpenAI is already exploring this. The counterintuitive point: more quantity leads to more quality — but only for those willing to lean in rather than dismiss it as slop.
+
+https://www.youtube.com/@RedpointAI
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
