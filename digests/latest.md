@@ -1,99 +1,109 @@
-*AI Builders Digest — April 28, 2026*
+AI Builders Digest — April 29, 2026
 
 
 *X / TWITTER*
 
 
-*Swyx* (swyx on X) | AI builder at Cognition, Temporal, AI dot Engineer, Latent Space Pod
+*Vercel CEO Guillermo Rauch (rauchg on X)*
 
-Something is in the works between Swyx and collaborator hhua_ — he's keeping details vague but told followers to keep their calendars open after ICML in Seoul. He also amplified the "code is not cheap" argument, nodding to an engineer making the case that AI-generated code carries real downstream costs that get underestimated.
-- <https://x.com/swyx/status/2048126046487322835|Post: something cooking after ICML>
-- <https://x.com/swyx/status/2048125100437000512|Post: code is not cheap>
-
-
-*Peter Yang* (petergyang on X) | Practical AI writer, Product at Roblox
-
-Yang captured the generational AI expectation gap in one scene: a 7-year-old using Codex got genuinely bored because it couldn't instantly build a pet dragon raising game. He's also looking for recommendations for *human-curated* skill repos for design, coding, and product — ones that actually filter the noise rather than dumping 100 unvetted resources on you.
-- <https://x.com/petergyang/status/2048220045726322934|Post: 7-year-old and Codex>
-- <https://x.com/petergyang/status/2048190683782201767|Post: human-curated skill repos>
+Rauch made a sweeping claim: coding agents will be the foundation of all superintelligence. His reasoning is that coding ability is effectively indistinguishable from "proficiency with computers" — a coding agent that masters bash, filesystems, and programs can also examine and mutate itself. The Feynman line captures it best: "What I cannot create, I cannot understand." Coding fluency has given models a deeper grasp of all computer and knowledge work than any other single capability.
+- https://x.com/rauchg/status/2048523195305902341
 
 
-*Nan Yu* (thenanyu on X) | Head of Product at Linear
+*Box CEO Aaron Levie (levie on X)*
 
-A sharp take on AI adoption timing: the bleeding edge is a trap — you'll be constantly relearning as best practices churn. The sweet spot is landing "a couple steps behind" — tools that are relatively new but have already survived the initial volatility.
-- <https://x.com/thenanyu/status/2048172709075402787|Post: sweet spot in adoption>
+Levie diagnosed an AI-specific version of Gell-Mann Amnesia: people who use AI in their own work clearly see every "last mile" step required to make it useful — data access, context curation, output review, process integration — but when they look at someone else's job, they assume AI will automate it entirely. He argues this is strong reason to be skeptical of sweeping job-loss theories; automating individual tasks is very different from doing the whole job.
+- https://x.com/levie/status/2048576989930619185
 
-
-*Amjad Masad* (amasad on X) | CEO of Replit
-
-Masad offered a punchy era-by-era prediction: after internet (2000s), software (2010s), and AI (2020s) defining each era's must-have category, he says 2025+ will make every company a cybersecurity company.
-- <https://x.com/amasad/status/2048265772775162078|Post: every company is a cybersecurity company>
+In a second post, Levie identified two subtle forces driving the AI-era "overwork" feeling. First, leverage on incremental effort has spiked so sharply that idle time or misdirection now feels viscerally wasteful — like a manager watching their team spin. Second, it's now so easy to start projects that many balloon past expected scope: "I regularly start a project at 9PM that I think will be quick, and find myself at midnight still completing the work." He predicts this low-barrier experimentation will ultimately create jobs as successful experiments get promoted to production processes.
+- https://x.com/levie/status/2048537503972684252
 
 
-*Aaron Levie* (levie on X) | CEO of Box
+*YC President & CEO Garry Tan (garrytan on X)*
 
-Levie made a strong case that AI has collapsed the experience requirement gap — ambitious employees at any level can now accomplish what previously required years of seniority. His call to companies: find these high-leverage people (they'll "seem strange and from the future") and put them in key positions before someone else does.
-- <https://x.com/levie/status/2048223146063609965|Post: AI leverage for ambitious people>
+Tan shared his three-file framework for building a truly articulate personal AI agent. *SOUL.md* captures who the agent _is_ — voice, values, operating principles, what good and bad output looks like. Not a system prompt; a constitution. *USER.md* is a deep model of the user (~4,000 words) covering how their mind works, strengths, blind spots, and what they care about. *AGENTS.md* is the operational playbook. The core lesson: "Generic instructions → generic output. If you write 'be helpful and concise' you get ChatGPT. If you write 'speak like a peer with taste, one sentence when one sentence works, uncomfortable truths welcome if actually true, language with voltage' — you get something alive."
+- https://x.com/garrytan/status/2048669695344046090
 
-
-*Garry Tan* (garrytan on X) | President & CEO of YCombinator
-
-Tan shipped two tools in quick succession. GBrain v0.22 is out — fixes to search and retrieval, plus a new eval system now split into a separate repo to reduce checkout bloat. He also demoed GStack Browser, which lets you control your browser side-by-side with Claude Code via the /open-gstack-browser skill. Install it free directly in Claude Code.
-- <https://x.com/garrytan/status/2048290087318773807|Post: GBrain v0.22>
-- <https://x.com/garrytan/status/2048278995121094868|Post: GStack Browser demo>
-- <https://x.com/garrytan/status/2048279121034101147|Post: GStack install instructions>
+He also noted a detail worth stealing: his agent (OpenClaw) knows his full schedule and health goals and refuses to respond after 12:30am.
+- https://x.com/garrytan/status/2048667055424249864
 
 
-*Zara Zhang* (zarazhangrui on X) | Builder
+*OpenAI CEO Sam Altman (sama on X)*
 
-Zhang pushed back on what "doing the work" actually means: when she sits down to type, 80% of the writing is already done in her head. The same principle applies across disciplines — building product isn't writing PRDs, engineering isn't writing code, designing isn't making mockups.
-- <https://x.com/zarazhangrui/status/2048101948826751429|Post: writing is thinking, not typing>
-
-
-*Nikunj Kothari* (nikunj on X) | Partner at FPV Ventures
-
-Kothari reflected on what most writing gets wrong: brevity and clarity. The best writing communicates the crux cleanly and leaves threads for the reader to pull — without forcing anyone to wade through muddy thinking first.
-- <https://x.com/nikunj/status/2048056524845482131|Post: brevity and clarity in writing>
+Altman expressed genuine delight over builder reception to "5.5": "there is almost nothing that feels more gratifying to me than builders saying they find our tools useful." He also shared OpenAI's updated Principles (Democratization, Empowerment, Universal Prosperity, Resilience, Adaptability) with a link to the full document. Most provocatively, he floated a product vision: it feels like a good time to seriously rethink how operating systems and user interfaces are designed — and the internet needs a protocol that is "equally usable by people and agents."
+- https://x.com/sama/status/2048554097985593849
+- https://x.com/sama/status/2048552677433643427
+- https://x.com/sama/status/2048428561481265539
 
 
-*Peter Steinberger* (steipete on X) | OpenClaw + OpenAI
+*Peter Yang (petergyang on X), product lead at Roblox and AI newsletter writer*
 
-Two releases in one day. *Summarize 📝 0.14.0* adds GPT-5.5 Fast mode via `--fast`, Reddit thread extraction in the browser extension, and local PDF support via `--extract`. *CodexBar 🎚️ 0.23* adds Mistral support, Claude Designs/Daily Routines usage tracking, Cursor Extra usage, GPT-5.5 pricing, and reliability fixes. Meanwhile, GitHub's servers apparently felt the heat from the OpenClaw community.
-- <https://x.com/steipete/status/2048275589224628677|Post: Summarize 0.14.0>
-- <https://x.com/steipete/status/2048252455817785357|Post: CodexBar 0.23>
-- <https://x.com/steipete/status/2048185940267380815|Post: GitHub under load>
-
-
-*Dan Shipper* (danshipper on X) | CEO of Every
-
-A single sharp observation: "what we observe is never the model itself, only the model exposed to our method of questioning." A useful corrective for anyone drawing strong conclusions from AI benchmarks or intuitions about model behavior.
-- <https://x.com/danshipper/status/2048026505461080076|Post: on observing models>
+Yang spent the weekend improving his mobile fitness app and building an MCP server for it — so he can now query his latest workout stats and push workout updates directly through Claude, Codex, or any compatible tool. He also flagged a product gap at Google Photos: despite syncing his iPhone library to the service, there is no way to prompt Gemini to "create a highlight reel of me with my daughter growing up" — calling it a missed opportunity.
+- https://x.com/petergyang/status/2048611053333041158
+- https://x.com/petergyang/status/2048603978070712757
 
 
-*Sam Altman* (sama on X) | OpenAI
+*Peter Steinberger (steipete on X), creator of OpenClaw*
 
-Altman posted a brief but high-engagement thread: "we still get looksmaxxed on frontend a little but we IQmog hard now" — signaling confidence in OpenAI's recent reasoning gains — followed immediately by "and we will fix the former," hinting that UI/UX improvements are coming. He also shared genuine surprise at the pace AI can generate code now.
-- <https://x.com/sama/status/2048160404376105179|Post: IQmog hard now>
-- <https://x.com/sama/status/2048160448340767038|Post: and we will fix the former>
-- <https://x.com/sama/status/2048165186482389253|Post: how can they write code so fast>
+A dense shipping week. Steinberger released wacrawl 0.2.0 with encrypted Git backup/restore for WhatsApp Desktop archives — `wacrawl backup push` writes age-encrypted shards to GitHub; `backup pull` decrypts, verifies, and restores locally.
+- https://x.com/steipete/status/2048660875007914176
+
+He also built birdclaw, a local tweet archive tool that imports your X archive, backs it up to GitHub, and runs daily jobs to pull X bookmarks (which the API doesn't fully expose).
+- https://x.com/steipete/status/2048626844694421842
+
+On infrastructure: after being CPU-constrained on OpenClaw development, he switched local test runs to Blacksmith (useblacksmith), spinning up to 32vCPU instances to rip through the full test suite.
+- https://x.com/steipete/status/2048630704972443918
+
+
+*Dan Shipper (danshipper on X), CEO of Every*
+
+Posted a lighthearted meme about his AI agent going full theatrical in response to a basic question.
+- https://x.com/danshipper/status/2048379297727938991
+
+
+*Aditya Agarwal (adityaag on X), General Partner at South Park Commons*
+
+Noted a milestone in human performance: not just one but two people broke the 2-hour marathon mark in the same event — the first time two humans had ever done it.
+- https://x.com/adityaag/status/2048534774776746102
+
+
+*OFFICIAL BLOGS*
+
+
+*Anthropic Engineering — <https://www.anthropic.com/engineering/claude-code-auto-mode|Claude Code auto mode: a safer way to skip permissions>*
+
+Anthropic Engineering introduced *auto mode* for Claude Code — a middle path between manually approving every action and the `--dangerously-skip-permissions` flag that disables all guardrails. The driving observation: users already accept 93% of manual prompts, so approval fatigue is real, but blanket bypass leaves no protection.
+
+Auto mode delegates approvals to model-based classifiers operating at two layers:
+
+- *Input layer:* A prompt-injection probe scans tool outputs (file reads, web fetches, shell results) before they reach the agent's context. When content looks like a hijacking attempt, it injects a warning alongside the result.
+- *Output layer:* A two-stage transcript classifier evaluates each tool call before execution. Stage 1 is a fast single-token (yes/no) filter tuned to err toward blocking — 8.5% false positive rate on real traffic, 6.6% false negative rate. Stage 2 runs chain-of-thought reasoning only on what Stage 1 flags, cutting false positives down to 0.4%.
+
+A key design choice: the classifier is deliberately "reasoning-blind" — it strips out all assistant text and tool results, seeing only user messages and bare tool call commands. This prevents the agent from talking the classifier into approving a dangerous action via persuasive rationalizations.
+
+The honest performance number: *17% false-negative rate on real overeager actions* — cases where the agent attempted something beyond what the user actually authorized. Most misses happen when the classifier finds "approval-shaped evidence" in the session but fails to check whether that consent actually covers the blast radius of the specific action.
+
+The post is explicit about scope: auto mode is not a drop-in replacement for careful human review on high-stakes infrastructure. It is designed for users already running `--dangerously-skip-permissions`, or those fatigued by constant prompts on routine coding tasks.
 
 
 *PODCASTS*
 
 
-*No Priors — Scaling Global Organizations in the Age of AI with ServiceNow CEO Bill McDermott*
+*AI & I by Every — "The AI Model Built for What LLMs Can't Do"*
 
-_The Takeaway:_ Replacing an enterprise workflow platform with a language model costs 10x more — and businesses will forgive a person's mistakes before they ever forgive software's.
+_The Takeaway:_ Energy-based models (EBMs) are architecturally incapable of hallucinating in the way LLMs do — not because they are smarter, but because they never play a token-by-token guessing game in the first place.
 
-ServiceNow CEO Bill McDermott takes on the "SaaSpocalypse" narrative — the theory that LLMs will eat enterprise SaaS — and says the math doesn't hold up. For a single application, rebuilding on a language model costs roughly 10x more once you add GPU infrastructure, token costs, and the productivity lost from what the platform was already doing for you. His cleanest framing: _"AI thinks, but workflow acts."_ Language models generate guidance; workflow platforms close cases — crossing HR, legal, finance, and compliance in a single automated transaction.
+Eve, founder and CEO of Logical Intelligence, builds what she calls Energy-Based Reasoning Models (EBRMs) with latent variables — internally nicknamed Kona. Her core argument: LLMs are autoregressive, meaning they navigate every problem one token at a time with no ability to backtrack. She uses a vivid analogy: an LLM navigating a map of San Francisco has tunnel vision, forced to choose one direction at a time, unable to reverse when it spots a hole in the road ahead. An EBM sees the whole energy landscape at once — all probable states of a system — and picks the best path.
 
-McDermott traces his operating philosophy to running a Long Island deli at 16, bought for $7,000 on a handshake note. Five hundred customers a day gave him a read on emotional intelligence he still draws on: know your customer, give them what they want the way they want it, and make them feel treated with dignity.
+The practical gap this targets: mission-critical domains (chip design, code verification, drug discovery, energy grid management, financial data analysis) where LLM hallucination rates are unacceptable. "Imagine there's AI driving a plane and someone says 20% of the time the next token won't match and it'll go down — how would you feel about it?"
 
-On the enterprise AI landscape: only 11% of companies have moved past the experimentation phase into actually building agentic businesses (citing Brazil market data from a recent CEO gathering). He attributes part of the current headcount pressure to COVID-era over-hiring via Zoom — people who were never properly evaluated in person. AI is now providing the business case to get leaner. His estimate: 2.2 billion AI agents will enter the workforce within the next few years.
+What makes EBMs technically different: there are no tokens. The model maps data directly to an energy landscape (high energy = unlikely states, low energy = probable states). Latent variables let the model store its "understanding" of the data — underlying rules and relationships — not just surface patterns. The model is also inspectable in real time during training, unlike LLMs which are black boxes until training completes.
 
-On the pace of change: _"It is fast, but it'll never move this slow again."_ His advice to leaders who are afraid: don't look for the escape hatch. This is the moment real leaders are made.
+Her go-to-market approach is deliberately non-disruptive: EBMs are compatible with transformers and can layer underneath existing LLM investments, handling spatial reasoning and verification tasks that LLMs hand off poorly, while the LLM keeps handling language.
 
-https://www.youtube.com/watch?v=tNNFJa5pUEg
+"When you drive a car, when you walk around your house — how much language do you actually use? Are you trying to predict the next word as you navigate yourself around the house?"
+
+https://www.youtube.com/watch?v=Q-i8ZSUCtIc
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
