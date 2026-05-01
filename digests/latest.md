@@ -1,109 +1,104 @@
-AI Builders Digest — April 29, 2026
+*AI Builders Digest — May 1, 2026*
 
 
 *X / TWITTER*
 
 
-*Vercel CEO Guillermo Rauch (rauchg on X)*
+*Claude — Anthropic's official AI account*
 
-Rauch made a sweeping claim: coding agents will be the foundation of all superintelligence. His reasoning is that coding ability is effectively indistinguishable from "proficiency with computers" — a coding agent that masters bash, filesystems, and programs can also examine and mutate itself. The Feynman line captures it best: "What I cannot create, I cannot understand." Coding fluency has given models a deeper grasp of all computer and knowledge work than any other single capability.
-- https://x.com/rauchg/status/2048523195305902341
+Big product news: Claude launched a wave of connectors for creative professionals. The Blender connector lets you debug scenes, build new tools, or batch-apply changes across every object directly from Claude. The Autodesk Fusion connector enables creating and modifying 3D models through natural conversation. Additional connectors also launched today: Adobe Creative Cloud, Ableton, Splice, Canva Affinity, SketchUp, and Resolume. Anthropic also joined the Blender Development Fund as a patron to support open-source 3D development.
 
-
-*Box CEO Aaron Levie (levie on X)*
-
-Levie diagnosed an AI-specific version of Gell-Mann Amnesia: people who use AI in their own work clearly see every "last mile" step required to make it useful — data access, context curation, output review, process integration — but when they look at someone else's job, they assume AI will automate it entirely. He argues this is strong reason to be skeptical of sweeping job-loss theories; automating individual tasks is very different from doing the whole job.
-- https://x.com/levie/status/2048576989930619185
-
-In a second post, Levie identified two subtle forces driving the AI-era "overwork" feeling. First, leverage on incremental effort has spiked so sharply that idle time or misdirection now feels viscerally wasteful — like a manager watching their team spin. Second, it's now so easy to start projects that many balloon past expected scope: "I regularly start a project at 9PM that I think will be quick, and find myself at midnight still completing the work." He predicts this low-barrier experimentation will ultimately create jobs as successful experiments get promoted to production processes.
-- https://x.com/levie/status/2048537503972684252
+- <https://x.com/claudeai/status/2049143438281445811|Blender connector>
+- <https://x.com/claudeai/status/2049143440508616863|Autodesk Fusion connector>
+- <https://x.com/claudeai/status/2049143442601546054|More connectors launched today>
 
 
-*YC President & CEO Garry Tan (garrytan on X)*
+*Thariq — Claude Code engineer at Anthropic*
 
-Tan shared his three-file framework for building a truly articulate personal AI agent. *SOUL.md* captures who the agent _is_ — voice, values, operating principles, what good and bad output looks like. Not a system prompt; a constitution. *USER.md* is a deep model of the user (~4,000 words) covering how their mind works, strengths, blind spots, and what they care about. *AGENTS.md* is the operational playbook. The core lesson: "Generic instructions → generic output. If you write 'be helpful and concise' you get ChatGPT. If you write 'speak like a peer with taste, one sentence when one sentence works, uncomfortable truths welcome if actually true, language with voltage' — you get something alive."
-- https://x.com/garrytan/status/2048669695344046090
+The Claude Code team is actively hunting down long-standing bugs. Thariq confirmed they found his "white whale": a bug that caused apparent hangs during large file writes. The team is also working on making a no-flicker renderer polished enough to ship as the default. He's actively soliciting more white-whale bug reports from users.
 
-He also noted a detail worth stealing: his agent (OpenClaw) knows his full schedule and health goals and refuses to respond after 12:30am.
-- https://x.com/garrytan/status/2048667055424249864
-
-
-*OpenAI CEO Sam Altman (sama on X)*
-
-Altman expressed genuine delight over builder reception to "5.5": "there is almost nothing that feels more gratifying to me than builders saying they find our tools useful." He also shared OpenAI's updated Principles (Democratization, Empowerment, Universal Prosperity, Resilience, Adaptability) with a link to the full document. Most provocatively, he floated a product vision: it feels like a good time to seriously rethink how operating systems and user interfaces are designed — and the internet needs a protocol that is "equally usable by people and agents."
-- https://x.com/sama/status/2048554097985593849
-- https://x.com/sama/status/2048552677433643427
-- https://x.com/sama/status/2048428561481265539
+- <https://x.com/trq212/status/2049234228290961690|Hunting down the most annoying bugs>
+- <https://x.com/trq212/status/2049234229926695188|No-flicker renderer update>
+- <https://x.com/trq212/status/2049252080892973563|White whale file-write hang found>
 
 
-*Peter Yang (petergyang on X), product lead at Roblox and AI newsletter writer*
+*Peter Steinberger — OpenClaw builder*
 
-Yang spent the weekend improving his mobile fitness app and building an MCP server for it — so he can now query his latest workout stats and push workout updates directly through Claude, Codex, or any compatible tool. He also flagged a product gap at Google Photos: despite syncing his iPhone library to the service, there is no way to prompt Gemini to "create a highlight reel of me with my daughter growing up" — calling it a missed opportunity.
-- https://x.com/petergyang/status/2048611053333041158
-- https://x.com/petergyang/status/2048603978070712757
+Peter built a continuous agent-review loop on top of his repo: Codex now runs on every commit that lands on main, scanning for regressions and security issues. It found one of his own bugs within 10 minutes of going live. He extended this into a full pipeline — if Codex finds an issue, a new instance spins up to open a fix PR, then a review agent checks that fix, iterating up to 5 loops.
 
-
-*Peter Steinberger (steipete on X), creator of OpenClaw*
-
-A dense shipping week. Steinberger released wacrawl 0.2.0 with encrypted Git backup/restore for WhatsApp Desktop archives — `wacrawl backup push` writes age-encrypted shards to GitHub; `backup pull` decrypts, verifies, and restores locally.
-- https://x.com/steipete/status/2048660875007914176
-
-He also built birdclaw, a local tweet archive tool that imports your X archive, backs it up to GitHub, and runs daily jobs to pull X bookmarks (which the API doesn't fully expose).
-- https://x.com/steipete/status/2048626844694421842
-
-On infrastructure: after being CPU-constrained on OpenClaw development, he switched local test runs to Blacksmith (useblacksmith), spinning up to 32vCPU instances to rip through the full test suite.
-- https://x.com/steipete/status/2048630704972443918
+- <https://x.com/steipete/status/2049290741013262522|Codex on every commit — found a bug in 10 min>
+- <https://x.com/steipete/status/2049356949523730699|Full review-and-fix agent loop>
 
 
-*Dan Shipper (danshipper on X), CEO of Every*
+*Dan Shipper — CEO of Every*
 
-Posted a lighthearted meme about his AI agent going full theatrical in response to a basic question.
-- https://x.com/danshipper/status/2048379297727938991
+Dan is rethinking app design for the agentic era, coining the concept of _agent-native_ apps — software designed to be used inside an agent's in-app browser, where both human and agent share full context and can see what the other is doing ("Codex-native", "Cursor-native"). In practice: he browses PostHog inside Codex, where Codex writes queries, sees results, kicks off PRs, and runs production DB requests — all without leaving the coding environment. "A browser inside your desktop coding orchestration tool > an agent in your browser."
 
-
-*Aditya Agarwal (adityaag on X), General Partner at South Park Commons*
-
-Noted a milestone in human performance: not just one but two people broke the 2-hour marathon mark in the same event — the first time two humans had ever done it.
-- https://x.com/adityaag/status/2048534774776746102
+- <https://x.com/danshipper/status/2049223933766041688|Coining "agent-native" apps>
+- <https://x.com/danshipper/status/2049236793761976357|Using PostHog inside Codex>
 
 
-*OFFICIAL BLOGS*
+*Aaron Levie — CEO of Box*
+
+Two substantive takes on the future of software work. First, he warns that while agentic coding is great for developers, IT staff, and domain experts, knowledge workers who casually build with AI will face an unfamiliar tax: upgrades, maintenance, and security patches they're not prepared for. His net call: "100X more software and vastly more software developers." Second, he pushes back on software-job doom narratives — agents are the single largest form of leverage for technical people in history, and every agent still needs a human to orchestrate its work and get output into a useful form.
+
+- <https://x.com/levie/status/2049163935182733396|Agentic coding boon and caveat>
+- <https://x.com/levie/status/2049333853777764495|Software jobs aren't going away>
 
 
-*Anthropic Engineering — <https://www.anthropic.com/engineering/claude-code-auto-mode|Claude Code auto mode: a safer way to skip permissions>*
+*Amjad Masad — CEO of Replit*
 
-Anthropic Engineering introduced *auto mode* for Claude Code — a middle path between manually approving every action and the `--dangerously-skip-permissions` flag that disables all guardrails. The driving observation: users already accept 93% of manual prompts, so approval fatigue is real, but blanket bypass leaves no protection.
+Three takes. He's now a genuine fan of AI-generated slides — the process used to frustrate him when paying humans to do it. He also weighed in on GitHub's growth challenges: free services will become untenable with "human-level bots," and micro-payments (even cents per git push, potentially Bitcoin-powered to avoid KYC) could make the model sustainable again. He also expressed public support for a major education innovator reinventing the field.
 
-Auto mode delegates approvals to model-based classifiers operating at two layers:
-
-- *Input layer:* A prompt-injection probe scans tool outputs (file reads, web fetches, shell results) before they reach the agent's context. When content looks like a hijacking attempt, it injects a warning alongside the result.
-- *Output layer:* A two-stage transcript classifier evaluates each tool call before execution. Stage 1 is a fast single-token (yes/no) filter tuned to err toward blocking — 8.5% false positive rate on real traffic, 6.6% false negative rate. Stage 2 runs chain-of-thought reasoning only on what Stage 1 flags, cutting false positives down to 0.4%.
-
-A key design choice: the classifier is deliberately "reasoning-blind" — it strips out all assistant text and tool results, seeing only user messages and bare tool call commands. This prevents the agent from talking the classifier into approving a dangerous action via persuasive rationalizations.
-
-The honest performance number: *17% false-negative rate on real overeager actions* — cases where the agent attempted something beyond what the user actually authorized. Most misses happen when the classifier finds "approval-shaped evidence" in the session but fails to check whether that consent actually covers the blast radius of the specific action.
-
-The post is explicit about scope: auto mode is not a drop-in replacement for careful human review on high-stakes infrastructure. It is designed for users already running `--dangerously-skip-permissions`, or those fatigued by constant prompts on routine coding tasks.
+- <https://x.com/amasad/status/2049168449709170874|AI-generated slides are now enjoyable>
+- <https://x.com/amasad/status/2049242460078100638|GitHub, bots, and micro-payments>
+- <https://x.com/amasad/status/2049245424624820412|Supporting the education GOAT>
 
 
-*PODCASTS*
+*Guillermo Rauch — CEO of Vercel*
+
+Vercel Labs is hiring. Rauch describes the mission as building devtools for the AI era — tools no longer just for humans, but for agents. The team has already shipped `agent-browser`, `portless`, `skills`, `chat`, `just-bash`, and `json-render`, accumulating 22.8M+ downloads combined. He calls it a "dream job" and has DMs open.
+
+- <https://x.com/rauchg/status/2049216048831025232|Vercel Labs is growing>
 
 
-*AI & I by Every — "The AI Model Built for What LLMs Can't Do"*
+*Peter Yang — Product at Roblox, AI tutorials newsletter (140K+ readers)*
 
-_The Takeaway:_ Energy-based models (EBMs) are architecturally incapable of hallucinating in the way LLMs do — not because they are smarter, but because they never play a token-by-token guessing game in the first place.
+Peter offered an intriguing benchmark for measuring AI model capability: what era of video games can a model one-shot a single level for? Atari → NES → SNES → PlayStation → PS5. His estimate: "we're still in the NES era." He also praised a personal-agent trick from Josh Pigford that he's adapting for his own OpenClaw project, and gave a shout-out to solo AI builders: "The world is their playground now."
 
-Eve, founder and CEO of Logical Intelligence, builds what she calls Energy-Based Reasoning Models (EBRMs) with latent variables — internally nicknamed Kona. Her core argument: LLMs are autoregressive, meaning they navigate every problem one token at a time with no ability to backtrack. She uses a vivid analogy: an LLM navigating a map of San Francisco has tunnel vision, forced to choose one direction at a time, unable to reverse when it spots a hole in the road ahead. An EBM sees the whole energy landscape at once — all probable states of a system — and picks the best path.
+- <https://x.com/petergyang/status/2049232534064734331|AI capability benchmarked by game eras>
+- <https://x.com/petergyang/status/2049345724559847585|Solo AI builders>
+- <https://x.com/petergyang/status/2049347897310003443|Personal agent trick from Josh Pigford>
 
-The practical gap this targets: mission-critical domains (chip design, code verification, drug discovery, energy grid management, financial data analysis) where LLM hallucination rates are unacceptable. "Imagine there's AI driving a plane and someone says 20% of the time the next token won't match and it'll go down — how would you feel about it?"
 
-What makes EBMs technically different: there are no tokens. The model maps data directly to an energy landscape (high energy = unlikely states, low energy = probable states). Latent variables let the model store its "understanding" of the data — underlying rules and relationships — not just surface patterns. The model is also inspectable in real time during training, unlike LLMs which are black boxes until training completes.
+*Zara Zhang — Independent builder*
 
-Her go-to-market approach is deliberately non-disruptive: EBMs are compatible with transformers and can layer underneath existing LLM investments, handling spatial reasoning and verification tasks that LLMs hand off poorly, while the LLM keeps handling language.
+Two creative approaches to AI-assisted building. First, she recommends generating SVGs instead of raster images for AI visuals — vector illustrations blend seamlessly into design systems. She's using the QuiverAI API inside AnyGen.io's Frontend Slides feature. Second, she's shifted her publishing model: rather than shipping web apps with GUIs, she now releases GitHub repos and lets people's own agents build customized UIs — riffing on Karpathy's "idea file" concept.
 
-"When you drive a car, when you walk around your house — how much language do you actually use? Are you trying to predict the next word as you navigate yourself around the house?"
+- <https://x.com/zarazhangrui/status/2049258231042805806|Generate SVGs, not images>
+- <https://x.com/zarazhangrui/status/2049186121314415054|Ship repos, not apps>
 
-https://www.youtube.com/watch?v=Q-i8ZSUCtIc
+
+*Garry Tan — President & CEO of Y Combinator*
+
+Marked the 10-year anniversary of AlphaGo. On the agent saturation debate: "If you're sick of hearing about agents, 2026 is going to be the eternal September for you."
+
+- <https://x.com/garrytan/status/2049297833594101943|10 years since AlphaGo>
+- <https://x.com/garrytan/status/2049351894007710031|2026: eternal September for agents>
+
+
+*Sam Altman — OpenAI*
+
+Cryptic tease of upcoming updates: "at this point ajambrosino is mogmogging — enjoy the next few updates."
+
+- <https://x.com/sama/status/2049315574120055054|Teasing next updates>
+
+
+*Nan Yu — Head of Product at Linear*
+
+Brief commentary on compute abundance and what it unlocks.
+
+- <https://x.com/thenanyu/status/2049075513444999515|The luxury of excess compute>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
