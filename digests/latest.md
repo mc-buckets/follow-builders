@@ -1,131 +1,100 @@
-AI Builders Digest — May 2, 2026
+AI Builders Digest — May 3, 2026
 
 
 *X / TWITTER*
 
 
-*Swyx — AI engineer, Cognition and Latent Space podcast*
+*Swyx* (AI engineer; affiliations include Cognition, Temporal, and the Latent Space podcast)
+Pitched a Chrome extension idea for image input boxes: let users generate simple text or draw with tldraw — no AI required — then optionally use those inputs to generate an image at the right proportions. He also fired off a quick observation in a reply: OpenAI Codex makes a better Slack search tool than Slack's own AI search feature.
+- <https://x.com/swyx/status/2050460622706626740|Chrome extension pitch for image inputs>
+- <https://x.com/swyx/status/2050432398161264664|Codex beats Slack AI search>
 
-Swyx shared an epic thread about a months-long project to build a "vintage" language model trained exclusively on pre-1931 public domain text — old books, newspapers, patents, scientific journals, case law. The goal: a model free of modern AI slop that could channel how people a century ago thought and wrote. The team assembled ML veterans (including the original GPT-1/2 researcher), trained a custom OCR model for old documents, synthesized RLHF pairs from etiquette manuals and cookbooks, and built an anachronism classifier to keep future knowledge out. The result checked out against benchmarks — and turned out to be, in Swyx's words, "the most confidently racist model ever released by humankind." A sharp cautionary tale about what pre-modern text actually contains.
+*Peter Yang* (Product at Roblox; practical AI newsletter, 140K+ readers)
+Found his first broken Codex feature. Also bought a $3,000 MacBook Pro "to run local models" — his own emoji suggests the justification was already suspect. Also shared the feeling of a genuine Codex breakthrough.
+- <https://x.com/petergyang/status/2050406287008268450|First broken Codex feature>
+- <https://x.com/petergyang/status/2050394924395434233|MacBook Pro for local models>
+- <https://x.com/petergyang/status/2050378287348899962|Codex breakthrough>
 
-- <https://x.com/swyx/status/2049652947408372187|The vintage model project (and what went wrong)>
+*Replit CEO Amjad Masad*
+Celebrated Replit's 10th birthday by making the platform totally free for 24 hours starting 5am PT — tracing the founding mission to make coding accessible for all the way back to 2011.
+- <https://x.com/amasad/status/2050479551537619413|Replit turns 10>
 
-He also nudged builders to experiment more with base model completions — not enough people are doing weird finetunes and novel usages of the base models that actually exist today.
+*Box CEO Aaron Levie*
+Two sharp enterprise takes. First: Atlassian's strong results shouldn't surprise anyone. When there are 100x more agents than people, the systems those agents rely on — security, compliance, workflows, data storage — grow with them. If the world generates more code, reviews more contracts, and processes more invoices, the underlying systems of record only go up in value. Second: enterprises outside Silicon Valley aren't trying to replace workers. They're trying to break bottlenecks — ship more product, speed up onboarding, better serve customers. AI is also bringing technical capability to companies that could never afford it before. Where cost-cutting does happen, it typically funds another area of growth.
+- <https://x.com/levie/status/2050295657836277764|On agents and the future of software>
+- <https://x.com/levie/status/2050240083325030404|Enterprises want augmentation, not replacement>
 
-- <https://x.com/swyx/status/2049643473339601388|In praise of base model experimentation>
+*YC President and CEO Garry Tan*
+Pushed back hard on proposed California asset seizure measures, warning they'd drive out billionaires and shift billions in lost tax revenue onto the middle class.
+- <https://x.com/garrytan/status/2050365216421241152|Against California asset seizure>
 
+*Zara Zhang* (builder)
+Shared a reframe for working with coding agents: she treats them as cofounders, not employees. "I don't just give orders. I present problems, describe the situation, and ask for their opinion." The implication: agents do better work when you give them context and ask for judgment, not just instructions.
+- <https://x.com/zarazhangrui/status/2050326543797469415|Agents as cofounders, not employees>
 
-*Josh Woodward — VP at Google Labs, Gemini App, and Google AI Studio*
+*Nikunj Kothari* (Partner, FPV Ventures)
+Built a house-hunting report tool on Railway, Conductor Build, and Claude — and hit $36,500 in ARR. Each AI-generated report costs $8–9 to produce, so he's selling mostly at cost. Actively looking for house hunters to try it in exchange for feedback.
+- <https://x.com/nikunj/status/2050407946438467878|$36,500 in ARR>
+- <https://x.com/nikunj/status/2050353986742698400|Built with Railway, Conductor, and Claude>
+- <https://x.com/nikunj/status/2050355231486316818|Promo codes for feedback>
 
-Gemini can now generate and export files directly — tell it what you want and the format, and it does the work. Now supporting Google Docs, Word (.docx), PDFs, Google Sheets, Excel (.xlsx), CSV, Google Slides, Markdown, LaTeX, TXT, and RTF. Available globally on all surfaces now.
+*Peter Steinberger* (OpenClaw + OpenAI)
+Brief but clear endorsement of Codex's new /goal feature: "The new /goal feature in codex slaps."
+- <https://x.com/steipete/status/2050275598178586921|On Codex /goal>
 
-- <https://x.com/joshwoodward/status/2049524400131838436|Gemini file generation launches globally>
+*Dan Shipper* (CEO, Every)
+A sharp asymmetry observation: "models know more than any individual human. but any individual human learns faster than models do." The implication is that human learning velocity — not current knowledge — is the durable edge against AI.
+- <https://x.com/danshipper/status/2050304359024759242|On the human advantage over models>
 
+*Aditya Agarwal* (General Partner, South Park Commons; ex-CTO, Dropbox)
+Clean founder maxim: "The best way to kill your company? Focus on everything except the product."
+- <https://x.com/adityaag/status/2050229509840900434|On product focus>
 
-*Kevin Weil — VP of Science at OpenAI*
+*Sam Altman* (CEO, OpenAI)
+Plans to host bigger events for future releases after more people than expected wanted to attend a recent one.
+- <https://x.com/sama/status/2050427808456077541|On future release parties>
 
-A clean reframe on AI and radiology: the radiologist's job isn't to read x-rays — it's to cure people. If AI speeds up the interpretation step, radiologists can see and help more patients. A concise argument for why AI assistance expands professional capacity.
-
-- <https://x.com/kevinweil/status/2049584046213378229|On radiologists and AI>
-
-
-*Nan Yu — Head of Product at Linear*
-
-Teased that Linear is "reinventing design to eng handoff from first principles." No details yet, but notable given how much friction lives in that handoff.
-
-- <https://x.com/thenanyu/status/2049593061043265940|Reinventing design-to-eng handoff>
-
-
-*Amjad Masad — CEO of Replit*
-
-Masad reflected on Ron Conway's approach to Silicon Valley — turning generosity, warmth, and showing up for founders into a genuine winning strategy, not just a reputation play.
-
-- <https://x.com/amasad/status/2049729530059960571|On Ron Conway's way>
-
-Also announced free accounts for teachers and 50% off for students on Replit.
-
-- <https://x.com/amasad/status/2049595212889247994|Free for teachers, half-off for students>
-
-
-*Aaron Levie — CEO of Box*
-
-Levie wrote one of the more concrete takes on what the agent economy actually means inside enterprise: Box is hiring and retraining for a new internal role he's calling "agent engineering." The job is highly technical — building secure, governed agents that wire up internal systems (Box, Salesforce, Workday, etc.) and codify workflows as skills. Think of it as an internal field delivery engineer, except instead of deploying software, they're deploying agents into business processes. He expects a companion role to emerge on the business side — essentially agent product management for internal operations. Key framing: "It's not about bringing automation to a job, but bringing automation to a process."
-
-- <https://x.com/levie/status/2049714403050918067|The new agent engineering role>
-
-
-*Ryo Lu — Designer at Cursor*
-
-Announced that Cursor now lets you build your own agent systems using the same multi-model harness Cursor uses internally — available both locally and in the cloud.
-
-- <https://x.com/ryolu_/status/2049529609725804575|Build your own agent systems with Cursor>
+*Claude* (Anthropic)
+Code with Claude, Anthropic's developer conference, returns next week — with sessions for builders at every level of experience with Claude Code.
+- <https://x.com/claudeai/status/2050252933866930339|Code with Claude conference>
 
 
-*Garry Tan — President and CEO of Y Combinator*
-
-Tan shared two updates on GBrain, his AI-augmented knowledge system: he completed a full end-to-end test harness for the GBrain install flow on OpenClaw, so the onboarding process is now fully verifiable. He also showed that knowledge graphs in the new version are automatically built from frontmatter attributes — more inference, less manual work.
-
-- <https://x.com/garrytan/status/2049742376307147110|GBrain E2E install harness done>
-- <https://x.com/garrytan/status/2049737217208397925|Graph built from frontmatter attributes>
+*OFFICIAL BLOGS*
 
 
-*Zara Zhang — Builder*
+*Anthropic Engineering — An update on recent Claude Code quality reports*
+A postmortem on three separate issues that degraded Claude Code quality between March and April — all resolved as of April 20 (v2.1.116).
 
-Sharp one-liner worth sitting with: "We should start thinking about the IT/internal tools team as more like 'HR for agents.'" As agentic systems proliferate inside organizations, someone has to manage their onboarding, permissions, performance, and offboarding — and that looks a lot more like HR than traditional IT.
+The three problems: (1) In early March, the default reasoning effort was quietly downgraded from high to medium to reduce latency. Users noticed the intelligence drop, and the change was reverted April 7. (2) On March 26, a caching optimization introduced a bug that stripped Claude's prior reasoning from sessions after they went idle, making it seem forgetful and repetitive. Fixed April 10. (3) On April 16, a system prompt instruction capping response length caused a 3% drop in coding quality across evals — reverted April 20. Because each change hit a different slice of traffic on a different schedule, the combined effect looked like broad, inconsistent degradation.
 
-- <https://x.com/zarazhangrui/status/2049599305825341518|IT team as HR for agents>
+Going forward: Anthropic is adding stricter controls on system prompt changes, broader per-model evals for every prompt change, longer soak periods for intelligence-affecting changes, and usage limit resets for all subscribers. They launched _@ClaudeDevs_ on X for more transparent product communication.
+<https://www.anthropic.com/engineering/april-23-postmortem|Read the full postmortem>
 
+*Claude Blog — New connectors in Claude for everyday life*
+Claude's connector directory has grown to 200+ integrations since launching in July 2025. Today it expands beyond work tools to everyday life apps: AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator. Claude now proactively suggests relevant connectors mid-conversation based on what you're doing. Data from connected apps is not used to train models, no paid placements exist in recommendations, and Claude will ask before taking any action on your behalf (booking, purchasing).
+<https://claude.com/blog/connectors-for-everyday-life|Read the announcement>
 
-*Peter Steinberger — Co-creator of OpenClaw*
-
-Built codex review into clawsweeper — his automated code review tool now uses a system prompt similar to `/review`, with automerge that loops until it stops finding new issues.
-
-- <https://x.com/steipete/status/2049518771023360010|Codex review integrated into clawsweeper>
-
-
-*Aditya Agarwal — General Partner at South Park Commons, former CTO of Dropbox*
-
-Agarwal shared a grounded, contrarian thread on agents after spending serious time with OpenClaw, Hermes, and similar tools. His main observations: most people who rave about these tools haven't actually used them. Agents are developer products today — nowhere near consumer-grade in reliability or simplicity. He wishes agents generated more dynamic, interactive UIs instead of defaulting to chat. His most useful framing: once you understand the core loop of agentic AI (iterative tool calling + code generation), one-off chat prompts start to feel like search queries — "always-on" agents that adapt and maintain state are a fundamentally more compelling paradigm. The UX friction today is real — he compared installing OpenClaw to "running Linux in the early 2000s. You spend a lot of time compiling device drivers, setting up configurations... you feel a real sense of accomplishment from jerry-rigging everything together, but it is a lot of work."
-
-- <https://x.com/adityaag/status/2049530878083379427|Honest observations on agents>
-
-
-*Sam Altman — CEO of OpenAI*
-
-Announced the rollout of GPT-5.5-Cyber, a frontier cybersecurity model, to "critical cyber defenders" in the coming days. OpenAI says it will work with the broader ecosystem and government to define trusted access, with the goal of rapidly securing companies and infrastructure.
-
-- <https://x.com/sama/status/2049712078836170843|GPT-5.5-Cyber rolls out to cyber defenders>
-
-
-*Claude — Anthropic's AI assistant*
-
-Highlighted hackathon winners from a recent event. ARIA (Best Use of Claude Managed Agents) — a maintenance system that reads machine manuals and, when something breaks, generates a work order with the fix that worked last time. Built by Idriss Benguezzou and Adam Hnaien from France.
-
-- <https://x.com/claudeai/status/2049523910173966597|ARIA: managed agents for maintenance>
-
-MaestrIA ("Keep Thinking" Prize) — a home repair tool that photographs damage, diagnoses the problem, prices parts at local stores, and drafts a message to a nearby tradesperson. Built by a carpenter's son from Chile.
-
-- <https://x.com/claudeai/status/2049523908584386582|MaestrIA: home repair diagnosis tool>
+*Claude Blog — Built-in memory for Claude Managed Agents*
+Memory on Claude Managed Agents is now in public beta. Agents learn across sessions using a filesystem-based memory layer — so Claude uses the same bash and code execution capabilities it already has rather than a separate retrieval system. Memories are stored as exportable files with full API access, audit logs, version history, and rollback. Enterprise deployments can scope read-only org-wide stores alongside per-user read/write stores, with multiple concurrent agents. Early results: Rakuten cut first-pass errors by 97%; Wisedocs sped up document verification by 30%.
+<https://claude.com/blog/claude-managed-agents-memory|Read the announcement>
 
 
 *PODCASTS*
 
 
-*AI & I by Every — "How Stripe Is Building for an Agent-native World"*
+*No Priors — Baseten CEO Tuhin Srivastava on the AI Inference Crunch, Custom Models, and Building the Inference Cloud*
 
-_The Takeaway:_ Compute is the new credit card number — and Stripe's view of 2% of global GDP reveals that the agent economy is already reshaping fraud, pricing, and growth in ways most people haven't internalized.
+_The Takeaway:_ The real AI infrastructure play isn't raw compute — it's owning the full loop between inference and post-training, because that loop is what lets companies compound model quality over time.
 
-Emily Glassberg Sands, Head of Data and AI at Stripe, brings a uniquely grounded perspective: Stripe processes transactions for a swath of the global Internet economy, and as agents have proliferated, the patterns are genuinely new.
+Tuhin Srivastava has grown Baseten 30x over the past year, on pace for $1B+ in revenue in 2026. The counterintuitive stat he leads with: 95% of tokens on Baseten run on _custom_ models — not vanilla open source. Enterprises aren't just spinning up Llama. They're post-training on proprietary data and compiling models for specific workloads.
 
-The fraud picture is alarming. Free-trial abuse has quadrupled in six months. For one large AI company, Stripe is now blocking 250,000 fraudulent free trials per week. The root problem: in AI, every prompt and every API call has a real cost attached, making free compute the new customer acquisition cost — and a prime target. About 7% of sign-ups at AI companies on Stripe are multi-account abusers burning free credits and disappearing. "Compute theft is the new payment fraud." Stripe's Radar has responded by moving up-funnel: fraud detection now starts at sign-up, not checkout, and now works across all payment methods and processors, not just Stripe transactions.
+His framework for why the application layer survives: it's not about the model, it's about workflow signal. Companies like Abridge (ambient clinical scribing) have so many steps and user interactions embedded in their product that no frontier lab can replicate that signal. "To the extent that [value] is encoded in workflows, that is where they will be able to develop moat."
 
-The growth data is striking. Top AI companies on Stripe reach $30M ARR in about 18 months — three times faster than the top 100 SaaS companies from 2018. It's scaling faster at every milestone: $1M, $5M, $30M ARR. So far it looks like net new spend rather than cannibalized software budgets.
+On when to actually invest in custom models: "Go find, go prove to yourself with the best in class model that you have something worth optimizing." His frame — "no post training pre product market fit" — is a direct analog to "no hiring before PMF." Don't customize until you've proven the thing works.
 
-The pricing model shift is equally fast. Seat-based SaaS made sense when marginal costs were near zero and users were human. AI companies are now iterating through usage-based billing (tokens, API calls, workflows, outcomes), hybrid subscriptions with overages, and prepaid credits. Stripe's "token billing" product — which prices dynamically to the real-time cost of underlying model tokens — is being used by Lovable, Mesa, and Ship to protect margins as model costs fluctuate.
+Baseten acquired Parzed, a post-training research team that was already a Baseten customer, to close the loop between inference and customization. Their core product thesis: inference generates data, data enables evals, evals drive post-training, better models drive more inference. The goal is making that cycle a continuous process rather than a discrete, one-off project.
 
-The most provocative frame: "Over time, agents will become the predominant actors on the Internet." Stripe is building its entire infrastructure — fraud, identity, billing — around that assumption now.
-
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|AI & I: How Stripe Is Building for an Agent-native World>
+<https://www.youtube.com/watch?v=XAbKflCncDo|Watch on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
