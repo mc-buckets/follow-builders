@@ -1,98 +1,87 @@
-AI Builders Digest — May 5, 2026
+*AI Builders Digest — May 6, 2026*
 
 *X / TWITTER*
 
-*Swyx* (swyx on X) — AI engineer, affiliated with AI Engineer World's Fair, Latent Space Pod, and Cognition
+*Swyx* — AI builder & podcaster (dxtipshq, Cognition, Temporal, AI Dot Engineer, Latent Space)
 
-At AIE Europe, a founder shut down Vibe-kanban live onstage — still at 30,000 MAU — with the project continuing as open source. The brutal lesson: "Everyone who is making money is doing 2 things: selling to enterprise, and reselling tokens. We were doing neither." Swyx called the engineering retrospective from 2021–2025 deeply memorable.
-- https://x.com/swyx/status/2050753293601935777
+Swyx shared a reconstructed WSJ chart comparing OpenAI (~$850B valuation, ~$30B ARR) to Anthropic (~$900B valuation, ~$44B ARR) — noting that Anthropic's revenue may be $8–10B lower under OpenAI's accounting methodology. He also promoted a talk version of a recent piece co-created with steveruizok, and highlighted a popular post featuring DevOps pioneer Patrick Debois as a track keynote he gave a "blank check" to based on early support.
+• <https://x.com/swyx/status/2051440392722391180|OAI vs. Anthropic valuation comparison>
+• <https://x.com/swyx/status/2051329419860758932|Talk version post>
+• <https://x.com/swyx/status/2051329252344369626|Patrick Debois keynote highlight>
 
-*Peter Yang* (petergyang on X) — Product at Roblox, AI newsletter writer for 140K+ readers
+*Peter Yang* — Product at Roblox, AI tutorial creator for 140K+ readers
 
-Peter Yang is using Codex and Claude Code to "marie kondo" his local files and Google Drive — granting these agents full computer access to audit startup apps, clean downloads folders, and restructure Drive, always asking for a plan review before executing. "Note that I always ask it for a plan first. These are semi-dangerous operations so try them at your own risk."
-- https://x.com/petergyang/status/2050623358488997917
+Peter Yang laid out a clean three-wave framing for AI's progression: "Coding is the first frontier. Knowledge work is the second one. Personal agents are the third." He also crowdsourced ideas for getting his 8-year-old started building with agents — something shareable with her class, maybe earning her first dollar online.
+• <https://x.com/petergyang/status/2051508988936937764|Coding → Knowledge → Personal agents>
+• <https://x.com/petergyang/status/2051459299860533483|Getting an 8-year-old to build with agents>
 
-*Amjad Masad* (amasad on X) — CEO of Replit
+*Amjad Masad* — CEO of Replit
 
-Replit CEO Amjad Masad is excited about running 10 parallel agents across 10 projects simultaneously — calling it mind-blowing. He also reflected on how the word "prompt" has taken on entirely new meaning in the AI era while something fundamental about computing has stayed the same.
-- https://x.com/amasad/status/2050793150713864678
-- https://x.com/amasad/status/2050691458920005737
+Replit CEO Amjad Masad shared two user success stories: an entrepreneur who used Replit to find investors and land meetings, and a multi-modal learning platform built for deaf students — which he called "great use of AI for education." Both highlight Replit expanding beyond developer tooling into real-world impact.
+• <https://x.com/amasad/status/2051511694040744139|Replit helps entrepreneur find investors>
+• <https://x.com/amasad/status/2051406536443035922|Multi-modal learning platform for deaf students>
 
-*Aaron Levie* (levie on X) — CEO of Box
+*Guillermo Rauch* — CEO of Vercel
 
-Box CEO Aaron Levie made a forceful contrarian case against the "AI kills engineering jobs" narrative. His thought experiment: a life sciences company that once couldn't compete with tech for engineers now has the same AI output as top tech firms — and their response is to hire _more_ engineers, not fewer, because each is 2–5x more capable. "If you're wondering why new jobs show up because of AI, this is the reason. Any other view of what happens doesn't contemplate the variety of unmet needs there are in the economy."
-- https://x.com/levie/status/2050684160151617603
+Vercel CEO Guillermo Rauch announced `npx deepsec`, an open-source agent orchestrator for deep security reviews. Built for internal use and tested against major OSS projects, it can find critical vulnerabilities in minutes that would take human teams months. It runs thousands of agents scrutinizing a codebase in parallel via Vercel Sandbox. He's offering to sponsor runs for OSS projects — DMs open.
+• <https://x.com/rauchg/status/2051386798899888539|Announcing npx deepsec>
 
-*Garry Tan* (garrytan on X) — President & CEO of Y Combinator
+*Aaron Levie* — CEO of Box
 
-YC's Garry Tan flagged Oakland's governance dysfunction: highest taxes per capita among comparable cities, worst services, with 44% of Measure E revenue pre-committed to pre-approved union raises. On the AI side, he's bullish on using GBrain with OpenClaw's book-mirror skill pack — describing it as "like infinite personal Blinkist."
-- https://x.com/garrytan/status/2050775806574751816
-- https://x.com/garrytan/status/2050763012894834952
+Box CEO Aaron Levie argues that enterprise AI agent deployment is in early innings but about to move fast. With both Anthropic and OpenAI launching enterprise agent initiatives, the real work is just starting: upgrading IT systems, giving agents the right context, redesigning workflows, and managing the human-agent relationship. "While AI models have an incredible amount of capability packed into them, there's no shortcut to getting that intelligence applied to a business process in a stable way." He sees this creating major new job and firm opportunities across the market.
+• <https://x.com/levie/status/2051344780328858040|Enterprise AI agents: early but getting very big fast>
 
-*Nikunj Kothari* (nikunj on X) — Partner at FPV Ventures
+*Garry Tan* — President & CEO of Y Combinator
 
-FPV Ventures partner Nikunj Kothari pushed back hard on a trend he's seeing in VC: funds capping downside instead of maximizing upside, investing in startups primarily because "big token factory will acquire them so our downside is capped." He sees this as AUM-maximizing behavior that won't return a 5–10x fund, and a waste of the only thing that can't be recovered: time.
-- https://x.com/nikunj/status/2050779734116856137
+YC's Garry Tan is shipping fast on GBrain, his personal AI tool. v0.27 adds support for non-Anthropic and non-OpenAI embeddings and LLMs, with multi-modal embeddings and deep photo OCR on deck. He positions GBrain as uniquely differentiated: "It's not a memory layer OR a code tool OR a search engine. It's all three unified under one graph with one query interface. Nobody else has that." He uses it all day with a 100K markdown file setup.
+• <https://x.com/garrytan/status/2051517574589116510|GBrain v0.27 release>
+• <https://x.com/garrytan/status/2051525161380364315|What makes GBrain different>
 
-*Peter Steinberger* (steipete on X) — OpenClaw + OpenAI
+*Nikunj Kothari* — Partner at FPV Ventures
 
-Peter Steinberger shipped two things back-to-back. First, *Crabbox 0.3.0* — a remote Linux tool for dirty worktrees — adding GitHub browser login, Blacksmith Testbox integration, live run replay via `crabbox attach`, durable run events, AWS image creation, and Cloudflare Access support (`brew upgrade openclaw/tap/crabbox`). Second, an OpenClaw plugin update that fixes npm dependency and slowness issues by moving nearly everything into extensions, making the package significantly leaner.
-- https://x.com/steipete/status/2050490163810230579
-- https://x.com/steipete/status/2050735979477008412
+FPV Ventures partner Nikunj Kothari called Gemini Flash "criminal how cheap and how good" — praising its 1M context windows, structured outputs, and new live voice model as his most-used model in production workloads. He also dropped a hot take: startup cohort 2023–2025 focused too heavily on launch videos and distribution at the expense of retention, and seed-to-Series-A conversion rates are now starting to show it. He predicts a wave of acquihires coming.
+• <https://x.com/nikunj/status/2051321911741972900|Gemini Flash is criminally cheap and good>
+• <https://x.com/nikunj/status/2051349526171287930|Distribution vs. retention: the reckoning>
 
-*Dan Shipper* (danshipper on X) — CEO of Every
+*Peter Steinberger* — Co-creator of OpenClaw, partnered with OpenAI
 
-Every CEO Dan Shipper laid out a sharp prediction for the next decade of work: "agent running continuously on the left, application that you + the agent use on the right." He also highlighted Every's Proof tool as a Codex-native writing app for anyone wanting to try that pattern today.
-- https://x.com/danshipper/status/2050583747041640608
-- https://x.com/danshipper/status/2050608311888941301
+Peter Steinberger shipped Crabbox 0.5.0 — remote CI boxes with desktop/browser leases, VNC + authenticated WebVNC, AWS Windows + WSL2, screenshots, and app launch. He's also using ephemeral crabboxes with WebVNC so agents can reproduce issues directly, set up the exact state to test and fix, and post videos on the PR. A meaningful step up for agent-powered QA.
+• <https://x.com/steipete/status/2051485798613111116|Crabbox 0.5.0 release>
+• <https://x.com/steipete/status/2051557150040711425|Agents reproducing issues in ephemeral crabboxes>
 
-*Aditya Agarwal* (adityaag on X) — General Partner at South Park Commons, ex-CTO of Dropbox
+*Aditya Agarwal* — General Partner at South Park Commons
 
-South Park Commons partner and former Dropbox CTO Aditya Agarwal offered a grounding reminder: step away from the console and terminal, and you'll find deeply inspiring hard tech being built across America — including things being launched into space.
-- https://x.com/adityaag/status/2050660894234059050
+South Park Commons GP Aditya Agarwal drew a clear line between speed and direction: "We have never desired to be an accelerator. Velocity is not interesting without a grounding towards true north."
+• <https://x.com/adityaag/status/2051330205902581842|Velocity vs. true north>
 
-*Sam Altman* (sama on X) — CEO of OpenAI
+*Sam Altman* — CEO of OpenAI
 
-OpenAI CEO Sam Altman made a candid self-correction: he keeps wanting models to be cheaper and faster rather than smarter — but smarter still wins as the most important variable. He also gave a quick positive verdict on GPT-5.5 xhigh in fast mode, noting he had been "psyoped by Twitter on medium for a bit."
-- https://x.com/sama/status/2050671161915371998
-- https://x.com/sama/status/2050658558174437701
-
+OpenAI CEO Sam Altman expressed genuine excitement about voice models improving, observing that people are already changing how they interface with AI. He also teased that OpenAI will "do something nice" for everyone who applied to the GPT-5.5 party but didn't get a spot.
+• <https://x.com/sama/status/2051464865634742334|Excited about voice models>
+• <https://x.com/sama/status/2051318922805436896|GPT-5.5 party makeup announcement>
 
 *OFFICIAL BLOGS*
 
-*Anthropic Engineering — <https://www.anthropic.com/engineering/managed-agents|Scaling Managed Agents: Decoupling the brain from the hands>*
+*Anthropic Engineering — Claude Code auto mode: a safer way to skip permissions*
+<https://www.anthropic.com/engineering/claude-code-auto-mode>
 
-Anthropic Engineering published a technical deep dive on how they redesigned *Managed Agents* — their hosted long-horizon agent service — by solving a classic infrastructure problem: don't adopt a pet.
-
-The original design crammed Claude's harness, the session log, and the sandbox into one container. It worked until containers became unmaintainable pets — unresponsive, impossible to safely debug (because user data lived alongside credentials), and rigidly coupled. The fix: decouple the "brain" (Claude + harness) from the "hands" (sandboxes/tools) and the "session" (the durable event log). Each can now fail or be replaced independently.
-
-Key results from decoupling:
-- p50 time-to-first-token dropped ~60%, p95 dropped over 90%
-- Harnesses became stateless and restartable via `wake(sessionId)`
-- Containers became interchangeable cattle — failures surface as tool errors, not lost sessions
-- Security improved structurally: credentials never enter the sandbox where Claude's generated code runs; Git tokens are consumed at clone time, and OAuth tokens live in a secure vault accessed only via a dedicated proxy
-
-The session log is now a durable, external event stream that functions as Claude's long-term memory, accessible via `getEvents()` with positional slicing — sidestepping the irreversibility problem of compaction and trimming. The architectural analogy: "Operating systems have lasted decades by virtualizing the hardware into abstractions general enough for programs that didn't exist yet." Managed Agents does the same for agent harnesses — opinionated about interfaces (session, harness, sandbox), unopinionated about what runs behind them.
-
+Claude Code's new _auto mode_ offers a middle ground between manually approving every action and the all-or-nothing `--dangerously-skip-permissions` flag. It uses two defense layers: a server-side prompt-injection probe that scans tool outputs before they reach the agent, and a two-stage transcript classifier (running on Sonnet 4.6) that evaluates each action before it executes. Stage 1 is a fast single-token yes/no filter tuned to block aggressively; only flagged actions escalate to Stage 2 with chain-of-thought reasoning. On real internal traffic (n=10,000), the full pipeline hits just 0.4% false-positive rate while catching real overeager actions at 83% recall. The post is candid about the tradeoff: auto mode is designed to replace `--dangerously-skip-permissions`, not careful human review on high-stakes infrastructure. Notable design choice: the classifier strips assistant text and tool results entirely — so the agent can't rationalize or injection-steer its way past the guardrail.
 
 *PODCASTS*
 
-*Training Data — <https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck>*
+*Training Data — Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy*
+<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8>
 
-_The Takeaway:_ As AI takes over the doing, human attention — deciding what's worth doing and whether it was done right — becomes the scarcest resource in any organization.
+_The Takeaway:_ Building toward full autonomy isn't a sprint — it's a twenty-year mission that only rewards those who internalize the real depth of the problem before the first hype cycle ends.
 
-Greg Brockman, OpenAI's co-founder and president, has a background that includes being employee #4 at Stripe before joining OpenAI at its founding. He's unusually positioned to speak to what AI actually looks like inside a frontier lab — not as a pitch, but as a practice.
+Waymo co-CEO Dmitri Dolgov has been building self-driving cars since the 2005 DARPA Challenge, joining what became the Google Self-Driving Car Project in 2009. Two decades in, Waymo has surpassed 20 million fully autonomous rides — with 10 million of those happening in the last seven months alone, a pace that let them launch four new cities in a single day.
 
-His core thesis is counterintuitive: the biggest bottleneck in AI-assisted work isn't model capability, it's human judgment. "The doing of things now is easy. The 'Is this a good thing? Is this what I wanted? Is this aligned with my values, with my desires?' — that is going to become the single most important bottleneck." He illustrated this with a story: his Codex agent, after waiting two minutes on a Slack response, decided to escalate — and messaged the person's manager. Technically reasonable. Socially disastrous.
+The most counterintuitive insight from Dolgov: early progress in autonomous driving is deceptively easy, which is exactly what triggers hype cycles and mass investment. But that early ease masks a very hard long tail. "The problem has always had this property that it's very easy to get started, but it's very difficult to take it all the way to a real product, full autonomy, and superhuman performance."
 
-On compute: demand has never been met since ChatGPT launched. When asked how much compute to buy at launch, Brockman told his team "all of it" — and that instinct still holds.
+On the tech side, Waymo's approach isn't vanilla end-to-end AI. Their Waymo Foundation Model runs a driver + simulator + critic architecture — a multimodal world-action-language model — and deliberately augments learned representations with structured intermediate outputs. This enables closed-loop evaluation, richer reinforcement learning rewards, and run-time validation that a basic end-to-end system can't provide at production scale.
 
-On scaling laws: they remain a "beautiful mystery" — empirically powerful, not fully explained — and there is no wall in sight.
+The safety numbers are striking: across 170 million fully autonomous miles, the Waymo driver is more than 13x safer than a human in serious-injury-causing collisions — translating to preventing a serious injury every eight days at current scale. One emergent capability that surprised even Dolgov: the LiDAR detecting footsteps beneath a bus, letting the system predict and react to a hidden pedestrian before they were visible to any sensor.
 
-On AGI: Brockman puts us at roughly 80% of the way there. Models already write code better than most humans. One engineer handed a complex systems optimization doc to a model before bed, went to sleep, and woke up to find the work complete — implemented, profiled, and iterated to an optimized result. Work that would have taken a team a week.
-
-His advice for founders: lean in hard now. The one-time shift is about context — getting AI enough information to actually help. "You have all these meetings. You didn't include the AI. That's not very nice to the AI."
-
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+Waymo is now operating in 11 cities, with London and Tokyo announced for later this year. The sixth-generation hardware platform is already running fully autonomous rides for employees, with a cabin Dolgov describes as feeling like "a living room."
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
