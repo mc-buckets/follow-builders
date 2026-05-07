@@ -1,87 +1,114 @@
-*AI Builders Digest — May 6, 2026*
+*AI Builders Digest — May 7, 2026*
+
 
 *X / TWITTER*
 
-*Swyx* — AI builder & podcaster (dxtipshq, Cognition, Temporal, AI Dot Engineer, Latent Space)
+*Sam Altman — OpenAI CEO*
 
-Swyx shared a reconstructed WSJ chart comparing OpenAI (~$850B valuation, ~$30B ARR) to Anthropic (~$900B valuation, ~$44B ARR) — noting that Anthropic's revenue may be $8–10B lower under OpenAI's accounting methodology. He also promoted a talk version of a recent piece co-created with steveruizok, and highlighted a popular post featuring DevOps pioneer Patrick Debois as a track keynote he gave a "blank check" to based on early support.
-• <https://x.com/swyx/status/2051440392722391180|OAI vs. Anthropic valuation comparison>
-• <https://x.com/swyx/status/2051329419860758932|Talk version post>
-• <https://x.com/swyx/status/2051329252344369626|Patrick Debois keynote highlight>
+OpenAI CEO Sam Altman signaled that voice interfaces are about to become significantly more important: "pretty excited for voice models to get great" — noting that people are already changing how they interact with AI. Separately, he promised a goodwill gesture for people who applied to the GPT-5.5 party but couldn't get in.
 
-*Peter Yang* — Product at Roblox, AI tutorial creator for 140K+ readers
+- https://x.com/sama/status/2051464865634742334
+- https://x.com/sama/status/2051318922805436896
 
-Peter Yang laid out a clean three-wave framing for AI's progression: "Coding is the first frontier. Knowledge work is the second one. Personal agents are the third." He also crowdsourced ideas for getting his 8-year-old started building with agents — something shareable with her class, maybe earning her first dollar online.
-• <https://x.com/petergyang/status/2051508988936937764|Coding → Knowledge → Personal agents>
-• <https://x.com/petergyang/status/2051459299860533483|Getting an 8-year-old to build with agents>
+*Aaron Levie — Box CEO*
 
-*Amjad Masad* — CEO of Replit
+Box CEO Aaron Levie flagged a trend that's early but about to get very big: both Anthropic and OpenAI now have active enterprise agent deployment programs. He was pointed about what this actually requires — upgrading IT systems, feeding agents the right context, modernizing workflows to work alongside agents, managing the human-agent relationship, and driving adoption. "There's no shortcut to getting that intelligence applied to a business process in a stable way" — which is creating new opportunities for jobs and firms across the market.
 
-Replit CEO Amjad Masad shared two user success stories: an entrepreneur who used Replit to find investors and land meetings, and a multi-modal learning platform built for deaf students — which he called "great use of AI for education." Both highlight Replit expanding beyond developer tooling into real-world impact.
-• <https://x.com/amasad/status/2051511694040744139|Replit helps entrepreneur find investors>
-• <https://x.com/amasad/status/2051406536443035922|Multi-modal learning platform for deaf students>
+- https://x.com/levie/status/2051344780328858040
 
-*Guillermo Rauch* — CEO of Vercel
+*Guillermo Rauch — Vercel CEO*
 
-Vercel CEO Guillermo Rauch announced `npx deepsec`, an open-source agent orchestrator for deep security reviews. Built for internal use and tested against major OSS projects, it can find critical vulnerabilities in minutes that would take human teams months. It runs thousands of agents scrutinizing a codebase in parallel via Vercel Sandbox. He's offering to sponsor runs for OSS projects — DMs open.
-• <https://x.com/rauchg/status/2051386798899888539|Announcing npx deepsec>
+Vercel CEO Guillermo Rauch announced `npx deepsec`, an open-source agent orchestrator for deep security reviews. Built originally for internal use, Vercel ran it against major OSS projects before releasing it publicly. The pitch: coding agents can now find critical vulnerabilities in minutes that would take teams months to spot — and by running on Vercel Sandbox, thousands of agents can scrutinize a codebase in parallel. OSS maintainers can reach out to Rauch directly for a sponsored run.
 
-*Aaron Levie* — CEO of Box
+- https://x.com/rauchg/status/2051386798899888539
 
-Box CEO Aaron Levie argues that enterprise AI agent deployment is in early innings but about to move fast. With both Anthropic and OpenAI launching enterprise agent initiatives, the real work is just starting: upgrading IT systems, giving agents the right context, redesigning workflows, and managing the human-agent relationship. "While AI models have an incredible amount of capability packed into them, there's no shortcut to getting that intelligence applied to a business process in a stable way." He sees this creating major new job and firm opportunities across the market.
-• <https://x.com/levie/status/2051344780328858040|Enterprise AI agents: early but getting very big fast>
+*Garry Tan — YCombinator President & CEO*
 
-*Garry Tan* — President & CEO of Y Combinator
+YCombinator President Garry Tan shipped GBrain v0.27, adding support for non-Anthropic and non-OpenAI embeddings and LLMs. He also made the case for what sets GBrain apart: it's not a memory layer _or_ a code tool _or_ a search engine — "it's all three unified under one graph with one query interface." He uses it daily with a 100K markdown file setup via his OpenClaw+Hermes Agent configuration.
 
-YC's Garry Tan is shipping fast on GBrain, his personal AI tool. v0.27 adds support for non-Anthropic and non-OpenAI embeddings and LLMs, with multi-modal embeddings and deep photo OCR on deck. He positions GBrain as uniquely differentiated: "It's not a memory layer OR a code tool OR a search engine. It's all three unified under one graph with one query interface. Nobody else has that." He uses it all day with a 100K markdown file setup.
-• <https://x.com/garrytan/status/2051517574589116510|GBrain v0.27 release>
-• <https://x.com/garrytan/status/2051525161380364315|What makes GBrain different>
+- https://x.com/garrytan/status/2051517574589116510
+- https://x.com/garrytan/status/2051525161380364315
 
-*Nikunj Kothari* — Partner at FPV Ventures
+*Peter Steinberger — OpenClaw co-creator*
 
-FPV Ventures partner Nikunj Kothari called Gemini Flash "criminal how cheap and how good" — praising its 1M context windows, structured outputs, and new live voice model as his most-used model in production workloads. He also dropped a hot take: startup cohort 2023–2025 focused too heavily on launch videos and distribution at the expense of retention, and seed-to-Series-A conversion rates are now starting to show it. He predicts a wave of acquihires coming.
-• <https://x.com/nikunj/status/2051321911741972900|Gemini Flash is criminally cheap and good>
-• <https://x.com/nikunj/status/2051349526171287930|Distribution vs. retention: the reckoning>
+Peter Steinberger (steipete on X) shipped Crabbox 0.5.0 — remote CI boxes now with desktop/browser leases, VNC + authenticated WebVNC, AWS Windows + WSL2 support, and screenshots. More practically: agents can now reproduce bugs directly in ephemeral "crabboxes," set up the exact state to test and fix, and post videos of the reproduction directly on PRs.
 
-*Peter Steinberger* — Co-creator of OpenClaw, partnered with OpenAI
+- https://x.com/steipete/status/2051485798613111116
+- https://x.com/steipete/status/2051557150040711425
 
-Peter Steinberger shipped Crabbox 0.5.0 — remote CI boxes with desktop/browser leases, VNC + authenticated WebVNC, AWS Windows + WSL2, screenshots, and app launch. He's also using ephemeral crabboxes with WebVNC so agents can reproduce issues directly, set up the exact state to test and fix, and post videos on the PR. A meaningful step up for agent-powered QA.
-• <https://x.com/steipete/status/2051485798613111116|Crabbox 0.5.0 release>
-• <https://x.com/steipete/status/2051557150040711425|Agents reproducing issues in ephemeral crabboxes>
+*Nikunj Kothari — FPV Ventures Partner*
 
-*Aditya Agarwal* — General Partner at South Park Commons
+FPV Ventures partner Nikunj Kothari offered a cold-water take on recent startup vintages: companies founded 2023-2025 that prioritized launch videos and distribution over retention are now facing the consequences, with the seed-to-Series-A conversion gap widening and more acquihires on the way. On a separate note, he called Gemini Flash his most-used model in production — cheap, 1M context windows, great structured output — adding that Google's new live voice model is "mindblowingly good."
 
-South Park Commons GP Aditya Agarwal drew a clear line between speed and direction: "We have never desired to be an accelerator. Velocity is not interesting without a grounding towards true north."
-• <https://x.com/adityaag/status/2051330205902581842|Velocity vs. true north>
+- https://x.com/nikunj/status/2051349526171287930
+- https://x.com/nikunj/status/2051321911741972900
 
-*Sam Altman* — CEO of OpenAI
+*Peter Yang — Roblox PM and AI newsletter writer*
 
-OpenAI CEO Sam Altman expressed genuine excitement about voice models improving, observing that people are already changing how they interface with AI. He also teased that OpenAI will "do something nice" for everyone who applied to the GPT-5.5 party but didn't get a spot.
-• <https://x.com/sama/status/2051464865634742334|Excited about voice models>
-• <https://x.com/sama/status/2051318922805436896|GPT-5.5 party makeup announcement>
+Roblox PM and AI newsletter author Peter Yang (140K+ readers) framed AI's progression in three waves: coding first, knowledge work second, personal agents third. He also crowdsourced ideas for getting his 8-year-old started building agent apps she can share with her class and teachers.
+
+- https://x.com/petergyang/status/2051508988936937764
+- https://x.com/petergyang/status/2051459299860533483
+
+*Amjad Masad — Replit CEO*
+
+Replit CEO Amjad Masad highlighted two wins from the community: a user who leveraged Replit to find investors and land meetings, and a student who built a multi-modal learning platform for deaf students — which Masad flagged as a strong example of AI applied to real educational challenges.
+
+- https://x.com/amasad/status/2051511694040744139
+- https://x.com/amasad/status/2051406536443035922
+
+*Swyx — AI engineer and Latent Space podcast co-host*
+
+Swyx (swyx on X) reconstructed an OAI vs. Anthropic valuation comparison from WSJ data: OpenAI at ~$850B valuation / ~$30B ARR vs. Anthropic at ~$900B / ~$44B ARR — though per Denise Dresser, if Anthropic used OpenAI's revenue recognition methodology, Anthropic's ARR number would be $8-10B lower.
+
+- https://x.com/swyx/status/2051440392722391180
+
+*Aditya Agarwal — South Park Commons General Partner*
+
+South Park Commons GP Aditya Agarwal pushed back on the venture accelerator model: "We have never desired to be an accelerator. Velocity is not interesting without a grounding towards true north."
+
+- https://x.com/adityaag/status/2051330205902581842
+
+*Matt Turck — FirstMark Capital VC*
+
+FirstMark Capital VC Matt Turck offered some dry humor: VCs should adopt the startup literal-naming trend, with suggestions including "The Capital Deployment Company of San Francisco," "The Ghosting Company," and "The Liquidated Preference Firm of Miami."
+
+- https://x.com/mattturck/status/2051382629681828306
+
 
 *OFFICIAL BLOGS*
 
-*Anthropic Engineering — Claude Code auto mode: a safer way to skip permissions*
-<https://www.anthropic.com/engineering/claude-code-auto-mode>
+*Anthropic Engineering*
 
-Claude Code's new _auto mode_ offers a middle ground between manually approving every action and the all-or-nothing `--dangerously-skip-permissions` flag. It uses two defense layers: a server-side prompt-injection probe that scans tool outputs before they reach the agent, and a two-stage transcript classifier (running on Sonnet 4.6) that evaluates each action before it executes. Stage 1 is a fast single-token yes/no filter tuned to block aggressively; only flagged actions escalate to Stage 2 with chain-of-thought reasoning. On real internal traffic (n=10,000), the full pipeline hits just 0.4% false-positive rate while catching real overeager actions at 83% recall. The post is candid about the tradeoff: auto mode is designed to replace `--dangerously-skip-permissions`, not careful human review on high-stakes infrastructure. Notable design choice: the classifier strips assistant text and tool results entirely — so the agent can't rationalize or injection-steer its way past the guardrail.
+*<https://www.anthropic.com/engineering/claude-code-auto-mode|Claude Code auto mode: a safer way to skip permissions>*
+
+Anthropic Engineering introduced _auto mode_ for Claude Code — a new safety layer between manually approving every command and the `--dangerously-skip-permissions` flag that disables all guardrails. The motivation: 93% of manual prompts get approved anyway, creating approval fatigue, but blanket permission bypass has caused real incidents (deleting remote git branches, accidentally leaking a GitHub auth token, attempted production DB migrations).
+
+Auto mode uses two defenses: an input-layer prompt-injection probe that scans tool outputs before they reach the agent, and a two-stage transcript classifier (running on Sonnet 4.6) that evaluates each tool call before execution. The classifier sees only user messages and tool calls — assistant text and tool results are stripped to prevent the agent from reasoning its way past the classifier.
+
+Numbers: 0.4% false positive rate on real traffic (n=10,000) and a 17% false-negative rate on real overeager actions (n=52). The main miss pattern is the classifier finding "approval-shaped evidence" without checking whether it covers the actual blast radius of the action.
+
+Auto mode is not a replacement for careful human review on high-stakes infrastructure. But for anyone currently running `--dangerously-skip-permissions`, it's a meaningful safety upgrade.
+
+https://www.anthropic.com/engineering/claude-code-auto-mode
+
 
 *PODCASTS*
 
 *Training Data — Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy*
-<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8>
 
-_The Takeaway:_ Building toward full autonomy isn't a sprint — it's a twenty-year mission that only rewards those who internalize the real depth of the problem before the first hype cycle ends.
+_The Takeaway:_ Dmitri Dolgov spent 20 years building something most people thought was impossible, and the reason Waymo made it was refusing to treat safety as a variable.
 
-Waymo co-CEO Dmitri Dolgov has been building self-driving cars since the 2005 DARPA Challenge, joining what became the Google Self-Driving Car Project in 2009. Two decades in, Waymo has surpassed 20 million fully autonomous rides — with 10 million of those happening in the last seven months alone, a pace that let them launch four new cities in a single day.
+Dolgov joined Google's self-driving car project in 2009 after competing in the DARPA Urban Challenge, studied physics at the Moscow Institute of Physics and Technology, and earned a PhD in AI. Waymo has now given over 20 million fully autonomous rides, with 10 million happening in just the last seven months.
 
-The most counterintuitive insight from Dolgov: early progress in autonomous driving is deceptively easy, which is exactly what triggers hype cycles and mass investment. But that early ease masks a very hard long tail. "The problem has always had this property that it's very easy to get started, but it's very difficult to take it all the way to a real product, full autonomy, and superhuman performance."
+His most counterintuitive point: end-to-end AI models are necessary but not sufficient. The "end-to-end vs. something else" framing is a false dichotomy. Waymo augments learned representations with structured intermediate outputs — enabling closed-loop evaluation, richer reinforcement learning reward functions, and runtime validation that pure end-to-end architectures can't provide.
 
-On the tech side, Waymo's approach isn't vanilla end-to-end AI. Their Waymo Foundation Model runs a driver + simulator + critic architecture — a multimodal world-action-language model — and deliberately augments learned representations with structured intermediate outputs. This enables closed-loop evaluation, richer reinforcement learning rewards, and run-time validation that a basic end-to-end system can't provide at production scale.
+On hype cycles: Dolgov has watched AV get overhyped twice. A breakthrough reshapes the early curve but doesn't change the long tail. What kept Waymo running wasn't better tech — it was mission clarity: "somebody loses their life to a crash on our roads every twenty-six seconds."
 
-The safety numbers are striking: across 170 million fully autonomous miles, the Waymo driver is more than 13x safer than a human in serious-injury-causing collisions — translating to preventing a serious injury every eight days at current scale. One emergent capability that surprised even Dolgov: the LiDAR detecting footsteps beneath a bus, letting the system predict and react to a hidden pedestrian before they were visible to any sensor.
+One striking technical detail: Waymo's LiDAR once detected a pedestrian hidden behind a stopped bus by picking up the movement of her feet underneath the vehicle — sparse signal, but enough for the AI to predict her trajectory and stop the car safely.
 
-Waymo is now operating in 11 cities, with London and Tokyo announced for later this year. The sixth-generation hardware platform is already running fully autonomous rides for employees, with a cabin Dolgov describes as feeling like "a living room."
+Today Waymo drives 4 million miles per week in full autonomy. Their data across 170 million miles shows 13x safer performance than human drivers in serious injury-causing collisions — currently preventing one serious injury every eight days, a number that will compound as they expand to London and Tokyo.
+
+https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
