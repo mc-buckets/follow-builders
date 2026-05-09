@@ -1,119 +1,114 @@
-AI Builders Digest — May 8, 2026
+AI Builders Digest — May 9, 2026
 
 *X / TWITTER*
 
-*Thariq (Claude Code at Anthropic)*
-Biggest news of the day: Anthropic is reversing its peak-hours rate limit reductions and doubling the 5-hour limits, thanks to a new partnership with SpaceX to access the Colossus supercluster. "We'll keep pushing to bring you the best coding agent in the world."
-- <https://x.com/trq212/status/2052065936585457982|Doubling limits + SpaceX partnership>
-- <https://x.com/trq212/status/2052074924588888261|Claude in Space>
+*Swyx* (swyx on X) | AI builder, co-host of Latent Space, affiliated with Cognition and Temporal
 
-*Alex Albert (Research at Anthropic)*
-Calling the SpaceX partnership "more chips, more Claude." Was also at the Code with Claude event and gave a main stage talk at 5:30pm PT.
-- <https://x.com/alexalbert__/status/2052065953173872912|More chips, more Claude>
-- <https://x.com/alexalbert__/status/2052067009605861764|At Code with Claude>
+Swyx issued a heads-up about a phishing attempt that nearly fooled him — a timely reminder for builders to scrutinize links, especially from familiar-looking senders. He also ran into friction trying to file a bug report (Loom recorded him instead of the target app), and vented about Docusign getting in the way mid-workflow. Nothing groundbreaking, but a useful signal that even seasoned builders hit the same operational friction.
+https://x.com/swyx/status/2052599553283813788
 
-*Amanda Askell (Philosopher/ethicist, Anthropic)*
-Reacted to the Anthropic x SpaceX Colossus announcement with "Never has the 🚀 emoji felt more apt." (510 likes)
-- <https://x.com/AmandaAskell/status/2052161052058833181|Never has the rocket emoji felt more apt>
+*Kevin Weil* (kevinweil on X) | VP of Science at OpenAI
 
-*Aaron Levie (CEO, Box)*
-Framed the Anthropic/SpaceX deal succinctly: "SpaceX as a vertically integrated AI compute company makes an insane amount of sense." (688 likes)
-- <https://x.com/levie/status/2052071639337337288|SpaceX as vertically integrated AI compute>
+No notable posts.
 
-*Claude (Official Anthropic account)*
-Announced multiagent orchestration now on the Claude Platform — "a lead agent delegates to specialists that work in parallel on complex jobs." Also hosted a live conversation with co-founders Dario and Daniela Amodei, moderated by CPO Ami Vora.
-- <https://x.com/claudeai/status/2052067404696473833|Multiagent orchestration on Claude Platform>
-- <https://x.com/claudeai/status/2052067407204700646|Available today>
-- <https://x.com/claudeai/status/2052105841864495282|Dario & Daniela live conversation>
+*Peter Yang* (petergyang on X) | Product at Roblox, creator of Creators Collective newsletter
 
-*Dan Shipper (CEO, Every)*
-Sharing two things: the Anthropic x SpaceX rate limit doubling, and his new AI & I episode on why his team fully switched from Claude Code to Codex — covering go-to-market planning, automated KPI tracking in Notion, and AI-powered recruiting.
-- <https://x.com/danshipper/status/2052058966075846661|Anthropic x SpaceX rate limit doubling>
-- <https://x.com/danshipper/status/2052054077656252512|AI & I: Why we switched to Codex>
+No notable posts.
 
-*Peter Steinberger (OpenClaw builder)*
-One of the most viral posts of the day (5,400+ likes, 317 RTs): dropped 10 new MCP integrations built with Codex for the OpenClaw agent in a single release — Sonos, WhatsApp, X archive, GitHub archive, Discord archive, Spotify, iMessage, MCP-to-CLI, ElevenLabs voice, and a "second opinion" tool. Also shipped imsg 0.6 + 0.7 with a private API bridge and reliability fixes.
-- <https://x.com/steipete/status/2051900143339704730|10 new OpenClaw MCP tools>
-- <https://x.com/steipete/status/2051905175355351440|imsg 0.6 + 0.7 release>
-- <https://x.com/steipete/status/2052144503595716790|"Closed source, open source, nothing can stop Codex">
+*Madhu Guru* (realmadhuguru on X) | Former Product Leader at Google, Gemini and Veo
 
-*Peter Yang (Product at Roblox, AI tutorials)*
-Attended Code with Claude and reflected that Claude "still feels the most like a trusted friend" of all the AIs, and is glad Anthropic now has the compute to scale. Also noted: two AI agents can now schedule a meeting for their humans.
-- <https://x.com/petergyang/status/2052177418555977866|Claude feels like a trusted friend>
-- <https://x.com/petergyang/status/2052226719151710221|AI agents scheduling meetings for humans>
+Madhu announced she is leaving Google after helping build two businesses from scratch — first across Search & Ads, then Gemini. She described building "the playbook for building AI models, the customer feedback flywheel" at a time when OpenAI and Anthropic were clearly ahead. A notable departure from one of the key insiders who helped Google close the AI gap.
+https://x.com/realmadhuguru/status/2052490869320946037
 
-*Josh Woodward (VP, Google Labs)*
-Excited about Google Flow Music partnering with Believe, a music artist development company, to put the tool directly in artists' hands for exploring and crafting melodies and instruments.
-- <https://x.com/joshwoodward/status/2052061728029212976|Google Flow Music x Believe>
+*Amjad Masad* (amasad on X) | CEO of Replit
 
-*Google Labs (Official)*
-Celebrated Google Flow Music's partnership with Believe and highlighted how Pomelli by Google helped artist Michelle bring her "Inner Child" clothing collection to life using AI-assisted design.
-- <https://x.com/GoogleLabs/status/2052051754997674364|Flow Music x Believe partnership>
-- <https://x.com/GoogleLabs/status/2052116741875208371|Pomelli helping Michelle's Inner Child collection>
+Replit is hosting what's being called the most viral petition in history — about soccer star Kylian Mbappé. Amjad noted Replit has no opinion on Mbappé himself, but the moment shows the platform's scale as a go-to for quickly spinning up apps that reach millions.
+https://x.com/amasad/status/2052478595277467703
 
-*Ryo Lu (Design at Cursor)*
-Shared Cursor's core design philosophy: "We design Cursor to be legible, customizable, and deeply under your control. See less when you need clarity. See more when you want depth."
-- <https://x.com/ryolu_/status/2052064849346363729|Cursor design philosophy>
+*Alex Albert* (alexalbert__ on X) | Researcher at Anthropic
 
-*Amjad Masad (CEO, Replit)*
-Replit is in Ghana — expanding its global reach. Also teasing a collaboration with productivity writer Lenny Rachitsky.
-- <https://x.com/amasad/status/2052068011608264742|Replit in Ghana>
-- <https://x.com/amasad/status/2052185144879096139|Lenny x Replit>
+Alex shared a striking result: with help from Claude Mythos Preview, the Firefox team fixed more security bugs in April than in the previous 15 months combined. He pointed to a blog post detailing how the AI-assisted security workflow was structured — a concrete data point for teams wondering whether AI code review can move the needle on security backlogs.
+https://x.com/alexalbert__/status/2052468573516513762
+https://x.com/alexalbert__/status/2052468575492088078
 
-*Guillermo Rauch (CEO, Vercel)*
-Shared `npx deepsec` — a new security-focused CLI tool.
-- <https://x.com/rauchg/status/2052163183608262818|npx deepsec>
+*Aaron Levie* (levie on X) | CEO of Box
 
-*Garry Tan (President/CEO, YCombinator)*
-GBrain outperformed qmd 8.3x on a particular benchmark corpus. Hosted GStack is now available as the fastest way to start building. Also declared: "Just in time software is here."
-- <https://x.com/garrytan/status/2052227098883109235|GBrain 8.3x benchmark win over qmd>
-- <https://x.com/garrytan/status/2052162637916746114|Hosted GStack now available>
-- <https://x.com/garrytan/status/2052024023861899655|Just in time software is here>
+Aaron laid out a crisp competitive logic: when AI makes something easy for you, it makes it equally easy for everyone else — so advantage evaporates fast. The implication is that AI-driven productivity gains will quickly become table stakes, and real differentiation will come from wherever AI can't commoditize. A useful mental model for anyone building products or companies right now.
+https://x.com/levie/status/2052566788236509254
 
-*Zara Zhang (Builder)*
-Sharp observation: developer tools are now useful to anyone who has access to an AI agent — not just professional developers. But almost all of them still market exclusively to devs, with messaging that's "intimidating & unintelligible to normal people." A significant missed opportunity.
-- <https://x.com/zarazhangrui/status/2051900943831335167|Dev tools' missed marketing opportunity>
+*Ryo Lu* (ryolu_ on X) | Designer at Cursor
 
-*Aditya Agarwal (General Partner, South Park Commons)*
-Contrarian venture take: a Series A/B company at $10-20M ARR growing sub-25% can't iterate its way out. The bold move is to "return to Minus One" — go back to core assets and take a much bigger swing. "The other path just leads to a slow decline and death." Also: Curiosity 2026, a hard tech event at SPC India, is coming to Bangalore May 30-31.
-- <https://x.com/adityaag/status/2052075380442607877|The Minus One strategy for stuck companies>
-- <https://x.com/adityaag/status/2051895089379922056|Curiosity 2026 hard tech event>
+Ryo shared a demo of the full development loop — from idea to merged PR — done entirely inside Cursor. Short and punchy, but a good illustration of where Cursor is positioning itself: not just as a code editor but as the end-to-end environment where software gets made.
+https://x.com/ryolu_/status/2052496872586272802
 
-*Nikunj Kothari (Partner, FPV Ventures)*
-Marked one year at FPV Ventures with a reflective note — grateful to LPs and founders, but honest that he's still struggling and learning.
-- <https://x.com/nikunj/status/2052039292600627383|1 year at FPV Ventures>
+*Garry Tan* (garrytan on X) | President & CEO of Y Combinator
 
-*Swyx (AI engineer, Cognition / AI dot engineer)*
-Quick take: the combination of OpenClaw + Cline is "underrated" for raw development velocity.
-- <https://x.com/swyx/status/2052200615758213262|OpenClaw + Cline velocity is underrated>
+Garry shipped GStack v1.28 with meaningful browser automation improvements: download support, headed mode on Linux via Xvfb, and anti-bot detection — all useful for running Claude Code or other agents in headless environments. He also added `llms.txt` so agents can discover and use GStack's skills with less guesswork. Separately, GBrain now supports thin-client mode, so a secondary agent doesn't need to run its own MCP server — it can route through GBrain over MCP instead. This is a real quality-of-life improvement for multi-agent setups.
+https://x.com/garrytan/status/2052588548126364028
+https://x.com/garrytan/status/2052588782076281324
+https://x.com/garrytan/status/2052629679572701455
 
+*Matt Turck* (mattturck on X) | VC at FirstMark Capital, host of the MAD Podcast
 
-*OFFICIAL BLOGS*
+Matt was promoting his new episode with Zico Kolter, OpenAI board member and CMU ML department head — a deep dive on AI safety, security, and frontier model governance. Full episode covered in the Podcasts section below.
+https://x.com/mattturck/status/2052440959997063309
 
-*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
+*Zara Zhang* (zarazhangrui on X) | Builder
 
-Three major additions shipped to Claude Managed Agents today:
+Zara made a sharp observation: the messaging from new AI apps is all blurring together. As the field floods with similar-looking products, differentiation through positioning is getting harder — useful pushback for anyone writing copy for their AI app right now.
+https://x.com/zarazhangrui/status/2052505923625857286
 
-- *Dreaming* (research preview): A scheduled background process that reviews past agent sessions, extracts patterns, and curates memory between sessions so agents self-improve over time. Developers choose whether updates land automatically or require review. Harvey tested it and saw ~6x completion rates.
-- *Outcomes*: Write a rubric for what "good" looks like and a separate grader evaluates the agent's output against that bar in its own context window — no contamination from the agent's own reasoning. If the output falls short, the agent takes another pass. In testing, outcomes improved task success by up to 10 points, with +8.4% on .docx and +10.1% on .pptx file generation.
-- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to specialists with their own model, prompt, and tools — running in parallel on a shared filesystem. Netflix uses this to analyze logs across hundreds of builds and surface only the patterns worth acting on. Spiral by Every uses it with a Haiku lead agent delegating drafting to Opus subagents, with outcomes enforcing quality against Every's editorial rubric.
+*Nikunj Kothari* (nikunj on X) | Partner at FPV Ventures
 
-<https://claude.com/blog/new-in-claude-managed-agents|Read the full post>
+Nikunj went on record with a contrarian take on management: weekly 1:1s are "a psy-op by mid-tier empire-building managers" who want to micromanage rather than trust their reports. He argues the best managers create the conditions for people to flourish independently, not check-in rituals that steer them back into line. He also flagged an upcoming feature on Reactor World: every pixel generated in real-time — worth watching if you're tracking AI-native creative tools.
+https://x.com/nikunj/status/2052626010332668278
+https://x.com/nikunj/status/2052461083282350121
 
+*Peter Steinberger* (steipete on X) | AI builder, creator of OpenClaw
+
+Peter shared a demo of two OpenClaw agents coordinating with each other — one learning to delegate cron jobs to the other. On the tooling front, he's been using `/goal` with GPT 5.5 for planning large refactors end-to-end with tests, and says it "just works" for extensive work. He also mentored students from the ChatGPT Future Class of 2026, including a team that built Wi-Find, a system that detects disaster survivors through walls using AI.
+https://x.com/steipete/status/2052630190346457301
+https://x.com/steipete/status/2052514752245481675
+https://x.com/steipete/status/2052486085226184742
+
+*Dan Shipper* (danshipper on X) | CEO of Every
+
+Dan and Kieran Klaassen recorded a quick take on the emerging AI platform war — specifically the xAI compute deal and Anthropic's move to turn its API into full cloud infrastructure for developers with Managed Agents. The framing: this isn't just a model race anymore, it's a battle for who owns the compute and orchestration layer underneath your AI stack.
+https://x.com/danshipper/status/2052501376195080381
+
+*Aditya Agarwal* (adityaag on X) | General Partner at South Park Commons, co-founder of Bevel Health
+
+Aditya is running an Embodied AI Hackathon at South Park Commons in SF, May 15–17. Applications close May 12. If you're building in robotics, physical AI, or hardware-adjacent AI, this is the room to be in.
+https://x.com/adityaag/status/2052441427070861816
+https://x.com/adityaag/status/2052441425724514741
+
+*Sam Altman* (sama on X) | CEO of OpenAI
+
+Sam made three distinct points in quick succession. First, OpenAI wants to help companies secure themselves against AI-era threats and thinks it's urgent to start now. Second, his framing on developers and AI is deliberately optimistic: the goal is to help good engineers "pokemon-evolve into superheroes," not replace them — and he thinks what one really good person can accomplish now is "insane." Third, a casual but interesting observation: young people default to voice for AI interaction, older users prefer typing, and the middle generation types. He's curious whether that will shift.
+https://x.com/sama/status/2052558319940944256
+https://x.com/sama/status/2052485051812909530
+https://x.com/sama/status/2052462428663992564
+
+*Claude* (claudeai on X) | Anthropic's Claude AI
+
+Claude for Excel, PowerPoint, and Word is now generally available across all paid plans, and Claude for Outlook is in public beta. The integrations carry full conversation context as Claude moves between Microsoft apps — so you're not starting over each time you switch from your inbox to a spreadsheet.
+https://x.com/claudeai/status/2052445786651168849
+https://x.com/claudeai/status/2052445787930468704
 
 *PODCASTS*
 
-*AI & I by Every — "Why We Switched From Claude Code to Codex"*
+*The MAD Podcast with Matt Turck — OpenAI Board Member Zico Kolter on the Real Risks of Frontier AI*
 
-_The Takeaway: The real differentiator between Claude Code and Codex right now isn't the model quality — it's the desktop app. OpenAI built the faster, better-organized experience, and Every's team migrated almost overnight._
+The Takeaway: bigger AI models don't automatically get safer — and the people overseeing OpenAI's most powerful releases are acutely aware of that gap.
 
-Every CEO Dan Shipper and head of growth Austin Tedescau made the case for Codex as the new daily driver for knowledge work — not just engineering. The argument: once you have a great coding agent on your computer, it turns out to be great for _any_ knowledge work. Austin now spends 80% of his working time inside one Codex folder connected to Gmail, Slack, Notion, and Stripe. He uses it to brainstorm automations, draft communications for human review, synthesize meeting transcripts and Slack threads into go-to-market plans, and maintain a live KPI tracker in Notion that other agents can query.
+Zico Kolter is the head of the machine learning department at Carnegie Mellon and chairs the Safety and Security Committee at OpenAI's board. His job is to oversee the governance of every major model release — reviewing safety reports, getting third-party assessments, and holding the authority to delay a release if the committee isn't satisfied. It's structured deliberately like an audit committee: independent oversight, not operational involvement.
 
-"When I sign on during the day, Codex is the first thing I open. It is pulling in whatever I need from Gmail, Slack, Notion, Stripe, all of our data sources." Dan frames the broader picture: "There's a new operating system for how and where you're going to get your work done, and it's this kind of agent management interface" — a race between Anthropic (Claude Code/Cowork), OpenAI (Codex), xAI (Cursor), and eventually Google.
+The most counterintuitive thing Kolter said: scaling doesn't fix safety the way it fixes capability. When a model is bad at a task, you wait for the next, bigger model — it will be better. But robustness, the ability to resist adversarial inputs, jailbreaks, and prompt injection, doesn't reliably improve just because a model gets larger. "You can't just sort of trust models to get safer by getting bigger." That asymmetry is what keeps the safety committee busy.
 
-One underrated point: they've normalized AI-authored documents inside Every. The question is no longer "did AI write this?" but "do you stand behind it?" If you show up to a meeting and don't know what's in your own doc, you're exposed.
+On the technical side, Kolter offered a surprisingly demystifying take on what AI actually is: the core mathematical framework of a modern language model is roughly 200–300 lines of Python. "AI systems are incredibly simple." The complexity of real systems comes entirely from data pipelines and the engineering required to run training across thousands of GPUs — not from the underlying algorithm. He thinks everyone, not just researchers, should take the time to understand those 200 lines.
 
-<https://www.youtube.com/watch?v=IDSAMqip6ms|Watch on YouTube>
+On security threats in 2026, he described prompt injection as the attack vector he's most concerned about for deployed AI agents — systems where malicious content in the environment can hijack the agent's behavior. It's a hard problem precisely because agents need to process untrusted input to be useful.
 
+https://www.youtube.com/watch?v=DvyZcCfepeI
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
