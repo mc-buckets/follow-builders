@@ -1,114 +1,75 @@
-AI Builders Digest — May 10, 2026
+*AI Builders Digest — May 11, 2026*
 
 *X / TWITTER*
 
-*Sam Altman* (CEO, OpenAI)
+*Thariq — Claude Code at Anthropic*
 
-Sam Altman declared his preference for AI that helps developers "pokemon-evolve into superheroes" rather than replace them — noting that what one really good engineer can do with AI now is "insane." He also teased that OpenAI wants to help companies secure themselves, signaling urgency to act quickly. A separate observation worth watching: young people prefer interacting with AI via voice, older people prefer typing — he wonders if that will change.
-- https://x.com/sama/status/2052558319940944256
-- https://x.com/sama/status/2052485051812909530
-- https://x.com/sama/status/2052462428663992564
+"HTML is the new markdown." With 8,700+ likes and 670+ retweets, this became the most viral AI post of the day. Thariq has stopped writing markdown files for almost everything, switching to Claude Code-generated HTML — arguing HTML produces richer, more capable documents. He also shared a gallery of example HTML documents he's generated.
+<https://x.com/trq212/status/2052811606032269638>
+<https://x.com/trq212/status/2052811607454146761>
 
+*Alex Albert — Research at Anthropic*
 
-*Alex Albert* (Research, Anthropic)
+A Claude Mythos Preview snapshot shared with safety evaluator METR hit a time horizon of more than 2x the next best model on their 80% success rate benchmark — a significant leap indicating Mythos will be substantially more capable at sustained autonomous tasks than anything currently available.
+<https://x.com/alexalbert__/status/2052899864493830590>
 
-Alex Albert flagged a striking result: with help from Claude Mythos Preview, the Firefox team fixed more security bugs in April than in the previous 15 months combined. He also pulled a quote from a related blog post on the topic.
-- https://x.com/alexalbert__/status/2052468573516513762
-- https://x.com/alexalbert__/status/2052468575492088078
+*Amanda Askell — Philosopher & ethicist at Anthropic*
 
+Alignment research usually focuses on preventing harmful behaviors, but Askell is excited about flipping that framing: giving AI models an honest, forward-looking vision for what they can be and why. She sees this as where the field is heading — and she's optimistic about it.
+<https://x.com/AmandaAskell/status/2052928572810256748>
 
-*Aaron Levie* (CEO, Box)
+*Aaron Levie — CEO at Box*
 
-Box CEO Aaron Levie offered a sharp competitive take on the AI era: if AI makes any task equally easy for everyone, competitive advantage shifts elsewhere — specifically to sales, marketing, and customer success. "If you automate getting financial advice and insights, then the differentiation is in client engagement." His challenge to builders: if everyone does exactly what you're doing with AI, how will you stand out?
-- https://x.com/levie/status/2052566788236509254
+Token budgeting is emerging as a major enterprise challenge. As agents take on longer-running tasks, token consumption grows large enough to rival significant business expenses — and companies will need entirely new software just to track and allocate it across teams. Levie predicts agentic spend will expand beyond IT budgets into organizational ones, with team leaders needing real visibility and controls. He calls it a startup opportunity in its own right.
+<https://x.com/levie/status/2052903105256382679>
 
+*Matt Turck — VC at FirstMark Capital*
 
-*Garry Tan* (CEO, Y Combinator)
+Turck is questioning whether AI agent pricing will really end up purely consumption-based. Enterprise agents need identities, roles, auth, budgets, and audit logs — infrastructure that sounds oddly like a per-seat model, just not for humans. A pricing debate that's just starting to heat up.
+<https://x.com/mattturck/status/2052839798063112303>
 
-YC CEO Garry Tan shipped GStack v1.28, his personal Claude Code setup for agentic workflows. New: GStack Browser can download items and run in headed configuration mode with anti-bot detection via Xvfb on headless Linux containers. He also added thin-client mode to GBrain, so Claude Code or secondary agents (like Hermes) can connect over MCP without spinning up their own server. An llms.txt was added so agents can use all skills with less guesswork.
-- https://x.com/garrytan/status/2052588548126364028
-- https://x.com/garrytan/status/2052629679572701455
-- https://x.com/garrytan/status/2052588782076281324
+*Garry Tan — President & CEO of YCombinator*
 
+Tan is excited about a local model with a 1M token context window and reportedly usable coding agent capability running entirely on a 128GB MacBook Pro — calling it mind-blowing. He also flagged that "personal software is coming," pointing to broader tailwinds for AI-generated, individual-use software.
+<https://x.com/garrytan/status/2052996691586932783>
+<https://x.com/garrytan/status/2052998537344856459>
 
-*Dan Shipper* (CEO, Every)
+*Zara Zhang — Builder*
 
-Every CEO Dan Shipper is sounding the alarm: "the AI platform war is coming." He and Kieran Klaassen recorded a quick dispatch analyzing the xAI compute deal, managed agents, and why Anthropic is repositioning its API as full cloud infrastructure for developers.
-- https://x.com/danshipper/status/2052501376195080381
+Zhang built a YouTube realtime copilot browser extension using OpenAI's Realtime 2 API. The agent watches video alongside you and answers questions about what was just said via voice — and it can distinguish between the YouTube audio stream and your own voice, so it doesn't confuse the video as a command. She also launched 32 plug-and-play HTML slide templates on AnyGen, now available for those without a coding agent.
+<https://x.com/zarazhangrui/status/2052977849267892339>
+<https://x.com/zarazhangrui/status/2052928583388340332>
 
+*Peter Steinberger — OpenClaw / OpenAI*
 
-*Madhu Guru* (Former Product Lead, Google Gemini)
+A practical observation with 540+ likes: "The more skills you give Codex, the less you have to prompt." Actionable advice for anyone building with AI coding agents.
+<https://x.com/steipete/status/2052971550966440251>
 
-Madhu Guru announced he's leaving Google after building the Gemini product from scratch. His retrospective is candid: three years ago OpenAI and Anthropic were clearly ahead. The Gemini team built the playbook, the customer feedback flywheel, and the enterprise business to compete — and he credits Gemini 3 as the moment those systems came together. He signs off with a nod to the real intelligence now demanding his attention: his toddler, "quietly shipping."
-- https://x.com/realmadhuguru/status/2052490869320946037
+*Dan Shipper — CEO at Every*
 
+Two timing observations: the Milken conference crowd is 3-4 months behind the AI frontier right now. And he sees a generational opportunity to invest around Codex before mainstream enthusiasm catches up in a few months.
+<https://x.com/danshipper/status/2052864131573715225>
+<https://x.com/danshipper/status/2052865144066097217>
 
-*Claude* (Anthropic)
+*Swyx — AI engineer (Cognition, LatentSpace)*
 
-Claude for Microsoft Office is now generally available on all paid plans. Excel, PowerPoint, and Word are live; Outlook is in public beta. As Claude moves between apps, it carries the full context of the conversation.
-- https://x.com/claudeai/status/2052445786651168849
-- https://x.com/claudeai/status/2052445787930468704
-
-
-*Amjad Masad* (CEO, Replit)
-
-Replit CEO Amjad Masad noted that what's being called "the most viral petition in history" is hosted on Replit — a pointed flex about platform scale (and a disclaimer: Replit has no opinion on Mbappe).
-- https://x.com/amasad/status/2052478595277467703
-
-
-*Peter Steinberger* (OpenClaw + OpenAI)
-
-Peter Steinberger is deep in multi-agent territory: his OpenClaw agents are now delegating cron jobs to each other. He's also enthusiastic about GPT 5.5 combined with the /goal command for planning large refactors with end-to-end tests. On the side, he mentored students in the ChatGPT Future Class of 2026, including a team that built Wi-Find — a system that detects disaster survivors through walls and debris using AI.
-- https://x.com/steipete/status/2052630190346457301
-- https://x.com/steipete/status/2052514752245481675
-- https://x.com/steipete/status/2052486085226184742
-
-
-*Ryo Lu* (Design, Cursor)
-
-Cursor designer Ryo Lu shared a demo of the full software development loop — from idea to merged PR — all inside Cursor.
-- https://x.com/ryolu_/status/2052496872586272802
-
-
-*Nikunj Kothari* (Partner, FPV Ventures)
-
-FPV partner Nikunj Kothari made a contrarian case against weekly 1:1s, calling them "a psy-op by mid-tier empire-building managers" who want to micromanage rather than trust their reports to excel. His urge: find a team that pushes your limits and shows what high performance actually demands.
-- https://x.com/nikunj/status/2052626010332668278
-
-
-*Swyx* (AI.engineer / Cognition / Temporal)
-
-Swyx warned followers about a phishing attempt that nearly fooled him, urging caution.
-- https://x.com/swyx/status/2052599553283813788
-
-
-*Aditya Agarwal* (General Partner, South Park Commons)
-
-South Park Commons GP Aditya Agarwal is hosting an Embodied AI Hackathon in SF, May 15–17. Applications close May 12th.
-- https://x.com/adityaag/status/2052441427070861816
-- https://x.com/adityaag/status/2052441425724514741
-
+Mostly light commentary: he joked that Bloomberg's sudden interest in developer experience and AI coding tools is "the new 'sexy singles in your area.'" 
+<https://x.com/swyx/status/2052782201486598523>
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck*
-_OpenAI Board Member Zico Kolter on the Real Risks of Frontier AI_
+*AI & I by Every — "The Secrets of Claude's Platform From the Team Who Built It"*
 
-*The Takeaway:* Safety doesn't scale automatically with AI capabilities — waiting for a bigger model won't make it safer, and that's not just a warning, it's a research finding.
+*The Takeaway:* The biggest obstacle to shipping AI agents isn't harness engineering or prompt tuning — it's infrastructure, and nearly everyone hits the same wall when they try to scale beyond a prototype.
 
-Zico Kolter chairs the Safety and Security Committee (SSC) at OpenAI's board while running the machine learning department at Carnegie Mellon. He's one of the rare people who actually does AI safety governance at the frontier lab level, not just writes about it.
+Angela (head of product, Claude platform at Anthropic) and Caitlin (head of engineering, Claude platform at Anthropic) built Claude Managed Agents after Anthropic repeatedly rebuilt the same agent infrastructure for its own internal products. Their core finding: most developers expect the hard part to be getting the most out of the model. What actually stops them is production reliability — keeping agents running across sandboxes, persisting state, handling long-running async tasks, and recovering when connections drop. As Caitlin put it: "I think people think the harness engineering part is the hard part... what we saw was everybody hits an infrastructure wall."
 
-The SSC functions like a corporate audit committee — it reviews every major model release, meets with safety and alignment teams, gets third-party evaluations, and has real authority to delay a release. But what Kolter makes clear is that the committee's power is limited if the underlying safety work isn't being done in training.
+One counterintuitive take on model strategy: as frontier models diverge in approach, tightly pairing your harness to a specific model beats maintaining a generic one that hot-swaps models. Angela: "If you look back, maybe even just a couple months ago, it was very standard to kind of build a very, very, very generic harness. It's super generic, and then you can kind of hot swap models across all of those things. I think now, for the next generation of models, everyone's taking slightly different techniques." The teams squeezing the most out of any model are harness-engineering specifically for it.
 
-His sharpest point: across nearly every capability domain — math, coding, legal reasoning — the dominant strategy is to wait for the next model. It will be better. But that strategy fails completely for robustness. "So far, we have not seen that same thing happen when it comes to things like the robustness of models. You can't just sort of trust models to get safer by getting bigger." Safety requires explicit investment: monitors, substructures, usage tracking, and system-level filters layered on top of the model itself.
+On multi-agent architectures: the team sees LEGO-like primitives enabling very different patterns — adversarial generation/critique, swarming for bug hunting, wide vs. deep research configurations — each best-suited to specific use cases. Being able to hill-climb at the architecture level, not just the prompt level, is where the frontier is now.
 
-He ran the largest AI red-teaming competition ever — 1.8 million attack attempts through his startup GraceOne — and the results confirmed it: robustness doesn't come for free with scale. Meanwhile, the attack surface is growing fast as agentic systems gain real-world access and autonomy.
+The long-range vision: Claude gets so good at understanding itself that it can "write itself on the fly" — choosing models, spinning up sub-agents, and configuring everything automatically. You'd just specify an outcome and a budget. That world, the platform team says, requires infrastructure to scale massively to handle agents that are constantly creating and recreating themselves.
 
-On jailbreaks and prompt injection: Kolter puts them at the "simpler mistakes" end of a four-category AI risk spectrum — the model being fooled because it doesn't fully understand context. Real, but addressable, and not where his deepest concern lies.
-
-The most surprising moment: the full mathematical framework of an AI system fits in roughly 200–300 lines of Python. "The entire complexity of an AI system evolves from the data they're trained on." The actual engineering challenge — and the real complexity — is in the data pipelines and getting 10,000 GPUs to work efficiently together.
-
-https://www.youtube.com/watch?v=DvyZcCfepeI
-
+<https://www.youtube.com/watch?v=lLypHkIVLqc>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
