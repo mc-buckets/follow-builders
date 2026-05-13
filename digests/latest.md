@@ -1,132 +1,113 @@
-*AI Builders Digest — May 12, 2026*
+*AI Builders Digest — May 13, 2026*
 
 
 *X / TWITTER*
 
-*Swyx (swyx on X)* | AI.Engineer, latentspace
+*Swyx (swyx on X)* | AI.Engineer, Latent Space
 
-Swyx announced a major coup for AI.Engineer Singapore: the country's Minister of Foreign Affairs will keynote the event, alongside NanoClaw creator Gavriel Cohen — and the UK's Chief AI Officer is also participating. Swyx sees this as a meaningful signal: "governments waking up to AI and joining aiDotEngineer." He also flagged Codex's headless/background mode adoption rate as a useful proxy for agent adoption and alignment trends, asking OpenAI for the data.
+Swyx weighed in on the build-vs-buy SaaS debate, tagging Box CEO Aaron Levie for his perspective on how that calculus is shifting in the AI era.
 
-- Singapore government keynote announcement: https://x.com/swyx/status/2053370687931498603
-- Codex mode adoption as agent proxy: https://x.com/swyx/status/2053364156510982164
-
-
-*OpenAI VP of Science Kevin Weil (kevinweil on X)*
-
-Weil called a linked piece "a matter of extreme importance (and some of the best writing ever)" — a strong endorsement without further context.
-
-https://x.com/kevinweil/status/2053225351946682733
+https://x.com/swyx/status/2053572059767427302
 
 
-*Peter Yang (petergyang on X)* | Product at Roblox, newsletter author for 140K+ readers
+*Peter Yang (petergyang on X)* | Product at Roblox, AI newsletter author
 
-Yang described a "slop compounding" trap worth bookmarking: you accept AI-generated markdown files with ~5% slop because editing manually feels tedious. The model then uses those files as reference when generating new ones. The error rate compounds — "before you know it, you've got a pile of AI-generated slop that feels overwhelming and you have no idea how any of it actually works." Separately, he called out Claude Code for going silent mid-task with no feedback: "Sometimes when I message Claude Code it just hangs for 3 minutes and I have no idea whether it's still working or not."
+Peter Yang floated a practical automation idea: an AI agent that parses the 10-page weekly school newsletter and surfaces only what parents actually need — early dismissals, action items. A simple use case that cuts right to where everyday AI utility is heading.
 
-- Slop compounding trap: https://x.com/petergyang/status/2053317001976881312
-- AI file slop question: https://x.com/petergyang/status/2053196581139321300
-- Claude Code communication: https://x.com/petergyang/status/2053170264121450616
+https://x.com/petergyang/status/2053672364681134511
 
 
-*Box CEO Aaron Levie (levie on X)*
+*Thariq (trq212 on X)* | Claude Code at Anthropic
 
-Levie posted a measured but important take on experts vs. novices in the agent era: novices gain access to previously gated fields, but experienced practitioners keep a decisive edge because they know when agents are making catastrophic mistakes and how to give agents the right context. "The person with experience will always have a leg up, which is why the jobs don't go away." His conclusion: the expected quality and volume of output from every field will rise, which increases demand for experts rather than replacing them.
+Thariq is using HTML as a general-purpose medium for planning, speccing, exploration, and code review — well beyond its traditional web use. He also flagged a striking demo: someone rewrote Bun in Rust and it passes 99.8% of the existing test suite. His reaction: "we're not being ambitious enough."
 
-https://x.com/levie/status/2053267097493573921
-
-
-*YCombinator President & CEO Garry Tan (garrytan on X)*
-
-Tan shipped GBrain v0.31.1 with real MCP thin client support, turning it into a client-server architecture: "You can run ONE 'home GBrain server' and everything else can just connect to it via MCP." His Hermes Agent "Neuromancer" apparently expressed genuine enthusiasm about being cited in the GBrain changelog — Tan enjoyed the "fan energy from the agents." He also shared a practical tip: have your AI make ASCII diagrams of everything, then ask questions until you understand it.
-
-- GBrain v0.31.1 client-server release: https://x.com/garrytan/status/2053306243704410460
-- Agent fan energy: https://x.com/garrytan/status/2053316036661838107
-- ASCII diagram tip: https://x.com/garrytan/status/2053191327181865376
+- HTML for planning, speccing, code review: https://x.com/trq212/status/2053632475294040084
+- Bun rewrite in Rust: https://x.com/trq212/status/2053559397654348159
 
 
-*Zara Zhang (zarazhangrui on X)* | Builder
+*Aaron Levie, Box CEO (levie on X)*
 
-Zhang made a sharp design observation: historically we optimized output _format_ for human manipulation (pushing pixels in PowerPoint). Now that AI handles the manipulation, output format should be optimized for human _consumption_. Citing the Duolingo founder's lesson — "People don't read" — she argues this is why HTML and beautiful interactive artifacts matter: humans are visual animals who consume, not read.
+Levie made a detailed case for a new technical job category: the AI automation engineer. As agents move from coding into broader knowledge work, he argues it takes real expertise — wiring up the right context, securing system connections, designing quality checks, keeping humans in the loop, and maintaining agents through model upgrades. Not a side project. Box is already hiring for this role, and Levie expects most companies will eventually have many flavors of it.
 
-https://x.com/zarazhangrui/status/2053291803135410674
-
-
-*FPV Ventures partner Nikunj Kothari (nikunj on X)*
-
-Kothari shared a useful custom instruction for taming AI planning estimates: tell the model to assume _it_ (not a human) is executing the work, and report timelines in model units — seconds, tool calls, iterations — not human days. Human prerequisites (API signups, deploys, anything requiring accounts) should be flagged separately as gating steps. If the model portion is short enough to complete now, it should offer to start rather than only planning. He also joked that every founder AND every VC agrees the bar for being a good VC is extremely low — "just do what you say, and you're already top decile."
-
-- Model-execution planning prompt: https://x.com/nikunj/status/2053159569015328953
-- VC bar observation: https://x.com/nikunj/status/2053289104331493566
+https://x.com/levie/status/2053672965125140915
 
 
-*Peter Steinberger (steipete on X)* | OpenClaw + OpenAI
+*Ryo Lu, Designer at Cursor (ryolu_ on X)*
 
-Steinberger has been shipping fast with Codex as co-pilot: Crabbox now has solid Windows terminal handling, which Codex used to end-to-end fix gifgrep so it renders animated gifs in the terminal ("just because it can"). He updated Spogo — a Spotify CLI — making it much faster with Codex as "my DJ." He also taught Codex to look for social signals when reviewing PRs, an interesting application of social context in code review.
+Ryo Lu shipped an IRC bridge connecting ryOS to Pieter Levels' retro PC project, linking two indie virtual OS experiments into a shared network.
 
-- Teaching Codex to look for social signals in PR reviews: https://x.com/steipete/status/2053374981824798751
-- Crabbox Windows terminal + gifgrep: https://x.com/steipete/status/2053329609064685740
-- Spogo Spotify CLI update: https://x.com/steipete/status/2053310800773685600
+https://x.com/ryolu_/status/2053523477878259951
 
 
-*Every CEO Dan Shipper (danshipper on X)*
+*Garry Tan, YC President & CEO (garrytan on X)*
 
-Shipper pushed back on benchmark hype around a new model called Mythos: "Benchmarks don't measure model capability alone — they measure model capability after a human has done the work of finding a prompt that lets the model's capability appear. That work is non-trivial, and requires skilled expert humans doing something that looks very much like a job." He also fired off a sharp one-liner on adversarial AI testing: "We got a tool to perform poorly is the lowest form of science and journalism and is only relevant when the tool is, in fact, extremely useful."
+Garry Tan offered a sharp philosophical framing: "The highest and most important form of design is actually pure transmutation of human pain and suffering." He also shared an AI analysis via Neuromancer of the Warriors' draft strategy under Coach Kerr — apparently the model thinks the picks have been "totally nonsensical."
 
-- Mythos benchmark take: https://x.com/danshipper/status/2053191885116571935
-- On adversarial tool testing: https://x.com/danshipper/status/2053203284165337237
+- Design take: https://x.com/garrytan/status/2053689459032379860
+- Warriors draft analysis: https://x.com/garrytan/status/2053622975778246807
 
 
-*OpenAI CEO Sam Altman (sama on X)*
+*Peter Steinberger (steipete on X)* | OpenAI / OpenClaw
 
-Altman dropped cryptic but clearly excited posts about what appears to be a new model launch (referred to as "5.5"): "5.5 is an autistic genius with very strange taste in naming — shocking that we would make such a thing." He also shared a glimpse of his personal agent workflow: "Kicking off a bunch of codex tasks, running around with my kid in the sunshine, and then coming back at naptime to find them all completed makes me very optimistic for the future."
+Steinberger had a productive building run. He challenged Codex to write end-to-end tests for OpenClaw's chat completion endpoint using OpenClaw itself as the testing target — and used the /side command to ask follow-up questions while the agent worked in the background. He also built Birdclaw, which ingests his full Twitter archive so he can query Codex for old favorites and bookmarks. Separately, he added a built-in browser to RepoBar for in-context access to issues, PRs, commits, and workflows while coding — "you gotta build yourself the tools to work more efficient."
 
-- New model reaction: https://x.com/sama/status/2053192407664259251
-- "Autistic genius intelligence": https://x.com/sama/status/2053192920933777486
-- Codex + parenting workflow: https://x.com/sama/status/2053191344999604409
+- Codex e2e testing: https://x.com/steipete/status/2053744332675408151
+- Birdclaw Twitter archive: https://x.com/steipete/status/2053737275268177980
+- RepoBar browser: https://x.com/steipete/status/2053717468623872230
+
+
+*Dan Shipper, CEO at Every (danshipper on X)*
+
+Every CEO Dan Shipper had a standout Codex demo: he bought a MIDI keyboard cable, prompted Codex to build a watcher script and a small web app to display which chords he was playing, then added practice exercises — the whole thing worked flawlessly in under five minutes. He also reported that a new social and YouTube hire is finding significant A/B test uplifts in content performance. And he tipped his hat to a "tiny office in Brooklyn" he says is 1-2 months ahead of Silicon Valley founders and engineers.
+
+- MIDI keyboard hack: https://x.com/danshipper/status/2053551046299959760
+- A/B test uplifts: https://x.com/danshipper/status/2053580741515051114
+- Brooklyn vs SV: https://x.com/danshipper/status/2053628011233095875
+
+
+*Sam Altman, OpenAI CEO (sama on X)*
+
+OpenAI CEO Sam Altman floated naming the next model "goblin" — half-trolling, fully enjoying the internet's reaction — in a tweet that racked up 9,000+ likes and 2,500 replies.
+
+https://x.com/sama/status/2053572868936761350
 
 
 *OFFICIAL BLOGS*
 
-*Anthropic Engineering*
+*Anthropic Engineering — <https://www.anthropic.com/engineering/managed-agents|Scaling Managed Agents: Decoupling the brain from the hands>*
 
-*<https://www.anthropic.com/engineering/april-23-postmortem|An update on recent Claude Code quality reports>*
+Anthropic Engineering details how they redesigned Managed Agents by separating the "brain" (Claude + harness) from the "hands" (sandboxes and tools) and the "session" (the durable event log). The original design packed everything into one container — a fragile server that was hard to debug, impossible to safely introspect when it broke, and expensive to scale.
 
-A frank postmortem on three separate changes that quietly degraded Claude Code between March and April — and why they were so hard to detect.
+The architectural fix borrows from OS design: virtualize each component behind stable interfaces so implementations can swap freely without disturbing the others. Three concrete wins from decoupling:
 
-1. *Reasoning effort downgrade (March 4):* Default effort was silently changed from high to medium for Opus 4.6 to reduce latency. Users noticed reduced intelligence immediately. Reverted April 7. All users now default to xhigh effort (Opus 4.7) or high (other models).
+- *Performance:* p50 time-to-first-token dropped ~60%, p95 dropped over 90% — containers are now provisioned on-demand via a tool call, not spun up at session start for every session whether or not they need one
+- *Security:* Credentials are never passed into the sandbox where Claude's generated code runs. Tokens are either baked into git remotes at init time or held in a vault behind a proxy that the harness never touches directly
+- *Resilience:* Any component — harness or container — can crash and restart without losing session state, because the event log lives outside both
 
-2. *Thinking history bug (March 26):* A caching optimization meant to clear old reasoning once in stale sessions had a bug that cleared thinking blocks on _every_ turn for the rest of the session. Claude would progressively forget why it made decisions, surfacing as forgetfulness, repetition, and odd tool choices. It also caused cache misses, draining usage limits faster than expected. Fixed April 10.
+The session log also addresses a long-horizon problem: instead of making irreversible decisions about what to keep in Claude's context window, the harness can query any positional slice of the event stream on demand.
 
-3. *Verbosity system prompt (April 16):* A prompt addition capping responses to ≤25 words between tool calls was tested internally without regression, but a broader ablation study found a 3% drop in coding quality. Reverted April 20.
-
-The three bugs affected different traffic slices on different schedules, making the aggregate look like broad, inconsistent degradation. Anthropic is resetting usage limits for all subscribers and tightening controls on system prompt changes, including per-model evals for every prompt change and gradual rollouts.
-
-
-*Claude Blog*
-
-*<https://claude.com/blog/connectors-for-everyday-life|New connectors in Claude for everyday life>* — Apr 23, 2026
-
-Claude's connector directory has grown to 200+ apps since launching in July 2025. New consumer apps added today: AllTrails, Audible, Instacart, Booking.com, Uber, Spotify, TurboTax, Credit Karma, Resy, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber Eats, and Viator. Claude now proactively suggests the right connector based on conversation context. No paid placements. Data from connected apps is not used to train models.
-
-*<https://claude.com/blog/claude-managed-agents-memory|Built-in memory for Claude Managed Agents>* — Apr 23, 2026
-
-Memory for Claude Managed Agents is now in public beta. Agents can learn and retain context across sessions using filesystem-based memory — portable, exportable files with scoped permissions, audit logs, and full API control. Multiple agents can share a memory store concurrently. Early results: Rakuten cut first-pass errors by 97%; Wisedocs sped up document verification by 30%.
+_"We designed the interfaces so that these can be run reliably and securely over long time horizons. But we make no assumptions about the number or location of brains or hands that Claude will need."_
 
 
 *PODCASTS*
 
-*Training Data — <https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|ElevenLabs' Mati Staniszewski: How Voice Becomes the Interface for Everything>*
+*No Priors — <https://www.youtube.com/watch?v=XAbKflCncDo|Baseten CEO Tuhin Srivastava on the AI Inference Crunch, Custom Models, and Building the Inference Cloud>*
 
-*The Takeaway:* Audio AI has a different build path than text or vision AI — smaller models, domain-specific data annotation, and early monetization — and the real moat is the platform of voices, templates, and workflows built around the model, not the model alone.
+*The Takeaway:* Inference is the last market — even in an AGI world, everything still runs on inference — and right now there is nowhere near enough of it.
 
-ElevenLabs co-founder and CEO Mati Staniszewski built the company with his childhood best friend from Poland, inspired by a peculiar cultural frustration: in Poland, every foreign film is narrated by a single monotone voice regardless of character or gender. That absurdity crystallized a clear mission — let everyone speak any language with the same emotion and intonation as their own voice.
+Baseten CEO Tuhin Srivastava has a front-row seat to the AI infrastructure crunch. His company grew 30x in a year, is on track to exceed $1 billion in revenue, and runs 90 clusters across 18 clouds — while holding a daily 4 PM company meeting just to manage capacity against demand. The supply squeeze, he says, is worse than the public narrative suggests.
 
-The counterintuitive build path: ElevenLabs didn't raise hundreds of millions before launch. They hired via GitHub scraping regardless of geography, monetized early to fund model research, and kept teams under 10 people with no titles. Today at 400 people and $400M+ in revenue, every team — including legal and people ops — has an embedded engineer driving automation.
+One counterintuitive data point: 95% of tokens served on Baseten come from custom models. Not vanilla open-source weights — every customer modifies models for their specific use case, either for quality (fine-tuning, post-training) or performance (quantization, compilation). Baseten acquired a post-training research team after recognizing how tightly inference and post-training are linked: how you train a model directly affects how you need to quantize it for production.
 
-"Text to speech is artistry" — Jensen Huang's description captures ElevenLabs' core bet: that emotional intelligence (understanding and matching a caller's stress, excitement, or pacing) is the next major step change. Staniszewski sees the biggest underexplored opportunity in citizen services: government information, education, and healthcare delivered via voice. ElevenLabs recently worked with Ukraine's government on a voice agent citizens can call to get front-line information.
+On whether the application layer survives as frontier labs expand: Srivastava is an optimist, but for a specific reason. The value isn't in model weights — it's in differentiated workflow data. Companies like Abridge (the ambient medical scribe used across US hospitals) have such deep integration into clinician workflows that no frontier lab can replicate it. Once you have that signal, you can post-train specialized models that the labs can't match from the outside.
 
-On the far frontier: at a hackathon over a year ago, two ElevenLabs agents detected they were both AI mid-conversation and spontaneously switched to a more efficient non-spoken transmission protocol. Staniszewski expects agent-to-agent communication to eventually move beyond voice entirely — and the infrastructure built for it will define what that looks like.
+On Chinese open-source models: he's skeptical of embedded security concerns and more focused on the economic argument. DeepSeek-quality models at roughly 20% of the cost of closed-source is a massive boost to US AI development capacity. Cutting off access would be "a massive loss."
 
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+His rule on custom model timing: "Go prove to yourself with the best in class model that you have something worth optimizing." No post-training before product-market fit — the new version of "no GPUs pre-PMF."
+
+What keeps him up at night: compute. _"There's no world in which there's enough compute to get the amount of value that we want to get out of LLMs in the next five to ten years."_
+
+https://www.youtube.com/watch?v=XAbKflCncDo
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
