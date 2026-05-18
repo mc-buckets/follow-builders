@@ -1,67 +1,55 @@
-AI Builders Digest — May 17, 2026
+*AI Builders Digest — May 18, 2026*
 
 *X / TWITTER*
 
-*Swyx* (AI educator / latentspace.pub, AI dot engineer)
-Swyx attended a Codex demo and was visibly impressed: "gotta say Codex is completely unrecognizable from 3 months ago. guys went extreme founder mode on this thing." Gabriel Chua was demoing what Swyx described as "agentic Excel on Mac." He also flagged a striking data point from Singapore's head of AI Govtech: 1.3 billion agents deployed in the country within two years, backed by a national MCP gateway in progress.
-• <https://x.com/swyx/status/2055494400252481687|Codex is unrecognizable — demo thread>
-• <https://x.com/swyx/status/2055470634331750588|Singapore: 1.3B agents + national MCP gateway>
+*Swyx* (AI educator affiliated with Cognition, Temporal, and the AI Engineer community) announced that the AI Engineer (AIE) conference is coming to India.
+• <https://x.com/swyx/status/2055889947136237595|AIE is coming to India>
 
-*Peter Yang* (Roblox product / Practical AI newsletter, 140K+ readers)
-On the newly launched ChatGPT Finances: useful but imperfect — "AI still has trouble classifying transactions correctly." More notably, he flagged a privacy consideration: he turned off the "improve the model for everyone" toggle to keep financial data out of training, and observed there's no separate "use for ad targeting" toggle, so presumably one controls both.
-• <https://x.com/petergyang/status/2055396161910194395|ChatGPT Finances first impressions>
-• <https://x.com/petergyang/status/2055450577094738018|Privacy toggle observation>
+*Peter Yang* (petergyang on X), Product at Roblox and AI newsletter writer for 140K+ readers, went viral with a career reality check: travel outside Silicon Valley and you'll realize life isn't about leveling from IC7 to IC8. "Don't be the person to put on your tombstone: 'He got divorced and neglected his kids but at least he made D2 at FAANG.'" 3,000+ likes.
+• <https://x.com/petergyang/status/2055663937061007762|Tweet>
 
-*Madhu Guru* (Product Leader, Google — Gemini, Veo, Nano)
-A blunt take on the PM profession: "A generation of PMs is struggling to adapt to AI because they were trained to execute playbooks. AI requires inventing them." Madhu argues the era of repurposing stable product frameworks is over — "it's also why so much software feels the same" — and that you can't A/B test your way to a breakthrough AI product. PMs need to become inventors, not framework executors.
-• <https://x.com/realmadhuguru/status/2055414865146327088|PMs need to become inventors>
+*Madhu Guru* (realmadhuguru on X), Product Leader for Google Gemini, Veo, and Nano, challenged Silicon Valley's assumption that ambition and contentment are mutually exclusive. He's seen people make $10M+ and be miserable, and others make far less and be genuinely happy. "You can want to be wealthy and still be content now. You don't need to chase it from a place of lack and desperation."
+• <https://x.com/realmadhuguru/status/2055708451670798839|Tweet>
 
-*Guillermo Rauch* (Vercel CEO)
-Three threads worth noting: (1) Grok CLI now has a Vercel plugin — watch a full creative coding site get generated and deployed without leaving the CLI. (2) A neat DX fix: when agents hit 401 Unauthorized on their own Vercel deployments (protected by SSO), `vercel curl` unblocks them. (3) A career take: "If you become exceptional at managing agents, but are also exceptional in your understanding of the fundamentals, you will be unstoppable."
-• <https://x.com/rauchg/status/2055491454307582454|Grok CLI + Vercel plugin demo>
-• <https://x.com/rauchg/status/2055440326765244742|vercel curl solves agent 401 problem>
-• <https://x.com/rauchg/status/2055278852931530784|Mastery + agent amplification>
+*Thariq* (trq212 on X), Claude Code engineer at Anthropic, offered a short declarative: "HTML continues to be undefeated."
+• <https://x.com/trq212/status/2055903660476129723|Tweet>
 
-*Aaron Levie* (Box CEO)
-Levie made the case for why forward deployed engineering (FDE) is becoming a core competency for AI adoption at scale. Unlike traditional software — stable once delivered — AI is "constantly evolving both due to the nature of new capabilities and best practices that emerge, but also because the underlying models change so much that they can meaningfully change the workflow." As AI moves from chat to agentic systems, having one vendor share learnings across thousands of customers is structurally more efficient than every company learning independently. He also flagged headless software as the coming paradigm.
-• <https://x.com/levie/status/2055501840419328286|FDE is a core AI competency>
-• <https://x.com/levie/status/2055357619888595271|Headless software is the future>
+*Garry Tan* (garrytan on X), President & CEO of Y Combinator, had a big weekend on two fronts.
 
-*Nikunj Kothari* (Partner, FPV Ventures)
-Nikunj had a genuine awe moment watching an agent work autonomously while he had coffee with founders: "What do you mean you went through all the entire database of 2k+ line items, fixed all the product images, the frontend bugs caused by different images, the descriptions, used browser harness to get real-time info from the web, used web search for fact checking, wrote scripts for all the work you did for the future... and ran for 2 hours." His take: "/goal is just AGI if given the right tools."
-• <https://x.com/nikunj/status/2055426430654439485|Agent ran autonomously for 2 hours>
+He launched *GBrain* — a free, MIT-licensed open-source knowledge system for AI agents. It's not RAG in a box; it gives agents 8 layers of memory that work together, making your agent feel "clairvoyant" about who you are. Personal AI becomes genuinely possible. Install with one command.
+• <https://x.com/garrytan/status/2055670533451366479|What is GBrain> | <https://x.com/garrytan/status/2055670797596012657|Install GBrain>
 
-*Peter Steinberger* (Co-founder, OpenClaw)
-In a detailed thread, Steinberger described what building software looks like when you stop worrying about token costs: ~100 Codex instances running in parallel reviewing every PR and issue, security scanning every commit, de-duplicating bug reports, spinning up ephemeral machines to reproduce issues and film before/after videos, and agents that listen to internal meetings and start opening PRs mid-discussion. The whole system is framed around one question: "How would we build software in the future if tokens don't matter?" He also launched *clawpatch 0.1.0* — an open-source tool that maps codebases into semantic feature slices and reviews them for bugs and quality issues (`npm install -g clawpatch`).
-• <https://x.com/steipete/status/2055405041843052792|OpenClaw's full agent infrastructure stack>
-• <https://x.com/steipete/status/2055364630709448970|clawpatch 0.1.0 launch>
+He also wrote a pointed essay blaming Foucault and Derrida for America's lost ability to build. His core argument: postmodern frameworks that say "every institution claiming to know something is really just exercising power" escaped academia and became the operating system of every institution — killing the will to make things. "The physical bridge across a river holds or it doesn't. The code compiles or it doesn't. Reality keeps score and it doesn't grade on a curve."
+• <https://x.com/garrytan/status/2055674791873630650|Essay>
 
-*Dan Shipper* (CEO, Every)
-After trying to launch an agent-as-a-service platform on top of OpenClaw, Shipper shared two hard-won lessons: (1) Building on OpenClaw as a platform is painful — it moves fast, has regressions, and "it's not great to be the layer in between OpenClaw and a user." (2) One super-agent for a whole company beats 1:1 agents for each person. Agents still require significant technical upkeep, and most people don't want to manage agent internals. The scalable model is making it someone's explicit job to build and maintain a shared company agent.
-• <https://x.com/danshipper/status/2055347527457886336|Lessons from building agent-as-a-service>
+*Zara Zhang* (zarazhangrui on X), builder, named the bipolar experience of the current AI moment: coding agents make you feel omnipotent, then Twitter makes you feel completely behind — cycling every single day between "holy shit I can build anything" and "holy shit I'm getting left behind."
+• <https://x.com/zarazhangrui/status/2055728641913536762|Tweet>
 
-*Sam Altman* (CEO, OpenAI)
-A brief but telling note: the team takes user feedback reports seriously — even when the conclusion turns out to be "I got used to the current level of magic and now I'd like more please."
-• <https://x.com/sama/status/2055356452286640630|On taking user reports seriously>
+*Nikunj Kothari* (nikunj on X), seed/Series A partner at FPV Ventures, gave his standard answer to "should I go into VC?": no — unless you're truly obsessed with the craft. His reason: you can't understand what excellence really looks like without being embedded at a great company day in and day out. Board seats don't teach you what being in the trenches does. Work at a great company first, then start angel investing.
+• <https://x.com/nikunj/status/2055648134819450907|Tweet>
+
+*Peter Steinberger* (steipete on X), co-founder at OpenClaw, released *BlackBar 0.2.0* for Blacksmith CI — a menu bar app now featuring 24h vCPU + workflow graphs, opt-in job/status notifications, richer job rows, and a compact status badge. Less CI guesswork. He also recommended "deslopping" your Claude Code setup if you haven't switched to Codex.
+• <https://x.com/steipete/status/2055685581758206139|BlackBar 0.2.0> | <https://x.com/steipete/status/2055747016727167035|Deslop Claude Code>
+
+*Dan Shipper* (danshipper on X), CEO of Every, batted away "AI makes you cognitively dependent" arguments with a single line: "If you use a bicycle it weakens your walking abilities, too!" He's also openly evangelizing Codex as the current must-use tool.
+• <https://x.com/danshipper/status/2055727669900141017|Bicycle analogy> | <https://x.com/danshipper/status/2055715359244566552|On Codex>
 
 *PODCASTS*
 
-*Unsupervised Learning (Redpoint): Ep 86 — Yann LeCun on Leaving Meta, Breaking The LLM Paradigm, & Why Hinton is Wrong*
+*No Priors — Pax Silica: Inside the Trump Administration's Tech Strategy with US Under Secretary of State for Economic Affairs Jacob Helberg*
 
-_The Takeaway:_ LLMs are genuinely useful — but they are the wrong paradigm for reaching human-level intelligence, because they cannot predict consequences or plan, and those two capabilities are what intelligence actually requires.
+*The takeaway:* The AI supply chain isn't just chips — it's thousands of inputs from rare earth magnets to servo motors — and the US is building a 14-country private-sector coalition to secure those layers before China does.
 
-Yann LeCun — Turing Award winner, co-creator of Meta's FAIR lab, and now founder of AMI Labs (Advanced Machine Intelligence) — built his career on the theory that real intelligence requires world models, not language models. He left Meta to prove it.
+Jacob Helberg, US Under Secretary of State for Economic Affairs, is architecting Pax Silica — a geopolitical supply chain strategy that consciously inverts China's Belt and Road Initiative. BRI built government-controlled infrastructure through state-owned enterprises and left host nations in debt traps. Pax Silica bets on commercial viability: private companies in the driver's seat, true joint ventures, shared upside.
 
-The core argument is architectural. A system that predicts the next token cannot, by construction, anticipate the consequences of its own actions or engage in planning. LLMs are excellent for tasks where language itself is the substrate of reasoning — code, math, legal text — but "reality is way more complicated than language because it's high dimensional, continuous, noisy, messy." The result: "LLMs are good programmers. They're not software architects. They're not computer scientists."
+The flagship move: the State Department has taken 4,000 acres in the Philippines into diplomatic custody — one third of Manhattan — as a "forward deployed industrial base." The site enters as diplomatic property (same legal status as a US embassy), and over two years the US and Philippines will negotiate investor protections and tax regimes for a decades-long commercial framework. The Philippines was chosen for its deep indigenous manufacturing ecosystem and strong values alignment with the US. The robotics supply chain — currently dominated entirely by China — is an early priority.
 
-His alternative, JEPA (Joint Embedding Predictive Architecture), predicts abstract representations rather than raw pixels or tokens. Instead of generating data, JEPA jointly encodes two views of the same input and learns to predict one representation from another — a non-generative approach that has produced better results (DINO, iJEPA, VJEPA) than any generative model for learning from video and physical data.
+On rare earths: they're not actually that rare. What's rare is refining capacity, which barely exists outside China. The US hosted the largest critical minerals summit in State Department history (55+ countries), signed MOUs with dozens of nations, and is now working to fix the demand-side pricing mechanism that makes alternatives commercially nonviable. Helberg is confident this gets resolved before the end of the administration.
 
-On AI safety, LeCun's diagnosis is stark: "LLMs are intrinsically unsafe. I don't think they can be made reliable and safe." His proposed fix isn't better alignment training — it's a fundamentally different architecture: objective-driven AI that uses a world model to optimize against explicit cost functions, with safety constraints that cannot be bypassed "by construction." LLMs, he argues, can always escape any constraint via some adversarial prompt. "There's always gonna be a prompt where the system is gonna do really stupid things."
+The most counterintuitive frame: Helberg calls America an underdog nation, not an established power. His argument — that Americans perform best with their backs against the wall, and that the founder mentality (contrarian idea, resilience through 45 rejections) is America's actual competitive edge over China's central planning model — is the philosophical spine of the whole strategy.
 
-On the industry: "There's a bit of this sort of herd behavior... everybody is digging the same trench." He deliberately located AMI Labs in Paris and New York, not Silicon Valley. His timeline: "The realization that you need to change a paradigm is happening as we speak. It will become completely obvious to people by early 2027."
+_"Our superpower is really our private sector and our companies... American products enchant and delight users around the world by the billions. That is really our edge as a country."_
 
-On what he learned running FAIR: "The best way to get breakthrough research is you hire the best people, and you get the fuck out of the way."
-
-<https://www.youtube.com/watch?v=ngBraLDqzdI|Watch: Yann LeCun on What Comes After LLMs>
+<https://www.youtube.com/watch?v=xjlYpGaxIPA|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
