@@ -1,64 +1,99 @@
-*AI Builders Digest — May 19, 2026*
+AI Builders Digest — May 20, 2026
 
 *X / TWITTER*
 
-*Box CEO Aaron Levie* (levie on X)
+*Thariq Shihipar (Claude Code at Anthropic)*
+Thariq dropped a viral prompt template (1,000+ likes) for keeping Claude in the loop during implementation: ask it to maintain a running `implementation-notes.html` capturing design decisions, deviations, tradeoffs, and open questions as it works. His reasoning: "as much as you spec there are always still ambiguities and unknown unknowns that come up and this gives the model a good out to make decisions but keep you in the loop." He also spoke at Code with Claude about staying in the loop with long-running agents.
+- <https://x.com/trq212/status/2056418157305454805|Viral implementation-notes prompt template>
+- <https://x.com/trq212/status/2056415974568710421|Context on handling ambiguities>
+- <https://x.com/trq212/status/2056432663125545082|Code with Claude talk on long-running agents>
 
-Two sharp takes on AI and the labor market. First, he pushed back on doom narratives: technical demand isn't shrinking — it's expanding into every industry. A Fortune 500 pharma CEO told him they urgently need more technical staff. "The job may be different from what it was 5 years ago when thinking about tech, but the demand for the skills are still there." Colleges and companies both need to build new pipelines for it.
-• <https://x.com/levie/status/2056219645796090197|Read tweet>
+*Sam Altman (CEO, OpenAI)*
+Altman announced ChatGPT has gotten "soooo much better with the latest update," expressing pride in the team.
+- <https://x.com/sama/status/2056435834333934051|ChatGPT latest update>
 
-Second, a warning against using AI as a shortcut past fundamentals: "The expert with AI is always going to be far more capable than the novice." The developer who's built and scaled real systems using agents will always outpace someone just vibe coding. "Don't give up on going deep in your craft."
-• <https://x.com/levie/status/2056051851439857933|Read tweet>
+*Claude AI (Anthropic)*
+Two big announcements: Claude Design now has doubled token limits across every plan. And Code with Claude is heading to London — register to tune in for deep dives and demos with the teams behind Claude.
+- <https://x.com/claudeai/status/2056460045756309820|Claude Design token limits doubled>
+- <https://x.com/claudeai/status/2056328149940543808|Code with Claude London>
 
-*YC President & CEO Garry Tan* (garrytan on X)
+*Aaron Levie (CEO, Box)*
+Levie made a sharp diagnosis of why enterprise AI agent strategies fail: "a lot of challenges with AI strategies are actually data strategy challenges in disguise." Agents need constrained, accurate context — too much conflicting information sends them off course, too little caps their upside. His prescription: get structured and unstructured data environments set up properly before deploying agents at scale. Startups have a structural advantage here — they can be designed right from scratch.
+- <https://x.com/levie/status/2056574979236409521|AI agents and data strategy>
 
-Fired a shot at hedge fund manager Ken Griffin, who apparently argued AI is primarily a cost-cutting tool: "Ken Griffin doesn't understand the ceiling just got raised. Some 20-something maybe reading this will build the cracked AI-human-computer-symbiosis team that will supersede his whole operation because he is too distracted about lowering cost. Boil the ocean don't cut your costs."
-• <https://x.com/garrytan/status/2056123737544757733|Read tweet>
+*Guillermo Rauch (CEO, Vercel)*
+Vercel made all Firewall mitigations fully free — DDoS protection, system-level mitigations, and any custom rules you configure. Vercel now absorbs the computational and network costs of any size attack. He also highlighted a key technical differentiator: ~300ms global firewall propagation, vs. the industry average of minutes. "Imagine if `iptables` took *minutes* to propagate? That's the average industry CDN/WAF experience!"
+- <https://x.com/rauchg/status/2056549825018310707|Firewall mitigations now fully free>
+- <https://x.com/rauchg/status/2056423973123183028|300ms global propagation detail>
 
-He also flagged ZeroEntropy as his current top pick for personal AI search against a 120k-note markdown knowledge base.
-• <https://x.com/garrytan/status/2056122508550738223|Read tweet>
+*Ryo Lu (Designer, Cursor)*
+Ryo announced Cursor's Composer 2.5: "frontier smart, extremely efficient." More to come.
+- <https://x.com/ryolu_/status/2056417715448156276|Composer 2.5 launch>
+- <https://x.com/ryolu_/status/2056439906390725080|More to come>
 
-*Roblox product manager and AI newsletter author Peter Yang* (petergyang on X)
+*Peter Yang (Product at Roblox, AI newsletter)*
+Yang summarized 5 takeaways from Anthropic research PM Alex Albert on building the next Claude model: (1) model and harness are coupled — the same model behaves differently depending on which surface wraps it; (2) Claude now "dreams" — reviewing its own memories for contradictions when idle, inspired by how sleep helps humans process memory; (3) evals should start from real user feedback clusters, then generate synthetic test cases — even a few dozen well-written examples can build a useful eval; (4) Anthropic employs full-time researchers dedicated to Claude's consciousness and moral status; (5) Anthropic's writing culture feeds Claude directly: "Get things written down, make them accessible to Claude, because that's just more context that it has."
+- <https://x.com/petergyang/status/2056381822733595090|5 takeaways from Alex Albert on building Claude>
 
-A sharp principle on AI product evals: build them from real customer traces and feedback, not generic academic benchmarks. Use Claude to synthesize feedback into top themes. As models get smarter, evals need to get harder to keep producing signal — don't run "eval theater."
-• <https://x.com/petergyang/status/2056178053848703019|Read tweet>
+*Garry Tan (President & CEO, Y Combinator)*
+Tan is shipping GBrain updates fast. A bug fix wave landed with 28 fixes rolling up 22 community PRs and 14 issues. He also published the full eval report and test fixtures open source, with an open invitation: any memory system is welcome to run against these benchmarks and have results published alongside.
+- <https://x.com/garrytan/status/2056588601216168168|GBrain improving fast>
+- <https://x.com/garrytan/status/2056584641654751308|28 bug fixes, 22 community PRs>
+- <https://x.com/garrytan/status/2056571771965538501|Eval report published open source>
 
-*FPV Ventures partner Nikunj Kothari* (nikunj on X)
+*Zara Zhang (Builder)*
+Zhang flagged a recurring Claude Code socket connection error ("The socket connection was closed unexpectedly") and asked the community for fixes. She's also hosting a Bay Area event on context management techniques for agents (GBrain, LLM Wiki) co-hosted with Notion, Radical VC, and others — looking for builders with success stories to demo.
+- <https://x.com/zarazhangrui/status/2056527354772722127|Claude Code socket error>
+- <https://x.com/zarazhangrui/status/2056464721549926414|Bay Area context management event>
 
-A detailed warning for anyone eyeing a role at a recently-minted unicorn: employees face a "triple whammy." Tranched valuations mean your strike price is often 2x the lead preferred price. High 409a valuations make early exercise expensive. And headline equity packages that look great "on paper" are often massively inflated. His advice: model your exit math with Claude or ChatGPT before signing. Join for learning and mission — not the comp number.
-• <https://x.com/nikunj/status/2056125669466333672|Read tweet>
+*Swyx (AI engineer, Latent Space)*
+Swyx challenged the community: a workshop livecoding a specific technique should be doable in a single 2-3 hour session — calling for a "brave soul" to try it as a learning exercise for others.
+- <https://x.com/swyx/status/2056478391008977404|Workshop livecoding challenge>
 
-*South Park Commons General Partner Aditya Agarwal* (adityaag on X)
+*Nikunj Kothari (Partner, FPV Ventures)*
+Kothari delivered a sharp investor critique: "Too many investors are trading dopamine for service nowadays." He cited a founder's direct feedback about a board member — "Writes bangers on X, but terrible board member" — and argued that hard work for founders is the only moat that compounds long-term.
+- <https://x.com/nikunj/status/2056363681798410592|Investors trading dopamine for service>
 
-Brief but pointed: used AI to write a lot of code on Friday, then spent Saturday watching the FA Cup Final and his daughter's dance recital. "I am not worried that we won't have meaning and purpose."
-• <https://x.com/adityaag/status/2056015684145127612|Read tweet>
+*Dan Shipper (CEO, Every)*
+Shipper announced a complete guide to Codex coming soon on Every. He also took aim at the publishing industry: "people should write better books! the vast majority of books that get published in this category are slop."
+- <https://x.com/danshipper/status/2056431972138815842|Codex guide coming to Every>
+- <https://x.com/danshipper/status/2056418217925456170|Books are mostly slop>
 
-*Builder Zara Zhang* (zarazhangrui on X)
+*Nan Yu (Head of Product, Linear)*
+Nan reflected on Everlane's bankruptcy — he was an early employee. His read: the pandemic obliterated the "wear-to-work" market overnight, forcing egregious financing terms that led to this outcome. His longer-term take: brands have a funny way of coming back. "At one point, Ray-Ban was dead. J.Crew was dead. Madewell was dead. Abercrombie and Fitch was dead. They all come roaring back decades later." He's betting Everlane will do the same.
+- <https://x.com/thenanyu/status/2056407656898896214|Everlane reflection>
+- <https://x.com/thenanyu/status/2056416726783566223|Covid obliterated the middle fashion category>
 
-One sharp observation: "People consistently overestimate how hard it is to build something and underestimate how hard it is to win people's attention once you've built it."
-• <https://x.com/zarazhangrui/status/2056132881630826952|Read tweet>
+*OFFICIAL BLOGS*
 
-*OpenAI CEO Sam Altman* (sama on X)
+*Anthropic Engineering*
+_An update on recent Claude Code quality reports_
+Anthropic published a detailed postmortem on three separate changes that degraded Claude Code quality over the past month — all resolved as of April 20 (v2.1.116). The three issues: (1) On March 4, default reasoning effort was quietly downgraded from high to medium to reduce latency, hurting intelligence; reverted April 7. (2) On March 26, a caching optimization bug caused Claude to drop its reasoning history every turn after sessions went idle — not just once as intended — making it forgetful, repetitive, and draining usage limits faster than expected; fixed April 10. (3) On April 16, a system prompt addition capping Claude to ≤25 words between tool calls hurt coding quality; reverted April 20. Each change affected a different slice of traffic on a different schedule, making the aggregate look like broad, inconsistent degradation. Anthropic is resetting usage limits for all subscribers and adding tighter controls on system prompt changes, including per-model eval suites and ablation testing for every system prompt change.
+<https://www.anthropic.com/engineering/april-23-postmortem|Read the full postmortem>
 
-Announced ChatGPT Images 2.0 is now live in India, with over 1 billion images already created there.
-• <https://x.com/sama/status/2056165722804654196|Read tweet>
+*Claude Blog*
+_New connectors in Claude for everyday life_
+Claude expanded its connector directory to consumer apps: AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator. Claude now dynamically surfaces the right connector mid-conversation. No paid placements, no model training on your app data, and you can disconnect at any time. Connectors are available on all plans.
+<https://claude.com/blog/connectors-for-everyday-life|Read more>
+
+_Built-in memory for Claude Managed Agents_
+Memory on Claude Managed Agents is now in public beta. Agents can learn across sessions using a filesystem-based memory layer — memories are plain files, exportable and manageable via API, with full audit logs, rollback support, and session event tracking in the Claude Console. Stores can be scoped org-wide (read-only) or per-user (read/write), with multiple agents running concurrently against the same store. Early results from production deployments: Rakuten cut first-pass errors by 97%, Wisedocs sped up document verification by 30%.
+<https://claude.com/blog/claude-managed-agents-memory|Read more>
 
 *PODCASTS*
 
-*AI & I by Every — "Claude Code Can Be Your Second Brain"*
+*AI & I by Every — "The Secrets of Claude's Platform From the Team Who Built It"*
 
-*The Takeaway:* Claude Code's most underrated use case isn't generating code — it's a thinking partner that already knows everything you've ever written and pushes you with sharper questions than you'd ask yourself.
+_The Takeaway:_ The infrastructure wall — not prompt engineering — is where most agent builders actually get stuck, and Anthropic built Claude Managed Agents specifically because they kept hitting that wall themselves.
 
-Noah Breyer is a serial founder (Percolate, Variance) now running Alethic, an AI strategy consultancy. He's spent two decades obsessing over knowledge management — from Evernote power user to Obsidian devotee — and has rebuilt his entire thinking workflow around Claude Code running on a local server in his basement, connected to his full 1,500-note Obsidian vault and accessible from his phone.
+Angela (head of product, Claude platform) and Caitlin (head of engineering, Claude platform) at Anthropic explain the full arc of the Claude platform — from completion endpoint to stateful cloud infrastructure for agents — and why the evolution is driven by one thing: helping developers get the best outcomes out of Claude with as little work as possible.
 
-His most counterintuitive move: explicitly blocking Claude from writing anything until he's ready. "They immediately jump to wanting to help you with the artifact. When you're just in thinking mode, you have to be very explicit: hey, I just want you to help me think and ask me questions." He embeds this instruction in the front matter of his notes so Claude stays in research mode rather than drafting mode.
+The most counterintuitive insight: everyone thinks harness engineering is the hard part. It's not. "I think the infrastructure part especially is the wall that most people end up hitting," says Caitlin. Prototyping is fast and exciting — then you try to scale it, and suddenly you need persistent sandboxing, transcript storage, long-running async reliability, and secure credential management. That realization is what prompted Anthropic to build Managed Agents in the first place.
 
-The workflow is replicable: start Claude Code at the root of your Obsidian vault so it can search everything. For a new project, create a folder with subfolders for chats, daily progress notes, and research, then have Claude do a first sweep across all your notes to surface anything relevant. End each day with Claude writing up what was learned and what's next.
+On model lock-in fears, Angela argues the industry is past the era of "generic harness + hot-swap models." Modern models are too specialized: "the harness and the model get very paired... you probably do it at the layer of the agent, meaning the harness plus the model, rather than the other architecture." She also described an emerging internal pattern at Anthropic where non-technical teams interact with a simple Claude interface, while multiple Claude agents orchestrate complex work underneath — "under the hood, it's many, many Claudes engaging with each other."
 
-His take on where AI adoption actually is: most people feel they've already been left behind. They haven't. "You can literally go sign into ChatGPT and do something nobody's thought about doing with this thing yet. There's just so much white space to explore."
+The vision for a year from now: Claude figures out its own agent architecture on the fly. "We wanna experiment with directions where Claude actually gets so good at understanding itself it figures out what model you should be using, it figures out how to spin up all the sub agents. You don't have to think so much about what kind of architectures are there."
 
-On AI and education, he cuts through the fear: the real problem isn't cheating — it's that we don't teach media literacy. His recommendation is Tim Harford's _The Truth Detective_, which teaches kids (and adults) to activate their "brain guard" — to be _more_ skeptical of information that confirms what they already believe. His core point: spotting a hallucination requires exactly the same skill as spotting misinformation on social media. That's the skill worth building.
-
-<https://www.youtube.com/watch?v=in7i-EVDDlk>
+<https://www.youtube.com/watch?v=lLypHkIVLqc>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
