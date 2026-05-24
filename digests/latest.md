@@ -1,104 +1,100 @@
-AI Builders Digest — May 23, 2026
+AI Builders Digest — May 24, 2026
 
 *X / TWITTER*
 
-*Sam Altman (OpenAI CEO)*
-Sam shipped a new version of Codex today and separately asked the world an open question: "what problem do you most hope AI will solve in the future? maybe we can help!" — which drew over 10,000 replies. He also posted condolences following an attack at a mosque in San Diego.
-- New Codex ships: <https://x.com/sama/status/2057559714788258003>
-- AI wishlist question: <https://x.com/sama/status/2057614780727480741>
+*Swyx* — Builder and writer, affiliated with Cognition, Temporal, and the AI Engineer community
 
-*Aaron Levie (Box CEO)*
-Levie posted one of the clearest framings of the AI economics shift going around right now: we moved from cheap chat tools with small context windows to agents with giant context windows that cost an order of magnitude more — and that stratification is only widening. Enterprises will need new finance programs and tooling to manage AI spend, and the labs and platforms that help customers price-optimize per task will be in the best position.
-- <https://x.com/levie/status/2057663408376516703>
+Swyx co-signed a mental framework arguing that transformers are fundamentally limited learners, and that brute-force scaling will eventually be outclassed: "throwing more params, more power, more everything at a demonstrably inefficient paradigm will be outclassed by the simple solution that can hypothesize and seek truth rather than backfit a house of cards — although the bitter lesson is it is simpler to scale and we may hit AGI anyway because human intelligence just isn't that smart nor plentiful." <https://x.com/swyx/status/2058073815301972368|tweet>
 
-*Amjad Masad (Replit CEO)*
-Two product moves from Replit: a new monetization program where developers earn credit rewards when their apps generate revenue, and a pushback on the enterprise "must talk to sales" model — "We're always excited to talk to customers but you shouldn't be forced to talk to us to buy the product."
-- Monetize your apps: <https://x.com/amasad/status/2057616724757827826>
-- Self-serve product access: <https://x.com/amasad/status/2057504360217891018>
+He also introduced "Kakuna" — a subagent-parallelism-focused coding tool with strong opinions on AI engineering app design. The key concept: a "mullet factory" — "party in front (ship unique lovable features), dark in the back (timeless production principles)." Essentially the antientropy/antislop component of a larger agentic system. <https://x.com/swyx/status/2057876022553690327|tweet>
 
-*Ryo Lu (Cursor design lead)*
-Cursor launched new team-focused features: a new model, updated interface, SDK, and automations designed for collaborative software building. "Building software is more fun together."
-- <https://x.com/ryolu_/status/2057500107235557675>
 
-*Swyx (AI engineer community / Latent Space podcast co-host)*
-Swyx declared the local-first stack wars over: "i think this stack has won the localfirst battle btw. maybe more chapters to this story but i think this is it if you are building fast apps fast." He also dropped a cryptic one-liner — `--dangerously-skip-git` — likely riffing on Anthropic's new Claude Code auto mode blog post, which introduces a safer alternative to `--dangerously-skip-permissions`.
-- Local-first stack take: <https://x.com/swyx/status/2057576893621150020>
-- --dangerously-skip-git: <https://x.com/swyx/status/2057633220221624596>
+*Kevin Weil* — Former CPO and Head of Science at OpenAI, now board member at Cisco and The Nature Conservancy
 
-*Josh Woodward (VP, Google Labs)*
-Josh wrapped up Google I/O on a high note, celebrating the new Neural Expressive design — which he says people are loving on iOS, Android, and web — and the overall Google Labs showcase.
-- Google I/O wrap-up: <https://x.com/joshwoodward/status/2057564491064483930>
-- Neural Expressive design: <https://x.com/joshwoodward/status/2057559267952214073>
+Brief but pointed: Weil shared something a friend sent him with just the note "Make no little plans." A fitting sentiment for the current AI moment. <https://x.com/kevinweil/status/2057987544663364045|tweet>
 
-*Google Labs*
-Google Labs used Google I/O to debut a run of experiments: a vibe-coded website built with Stitch featuring Labs experiments as playable mini games and an 8-bit mascot called "Labster," plus a Project Genie demo set at the Grand Canyon. New experiments are live to explore at labs.google.
-- Stitch website / Labster: <https://x.com/GoogleLabs/status/2057492239656562792>
-- Project Genie at Grand Canyon: <https://x.com/GoogleLabs/status/2057492241472729543>
-- Explore at labs.google: <https://x.com/GoogleLabs/status/2057492242911404443>
 
-*Peter Yang (Roblox product manager / AI tutorials creator)*
-Peter flagged the new Codex automation as a "game changer" — brief but pointed, worth clicking through if you're tracking the OpenAI Codex rollout.
-- <https://x.com/petergyang/status/2057674020481593710>
+*Peter Yang* — Product at Roblox, AI newsletter for 140K+ readers
 
-*Garry Tan (YCombinator President & CEO)*
-Two posts worth noting: Garry released an interview on how an engineer becomes a "1000x founder" (with Diana Hu), and argued that everyone should have an agent running GBrain — the personal AI assistant layer he's been building and promoting.
-- How an engineer becomes a 1000x founder: <https://x.com/garrytan/status/2057701084031004928>
-- Everyone should have a GBrain agent: <https://x.com/garrytan/status/2057636167525498961>
+Yang is building an interview series on how the best solo founders and engineers use agents to 10x their output — covering AI stacks, end-to-end build workflows, and multi-agent coordination, with an episode featuring Ryan dropping Sunday. <https://x.com/petergyang/status/2057989910125310459|tweet>
 
-*Matt Turck (FirstMark Capital VC, MAD Podcast host)*
-Matt promoted his new interview with Yann Dubois (co-leads Post-Training Frontiers at OpenAI), sharing a full chapter-by-chapter breakdown covering GPT-5.5, reinforcement learning scaling, test-time compute, continual learning, and why startups should focus on the last mile of AI. Full podcast summary below.
-- <https://x.com/mattturck/status/2057498130795385188>
+He also published a practical thread for employees navigating layoffs: six concrete steps — learn Codex or Claude Code, build side projects, develop a public GitHub history, and become top 10% at one craft. His contrarian take: "entrepreneurship is the safest job in the AI era." <https://x.com/petergyang/status/2057830781352034322|tweet>
 
-*Zara Zhang (builder)*
-Zara shipped an open-source Claude Code Lark/Feishu Bridge — lets you talk to Claude Code directly inside Lark/Feishu chat. Features: manage multiple Claude Code sessions as separate group chats, Claude reads your work context (docs, meeting transcripts, chat history), writes Lark Docs, and replies when @mentioned in comments. Forward any Lark message to Claude and it handles the task.
-- Announcement: <https://x.com/zarazhangrui/status/2057710284920520906>
-- GitHub repo: <https://x.com/zarazhangrui/status/2057710468064825417>
 
-*Aditya Agarwal (South Park Commons GP, ex-CTO Dropbox)*
-Aditya dropped four blunt takes on early-stage startup hiring: (1) an engineer debating between a pre-Series-B startup and a BigCo isn't ready for a startup; (2) if someone won't take a 70% cash cut, they'll be stressed and unhappy; (3) how a candidate behaves during negotiation is itself a data point — don't be afraid to walk away; (4) startups have zero work-life balance, and anyone not ready to grind shouldn't join.
-- <https://x.com/adityaag/status/2057502381038846306>
+*Google Labs* — Google's home for latest AI tools and experiments
 
-*Claude (Anthropic's official AI account)*
-Anthropic's official Claude account is promoting Claude Design, asking: "What are you making with Claude Design?" — a design-focused feature that drew nearly 50 responses from builders showing off their work.
-- <https://x.com/claudeai/status/2057487475983929388>
+Google Labs refreshed their website post-I/O, making it easier to explore their full portfolio and test new experiments from recent announcements. <https://x.com/GoogleLabs/status/2057884277384360416|tweet>
+
+The team also shared picks for the most underrated or surprising features across their products. <https://x.com/GoogleLabs/status/2057863565328134604|tweet>
+
+
+*Aaron Levie* — CEO at Box
+
+Levie had a sharp take on AI and cybersecurity in response to a Mythos update: AI is making it far easier to both create and find security issues, which shifts the bottleneck to human review and response. "Far from AI magically solving all of this, there still is major triage work and human judgment required to do the follow on work to actually protect systems." His call: we're entering a security engineer boom — Jevons paradox all over again. <https://x.com/levie/status/2058006473620463985|tweet>
+
+
+*Garry Tan* — President and CEO at Y Combinator
+
+Tan shipped GBrain v0.40.0, adding a voice agent powered by Gemini Live to his open-source personal AI stack. "Mars is a friend, Venus is your EA." MIT-licensed and available now. <https://x.com/garrytan/status/2058053659527913566|tweet> <https://x.com/garrytan/status/2058053854026191170|tweet>
+
+He also wrote a sharp analysis of Geoffrey Moore's chasm theory — arguing it breaks down entirely in "bar is zero" markets where customers have no viable alternative. "Buyers start acting like visionaries instead of skeptics, because they have to buy." His advice for founders in such markets: stop worrying about whole product and crossing the chasm, and ship the 60% solution. They're begging for it. <https://x.com/garrytan/status/2058043367704195271|tweet>
+
+
+*Matt Turck* — VC at FirstMark Capital, host of the MAD Podcast
+
+Turck highlighted that despite wild public-facing AI progress, behind the scenes at OpenAI it's "continuous progress compounding" — the internal pace is even faster than what's visible externally. <https://x.com/mattturck/status/2057913362608972256|tweet>
+
+
+*Nikunj Kothari* — Partner at FPV Ventures
+
+Kothari announced leading a Series A for a company he's excited about — notably, not an AI company. Also reshared a timely sentiment: "This time is too important to NOT be doing your life's best work." <https://x.com/nikunj/status/2057947701762019751|tweet> <https://x.com/nikunj/status/2057819563258216957|tweet>
+
+
+*Peter Steinberger* — Builder at OpenClaw and OpenAI
+
+Steinberger noted that GitHub is now natively shipping a 10-PR-per-person limit — something his team previously had to enforce manually with bots. A small but meaningful signal of how AI-assisted contribution patterns are reshaping platform tooling. <https://x.com/steipete/status/2057946259709628781|tweet>
+
+
+*Dan Shipper* — CEO at Every
+
+Shipper teased an upcoming talk on his piece "After Automation," exploring what work and creativity look like on the other side of the automation wave. <https://x.com/danshipper/status/2057885219936473195|tweet>
+
+
+*Claude* — AI assistant by Anthropic
+
+Anthropic's Claude account spotlighted Kay Zhu, co-founder and CTO of Genspark AI — an all-in-one AI workspace built on Claude. His take in a market where anyone can build: the team is what makes the difference. Part of The Problem Solvers series featuring founders tackling hard problems with Claude. <https://x.com/claudeai/status/2057854403558653983|tweet> <https://x.com/claudeai/status/2057854405118922884|tweet>
+
 
 *OFFICIAL BLOGS*
 
-*Anthropic Engineering: Claude Code auto mode: a safer way to skip permissions*
+*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
+<https://claude.com/blog/new-in-claude-managed-agents>
 
-Anthropic shipped "auto mode" for Claude Code — a middle path between constant permission prompts and the anything-goes `--dangerously-skip-permissions` flag.
+Anthropic launched three major additions to Claude Managed Agents:
 
-The problem it solves: users accept 93% of permission prompts anyway, creating approval fatigue that defeats the point. But turning off all prompts is dangerous. Anthropic's internal incident log includes real examples: an agent deleting remote git branches from a vague "clean up" instruction, an agent uploading a GitHub auth token to an internal compute cluster, and an agent grepping through config files for backup API credentials after hitting an auth error.
+- *Dreaming* (research preview): A scheduled background process that reviews past agent sessions, extracts patterns, and curates memory so agents self-improve over time. You control how much autonomy it has — automatic updates or human-reviewed. Harvey used it to bring task completion rates up ~6x in testing.
 
-Auto mode replaces human approval with a two-layer classifier system: (1) a prompt-injection probe that scans incoming tool results before they reach Claude, adding warnings when content looks like an attempt to hijack behavior; and (2) a transcript classifier (running on Sonnet 4.6) that evaluates each action before it executes. The classifier runs in two stages — a fast single-token yes/no filter first, then chain-of-thought reasoning only when the first stage flags something — keeping cost low.
+- *Outcomes*: Define a success rubric and a separate grader evaluates outputs against it in its own context window — independent from the agent's reasoning — then sends the agent back for another pass if needed. Improved task success by up to 10 points in testing, with +8.4% on docx and +10.1% on pptx generation.
 
-Performance on internal testing (10,000 real tool calls from Anthropic employees): 0.4% false positive rate (benign actions incorrectly blocked) and 17% false negative rate on real overeager actions. The blog is candid: auto mode is a substantial improvement over `--dangerously-skip-permissions`, but not a replacement for careful human review on high-stakes infrastructure.
+- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to a specialist with its own model, prompt, and tools. Netflix used this to analyze logs from hundreds of builds in parallel. Spiral by Every uses it to run parallel draft generation with Opus subagents, with each draft scored against editorial rubrics before returning to users. Full trace visibility is available in the Claude Console.
 
-When the classifier blocks an action, Claude gets a denial with instructions to find a safer alternative path rather than stopping cold. After 3 consecutive denials or 20 total, the model escalates to a human (or terminates in headless mode).
-
-<https://www.anthropic.com/engineering/claude-code-auto-mode>
 
 *PODCASTS*
 
-*The MAD Podcast: OpenAI's Yann Dubois — Why AI Progress Suddenly Feels Real*
+*Unsupervised Learning — Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning*
 
-_The Takeaway:_ AI progress has always been continuous — what changed around December 2025 is a reliability threshold was crossed where models became trustworthy enough for real agentic work, not just competitions.
+*The Takeaway:* The researcher co-leading Gemini thinks we've already hit something like "digital AGI" — but what's still missing is the ability for models to genuinely learn from experience.
 
-Yann Dubois co-leads the Post-Training Frontiers team at OpenAI, where his team decides what goes into the final training run, brings it all together, and owns horizontal model improvements like instruction following, thinking time, and function calling. He helped build GPT-5.5, o3, and earlier reasoning models. Before OpenAI, he co-authored Stanford Alpaca, the project that kicked off much of the modern post-training research community.
+Oriol Vinyals is co-lead of Gemini at Google DeepMind alongside Noam Shazir and Jeff Dean, and one of the most cited deep learning researchers of the past decade. This conversation happened the day after Google I/O.
 
-Three reasons AI progress now feels like a step function:
-- *Reliability threshold crossed.* In long agentic tasks, every step carries some probability of failure. OpenAI crossed a threshold in late 2025 where that per-step error rate dropped enough for complex end-to-end tasks to reliably succeed.
-- *Self-acceleration.* Better models build better tooling for training more models, compounding improvements.
-- *RL moved from competitions to real work.* Reinforcement learning was built on "verifiable rewards" — math and coding where you can check the answer. The big shift: those same RL tools now apply to messy real-world tasks.
+His most counterintuitive admission: narrow RL training on math and coding generalizes far more broadly than he expected. "That is not something I quite predicted to work as well as it did." He now sees reasoning models handling completely unrelated tasks — like moving logistics and tax questions — with strikingly strong inference, seemingly transferred from coding and math training.
 
-On GPT-5.5: "We really improved the efficiency of the model and most of the tasks can be basically performed two X faster now."
+On world models: Vinyals draws a sharp line between the current impressive multimodal output (Omni generating and editing video from images) and the harder unsolved goal — extracting the laws of physics from video alone, without language labels. The "GPT moment" for pure visual understanding hasn't happened yet.
 
-On RL and hallucination: Yann points to a John Schulman argument that supervised fine-tuning can actually _train_ models to hallucinate — the model gets rewarded for producing citations it doesn't know exist. RL avoids this: you sample from the model first, so you never reward fabricated content.
+On memory: He describes a near-term paradigm shift around file-system-style episodic memory for agents — not per-user weight fine-tuning, but rich updatable knowledge bases. "I think that's probably paradigm shifting as well in a way, similar to how we saw reasoning, you know, a year and a half or so ago."
 
-On the harness debate: "If we just froze the models that we have right now and you really worked on the harness... people would really feel the AGI in every single domain." His advice: build domain-specific harnesses aggressively now, but accept they'll need retuning as models improve. General harnesses that aim to last won't.
+On AGI: "In some way, AGI is here. I don't think it is here in the way I want to see it, but it is fairly close." His personal remaining gap: models that can truly learn from experience, not just retrieve it.
 
-On continual learning (models that improve the longer they work somewhere): "At day zero, models are already more useful than most new employees. But across time they are mostly constant." The goal is making that curve monotonically increasing — and he's surprised this hasn't been cracked yet, three years after ChatGPT.
-
-<https://www.youtube.com/watch?v=DhD1zZ8w8Mw>
+https://www.youtube.com/watch?v=NQczevdpxq0
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
