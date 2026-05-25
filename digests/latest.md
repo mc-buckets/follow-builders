@@ -1,100 +1,64 @@
-AI Builders Digest — May 24, 2026
+AI Builders Digest — May 25, 2026
 
 *X / TWITTER*
 
-*Swyx* — Builder and writer, affiliated with Cognition, Temporal, and the AI Engineer community
+*Thariq (Claude Code at Anthropic)*
+Thariq ran Claude's "please save me money" prompt against the legacy codebase of his old startup OMMultiverse — and it actually worked. He noted that he occasionally remembers this capability exists and is surprised every time it delivers real cost savings on a codebase he hasn't had time to maintain.
+- https://x.com/trq212/status/2058377974882210096
+- https://x.com/trq212/status/2058380417716125966
 
-Swyx co-signed a mental framework arguing that transformers are fundamentally limited learners, and that brute-force scaling will eventually be outclassed: "throwing more params, more power, more everything at a demonstrably inefficient paradigm will be outclassed by the simple solution that can hypothesize and seek truth rather than backfit a house of cards — although the bitter lesson is it is simpler to scale and we may hit AGI anyway because human intelligence just isn't that smart nor plentiful." <https://x.com/swyx/status/2058073815301972368|tweet>
+*Amjad Masad (CEO at Replit)*
+Masad amplified a user story that cuts to Replit's core pitch: a developer built their first mobile app MVP in a single weekend using Replit for Dial, and it passed Apple's App Store review on the very first submission — something that had never happened to them before, even using Cursor.
+- https://x.com/amasad/status/2058418731840159953
 
-He also introduced "Kakuna" — a subagent-parallelism-focused coding tool with strong opinions on AI engineering app design. The key concept: a "mullet factory" — "party in front (ship unique lovable features), dark in the back (timeless production principles)." Essentially the antientropy/antislop component of a larger agentic system. <https://x.com/swyx/status/2057876022553690327|tweet>
+*Guillermo Rauch (CEO at Vercel)*
+Rauch ran a crowdsourced survey asking followers to share the AI-built product they're most proud of and which model they used — drawing 1,558 replies. After processing 1,400 of them, his takeaway: OpenAI is closing the mindshare gap with Anthropic; "Codex" got more tool mentions than "Claude Code." But ranked by underlying model, Anthropic's models are still dominant. The original prompt became its own signal — 2,195 likes suggests the builder community is eager to show what they're making.
+- https://x.com/rauchg/status/2058245330836271263
+- https://x.com/rauchg/status/2058353051073970416
 
+*Aaron Levie (CEO at Box)*
+Levie made a pointed argument against AI job-loss predictions: we keep confusing task completion with job elimination. When AI automates tasks within a job, the job doesn't disappear — it expands to do more of those tasks, at higher quality, or shifts to what hasn't been automated yet. A small business that couldn't afford a marketing agency can now hire one marketer who operates at agency-level output. "Don't fall into the trap of confusing tasks with jobs."
+- https://x.com/levie/status/2058223867815227756
 
-*Kevin Weil* — Former CPO and Head of Science at OpenAI, now board member at Cisco and The Nature Conservancy
+*Garry Tan (President & CEO at YCombinator)*
+Tan dropped new benchmark results for his GBrain memory system: it beats MemPalace by 1% on LongMemEval and outperforms Vector RAG by 38% on retrieval success. He also fine-tuned his own Qwen3.5-397B model in a couple of hours using Thinking Machines, calling fast usable multimodal "mind-blowing" for personal AI. On the civic front, he's pledging $50K through Garry's List Action to fight political opposition to startups remaining in San Francisco, and is looking for 9 others to match him.
+- https://x.com/garrytan/status/2058448209027141709
+- https://x.com/garrytan/status/2058378310254793013
+- https://x.com/garrytan/status/2058251537298980992
 
-Brief but pointed: Weil shared something a friend sent him with just the note "Make no little plans." A fitting sentiment for the current AI moment. <https://x.com/kevinweil/status/2057987544663364045|tweet>
+*Nikunj Kothari (Partner at FPV Ventures)*
+Kothari flagged that a piece he wrote nearly a year ago — arguing that B2B companies need strong narrative and "vibes" to stand out — is finally landing. He's now seeing more companies wake up to the idea. His core thesis: in a world flooded with AI-generated sameness, distinctive brand storytelling is becoming a genuine competitive moat.
+- https://x.com/nikunj/status/2058203594672021769
 
+*Peter Steinberger (creator of OpenClaw)*
+Steinberger built and released a public GitHub dashboard showing your repos, open Issues/PRs, last release version, and commits since last release. He also shared a practical Codex tip: tell it to maintain a scratch-log during bigger refactors — documenting decisions made, tradeoffs taken, and things you forgot to specify — so you can review the agent's reasoning after the fact.
+- https://x.com/steipete/status/2058381186884411473
+- https://x.com/steipete/status/2058308112134635528
 
-*Peter Yang* — Product at Roblox, AI newsletter for 140K+ readers
-
-Yang is building an interview series on how the best solo founders and engineers use agents to 10x their output — covering AI stacks, end-to-end build workflows, and multi-agent coordination, with an episode featuring Ryan dropping Sunday. <https://x.com/petergyang/status/2057989910125310459|tweet>
-
-He also published a practical thread for employees navigating layoffs: six concrete steps — learn Codex or Claude Code, build side projects, develop a public GitHub history, and become top 10% at one craft. His contrarian take: "entrepreneurship is the safest job in the AI era." <https://x.com/petergyang/status/2057830781352034322|tweet>
-
-
-*Google Labs* — Google's home for latest AI tools and experiments
-
-Google Labs refreshed their website post-I/O, making it easier to explore their full portfolio and test new experiments from recent announcements. <https://x.com/GoogleLabs/status/2057884277384360416|tweet>
-
-The team also shared picks for the most underrated or surprising features across their products. <https://x.com/GoogleLabs/status/2057863565328134604|tweet>
-
-
-*Aaron Levie* — CEO at Box
-
-Levie had a sharp take on AI and cybersecurity in response to a Mythos update: AI is making it far easier to both create and find security issues, which shifts the bottleneck to human review and response. "Far from AI magically solving all of this, there still is major triage work and human judgment required to do the follow on work to actually protect systems." His call: we're entering a security engineer boom — Jevons paradox all over again. <https://x.com/levie/status/2058006473620463985|tweet>
-
-
-*Garry Tan* — President and CEO at Y Combinator
-
-Tan shipped GBrain v0.40.0, adding a voice agent powered by Gemini Live to his open-source personal AI stack. "Mars is a friend, Venus is your EA." MIT-licensed and available now. <https://x.com/garrytan/status/2058053659527913566|tweet> <https://x.com/garrytan/status/2058053854026191170|tweet>
-
-He also wrote a sharp analysis of Geoffrey Moore's chasm theory — arguing it breaks down entirely in "bar is zero" markets where customers have no viable alternative. "Buyers start acting like visionaries instead of skeptics, because they have to buy." His advice for founders in such markets: stop worrying about whole product and crossing the chasm, and ship the 60% solution. They're begging for it. <https://x.com/garrytan/status/2058043367704195271|tweet>
-
-
-*Matt Turck* — VC at FirstMark Capital, host of the MAD Podcast
-
-Turck highlighted that despite wild public-facing AI progress, behind the scenes at OpenAI it's "continuous progress compounding" — the internal pace is even faster than what's visible externally. <https://x.com/mattturck/status/2057913362608972256|tweet>
-
-
-*Nikunj Kothari* — Partner at FPV Ventures
-
-Kothari announced leading a Series A for a company he's excited about — notably, not an AI company. Also reshared a timely sentiment: "This time is too important to NOT be doing your life's best work." <https://x.com/nikunj/status/2057947701762019751|tweet> <https://x.com/nikunj/status/2057819563258216957|tweet>
-
-
-*Peter Steinberger* — Builder at OpenClaw and OpenAI
-
-Steinberger noted that GitHub is now natively shipping a 10-PR-per-person limit — something his team previously had to enforce manually with bots. A small but meaningful signal of how AI-assisted contribution patterns are reshaping platform tooling. <https://x.com/steipete/status/2057946259709628781|tweet>
-
-
-*Dan Shipper* — CEO at Every
-
-Shipper teased an upcoming talk on his piece "After Automation," exploring what work and creativity look like on the other side of the automation wave. <https://x.com/danshipper/status/2057885219936473195|tweet>
-
-
-*Claude* — AI assistant by Anthropic
-
-Anthropic's Claude account spotlighted Kay Zhu, co-founder and CTO of Genspark AI — an all-in-one AI workspace built on Claude. His take in a market where anyone can build: the team is what makes the difference. Part of The Problem Solvers series featuring founders tackling hard problems with Claude. <https://x.com/claudeai/status/2057854403558653983|tweet> <https://x.com/claudeai/status/2057854405118922884|tweet>
-
-
-*OFFICIAL BLOGS*
-
-*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
-<https://claude.com/blog/new-in-claude-managed-agents>
-
-Anthropic launched three major additions to Claude Managed Agents:
-
-- *Dreaming* (research preview): A scheduled background process that reviews past agent sessions, extracts patterns, and curates memory so agents self-improve over time. You control how much autonomy it has — automatic updates or human-reviewed. Harvey used it to bring task completion rates up ~6x in testing.
-
-- *Outcomes*: Define a success rubric and a separate grader evaluates outputs against it in its own context window — independent from the agent's reasoning — then sends the agent back for another pass if needed. Improved task success by up to 10 points in testing, with +8.4% on docx and +10.1% on pptx generation.
-
-- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to a specialist with its own model, prompt, and tools. Netflix used this to analyze logs from hundreds of builds in parallel. Spiral by Every uses it to run parallel draft generation with Opus subagents, with each draft scored against editorial rubrics before returning to users. Full trace visibility is available in the Claude Console.
+*Aditya Agarwal (General Partner at South Park Commons)*
+Agarwal captured the pace of the moment in one stark observation: six months ago in November 2025, the cutting edge was chatting with LLMs and being impressed by that alone. By May 2026, AI systems have produced more code in aggregate than all human-written code across history. A stark marker of how fast the baseline has shifted.
+- https://x.com/adityaag/status/2058233900464238801
 
 
 *PODCASTS*
 
-*Unsupervised Learning — Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning*
+*No Priors — "The Story Behind Cerebras' $63 Billion IPO with Founder and CEO Andrew Feldman"*
 
-*The Takeaway:* The researcher co-leading Gemini thinks we've already hit something like "digital AGI" — but what's still missing is the ability for models to genuinely learn from experience.
+*The Takeaway:* Cerebras built the world's fastest AI inference hardware years before anyone cared — and survived long enough to be exactly right when the market finally caught up.
 
-Oriol Vinyals is co-lead of Gemini at Google DeepMind alongside Noam Shazir and Jeff Dean, and one of the most cited deep learning researchers of the past decade. This conversation happened the day after Google I/O.
+Andrew Feldman is the co-founder and CEO of Cerebras Systems, which recently went public at a $63 billion market cap. Cerebras builds "wafer-scale" chips — each one roughly the size of a dinner plate, compared to the postage-stamp-sized chips everyone else makes — delivering AI inference speeds 15 to 20x faster than GPUs, across big models, small models, US and Chinese models alike.
 
-His most counterintuitive admission: narrow RL training on math and coding generalizes far more broadly than he expected. "That is not something I quite predicted to work as well as it did." He now sees reasoning models handling completely unrelated tasks — like moving logistics and tax questions — with strikingly strong inference, seemingly transferred from coding and math training.
+The core lesson from Feldman's story is about timing and patience. Being right early is indistinguishable from being wrong. Cerebras had a radically superior chip by 2019 but spent years selling almost nothing because AI models weren't yet useful enough for speed to matter. From 2023 to early 2025, people pointed at AI but didn't use it daily. The moment daily use became real — coding assistants, agents, integrated workflows — demand exploded and Cerebras was the only hardware company ready for it. "How big is the market for slow search? It's zero."
 
-On world models: Vinyals draws a sharp line between the current impressive multimodal output (Omni generating and editing video from images) and the harder unsolved goal — extracting the laws of physics from video alone, without language labels. The "GPT moment" for pure visual understanding hasn't happened yet.
+The architectural conviction matters too. Feldman's bet from the start: to be 15-20x better than a GPU, you can't make incremental improvements. "To be radically better, you can't build something that is a similar architecture... your design has to be different." Industry veterans called it impossible for years.
 
-On memory: He describes a near-term paradigm shift around file-system-style episodic memory for agents — not per-user weight fine-tuning, but rich updatable knowledge bases. "I think that's probably paradigm shifting as well in a way, similar to how we saw reasoning, you know, a year and a half or so ago."
+A sovereign wealth fund (G42 in the UAE) provided the critical bridge: a $1 billion order that let Cerebras scale manufacturing, battle-test at cluster size, and survive the gap between niche early adopters and mainstream demand. Without it, the $20B+ OpenAI deal and the AWS deployment agreement that followed couldn't have been fulfilled.
 
-On AGI: "In some way, AGI is here. I don't think it is here in the way I want to see it, but it is fairly close." His personal remaining gap: models that can truly learn from experience, not just retrieve it.
+On AI-assisted coding inside Cerebras: Feldman sees a sharp split in his 850-person company. A small number of engineers running 8 to 10 parallel agents have gone from "10x to 100x" productivity — they've restructured their entire workflow around governing agents rather than writing code directly. Most others are still figuring out how to adapt.
 
-https://www.youtube.com/watch?v=NQczevdpxq0
+His vision for what fast inference unlocks isn't incremental — it's structural. "Netflix used to deliver DVDs in envelopes. When the Internet got fast, they became a movie studio." Fast AI won't just make existing tasks faster. It will enable entirely new business models that don't exist yet.
+
+https://www.youtube.com/watch?v=jeop9wfb9jU
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
