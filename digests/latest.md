@@ -1,64 +1,89 @@
-AI Builders Digest — May 25, 2026
+AI Builders Digest — May 26, 2026
 
 *X / TWITTER*
 
-*Thariq (Claude Code at Anthropic)*
-Thariq ran Claude's "please save me money" prompt against the legacy codebase of his old startup OMMultiverse — and it actually worked. He noted that he occasionally remembers this capability exists and is surprised every time it delivers real cost savings on a codebase he hasn't had time to maintain.
-- https://x.com/trq212/status/2058377974882210096
-- https://x.com/trq212/status/2058380417716125966
+*Peter Yang* (petergyang on X) — AI educator and creator, 140K newsletter readers
 
-*Amjad Masad (CEO at Replit)*
-Masad amplified a user story that cuts to Replit's core pitch: a developer built their first mobile app MVP in a single weekend using Replit for Dial, and it passed Apple's App Store review on the very first submission — something that had never happened to them before, even using Cursor.
-- https://x.com/amasad/status/2058418731840159953
+Raised a $2M seed round but plans to stay solo for a while. His reasoning: understand every job and feel the pain before hiring, and agents onboard faster and retain training better over time. He also dropped a new episode with Ryan Carson, who runs his entire startup solo with AI agents — using OpenClaw as an AI chief of staff for email triage, meeting booking, and sales outreach, plus Codex and Devin for development. The line that sticks: "We used to say build the MVP. Now you should build the system that builds the MVP first."
 
-*Guillermo Rauch (CEO at Vercel)*
-Rauch ran a crowdsourced survey asking followers to share the AI-built product they're most proud of and which model they used — drawing 1,558 replies. After processing 1,400 of them, his takeaway: OpenAI is closing the mindshare gap with Anthropic; "Codex" got more tool mentions than "Claude Code." But ranked by underlying model, Anthropic's models are still dominant. The original prompt became its own signal — 2,195 likes suggests the builder community is eager to show what they're making.
-- https://x.com/rauchg/status/2058245330836271263
-- https://x.com/rauchg/status/2058353051073970416
+- <https://x.com/petergyang/status/2058609058714968194|No human hires yet — agents only>
+- <https://x.com/petergyang/status/2058555226479866312|Solo founder + AI agents episode with Ryan Carson>
 
-*Aaron Levie (CEO at Box)*
-Levie made a pointed argument against AI job-loss predictions: we keep confusing task completion with job elimination. When AI automates tasks within a job, the job doesn't disappear — it expands to do more of those tasks, at higher quality, or shifts to what hasn't been automated yet. A small business that couldn't afford a marketing agency can now hire one marketer who operates at agency-level output. "Don't fall into the trap of confusing tasks with jobs."
-- https://x.com/levie/status/2058223867815227756
+*Madhu Guru* (realmadhuguru on X) — Product Leader at Google (Gemini, Veo, Nano)
 
-*Garry Tan (President & CEO at YCombinator)*
-Tan dropped new benchmark results for his GBrain memory system: it beats MemPalace by 1% on LongMemEval and outperforms Vector RAG by 38% on retrieval success. He also fine-tuned his own Qwen3.5-397B model in a couple of hours using Thinking Machines, calling fast usable multimodal "mind-blowing" for personal AI. On the civic front, he's pledging $50K through Garry's List Action to fight political opposition to startups remaining in San Francisco, and is looking for 9 others to match him.
-- https://x.com/garrytan/status/2058448209027141709
-- https://x.com/garrytan/status/2058378310254793013
-- https://x.com/garrytan/status/2058251537298980992
+Sharp take on AI FOMO in the C-suite: CEOs who operate at arm's length from actual work set sweeping, imprecise AI mandates — and get performative, low-effort demos in return. The gap between executive aspiration and ground-level execution is real and self-reinforcing.
 
-*Nikunj Kothari (Partner at FPV Ventures)*
-Kothari flagged that a piece he wrote nearly a year ago — arguing that B2B companies need strong narrative and "vibes" to stand out — is finally landing. He's now seeing more companies wake up to the idea. His core thesis: in a world flooded with AI-generated sameness, distinctive brand storytelling is becoming a genuine competitive moat.
-- https://x.com/nikunj/status/2058203594672021769
+- <https://x.com/realmadhuguru/status/2058591611245011157|AI mandates and performative demos>
 
-*Peter Steinberger (creator of OpenClaw)*
-Steinberger built and released a public GitHub dashboard showing your repos, open Issues/PRs, last release version, and commits since last release. He also shared a practical Codex tip: tell it to maintain a scratch-log during bigger refactors — documenting decisions made, tradeoffs taken, and things you forgot to specify — so you can review the agent's reasoning after the fact.
-- https://x.com/steipete/status/2058381186884411473
-- https://x.com/steipete/status/2058308112134635528
+*Thariq* (trq212 on X) — Claude Code team at Anthropic
 
-*Aditya Agarwal (General Partner at South Park Commons)*
-Agarwal captured the pace of the moment in one stark observation: six months ago in November 2025, the cutting edge was chatting with LLMs and being impressed by that alone. By May 2026, AI systems have produced more code in aggregate than all human-written code across history. A stark marker of how fast the baseline has shifted.
-- https://x.com/adityaag/status/2058233900464238801
+On the Bun port of Zig → JavaScript: his main takeaway is that legacy codebases will become valuable sources for "distilling" code into new forms. Every game should be cross-platform, legacy software should run on the web, COBOL should be gone. He notes models aren't quite there yet — Bun's exceptional test coverage makes it a strong proving ground — but thinks they will get there.
 
+- <https://x.com/trq212/status/2058576195000660319|Legacy codebases as distillation sources>
+- <https://x.com/trq212/status/2058576196481200223|Models will get there>
+
+*Guillermo Rauch* (rauchg on X) — CEO of Vercel
+
+One line this week: "How do you build a great brand? Build a great product."
+
+- <https://x.com/rauchg/status/2058750970998505505|Brand = product>
+
+*Aaron Levie* (levie on X) — CEO of Box
+
+Named a specific failure mode worth watching: "CEO AI psychosis." Leaders are far enough from last-mile execution that they only see AI's happy path — missing the 10 to 20 downstream steps needed to generate sustained value. The risk is executive optimism decoupled from operational reality.
+
+- <https://x.com/levie/status/2058582370253701432|CEO AI psychosis>
+
+*Garry Tan* (garrytan on X) — President & CEO of Y Combinator
+
+"High agency high taste is the unlock these days." Clearly energized by the current moment — also posting that he's "having the time of my life frankly" amid the current AI building wave.
+
+- <https://x.com/garrytan/status/2058769355916411099|High agency, high taste>
+- <https://x.com/garrytan/status/2058767083777949930|Having the time of his life>
+
+*Matt Turck* (mattturck on X) — VC at FirstMark Capital
+
+Amplifying a striking quote from Yann Dubois of OpenAI: "I think if we froze the models that we have right now and you really worked on the harness and maybe we also spent more time training with a great harness, I think people would really feel the AGI in every single domain." Matt's implicit prompt: is AGI already here?
+
+- <https://x.com/mattturck/status/2058659995311358332|Is AGI already here?>
+
+*Zara Zhang* (zarazhangrui on X) — Builder
+
+Quick-hit observation: OpenAI is getting more open — she just realized Codex is open source. Separately, she ran into a friend who voluntarily moved from engineering manager to IC and has never been happier now that she can build again — a quiet but telling signal about what the AI era is doing to role preferences.
+
+- <https://x.com/zarazhangrui/status/2058604604422815832|Codex is open source>
+- <https://x.com/zarazhangrui/status/2058640897236140034|EM to IC: back to building>
+
+*Nikunj Kothari* (nikunj on X) — Partner at FPV Ventures
+
+Claude Code tip from the field: reverse-engineering APIs through network requests is one of his favorite ways to automate tasks that are impossible to navigate through the DOM. He pairs Claude Code with browser_use for this. Also shipping a travel CLI tool that optimizes hotel and flight points redemptions — looking for beta testers with an upcoming trip and a stack of points.
+
+- <https://x.com/nikunj/status/2058783316753686558|Reverse-engineering APIs with Claude Code>
+- <https://x.com/nikunj/status/2058692391708897319|Travel CLI beta: share your trip>
+
+*Dan Shipper* (danshipper on X) — CEO of Every
+
+Sharing a breakdown of the "After Automation" concept from AI Daily Brief, and prompting the question: what is Every, exactly? Low-signal week — mostly amplifying others' work.
+
+- <https://x.com/danshipper/status/2058723492355252490|After Automation breakdown>
+- <https://x.com/danshipper/status/2058682096432861371|What is Every?>
 
 *PODCASTS*
 
-*No Priors — "The Story Behind Cerebras' $63 Billion IPO with Founder and CEO Andrew Feldman"*
+*Unsupervised Learning — Ep 86: Yann LeCun on Leaving Meta, Breaking The LLM Paradigm, & Why Hinton is Wrong*
 
-*The Takeaway:* Cerebras built the world's fastest AI inference hardware years before anyone cared — and survived long enough to be exactly right when the market finally caught up.
+*The Takeaway:* Yann LeCun thinks LLMs are fundamentally not a path to human-like intelligence — and that a paradigm shift, not incremental scaling, is what's actually required.
 
-Andrew Feldman is the co-founder and CEO of Cerebras Systems, which recently went public at a $63 billion market cap. Cerebras builds "wafer-scale" chips — each one roughly the size of a dinner plate, compared to the postage-stamp-sized chips everyone else makes — delivering AI inference speeds 15 to 20x faster than GPUs, across big models, small models, US and Chinese models alike.
+LeCun, a Turing Award winner and former Chief AI Scientist at Meta, broke down why he left the company, what he's building at AMI Labs (Advanced Machine Intelligence), and why he thinks his former co-laureates were wrong to declare an AI breakthrough moment after GPT-4.
 
-The core lesson from Feldman's story is about timing and patience. Being right early is indistinguishable from being wrong. Cerebras had a radically superior chip by 2019 but spent years selling almost nothing because AI models weren't yet useful enough for speed to matter. From 2023 to early 2025, people pointed at AI but didn't use it daily. The moment daily use became real — coding assistants, agents, integrated workflows — demand exploded and Cerebras was the only hardware company ready for it. "How big is the market for slow search? It's zero."
+His core argument is direct: LLMs can't predict the consequences of their own actions and have no real planning ability — they just predict the next token. For truly agentic systems, you need world models that can anticipate outcomes and search for optimal action sequences. He calls his alternative the JEPA architecture (Joint Embedding Predictive Architecture), which operates in abstract representation space rather than generating pixels or tokens — and argues the empirical evidence already favors it.
 
-The architectural conviction matters too. Feldman's bet from the start: to be 15-20x better than a GPU, you can't make incremental improvements. "To be radically better, you can't build something that is a similar architecture... your design has to be different." Industry veterans called it impossible for years.
+On Hinton changing his mind in 2023: "I didn't change my mind. They changed their mind." LeCun dismisses the GPT-4 epiphany as a kind of retirement narrative: "Basically, I can retire. I can declare victory."
 
-A sovereign wealth fund (G42 in the UAE) provided the critical bridge: a $1 billion order that let Cerebras scale manufacturing, battle-test at cluster size, and survive the gap between niche early adopters and mainstream demand. Without it, the $20B+ OpenAI deal and the AWS deployment agreement that followed couldn't have been fulfilled.
+He's also blunt on safety: "LLMs are intrinsically unsafe. I don't think they can be made reliable and safe." Not sci-fi AGI risk — but the structural inability to predict action consequences means agentic systems will always have an escape gap between training and real-world deployment.
 
-On AI-assisted coding inside Cerebras: Feldman sees a sharp split in his 850-person company. A small number of engineers running 8 to 10 parallel agents have gone from "10x to 100x" productivity — they've restructured their entire workflow around governing agents rather than writing code directly. Most others are still figuring out how to adapt.
+His five-year outlook: "Complete world domination." He expects JEPA-style world models to become the blueprint for intelligent systems, with LLMs surviving as language interfaces on top — not as the core intelligence layer. Near-term targets include industrial process control, manufacturing, and healthcare, with robotics and domestic robots further out.
 
-His vision for what fast inference unlocks isn't incremental — it's structural. "Netflix used to deliver DVDs in envelopes. When the Internet got fast, they became a movie studio." Fast AI won't just make existing tasks faster. It will enable entirely new business models that don't exist yet.
-
-https://www.youtube.com/watch?v=jeop9wfb9jU
-
+<https://www.youtube.com/@RedpointAI|Unsupervised Learning — Redpoint AI on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
