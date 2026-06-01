@@ -1,66 +1,103 @@
-*AI Builders Digest — May 31, 2026*
+AI Builders Digest — June 1, 2026
 
 
 *X / TWITTER*
 
-*Boris Cherny — Claude Code at Anthropic*
-
-Boris Cherny shared a detailed thread on Salesforce's results after going fully agentic with Claude Code, and the numbers are hard to ignore. A migration scoped at 231 days shipped in 13. One PR delivered 21 endpoints at 100% test coverage. Even as more PRs shipped, total incidents dropped 5% — security guardrails and quality standards were baked directly into the agentic workflow. His broader point: the teams seeing the biggest wins aren't just speeding up existing work, they're deleting steps, eliminating handoffs, and letting agents own entire workflows end to end.
-
-- https://x.com/bcherny/status/2060390852619272526
-- https://x.com/bcherny/status/2060390853835726946
-- https://x.com/bcherny/status/2060390855383400729
-
 *Thibault Sottiaux — Codex & ChatGPT at OpenAI*
 
-The Codex team lead teased strong growth with a cryptic but enthusiastic post: "I looked at a number today on a codex dashboard and it made me happy. More news about the number soon." He also posed a pointed question to the community: do you still trust AI benchmarks, or do you rely on word-of-mouth from friends when deciding to try a new model? With 545 replies, it clearly struck a nerve.
+Codex hit 5 million users, and Sottiaux is resetting usage limits to celebrate — over 800 community replies already poured in on what needs fixing. On model versioning: the GPT-5.0 → 5.1 → ... → 5.5 progression maps each increment to capability improvements and token efficiency gains. "GPT-5.5 [is] our best model yet. A simple strategy that we would like to continue."
 
-- https://x.com/thsottiaux/status/2060565265906290786
-- https://x.com/thsottiaux/status/2060563528596287874
+- https://x.com/thsottiaux/status/2060964284117782996
+- https://x.com/thsottiaux/status/2060627747760984429
+
+*Peter Yang — Product at Roblox, AI newsletter author*
+
+Yang spent an hour with his daughter on Brilliant.org doing CS 101 and left with a bigger vision: "The ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the same time." He also weighed in on AI company marketing differentiation, predicting "OpenAI Codex dank memes vs. Anthropic essays."
+
+- https://x.com/petergyang/status/2060928818383355907
+- https://x.com/petergyang/status/2060930599565811774
+- https://x.com/petergyang/status/2060930334620053998
+
+*Guillermo Rauch — CEO at Vercel*
+
+A crisp product philosophy take: "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best." Also announced per-API key spend caps on Vercel's AI Gateway — useful for teams managing cost across multiple AI integrations.
+
+- https://x.com/rauchg/status/2060803480823193840
+- https://x.com/rauchg/status/2060787704166776927
 
 *Aaron Levie — CEO at Box*
 
-Aaron Levie spotted a bullish signal for the app layer: a company reportedly spending $500M to build their own version of it. His read — "The app layer couldn't get a better advertisement than a company spending $500M to build their own version of it." He acknowledged nuance gets lost in headlines, but the bottom line is you should be very bullish on software.
+Levie pushed back on AI-kills-jobs framing with a detailed enterprise read: most CIOs, CTOs, and CEOs he talks to are either growing headcount due to AI (new roles like FDEs) or reinvesting efficiency savings into underfunded areas — sales, marketing, customer success. He cited Goldman Sachs CEO David Solomon's NYT op-ed as articulating it well. "The companies that better serve their customers win over the long run, and those that just try and find savings end up doing worse."
 
-- https://x.com/levie/status/2060525104384418271
+- https://x.com/levie/status/2060923684295221390
 
-*Josh Woodward — VP at Google Labs / Gemini App / Google AI Studio*
+*Ryo Lu — Designer at Cursor*
 
-Josh Woodward shared two quote tweets highlighting AI capability jumps: one framing AI as something that can radically transform everyday experiences ("Turn your car into a Lamborghini"), and another declaring multilingual support is now "ridiculously easy." The tone is celebratory of how fast the bar has moved.
+Highlighted Cursor's auto-review feature: before executing a command, it explains what the command does and flags the risk level. "Makes it much easier for new coders to learn and just do things."
 
-- https://x.com/joshwoodward/status/2060443095527989413
-- https://x.com/joshwoodward/status/2060443093825094091
+- https://x.com/ryolu_/status/2060766674203353190
 
 *Garry Tan — President & CEO at Y Combinator*
 
-Garry Tan delivered a sharp piece of founder wisdom: "Money is not the fire. Money is gasoline you pour on a fire that already exists. You don't have a funding problem. You have a 'people don't want it yet' problem. Go make the first fire." A clean reframe for anyone conflating early traction problems with fundraising problems.
+Flagged that the US building boom hasn't reached San Francisco yet — and called it a problem.
 
-- https://x.com/garrytan/status/2060600088079356292
+- https://x.com/garrytan/status/2060949003790176667
+
+*Zara Zhang — Builder*
+
+A small but notable model behavior observation: Opus 4.8 appears to have stopped using em dashes in its writing.
+
+- https://x.com/zarazhangrui/status/2060962160872919043
 
 *Peter Steinberger — OpenClaw / OpenAI*
 
-Peter Steinberger (self-described "ClawFather" at OpenClaw) expressed genuine excitement about a new hire named Vince joining the team: "Very few people understand the new ways how software is built. He gets it." A rare public signal about who's being recruited into the agentic software space.
+Strong signal on what agentic workflows look like at full throttle: with GPT-5.5, /goal, autoreview, and crabbox, Steinberger scaled his tasks from 30–60 minute prompts to 4–10 hour autonomous runs — with much higher confidence the output is production-ready. "Yielding agents is a skill." He also shared a sharp debugging trick: Codex will say "all good" when asked to review code for bugs, but if you _tell_ it there's a bug, it loops persistently until it finds issues.
 
-- https://x.com/steipete/status/2060306947035832628
+- https://x.com/steipete/status/2060678430031597696
+- https://x.com/steipete/status/2060672154727825718
+- https://x.com/steipete/status/2060691552486175041
+
+*Dan Shipper — CEO at Every*
+
+Shared a personal Codex usage stat that signals how deep power users are going: 38 billion tokens used, a 56-hour longest single task, and a 41-day active streak.
+
+- https://x.com/danshipper/status/2060771279280513362
+
+
+*OFFICIAL BLOGS*
+
+*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
+
+<https://claude.com/blog/new-in-claude-managed-agents>
+
+Anthropic shipped three major updates to Claude Managed Agents:
+
+- *Dreaming* (research preview): A scheduled background process that reviews past agent sessions and memory stores, extracts patterns, and curates memory so agents self-improve over time — automatically, or with human review before changes land. Harvey saw ~6x improvement in task completion rates. Netflix uses it to surface recurring issues across hundreds of parallel builds.
+
+- *Outcomes*: Write a rubric describing what success looks like; a separate grader evaluates output in its own context window (independent of the agent's reasoning) and triggers another pass if needed. Up to +10 points improvement in task success, +8.4% on docx and +10.1% on pptx in internal benchmarks. Webhooks let you fire-and-forget — get notified when the outcome is met.
+
+- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to a specialist subagent with its own model, prompt, and tools — running in parallel on a shared filesystem. Every step is traceable in the Claude Console. Spiral by Every uses this with outcomes to score drafts against editorial rubrics before returning them. Wisedocs cut document review time by 50%.
 
 
 *PODCASTS*
 
-*No Priors: Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan*
+*Unsupervised Learning — Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning*
 
-_The Takeaway:_ AI agents have proliferated so fast inside enterprises that human oversight no longer scales — the only practical answer is AI watching AI, and the company best positioned to do it may not be the one selling you the agent in the first place.
+_The Takeaway:_ Oriol Vinyals believes training on narrow hard domains like math and coding generalizes more broadly than expected — but the capability he most wants to see (and hasn't yet) is a model that can genuinely innovate in machine learning research.
 
-Maxim Bar Kogan co-founded Onyx Security two years ago in Tel Aviv, betting early that autonomous agents would become a major enterprise liability before anyone had controls for them. He was nearly too early. The pivot point came when Claude Code and similar tools proved that truly unleashed agents — not the cautious, connector-based "low code" automations everyone was building — delivered the real productivity gains. Enterprises rushed to adopt them without guardrails, and Onyx's moment arrived.
+Vinyals is co-lead of Gemini at Google alongside Noam Shazeer and Jeff Dean, with a career spanning AlphaGo, sequence-to-sequence models, and AlphaStar. The conversation was recorded the day after Google I/O.
 
-The company's approach is worth understanding. Rather than simply proxying agent traffic, Onyx trains small, task-specific models whose only job is to recognize when a smarter agent should take a closer look: "You want to train very small models that are just good at one thing — to say, should I have a smarter agent look at this?" It's an analogy to blitz chess: most moves are intuitive pattern recognition; you only burn deep computation on genuinely critical moments.
+On *world models*: He distinguishes two things often conflated under the label. Classical representation learning compresses the world into compact internal concepts. What Gemini Omni actually does is act as a language-controllable renderer — you describe movements or actions, and it simulates them. The "GPT moment" for pure visual understanding (deriving physics from video without text supervision) hasn't happened yet, and he sees it as one of ML's oldest unsolved quests.
 
-The data moat is real but counterintuitive. Enterprises won't share historical agent behavior with Anthropic or OpenAI — they fear it will be used for training. A neutral third party like Onyx can access that behavioral history and build detection models the labs themselves cannot.
+On *memory*: The near-term path is file-system-style episodic storage — agents writing structured notes between sessions that compound over time. "I think that's probably paradigm shifting as well, similar to how we saw reasoning a year and a half ago." Personalizing model weights per user is impractical at scale; a shared model plus a personal knowledge base is more likely.
 
-On the threat of AI-assisted vulnerability research (what he calls "Mythos-level" models): he thinks the market is not overreacting. The speed of automated vulnerability finding has arrived a decade ahead of schedule. His advice — don't wait for the perfect solution. Invest in foundational security controls now, the same way you locked down identity and endpoints before.
+On *RL generalization*: He was surprised how well training on narrow hard problems (math, coding) generalizes to broader reasoning. He sees model self-judging — models evaluating their own outputs without a formal verifier — as the key to expanding RL into messier, subjective domains.
 
-_"As you're exponentially doing more things with AIs, you're going to start having really bad actions happen."_
+On *the Bitter Lesson*: The scaffolding developers build today (multi-agent routing, delegation logic, sub-agent coordination) will eventually be written on-the-fly by the models themselves.
 
-https://www.youtube.com/watch?v=QDsbFLEt9ro
+_"I don't think I've seen truly outstanding ideas that a model has generated yet, but I am sure I will very soon."_
+
+https://www.youtube.com/watch?v=NQczevdpxq0
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
