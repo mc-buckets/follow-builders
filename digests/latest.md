@@ -1,103 +1,82 @@
-AI Builders Digest — June 1, 2026
+*AI Builders Digest — June 2, 2026*
 
 
 *X / TWITTER*
 
-*Thibault Sottiaux — Codex & ChatGPT at OpenAI*
+*Swyx* (AI engineer and podcaster affiliated with Cognition, Temporal, and AI.Engineer) is watching the vibe-shift unfold in real time. He flagged that PewDiePie just released a vibecoded OpenCode wrapper — a full personal AI productivity suite covering email, docs, and calendar — that hit the top of Hacker News, crossed 1M views, and racked up 10K+ GitHub stars in a single day. Swyx's take: "if your Knowledge Work Agents startup can't beat pewdiepie you might as well pack up and go home at this point, his is the benchmark for what you can DIY." He also called a generational shift for the evals and analytics startup category: every one of them is upgrading into a continual learning platform in 2026 — many will fail, but the tasteful ones will win.
 
-Codex hit 5 million users, and Sottiaux is resetting usage limits to celebrate — over 800 community replies already poured in on what needs fixing. On model versioning: the GPT-5.0 → 5.1 → ... → 5.5 progression maps each increment to capability improvements and token efficiency gains. "GPT-5.5 [is] our best model yet. A simple strategy that we would like to continue."
-
-- https://x.com/thsottiaux/status/2060964284117782996
-- https://x.com/thsottiaux/status/2060627747760984429
-
-*Peter Yang — Product at Roblox, AI newsletter author*
-
-Yang spent an hour with his daughter on Brilliant.org doing CS 101 and left with a bigger vision: "The ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the same time." He also weighed in on AI company marketing differentiation, predicting "OpenAI Codex dank memes vs. Anthropic essays."
-
-- https://x.com/petergyang/status/2060928818383355907
-- https://x.com/petergyang/status/2060930599565811774
-- https://x.com/petergyang/status/2060930334620053998
-
-*Guillermo Rauch — CEO at Vercel*
-
-A crisp product philosophy take: "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best." Also announced per-API key spend caps on Vercel's AI Gateway — useful for teams managing cost across multiple AI integrations.
-
-- https://x.com/rauchg/status/2060803480823193840
-- https://x.com/rauchg/status/2060787704166776927
-
-*Aaron Levie — CEO at Box*
-
-Levie pushed back on AI-kills-jobs framing with a detailed enterprise read: most CIOs, CTOs, and CEOs he talks to are either growing headcount due to AI (new roles like FDEs) or reinvesting efficiency savings into underfunded areas — sales, marketing, customer success. He cited Goldman Sachs CEO David Solomon's NYT op-ed as articulating it well. "The companies that better serve their customers win over the long run, and those that just try and find savings end up doing worse."
-
-- https://x.com/levie/status/2060923684295221390
-
-*Ryo Lu — Designer at Cursor*
-
-Highlighted Cursor's auto-review feature: before executing a command, it explains what the command does and flags the risk level. "Makes it much easier for new coders to learn and just do things."
-
-- https://x.com/ryolu_/status/2060766674203353190
-
-*Garry Tan — President & CEO at Y Combinator*
-
-Flagged that the US building boom hasn't reached San Francisco yet — and called it a problem.
-
-- https://x.com/garrytan/status/2060949003790176667
-
-*Zara Zhang — Builder*
-
-A small but notable model behavior observation: Opus 4.8 appears to have stopped using em dashes in its writing.
-
-- https://x.com/zarazhangrui/status/2060962160872919043
-
-*Peter Steinberger — OpenClaw / OpenAI*
-
-Strong signal on what agentic workflows look like at full throttle: with GPT-5.5, /goal, autoreview, and crabbox, Steinberger scaled his tasks from 30–60 minute prompts to 4–10 hour autonomous runs — with much higher confidence the output is production-ready. "Yielding agents is a skill." He also shared a sharp debugging trick: Codex will say "all good" when asked to review code for bugs, but if you _tell_ it there's a bug, it loops persistently until it finds issues.
-
-- https://x.com/steipete/status/2060678430031597696
-- https://x.com/steipete/status/2060672154727825718
-- https://x.com/steipete/status/2060691552486175041
-
-*Dan Shipper — CEO at Every*
-
-Shared a personal Codex usage stat that signals how deep power users are going: 38 billion tokens used, a 56-hour longest single task, and a 41-day active streak.
-
-- https://x.com/danshipper/status/2060771279280513362
+- <https://x.com/swyx/status/2061256096719970337|PewDiePie's OpenCode wrapper — the new DIY benchmark>
+- <https://x.com/swyx/status/2061206120233054327|Evals startups → continual learning platforms>
 
 
-*OFFICIAL BLOGS*
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) announced that Codex usage limits have been fully reset for all paid ChatGPT subscriptions — back to 100% on both weekly and hourly limits after a period of throttling.
 
-*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
+- <https://x.com/thsottiaux/status/2061106703446450392|Codex limits reset announcement>
 
-<https://claude.com/blog/new-in-claude-managed-agents>
 
-Anthropic shipped three major updates to Claude Managed Agents:
+*Peter Yang* (Product at Roblox, author of a 140K+ reader AI newsletter) is trying to consolidate his cron jobs and wants to know which is better: Codex automations or Claude Code routines. He's actively comparing the two and crowdsourcing opinions. He also posted a dead-on parody of hustle culture extended to the AI era — "997" instead of 996, spending more on tokens than your entire headcount budget — lampooning the pressure-cooker startup narrative.
 
-- *Dreaming* (research preview): A scheduled background process that reviews past agent sessions and memory stores, extracts patterns, and curates memory so agents self-improve over time — automatically, or with human review before changes land. Harvey saw ~6x improvement in task completion rates. Netflix uses it to surface recurring issues across hundreds of parallel builds.
+- <https://x.com/petergyang/status/2061277577785000203|Codex automations vs Claude Code routines — which wins?>
+- <https://x.com/petergyang/status/2061175114184736792|Satirical take on AI-era hustle culture>
 
-- *Outcomes*: Write a rubric describing what success looks like; a separate grader evaluates output in its own context window (independent of the agent's reasoning) and triggers another pass if needed. Up to +10 points improvement in task success, +8.4% on docx and +10.1% on pptx in internal benchmarks. Webhooks let you fire-and-forget — get notified when the outcome is met.
 
-- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to a specialist subagent with its own model, prompt, and tools — running in parallel on a shared filesystem. Every step is traceable in the Claude Console. Spiral by Every uses this with outcomes to score drafts against editorial rubrics before returning them. Wisedocs cut document review time by 50%.
+*Guillermo Rauch* (Vercel CEO) is seeing something notable: C-suite executives at public companies are sliding into his DMs to tell him they've fallen in love with shipping software again, thanks to Claude Code and Vercel. His framing: "Coding agents are the ultimate PLG-fication of the enterprise. Bad, legacy software can't hide anymore. The stack that works is self-evident to the entire organization, from intern to CEO." Dream enterprise accounts that previously couldn't engage with infrastructure decisions are now building with it directly.
+
+- <https://x.com/rauchg/status/2061135404942974982|CEOs and CTOs are back to coding>
+
+
+*Aaron Levie* (Box CEO) identified the #1 unsolved problem for enterprise AI agents: context. As AI moves from agentic coding — where the codebase provides context and users are technical enough to fill in the rest — to knowledge work agents, the context gap becomes critical. At Box, he sees this daily: enterprise knowledge is fragmented across legacy systems, locked behind access controls that don't map to real workflows, and often not digitized at all — living instead in people's heads as tribal knowledge. His conclusion: "The companies that figure this out will be able to get the most out of AI going forward," and this creates big opportunities for applied AI companies and system integrators who can specialize in getting agents exactly the domain expertise they need.
+
+- <https://x.com/levie/status/2061247380897579500|Context is the #1 enterprise AI agent problem>
+
+
+*Garry Tan* (YCombinator President and CEO) is warning builders about the coming AI harness wars. His thesis: you should own and control your own memory — it's the one thing you should be able to take to any platform. He's calling 2027 "the defining battle in the new browser war: the AI harness wars," and warns that building on someone else's AI harness is just "sharecropping someone else's AI ecosystem." Platforms need to stay open and make data portability easy, or lock-in will follow.
+
+- <https://x.com/garrytan/status/2061174413513678941|You should control your own memory — the AI harness wars of 2027>
+- <https://x.com/garrytan/status/2061176075288453333|Platforms need to stay open for data portability>
+
+
+*Zara Zhang* (builder and solo founder) hit on a frustration many are feeling: she gets annoyed when a coding agent ends a message with "just say the word." Her point: "You're my cofounder, not my servant." She also shared a quote on mastery worth saving: "Real mastery is not exerting the most effort. It is achieving the outcome with the least necessary effort. Grinding is never good for any creative problem."
+
+- <https://x.com/zarazhangrui/status/2061341642544783801|"You're my cofounder, not my servant">
+- <https://x.com/zarazhangrui/status/2061143524020822158|On mastery and least necessary effort>
+
+
+*Nikunj Kothari* (seed/A partner at FPV Ventures, early at Meter and Opendoor) is looking for rigorous research on AI's actual job displacement impact — historical data, present openings, and forward-looking role analysis. His working hypothesis: despite startup outcome claims, booming model revenues, and some layoffs, the risk of a permanent underclass seems "wildly overblown." Happy to receive reading recommendations.
+
+- <https://x.com/nikunj/status/2061115431528943775|Looking for AI job displacement studies>
+
+
+*Peter Steinberger* (co-creator of OpenClaw at OpenAI) is turning Codex into an autonomous QA loop: for every commit, it generates a user-test scenario, spins up a webVNC browser environment (crabbox), and tests OpenClaw like a human QA person would — then opens PRs with fixes. All running in the background. He also noted that Codex independently wrote ad-hoc codemods during a large TypeScript migration, which he hadn't seen it do before. His philosophy for OpenClaw: "It's modular and lean, only add what you need. Fewer skills, fewer tools = your agent can work more efficiently."
+
+- <https://x.com/steipete/status/2061208638027395490|Codex as autonomous QA — opens fix PRs from background tests>
+- <https://x.com/steipete/status/2061115471760441692|Codex writing ad-hoc codemods for TypeScript migration>
+- <https://x.com/steipete/status/2061072753998856696|OpenClaw: modular and lean>
+
+
+*Sam Altman* (OpenAI CEO) made two announcements. First, OpenAI Robotics is officially hiring — looking for full-stack hardware, ops, systems, and ML engineers. The world simulation research program led by Aditya Ramesh has evolved into OpenAI Robotics, with a near-term focus on robots that support skilled workers building physical infrastructure, and a long-term vision of personal robots for everyone. Applications go to robotics-recruiting@openai.com. Second, OpenAI is publishing work aimed at giving the world a head start on biodefense.
+
+- <https://x.com/sama/status/2061117302528188712|OpenAI Robotics is hiring>
+- <https://x.com/sama/status/2061101875303530871|OpenAI on biodefense>
 
 
 *PODCASTS*
 
-*Unsupervised Learning — Ep 87: Gemini Co-Lead on World Models, RL's Next Domains & Continual Learning*
+*The MAD Podcast with Matt Turck — "OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real"*
 
-_The Takeaway:_ Oriol Vinyals believes training on narrow hard domains like math and coding generalizes more broadly than expected — but the capability he most wants to see (and hasn't yet) is a model that can genuinely innovate in machine learning research.
+_The Takeaway: AI progress has always been continuous — but reliability finally crossed the threshold where it became genuinely useful, and that moment (around December 2025) is what people are feeling right now as a sudden leap._
 
-Vinyals is co-lead of Gemini at Google alongside Noam Shazeer and Jeff Dean, with a career spanning AlphaGo, sequence-to-sequence models, and AlphaStar. The conversation was recorded the day after Google I/O.
+Yann Dubois co-leads the Post-Training Frontiers team at OpenAI, the group responsible for deciding what goes into final model runs, assembling the training pipeline, and driving horizontal improvements like reasoning efficiency, instruction following, and function calling. Before OpenAI, he co-authored Stanford Alpaca, which sparked much of the modern post-training research community.
 
-On *world models*: He distinguishes two things often conflated under the label. Classical representation learning compresses the world into compact internal concepts. What Gemini Omni actually does is act as a language-controllable renderer — you describe movements or actions, and it simulates them. The "GPT moment" for pure visual understanding (deriving physics from video without text supervision) hasn't happened yet, and he sees it as one of ML's oldest unsolved quests.
+His explanation of why progress "feels real" now has three parts: (1) reliability crossed a threshold where models can be trusted to handle real work, (2) once models are good, you accelerate yourself — both in building tooling and in training the next models, and (3) reinforcement learning techniques built for verifiable, competition-style problems (math, code) have now been extended to messy real-world tasks. "We moved from competitions to usefulness to users, and that's what we are feeling right now."
 
-On *memory*: The near-term path is file-system-style episodic storage — agents writing structured notes between sessions that compound over time. "I think that's probably paradigm shifting as well, similar to how we saw reasoning a year and a half ago." Personalizing model weights per user is impractical at scale; a shared model plus a personal knowledge base is more likely.
+On GPT 5.5 specifically, he's most proud of two things: the model runs roughly 2x faster than its predecessor, and it reflects an unusually aligned company-wide effort. On the difference between 5.5 and 5.5 Pro: it's purely test-time compute — Pro just thinks longer. He personally prefers the faster version because the performance gains from Pro are logarithmic, not linear.
 
-On *RL generalization*: He was surprised how well training on narrow hard problems (math, coding) generalizes to broader reasoning. He sees model self-judging — models evaluating their own outputs without a formal verifier — as the key to expanding RL into messier, subjective domains.
+The insight that cuts deepest is on continual learning. He describes a mental model: on day zero, AI models are probably more useful than most new employees. But humans learn — they accumulate company knowledge and get faster over time. Models stay flat. "The integral area under the curve" still favors humans in many cases. He expected this to be solved within six months of ChatGPT's release. Three years later, it still isn't.
 
-On *the Bitter Lesson*: The scaffolding developers build today (multi-agent routing, delegation logic, sub-agent coordination) will eventually be written on-the-fly by the models themselves.
+His message for builders: the bottleneck isn't raw intelligence — it's the last mile. Permissions, connectors, domain expertise, context. "There will always be a lot of space left for this last mile in different verticals, and I would highly encourage people to continue working on that."
 
-_"I don't think I've seen truly outstanding ideas that a model has generated yet, but I am sure I will very soon."_
-
-https://www.youtube.com/watch?v=NQczevdpxq0
+<https://www.youtube.com/watch?v=DhD1zZ8w8Mw>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
