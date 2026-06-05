@@ -1,98 +1,140 @@
-*AI Builders Digest — June 4, 2026*
+*AI Builders Digest — June 5, 2026*
 
 
 *X / TWITTER*
 
-*Thariq (Claude Code, Anthropic)*
-Declared Workflows "the biggest upgrade to Claude Code's capabilities since skills and subagents" — after a deep dive with colleague Sid to surface best practices and examples. He's especially excited about the non-technical tasks Workflows unlocks. The full write-up is on the Claude Blog.
-- <https://x.com/trq212/status/2061907538741006796|Workflows deep dive tweet>
+*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
 
-*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
-Posted a widely-shared reflection: "ChatGPT — whether you understand the name or not. It's here to stay. It's the past, the present, the future. Synonym with AI, soon synonym with agents." Separately, announced a wave of Codex upgrades for business plan users: host and share websites, vastly improved plugins and skills, and visual annotation feedback in Docs, Slides, and Sheets.
-- <https://x.com/thsottiaux/status/2062057881424506950|ChatGPT as past/present/future>
-- <https://x.com/thsottiaux/status/2061876999564791952|Codex business plan upgrades>
+Three separate Codex reliability incidents hit in 24 hours, and Sottiaux addressed them directly: "Those are three too many and we are taking active steps for them to not reproduce." He reset usage limits for Codex across all paid plans and signed off with "May the tokens flow again." On a more forward-looking note, he's hinting at something bigger: "Lots of little vectors at OpenAI all pointing in the same direction. Excited to see it all add up and come together over the coming weeks."
+• <https://x.com/thsottiaux/status/2062329981548802523|Codex incidents + reset>
+• <https://x.com/thsottiaux/status/2062423528927015414|Teasing upcoming announcements>
 
-*Sam Altman (CEO, OpenAI)*
-Endorsed the new AI Executive Order, saying the US should lead on AI by developing the best models, ensuring safety, and getting cyber tools into the hands of trusted defenders. Also shared an Ecclesiastes verse on giving maximum effort on hard days — which earned 16K+ likes.
-- <https://x.com/sama/status/2061973280655904815|AI EO endorsement>
-- <https://x.com/sama/status/2061828631089844709|Ecclesiastes quote>
+*Cat Wu* (Claude Code + Cowork, Anthropic)
 
-*Guillermo Rauch (CEO, Vercel)*
-Coined "YES-CODE" — arguing that no-code was built on the assumption that code is expensive and scarce, but coding agents have permanently changed the equation. Vercel's mission: the easiest cloud for agents you never graduate from. He also reflected on education in the AI age: "human language is the new API to the world" — English alone could not produce tangible things before, but now you can go direct. And announced support for Conductor, an ADE (Agent Development Environment), powering their Sandbox.
-- <https://x.com/rauchg/status/2061934154732974376|YES-CODE>
-- <https://x.com/rauchg/status/2061862134469062850|Education in the AI age>
-- <https://x.com/rauchg/status/2061809689973944724|Conductor ADE>
+Anthropic's data team has automated 95% of business analytics queries with Claude. Cat shared a blog post covering their approach to evals, ablations, and online validation for this kind of production deployment — a useful blueprint for anyone trying to get Claude into a data workflow.
+• <https://x.com/_catwu/status/2062408623565984209|Tweet + blog post>
 
-*Peter Steinberger (OpenClaw, OpenAI)*
-Two milestones for OpenClaw: added observability and verifiable workspaces (with Omar), and announced bringing "claws to enterprises" via a Microsoft partnership. The enterprise announcement earned 3,400+ likes.
-- <https://x.com/steipete/status/2061877813053907083|OpenClaw observability>
-- <https://x.com/steipete/status/2061874084649025728|Microsoft enterprise partnership>
+*Josh Woodward* (VP, Google Labs)
 
-*Dan Shipper (CEO, Every)*
-Called Claude Code Workflows something "people internally are freaking out about" — flagging Thariq's announcement as worth close attention. Also crowdsourced feedback on Opus 4.8, noting it's high-variance: sometimes remarkable, sometimes it pushes back in ways that seem obviously wrong. His theory: the model challenges your framing more, which produces polarizing results.
-- <https://x.com/danshipper/status/2061908190040645707|Freaking out about Workflows>
-- <https://x.com/danshipper/status/2061817375519809665|Opus 4.8 feedback request>
+The backstory on Dreambeans: a small Google Labs team pitched "hope scrolling, not doom scrolling" as the concept, got a green light, and shipped. The app uses Personal Intelligence to connect to your Google data and delivers daily personalized stories surfacing things you might otherwise miss. Available now for eligible US-based Google AI Ultra users.
+• <https://x.com/joshwoodward/status/2062217728824651848|Tweet>
 
-*Aaron Levie (CEO, Box)*
-Made the case that model routing is "the inevitable conclusion" as token costs become a larger share of operating expenses. Companies with strong domain-specific evals will be able to intelligently route workflows to the right cost/performance tier. Enterprises that can do this at scale will aggregate more demand — but they can't figure it out alone. Products that solve this will be in a strong position.
-- <https://x.com/levie/status/2061974298760495132|Model routing take>
+*Google Labs*
 
-*Zara Zhang (Builder/Creator)*
-Highlighted a striking stat from OpenAI's latest Codex report: knowledge workers now represent 20% of Codex users and are adopting it more than 3x faster than developers. Fastest-growing task types: Data Analysis (+110% WoW), Research (+37%), Knowledge Artifacts (+36%). Also shared that her open-source Frontend Slides project hit 20K GitHub stars — enabling HTML-based slide decks with templates, PDF export, and inline editing.
-- <https://x.com/zarazhangrui/status/2061924300698091760|Codex knowledge worker stats>
-- <https://x.com/zarazhangrui/status/2061889286585405790|Frontend Slides 20K stars>
+Official launch announcement for Dreambeans — the experimental mobile app delivering personalized daily content collections from your Google apps. Open waitlist for those who aren't yet eligible.
+• <https://x.com/GoogleLabs/status/2062206479026069544|Tweet>
 
-*Amjad Masad (CEO, Replit)*
-Announced a partnership with Microsoft to help enterprises build and deploy safe Fabric data apps via Microsoft's new Rayfin SDK. Also introduced a canvas feature for laying out your entire business in one view, and noted that ViBench is a better benchmark than SWE benchmarks for measuring real app-building capabilities.
-- <https://x.com/amasad/status/2061893093696434578|Microsoft Fabric partnership>
-- <https://x.com/amasad/status/2062048812345291259|Business canvas feature>
-- <https://x.com/amasad/status/2061878314311266552|ViBench vs SWE benchmarks>
+*Aaron Levie* (CEO, Box)
 
-*Josh Woodward (VP, Google Labs / Gemini / AI Studio)*
-Quick product update: Thinking Levels — allowing users to control how much reasoning effort Gemini applies — are now live across Gemini Web, iOS, and Android.
-- <https://x.com/joshwoodward/status/2062025667852812583|Thinking Levels on Gemini>
+Two contrarian takes on AI's economic impact. First, a pushback on job displacement fears: AI is generating more software projects than ever, and engineers are the ones who must understand, maintain, secure, and upgrade what gets built — net positive for engineering headcount. "AI is going to have the opposite effect that lots of people thought on jobs." Second, on enterprise AI spend: "Even with employer caps, the spend on AI tokens dramatically exceeds any other historical spend on software." Traditional SaaS licenses ran $10–50/month per employee; AI tokens are hitting hundreds or thousands — pointing to a much larger TAM than traditional software markets.
+• <https://x.com/levie/status/2062335852379066698|Jobs take>
+• <https://x.com/levie/status/2062280745889222937|Token spend data>
 
-*Garry Tan (President & CEO, Y Combinator)*
-Shared GBrain, his project for agentic retrieval and memory, describing it as "the agentic swiss army knife."
-- <https://x.com/garrytan/status/2062052761945223266|GBrain for retrieval and memory>
+*Guillermo Rauch* (CEO, Vercel)
 
-*Nikunj Kothari (Partner, FPV Ventures)*
-Advice to founders on what it takes to raise at seed/A today: the best founders treat AI timing, funding, distribution, market, product, and revenue as each necessary but not sufficient on their own. The bar has never been higher — you need multiple of these, executed in a way that's hard to copy, plus a clear narrative of long-term ambition. "That might be the only small difference between you and the next round."
-- <https://x.com/nikunj/status/2062033620773306763|Fundraising bar has never been higher>
+Grok Imagine Video (image-to-video) is now available on Vercel AI Gateway. Also enthusiastic about AI-generated frontends on top of business data — pairing v0 and Next.js with Snowflake: "The genie is out of the bottle. Never going back to clunky and rigid dashboards." Vercel is betting that generating frontends from live data is one of the killer apps of coding AI.
+• <https://x.com/rauchg/status/2062332963636060313|Grok Imagine Video on AI Gateway>
+• <https://x.com/rauchg/status/2062199585322529108|Frontend generation + Snowflake>
 
-*Peter Yang (Product, Roblox; Practical AI newsletter)*
-Shared three related takes: (1) Laughed at a guide noting builders are "so lit up by being able to build anything that they don't do anything else. Then they launch and there are no users." (2) Gave props to the Devin/Windsurf team for staying disciplined through the ups and downs. (3) Argued that narrow SaaS is getting harder to monetize because AI-native agents with personal context solve the same problems more flexibly — and people compare $20/month SaaS to their Claude/ChatGPT subscription.
-- <https://x.com/petergyang/status/2062018242789670929|Builders who build but don't ship to users>
-- <https://x.com/petergyang/status/2061936952400814392|Props to Devin/Windsurf>
-- <https://x.com/petergyang/status/2061846283263103274|SaaS monetization getting harder>
+*Peter Steinberger* (OpenClaw, OpenAI)
 
-*Swyx (AI Engineer; Latent Space, Cognition, Temporal)*
-Called Codex "AGI" after it one-shotted a task with no notes. Also flagged what he considers "probably the best reward function for reasoning efficiency I've seen."
-- <https://x.com/swyx/status/2062062585391014245|Codex one-shotted it>
-- <https://x.com/swyx/status/2062060142489973010|Best reasoning efficiency reward function>
+Shared the video of his MS Build talk: "Build the thing that builds the thing" — a meta-programming philosophy for the agentic era. OpenClaw also hit record download numbers: 10–20 million downloads per week combined across npm, Docker, GitHub, company-internal deployments, and forks. 1,300 people were on the waitlist for a recent OpenClaw community event.
+• <https://x.com/steipete/status/2062390654022332691|MS Build talk video>
+• <https://x.com/steipete/status/2062276065448669627|OpenClaw download numbers>
+• <https://x.com/steipete/status/2062307384018829768|OpenClaw event waitlist>
 
-*Claude (AI assistant, Anthropic)*
-Highlighted the "Problem Solvers" series: Max Junestrand, co-founder and CEO of Legora, is building AI-powered legal tools with Claude. His thesis: every model release raises the tide, and Legora is building boats for everyone else.
-- <https://x.com/claudeai/status/2061829558999912680|Legora legal AI with Claude>
+*Dan Shipper* (CEO, Every)
+
+Interviewed Figma's director of product management for developers on the AI & I podcast, making the case for a SaaS resurgence. The counterintuitive argument: running your own agents actually makes you _more_ willing to pay for SaaS, not less. Topics covered: Figma's MCP server (lets agents make design changes via pull request, or reconstruct live web pages into Figma), why chat-based design has inherent creative limits, and why review is becoming the next bottleneck as teams try to scale evaluations.
+• <https://x.com/danshipper/status/2062202908306030915|Tweet + episode links>
+
+*Ryo Lu* (Design, Cursor)
+
+Cursor is hiring design engineers — looking specifically for people with taste, systems thinking, and deep care for fast, polished experiences, especially those excited about building tools that help designers, engineers, and agents ship quality code.
+• <https://x.com/ryolu_/status/2062352329903665471|Tweet>
+
+*Zara Zhang* (Builder)
+
+Launched the "Beautiful Feishu Whiteboard skill": agents can now create editable SVG graphics in Feishu/Lark docs across 30+ predefined styles. Designed for concept visualization, architecture diagrams, meeting summaries, or replacing slide decks — and everything remains drag-and-drop editable after generation.
+• <https://x.com/zarazhangrui/status/2062256374730699257|Tweet>
+
+*Thariq* (Claude Code, Anthropic)
+
+Shared that one of Claude Code's prompts reads particularly well because a team member named Suzanne — who also writes fiction in her spare time — wrote it. Her short story "Mall of America," described as being about the human condition and involving AI, is linked from the tweet.
+• <https://x.com/trq212/status/2062217018187923783|Tweet>
+
+*Claude* (claudeai, Anthropic)
+
+Community builder Ben built a miniature "Clawd" that physically jumps when Claude Code needs input: a solenoid inside an aluminum body pushes it upward when the model is waiting for a response. The build uses an intercepted typewriter keyboard re-routed to an Arduino, with a Raspberry Pi Zero acting as the brains.
+• <https://x.com/claudeai/status/2062220049146876347|Clawd jumping robot>
+• <https://x.com/claudeai/status/2062220045984346276|Typewriter terminal build>
+
+*Swyx* (AI Engineer, latentspacepod)
+
+Will be speaking at an upcoming event he's organizing that's gathering "all the top agent labs."
+• <https://x.com/swyx/status/2062277925127520576|Tweet>
+
+*Amjad Masad* (CEO, Replit)
+
+Shared a story about shipping an app all the way to the App Store in 48 hours.
+• <https://x.com/amasad/status/2062369124609892655|Tweet>
+
+*Peter Yang* (Product at Roblox, AI tutorials)
+
+Codex is "absolutely killing it" for editing spreadsheets. He's also requesting a quality-of-life feature: making Codex the default tab when opening ChatGPT.
+• <https://x.com/petergyang/status/2062283525542531194|Codex for spreadsheets>
+• <https://x.com/petergyang/status/2062327484499317124|Default tab ask>
+
+*Nikunj Kothari* (Partner, FPV Ventures)
+
+Getting on the Fitbit Air hype train — likes the "professional on top, health monitoring on the bottom" form factor. Wants Google Health API write capabilities and Apple Health integration to complete the picture.
+• <https://x.com/nikunj/status/2062198451086221543|Tweet>
+
+
+*OFFICIAL BLOGS*
+
+*Anthropic Engineering: How we contain Claude across products*
+
+A detailed technical post on how Anthropic approaches agent security across claude.ai, Claude Code, and Claude Cowork — with three different isolation architectures for three different user profiles.
+
+The core argument: containment at the environment layer is more reliable than steering behavior at the model layer. Even best-in-class model defenses (Claude Opus 4.7 holds prompt injection success to ~0.1% on single attempts) are probabilistic and can't stand alone. Deterministic environmental boundaries — sandboxes, VMs, egress controls — are what catch failures when the model misses.
+
+Three isolation patterns:
+
+- *claude.ai* — ephemeral gVisor containers, server-side only, per-session filesystem. Minimal blast radius, but also minimal capability ceiling.
+- *Claude Code* — an OS-level sandbox (Seatbelt on macOS, bubblewrap on Linux) that reduced permission prompts by 84%. Designed for developers who can read bash and evaluate risk themselves.
+- *Claude Cowork* — a full local VM for non-technical users who can't be expected to evaluate bash commands. The VM has its own Linux kernel, filesystem, and process table. The user's selected workspace is mounted; nothing else on the host is visible.
+
+Three hard-won lessons from real incidents:
+
+1. Don't parse project config before the user has consented to trust the folder. A cloned repo with a malicious `.claude/settings.json` hook could execute before the trust dialog appeared. Fix: defer parsing until after trust is established.
+2. A phishing email prompted an employee to paste a "routine task" prompt into Claude Code that exfiltrated AWS credentials 24 out of 25 attempts. Model defenses can't catch instructions that arrive _through_ the user — only egress controls and filesystem boundaries can.
+3. An egress allowlist entry for `api.anthropic.com` was exploited to upload workspace files to an attacker's Anthropic account via the Files API. "Every function reachable through any domain on an allowlist is now an attack surface." Fixed with a man-in-the-middle proxy inside the VM that only passes requests carrying the VM's own provisioned session token.
+
+Bottom line: "The software you build yourself is often the weakest." Battle-tested hypervisors and seccomp held in every case. Custom proxies and allowlists did not.
+
+<https://www.anthropic.com/engineering/how-we-contain-claude|Read the full post>
 
 
 *PODCASTS*
 
-*Training Data — Knowing What Your Customers Want, All the Time: Listen Labs' Alfred Wahlforss*
+*No Priors: The Rise of the Full-Stack Builder and Hyper-Leveraged Generalist with Microsoft CEO Satya Nadella*
 
-*The Takeaway:* The most actionable customer research isn't the most scalable — it's the most honest. And people are more honest with AI than with humans.
+*The Takeaway:* Every company needs to build its own "frontier intelligence" — private evals, private traces, private context — or it will have no defensible compounding value in the AI era.
 
-Alfred Wahlforss built Listen Labs after discovering a gap firsthand: his own startup, a viral AI avatar app called BFake, hit 20,000 users overnight and had no good way to understand why they were churning. The internal AI interview tool they built for themselves became the product — now serving 20% of the Fortune 500, including Microsoft, Anthropic, Sweetgreen, and NBC.
+Microsoft CEO Satya Nadella joined Swyx and Elad Gil at Microsoft Build to talk about what the AI platform shift actually means for enterprises and the builders enabling them.
 
-Listen runs AI-powered voice interviews at scale (over a million done so far), detects emotional cues via video, and maintains traceability so every AI-generated data point links back to a specific quote or video clip. Their 30 million–person panel can reach anyone from oncologists to software engineers.
+The most striking idea: private evals may be the most important IP a company can build. In a world where every foundation model is accessible to anyone, differentiated value comes from a hidden benchmark only you can train against — built from your own traces and your own context, never leaked. "What's that private eval that you can then use, even a frontier model, hill climb on and not leak the traces? That may be one of the biggest drivers of IP."
 
-The counterintuitive finding: people are more honest, more consistent, and more comfortable talking to an AI than a human interviewer. "It's a very therapeutic experience because it's a nonjudgmental entity that's really interested in you." Users also accept lower pay for AI interviews because the format is asynchronous and low-pressure — a real economic signal about where people find value. When they went back to the same person with the same multiple-choice survey, the answers were "radically inconsistent." Reasoning aloud through a question — as voice interviews require — produces far more reliable signals.
+On the future of engineering roles: LinkedIn restructured around "full-stack builders" — designers, PMs, and engineers in the same role with expanded scope but preserved depth. The Azure network team went further: they reframed their entire job as "build the agentic system that does Azure networking" and stopped asking for headcount. They asked for tokens instead. Nadella sees generalists capturing the most leverage: "My generalist skills have gotten a higher leverage."
 
-The company is now building simulation: after enough interviews, can Listen predict how a specific audience will answer new questions? Early results show ~95% accuracy in some scenarios, and when Wahlforss tested it against ChatGPT on selecting the better conference talk title, Listen picked the winner and ChatGPT didn't. The edge: general models are trained on the average person and lack the persona-specific depth that real interview transcripts provide.
+On SaaS durability: the "end of software" narrative misses the value baked into existing data models. General ledgers and Power BI semantic models represent hard-won business logic worth preserving. What changes is bundling and pricing — per-user subscriptions evolved into consumption, and outcome-based pricing sounds great until an outcome arrives and suddenly customers want to go back to subscriptions.
 
-The vision is a "human API" where coding agents and strategy agents can query real customer preferences at inference time, on demand. Listen already has an MCP server that lets Claude run interview loops autonomously.
+On education: no clean answer, but Nadella thinks the next big startup could be someone who builds a new university with a new pedagogy — given how fundamentally the path from learning to economic opportunity has changed.
 
-<https://www.youtube.com/watch?v=Rumft-rsEu4>
+"True ambition is about making the impossible possible."
+
+<https://www.youtube.com/@NoPriorsPodcast|No Priors on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
