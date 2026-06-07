@@ -1,114 +1,84 @@
-AI Builders Digest — June 6, 2026
+*AI Builders Digest — June 7, 2026*
+
 
 *X / TWITTER*
 
-*Alex Albert — Research at Anthropic*
-Shared a milestone: over 80% of all code merged into Anthropic's codebase is now written by Claude, with the typical engineer shipping 8x as much code as they did in 2024. On the most open-ended tasks, Claude's success rate jumped from ~26% to 76% in just six months. The kicker: when research sessions went off-track, Claude proposed a better next step than the human took 64% of the time. "We're not at recursive self-improvement yet, but it could come sooner than most expect."
-<https://x.com/alexalbert__/status/2062580571214389510|View tweet>
+*Swyx* (AI & Engineer — Latent Space, Cognition, Temporal)
+Swyx shared a sharp prompting tip: instead of defaulting to plan mode, frame your task as a question so the model is invited to push back and suggest alternatives rather than blindly executing what you said (which is often not precisely what you meant). "Literally just appending '?' to the end of your prompt often does it."
+<https://x.com/swyx/status/2063082950317486133|tweet>
 
-*Thibault Sottiaux — Codex & ChatGPT at OpenAI*
-Announced that Codex is now usable within your own programs via the Python SDK (`pip install openai-codex`). <https://x.com/thsottiaux/status/2062734215494664697|View tweet>
+*Boris Cherny* (Claude Code @ Anthropic)
+Boris announced that Claude Cowork's usage limits have been doubled for the next month. He described Cowork as best for work "too big for a chat" — research across dozens of accounts, recurring reports, and inbox triage. If you've been saving a big messy project, now's the time.
+<https://x.com/bcherny/status/2063028954546733462|limits announcement> · <https://x.com/bcherny/status/2063028956211867837|use cases>
 
-Also disclosed a bug being fixed that was causing tokens served to some Codex Pro and Plus accounts to be undercounted — affecting less than 15% of accounts. "Not the kind of bug you want us to fix, but didn't want to do this silently." <https://x.com/thsottiaux/status/2062648326332539015|View tweet>
+*Thibault Sottiaux* (Codex & ChatGPT @ OpenAI)
+Thibault dropped a tight equation: "Better memory = Shorter prompts = More utility per token." He also noted that Codex papercuts are falling as adoption climbs — a healthy product signal.
+<https://x.com/thsottiaux/status/2062966625733861752|memory tweet> · <https://x.com/thsottiaux/status/2062997768470474765|Codex adoption tweet>
 
-*Sam Altman — CEO of OpenAI*
-Announced a big upgrade to ChatGPT memory rolling out today. <https://x.com/sama/status/2062660086787613116|View tweet> Also teased ChatGPT's new ability to build and publish web apps directly, saying he missed HyperCard and wished he'd had this as a kid — right before nostalgia-posting "man the early days of the internet were so special." <https://x.com/sama/status/2062661071761211561|View tweet>
+*Peter Yang* (Product @ Roblox, 140K+ reader AI newsletter)
+Peter shared a 5-step framework for building self-improving AI skills: (1) give it examples of good output so it knows what good looks like, (2) write a clear trigger description, (3) add pass/fail evals for common errors, (4) add a memory file to capture one-sentence learnings from past runs, and (5) build a skill that cleans up other skills by removing stale or duplicate instructions.
+<https://x.com/petergyang/status/2062899832965255443|framework tweet>
+He also interviewed a builder who contributes to Python and Go repos despite no CS degree, crediting Every's Compound Engineering workflow.
+<https://x.com/petergyang/status/2062959766314582064|interview tweet>
 
-*Swyx — affiliated with Cognition (Devin), Temporal, and AI Engineer community*
-Highlighted the first eval release from Cognition: real-world enterprise code evals capped at 100 hours (versus METR's 16-hour cap), with a financial guarantee on the results. Their dataset covers Java/TypeScript/Python/C# feature dev, bugfixes, and migrations — 258 sessions from 126 users across diverse enterprise customers. "This is pioneering real world evals work."
-<https://x.com/swyx/status/2062611218196771017|View tweet>
+*Madhu Guru* (ex-Product Leader @ Google — Gemini, Veo)
+Madhu called out a common enterprise AI mistake: building for today's model capabilities and price points. His advice — think 6 months out, scaffold around current model weaknesses, and bet that the next generation will natively solve those gaps. "Over time, that ability to repeatedly identify and bridge model gaps becomes a moat of its own."
+<https://x.com/realmadhuguru/status/2063024953721827329|tweet>
 
-Also commented that Singapore investors are finally taking Neon (a leading database company born in Singapore) seriously. <https://x.com/swyx/status/2062627150885450065|View tweet>
+*Amjad Masad* (CEO @ Replit)
+Amjad teased a Replit x Shopify partnership.
+<https://x.com/amasad/status/2063065480878063694|tweet>
 
-*Thariq — Claude Code at Anthropic*
-Reflected on the "An App Can Be a Home-Cooked Meal" essay: "personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter." <https://x.com/trq212/status/2062605395101884916|View tweet>
+*Guillermo Rauch* (CEO @ Vercel)
+Vercel announced that agent filesystem state can now be read, written, and mounted independently of Sandbox lifecycle — storage decoupled from compute, attachable to Builds, Functions, and Sandboxes. Rauch also promoted Vercel's Skills API, describing it as "the npm registry for agent capabilities and extensibility. Free and open."
+<https://x.com/rauchg/status/2063009510503932181|filesystem tweet> · <https://x.com/rauchg/status/2062951924677128455|Skills API tweet>
 
-Also shared a post on how dynamic workflows allow Claude Code to handle whole new types of tasks. <https://x.com/trq212/status/2062556889171517499|View tweet>
+*Aaron Levie* (CEO @ Box)
+Aaron made a counterintuitive case against AI displacement fears: if coding agents — which have every structural advantage (verifiable output, digitized context, technical users, massive training data) — still require human engineers to be effective, then the risk in other knowledge work is lower than perceived. "Agents will let people do far more than they did before, but the people don't go away."
+<https://x.com/levie/status/2063055332545540096|tweet>
 
-*Cat Wu — Claude Code at Anthropic*
-Hiring a PM for Claude Code focused on model performance. Looking for someone with experience writing agentic evals who wants to integrate research ideas into the core product.
-<https://x.com/_catwu/status/2062659533047259212|View tweet>
+*Ryo Lu* (Design @ Cursor)
+Cursor's Ryo Lu showed off a new design-in-code workflow: click to select an element, chat to edit it, shift-click to multi-select. Works best with Composer 2.5.
+<https://x.com/ryolu_/status/2063038983408615435|tweet>
 
-*Aaron Levie — CEO of Box*
-Responding to Anthropic's post on Claude's growing role in internal development, highlighted the key insight: AI creates far more ideas than any organization can pursue, and the bottleneck shifts to execution. "The rate at which organizations can spot and fix these bottlenecks may be a skill that improves over time, and it may become the most important skill for any organization." AI doesn't eliminate the need for people to manage — it multiplies the scope of what needs to be managed.
-<https://x.com/levie/status/2062728257359790292|View tweet>
+*Garry Tan* (President & CEO @ YCombinator)
+Garry teased a project he's been quietly building for months — something aimed at helping people learn better techniques to build software faster.
+<https://x.com/garrytan/status/2063146456106795457|tweet>
 
-*Peter Yang — Product at Roblox, AI tutorials newsletter*
-Spent a full day setting up integrations and skills in Codex for his top creator workflows, concluding you can save at least 50% of your time on knowledge work by investing in the system upfront. His 3-step process: reflect on your most painful manual workflow, list every step in detail, then ask Codex or Claude Code what integrations to build. "AI will guide you the rest of the way."
-<https://x.com/petergyang/status/2062740262338929110|View tweet>
+*Aditya Agarwal* (General Partner @ South Park Commons, ex-CTO @ Dropbox)
+Aditya offered a sharp reminder: "Sometimes speed is just impatience disguised as ambition."
+<https://x.com/adityaag/status/2062917027103130013|tweet>
 
-Also noted Codex still has a weak frontend design compared to Claude: "Claude can one-shot great looking HTML slides." He argues the UI is often a novice's first impression and Codex needs to improve it. <https://x.com/petergyang/status/2062743491365544361|View tweet>
-
-*Dan Shipper — CEO of Every*
-Launched Spiral 4.0, a writing partner powered by a new Style Engine built on stylometry principles — it extracts your brand voice from examples of past work. Now supports MCP and CLI so agents like Codex and Claude Code can invoke it automatically. Every uses it internally for landing pages, tweets, podcasts, and marketing emails across the full 30-person team.
-<https://x.com/danshipper/status/2062628079869005876|View tweet>
-
-*Nikunj Kothari — Partner at FPV Ventures*
-Built a personal Claude Code skill called "Nock" trained on 200+ founder pitch meeting notes captured by Granola, distilled to ~53 sessions with substantive debate. The result is a question bank grounded in real VC conversations that evaluates decks in his voice. He iterated against 5-10 actual decks until it felt accurate. Founders can try it at nikunjk.com/nock; VCs can build their own version at nikunjk.com/buildnock.
-<https://x.com/nikunj/status/2062659649732825549|View tweet>
-
-*Guillermo Rauch — CEO of Vercel*
-Congratulated the Void team and reaffirmed Vercel's collaboration on an open web platform, with investment in Nitro.js and native support for Vite-based frameworks including Nuxt, Svelte, and TanStack Start.
-<https://x.com/rauchg/status/2062535454130676193|View tweet>
-
-*Garry Tan — President & CEO of Y Combinator*
-Celebrated two YC decacorns in one day, including Polaris — a commercial fusion company that hit 150 million degrees Celsius, the first privately funded machine to do it. "This is the abundance future, built by people who actually ship."
-<https://x.com/garrytan/status/2062763109849411834|View tweet>
-
-Also a reminder to founders: "So close to product market fit is still not product market fit."
-<https://x.com/garrytan/status/2062761266083754088|View tweet>
-
-*Claude — Anthropic's official AI account*
-Featured Anton Osika, co-founder and CEO of Lovable: "His working thesis: the most underrated moat in AI is trust, and earning it takes craft, care, and obsession."
-<https://x.com/claudeai/status/2062558332695556378|View tweet>
-
-*Aditya Agarwal — General Partner at South Park Commons*
-Noted that many roles will have engineering infused into them going forward, citing Marketing Engineer as a prime example of the trend.
-<https://x.com/adityaag/status/2062655784127971565|View tweet>
-
-*Josh Woodward — VP at Google Labs, Gemini*
-Expressed enthusiasm for a new Gemini feature on the macOS app.
-<https://x.com/joshwoodward/status/2062667951485108354|View tweet>
-
-
-*OFFICIAL BLOGS*
-
-*Anthropic Engineering*
-
-_An update on recent Claude Code quality reports_
-A candid postmortem on three separate bugs that degraded Claude Code quality between March and April. Issue 1: default reasoning effort was quietly downgraded from high to medium to reduce latency, but users immediately noticed reduced intelligence — reverted April 7. Issue 2: a caching bug caused Claude to continuously drop its prior thinking blocks after sessions idle for over an hour, making it appear forgetful and repetitive — fixed April 10. Issue 3: a system prompt instruction limiting responses to 25 words between tool calls hurt coding quality — reverted April 20. Because each bug affected different traffic slices on different schedules, the aggregate looked like broad, inconsistent degradation. Anthropic is resetting usage limits for all subscribers and committing to broader eval suites, soak periods, and tighter controls on system prompt changes.
-<https://www.anthropic.com/engineering/april-23-postmortem|Read the full post>
-
-_Scaling Managed Agents: Decoupling the brain from the hands_
-Anthropic explains the architecture behind Managed Agents, their hosted service for long-horizon agent tasks. The key design move: decoupling Claude (the "brain") from execution sandboxes (the "hands") and from the session log, so each component can fail or be replaced independently. Credentials never enter the sandbox where generated code runs. Result: p50 time-to-first-token dropped ~60% and p95 dropped over 90%. The system is a "meta-harness" — opinionated about interfaces, not about what runs behind them — so it can accommodate future harness implementations without breaking existing integrations.
-<https://www.anthropic.com/engineering/managed-agents|Read the full post>
-
-*Claude Blog*
-
-_New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels_
-Claude Managed Agents now supports running agent execution inside your own infrastructure or with managed providers including Cloudflare, Daytona, Modal, and Vercel — keeping sensitive files and code within your security perimeter while Anthropic handles orchestration. MCP tunnels (in research preview) let agents reach private MCP servers inside your network without exposing them to the public internet — a lightweight gateway you deploy makes a single outbound connection, no inbound firewall rules required.
-<https://claude.com/blog/claude-managed-agents-updates|Read the full post>
-
-_New connectors in Claude for everyday life_
-Claude now connects to AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, Tripadvisor, Uber, Uber Eats, and Viator — joining 200+ connectors already in the directory. Claude now dynamically suggests the right connector mid-conversation based on what you're doing. Connected service data is not used for model training, Claude remains ad-free with no paid placements, and you can disconnect any service at any time.
-<https://claude.com/blog/connectors-for-everyday-life|Read the full post>
+*Claude / Anthropic*
+Claude's official account confirmed that doubled Cowork usage limits are live on all paid plans through July 5. Download the Claude desktop app to try it.
+<https://x.com/claudeai/status/2063018337567670285|announcement> · <https://x.com/claudeai/status/2063018339710992794|desktop app link>
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — OpenAI's Dan Roberts: Why AI Can Now Make Discoveries*
+*AI & I by Every — "The SaaS Apocalypse Is a Goldmine With Figma's Matt Colyer"*
 
-*The Takeaway:* Reinforcement learning is no longer the cherry on top of pre-training — it's increasingly the cake — and AI has already crossed into genuine original scientific discovery.
+*The Takeaway:* The "SaaS apocalypse" narrative misunderstands what software companies actually provide — and if you're in that space, the explosion of builders isn't a threat, it's a gold mine.
 
-Dan Roberts leads the Foundations of Reinforcement Learning team at OpenAI, arriving via a PhD in theoretical physics at MIT (quantum gravity and black hole information theory), a postdoc at the Institute for Advanced Study, time at FAIR, a startup, and a stint at Sequoia Capital as entrepreneur-in-residence. He joined OpenAI two years ago to work at what he sees as a convergence between physics and intelligence research.
+Matt Colyer is Director of Product Management for Developers at Figma. He's spent years in developer tools, built his own AI agents long before it became trendy, and now leads Figma's response to the agent era — including Figma's native agent for the Infinite Canvas and the Figma MCP server.
 
-His core argument: RL started working not because of a new algorithm, but because pre-trained models became powerful enough to build on. "If you have a powerful enough pre-trained model, then it can start to do well at RL." From there, RL teaches models to actually _use_ test-time compute — to generate a running thought process before committing to an answer.
+His core argument: the number of developers worldwide is moving from ~30 million toward potentially a billion. More builders means more software, which means more demand for the tools that make software good. "If you're in that space, it means it's a gold mine."
 
-On the OpenAI Erdős problem result, Roberts framed it as fundamentally an act of exploration: the model assumed the conjecture was false (against mathematical consensus), then persevered down an extremely long calculation path drawing on algebraic number theory. "When you go against the grain and do something contrarian like that, you really have to have strong conviction in what you're doing in order to persevere down a really long calculation path."
+A few specific insights worth knowing:
 
-His physics-trained instinct applied to AI: when a model "grokks" or shows unexpected emergent behavior, that's not magic — it means you didn't understand what you were scaling up. The fix is to find a simpler toy system that still contains the phenomenon, understand it there, then scale with intent. "If you can figure out what to put into the small thing, then you understand the thing."
+- *Vibe-coding doesn't eliminate maintenance.* Colyer built his own email agent two years ago — a Python script that grabbed school PTO emails for his three kids and summarized them into bullet points. He's found the ongoing cost of running your own agent is real, and he now buys more software than before: "That tool seems cool. I'm just gonna pay somebody else to run my agent for me."
 
-<https://www.youtube.com/watch?v=oWOz2htozfI|Watch on YouTube>
+- *Figma's MCP strategy is bidirectional.* The Figma MCP server supports two flows: code → design (pull your live app into Figma canvas and edit with direct manipulation tools), and design → code (wrap your design system and push back to the codebase via an agent-generated PR with screenshots attached).
+
+- *Canvas beats chat boxes for design thinking.* Current chat interfaces are too linear for creative work. On Figma's Infinite Canvas, divergent agents explore multiple directions simultaneously while convergent agents cluster and evaluate options — closer to how good design actually works.
+
+- *Personalization is the unlock.* The gap between an okay agent and one people love is whether it understands your context. For Figma, that means your design system. Without it, the output isn't usable.
+
+- *The next hard problem is reviewing, not generating.* Agents can produce faster than humans can evaluate. Building trust systems — evals, convergent review agents, consistency checks — is what Colyer sees dominating the next year.
+
+On career advice for PMs and designers: the fundamentals still matter, and the most valuable people are the curious ones who push tools to their limits rather than just accepting the output. "You can't have been the one who's like, answer this problem for me. You have to be that curious person."
+
+<https://www.youtube.com/watch?v=kYKebKB3-d0>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
