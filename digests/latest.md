@@ -1,77 +1,103 @@
-AI Builders Digest — June 8, 2026
+AI Builders Digest — June 9, 2026
 
 *X / TWITTER*
 
-*Swyx* — AI educator and developer (ai.engineer, Cognition)
+*Boris Cherny* (Claude Code at Anthropic)
 
-California's non-compete laws may be the most powerful force shaping AI knowledge distribution — more than GitHub, arxiv, or HuggingFace combined. Swyx argues research paper culture effectively died when researchers realized they could walk out the door and raise $100M+ on legally protected tacit knowledge, with no need to publish. This dynamic is also a motivator behind his work building ai.engineer as a product-centric industry conference to complement paper-centric research events.
+Boris Cherny shared five tips for running Claude Opus autonomously for hours or days: (1) enable auto mode for permissions so Claude doesn't ask for approval, (2) use dynamic workflows to orchestrate hundreds or thousands of agents, (3) use /goal or /loop to keep Claude working until done, (4) run Claude Code in the cloud so you can close your laptop, and (5) make sure Claude has a way to self-verify its work end to end — browser extension for web, iOS/Android simulator MCP for mobile, a full web server for backend.
+<https://x.com/bcherny/status/2063792263067754658|View tweet>
 
-https://x.com/swyx/status/2063432747432268259
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
 
-*Peter Yang* — Product at Roblox, AI newsletter writer (140K+ readers)
+Thibault Sottiaux announced a 100-day Codex challenge: every day for the next 100 days, OpenAI will select one person doing impressive or incredibly useful work with Codex and give them 10x usage limits for a month. The first winner gets announced tomorrow.
+<https://x.com/thsottiaux/status/2063748242681307611|View tweet>
 
-Fully captured by agentic coding ("more addictive than video games"), Peter is also pitching a real UX improvement for Codex: filtering and sorting threads by status (waiting for approval, currently working) rather than only by project. With 10+ parallel threads running, project-only organization becomes unmanageable fast.
+*Madhu Guru* (former Product Leader at Google Gemini, Veo, Nano)
 
-- https://x.com/petergyang/status/2063486871037153558
-- https://x.com/petergyang/status/2063475353335869922
+Madhu Guru pushed back on the assumption that AI training data is low-skill grunt work. The data required to advance the model frontier is the opposite: complex, domain-specific knowledge for high-economic-value tasks, most of which have little documentation. This is exactly why we have SWE agents but not knowledge-work agents yet. He argues companies producing this training data are doing "extremely high-leverage, high-skill work" that is "critical to moving AI forward — and deeply underappreciated."
+<https://x.com/realmadhuguru/status/2063704354910347520|View tweet>
 
-*Madhu Guru* — Former Product Lead at Google (Gemini, Veo, Nano Banana)
+*Amjad Masad* (CEO at Replit)
 
-Madhu maps three phases of enterprise AI model routing maturity he observed firsthand. Phase 1 (2024): everyone defaults to GPT regardless of task. Phase 2 (early 2025): teams overcorrect toward cheapest models but lack the evals to route correctly, burning cycles and shipping slower. Phase 3 now: AI-native startups break products into sub-agents and route each task to the right model — hardest reasoning to Claude, simplest to Gemini Flash-Lite or open-weight. Enterprises follow AI-native builders by 6-9 months.
+Replit CEO Amjad Masad quote-tweeted a founder success story, summarizing Replit's core value proposition as "removing all distractions and having you focus on what matters — getting to market and getting the bag."
+<https://x.com/amasad/status/2063744208587125142|View tweet>
 
-https://x.com/realmadhuguru/status/2063342268472574268
+*Guillermo Rauch* (CEO at Vercel)
 
-*Aaron Levie* — CEO of Box
+Vercel CEO Guillermo Rauch shared that the Vercel AI Gateway recovers over 1 trillion tokens per month on average — analogous to how Stripe recovers revenue through smart retries on failed payments. The gateway adds redundancy, zero-data retention enforcement, observability, usage APIs, and caps, all with zero markup over the AI labs.
+<https://x.com/rauchg/status/2063714700618334260|View tweet>
 
-Token costs are the hottest enterprise AI topic right now — which Levie reads as bullish, because it means these systems are being used at a scale nobody previously contemplated. The next differentiation layer is model routing: as token costs become a significant share of workflow costs, companies need to route each task to the most efficient model for the job. Frontier intelligence stays essential for complex tasks (legal, coding, healthcare), but simpler sub-tasks can be peeled off to cheaper alternatives. Winners will be companies with the best evals, the best routing, and business models aligned to customers' financial goals.
+*Aaron Levie* (CEO at Box)
 
-https://x.com/levie/status/2063320673217609936
+Box CEO Aaron Levie had three substantive posts.
 
-*Garry Tan* — President & CEO of Y Combinator
+He argued AI hasn't reduced GTM costs in enterprise software — if anything it's increased them. Cheaper software development shifts the hard problem to discoverability and market differentiation: "If you make one thing cheaper and more abundant (development of software) then the new problem of discoverability and market differentiation (GTM) becomes the hardest part."
+<https://x.com/levie/status/2063756386572681606|View tweet>
 
-Clarifying Paxel's privacy model in response to user concerns: file contents specifically don't go to the cloud, but other user data may. He says as local models improve, more will be able to happen locally. Also posted about Paxel helping users become more "legit."
+On model routing, Levie predicted a split between frontier intelligence for high-end tasks and cheaper models for high-volume workloads — and argued "the layer that can efficiently route the workload to the right model will become increasingly valuable — agent orchestration that can cost-optimize while still performing the task successfully will be in a strong position."
+<https://x.com/levie/status/2063835799096090749|View tweet>
 
-- https://x.com/garrytan/status/2063418130714800487
-- https://x.com/garrytan/status/2063409501706018903
+He also announced Box now has a markdown editor on the web with full CLI support, commenting, and version history. Box Drive can be mounted as a local drive so files are instantly accessible in Claude Cowork, Codex, Obsidian, Cursor, or any other app.
+<https://x.com/levie/status/2063649508681224367|View tweet>
 
-*Zara Zhang* — Builder and independent developer
+*Garry Tan* (President & CEO at Y Combinator)
 
-Sharing a takeaway from a talk she found compelling: the value of static content is falling while the value of live interaction is rising. Audiences want to connect with the human behind the work — whether it's content or software. Raw and opinionated beats polished and generic.
+Y Combinator CEO Garry Tan flagged that "educating people on how to use the AI tools has become a serious bottleneck" — pointing to a shift where the tools are no longer the limiting factor; adoption and change management are.
+<https://x.com/garrytan/status/2063786111588323780|View tweet>
 
-https://x.com/zarazhangrui/status/2063391758189572266
+He also shared a GBrain product update: version 0.42.30 can now give you a detailed summary of how your thinking has changed over time.
+<https://x.com/garrytan/status/2063785286367392095|View tweet>
 
-*Nikunj Kothari* — Partner at FPV Ventures
+*Zara Zhang* (independent AI builder)
 
-Nikunj posted a "Walk In The Park" video interview with the founder of Reactor World on the topic of world models — covering the origin story from text-to-3D, why low latency matters, how GTA and games shaped the path into programming, and how to pick investors with independent conviction.
+Zara Zhang reflected on why her Frontend Slides skill grew so organically: "slides are inherently social." People see HTML-based decks and ask how they were made, and creators of those slides are perceived as "more AI-native and AI-savvy." The format has a viral loop built right into it.
+<https://x.com/zarazhangrui/status/2063638307586662539|View tweet>
 
-https://x.com/nikunj/status/2063263389238087745
+*Nikunj Kothari* (Partner at FPV Ventures)
 
-*Dan Shipper* — CEO of Every
+FPV Ventures partner Nikunj Kothari offered a contrarian take on the token anxiety trend: companies should still give employees copious token budgets to stay at the frontier and explore the edges. Cutting back makes it "way too easy to fall back to doing the things how they have always been done."
+<https://x.com/nikunj/status/2063630238123483195|View tweet>
 
-Deep in Plato this weekend. Dan finds the Protagoras dialogue weirdly prescient about LLMs: it grapples with the limits of techne (technical skill) and the necessity of two qualities harder to specify — Aidōs (reverence and responsiveness to others) and Dikē (the capacity to perceive what is right). His sharpest take on AI consciousness: "LLMs are not conscious. LLMs are not not conscious. Both true."
+*Peter Steinberger* (OpenClaw co-creator, collaborates with OpenAI)
 
-- https://x.com/danshipper/status/2063438262841094604
-- https://x.com/danshipper/status/2063436919967522848
-- https://x.com/danshipper/status/2063426632824562167
+The most viral post of the day: Peter Steinberger's blunt reminder that "you shouldn't be prompting coding agents anymore — you should be designing loops that prompt your agents." The tweet hit 13,700+ likes and 870 retweets, sparking widespread discussion about how the mental model for AI-assisted development needs to shift.
+<https://x.com/steipete/status/2063697162748260627|View tweet>
+
+*Aditya Agarwal* (General Partner at South Park Commons, former CTO at Dropbox)
+
+South Park Commons GP Aditya Agarwal — who went through both the Meta and Dropbox IPOs — noted that "fabulous wealth tends to amplify deeper desires, not create new ones." With a wave of liquidity expected in the coming months, he predicts many of those people will start new things, fund new things, and keep the Silicon Valley flywheel spinning.
+<https://x.com/adityaag/status/2063731771284619521|View tweet>
+
+*Sam Altman* (CEO at OpenAI)
+
+OpenAI CEO Sam Altman quote-tweeted Thibault Sottiaux's Codex 100-day challenge with a one-liner: "interesting recursive loop here maybe" — pointing at the meta irony of using Codex to find and reward the best Codex power users.
+<https://x.com/sama/status/2063779477419901071|View tweet>
+
+
+*OFFICIAL BLOGS*
+
+*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
+<https://claude.com/blog/new-in-claude-managed-agents|Read the full post>
+
+Anthropic launched three new capabilities for Claude Managed Agents. _Dreaming_ is a scheduled background process that reviews past agent sessions and memory stores, extracts patterns, and curates memories so agents improve over time — it can update memory automatically or hold changes for human review. Harvey (legal AI) tested it and saw completion rates go up ~6x. _Outcomes_ lets developers write a success rubric; a separate grader evaluates the agent's output in its own context window and sends the agent back for another pass when something isn't right. In testing, outcomes improved task success by up to 10 points, with the largest gains on the hardest problems, and improved file generation quality by +8.4% on docx and +10.1% on pptx. _Multiagent orchestration_ lets a lead agent break complex jobs into pieces and delegate each to a specialist agent with its own model, prompt, and tools, all running in parallel on a shared filesystem, with full trace visibility in the Claude Console. Netflix and Spiral by Every are among the early teams using these capabilities.
+
 
 *PODCASTS*
 
-*Unsupervised Learning — Ep 89: AI Research Legend's Honest Assessment of Where We Are*
+*The MAD Podcast with Matt Turck — State of Enterprise AI 2026: Aaron Levie on Tokenmaxxing, Rise of Headless, and AI-Proofing Your Job*
+https://www.youtube.com/watch?v=Gs2styCcwro
 
-_The Takeaway:_ A transformer paper co-author thinks transformers are remarkable but believes something beyond them is coming — and the agent-driven coding revolution happened so fast even insiders can't fully explain why.
+_The Takeaway:_ Enterprise AI deployment is taking longer than expected — not because the technology isn't good enough, but because it's advancing faster than companies can build stable architectures around it.
 
-Lucas Kaiser co-authored "Attention Is All You Need" and spent years at both Google Brain and OpenAI. He's one of the few researchers who had a front-row seat to both the architecture breakthroughs and the organizational bets that defined modern AI.
+Box CEO Aaron Levie, who speaks with hundreds of CIOs every year, offers a uniquely grounded view on how AI is actually landing inside the world's largest companies. The mood is cautiously optimistic: CIOs are seeing real productivity gains in engineering and are being pulled by their business teams to extend those gains everywhere else. The challenge isn't enthusiasm — it's execution.
 
-On whether transformers can reach human-like generalization, Kaiser is genuinely uncertain — and refreshingly honest about it. His framing is precise: "LLMs will learn the concept. They will learn it. But after exhausting all other options. You need this trillion tokens... That's not how we learn." He believes there's something in human cognition — learning from far less data, making bigger conceptual leaps — that current models can't replicate. But every time he tries to pin down what that gap is, the transformer catches up.
+The token cost conversation is real but often misframed. The deeper issue is that AI agents consume compute in a fundamentally different way than chatbots: one coding session can cost $1,000. "We've just gone from a pricing model of a chatbot to that pricing model no longer working when one coding agent could be consuming $1,000 of compute on a single task." As token budgets escape the IT department and move into line-of-business budgets, companies will need entirely new FinOps muscle — there's no "FinOps for the marketing team" yet.
 
-On agentic coding, he's a true convert with concrete numbers. Reproducing old research papers that used to take three weeks now takes two days. More interesting than the speed: working with agents keeps him operating at the high conceptual level while implementation gets handled, making his mental model sharper rather than duller. "It gives me actually more mental control over what I'm doing than before."
+On why coding is ahead of the rest of knowledge work: coding is uniquely suited for AI agents because work is verifiable, users are technical, and the codebase provides rich context. Most knowledge work lacks all three. The blockers are access controls, unstructured data scattered across dozens of systems, and the absence of technical users who can catch and correct agent mistakes.
 
-On why Anthropic won coding first: Anthropic couldn't compete with ChatGPT, so it placed a focused bet on coding. "Anthropic made this very good decision to focus on coding... partway Anthropic made this decision was that they just could not compete." OpenAI is now catching up on the agentic front.
+Levie is bullish on the "internal FDE" role — a technical person embedded within a business team who understands workflows and wires up agents to get real work done. This is a sustaining job, not a transitional one: every model upgrade creates new work.
 
-On the mysterious "Christmas jump" that made Codex and Claude Code suddenly feel genuinely useful: Kaiser admits nobody fully knows what caused it. It wasn't one clean breakthrough. "It feels like a big jump which is not that easy to pin down what did it."
+On headless software: a dual model emerges — agents doing high-volume headless work at massive scale, humans using the interface for complex or judgment-intensive tasks. Enterprise software companies will run both a seat business and a consumption business. And on jobs: Levie is a committed Jevons paradox believer — productivity gains don't shrink the demand for roles, they expand the total amount of work worth doing.
 
-His parting message to researchers: publish wild ideas, explore wrong directions. "You need to explore the wrong things because they may lead you to the right thing."
-
-https://www.youtube.com/watch?v=N1geOimmdDo
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
