@@ -1,103 +1,111 @@
-AI Builders Digest — June 9, 2026
+*AI Builders Digest — June 10, 2026*
+
 
 *X / TWITTER*
 
-*Boris Cherny* (Claude Code at Anthropic)
+*Swyx* (builder, Cognition / AI Dot Engineer)
 
-Boris Cherny shared five tips for running Claude Opus autonomously for hours or days: (1) enable auto mode for permissions so Claude doesn't ask for approval, (2) use dynamic workflows to orchestrate hundreds or thousands of agents, (3) use /goal or /loop to keep Claude working until done, (4) run Claude Code in the cloud so you can close your laptop, and (5) make sure Claude has a way to self-verify its work end to end — browser extension for web, iOS/Android simulator MCP for mobile, a full web server for backend.
-<https://x.com/bcherny/status/2063792263067754658|View tweet>
+Swyx launched FrontierCode, a new AI coding benchmark co-developed with METR_Evals, opening with a sharp claim: more than half of SWEBench results are "unmergeable slop." Built from 1,000+ hours of maintainer-validated engineering work, FrontierCode includes 3,000+ rubrics covering code quality and anti-cheat safeguards. The hardest tier — FC Diamond — has Opus 4.8 scoring just 13.8%. A historical run revealed that the easiest tasks were suddenly solved in late 2025, backing up the widely-felt "WTF happened in Dec 2025" moment that builders like DHH and Karpathy noticed. Swyx frames it as a third era of benchmarks: 2021 autocomplete (HumanEval), 2023 test-passing (SWEBench), 2026 maintainable code (FrontierCode).
+<https://x.com/swyx/status/2064081945567580323|Tweet>
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
 
-Thibault Sottiaux announced a 100-day Codex challenge: every day for the next 100 days, OpenAI will select one person doing impressive or incredibly useful work with Codex and give them 10x usage limits for a month. The first winner gets announced tomorrow.
-<https://x.com/thsottiaux/status/2063748242681307611|View tweet>
+*Josh Woodward* (VP, Google Labs / Gemini / NotebookLM)
 
-*Madhu Guru* (former Product Leader at Google Gemini, Veo, Nano)
+NotebookLM got a meaningful upgrade: search can now expand beyond your own source files, and new output formats are available — PDFs, DOCX, XLSX, PPTX, and charts. Woodward framed it as NotebookLM continuing to help users do better research.
+<https://x.com/joshwoodward/status/2064046368352825492|Tweet>
 
-Madhu Guru pushed back on the assumption that AI training data is low-skill grunt work. The data required to advance the model frontier is the opposite: complex, domain-specific knowledge for high-economic-value tasks, most of which have little documentation. This is exactly why we have SWE agents but not knowledge-work agents yet. He argues companies producing this training data are doing "extremely high-leverage, high-skill work" that is "critical to moving AI forward — and deeply underappreciated."
-<https://x.com/realmadhuguru/status/2063704354910347520|View tweet>
 
-*Amjad Masad* (CEO at Replit)
+*Boris Cherny* (Claude Code, Anthropic)
 
-Replit CEO Amjad Masad quote-tweeted a founder success story, summarizing Replit's core value proposition as "removing all distractions and having you focus on what matters — getting to market and getting the bag."
-<https://x.com/amasad/status/2063744208587125142|View tweet>
+One year after Claude Code's general availability, Cherny sat down to reflect on how his own usage has evolved: why he now uses auto mode instead of plan mode, how routines fix bugs before he even sees them, and why he does most of his coding from his phone. An unusually candid inside look at how the product has matured from the person who built it.
+<https://x.com/bcherny/status/2064034799711588805|Tweet>
 
-*Guillermo Rauch* (CEO at Vercel)
 
-Vercel CEO Guillermo Rauch shared that the Vercel AI Gateway recovers over 1 trillion tokens per month on average — analogous to how Stripe recovers revenue through smart retries on failed payments. The gateway adds redundancy, zero-data retention enforcement, observability, usage APIs, and caps, all with zero markup over the AI labs.
-<https://x.com/rauchg/status/2063714700618334260|View tweet>
+*Thibault Sottiaux* (Codex, OpenAI)
 
-*Aaron Levie* (CEO at Box)
+Sottiaux ran two polls that drew 463 combined likes and 227 replies: one asking whether users are writing nested loops yet, and one asking "Would you use this controller?" — pointing at what appears to be a physical Codex interface concept. The engagement suggests Codex workflows are evolving fast and the community is actively exploring the edges.
+<https://x.com/thsottiaux/status/2064226958494572727|Tweet>
+<https://x.com/thsottiaux/status/2064224657822413137|Tweet>
 
-Box CEO Aaron Levie had three substantive posts.
 
-He argued AI hasn't reduced GTM costs in enterprise software — if anything it's increased them. Cheaper software development shifts the hard problem to discoverability and market differentiation: "If you make one thing cheaper and more abundant (development of software) then the new problem of discoverability and market differentiation (GTM) becomes the hardest part."
-<https://x.com/levie/status/2063756386572681606|View tweet>
+*Peter Yang* (AI builder and creator, Practical AI newsletter)
 
-On model routing, Levie predicted a split between frontier intelligence for high-end tasks and cheaper models for high-volume workloads — and argued "the layer that can efficiently route the workload to the right model will become increasingly valuable — agent orchestration that can cost-optimize while still performing the task successfully will be in a strong position."
-<https://x.com/levie/status/2063835799096090749|View tweet>
+Peter Yang surfaced a sharp two-tier observation: best practices for AI builders on subsidized $200/month consumer subscriptions are completely different from those working at companies watching API costs. Separately, he asked what Google's answer to Codex and Claude Code actually is — wondering if Antigravity should be rolled into Gemini as those tools converge fast. Also shared a 9-step guide for adding Codex to your iPhone Home Screen, with a gentle nudge to OpenAI to simplify it.
+<https://x.com/petergyang/status/2064063499517743417|Tweet>
+<https://x.com/petergyang/status/2064187731685831081|Tweet>
+<https://x.com/petergyang/status/2064204735671124073|Tweet>
 
-He also announced Box now has a markdown editor on the web with full CLI support, commenting, and version history. Box Drive can be mounted as a local drive so files are instantly accessible in Claude Cowork, Codex, Obsidian, Cursor, or any other app.
-<https://x.com/levie/status/2063649508681224367|View tweet>
 
-*Garry Tan* (President & CEO at Y Combinator)
+*Amanda Askell* (Philosopher and AI alignment, Anthropic)
 
-Y Combinator CEO Garry Tan flagged that "educating people on how to use the AI tools has become a serious bottleneck" — pointing to a shift where the tools are no longer the limiting factor; adoption and change management are.
-<https://x.com/garrytan/status/2063786111588323780|View tweet>
+A rare playful post from one of Anthropic's alignment researchers: "In the world where everything goes well and all the Claudes come out of their sabbaticals to play together, Claude 1 is going to be very confused."
+<https://x.com/AmandaAskell/status/2064223861512847456|Tweet>
 
-He also shared a GBrain product update: version 0.42.30 can now give you a detailed summary of how your thinking has changed over time.
-<https://x.com/garrytan/status/2063785286367392095|View tweet>
 
-*Zara Zhang* (independent AI builder)
+*Amjad Masad* (CEO, Replit)
 
-Zara Zhang reflected on why her Frontend Slides skill grew so organically: "slides are inherently social." People see HTML-based decks and ask how they were made, and creators of those slides are perceived as "more AI-native and AI-savvy." The format has a viral loop built right into it.
-<https://x.com/zarazhangrui/status/2063638307586662539|View tweet>
+Replit now lets you build games for Tesla directly on your Tesla.
+<https://x.com/amasad/status/2064208108361322996|Tweet>
 
-*Nikunj Kothari* (Partner at FPV Ventures)
 
-FPV Ventures partner Nikunj Kothari offered a contrarian take on the token anxiety trend: companies should still give employees copious token budgets to stay at the frontier and explore the edges. Cutting back makes it "way too easy to fall back to doing the things how they have always been done."
-<https://x.com/nikunj/status/2063630238123483195|View tweet>
+*Aaron Levie* (CEO, Box)
 
-*Peter Steinberger* (OpenClaw co-creator, collaborates with OpenAI)
+A clear-eyed take on AI's permanent constraint: no matter how capable models get, context will never be automatic. "As long as the same model is used by a lawyer, an engineer, a financial analyst, or a healthcare professional... instructions, domain context, and proprietary data will always need to get into the context window." Levie argues this is why AI automation isn't free — and why any layer that handles context on your behalf will remain valuable.
+<https://x.com/levie/status/2064186766907887941|Tweet>
 
-The most viral post of the day: Peter Steinberger's blunt reminder that "you shouldn't be prompting coding agents anymore — you should be designing loops that prompt your agents." The tweet hit 13,700+ likes and 870 retweets, sparking widespread discussion about how the mental model for AI-assisted development needs to shift.
-<https://x.com/steipete/status/2063697162748260627|View tweet>
 
-*Aditya Agarwal* (General Partner at South Park Commons, former CTO at Dropbox)
+*Zara Zhang* (Builder)
 
-South Park Commons GP Aditya Agarwal — who went through both the Meta and Dropbox IPOs — noted that "fabulous wealth tends to amplify deeper desires, not create new ones." With a wave of liquidity expected in the coming months, he predicts many of those people will start new things, fund new things, and keep the Silicon Valley flywheel spinning.
-<https://x.com/adityaag/status/2063731771284619521|View tweet>
+Zara floated a take on the new default web stack: Markdown, HTML, and SVG — with SVG being underrated. She also highlighted a resonant quote about being "the programming equivalent of a home cook" in an AI age.
+<https://x.com/zarazhangrui/status/2064108976565092706|Tweet>
+<https://x.com/zarazhangrui/status/2064101916725096810|Tweet>
 
-*Sam Altman* (CEO at OpenAI)
 
-OpenAI CEO Sam Altman quote-tweeted Thibault Sottiaux's Codex 100-day challenge with a one-liner: "interesting recursive loop here maybe" — pointing at the meta irony of using Codex to find and reward the best Codex power users.
-<https://x.com/sama/status/2063779477419901071|View tweet>
+*Nikunj Kothari* (Partner, FPV Ventures)
+
+Two sharp observations: autonomous company launches are everywhere right now, but "the last mile is still quite hard" — a gap he expects to shrink in months. Separately, he called out VC thesis theater: founders excited to meet "thesis-driven" GPs, only to discover the thesis was written by an intern or associate.
+<https://x.com/nikunj/status/2063981835290562692|Tweet>
+<https://x.com/nikunj/status/2064175088824717401|Tweet>
+
+
+*Sam Altman* (CEO, OpenAI)
+
+Shared OpenAI's current plan — the most-engaged post in this digest at 5,800+ likes and 887 replies.
+<https://x.com/sama/status/2064088940932641225|Tweet>
+
+
+*Claude* (Anthropic)
+
+The official Claude account announced the final stop of a world tour: Tokyo. Developers can register to hear directly from the teams behind Claude.
+<https://x.com/claudeai/status/2064139073590104402|Tweet>
 
 
 *OFFICIAL BLOGS*
 
-*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
-<https://claude.com/blog/new-in-claude-managed-agents|Read the full post>
+*Claude Blog: Building intelligent apps for Apple platforms with Claude in the Foundation Models framework*
 
-Anthropic launched three new capabilities for Claude Managed Agents. _Dreaming_ is a scheduled background process that reviews past agent sessions and memory stores, extracts patterns, and curates memories so agents improve over time — it can update memory automatically or hold changes for human review. Harvey (legal AI) tested it and saw completion rates go up ~6x. _Outcomes_ lets developers write a success rubric; a separate grader evaluates the agent's output in its own context window and sends the agent back for another pass when something isn't right. In testing, outcomes improved task success by up to 10 points, with the largest gains on the hardest problems, and improved file generation quality by +8.4% on docx and +10.1% on pptx. _Multiagent orchestration_ lets a lead agent break complex jobs into pieces and delegate each to a specialist agent with its own model, prompt, and tools, all running in parallel on a shared filesystem, with full trace visibility in the Claude Console. Netflix and Spiral by Every are among the early teams using these capabilities.
+Anthropic released a Swift package that brings Claude into Apple's Foundation Models framework, letting iOS, iPadOS, macOS, visionOS, and watchOS developers call Claude for complex tasks while using Apple's on-device models for fast, local work. The integration is designed to be clean: Apple's framework returns typed Swift values via @Generable annotations, so developers arrive at the Claude API call with structured inputs instead of raw user text. Claude handles multi-step reasoning, code generation, web search for current information, and code execution for data analysis — then streams responses back into the same SwiftUI view.
+
+The pattern enables natural hybrid AI apps: a journaling app generates daily prompts on-device, then hands off to Claude to find threads across months of entries; a study app defines a term locally, then escalates to Claude when the student asks "why does this matter for everything else we've covered?" One experience for the user, backed by the right model at each step. Available starting today on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
+
+<https://claude.com/blog/claude-for-foundation-models>
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — State of Enterprise AI 2026: Aaron Levie on Tokenmaxxing, Rise of Headless, and AI-Proofing Your Job*
-https://www.youtube.com/watch?v=Gs2styCcwro
+*No Priors: "Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan"*
 
-_The Takeaway:_ Enterprise AI deployment is taking longer than expected — not because the technology isn't good enough, but because it's advancing faster than companies can build stable architectures around it.
+_The Takeaway:_ Enterprises cannot stop AI agent adoption — so the only viable strategy is building independent oversight systems that watch what AI agents actually do, not just what they're supposed to do.
 
-Box CEO Aaron Levie, who speaks with hundreds of CIOs every year, offers a uniquely grounded view on how AI is actually landing inside the world's largest companies. The mood is cautiously optimistic: CIOs are seeing real productivity gains in engineering and are being pulled by their business teams to extend those gains everywhere else. The challenge isn't enthusiasm — it's execution.
+Maxim Bar Kogan is the co-founder and CEO of Onyx Security, an Israel-based startup training specialized models to oversee other AI agents. His background spans math, cyber intelligence, and a very early bet — made when AutoGPT first appeared — that autonomous agents would eventually need a guardian layer. Enterprises are now caught in a bind: they want coding agents to have broad permissions so they can handle complex tasks autonomously, but that access breaks every traditional identity and endpoint security model. "Our endpoint providers or API security tools — they don't know what Claude was thinking, why it's doing what it's doing."
 
-The token cost conversation is real but often misframed. The deeper issue is that AI agents consume compute in a fundamentally different way than chatbots: one coding session can cost $1,000. "We've just gone from a pricing model of a chatbot to that pricing model no longer working when one coding agent could be consuming $1,000 of compute on a single task." As token budgets escape the IT department and move into line-of-business budgets, companies will need entirely new FinOps muscle — there's no "FinOps for the marketing team" yet.
+Onyx's solution is a two-tier system: small, fast models that watch continuously and ask one narrow question — "should I bring in a smarter agent to look at this?" — paired with larger models that only engage when flagged. It's the chess-blitz analogy: top players make most moves on intuition and only stop to calculate deeply at the critical junctures. Getting the small model right is the hard part; too many false positives and latency and cost become dealbreakers.
 
-On why coding is ahead of the rest of knowledge work: coding is uniquely suited for AI agents because work is verifiable, users are technical, and the codebase provides rich context. Most knowledge work lacks all three. The blockers are access controls, unstructured data scattered across dozens of systems, and the absence of technical users who can catch and correct agent mistakes.
+A structural advantage nobody talks about: enterprises won't share agent behavioral history with frontier labs like Anthropic or OpenAI because they know those companies will train on it. That gives a third-party like Onyx exclusive access to longitudinal behavioral data — essential for detecting when an agent is acting anomalously — that the labs themselves can't see.
 
-Levie is bullish on the "internal FDE" role — a technical person embedded within a business team who understands workflows and wires up agents to get real work done. This is a sustaining job, not a transitional one: every model upgrade creates new work.
+On automated vulnerability finding: "If you took me ten years ago, automated vulnerability research looked like a dream that would take twenty, fifty years to happen. And suddenly it's coming all at once." His advice: build foundational controls now, assume Mythos-level models arrive regardless of phased rollouts, and move fast.
 
-On headless software: a dual model emerges — agents doing high-volume headless work at massive scale, humans using the interface for complex or judgment-intensive tasks. Enterprise software companies will run both a seat business and a consumption business. And on jobs: Levie is a committed Jevons paradox believer — productivity gains don't shrink the demand for roles, they expand the total amount of work worth doing.
+<https://www.youtube.com/watch?v=QDsbFLEt9ro>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
