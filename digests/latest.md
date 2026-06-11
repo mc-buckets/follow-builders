@@ -1,111 +1,92 @@
-*AI Builders Digest — June 10, 2026*
+*AI Builders Digest — June 11, 2026*
+
+Today's digest is dominated by one story: the launch of Claude Fable 5, which shipped yesterday and generated some of the most enthusiastic reactions the builder community has seen from a model release.
 
 
 *X / TWITTER*
 
-*Swyx* (builder, Cognition / AI Dot Engineer)
+*Andrej Karpathy* (AI researcher and deep learning practitioner)
+Karpathy called Fable 5 a "major-version-bump-deserving step change forward" on par with Claude 4.5 in November — especially for long, difficult problem-solving sessions. His key observation: Jevons paradox is kicking in. As models get better at software, his own demand for software keeps growing. "Free your mind — you can ask for anything: explainers, visualizers, dashboards, bespoke single-use apps, giant research projects with custom HTML for the results." He also flagged that the safety triggers are configured a bit aggressively for launch but should be tunable over time.
+<https://x.com/karpathy/status/2064409694761054332|Tweet>
 
-Swyx launched FrontierCode, a new AI coding benchmark co-developed with METR_Evals, opening with a sharp claim: more than half of SWEBench results are "unmergeable slop." Built from 1,000+ hours of maintainer-validated engineering work, FrontierCode includes 3,000+ rubrics covering code quality and anti-cheat safeguards. The hardest tier — FC Diamond — has Opus 4.8 scoring just 13.8%. A historical run revealed that the easiest tasks were suddenly solved in late 2025, backing up the widely-felt "WTF happened in Dec 2025" moment that builders like DHH and Karpathy noticed. Swyx frames it as a third era of benchmarks: 2021 autocomplete (HumanEval), 2023 test-passing (SWEBench), 2026 maintainable code (FrontierCode).
-<https://x.com/swyx/status/2064081945567580323|Tweet>
+*Boris Cherny* (Claude Code lead at Anthropic)
+Cherny described Fable 5 as a bigger step up than Opus 4.5 — the model "stepped up from being a coding agent to a thought and design partner in building the product." His standout moment: asking Fable to debug something. "It is the first model I have used that was so methodical and precise, taking measurements and adding logs then verifying that it truly fixed the issue before declaring victory. There's nothing in Claude Code's prompting telling the model to do that, it's just part of its personality." He calls it "big model smell." He also shared a post on why self-verification loops matter — a critical pattern for letting models run longer without constant check-ins.
+<https://x.com/bcherny/status/2064431111154053187|Fable 5 take> • <https://x.com/bcherny/status/2064426115255730578|Self-verification loops>
 
+*Alex Albert* (Research at Anthropic)
+Albert, who has been at Anthropic through every model launch, put Fable 5 in the same tier as Opus 3, Sonnet 3.5, and Opus 4.5 — the launches that actually changed how models get used. "With Fable, the model stopped feeling like a tool I direct and started feeling more like something I collaborate with." His four tips: (1) give it bigger, more ambitious tasks; (2) use xhigh/high effort as default; (3) rewrite your CLAUDE.mds — instructions written for prior models anchor Fable to stale patterns; (4) shift from providing tasks to providing objectives — describe what done looks like and let Fable find the path using /loop and /goal.
+<https://x.com/alexalbert__/status/2064394410004304003|Launch reflection> • <https://x.com/alexalbert__/status/2064467657483829441|Tips for Fable>
 
-*Josh Woodward* (VP, Google Labs / Gemini / NotebookLM)
+*Aaron Levie* (CEO Box)
+Three substantive takes. First: amplified a post arguing that the real moat for applied AI companies is the unglamorous translation work — "arranging a company's private reality so a model can act on it, handing the model the tools to act, working with the customer to change the reality of its workforce." The translation never ends, which is why domain-specialized engineering is hard to copy. Second: dismissed the AI-progress-is-slowing narrative — Fable's benchmark numbers settle that debate. Third: made the case for compute-normalized benchmarks, noting that models behave very differently across compute thresholds and today's comparisons are often apples-to-oranges.
+<https://x.com/levie/status/2064569513023328268|Applied AI moats> • <https://x.com/levie/status/2064396746953023647|On AI progress> • <https://x.com/levie/status/2064379199629181139|Compute-normalized benchmarks>
 
-NotebookLM got a meaningful upgrade: search can now expand beyond your own source files, and new output formats are available — PDFs, DOCX, XLSX, PPTX, and charts. Woodward framed it as NotebookLM continuing to help users do better research.
-<https://x.com/joshwoodward/status/2064046368352825492|Tweet>
+*Guillermo Rauch* (CEO Vercel)
+Announced that Vercel CLI now supports AI Gateway API keys with per-key spend budgets and quota refresh periods — "virtual credit cards for AI tokens." Also noted a compelling two-model workflow: Opus wrote a VM, Mythos verified it.
+<https://x.com/rauchg/status/2064551967461114111|Vercel AI Gateway CLI> • <https://x.com/rauchg/status/2064419055726215438|Opus + Mythos workflow>
 
+*Swyx* (AI engineer; affiliated with Cognition, Temporal, and the Latent Space Podcast)
+Practical tip while Fable is not pay-per-use: tell Claude Code to "review my code for issues" on your whole codebase. Swyx says you'll be "in abject horror that you shipped anything to prod without a Fable Check™ first." Also clocked the shipping pace: 34 days between signing an NVIDIA compute deal and getting a Mythos-class model GA to the world — "building on the NVIDIA stack means you can just do things™."
+<https://x.com/swyx/status/2064492823781789969|Fable code review tip> • <https://x.com/swyx/status/2064421542503797186|34-day shipping pace>
 
-*Boris Cherny* (Claude Code, Anthropic)
+*Thariq* (Claude Code team at Anthropic)
+Checking in from Code with Claude Tokyo. His message on Fable: "It's time to be more ambitious." Plans a series of posts on how the model has reshaped how the team works.
+<https://x.com/trq212/status/2064437561930682672|Fable take> • <https://x.com/trq212/status/2064521202622960058|Tokyo event>
 
-One year after Claude Code's general availability, Cherny sat down to reflect on how his own usage has evolved: why he now uses auto mode instead of plan mode, how routines fix bugs before he even sees them, and why he does most of his coding from his phone. An unusually candid inside look at how the product has matured from the person who built it.
-<https://x.com/bcherny/status/2064034799711588805|Tweet>
+*Garry Tan* (President and CEO YCombinator)
+Declared Fable 5 "the biggest model energy I've ever seen" — then immediately ran into usage limits while trying to use it on his GStack project.
+<https://x.com/garrytan/status/2064573857911152710|Fable reaction> • <https://x.com/garrytan/status/2064559225859416186|Usage limits pain>
 
+*Zara Zhang* (builder; 30K GitHub stars as a non-technical founder)
+Sharp observation on why non-technical people struggle with coding agents: "The barrier for non-technical people using coding agents was never the interface. Chatting is the easiest UI ever invented. The barrier is that they don't know what to ask for. The blank chat box assumes you already know what's possible. Most people don't." She was impressed by an agent called Town that proactively suggested workflows rather than waiting for instructions. Also announced a free virtual talk this Friday on her vibe coding process — how she gets product ideas, works with coding agents, and designs things that aren't AI slop.
+<https://x.com/zarazhangrui/status/2064587398529606082|Blank chat box problem> • <https://x.com/zarazhangrui/status/2064486120386379950|Friday talk RSVP>
 
-*Thibault Sottiaux* (Codex, OpenAI)
+*Nikunj Kothari* (Partner at FPV Ventures)
+Used Fable to one-shot a full website about S-curves throughout history. Process: dumped a podcast transcript into Claude's research mode, had it identify all the historical S-curves and their inflection points, then generated a Claude Code prompt that built the whole site in one shot. Site is live at escurves.com.
+<https://x.com/nikunj/status/2064506504888373758|S-curves demo> • <https://x.com/nikunj/status/2064508462034501997|How the prompt was built>
 
-Sottiaux ran two polls that drew 463 combined likes and 227 replies: one asking whether users are writing nested loops yet, and one asking "Would you use this controller?" — pointing at what appears to be a physical Codex interface concept. The engagement suggests Codex workflows are evolving fast and the community is actively exploring the edges.
-<https://x.com/thsottiaux/status/2064226958494572727|Tweet>
-<https://x.com/thsottiaux/status/2064224657822413137|Tweet>
+*Peter Yang* (AI educator, 150K+ newsletter readers)
+Mixed Fable experience: browser use is slowing things down noticeably. Also pushed back publicly on Boris Cherny's "big model smell" phrase. On the fun side, shared the exact prompt he used to one-shot a fully functional F-Zero-style racing game — neon cyberpunk visuals, pseudo-3D track, 3 AI opponents, boost mechanics, and a sense of speed at 400-800 km/h.
+<https://x.com/petergyang/status/2064577126385459265|Browser use slowdown> • <https://x.com/petergyang/status/2064550073594446059|F-Zero prompt>
 
+*Dan Shipper* (CEO Every)
+Enthusiastic about the Fable launch — Every has been testing for a week and published a vibe check.
+<https://x.com/danshipper/status/2064395167658860859|Every's vibe check>
 
-*Peter Yang* (AI builder and creator, Practical AI newsletter)
+*Thibault Sottiaux* (Codex and ChatGPT at OpenAI)
+Playfully claimed 1% royalty fees on the Fable launch. Also polling followers on how they use `codex /goal` — occasional use vs. primary workflow. Separately shared a demo framed as "playing codex like an orchestra. One /goal at a time."
+<https://x.com/thsottiaux/status/2064572276180484475|Royalty joke> • <https://x.com/thsottiaux/status/2064308436133716008|/goal usage poll> • <https://x.com/thsottiaux/status/2064307859903447396|Codex orchestration>
 
-Peter Yang surfaced a sharp two-tier observation: best practices for AI builders on subsidized $200/month consumer subscriptions are completely different from those working at companies watching API costs. Separately, he asked what Google's answer to Codex and Claude Code actually is — wondering if Antigravity should be rolled into Gemini as those tools converge fast. Also shared a 9-step guide for adding Codex to your iPhone Home Screen, with a gentle nudge to OpenAI to simplify it.
-<https://x.com/petergyang/status/2064063499517743417|Tweet>
-<https://x.com/petergyang/status/2064187731685831081|Tweet>
-<https://x.com/petergyang/status/2064204735671124073|Tweet>
+*Amjad Masad* (CEO Replit)
+Claude Mythos is now available on Replit at 25% off.
+<https://x.com/amasad/status/2064411791015432466|Replit Mythos deal>
 
+*Josh Woodward* (VP at Google Labs, Gemini App, and Google AI Studio)
+One-liner on the Fable launch: "The demand for software is going to be off the charts."
+<https://x.com/joshwoodward/status/2064509357216428171|Tweet>
 
-*Amanda Askell* (Philosopher and AI alignment, Anthropic)
-
-A rare playful post from one of Anthropic's alignment researchers: "In the world where everything goes well and all the Claudes come out of their sabbaticals to play together, Claude 1 is going to be very confused."
-<https://x.com/AmandaAskell/status/2064223861512847456|Tweet>
-
-
-*Amjad Masad* (CEO, Replit)
-
-Replit now lets you build games for Tesla directly on your Tesla.
-<https://x.com/amasad/status/2064208108361322996|Tweet>
-
-
-*Aaron Levie* (CEO, Box)
-
-A clear-eyed take on AI's permanent constraint: no matter how capable models get, context will never be automatic. "As long as the same model is used by a lawyer, an engineer, a financial analyst, or a healthcare professional... instructions, domain context, and proprietary data will always need to get into the context window." Levie argues this is why AI automation isn't free — and why any layer that handles context on your behalf will remain valuable.
-<https://x.com/levie/status/2064186766907887941|Tweet>
-
-
-*Zara Zhang* (Builder)
-
-Zara floated a take on the new default web stack: Markdown, HTML, and SVG — with SVG being underrated. She also highlighted a resonant quote about being "the programming equivalent of a home cook" in an AI age.
-<https://x.com/zarazhangrui/status/2064108976565092706|Tweet>
-<https://x.com/zarazhangrui/status/2064101916725096810|Tweet>
-
-
-*Nikunj Kothari* (Partner, FPV Ventures)
-
-Two sharp observations: autonomous company launches are everywhere right now, but "the last mile is still quite hard" — a gap he expects to shrink in months. Separately, he called out VC thesis theater: founders excited to meet "thesis-driven" GPs, only to discover the thesis was written by an intern or associate.
-<https://x.com/nikunj/status/2063981835290562692|Tweet>
-<https://x.com/nikunj/status/2064175088824717401|Tweet>
-
-
-*Sam Altman* (CEO, OpenAI)
-
-Shared OpenAI's current plan — the most-engaged post in this digest at 5,800+ likes and 887 replies.
-<https://x.com/sama/status/2064088940932641225|Tweet>
-
-
-*Claude* (Anthropic)
-
-The official Claude account announced the final stop of a world tour: Tokyo. Developers can register to hear directly from the teams behind Claude.
-<https://x.com/claudeai/status/2064139073590104402|Tweet>
-
-
-*OFFICIAL BLOGS*
-
-*Claude Blog: Building intelligent apps for Apple platforms with Claude in the Foundation Models framework*
-
-Anthropic released a Swift package that brings Claude into Apple's Foundation Models framework, letting iOS, iPadOS, macOS, visionOS, and watchOS developers call Claude for complex tasks while using Apple's on-device models for fast, local work. The integration is designed to be clean: Apple's framework returns typed Swift values via @Generable annotations, so developers arrive at the Claude API call with structured inputs instead of raw user text. Claude handles multi-step reasoning, code generation, web search for current information, and code execution for data analysis — then streams responses back into the same SwiftUI view.
-
-The pattern enables natural hybrid AI apps: a journaling app generates daily prompts on-device, then hands off to Claude to find threads across months of entries; a study app defines a term locally, then escalates to Claude when the student asks "why does this matter for everything else we've covered?" One experience for the user, backed by the right model at each step. Available starting today on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
-
-<https://claude.com/blog/claude-for-foundation-models>
+*Claude* (Official Anthropic account)
+The official rollout: Fable 5 is available everywhere. Mythos 5 — the same underlying model with safeguards lifted in specific areas — is currently restricted to Glasswing partners (cyber defenders and critical infrastructure providers), with plans to expand through a broader trusted access program for defensive cybersecurity and biomedical research.
+<https://x.com/claudeai/status/2064394160522559632|Fable 5 announcement> • <https://x.com/claudeai/status/2064394158056386684|Mythos 5 details> • <https://x.com/claudeai/status/2064394159318782217|Trusted access expansion>
 
 
 *PODCASTS*
 
-*No Priors: "Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan"*
+*AI & I by Every — "We Automated Everything With AI and Tripled Our Headcount"*
 
-_The Takeaway:_ Enterprises cannot stop AI agent adoption — so the only viable strategy is building independent oversight systems that watch what AI agents actually do, not just what they're supposed to do.
+_The Takeaway:_ Automation doesn't eliminate the need for human experts — it actually increases demand for them.
 
-Maxim Bar Kogan is the co-founder and CEO of Onyx Security, an Israel-based startup training specialized models to oversee other AI agents. His background spans math, cyber intelligence, and a very early bet — made when AutoGPT first appeared — that autonomous agents would eventually need a guardian layer. Enterprises are now caught in a bind: they want coding agents to have broad permissions so they can handle complex tasks autonomously, but that access breaks every traditional identity and endpoint security model. "Our endpoint providers or API security tools — they don't know what Claude was thinking, why it's doing what it's doing."
+Dan Shipper, CEO of Every, makes a counterintuitive case. Despite building one of the most AI-native companies around — where, as he puts it, "if you swing a stick around in our Slack, you're as likely to hit a human as you are an agent" — Every has grown from 4 to 30 people since the GPT-3 days, and is still hiring.
 
-Onyx's solution is a two-tier system: small, fast models that watch continuously and ask one narrow question — "should I bring in a smarter agent to look at this?" — paired with larger models that only engage when flagged. It's the chess-blitz analogy: top players make most moves on intuition and only stop to calculate deeply at the critical junctures. Getting the small model right is the hard part; too many false positives and latency and cost become dealbreakers.
+His explanation: AI makes "yesterday's expert competence cheap," flooding every workplace with output that's close but not quite right. That flood creates new demand in two ways. First, experts are needed to build systems that transform the glut of okay work into something actually good. Second, experts can now build things that were simply impossible before — like an engineer who shipped an entire inbox product end-to-end in a month or two.
 
-A structural advantage nobody talks about: enterprises won't share agent behavioral history with frontier labs like Anthropic or OpenAI because they know those companies will train on it. That gives a third-party like Onyx exclusive access to longitudinal behavioral data — essential for detecting when an agent is acting anomalously — that the labs themselves can't see.
+The deeper argument is structural. "The further away an agent gets from a human, the less valuable it is." Models are built to act on behalf of someone — they execute tasks brilliantly, but they don't have agency. They always look back for direction. That gap between "autonomous execution" and "genuine agency" is what keeps human judgment irreplaceable, even as benchmarks improve exponentially.
 
-On automated vulnerability finding: "If you took me ten years ago, automated vulnerability research looked like a dream that would take twenty, fifty years to happen. And suddenly it's coming all at once." His advice: build foundational controls now, assume Mythos-level models arrive regardless of phased rollouts, and move fast.
+On the ClickUp-style mass layoffs done in the name of AI efficiency, Shipper is skeptical: when a company announces it's performing great while firing 20% of its workforce, he suggests the real story is often poor strategy or company decline, with AI as the convenient excuse.
 
-<https://www.youtube.com/watch?v=QDsbFLEt9ro>
+His bottom line: "If you just ride the models — when new models come out, learn to use them for the stuff that you do — you're going to be fine."
+
+<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
