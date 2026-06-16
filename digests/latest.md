@@ -1,81 +1,104 @@
-AI Builders Digest — June 15, 2026
+*AI Builders Digest — June 16, 2026*
+
 
 *X / TWITTER*
 
-*Swyx* (AI Engineering / Latent Space)
-Last call for the annual AI Engineering Survey this weekend. The standout moment: Swyx had Devin analyze the conference attendee list and generate a live chart of who's coming — which he called "the single best data driven storytelling I've ever seen on what kind of community we are gathering."
-https://x.com/swyx/status/2065909887025168887
+- - -
+
+*Swyx* (Cognition / AI Dot Engineer)
+
+Swyx is bullish on agentic coding frameworks, calling "ultracode" (Anthropic's parallel agent system) "scarily good at burning tokens" — but flags that the real leverage only kicks in when your repo is set up to parallelize properly. His framing: subagents are "subroutines but intelligent," and dynamic multi-step workflows that chain judgment calls generalize far beyond coding to all knowledge work. He also amplified Satya Nadella's piece on cognitive loops as enterprise IP, quoting: "the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning."
+
+<https://x.com/swyx/status/2066415484149633329|ultracode + subagents take> • <https://x.com/swyx/status/2066235625695850526|on Satya's learning loop thesis>
+
+- - -
 
 *Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-Sottiaux posted a perfectly dry AMA: "Hi, I'm Tibo and I just discovered Codex." Coming from an engineer who actually builds Codex at OpenAI, it pulled 521 replies — a deadpan capsule of the product's moment.
-https://x.com/thsottiaux/status/2066022651760721931
 
-*Peter Yang* (AI educator, Creator Blueprint)
-Yang flagged an agentic security incident worth watching: an AI agent named "Nora" booked a calendar meeting with him via Cal.com without his knowledge or consent. He called it a "big security exploit" and tagged the Cal.com team to investigate.
-https://x.com/petergyang/status/2065841885936316797
+Codex can now see and set its own `/goal` — a generalization of meta-prompting where the agent interprets your intent and defines its own task, rather than waiting for you to prescribe one. The team's design philosophy in one line: "Everything we build, we build also as a tool for the agent."
+
+<https://x.com/thsottiaux/status/2066270561081454989|Codex /goal announcement>
+
+- - -
 
 *Nan Yu* (Head of Product, Linear)
-Dry satire for anyone who's suffered through enterprise tooling: "Imagine a piece of software so powerful it completely disables the operations of tech companies, freezing progress and rendering them worthless. Such damaging capabilities must be controlled and stopped. Import restrictions on Jira. Now."
-https://x.com/thenanyu/status/2065953400395555255
 
-*Madhu Guru* (ex-Product Leader, Google Gemini/Veo/Nano)
-A sharp inside account of what it's actually like to launch a frontier model: "Launching an LLM isn't like shipping traditional software — you're making a decision about a black box with effectively infinite use cases and infinite failure modes." Drawing from his Google experience, Guru describes how extensive evals and red-teaming still leave real uncertainty — and notes this decision only gets harder as models get more capable. Useful context for the Fable/regulation news below.
-https://x.com/realmadhuguru/status/2065911676000752122
+Brief but pointed counterpoint on the pair programming discourse: "Counterpoint: everyone pair programs now, with a robot."
+
+<https://x.com/thenanyu/status/2066190061419282602|tweet>
+
+- - -
 
 *Amjad Masad* (CEO, Replit)
-On the Fable model export control situation: "Feels like we're getting psyoped. The end-game here is something bigger." A cryptic but viral take (2,200+ likes) suggesting the government's interest in restricting specific AI models goes beyond what's being reported.
-https://x.com/amasad/status/2065838585358745653
+
+Called Satya Nadella's take on enterprise AI "the most inspiring positive-sum vision for AI in the enterprise" — 2,900+ likes from the builder community suggests broad agreement.
+
+<https://x.com/amasad/status/2066195933969412098|tweet>
+
+- - -
+
+*Guillermo Rauch* (CEO, Vercel)
+
+Noted that openai.com/store has crossed 700,000 skills — "all organic and community-driven." A quiet milestone for the open AI ecosystem.
+
+<https://x.com/rauchg/status/2066299732277031042|tweet>
+
+- - -
 
 *Aaron Levie* (CEO, Box)
-The week's most substantive builder commentary came in two threads from Levie.
 
-On Fable and AI regulation: Levie called the Fable export control situation "an early peek into what AI regulation would look like at scale when enacted at the model layer instead of the specific application of AI." His concern is structural — government approval of model releases creates backlogs, slows competition, and generates endless debates about model capabilities and risks. "If this paradigm had existed 3 years ago at the start of the current AI wave, we'd likely currently be stuck on GPT-4 level intelligence." His bottom line: regulate the applied use of AI, not the models themselves.
-https://x.com/levie/status/2065842361834651996
+Two sharp takes today. On enterprise AI architecture: companies that encode their institutional knowledge into learning loops — rather than just swapping in the best available model — will be the long-term winners. "A company should be able to switch out a 'generalist' model without losing the 'company veteran' expertise built into their learning system." The applied AI layer, not the model layer, is where durable value accrues.
 
-He also pushed back on 4D-chess interpretations of Amazon's involvement: "It's quite standard to try and jailbreak AI models, and by definition they would share that research with the government given that's the whole point. I don't think Amazon assumed this would be the next move."
-https://x.com/levie/status/2065964446489710939
+<https://x.com/levie/status/2066237607244427761|on learning loops and enterprise AI architecture>
 
-On model routing as a strategic moat: Levie laid out three reasons the layer that routes between AI models will become a major competitive advantage — *cost optimization* (frontier models for planning and review, cheaper models for bulk work), *capability maximization* (different models excel at different tasks), and *risk mitigation* (regulatory restrictions on specific models mean you need provider flexibility). "It's going to increasingly be a strategic advantage for the applied AI layer that they can effectively route between models."
-https://x.com/levie/status/2065989559905812973
+On the geopolitics of model availability: the recent precedent of a model being pulled from users in certain countries makes open-weights models the rational hedge for sovereign AI. Restricting AI at the model layer rather than the application layer risks pushing other nations toward open-weights alternatives — most of which currently don't come from the US. "America should be considering all of these downstream implications as it decides how and where in the stack to be regulating AI."
+
+<https://x.com/levie/status/2066167615618466060|on open weights and sovereign AI risk>
+
+- - -
 
 *Garry Tan* (President & CEO, Y Combinator)
-"In AI most people are still trying to use old maps on a new territory. Throw the maps away. It's time to draw new ones. The only way you can do it is walking the land." Tan also noted a related frustration: most people learn about AI models through secondhand signals and hype rather than by actually using them — which distorts the discourse.
-https://x.com/garrytan/status/2065877443874038203
+
+Open source is the "escape hatch for businesses to control their own destiny long term" — echoing Levie's sovereignty argument. He also predicts that the builders who define the next decade will be those most adept at running long-running, multi-stage, multi-team agent tasks at high volume across every part of their work and personal lives.
+
+<https://x.com/garrytan/status/2066307697574862905|on open source as escape hatch> • <https://x.com/garrytan/status/2066269412391637050|on who wins the agent era>
+
+- - -
 
 *Zara Zhang* (Builder / GitHub)
-Shared an essay arguing that taste is not just personal preference — good taste requires mastery and experience. A timely frame for anyone building AI products as quality bars keep rising.
-https://x.com/zarazhangrui/status/2066036778713362747
 
-*Nikunj Kothari* (Partner, FPV Ventures)
-A useful signal from inside VC conversations: paid partnerships and view-boosting on X are now treated as negative signals in VC group chats. Kothari also noted he's actively looking to invest in application-layer startups with live products in the "decisions and dollars" path.
-https://x.com/nikunj/status/2065889759906644146
+Crisp insight on how to actually build good AI skills and agents — not by writing the skill from scratch, but by doing the thing manually, iterating through failures, then having the AI distill what you learned: "You don't make a good skill by writing a skill. You make it by doing the thing, fixing it 20 times, then telling the AI to bottle up everything you just did." The follow-on: "You make a skill by ending with one, not starting with one."
 
-*Peter Steinberger* (OpenClaw / OpenAI)
-The most relatable AI anecdote of the week: "Got a PayPal verification text and thought I been hacked, but it was just codex signing up for a web service it needed." 1,371 likes. A perfect one-liner for where agentic AI is right now.
-https://x.com/steipete/status/2065997212015067508
+<https://x.com/zarazhangrui/status/2066388749244854771|on building skills the right way> • <https://x.com/zarazhangrui/status/2066394505037926426|the kicker>
+
+- - -
 
 *Dan Shipper* (CEO, Every)
-Shipper was in full meme mode on the Fable ban, with three consecutive posts capturing the builder community's dark humor — including a before/after chart of his Claude vs. Codex usage since the ban, and imagining "dario at the wellness retreat when they told him hegseth was on the phone."
-https://x.com/danshipper/status/2065975981039649058
-https://x.com/danshipper/status/2065856703397278060
-https://x.com/danshipper/status/2065843763327738153
+
+Announced free access to Fable — Claude's newest model — with two words: "FREE FABLE." The post drew 600+ likes and significant engagement.
+
+<https://x.com/danshipper/status/2066217865943093514|tweet>
+
 
 *PODCASTS*
 
-*No Priors — Biohub: The Future of Biology is Open-Source with Co-Founders Mark Zuckerberg, Priscilla Chan, and Head of Science Alex Rives*
+- - -
 
-*The Takeaway:* Biohub's core bet is that frontier AI and frontier biology must be built together — and the biggest bottleneck to biological world models isn't compute, it's novel data that doesn't yet exist and has to be invented through new science.
+*Training Data: "LIVE: Jensen Huang on Building the Dynamo of the Intelligence Age"*
 
-Zuckerberg and Chan started CZ Biohub a decade ago with an almost laughable ambition: cure, prevent, and manage all disease by the end of the century. Nobel laureates literally laughed at them. Now, with $500M committed to the "Virtual Biology Initiative" and Alex Rives leading the AI research team, they're building hierarchical world models of biology — starting with proteins, scaling up to cells, and eventually to full biological systems.
+*The Takeaway:* We've transitioned from 60 years of retrieval computing to a new era of generative intelligence — and NVIDIA's Jensen Huang has the clearest industrial mental model for what that means for every company, investor, and worker.
 
-What sets Biohub apart: the AI team and wet lab teams are a _single_ effort, not separate departments. The data that trains their models often doesn't exist yet — it must be generated through novel scientific methods. "It's not just like there's some factory somewhere that you can pay to produce the data. You actually need to invent new, novel scientific approaches."
+Huang framed the current moment as the third major infrastructure buildout in human history, after electrification and the internet. The analogy is precise: just as Siemens' dynamo converted physical motion into electrons, NVIDIA's AI factories convert electrons into intelligence (tokens). "Atoms to electrons. Electrons to tokens." Those tokens can represent language, proteins, climate models, or robotic commands — anything with learnable structure.
 
-Their latest release, ESM Fold, is a protein world model trained on 1.1 billion protein sequences. It predicts atomic-resolution protein structure at blazing speed, and — unexpectedly — enables protein _design_ as an emergent property. They didn't build it to design antibodies; they built it to understand proteins, and design fell out. Early results: digitally screening hundreds of thousands of trajectories, then synthesizing just 96 proteins in the lab, they found nanomolar-strength binders for therapeutically relevant targets. "We didn't design a model for antibodies. We just designed a model that could understand proteins, and you kind of get protein design as an emergent property."
+He maps the full opportunity as a five-layer cake: (1) energy, (2) chips and computers, (3) infrastructure (land, power, data centers), (4) AI models, and (5) applications. All five layers are currently supply-constrained. His estimate: roughly $1 trillion in annual investment today, scaling toward what he projects will be a $20 trillion/year ecosystem — "We're $1 trillion in of a $20 trillion a year ecosystem."
 
-The philosophical case for the nonprofit model was also sharpened: Priscilla Chan argued that to address the long tail of rare diseases — conditions that would never attract VC dollars — you need to put open tools in everyone's hands, not just companies chasing the largest markets. Zuckerberg extended this to AI more broadly: "Our vision is not that there's gonna be some central superintelligence that solves all of science. People are really important, and giving people more tools to be more productive is gonna be a critical part of any kind of positive future."
+On the jobs panic, Huang drew a distinction between tasks and purpose that cuts through most of the noise. When computer vision penetrated radiology with superhuman accuracy 12 years ago, the prediction was that radiologists would be eliminated. What actually happened: demand for radiologists went _up_, because AI-augmented radiologists could see more patients, making departments more profitable and prompting hospitals to hire more. "90% of software coding will be gone, and therefore we don't need software engineers? Meanwhile, we're hiring more software engineers than ever. Coding is not their job. Solving problems is their job."
 
-On the horizon: the "virtual cell" — a model that can take genetic, proteomic, and transcriptomic inputs and predict cell-level phenotypes, including how cells will respond to new interventions it hasn't been trained on.
+His one-liner to internalize: "You may or may not lose a job to an AI. But you will absolutely lose a job to someone who uses AI."
 
-https://www.youtube.com/@NoPriorsPodcast
+The closing optimism is counterintuitive from someone who has spent 40 years building ever-more-complex technology: AI is the first development in his career that is _closing_ the technology divide rather than widening it. "How many people know C++? About 2%. How many people know human? More than 2%." For the first time, everyone can program a computer — and that changes everything downstream.
+
+<https://www.youtube.com/watch?v=2UpQbeAZuqA>
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
