@@ -1,104 +1,83 @@
-*AI Builders Digest — June 16, 2026*
-
+*AI Builders Digest — June 17, 2026*
 
 *X / TWITTER*
 
-- - -
+*Josh Woodward* (VP at Google Labs / GeminiApp / Google AI Studio)
 
-*Swyx* (Cognition / AI Dot Engineer)
+Two significant Gemini updates: the voice mic now supports 70+ languages with automatic language detection — users can mix languages freely in a single session without changing any settings. A Gemini Trusted Tester program is also opening limited slots for power users who want early access to unreleased features before anyone else.
+- <https://x.com/joshwoodward/status/2066673011554435450|Gemini mic: 70+ languages, no settings change needed>
+- <https://x.com/joshwoodward/status/2066664862671921259|Gemini Trusted Tester program signup now open>
 
-Swyx is bullish on agentic coding frameworks, calling "ultracode" (Anthropic's parallel agent system) "scarily good at burning tokens" — but flags that the real leverage only kicks in when your repo is set up to parallelize properly. His framing: subagents are "subroutines but intelligent," and dynamic multi-step workflows that chain judgment calls generalize far beyond coding to all knowledge work. He also amplified Satya Nadella's piece on cognitive loops as enterprise IP, quoting: "the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning."
+*Amjad Masad* (Replit CEO)
 
-<https://x.com/swyx/status/2066415484149633329|ultracode + subagents take> • <https://x.com/swyx/status/2066235625695850526|on Satya's learning loop thesis>
+Masad highlighted Replit's domain-specific agents: a growth agent that surfaces SEO issues and a security agent that flags potential vulnerabilities. His favorite workflow: "select all, fix with Agent." He also took a jab at model naming conventions, quipping "Who needs Fable when you can have Mistral's Le Chaton Fat."
+- <https://x.com/amasad/status/2066683949129330817|Replit domain-specific agents>
+- <https://x.com/amasad/status/2066700847187140655|Le Chaton Fat vs Fable>
 
-- - -
+*Guillermo Rauch* (Vercel CEO)
 
-*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
+Three related announcements: Vercel shipped longer function runtimes — the culmination of a multi-year microVM-based "Fluid Compute" investment that also powers Vercel Builds and Sandboxes. His bigger thesis: sandboxes, functions, servers, and builds are all expressions of the same underlying compute primitive, and "2026 is the year serverless and servers finally converge." The v0 coding tool also now ships with Vercel engineering skills baked in by default, with the option to pull from a community library or add team-private skills.
+- <https://x.com/rauchg/status/2066553521978097921|Longer Vercel function runtimes now live>
+- <https://x.com/rauchg/status/2066556235961237826|Serverless and servers converging in 2026>
+- <https://x.com/rauchg/status/2066567117562868009|v0 ships Vercel engineering skills by default>
 
-Codex can now see and set its own `/goal` — a generalization of meta-prompting where the agent interprets your intent and defines its own task, rather than waiting for you to prescribe one. The team's design philosophy in one line: "Everything we build, we build also as a tool for the agent."
+*Aaron Levie* (Box CEO)
 
-<https://x.com/thsottiaux/status/2066270561081454989|Codex /goal announcement>
+Two sharp takes on AI strategy. On the future: the winners won't be those with the biggest models but those that combine unique data, workflows, and intelligent model routing — _"intelligence is becoming increasingly customizable."_ On AI regulation: an "FDA for AI" model that requires pre-release approval for every model would create an infinite-permutation review backlog, slowing global AI progress dramatically. His alternative: regulate the *applied uses* of AI, where risk actually shows up.
+- <https://x.com/levie/status/2066735879213994434|Customizable intelligence is the future of AI>
+- <https://x.com/levie/status/2066554018953146689|Against pre-release model regulation>
+- <https://x.com/levie/status/2066526720480690221|Open source going to win big>
 
-- - -
+*Peter Steinberger* (OpenClaw / OpenAI)
 
-*Nan Yu* (Head of Product, Linear)
+Went viral (1,400+ likes) after discovering Apple can no longer manufacture the Mac Studio in the US: "We don't even know how to make these anymore." He also demoed clawsweeper — an open source bot that reviews incoming GitHub issues against a VISION.md file and, if the issue fits, automatically opens and self-reviews a pull request.
+- <https://x.com/steipete/status/2066471737068232835|Mac Studio: we don't know how to make these anymore>
+- <https://x.com/steipete/status/2066457262571360396|clawsweeper: auto-review and PR bot>
 
-Brief but pointed counterpoint on the pair programming discourse: "Counterpoint: everyone pair programs now, with a robot."
+*Nikunj Kothari* (FPV Ventures partner)
 
-<https://x.com/thenanyu/status/2066190061419282602|tweet>
+Kothari observed that 32 VCs in his network — from associates to GPs — have moved back into operating roles over the past 12 months, with the pace accelerating. His read: operators get direct customer contact, greater day-to-day autonomy, and a realistic shot at liquidity far sooner than waiting ~13 years for carry.
+- <https://x.com/nikunj/status/2066701833964531736|32 VCs moving back to operating — and they seem happier>
 
-- - -
+*Peter Yang* (AI educator, Creator AI newsletter, 150K+ readers)
 
-*Amjad Masad* (CEO, Replit)
+Enthusiastic on OpenAI Codex's browser use: _"It's so good that it almost makes me forget APIs are even needed."_ Also gave Cursor AI credit for planning what he described as a Michelin-quality dinner.
+- <https://x.com/petergyang/status/2066753125197967653|Codex browser use nearly makes APIs feel optional>
+- <https://x.com/petergyang/status/2066756347438469602|Cursor plans a Michelin-quality dinner>
 
-Called Satya Nadella's take on enterprise AI "the most inspiring positive-sum vision for AI in the enterprise" — 2,900+ likes from the builder community suggests broad agreement.
+*Swyx* (builder; Cognition / Temporal / AI Engineer)
 
-<https://x.com/amasad/status/2066195933969412098|tweet>
+A brief but pointed note on AI news velocity: goblingate — a recent AI industry controversy — happened only 1.5 months ago, a reminder of how compressed the news cycle has become.
+- <https://x.com/swyx/status/2066705614454337663|Goblingate was 1.5 months ago>
 
-- - -
+*OFFICIAL BLOGS*
 
-*Guillermo Rauch* (CEO, Vercel)
+*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
 
-Noted that openai.com/store has crossed 700,000 skills — "all organic and community-driven." A quiet milestone for the open AI ecosystem.
+Anthropic launched three major capability updates to Claude Managed Agents:
 
-<https://x.com/rauchg/status/2066299732277031042|tweet>
+- *Dreaming* (research preview): A scheduled process that reviews past agent sessions, extracts recurring patterns, and refines memory so agents self-improve between sessions. Teams can review changes before they land or allow automatic updates. Harvey saw ~6x completion rate gains in testing.
+- *Outcomes*: Define a success rubric; a separate grader evaluates output in its own context window and sends the agent back for revisions until it clears the bar. In benchmarks, outcomes improved task success by up to 10 points, with file generation quality up +8.4% (docx) and +10.1% (pptx).
+- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to a specialist running in parallel on a shared filesystem. Netflix uses this to surface recurring issues across hundreds of build log sources; Spiral by Every uses it for parallel draft generation with outcomes-based quality gating.
 
-- - -
-
-*Aaron Levie* (CEO, Box)
-
-Two sharp takes today. On enterprise AI architecture: companies that encode their institutional knowledge into learning loops — rather than just swapping in the best available model — will be the long-term winners. "A company should be able to switch out a 'generalist' model without losing the 'company veteran' expertise built into their learning system." The applied AI layer, not the model layer, is where durable value accrues.
-
-<https://x.com/levie/status/2066237607244427761|on learning loops and enterprise AI architecture>
-
-On the geopolitics of model availability: the recent precedent of a model being pulled from users in certain countries makes open-weights models the rational hedge for sovereign AI. Restricting AI at the model layer rather than the application layer risks pushing other nations toward open-weights alternatives — most of which currently don't come from the US. "America should be considering all of these downstream implications as it decides how and where in the stack to be regulating AI."
-
-<https://x.com/levie/status/2066167615618466060|on open weights and sovereign AI risk>
-
-- - -
-
-*Garry Tan* (President & CEO, Y Combinator)
-
-Open source is the "escape hatch for businesses to control their own destiny long term" — echoing Levie's sovereignty argument. He also predicts that the builders who define the next decade will be those most adept at running long-running, multi-stage, multi-team agent tasks at high volume across every part of their work and personal lives.
-
-<https://x.com/garrytan/status/2066307697574862905|on open source as escape hatch> • <https://x.com/garrytan/status/2066269412391637050|on who wins the agent era>
-
-- - -
-
-*Zara Zhang* (Builder / GitHub)
-
-Crisp insight on how to actually build good AI skills and agents — not by writing the skill from scratch, but by doing the thing manually, iterating through failures, then having the AI distill what you learned: "You don't make a good skill by writing a skill. You make it by doing the thing, fixing it 20 times, then telling the AI to bottle up everything you just did." The follow-on: "You make a skill by ending with one, not starting with one."
-
-<https://x.com/zarazhangrui/status/2066388749244854771|on building skills the right way> • <https://x.com/zarazhangrui/status/2066394505037926426|the kicker>
-
-- - -
-
-*Dan Shipper* (CEO, Every)
-
-Announced free access to Fable — Claude's newest model — with two words: "FREE FABLE." The post drew 600+ likes and significant engagement.
-
-<https://x.com/danshipper/status/2066217865943093514|tweet>
-
+<https://claude.com/blog/new-in-claude-managed-agents|Read the full post>
 
 *PODCASTS*
 
-- - -
+*The MAD Podcast with Matt Turck — "OpenAI's Dan Roberts: Why AI Can Now Make Discoveries"*
 
-*Training Data: "LIVE: Jensen Huang on Building the Dynamo of the Intelligence Age"*
+*The Takeaway:* Reinforcement learning isn't just the cherry on top of language model training — it's the mechanism that teaches AI to think, and the same explore-vs-exploit dynamics that made AlphaGo legendary are what let AI disprove a 60-year-old conjecture in combinatorics.
 
-*The Takeaway:* We've transitioned from 60 years of retrieval computing to a new era of generative intelligence — and NVIDIA's Jensen Huang has the clearest industrial mental model for what that means for every company, investor, and worker.
+Dan Roberts leads the Foundations of Reinforcement Learning team at OpenAI, arriving from theoretical physics (MIT PhD, IAS postdoc) via Facebook AI Research, a startup, and Sequoia Capital. His core claim: RL is what transforms a next-token predictor into a reasoning machine.
 
-Huang framed the current moment as the third major infrastructure buildout in human history, after electrification and the internet. The analogy is precise: just as Siemens' dynamo converted physical motion into electrons, NVIDIA's AI factories convert electrons into intelligence (tokens). "Atoms to electrons. Electrons to tokens." Those tokens can represent language, proteins, climate models, or robotic commands — anything with learnable structure.
+His centerpiece is the AI vs. Erdős moment. OpenAI's model attacked the unit distance problem not by following consensus but by taking a contrarian stance — *assuming the conjecture was false* — then spending hours of compute tracing a path through algebraic number theory that no single human expert would naturally combine. As Roberts puts it: _"You need this really strong persistence... and expertise in this other field... and then also be super contrarian and go down this really long path."_
 
-He maps the full opportunity as a five-layer cake: (1) energy, (2) chips and computers, (3) infrastructure (land, power, data centers), (4) AI models, and (5) applications. All five layers are currently supply-constrained. His estimate: roughly $1 trillion in annual investment today, scaling toward what he projects will be a $20 trillion/year ecosystem — "We're $1 trillion in of a $20 trillion a year ecosystem."
+His analogy for RL vs. supervised learning: watching your dad play Mario vs. playing yourself. Supervised learning is memorizing someone else's moves; RL is getting your hands on the controller and learning from your own mistakes and rewards. The hard problem is sparse rewards — chess doesn't tell you where you went wrong until the very last move.
 
-On the jobs panic, Huang drew a distinction between tasks and purpose that cuts through most of the noise. When computer vision penetrated radiology with superhuman accuracy 12 years ago, the prediction was that radiologists would be eliminated. What actually happened: demand for radiologists went _up_, because AI-augmented radiologists could see more patients, making departments more profitable and prompting hospitals to hire more. "90% of software coding will be gone, and therefore we don't need software engineers? Meanwhile, we're hiring more software engineers than ever. Coding is not their job. Solving problems is their job."
+Roberts also offers a physicist's answer to fears about "emergent" AI behavior appearing only at scale: there's no emergence, just gaps in understanding. The right move — borrowed directly from physics — is to build simplified toy systems that exhibit the same phenomenon at smaller scale. Once you can reproduce it in miniature, you actually understand it.
 
-His one-liner to internalize: "You may or may not lose a job to an AI. But you will absolutely lose a job to someone who uses AI."
+On test-time compute: the model simply generates more tokens, using that compute the way a mathematician fills a scratch pad. RL is what trains the model to make that scratch pad worth reading.
 
-The closing optimism is counterintuitive from someone who has spent 40 years building ever-more-complex technology: AI is the first development in his career that is _closing_ the technology divide rather than widening it. "How many people know C++? About 2%. How many people know human? More than 2%." For the first time, everyone can program a computer — and that changes everything downstream.
-
-<https://www.youtube.com/watch?v=2UpQbeAZuqA>
-
+<https://www.youtube.com/watch?v=oWOz2htozfI|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
