@@ -1,83 +1,106 @@
-*AI Builders Digest — June 17, 2026*
+*AI Builders Digest — June 18, 2026*
+
 
 *X / TWITTER*
 
-*Josh Woodward* (VP at Google Labs / GeminiApp / Google AI Studio)
+*Josh Woodward — VP at Google Labs, GeminiApp, and GoogleAIStudio*
+Google officially expanded its AI Futures Fund to Brazil, partnering with Monashees to launch the Gama Fund. The program targets deep tech founders with early access to Google DeepMind models, up to $2M in co-investment, $350k in Google Cloud & Gemini credits, and direct co-development with Google engineers at a new IPT Open campus hub. Applications are open now.
+https://x.com/joshwoodward/status/2067025851829330076
 
-Two significant Gemini updates: the voice mic now supports 70+ languages with automatic language detection — users can mix languages freely in a single session without changing any settings. A Gemini Trusted Tester program is also opening limited slots for power users who want early access to unreleased features before anyone else.
-- <https://x.com/joshwoodward/status/2066673011554435450|Gemini mic: 70+ languages, no settings change needed>
-- <https://x.com/joshwoodward/status/2066664862671921259|Gemini Trusted Tester program signup now open>
+*Thibault Sottiaux — Codex and ChatGPT at OpenAI*
+A mini-saga played out: Codex hit widespread "model at capacity" errors overnight. Sottiaux acknowledged the issue, then confirmed a fix with rate limits being reset across all plans — and a teaser: "You know what's coming 👀." Shortly after, posting from France, he announced the most exciting Codex features are rolling out across Europe.
+- https://x.com/thsottiaux/status/2066865154902380796
+- https://x.com/thsottiaux/status/2066956441173323943
+- https://x.com/thsottiaux/status/2067064381855187231
 
-*Amjad Masad* (Replit CEO)
+*Peter Yang — AI newsletter creator with 150K+ readers*
+Yang is publishing a tutorial on turning Codex or Claude Code into a personal advisor using just 4 files — and managed to save Fable's advice before it got restricted. He also voiced skepticism about an unnamed product launch ("this is what happens when nobody internally wants to tell the CEO no") and lamented another round of large-company layoffs.
+- https://x.com/petergyang/status/2067056979974160749
+- https://x.com/petergyang/status/2067047343971848201
+- https://x.com/petergyang/status/2066975504973050077
 
-Masad highlighted Replit's domain-specific agents: a growth agent that surfaces SEO issues and a security agent that flags potential vulnerabilities. His favorite workflow: "select all, fix with Agent." He also took a jab at model naming conventions, quipping "Who needs Fable when you can have Mistral's Le Chaton Fat."
-- <https://x.com/amasad/status/2066683949129330817|Replit domain-specific agents>
-- <https://x.com/amasad/status/2066700847187140655|Le Chaton Fat vs Fable>
+*Madhu Guru — Former Product Leader at Google (Gemini, Veo, Nano)*
+On the SpaceX-Cursor deal: Madhu argues the real prize isn't the IDE — it's Cursor's production-grade agentic harness (planning, context management, tool use, iteration, memory, error recovery). "Very few companies do even one of these well. Cursor brings all three," referring to the harness, full AI stack expertise, and end-to-end product lifecycle focus. He also made a philosophical point: humanity over-indexed on intellect as the defining human trait, under-investing in self-awareness, intuition, and compassion — and the next few years of AI will force a reckoning with that.
+- https://x.com/realmadhuguru/status/2066935654500671499
+- https://x.com/realmadhuguru/status/2067090477434966396
 
-*Guillermo Rauch* (Vercel CEO)
+*Thariq — Claude Code at Anthropic*
+Excited: Slack now renders HTML attachments inline instead of displaying them as raw text.
+https://x.com/trq212/status/2067021344341098670
 
-Three related announcements: Vercel shipped longer function runtimes — the culmination of a multi-year microVM-based "Fluid Compute" investment that also powers Vercel Builds and Sandboxes. His bigger thesis: sandboxes, functions, servers, and builds are all expressions of the same underlying compute primitive, and "2026 is the year serverless and servers finally converge." The v0 coding tool also now ships with Vercel engineering skills baked in by default, with the option to pull from a community library or add team-private skills.
-- <https://x.com/rauchg/status/2066553521978097921|Longer Vercel function runtimes now live>
-- <https://x.com/rauchg/status/2066556235961237826|Serverless and servers converging in 2026>
-- <https://x.com/rauchg/status/2066567117562868009|v0 ships Vercel engineering skills by default>
+*Amjad Masad — CEO at Replit*
+Replit won Databricks partner of the year.
+https://x.com/amasad/status/2066956074360426622
 
-*Aaron Levie* (Box CEO)
+*Guillermo Rauch — CEO at Vercel*
+Vercel is shipping. The latest update adds 24-hour sandbox lifetimes on top of existing 30-minute function invocations, teased with a simple "It's time to ship."
+- https://x.com/rauchg/status/2067106499449565265
+- https://x.com/rauchg/status/2067137678772937000
 
-Two sharp takes on AI strategy. On the future: the winners won't be those with the biggest models but those that combine unique data, workflows, and intelligent model routing — _"intelligence is becoming increasingly customizable."_ On AI regulation: an "FDA for AI" model that requires pre-release approval for every model would create an infinite-permutation review backlog, slowing global AI progress dramatically. His alternative: regulate the *applied uses* of AI, where risk actually shows up.
-- <https://x.com/levie/status/2066735879213994434|Customizable intelligence is the future of AI>
-- <https://x.com/levie/status/2066554018953146689|Against pre-release model regulation>
-- <https://x.com/levie/status/2066526720480690221|Open source going to win big>
+*Aaron Levie — CEO at Box*
+Two substantive takes. On the Cursor acquisition: Levie calls it "the first mega success in the applied layer of AI" and a template for applied AI execution — deep domain focus, acting as model router, knowing when to use frontier models vs. train your own, and GTM discipline in a competitive space. "Every aspect of their business was tuned to carve out ground and keep doubling down."
+https://x.com/levie/status/2066908002809221496
+Second, a market structure analysis: the biggest unresolved question in AI is whether open weights models stay 3–6 months behind frontier or fall years behind. That gap determines everything — chip stack, sovereign AI strategy, inference location, margin structures, and enterprise AI spend.
+https://x.com/levie/status/2067070918300664161
 
-*Peter Steinberger* (OpenClaw / OpenAI)
+*Ryo Lu — Designer at Cursor*
+On Cursor mobile: much of the real app was coded by a designer using Cursor itself — "titles don't mean shit. you can just build." Also riffed on the SpaceX-Cursor deal: "crazy idea: what if X, Cursor, were the same thing?"
+- https://x.com/ryolu_/status/2067124871226929526
+- https://x.com/ryolu_/status/2066902677905461579
 
-Went viral (1,400+ likes) after discovering Apple can no longer manufacture the Mac Studio in the US: "We don't even know how to make these anymore." He also demoed clawsweeper — an open source bot that reviews incoming GitHub issues against a VISION.md file and, if the issue fits, automatically opens and self-reviews a pull request.
-- <https://x.com/steipete/status/2066471737068232835|Mac Studio: we don't know how to make these anymore>
-- <https://x.com/steipete/status/2066457262571360396|clawsweeper: auto-review and PR bot>
+*Garry Tan — President and CEO at Y Combinator*
+Shared contrarian encouragement: "You'll never achieve anything if you are afraid of being cringe." Also posted on Bowen's theory of differentiation of self — self-abandoners and bullies are both the same underlying pattern (low differentiation), and the fix is building the capacity to stay a distinct self under pressure.
+- https://x.com/garrytan/status/2067101283493040518
+- https://x.com/garrytan/status/2067100549775032702
 
-*Nikunj Kothari* (FPV Ventures partner)
+*Zara Zhang — Builder*
+Two sharp takes. First, a product manifesto on AI differentiation: "Every other product right now is 'an AI agent that does everything in your work & life & integrates with everything.' Cool, that's just Claude/Codex. If you want me to use your thing instead, it needs an opinion & a soul. Build small & sharp, not big & generic. Doing everything means doing nothing."
+https://x.com/zarazhangrui/status/2066936706281206165
+Second: don't chase what's already labeled "cool" — go so deep on something everyone else ignores that it becomes the cool thing.
+https://x.com/zarazhangrui/status/2066994434953421226
 
-Kothari observed that 32 VCs in his network — from associates to GPs — have moved back into operating roles over the past 12 months, with the pace accelerating. His read: operators get direct customer contact, greater day-to-day autonomy, and a realistic shot at liquidity far sooner than waiting ~13 years for carry.
-- <https://x.com/nikunj/status/2066701833964531736|32 VCs moving back to operating — and they seem happier>
+*Nikunj Kothari — Partner at FPV Ventures*
+Brief but pointed on the Cursor acquisition: "Be in the judgement (data) path or the token path. Today's cursor_ai acquisition sets the path for more application companies." Also attended Cursor Compile and noted custom mechanical keyboards are "a new kind of swag ceiling for conferences."
+- https://x.com/nikunj/status/2066905445974102384
+- https://x.com/nikunj/status/2066966270197805331
 
-*Peter Yang* (AI educator, Creator AI newsletter, 150K+ readers)
+*Dan Shipper — CEO at Every*
+Switched back from Atlas Browser to Dia after too many bugs with Atlas and no signs of improvement.
+https://x.com/danshipper/status/2066914130863473048
 
-Enthusiastic on OpenAI Codex's browser use: _"It's so good that it almost makes me forget APIs are even needed."_ Also gave Cursor AI credit for planning what he described as a Michelin-quality dinner.
-- <https://x.com/petergyang/status/2066753125197967653|Codex browser use nearly makes APIs feel optional>
-- <https://x.com/petergyang/status/2066756347438469602|Cursor plans a Michelin-quality dinner>
+*Aditya Agarwal — General Partner at SouthPk Commons, Co-Founder of Bevel Health*
+Snowflake CEO Sridhar Ramaswamy — who grew Google's ad business from $1.5B to $100B+ — is visiting SouthPk Commons next week.
+https://x.com/adityaag/status/2066915803610370098
 
-*Swyx* (builder; Cognition / Temporal / AI Engineer)
-
-A brief but pointed note on AI news velocity: goblingate — a recent AI industry controversy — happened only 1.5 months ago, a reminder of how compressed the news cycle has become.
-- <https://x.com/swyx/status/2066705614454337663|Goblingate was 1.5 months ago>
 
 *OFFICIAL BLOGS*
 
-*Claude Blog — New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*
+*Claude Blog — <https://claude.com/blog/claude-for-foundation-models|Building intelligent apps for Apple platforms with Claude in the Foundation Models framework>*
 
-Anthropic launched three major capability updates to Claude Managed Agents:
+Anthropic released a Swift package that lets Apple developers route to Claude from within Apple's Foundation Models framework. The framework already returns typed Swift values from on-device models; the package extends that to hand off to Claude for multi-step reasoning, code generation, web search, and code execution when the on-device model isn't enough — all within the same SwiftUI view.
 
-- *Dreaming* (research preview): A scheduled process that reviews past agent sessions, extracts recurring patterns, and refines memory so agents self-improve between sessions. Teams can review changes before they land or allow automatic updates. Harvey saw ~6x completion rate gains in testing.
-- *Outcomes*: Define a success rubric; a separate grader evaluates output in its own context window and sends the agent back for revisions until it clears the bar. In benchmarks, outcomes improved task success by up to 10 points, with file generation quality up +8.4% (docx) and +10.1% (pptx).
-- *Multiagent orchestration*: A lead agent breaks complex jobs into pieces and delegates each to a specialist running in parallel on a shared filesystem. Netflix uses this to surface recurring issues across hundreds of build log sources; Spiral by Every uses it for parallel draft generation with outcomes-based quality gating.
+The design pattern: a journaling app generates daily prompts on-device, then asks Claude to surface threads across months of entries. A study app explains a concept locally, then hands off to Claude for deeper follow-up questions. "It's one experience for the user, backed by the right model for each step."
 
-<https://claude.com/blog/new-in-claude-managed-agents|Read the full post>
+Works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27. Add the package, sign in with an Anthropic API key, and pass typed outputs from Apple's on-device models directly into a Claude request.
+
+https://claude.com/blog/claude-for-foundation-models
+
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "OpenAI's Dan Roberts: Why AI Can Now Make Discoveries"*
+*Training Data — "Simulating Humans at Scale: Simile's Joon Sung Park"*
 
-*The Takeaway:* Reinforcement learning isn't just the cherry on top of language model training — it's the mechanism that teaches AI to think, and the same explore-vs-exploit dynamics that made AlphaGo legendary are what let AI disprove a 60-year-old conjecture in combinatorics.
+_The Takeaway:_ The real bottleneck in behavioral AI isn't raw model capability — it's the gap between what people _say_ and what they actually _do_, and current frontier LLMs are almost entirely trained on the former.
 
-Dan Roberts leads the Foundations of Reinforcement Learning team at OpenAI, arriving from theoretical physics (MIT PhD, IAS postdoc) via Facebook AI Research, a startup, and Sequoia Capital. His core claim: RL is what transforms a next-token predictor into a reasoning machine.
+Joon Sung Park is the founder and CEO of Simile, and previously a Stanford researcher whose 2023 "Smallville" project went viral for creating a town of 25 AI agents who spontaneously planned and threw a Valentine's Day party. That research has since become a company serving Fortune 500 clients — including CVS — with behavioral simulations grounded in real survey and interview data.
 
-His centerpiece is the AI vs. Erdős moment. OpenAI's model attacked the unit distance problem not by following consensus but by taking a contrarian stance — *assuming the conjecture was false* — then spending hours of compute tracing a path through algebraic number theory that no single human expert would naturally combine. As Roberts puts it: _"You need this really strong persistence... and expertise in this other field... and then also be super contrarian and go down this really long path."_
+The counterintuitive insight: today's frontier LLMs may actually be getting _worse_ at simulating humans as they improve. As labs optimize toward rational, objective-answering "superintelligent" machines, they diverge further from the messy, irrational diversity of real human behavior. Park argues a separate class of model is needed — not a CPU of intelligence, but a GPU: massively parallel units each representing the actual values, preferences, and lived stories of real subpopulations.
 
-His analogy for RL vs. supervised learning: watching your dad play Mario vs. playing yourself. Supervised learning is memorizing someone else's moves; RL is getting your hands on the controller and learning from your own mistakes and rewards. The hard problem is sparse rewards — chess doesn't tell you where you went wrong until the very last move.
+Simile's method: partner with Gallup, collect 15 minutes of behavioral and biographical data from real people ("Just tell me the story of your life"), then build agents that can answer questions far beyond the original survey domain. CVS uses it to model second-order market effects of product decisions. Some clients simulate their earnings calls before they happen. Validated accuracy: 85% as close as people replicating their own responses.
 
-Roberts also offers a physicist's answer to fears about "emergent" AI behavior appearing only at scale: there's no emergence, just gaps in understanding. The right move — borrowed directly from physics — is to build simplified toy systems that exhibit the same phenomenon at smaller scale. Once you can reproduce it in miniature, you actually understand it.
+On the bigger horizon: Park sees a future where a single simulation might cost $100M and take months to run — but answer one of civilization's fundamental open questions. "Simulation can be [to social sciences] what the Hubble Telescope was to understanding the universe."
 
-On test-time compute: the model simply generates more tokens, using that compute the way a mathematician fills a scratch pad. RL is what trains the model to make that scratch pad worth reading.
+https://www.youtube.com/watch?v=lfhFmwcESRw
 
-<https://www.youtube.com/watch?v=oWOz2htozfI|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
