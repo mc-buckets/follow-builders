@@ -1,69 +1,97 @@
-*AI Builders Digest — June 19, 2026*
+AI Builders Digest — June 20, 2026
 
 
 *X / TWITTER*
 
-*OpenAI CEO Sam Altman* announced what sounds like a long-awaited hire: "Noam is one of the people I have most wanted to work with since the very beginning of OpenAI. Only took 10 years." He followed with a characteristically wry benediction: "We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence."
-- <https://x.com/sama/status/2067427421083652131|Tweet 1>
-- <https://x.com/sama/status/2067427678529974740|Tweet 2>
+*Boris Cherny (Claude Code team, Anthropic)*
+Boris has been putting Claude Code's new Artifacts feature to daily use: visual explanations of tricky code, system diagrams, animation previews, and data dashboards shared with teammates. A hands-on endorsement from someone building the product itself.
+https://x.com/bcherny/status/2067700226669060207
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) made two high-signal posts. First, a surprise for Codex users: a "sneaky double reset" — a full usage reset *and* one banked reset to use at leisure. Second, a reminder that many builders may have missed: the Codex App, CLI, and SDK work with any open source model, not just OpenAI's.
-- <https://x.com/thsottiaux/status/2067399435009622521|Codex double reset>
-- <https://x.com/thsottiaux/status/2067181377028538431|Codex + open source models>
+*Cat Wu (Claude Code + Cowork, Anthropic)*
+Claude Team and Enterprise users can now use Claude Code to deploy HTML sites and share them with teammates. Cat says it's changed how the team works internally, calling Artifacts "a great format for communication."
+https://x.com/_catwu/status/2067674836726694200
 
-*Box CEO Aaron Levie* posted one of the most substantive threads of the week on what the Applied AI layer actually looks like at scale. Despite early skepticism that it would just be "a thin wrapper on LLMs," Levie argues that driving agentic enterprise workflows is far more complex — and complexity creates moats. His four-part playbook: (1) build features that bridge intelligence and specific workflows — not just expose output tokens; (2) act as model router, balancing frontier intelligence against cheaper models; (3) drive implementation and change management on the ground via field engineers; (4) build domain-specific GTM that speaks the customer's language. His kicker: "Enterprises need help changing *today*. And many aspects of how to bring intelligence to real world work don't only depend on the axis of pure model capability."
-- <https://x.com/levie/status/2067455756795039957|Full thread>
+*Thariq (Claude Code, Anthropic)*
+Thariq announced that Claude Code can now upload and edit HTML artifacts shareable with your team or other Claude agents — starting with Team plan, coming to Pro and Max soon. He's also giving the Day 2 opening keynote at AI Engineer World's Fair on July 1st at 9am.
+https://x.com/trq212/status/2067682475611242546
+https://x.com/trq212/status/2067737883545596368
 
-*Vercel CEO Guillermo Rauch* made a sharp point on the current model competition moment: his AI SDK is "more relevant than ever" precisely *because* no single model has won. He cited GLM 5.2, an open-weight model, surpassing Opus 4.8 in their Next.js Evals as evidence of how fast the landscape is shifting. His framing: React needed Next.js to become a real web app framework — agents need an equivalent layer to become production-ready.
-- <https://x.com/rauchg/status/2067242482190979186|Tweet>
+*Claude (claudeai on X — official Anthropic account)*
+Artifacts are now in Claude Code: interactive pages built from your session — PR walkthroughs, living project dashboards, release checklists — shared with teammates at a private link. They draw on the full context of your session (codebase, plugins, connected tools) and refresh automatically as the session keeps working. Currently in beta on Team and Enterprise plans.
+https://x.com/claudeai/status/2067671912038240487
 
-*YCombinator President & CEO Garry Tan* ran the math on a "Fable 5 ban" and the productivity cost: ~$12M per working hour. His estimate: 5M AI-coding daily actives, 17.8% of work had routed to Fable in 48 hours, Fable running ~15% more productive on average — works out to ~$2.40/dev/hr across 5M devs. He also pushed back on AI-kills-founders narratives: "Technical founders now have access to business thinking. Business founders now have access to technical thinking. Net net: more startups that actually work." And on YC criteria: "We don't care what your age is. We care if you can build with craft and care."
-- <https://x.com/garrytan/status/2067366749411176831|Fable 5 productivity estimate>
-- <https://x.com/garrytan/status/2067308407603048774|On founder democratization>
-- <https://x.com/garrytan/status/2067260431597723825|On craft and care>
+*Aaron Levie (Box CEO)*
+Levie flagged two significant shifts: open weights models credibly reaching frontier capability — which he calls "a huge update" that ensures AI can never be locked behind a single vendor — and government AI regulation frameworks starting to crystallize, using Fable's access rollout as a preview of what oversight will look like.
+https://x.com/levie/status/2067821985342878180
+https://x.com/levie/status/2067802697324212562
 
-*Claude* (Anthropic's official account) announced Claude Design is now in beta on all paid plans, web and desktop. The standout: Claude Design and Claude Code now work together bidirectionally — hand a design off to build in Code, or start in Claude Code and sync design projects from the terminal. New drag-resize-align layout controls and PDF/PowerPoint export are rolling out today.
-- <https://x.com/claudeai/status/2067325893001826552|Design + Code integration>
-- <https://x.com/claudeai/status/2067325894268428560|Beta announcement>
-- <https://x.com/claudeai/status/2067325891781226581|Redesigned editor>
+*Garry Tan (President & CEO, Y Combinator)*
+Tan came out swinging against a Bernie Sanders bill that would seize 50% of any AI startup crossing $200M in revenue, calling asset seizure "evil" and part of a broader anti-prosperity agenda that also tried to ban startup acquisitions. On the philosophical note: "For people who don't have a clear sense of the future they want, AI is just another mechanism of control. But in the hands of someone with agency, AI is the breaker of chains."
+https://x.com/garrytan/status/2067636692794875923
+https://x.com/garrytan/status/2067637324763316499
+https://x.com/garrytan/status/2067606805459714229
 
-*Replit CEO Amjad Masad* flagged a new design-to-deployment workflow: "Design with Claude, Ship with Replit" — connecting Claude's design capabilities directly to Replit's build and ship pipeline.
-- <https://x.com/amasad/status/2067363904183783833|Tweet>
+*Nan Yu (Head of Product, Linear)*
+Nan shared hard-won lessons from building AI agents at Linear: early attempts to have agents one-shot project updates without user input consistently failed. Building good agent products requires something like taste — making the right choice from a range of plausible options with limited information, the same way a chess player intuits a move without calculating every branch.
+https://x.com/thenanyu/status/2067703108344369306
+https://x.com/thenanyu/status/2067701849491206399
 
-*Zara Zhang* (builder) shared two takes worth saving. On AI and writing: "Don't use AI for writing until you develop your own taste and voice. If the AI produces slop, you won't even recognize it as slop — read a lot to figure out what good looks like, write a lot to know what your voice sounds like, only *then* use AI to help you write." On vibe-coded personal apps: "Building the thing takes a day. Finding out if you'll actually use it takes a week. Most of my dead projects worked fine. I just never opened them... Most products are built for a person who doesn't exist — someone who remembers to open the app, clicks the right button, does step 1, 2, 3 every day. Real humans are lazy & forgetful. Build for that person instead."
-- <https://x.com/zarazhangrui/status/2067423674689638652|On AI and writing>
-- <https://x.com/zarazhangrui/status/2067313780724551853|On vibe-coded apps>
+*Zara Zhang (builder)*
+Zara demoed a beautiful HTML presentation deck she built using her Frontend Slides Claude Code skill — complete with easter eggs like clickable images, nested content, and hyperlinks. Shared both the skill link and the recording of her talk.
+https://x.com/zarazhangrui/status/2067850383758901669
+https://x.com/zarazhangrui/status/2067851144664342725
 
-*Nan Yu* (Head of Product at Linear) sparked a thread on the overloaded word "taste": "'Taste' is not just taste in aesthetics, the same way 'design' is not just visual design. Feels like half the conversations on the subject are people talking past each other because of this distinction." His kicker: "pg talks about taste and wears cargo shorts — he's clearly not talking about taste in pants."
-- <https://x.com/thenanyu/status/2067327619897446721|Tweet 1>
-- <https://x.com/thenanyu/status/2067327901666521478|Tweet 2>
+*Nikunj Kothari (Partner, FPV Ventures)*
+Nikunj quietly launched a side project to test how many impressions and clicks he could generate by having Claude Code and Codex ruthlessly optimize the site for search. Also gave a shoutout to Artie Labs — an angel investment of his — on their self-serve launch.
+https://x.com/nikunj/status/2067830061009633294
+https://x.com/nikunj/status/2067748864967503942
 
-*Every CEO Dan Shipper* announced an investment in Tacit, a startup by a founder he says he's "a huge fan of — tacit's mission and approach." He also resurfaced a piece he wrote in 2023 called "against explanations," about how AI might change the sciences — now feeling newly relevant.
-- <https://x.com/danshipper/status/2067386342661624055|Tacit investment>
-- <https://x.com/danshipper/status/2067386395283345808|Against explanations>
+*Dan Shipper (CEO, Every)*
+Shipper is feeling "extreme time deflation" and expects a step-change in productivity once Fable unlocks — "might as well go on vacation until then." He's also hiring a managing editor at Every: extremely detail-oriented, hates split infinitives, loves oxford commas, and AI-positive.
+https://x.com/danshipper/status/2067630124795662471
+https://x.com/danshipper/status/2067614889141469570
 
-*FPV Ventures partner Nikunj Kothari* made a pointed argument against tranched rounds: they inflate the 409A for the next employee who joins, pricing their options at a valuation the lead investor never actually paid. His tell for spotting a tranched round: if someone raises at under 10% dilution of the published valuation, it almost certainly was tranched — "sadly seeing weird tranches at the B too."
-- <https://x.com/nikunj/status/2067399657639285150|Against tranches>
-- <https://x.com/nikunj/status/2067397092981772501|How to spot a tranched round>
+*Peter Steinberger (builder)*
+Dry observation making the rounds: "Everything's either a fast or slow API now."
+https://x.com/steipete/status/2067821739556413651
+
+*Matt Turck (VC, FirstMark Capital)*
+Turck dropped a new MAD Podcast episode on the state of AI compute in 2026 with Lambda cofounder Stephen Balaban — covering the neocloud boom, GPU pricing mechanics, data center economics, and the continued insatiability of demand.
+https://x.com/mattturck/status/2067646198140358854
+
+
+*OFFICIAL BLOGS*
+
+*Claude Blog: "Claude Code now supports artifacts"*
+
+Claude Code now builds live, shareable visual pages — called Artifacts — directly from your session. A PR walkthrough, an incident timeline, a data dashboard, a release checklist: whatever Claude Code produces, it can publish as a web page that refreshes in place as the session keeps working.
+
+The core mechanic: Artifacts pull from everything in your session — codebase, connected tools, and the conversation itself — so a single incident page can show the failing test, the error spike from monitoring, and the root-cause reasoning all together. No wiring up data sources or standing up infrastructure required.
+
+Sharing is organization-scoped: private to the author by default, shareable to org members when ready, with no public option. Admins get org-level toggles, role-based scoping, retention policies, and compliance API access. Currently in beta on Team and Enterprise plans.
+
+https://claude.com/blog/artifacts-in-claude-code
 
 
 *PODCASTS*
 
-*AI & I by Every — "GitHub's COO Explains Why AI Hasn't Replaced Developers"*
+*The MAD Podcast with Matt Turck — "The Neocloud Boom: State of AI Compute 2026 | Stephen Balaban"*
 
-_The Takeaway:_ Personalization — not raw model capability — is what separates AI tools that stick from ones people abandon, and GitHub's COO is already building his daily life around it.
+_The Takeaway:_ GPU compute was never a commodity, it never will be, and the demand for it is still being systematically underestimated.
 
-GitHub COO Kyle Daigle sits at one of the best vantage points in software right now: 17 million agent-generated pull requests hit GitHub in March alone — and the platform is on track for 14 billion total commits this year (up from 1 billion last year). The question isn't whether agents are changing software. It's what comes next.
+Stephen Balaban is cofounder and CTO of Lambda, one of the top neoclouds powering the AI infrastructure boom. He's been building GPU cloud since before most people were paying attention, and his read on the physical layer is unusually grounded.
 
-Daigle pushes back on the "it's all slop" framing: "We're all just actually getting to the point where we're no longer in the super early adoption. We're definitely not at the peak, but we're climbing that hill." The real pressure point is open source maintainers, who have no control over who's submitting AI-generated PRs. GitHub is building maintainer controls while deliberately avoiding imposing standards — watching how communities self-organize, then locking in what works.
+The core argument: cloud compute is a highly vertically integrated business spanning land entitlement, construction, high-performance computing design, software, and virtualization. The companies that predicted it would commoditize made a category error — they confused it with a simple utility when it's more like a semiconductor fab crossed with a financial institution. That's why the hyperscalers are all multitrillion-dollar businesses.
 
-On the $200-to-$2,000 subscription problem, his answer is model routing: "A lot of the reasons why tokens are expensive is because we're all going and choosing our model of the day or week or hour." Intelligent routing — using a heavyweight model for hard problems, a lightweight one for find-and-replace — is the practical fix, and it's coming.
+On demand, Balaban is unambiguous: "It's pretty clear that we have an amazing system that can take in money and output software." He predicted this moment years ago and sees no end to the scaling laws. Every efficiency gain just expands the addressable use case — from search substitution to customer support to software engineering augmentation — and demand fills the new capacity. Even a 10x efficiency improvement just means 10x more tokens consumed.
 
-His personal AI workflow is the most memorable part. He has a personal agent named Baxter that reads all his emails, Slack messages, and recorded conversations from the past seven days, then generates a "comms report" — not a summary of what he said, but a pattern analysis of *how* he communicates. "Humans are way more willing to take critical feedback from robots than other humans. It's less threatening." He calls this self-improvement loop "super, super, super powerful."
+The main bottleneck right now isn't chips — it's land, power, and shell: land entitled for megawatt commitments from a utility, plus the data center mechanical and electrical infrastructure to sit on top. That's where Lambda and the broader industry are capacity-constrained.
 
-On frontier tuning — fine-tuning models on actual enterprise usage data — Daigle admits skepticism: "When I first heard about this, I was like, this is like a magic parlor trick. It can't really work. And the reality is that sometimes that's where the alpha is. It's where it feels like this is too simple to work." His conclusion: it works, and enterprises don't have to do all the extra labeling work to get results.
+On market structure: neoclouds aren't winner-take-all. Like traditional cloud, there's room for multiple large players. The moats are capital-intensive and technology-driven rather than network-effect-driven, which produces an oligopoly rather than a monopoly.
 
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+Lambda's differentiation: software that lets customers spin up anywhere from 16 to 4,000 GPUs through a web interface — most competitors max out at 32 or don't offer it at all. Utilization is the key variable; every point gained is a direct multiplier on returns from the underlying capital.
+
+https://www.youtube.com/watch?v=0NttU4CbyVs
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
