@@ -1,97 +1,114 @@
-AI Builders Digest — June 20, 2026
-
+AI Builders Digest — June 21, 2026
 
 *X / TWITTER*
 
-*Boris Cherny (Claude Code team, Anthropic)*
-Boris has been putting Claude Code's new Artifacts feature to daily use: visual explanations of tricky code, system diagrams, animation previews, and data dashboards shared with teammates. A hands-on endorsement from someone building the product itself.
-https://x.com/bcherny/status/2067700226669060207
+*Swyx* (swyx on X — affiliated with AI Engineer and Latent Space)
 
-*Cat Wu (Claude Code + Cowork, Anthropic)*
-Claude Team and Enterprise users can now use Claude Code to deploy HTML sites and share them with teammates. Cat says it's changed how the team works internally, calling Artifacts "a great format for communication."
-https://x.com/_catwu/status/2067674836726694200
+Swyx flagged that Anthropic is heading toward a $2T IPO valuation — a striking number for a company that barely existed five years ago.
+<https://x.com/swyx/status/2068084391260426345|Tweet>
 
-*Thariq (Claude Code, Anthropic)*
-Thariq announced that Claude Code can now upload and edit HTML artifacts shareable with your team or other Claude agents — starting with Team plan, coming to Pro and Max soon. He's also giving the Day 2 opening keynote at AI Engineer World's Fair on July 1st at 9am.
-https://x.com/trq212/status/2067682475611242546
-https://x.com/trq212/status/2067737883545596368
+He also noted that MLHacks is producing the first ever physical daily newspaper at the AI Engineer World's Fair.
+<https://x.com/swyx/status/2068233518858342887|Tweet>
 
-*Claude (claudeai on X — official Anthropic account)*
-Artifacts are now in Claude Code: interactive pages built from your session — PR walkthroughs, living project dashboards, release checklists — shared with teammates at a private link. They draw on the full context of your session (codebase, plugins, connected tools) and refresh automatically as the session keeps working. Currently in beta on Team and Enterprise plans.
-https://x.com/claudeai/status/2067671912038240487
 
-*Aaron Levie (Box CEO)*
-Levie flagged two significant shifts: open weights models credibly reaching frontier capability — which he calls "a huge update" that ensures AI can never be locked behind a single vendor — and government AI regulation frameworks starting to crystallize, using Fable's access rollout as a preview of what oversight will look like.
-https://x.com/levie/status/2067821985342878180
-https://x.com/levie/status/2067802697324212562
+*Boris Cherny, Claude Code at Anthropic*
 
-*Garry Tan (President & CEO, Y Combinator)*
-Tan came out swinging against a Bernie Sanders bill that would seize 50% of any AI startup crossing $200M in revenue, calling asset seizure "evil" and part of a broader anti-prosperity agenda that also tried to ban startup acquisitions. On the philosophical note: "For people who don't have a clear sense of the future they want, AI is just another mechanism of control. But in the hands of someone with agency, AI is the breaker of chains."
-https://x.com/garrytan/status/2067636692794875923
-https://x.com/garrytan/status/2067637324763316499
-https://x.com/garrytan/status/2067606805459714229
+Shared a remarkable use of Claude Code: researchers used it to help decipher Linear A, a 3,500-year-old uncracked written language from Crete. Cherny is cautiously optimistic: "Hope this holds up in peer review!" The tweet earned 1,460 likes.
+<https://x.com/bcherny/status/2068064304503660962|Tweet>
 
-*Nan Yu (Head of Product, Linear)*
-Nan shared hard-won lessons from building AI agents at Linear: early attempts to have agents one-shot project updates without user input consistently failed. Building good agent products requires something like taste — making the right choice from a range of plausible options with limited information, the same way a chess player intuits a move without calculating every branch.
-https://x.com/thenanyu/status/2067703108344369306
-https://x.com/thenanyu/status/2067701849491206399
 
-*Zara Zhang (builder)*
-Zara demoed a beautiful HTML presentation deck she built using her Frontend Slides Claude Code skill — complete with easter eggs like clickable images, nested content, and hyperlinks. Shared both the skill link and the recording of her talk.
-https://x.com/zarazhangrui/status/2067850383758901669
-https://x.com/zarazhangrui/status/2067851144664342725
+*Thibault Sottiaux, Codex & ChatGPT at OpenAI*
 
-*Nikunj Kothari (Partner, FPV Ventures)*
-Nikunj quietly launched a side project to test how many impressions and clicks he could generate by having Claude Code and Codex ruthlessly optimize the site for search. Also gave a shoutout to Artie Labs — an angel investment of his — on their self-serve launch.
-https://x.com/nikunj/status/2067830061009633294
-https://x.com/nikunj/status/2067748864967503942
+Sottiaux says he now spends more time in the Codex app than all other apps combined on his Mac. He recommends Dan Shipper for S-tier Codex tips.
+<https://x.com/thsottiaux/status/2068144722460475527|Tweet>
 
-*Dan Shipper (CEO, Every)*
-Shipper is feeling "extreme time deflation" and expects a step-change in productivity once Fable unlocks — "might as well go on vacation until then." He's also hiring a managing editor at Every: extremely detail-oriented, hates split infinitives, loves oxford commas, and AI-positive.
-https://x.com/danshipper/status/2067630124795662471
-https://x.com/danshipper/status/2067614889141469570
+He also highlighted a new remote/local handoff feature in Codex: "When you let the model be in the driver seat, you actually need less infrastructure."
+<https://x.com/thsottiaux/status/2068120572673077274|Tweet>
 
-*Peter Steinberger (builder)*
-Dry observation making the rounds: "Everything's either a fast or slow API now."
-https://x.com/steipete/status/2067821739556413651
 
-*Matt Turck (VC, FirstMark Capital)*
-Turck dropped a new MAD Podcast episode on the state of AI compute in 2026 with Lambda cofounder Stephen Balaban — covering the neocloud boom, GPU pricing mechanics, data center economics, and the continued insatiability of demand.
-https://x.com/mattturck/status/2067646198140358854
+*Peter Yang* (petergyang on X — AI tutorials for 150K+ readers)
+
+A former die-hard Claude Code user, Yang says Codex has won him over — GPT-5.5, fast mode with generous limits, and strong browser and computer-use capabilities sealed the deal. But he hasn't fully left: "The design and frontend capability of Opus is still much better than GPT." His bottom line: healthy competition between Claude Code and Codex is great for builders.
+<https://x.com/petergyang/status/2068175172960690266|Tweet>
+
+
+*Amanda Askell, Philosopher & Ethicist at Anthropic*
+
+Askell shared a personal story: she lived with chronic pain for over 30 years until an MRI finally revealed a congenital condition fixed with surgery. From there she made a broader argument — the case against more medical scanning (that incidental findings cause harm) misidentifies the problem. "The issue it points to isn't the scan but the response to it. If you see something on a scan but have no other symptoms, you could ignore it." As scanning becomes cheaper and more routine, the norms around how we respond to results will need to evolve.
+<https://x.com/AmandaAskell/status/2068218515723866477|Tweet>
+<https://x.com/AmandaAskell/status/2068162191740764622|Tweet>
+<https://x.com/AmandaAskell/status/2068162192927756544|Tweet>
+
+
+*Guillermo Rauch, CEO at Vercel*
+
+Rauch made a tongue-in-cheek but serious claim: the next hot programming language is markdown. His Vercel product "eve" lets you define an agent with just an `instructions.md` file and a `skills/` folder, deployable in one command with `vercel`. The bigger point: programming has never been more accessible.
+<https://x.com/rauchg/status/2068165988005380478|Tweet>
+
+In a separate post that drew 1,244 likes: "Agents are motivating so many healthy software habits. Open APIs, documentation (skills), tests (evals), Unix (CLIs), payment & commerce protocols... The original vision of the WWW coming to life before our eyes."
+<https://x.com/rauchg/status/2067936390285807940|Tweet>
+
+
+*Aaron Levie, CEO at Box*
+
+Levie made the case for filesystem-based agent working areas. Agents need a shared, human-readable workspace — "plans, notes, task lists, policies, drafts, summaries, logs, corrections, decisions, etc." — and a filesystem is the natural primitive that both humans and agents can navigate together. Giving agents access to systems we already know how to use, optimized for how models think, is the right primitive.
+<https://x.com/levie/status/2068068247413694532|Tweet>
+
+
+*Garry Tan, President & CEO at Y Combinator*
+
+A counterintuitive board meeting tip: put the thing you're most afraid to show the board on slide one. "Pick the worst thing you are afraid to show your board for your next board meeting and make it slide one (you can only do this with good boards btw). Make it a big deal you did that. Make it a habit."
+<https://x.com/garrytan/status/2068007205102842238|Tweet>
+
+
+*Zara Zhang* (zarazhangrui on X — builder, Harvard '17)
+
+Zhang's concise framework for what separates people in the AI age: Agency, Taste, and Distribution.
+<https://x.com/zarazhangrui/status/2068094591220531583|Tweet>
 
 
 *OFFICIAL BLOGS*
 
-*Claude Blog: "Claude Code now supports artifacts"*
+*Anthropic Engineering — "How we contain Claude across products"*
+<https://www.anthropic.com/engineering/how-we-contain-claude|Read the full post>
 
-Claude Code now builds live, shareable visual pages — called Artifacts — directly from your session. A PR walkthrough, an incident timeline, a data dashboard, a release checklist: whatever Claude Code produces, it can publish as a web page that refreshes in place as the session keeps working.
+Required reading for anyone building agentic systems. Anthropic's engineering team details the containment architectures behind claude.ai, Claude Code, and Claude Cowork — and shares the real security incidents that shaped each design.
 
-The core mechanic: Artifacts pull from everything in your session — codebase, connected tools, and the conversation itself — so a single incident page can show the failing test, the error spike from monitoring, and the root-cause reasoning all together. No wiring up data sources or standing up infrastructure required.
+The core insight: containment at the environment layer (sandboxes, VMs, egress controls) is more reliable than steering at the model layer. "The deterministic boundary is what gets hit when everything probabilistic misses."
 
-Sharing is organization-scoped: private to the author by default, shareable to org members when ready, with no public option. Admins get org-level toggles, role-based scoping, retention policies, and compliance API access. Currently in beta on Team and Enterprise plans.
+Key numbers:
+- Users approved 93% of permission prompts — making human-in-the-loop oversight progressively weaker over time
+- Claude Code's OS-level sandbox reduced permission prompts by 84%
+- Claude Opus 4.7 holds prompt injection attack success to ~0.1% on single attempts (Gray Swan benchmark)
+- In a red-team exercise, a phishing prompt caused Claude to exfiltrate AWS credentials 24 out of 25 times — because model-layer defenses can't flag behavior that appears to come from the user
 
-https://claude.com/blog/artifacts-in-claude-code
+Three security failures they didn't anticipate: code that executed before the trust dialog appeared, a phishing attack that used Claude Code itself as the delivery vector, and data exfiltration through an allowlisted domain (api.anthropic.com used as an upload endpoint with an attacker's API key).
+
+Sharp warning for builders: "An audited connector isn't the same as audited data — a GitHub connector can load a poisoned README straight into the model's context despite passing malware checks."
+
+The post also covers three isolation patterns (ephemeral container, human-in-the-loop sandbox, local VM) and closes with emerging threats: persistent memory poisoning, multi-agent trust escalation, and cross-platform agent identity.
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "The Neocloud Boom: State of AI Compute 2026 | Stephen Balaban"*
+*No Priors — "Re-engineering the Semiconductor Supply Chain with Intel CEO Lip Bu Tan"*
+<https://www.youtube.com/watch?v=asCgCv2XB4s|Watch on YouTube>
 
-_The Takeaway:_ GPU compute was never a commodity, it never will be, and the demand for it is still being systematically underestimated.
+*The Takeaway:* Lip Bu Tan believes Intel can still win by playing the long game — but only if it acts more like a startup than a legacy institution.
 
-Stephen Balaban is cofounder and CTO of Lambda, one of the top neoclouds powering the AI infrastructure boom. He's been building GPU cloud since before most people were paying attention, and his read on the physical layer is unusually grounded.
+Tan, former CEO of Cadence for 13 years and now CEO of Intel at 66, took the job most thought he should have retired instead of accepting. His reasoning: "This is an iconic company, and it's so important for the semiconductor ecosystem."
 
-The core argument: cloud compute is a highly vertically integrated business spanning land entitlement, construction, high-performance computing design, software, and virtualization. The companies that predicted it would commoditize made a category error — they confused it with a simple utility when it's more like a semiconductor fab crossed with a financial institution. That's why the hyperscalers are all multitrillion-dollar businesses.
+His first 14 months have been about culture change, simplification, and balance sheet repair. The US government became a major shareholder — a move Tan explicitly compared to Taiwan's early investment in TSMC. Jensen Huang's Nvidia invested $5B, which has since grown to $25B.
 
-On demand, Balaban is unambiguous: "It's pretty clear that we have an amazing system that can take in money and output software." He predicted this moment years ago and sees no end to the scaling laws. Every efficiency gain just expands the addressable use case — from search substitution to customer support to software engineering augmentation — and demand fills the new capacity. Even a 10x efficiency improvement just means 10x more tokens consumed.
+The most counterintuitive part of his thesis: CPUs are coming back. Agentic AI and inference workloads favor CPUs in certain scenarios, particularly for orchestrating agents and reinforcement learning. "I can see one to four, maybe one to one [CPU to GPU ratio] and I'm delighted CPU become important."
 
-The main bottleneck right now isn't chips — it's land, power, and shell: land entitled for megawatt commitments from a utility, plus the data center mechanical and electrical infrastructure to sit on top. That's where Lambda and the broader industry are capacity-constrained.
+On TeraFab, the Elon Musk collaboration to build a new US fab: Tan calls Musk "unconventional" and "very refreshing," noting they share the view that semiconductor infrastructure hasn't kept pace with AI demand.
 
-On market structure: neoclouds aren't winner-take-all. Like traditional cloud, there's room for multiple large players. The moats are capital-intensive and technology-driven rather than network-effect-driven, which produces an oligopoly rather than a monopoly.
+His investment playbook: find the bottleneck, partner with hyperscalers first. "If they like what you have, they're willing to pay millions of dollars for the next few years." On resilience: "Nine of the 10 companies I invest in, halfway they change their business plan because market has changed." He looks for founding teams, not solo founders, and co-investors who've survived near-bankruptcy together.
 
-Lambda's differentiation: software that lets customers spin up anywhere from 16 to 4,000 GPUs through a web interface — most competitors max out at 32 or don't offer it at all. Utilization is the key variable; every point gained is a direct multiplier on returns from the underlying capital.
+His 10-year goal for Intel: a 10x return for shareholders. At Cadence, he delivered 76x.
 
-https://www.youtube.com/watch?v=0NttU4CbyVs
+https://www.youtube.com/watch?v=asCgCv2XB4s
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
