@@ -1,69 +1,61 @@
-AI Builders Digest — June 23, 2026
+*AI Builders Digest — June 24, 2026*
+
 
 *X / TWITTER*
 
-*Vercel CEO Guillermo Rauch*
-Two sharp takes: his most-quoted line of the day — _"Coding agents will squeeze every ounce of IKEA effect out of you, if you let them"_ — is a warning that over-relying on agents erodes your sense of ownership over what you're building. He also celebrated a deep performance pass on a site where everything touchable was optimized: painting, layout, WebGPU shaders, blocking scripts, every frame scrutinized. Lessons learned will be published as a public guide.
-- <https://x.com/rauchg/status/2068778558672273422|Coding agents & the IKEA effect>
-- <https://x.com/rauchg/status/2068838709517336756|Performance deep-dive>
+*Swyx* (affiliated with Cognition, AI Engineer, Temporal, and Latent Space Pod)
+Swyx pushed back on conventional wisdom about xAI's go-to-market, arguing SpaceX has already recouped roughly half its Cursor investment through compute deals — with the other half contingent on Composer 3. His contrarian point: no other company is simultaneously a leading model lab and neocloud with GPU supply fully planned for both upside and downside training scenarios.
+https://x.com/swyx/status/2069301071965741388
 
-*Box CEO Aaron Levie*
-Two big-picture structural takes. First: agents will consume software 100x more than humans ever did — a single agentic query could pull more data than a user touches in a month, making CRM data, documents, and corporate knowledge far more valuable in a headless world. Platforms that build toward that model win. Second: Sakana's Fugu model — a mixture-of-models system that routes tasks to the best expert model under a single API — is already how leading applied AI products build agent harnesses, and the routing layer will accrue massive value as both frontier and OSS models multiply.
-- <https://x.com/levie/status/2068851573175021864|Agents use software 100x more than people>
-- <https://x.com/levie/status/2068917230570795178|Fugu and the value of routing>
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
+Announced "Let's Patch The Planet" — OpenAI's new push on AI-powered cyber defense, including updates to Codex Security and the launch of GPT-5.5-Cyber. Framed as "a day of celebration for cyber defense acceleration."
+https://x.com/thsottiaux/status/2069152290326630518
 
-*YC President & CEO Garry Tan*
-Tan's thesis: AGI gives you the intelligence, but you still have to collect your personal context to get the real unlock. Personal brain and company brain context is the underestimated advantage at the dawn of usable AGI — which is why he built and open-sourced GBrain.
-- <https://x.com/garrytan/status/2068701356358308112|Personal context is the unlock>
-- <https://x.com/garrytan/status/2068701357696323769|Why he open-sourced GBrain>
+*Peter Yang* (practical AI educator, 150K+ newsletter readers)
+Called out a real UX gap: even after reading the docs, he still doesn't understand what Claude Code's Dynamic Workflows are or when to use them — a signal that a high-capability feature may be leaving potential users behind.
+https://x.com/petergyang/status/2069267139576693028
 
-*Thibault Sottiaux (Codex & ChatGPT at OpenAI)*
-The Codex PM is running two open feedback loops simultaneously: what's not delightful in the Codex app (3,380 replies and counting), and how users think about banking vs. burning usage resets now that Codex lets them roll over. A rare public window into where the product team is actively listening.
-- <https://x.com/thsottiaux/status/2068736857312198928|What should we improve in Codex?>
-- <https://x.com/thsottiaux/status/2068792010715324444|Hoarder or burner? Usage resets poll>
+*Guillermo Rauch* (Vercel CEO)
+Two product drops: Claude Design output can now be deployed to Vercel in one click (https://x.com/rauchg/status/2069219190834127276), and WebSocket + socket.io are now fully supported on Vercel across CDN and Fluid — described as "a special full circle moment" for the platform.
+https://x.com/rauchg/status/2069109057433035171
 
-*Ryo Lu (Designer at Cursor)*
-Cursor's design lead shipped Books — an epub reader inside ryOS — starting in Cursor mobile, then hand-tuning animations and textures until things felt right. Supports any epub file and syncs reading progress with a ryOS account.
-- <https://x.com/ryolu_/status/2068923971136098633|Building Books in ryOS>
-- <https://x.com/ryolu_/status/2068924375341179347|Works with any epub, syncs progress>
+*Aaron Levie* (Box CEO)
+Made a strong case for evals as the defining enterprise competency of the AI era: _"Almost all AI model and agent progress is downstream from evals... The companies that are able to best understand their own workflows and how well agents participate in that work will be in the best position to actually drive real automation."_ Separately, Box now supports previewing, editing, versioning, and securely sharing HTML content — purpose-built for working with agent-generated artifacts.
+https://x.com/levie/status/2069228335255949775
+https://x.com/levie/status/2069140445205348432
 
-*Peter Steinberger (OpenClaw + OpenAI)*
-Two takes: (1) OpenClaw is having its strongest week ever despite the hype dying down — the team improved quality, structured as a non-profit while VC-funded competitors have other agendas, and the numbers are proving it out. (2) He was skeptical about multi-model routing from the start and feels validated in that skepticism.
-- <https://x.com/steipete/status/2068961217524490739|OpenClaw's strongest week>
-- <https://x.com/steipete/status/2068960117253632160|Skeptical on multi-model routing>
+*Ryo Lu* (Design at Cursor)
+Shared her talk from Cursor Compile on how to build in the age of AI and what fundamentally doesn't change. Worth watching for anyone thinking through design principles in the AI-native era.
+https://x.com/ryolu_/status/2069218497272717661
 
-*Zara Zhang (Builder)*
-A practical anti-slop rule of thumb: your input (context) should be 3–5x longer than the output. If your input is shorter than the output, you're almost certainly getting slop. The key distinction: it's about _context_, not prompt length.
-- <https://x.com/zarazhangrui/status/2068923768500793603|Input length rule of thumb for AI quality>
+*Zara Zhang* (Builder, creator of the Frontend Slides skill)
+Published an 11-minute walkthrough of her Frontend Slides skill (22k+ stars on GitHub), covering: how to create beautiful HTML presentations with Claude Code, how she built and published the skill, how to embed images and video in slides, and lessons learned. YouTube link in her tweet.
+https://x.com/zarazhangrui/status/2069311440692072481
 
-*Nan Yu (Head of Product at Linear)*
-Yu riffed on what it actually takes to ship high-quality software: _"Quality is irrational"_ — it takes an irrational commitment to constantly choose quality, and an irrational level of self-belief that controlling things top-to-bottom beats reaching for common frameworks.
-- <https://x.com/thenanyu/status/2068778750800531640|"Quality is irrational">
+*Peter Steinberger* (OpenClaw + OpenAI)
+Amplified OpenAI's "Patch the Planet" cyber defense initiative.
+https://x.com/steipete/status/2069132838356840857
 
-*Peter Yang (AI content creator, 150K+ readers)*
-Shared a builder insight from liu8in: HTML is the LLM's native language for agentic video making. Agents have no visual intelligence on their own, but LLMs can express visual aesthetics through HTML, CSS, and JavaScript with footage and assets layered on top. Example use case: generating a product video from any website URL.
-- <https://x.com/petergyang/status/2068755908319236338|HTML as the foundation for agentic video>
-
-*Swyx (AI builder, Latent Space co-host)*
-While shopping for insurance for a new "New Media Lab" creative studio, Swyx stumbled on a notable market-share signal: Corgi, the insurance startup, apparently has ~100% penetration across his real estate broker's entire client base. He called it "unheard of" for the insurance industry.
-- <https://x.com/swyx/status/2068924451887129055|Corgi's greenfield market share>
+*Sam Altman* (OpenAI CEO)
+Announced GPT-5.5-Cyber — _"state of the art performance on CyberGym"_ — alongside Patch The Planet and Codex Security. Framed as OpenAI's broader push to help all companies improve their security posture, working with the US government and the security ecosystem.
+https://x.com/sama/status/2069121360744550796
 
 
 *PODCASTS*
 
-*Training Data — "Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness"*
+*AI & I by Every — How Anthropic Uses Claude Fable 5 With Mike Krieger*
 
-*The Takeaway:* The agent harness you're building today will be absorbed directly into the model within 12 months — and the alpha will move somewhere else entirely.
+*The Takeaway:* The most productive AI workflow isn't turn-by-turn prompting — it's setting up long-horizon tasks with the right context and trusting the model to see them through overnight.
 
-Logan Kilpatrick runs Google AI Studio and the Gemini API at Google DeepMind. Over the last year he's watched Google's internal AI strategy consolidate around a single new through line: not Gemini, but *Antigravity* — Google's agent harness ecosystem that bundles an IDE, CLI, SDK, and web experience together. The same harness powering coding in AI Studio now powers agent capabilities in Search, the Gemini app, and Google Cloud. Coding, it turns out, proved to be the general-purpose agent harness.
+Mike Krieger, Head of Anthropic Labs and co-founder of Instagram, has been using Fable 5 in daily builder mode for months. His core insight: Fable has crossed a threshold where it earns genuine delegation — not just task assistance. He describes setting up complex overnight sessions, going to bed, and waking up to finished, documented work. When a remote service went down mid-task, Fable scaffolded a temporary backend, documented it, and planned to reconnect when the service came back online. No human intervention required.
 
-His most contrarian claim: what the industry calls "the model" is no longer just a set of weights. It's an expanding system built around those weights — tool calling, hosted search, code execution, and the agent harness itself. Scaffolding gets built externally first, then the model absorbs it. _"The scaffolding is oftentimes a couple of steps ahead of what is baked directly into the model, and then what ends up happening is the model eats that scaffolding and it becomes part of the native model system."_ His read: the current harness-as-alpha moment has maybe 12 months left before models just do it natively.
+What makes Fable different from prior models isn't just raw capability — it's system awareness. It'll remind you that you forgot to turn on a feature flag, flag upstream contract changes that affect downstream code, and push back on code review feedback rather than accepting it reflexively: _"I see what you mean, but I'm actually going to push back. I think that's not right."_ Krieger sees that judgment as the real step change.
 
-On Google's pace of agentic adoption: deliberately slow, by design. With 13 billion-user products, stewardship matters. Most of Google is still crawling on the agentic scale — Gemini app and Antigravity are the frontier exceptions. The Windsurf acquisition happened specifically because you can't build a great coding model without a real product generating long-running agentic training signal. Google also has 100,000+ engineers dogfooding Gemini and filing feedback — that scale is a competitive advantage few can replicate.
+On cost, Krieger reframes the math: _"Measuring cost has gotten so multifaceted now because there's the per-turn cost. And then there's what did it cost you not to just do the task, but complete the task to your satisfaction?"_ Fable's completeness means fewer follow-up turns — and that changes the real economics.
 
-On where narrow superintelligence lands next after coding: math, finance, and science — domains with strong verifiability. He frames the broader trajectory as _"jagged superintelligence"_ — vertical capability peaks appearing in specific domains before general AGI arrives.
+He also covers verification loops (screenshot galleries and video captures fed back to Claude to catch animation jank), how Anthropic engineers now maintain dashboards tracking parallel Claude Code sessions and pull requests awaiting review, and why multiplayer AI collaboration — multiple humans and multiple Claudes working a shared project — is the underexplored next frontier.
 
-<https://www.youtube.com/watch?v=cMAs8z2dehs>
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
