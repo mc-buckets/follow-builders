@@ -1,74 +1,91 @@
-AI Builders Digest — June 27, 2026
+*AI Builders Digest — June 28, 2026*
+
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) shared data showing that the Codex App's February 2nd release drove adoption well beyond engineering teams at OpenAI — with a chart showing the inflection point clearly. He followed up by calling a recent Codex update "fantastic" and posted "Codex for everything at OpenAI," suggesting company-wide rollout.
-- <https://x.com/thsottiaux/status/2070205719501254860|Feb 2nd drove adoption outside engineering>
-- <https://x.com/thsottiaux/status/2070205520552886305|Codex for everything at OpenAI>
-- <https://x.com/thsottiaux/status/2070343597111812414|"It's a fantastic update">
+*Sam Altman — OpenAI CEO*
+Altman announced two model updates in quick succession: the 5.5 instant model used in ChatGPT got a refresh ("I like its vibes"), and GPT-5.6 dropped with the team having "cooked, spicily." He also teased that all-you-can-eat tokens are in the works, though not quite there yet.
+- <https://x.com/sama/status/2070612055225483692|5.5 instant model update>
+- <https://x.com/sama/status/2070614666288795703|GPT-5.6 announcement>
+- <https://x.com/sama/status/2070614769678393846|on unlimited tokens>
 
-*Peter Yang* (AI tutorial creator) used Codex to autonomously browse Google Flights and individual hotel websites, gather prices, and compile direct booking links for a Japan trip — then quipped he should "just tell it to book everything next." He also predicted identity verification is coming to model access, calling a recent example "pretty insane but not surprised."
-- <https://x.com/petergyang/status/2070353698140958818|Codex booking Japan trip research>
-- <https://x.com/petergyang/status/2070352201944625405|Identity verification coming to model access>
+*Dan Shipper — Every CEO*
+Shipper sounded the alarm on GPT-5.6 Sol: by U.S. government directive, access is currently limited to roughly 20 pre-approved companies — and Every isn't on the list. He supports some government oversight but argues forcefully that democratic access to frontier models is critical for American workers, students, and independent builders. "A world where advanced models are locked up only for use by the employees of AI giants and a select few companies is one where ambitious students, independent builders, and working professionals are denied the tools they need to learn, create, and compete to their fullest potential." He says OpenAI and the government are working toward broader access soon.
+- <https://x.com/danshipper/status/2070554118146412979|full post>
 
-*Thariq* (Claude Code at Anthropic) teased upcoming discussions about "Claude Tag," including a session with Peter Yang and a talk at AI Engineer (AIE). He also noted the video he shared was edited by Claude.
-- <https://x.com/trq212/status/2070238581147455842|Claude Tag announcement>
-- <https://x.com/trq212/status/2070238932621811713|Video edited by Claude>
+*Garry Tan — Y Combinator President & CEO*
+Tan fired off a sharp critique of how GPT-5.6 was released, calling it "no way to release a model" and warning that continued releases this way will "salt the ground and kill all innovation by small startups." He also amplified a thread on the dangers of building a "mid startup."
+- <https://x.com/garrytan/status/2070699046939820223|on the model release approach>
+- <https://x.com/garrytan/status/2070494207102595495|don't be a mid startup>
 
-*Amjad Masad* (CEO at Replit) teased "major updates" to Replit's mobile app coming soon.
-- <https://x.com/amasad/status/2070199548694437957|Major mobile app updates coming>
+*Aaron Levie — Box CEO*
+Levie is bullish on GPT-5.6: "Going to be very strong for knowledge worker tasks that require heavy tool use and long running agents doing work. We're not hitting any walls in AI progress right now."
+- <https://x.com/levie/status/2070563281916620895|on GPT-5.6>
 
-*Guillermo Rauch* (CEO at Vercel) highlighted three things: Next.js's new "Ways to fix this" error UI with "Copy prompt" buttons, which he called "a work of (agentic) art"; a post on how Vercel imbues coding agents with their design standards; and the stat that Grok Imagine Video now accounts for ~50% of videos generated through Vercel AI Gateway.
-- <https://x.com/rauchg/status/2070243120546218000|Next.js "Copy prompt" error UI>
-- <https://x.com/rauchg/status/2070241572416078161|Imbuing coding agents with design standards>
-- <https://x.com/rauchg/status/2070215849970119090|Grok Imagine Video at ~50% of Vercel AI Gateway video>
+*Peter Yang — AI educator*
+Yang raised three sharp questions. He laid out the troubling logic of frontier model gating: publish → get distilled into cheap open source → US companies adopt open source → gate frontier access → US companies innovate less. He also observed that money is flowing to services (with software bundled), not pure-play software — "people want outcomes, not tools." And he dropped a Claude Code UX wishlist: restore mid-task conversation steering, make mobile remote control default-on, fix hotkey accessibility outside submenus, and allow project drag-and-drop in the nav.
+- <https://x.com/petergyang/status/2070633838146134219|on frontier model gating>
+- <https://x.com/petergyang/status/2070568705365577990|on services vs. software>
+- <https://x.com/petergyang/status/2070545325497221248|Claude Code wishlist>
 
-*Aaron Levie* (CEO at Box) wrote two long analyses on AI regulation, arguing it's a prisoner's dilemma at scale. His core point: if only the US slows model releases while China doesn't, the US loses its geopolitical edge even if individual models are stronger. He also flagged that open weights become the clear winners if regulation extends only to closed models, as sovereign AI strategies worldwide will likely build on open foundations. "None of this is as simple as it looks."
-- <https://x.com/levie/status/2070370225271251161|AI regulation as prisoner's dilemma>
-- <https://x.com/levie/status/2070310706369712272|De facto AI regulation implications>
+*Thibault Sottiaux — OpenAI (Codex & ChatGPT)*
+Sottiaux announced a complimentary usage reset for all Codex users following an unspecified incident. The investigation hasn't shown large-scale user impact, but monitoring is ongoing.
+- <https://x.com/thsottiaux/status/2070653282440405046|announcement>
 
-*Garry Tan* (President & CEO at Y Combinator) called Legora "the defining legal AI startup."
-- <https://x.com/garrytan/status/2070174023678648673|Legora is the defining legal AI startup>
+*Guillermo Rauch — Vercel CEO*
+Rauch wrote about why agents are uniquely hard to debug: non-deterministic model outputs compounded by the complexity of distributed systems — multiple API calls, sandboxes, rate limits that can fail at any step. He called out observability as a key priority for Vercel's AI stack. He also declared: "The UI for AI is here. It's shadcn."
+- <https://x.com/rauchg/status/2070676383135834334|on agent observability>
+- <https://x.com/rauchg/status/2070567538040422712|on shadcn as the UI for AI>
 
-*Zara Zhang* (builder) pushed back on the idea that audience-building is separate from company-building: "Storytelling (to users/customers, investors, candidates) is arguably the founder's most important job. Building is getting cheaper, attention is getting more expensive."
-- <https://x.com/zarazhangrui/status/2070188279941738952|Building an audience = building a company>
+*Swyx — AI engineer, Latent Space podcast host*
+Swyx took over a new media lab in San Francisco — envisioned as a "third place to make" and "finishing school for technical storytellers." Surprise: it came with a datacenter rack already wired up. He's also co-organizing the first-ever AI FDE (Field Deployment Engineer) miniconference, noting that with both OpenAI and Anthropic launching multi-billion dollar services arms, FDE is "one of the most in-demand disciplines on earth."
+- <https://x.com/swyx/status/2070748857441362056|media lab announcement>
+- <https://x.com/swyx/status/2070606851377672675|FDE miniconference>
 
-*Dan Shipper* (CEO at Every) shared a referral for an a16z-backed stealth NYC health-tech company doing AI-first medicine with physical clinics — and notably, they're hiring a "Codex-native Chief of Staff/BizOps lead," a job title that wouldn't have existed a year ago.
-- <https://x.com/danshipper/status/2070158469173256231|Hiring a Codex-native Chief of Staff>
+*Cat Wu — Anthropic (Claude Code + Cowork)*
+Wu highlighted split screen as one of her favorite Claude Code desktop features.
+- <https://x.com/_catwu/status/2070613405237432766|split screen post>
 
-*Aditya Agarwal* (GP at South Park Commons, ex-CTO at Dropbox) shared a blunt take: starting a pure software company is "stupidly hard" right now. Customers don't want software — they want outcomes. Anything horizontal is on a ticking clock, every customer wants deep customization, and success requires "a very heretical 2–3 year view of the world."
-- <https://x.com/adityaag/status/2070179913647485344|Pure software startups are stupidly hard now>
+*Aditya Agarwal — South Park Commons General Partner*
+The former Dropbox CTO and early Facebook engineer shared an unexpected social side effect of AI: he now has zero tolerance for shallow human interactions and craves deeper connection. His prediction: the world becomes both smaller and richer in relationship depth — agents handle everything else.
+- <https://x.com/adityaag/status/2070621064271688021|on AI and human connection>
 
-*Matt Turck* (VC at FirstMark Capital, MAD Podcast host) promoted his conversation with Cloudflare CEO Matthew Prince as "deep, insightful and often funny." (See podcast summary below.)
-- <https://x.com/mattturck/status/2070201854932250949|Cloudflare CEO podcast>
+*Nikunj Kothari — FPV Ventures Partner*
+Kothari pushed back on "AI has no taste" criticism: most critics have never built anything. Real taste comes from iteration — like a chef cooking a hundred dishes before the 101st one carries all the lessons. He believes AI has a genuine shot at developing taste over time. He also shouted out seed founders building in "not-so-hot" categories.
+- <https://x.com/nikunj/status/2070649602953576825|on AI taste>
+- <https://x.com/nikunj/status/2070532689392980369|for seed founders in unglamorous categories>
 
-*Swyx* (AI Engineer community builder, Latent Space): No notable AI-substantive posts today.
+*Peter Steinberger — OpenClaw + OpenAI*
+Steinberger vented a familiar developer frustration: Apple notarization breaks multiple times a year, forcing manual logins to accept new legal agreements. Nearly 1,000 likes says he's not alone.
+- <https://x.com/steipete/status/2070626638887555227|on Apple notarization>
 
-*Nikunj Kothari* (partner at FPV Ventures): No notable posts today.
+*Nan Yu — Linear Head of Product*
+Yu proposed a "Secret level 6" to problem-solving frameworks: recognize when a problem isn't worth solving and leave it alone. His take: orgs full of people who know when _not_ to act win by avoiding side quests.
+- <https://x.com/thenanyu/status/2070656348488937889|on knowing when not to solve>
 
-*Peter Steinberger* (OpenClaw, OpenAI): No notable posts today.
+*Zara Zhang — Builder*
+Zhang recommended Borumi as an underrated video recording and editing tool — "Screen Studio + Descript + CapCut all in one." She also noted, wryly: "You do not need God to write your emails."
+- <https://x.com/zarazhangrui/status/2070584764315402405|on Borumi>
+- <https://x.com/zarazhangrui/status/2070589563429691698|on AI for email>
 
-*OFFICIAL BLOGS*
-
-*Claude Blog — "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"*
-
-Anthropic is releasing a Swift package that lets Apple developers use Apple's Foundation Models framework to call Claude for complex tasks. The framework already handles fast on-device work — summarization, extraction, generating journaling prompts — and now developers can hand off to Claude when a request needs multi-step reasoning, code generation, or live web search. Because Apple's framework returns typed Swift values via `@Generable` annotations, inputs arrive at the Claude API call already clean, with no raw text parsing needed. Claude can also execute code for data analysis and stream responses directly into SwiftUI views. Compatible with iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
-<https://claude.com/blog/claude-for-foundation-models|Read the full post>
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face"*
+*No Priors — "Why Traditional Benchmarks Fail Modern AI Models with OpenAI Research Scientist Noam Brown"*
 
-*The Takeaway:* Bot traffic now outnumbers human traffic on the internet — a milestone Cloudflare expected to hit in late 2027, then revised to early 2027, until it quietly happened in the first half of 2026.
+<https://www.youtube.com/watch?v=AZrU6y3pUcU>
 
-Cloudflare CEO Matthew Prince joined Matt Turck to walk through the shifts reshaping the internet. Cloudflare sits in front of a significant share of global traffic, giving Prince a uniquely data-rich vantage point. A few years ago bots were ~20% of internet traffic; they're now the majority — and Prince expects a 1,000:1 bot-to-human ratio within five years. The driver: AI agents doing work that used to require a human. Where a person shopping for a camera might visit 5 sites, an agent visits 5,000.
+*The Takeaway:* Current AI benchmarks are fundamentally broken because they treat model capability as a fixed number rather than a function of compute budget — with serious implications for both product comparisons and AI safety.
 
-The business implications are profound. *"Bots don't click on ads."* The ad-based model that funded 28 years of the internet won't survive this transition. Prince is betting on micropayments — a system where every agent-initiated request triggers a small payment to content creators — but acknowledges the scale challenge is enormous: Visa handles under 100,000 transactions per second, and Cloudflare would need to support 10–100 million per second at launch.
+Noam Brown is an OpenAI Research Scientist who pioneered inference-time scaling — the idea of letting models "think longer" to get better answers, first proven in poker AI and now central to every frontier model. His core argument: the benchmark grid everyone publishes (one number per benchmark per model) is misleading because it doesn't control for how much compute goes in.
 
-On Cloudflare's AI infrastructure bet: Workers (lightweight compute built around browser-tab-style isolates), AI Gateway (an auditing and cost-routing layer for LLM calls), and edge inference are all products built for Cloudflare's own operational needs that became customer products. The through line: _"Create these really thorny hard technical problems, solve them for ourselves and then in the process that builds what really drives the business going forward."_
+GPT-5.5 is the clearest example. On the standard grid it looked only marginally better than 5.4. But 5.5 is dramatically more compute-efficient — it reaches better answers with less thinking time. Once you normalize for compute budget, it's a substantial jump. The right way to evaluate models now: plot performance as a function of tokens, cost, or time — not a single number. "If you give it a budget of $10,000, it can do a lot more than what it can do with a budget of $10. Give it a budget of $10,000,000, it can do even more. And so at what budget should you evaluate these models? The policies that exist today don't really address that question."
 
-On the workforce reset: Cloudflare cut more than 20% of its team — not because the business struggled, but because middle management and "measuring" roles were shrinking. Prince's argument for moving early: the job market will flood in 6–12 months when every other company does the same thing. He offered unusually generous severance, kept vesting running, and called waiting "chicken shit."
+This problem runs deeper on the safety side. Preparedness frameworks and responsible scaling policies were built in the ChatGPT era, before test-time scaling existed. A model that appears safe at a $10 budget may not be at $10 million — and current policies largely ignore this question.
 
-<https://www.youtube.com/watch?v=UN47z_opfmo|Watch on YouTube>
+On the bigger picture: Brown is skeptical of an overnight intelligence explosion. Because unlocking maximum capability requires massive test-time compute, time itself becomes the bottleneck — no sudden discontinuous jump. He sees AI as gradually transforming what researchers do rather than replacing them. Models still lack "research taste" — they can optimize existing algorithms 1,000x but can't yet invent novel ones.
+
+One striking data point: OpenAI used an internal model to disprove the Erdős unit distance conjecture — a decades-old open math problem — "at a budget that was dirt cheap." With some scaffolding, GPT-5.5 can reportedly reach the same result. Nobody knew because nobody had tried putting serious compute toward it. His parting advice: stop trusting benchmark grids, and if you wrote off AI after a bad 2023 experience, revisit — the gaslighting problem is largely fixed.
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
