@@ -1,62 +1,47 @@
-*AI Builders Digest — July 5, 2026*
+*AI Builders Digest — July 6, 2026*
 
 
 *X / TWITTER*
 
-*Swyx* (AI engineer, Latent Space / Cognition / dx.tips)
-The tools-for-thought crowd spent a decade building beautiful, polished canvas UIs — and got completely beaten by low-contrast, barely designed CLIs that actually do the thinking for you. The irony is sharp and his take is blunt. <https://x.com/swyx/status/2073220591684096087|tweet>
+*Thibault Sottiaux, Codex & ChatGPT PM at OpenAI* — crowdsourced a sharp question directly to users: "What is something that you feel is surprising that Codex still can't do well and we should have gotten right a while ago?" — 1,969 replies poured in. Also shared a funny interaction with an AI (Sol) that insisted on tracking a "332-salute debt" after some emoji math, closing with: "The salute economy is ruthless."
+- <https://x.com/thsottiaux/status/2073551549494596079|Codex feedback thread>
+- <https://x.com/thsottiaux/status/2073554978053005607|Salute economy>
 
-*Nan Yu, head of product at Linear*
-Three observations landed in quick succession. Tailwind being adopted by the company that created Bootstrap is being called a decisive win for utility-first CSS. <https://x.com/thenanyu/status/2073194274435317767|tweet> More contrarian: "if your field doesn't produce good training data it was probably full of crap to begin with" — a pointed take on which industries AI will actually transform. <https://x.com/thenanyu/status/2073070255031615877|tweet> On AI in healthcare: the best scenario isn't AI replacing doctors, it's a doctor who spends real time with you while using LLMs to do it better. <https://x.com/thenanyu/status/2073066919200956793|tweet>
+*Cat Wu, Claude Code & Cowork PM at Anthropic* — praised Claude Fable 5 for proactively applying propensity score matching in a retention analysis without being asked — matching users on activity levels for a fair like-for-like comparison. "It's exciting to see Fable 5's improved judgment across all of its work, from writing emails and docs in Cowork to debugging complex errors in Claude Code."
+<https://x.com/_catwu/status/2073439890482794966|Tweet>
 
-*Cat Wu, Claude Code & Cowork at Anthropic*
-A useful tip: you can use Claude Code with computer use to automatically set up Claude Tag — just point it at the Claude Tag docs and it will connect your team's GitHub repo, data warehouse, Google Drive, and other data sources for you. <https://x.com/_catwu/status/2073149354412822738|tweet> She's also collecting Fable 5 weekend demo builds from the community. <https://x.com/_catwu/status/2073147672106873001|tweet>
+*Guillermo Rauch, Vercel CEO* — shared an animated visualization of the token spend race from Vercel AI Gateway, which aggregates trillions of tokens from millions of developers monthly. Key observations: Anthropic's dominance, fluctuations among labs, and the rise of open-weight AI.
+<https://x.com/rauchg/status/2073563586270781674|Token spend race>
 
-*Thariq, Claude Code at Anthropic*
-Shared a thread from his AI Engineer (AIE) talk on working effectively with Fable. His core insight: the most important part of working with an AI model is discovering your own unknowns so you can prompt it better. He shared examples of HTML artifacts purpose-built to surface what you don't know you don't know. <https://x.com/trq212/status/2073101078145724589|thread> See examples here: <https://x.com/trq212/status/2073101079877943683|tweet>
+*Nan Yu, Head of Product at Linear* — riffed on AI coding accountability: "If you drop every production table does the model get fired or do you get fired." Separately made a sharp point about code review in the AI era — you find bugs by using the product and trying to break it, not by reading code. Code review is now about architecture and API design, not bug hunting.
+- <https://x.com/thenanyu/status/2073410944969932877|Model accountability>
+- <https://x.com/thenanyu/status/2073410299680428445|Bug-finding philosophy>
 
-*Replit CEO Amjad Masad*
-Video generation is now live on Replit. <https://x.com/amasad/status/2073003971287863717|tweet>
+*Peter Steinberger, OpenClaw co-founder (OpenAI)* — teased an upcoming OpenClaw feature that shows users exactly when their Claude token resets expire, helping them time usage to maximize value.
+<https://x.com/steipete/status/2073482942513565713|Tweet>
 
-*Vercel CEO Guillermo Rauch*
-Pushing the concept of agentic self-improvement: give your agent the ability to introspect its own past runs, spot inefficiencies, errors, and redundant tool calls, and generate improved prompts and skills from that analysis. He notes that built-in agent observability on Vercel is designed for exactly this feedback loop. <https://x.com/rauchg/status/2073132174958841887|tweet>
 
-*Box CEO Aaron Levie*
-A long and substantive thread: the AI wars are becoming a battle for context. The real moats aren't at the model layer — they're in the applied AI layer that organizes domain knowledge, governs access, routes intelligently between frontier and lower-cost models, and handles the change management that actually gets agents into customer workflows. "The applied AI layer has a lot more value than just being an LLM wrapper. The ability to organize the critical knowledge for the work being done, and maintain this knowledge in a governed way... is critical." Domain-specific post-training of near-frontier base models also gets a mention as a cost and performance play for specific task types. <https://x.com/levie/status/2073138135014502777|thread>
+*OFFICIAL BLOGS*
 
-*YC President & CEO Garry Tan*
-Specialist wait times are going up at exactly the moment AI is about to change everything in healthcare. His expectation: AI will bring quality of care up 100x, and not a moment too soon. <https://x.com/garrytan/status/2073053799791710301|tweet>
+*Claude Blog: "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"*
 
-*Zara Zhang, builder*
-A sharp market observation: people are getting less willing to pay for tools now that they can build them with coding agents. What they'll still pay for is "the feeling of hiring expertise they don't have." <https://x.com/zarazhangrui/status/2073295900395606401|tweet>
-
-*Nikunj Kothari, partner at FPV Ventures*
-A rare positive take on Gemini from one of its vocal critics: it remains the only place where a single API key covers Flash (fast/cheap/long-context), Nano (world-class images), real-time audio/video, search with grounding, and more — making it the default for many of his side projects. <https://x.com/nikunj/status/2073151491557478883|tweet> Also floated a pattern worth noticing: Anthropic seems to drop major models right before long weekends — Opus 4.5 before Thanksgiving, Fable 5 before July 4th — giving the masses time to tinker and go deep into "token anxiety." <https://x.com/nikunj/status/2073071325644816440|tweet>
-
-*Peter Steinberger, OpenClaw*
-Practical tip: if you think Codex falls short on design work, try prompting it with "use imagegen to re-imagine this design and implement that." <https://x.com/steipete/status/2073277317464682723|tweet> Also fed Fable 80,000 of his own tweets so it could roast him even harder. <https://x.com/steipete/status/2073295890857758810|tweet>
-
-*Dan Shipper, CEO of Every*
-Pushed back on claims that Fable 5 is a different model than Claude: it's the same model, but falls back to Opus 4.8 slightly more often, so benchmarks are measuring a blend of both. "Skill issue." <https://x.com/danshipper/status/2073097796941484486|tweet> Also shared Every's Fable 5 prompt library. <https://x.com/danshipper/status/2073077325520838993|tweet> And put context window scale in perspective: "A new personal iOS app working end to end: 5M tokens / Your whole prod bug backlog cleared: 20M tokens / Unnecessarily detailed responses to every single unread email, Slack, and text message: 30M tokens / Fable working for you while you're at the pool: Priceless." <https://x.com/danshipper/status/2073076447992746379|tweet>
+Anthropic released a Swift package that integrates Claude into Apple's Foundation Models framework, letting iOS/macOS developers call Claude directly from Swift. Apple's framework already handles fast on-device tasks (summarization, extraction) in 3 lines of code — the new package hands off to Claude when a request needs multi-step reasoning, code generation, web search, or code execution. Because Apple's framework returns typed Swift values via @Generable annotations, developers arrive at the Claude API call with clean, structured inputs rather than raw user text. Works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
+<https://claude.com/blog/claude-for-foundation-models|Read the full post>
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro*
+*The MAD Podcast with Matt Turck: "Cloudflare CEO: The Internet's Business Model Is Dead"*
 
-_The Takeaway:_ NVIDIA doesn't build frontier AI models to compete with Anthropic or OpenAI. It builds them because the only way to design chips that run AI well is to understand AI deeply from the inside — and giving those models away is simply good ecosystem strategy.
+*The Takeaway:* Bot traffic has already overtaken human traffic on the internet in 2026 — and the 28-year-old advertising model powering the web can't survive bots that don't click ads.
 
-Bryan Catanzaro leads Nemotron, NVIDIA's family of open foundation models. He's been at this since 2008, when he published the first paper on training neural networks on GPUs at ICML and was told his work didn't belong there. He briefly ran NVIDIA's Silicon Valley AI Lab at Baidu alongside Andrew Ng — and was on the interview panel when a young Dario Amodei came in. "It was very clear that he learned extremely quickly and thought extremely deeply. The thing I admire most about Dario is the strength of his conviction." Today Catanzaro leads the applied research team behind Nemotron three Ultra, which just became the number one US open weights model.
+Matthew Prince, co-founder and CEO of Cloudflare, delivers a stark diagnosis: AI agents that make users 1,000x more efficient are also exposing how fragile internet economics really are. When an agent shops for a digital camera, it visits 5,000 sites instead of 5 — a thousand-fold surge in infrastructure demand with zero ad revenue to show for it. "Over the next five years, the business model of the Internet is gonna change radically."
 
-His case for open AI: every company is built around a secret — proprietary data, business models, regulatory constraints. Open models let companies build AI that's tightly integrated with those secrets in a way closed APIs can't fully support. "The value of AI is greater when it can be more tightly connected with those secrets."
+Prince sees Cloudflare positioned at the center of rebuilding that model. Cloudflare Workers — built originally out of internal necessity — is now the efficient compute layer for agentic workloads, using browser-style isolates instead of containers (potentially 40x more efficient). AI Gateway provides enterprises with audit trails, prompt guardrails, and intelligent model routing across providers. And on the monetization side, Cloudflare is working with Coinbase, Stripe, and the long-dormant HTTP 402 ("Payment Required") protocol to enable micropayments for AI bot access to content — targeting 10–100 million financial transactions per second, orders of magnitude beyond what Visa handles today.
 
-On Moore's Law: "It's been dead for years." When you can't shrink your way to performance anymore, you have to think from first principles. That's the whole point of accelerated computing, and why NVIDIA needs Nemotron — not as a commercial AI product, but as a research vehicle that informs Blackwell chip design. The team's work on hybrid SSM/attention architectures, mixture of experts, and multi-token prediction feeds directly back into hardware decisions. The NVL 72 interconnect — 72 GPUs reading and writing each other's memory at high speed — exists specifically because MoE routing is unpredictable and needs low-latency cross-GPU communication.
+On internal AI adoption: 93% of Cloudflare's R&D team uses AI coding tools. Prince cut 20%+ of the workforce — not for performance reasons, but because middle-management and measurement roles were made redundant. His warning is direct: mid-career professionals who resist AI tools are the most exposed. "You can't have one person who is 100 times as productive in the same role as somebody else making the same amount of money."
 
-Multi-token prediction is the most counterintuitive piece: the model speculatively generates several tokens at once, checks them on the next pass, and accepts the correct ones. The result is an accuracy-speed flywheel: "The more accurate your model is, the faster the inference is, the cheaper the inference is." That's not usually how compute-bound systems work.
-
-"A GPU is whatever NVIDIA says it is. We make them. A GPU is a thing that we make in order to accelerate the world's most important computations, which in 1995 was graphics. And for a long time now, it's been AI."
-
-https://www.youtube.com/watch?v=Oojrfdl42LI
+<https://www.youtube.com/watch?v=UN47z_opfmo|Watch on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
