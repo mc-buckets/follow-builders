@@ -1,47 +1,59 @@
-*AI Builders Digest — July 6, 2026*
+*AI Builders Digest — July 7, 2026*
 
 
 *X / TWITTER*
 
-*Thibault Sottiaux, Codex & ChatGPT PM at OpenAI* — crowdsourced a sharp question directly to users: "What is something that you feel is surprising that Codex still can't do well and we should have gotten right a while ago?" — 1,969 replies poured in. Also shared a funny interaction with an AI (Sol) that insisted on tracking a "332-salute debt" after some emoji math, closing with: "The salute economy is ruthless."
-- <https://x.com/thsottiaux/status/2073551549494596079|Codex feedback thread>
-- <https://x.com/thsottiaux/status/2073554978053005607|Salute economy>
+*Amanda Askell* — Anthropic philosopher and AI ethicist — shared a pointed observation that went viral (1,382 likes): getting a doctor to give you even a rough probability estimate is "one of life's unnecessary boss battles." Even begging for an interval-valued hunch proves nearly impossible. A small window into broader frustration with how experts resist quantifying uncertainty.
+<https://x.com/AmandaAskell/status/2073786264059625897|Tweet>
 
-*Cat Wu, Claude Code & Cowork PM at Anthropic* — praised Claude Fable 5 for proactively applying propensity score matching in a retention analysis without being asked — matching users on activity levels for a fair like-for-like comparison. "It's exciting to see Fable 5's improved judgment across all of its work, from writing emails and docs in Cowork to debugging complex errors in Claude Code."
-<https://x.com/_catwu/status/2073439890482794966|Tweet>
+*Cat Wu* — Claude Code and Cowork PM at Anthropic — shared a concrete workflow for sourcing job candidates: describe the role to Claude Code, kick off a dynamic workflow to find 100 candidates with LinkedIn, Twitter, blog, podcast links, and a one-line pitch each, have Claude email you an artifact, then lock the laptop and review the list on your phone later. A real demonstration of letting agents do the legwork end-to-end.
+<https://x.com/_catwu/status/2073806626965049686|Tweet>
 
-*Guillermo Rauch, Vercel CEO* — shared an animated visualization of the token spend race from Vercel AI Gateway, which aggregates trillions of tokens from millions of developers monthly. Key observations: Anthropic's dominance, fluctuations among labs, and the rise of open-weight AI.
-<https://x.com/rauchg/status/2073563586270781674|Token spend race>
+*Thariq* — Claude Code engineer at Anthropic — posted a wry riff on San Francisco tech culture: updating the phrase "God gave me a sign" to "I was acasually influenced by the ASI at the end of time to maximize EV for humanity."
+<https://x.com/trq212/status/2073956140610924936|Tweet>
 
-*Nan Yu, Head of Product at Linear* — riffed on AI coding accountability: "If you drop every production table does the model get fired or do you get fired." Separately made a sharp point about code review in the AI era — you find bugs by using the product and trying to break it, not by reading code. Code review is now about architecture and API design, not bug hunting.
-- <https://x.com/thenanyu/status/2073410944969932877|Model accountability>
-- <https://x.com/thenanyu/status/2073410299680428445|Bug-finding philosophy>
+*Nan Yu* — Head of Product at Linear — pushed back on two popular patterns. First: "Bragging about running 10 Claude code tabs is just theater." Second: the "real-time strategy game" model of managing AI agents is a dead end — AI that is ancient by current standards already out-micros human players to an extreme degree. Managing agents like an RTS commander is not the right mental model.
+<https://x.com/thenanyu/status/2073920959011074292|Tweet> · <https://x.com/thenanyu/status/2073920326304460847|Tweet>
 
-*Peter Steinberger, OpenClaw co-founder (OpenAI)* — teased an upcoming OpenClaw feature that shows users exactly when their Claude token resets expire, helping them time usage to maximize value.
-<https://x.com/steipete/status/2073482942513565713|Tweet>
+*Sam Altman* — OpenAI CEO — in a widely shared tweet (11K+ likes), compared his toddler putting two words together for the first time to GPT-5.6 discovering new math: "approximately equally amazed by both cognitive feats." Equal parts parenting milestone and a casual confirmation that GPT-5.6 is doing novel mathematical discovery.
+<https://x.com/sama/status/2073791666553844074|Tweet>
 
+*Garry Tan* — YC President and CEO, posting from Osaka — made two connected observations. Japan's 30 years of zero growth produced the world's best trains, service, and craft: "When you can't compete on more, you compete on better." He then connected it to the AI moment: "The real constraint on human wealth was never resources. It was good ideas for how to serve one another, and the leverage to act on them. We just deleted the leverage constraint for everybody. Now it's only the ideas."
+<https://x.com/garrytan/status/2073881438123110512|Tweet> · <https://x.com/garrytan/status/2073881439700168925|Tweet>
 
-*OFFICIAL BLOGS*
+*Dan Shipper* — CEO of Every — posted two jokes about Fable's ultracode mode. First: "me: change this button color / Fable: sure I just spun up a fleet of 100 agents to get that done for you." Then a follow-up showing Fable running in "make no mistakes" mode. Dry humor that captures real anxiety about agent overkill for simple tasks.
+<https://x.com/danshipper/status/2073764166700048480|Tweet> · <https://x.com/danshipper/status/2073894034225897602|Tweet>
 
-*Claude Blog: "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework"*
+*Nikunj Kothari* — Partner at FPV Ventures — questioned the standard VC pitch meeting format: still waiting for a founder who requires investors to have actually used the product and come with two pieces of feedback before getting a Zoom. "What alpha do you get from hearing the same story again?" He argues a product brainstorm or just getting to know each other would be far more productive than re-hearing a rehearsed deck.
+<https://x.com/nikunj/status/2073903310982218088|Tweet>
 
-Anthropic released a Swift package that integrates Claude into Apple's Foundation Models framework, letting iOS/macOS developers call Claude directly from Swift. Apple's framework already handles fast on-device tasks (summarization, extraction) in 3 lines of code — the new package hands off to Claude when a request needs multi-step reasoning, code generation, web search, or code execution. Because Apple's framework returns typed Swift values via @Generable annotations, developers arrive at the Claude API call with clean, structured inputs rather than raw user text. Works on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.
-<https://claude.com/blog/claude-for-foundation-models|Read the full post>
+*Zara Zhang* — developer and builder — resurfaced a Claude Code skill she built for understanding codebases, noting it is back in vogue now that code comprehension is a hot topic.
+<https://x.com/zarazhangrui/status/2073768913310200310|Tweet>
+
+*Peter Yang* — AI tutorial creator — is 1,500 subscribers away from 100K on YouTube, with his birthday on July 9. He's asking the community to help him hit the milestone before then.
+<https://x.com/petergyang/status/2073930836551032858|Tweet>
+
+*Matt Turck* — VC at FirstMark Capital — shared a humorous take on AI agent reliability with the caption: "when I ask my AI agent to 'make no mistakes.'"
+<https://x.com/mattturck/status/2073972907491865062|Tweet>
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck: "Cloudflare CEO: The Internet's Business Model Is Dead"*
+*No Priors — "Really Big Test-Time Compute in AI Changes Benchmarks, Safety and Research with OpenAI Research Scientist Noam Brown"*
 
-*The Takeaway:* Bot traffic has already overtaken human traffic on the internet in 2026 — and the 28-year-old advertising model powering the web can't survive bots that don't click ads.
+*The Takeaway:* AI benchmarks are fundamentally broken because they don't control for how much compute a model is given to think — and that same blind spot is quietly undermining safety evaluations across the entire industry.
 
-Matthew Prince, co-founder and CEO of Cloudflare, delivers a stark diagnosis: AI agents that make users 1,000x more efficient are also exposing how fragile internet economics really are. When an agent shops for a digital camera, it visits 5,000 sites instead of 5 — a thousand-fold surge in infrastructure demand with zero ad revenue to show for it. "Over the next five years, the business model of the Internet is gonna change radically."
+Noam Brown is an OpenAI Research Scientist and one of the original architects of inference-time scaling. His game-playing AI work (Pluribus, Libratus) proved years ago that thinking harder at inference time could beat the best human poker players in the world.
 
-Prince sees Cloudflare positioned at the center of rebuilding that model. Cloudflare Workers — built originally out of internal necessity — is now the efficient compute layer for agentic workloads, using browser-style isolates instead of containers (potentially 40x more efficient). AI Gateway provides enterprises with audit trails, prompt guardrails, and intelligent model routing across providers. And on the monetization side, Cloudflare is working with Coinbase, Stripe, and the long-dormant HTTP 402 ("Payment Required") protocol to enable micropayments for AI bot access to content — targeting 10–100 million financial transactions per second, orders of magnitude beyond what Visa handles today.
+His core argument: every model release comes with a "benchmark grid" showing performance as a single number. That number is meaningless without specifying the compute budget. GPT-5.5 looked only marginally better than 5.4 on paper — until people realized 5.5 is simply more efficient. At equal compute budgets, it is a substantial jump. The right way to present benchmarks is with an x-axis: tokens, cost, or time.
 
-On internal AI adoption: 93% of Cloudflare's R&D team uses AI coding tools. Prince cut 20%+ of the workforce — not for performance reasons, but because middle-management and measurement roles were made redundant. His warning is direct: mid-career professionals who resist AI tools are the most exposed. "You can't have one person who is 100 times as productive in the same role as somebody else making the same amount of money."
+The problem runs deeper than benchmarks. AI safety evaluations — the "responsible scaling policies" and "preparedness frameworks" labs use to check for dangerous capabilities — were designed before test-time compute scaling mattered. They ask what a model _can_ do, not what it can do with $10 million of inference budget. As Brown puts it: _"The capability of the model is a function of how much money you put into it, basically."_ No existing framework addresses what budget to test at.
 
-<https://www.youtube.com/watch?v=UN47z_opfmo|Watch on YouTube>
+Meanwhile, modern models can run useful agentic work for weeks. OpenAI's internal model disproved the Erdős unit distance conjecture — a long-standing math problem — at a relatively low compute budget. Brown estimates a general-purpose scaffold with $100K in compute could have done the same. Nobody had tried, because nobody had asked what $100K of inference gets you on GPT-5.5.
+
+On fast takeoff: Brown is skeptical of an overnight intelligence explosion. Time itself is the bottleneck. If unlocking full model capability requires massive inference compute, everything is rate-limited by how long the models can run. The researchers grinding at the frontier are the constraint — not a sudden recursive explosion.
+
+https://www.youtube.com/watch?v=AZrU6y3pUcU
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
