@@ -1,49 +1,100 @@
-AI Builders Digest — July 13, 2026
+*AI Builders Digest — July 14, 2026*
+
 
 *X / TWITTER*
 
-*Swyx* (AI engineer, affiliated with Cognition, Temporal, and AI Engineer World's Fair)
-Swyx argues that the Jevons paradox — where efficiency gains increase total demand rather than reduce it — extends far beyond software dev. As AI lowers the per-unit cost of knowledge work broadly, total demand for that work goes up, not down. His framing: what happened to coding isn't the exception, it's "the herald." The key multiplier is humans who can wield coding agents well — what he calls AI Engineers.
-<https://x.com/swyx/status/2076155833428431012|View tweet>
+*Claude AI (Anthropic's official account)*
+Anthropic extended Claude Fable 5 access on all paid plans and kept Claude Code's weekly rate limits 50% higher through July 19. Users can use up to half their weekly usage limit on Fable 5, then continue with usage credits or switch to another model to stay within limits.
+- <https://x.com/claudeai/status/2076351399999557669|Claude Fable 5 extended on all paid plans through July 19>
+- <https://x.com/claudeai/status/2076351401006154204|Usage limit details for Fable 5>
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
-Sottiaux highlighted GPT-5.6 Sol as addressing the top community complaints: it's now fast and token-efficient, strong at backend dev, and solid on frontend — and notably, it no longer reflexively reaches for useEffect. He also posted a step-by-step guide for running GPT-5.6 Sol inside Claude Code using a proxy alias called "claudex" via CLIProxyAPI, crediting Theo for the approach. About 5 minutes of setup via three env vars and a shell alias.
-<https://x.com/thsottiaux/status/2076145711922696371|View tweet (GPT 5.6 Sol improvements)>
-<https://x.com/thsottiaux/status/2076119366647894371|View tweet (claudex setup)>
+*Thibault Sottiaux (Codex & ChatGPT Work at OpenAI)*
+Sottiaux posted a transparency update for Codex and ChatGPT Work subscribers addressing several recent usage issues. Key points: inference optimizations are being passed to users (~10% more usage on GPT-5.6 Sol); a context size limit increase from 272k to 372k tokens was causing more usage to be charged than intended and has been reverted (proper rollout coming soon); reasoning effort experiments that changed internal "juice values" have been reverted; multi-agent overruns at high/xhigh reasoning effort are being fixed. The 5-hour limit also remains suspended for now. He separately confirmed GPT-5.6 Sol stays in all paid ChatGPT subscriptions (Go, Plus, Pro, Team, Edu) until a better model ships.
+- <https://x.com/thsottiaux/status/2076495156757577895|Full usage update for Codex and ChatGPT Work>
+- <https://x.com/thsottiaux/status/2076460408437887268|Subscription clarification>
+- <https://x.com/thsottiaux/status/2076459871021736245|GPT 5.6 Sol staying in paid plans>
 
-*Aaron Levie* (Box CEO)
-Levie pushes back hard on the AI job-apocalypse narrative with a concrete mechanism: lower cost per unit of software production → more demand for software → more projects started → more people needed to maintain, decide, and run those systems. Since software jobs aren't fully automatable yet, you still need people at every layer. His conclusion: "Agents will cause more abundance than replacement." He cites this as a pattern repeated throughout the industrial world, and argues knowledge work is just now experiencing the same curve.
-<https://x.com/levie/status/2076116544980214164|View tweet>
+*Sam Altman (OpenAI CEO)*
+Altman is soliciting demos: he wants to see the coolest things people have built with GPT-5.6 Sol and is offering a special gift from the OpenAI archives to the winner.
+- <https://x.com/sama/status/2076398253332140410|"I'd love to see interesting things people have built with 5.6 sol">
 
-*Garry Tan* (YC President & CEO)
-A line worth saving: "So much could go wrong. But the interesting question is always: what happens if things go right?" A rare, clean reframe amid a news cycle heavy on risk narratives.
-<https://x.com/garrytan/status/2075933358660730901|View tweet>
+*Guillermo Rauch (Vercel CEO)*
+Rauch made a sharp case for AI sovereignty: "Make the model a cog in a machine you own." His prescription: use open model APIs (AI SDK), open Agent APIs, and zero-data-retention inference (AI Gateway). Startups and enterprises must own their data, evals, model choices, and software layer. "Don't outsource your brain."
+- <https://x.com/rauchg/status/2076364176252191222|"Don't outsource your brain">
 
-*Zara Zhang* (Builder / developer)
-Quick but pointed take on GPT-5.6 Sol: "Ok 5.6 Sol is very good at front end." Brief endorsement, corroborating Sottiaux's claims above.
-<https://x.com/zarazhangrui/status/2076130810143367453|View tweet>
+*Aaron Levie (Box CEO)*
+Levie wrote a substantial take on enterprise AI strategy: the defining question of the 21st century for businesses will be how to maximize corporate IP—decisions, insights, workflow patterns, best practices—in a world where frontier AI is universally available. Having your own evals, model routing across intelligence tiers, trace capture that improves your workflows, and compounding your information advantage as AI improves all become critical. He sees enormous opportunity in the applied AI layer for companies that help enterprises figure this out.
+- <https://x.com/levie/status/2076338364635287637|On enterprise AI moats and the applied AI layer opportunity>
 
-*Sam Altman* (OpenAI CEO)
-Altman declared GPT-5.6 Sol the top model by benchmarks, then added his preferred informal signal: "the most reliable way to tell is that elon is obsessed with me again." He also quoted a discussion about Anthropic's Fable model costs at scale — "30% of the cost was on fable at these levels of usage?" — apparently reacting to data suggesting Claude/Fable is expensive for high-volume deployments.
-<https://x.com/sama/status/2075983427019612242|View tweet>
-<https://x.com/sama/status/2075982820322025788|View tweet (Fable cost)>
+*Amjad Masad (Replit CEO)*
+Masad is doing "Vibe Research"—fine-tuning a Qwen-8b model to play chess on Replit, running 3 parallel branches with different experiments. He notes models have come a long way in their ability to do ML work, enabling people with good intuition to make real progress even without prior ML experience. He followed up with a demo of Replit's computer use model playing against the chess engine.
+- <https://x.com/amasad/status/2076227936202662357|Vibe Research: fine-tuning Qwen-8b to play chess>
+- <https://x.com/amasad/status/2076356893736673507|Computer use model plays against the chess engine>
+
+*Peter Yang (AI tutorials creator)*
+Yang guessed that 90%+ of ChatGPT users are on GPT-5.6 Sol rather than the newer Terra or Luna models. He also shared a candid take on company communication: when community sentiment turns negative, the right move is to become _more_ human and transparent—not more corporate. He specifically called out Anthropic's communication style as too opaque compared to OpenAI's more direct community engagement.
+- <https://x.com/petergyang/status/2076519927843000448|GPT model mix estimate>
+- <https://x.com/petergyang/status/2076512796481880270|On communicating more humanly when sentiment turns>
+- <https://x.com/petergyang/status/2076510899490480228|Anthropic vs. OpenAI communication styles>
+
+*Zara Zhang (builder)*
+Zhang shared a useful workflow tip: use a meeting transcript as your PRD. Discuss a feature implementation with a colleague, send the transcript to Codex, and it builds the prototype as discussed. "The meeting is the prompt." She also posted a short reflection: "Passion is the biggest moat."
+- <https://x.com/zarazhangrui/status/2076300222884626754|Meeting transcript as PRD workflow>
+- <https://x.com/zarazhangrui/status/2076284012339843546|"Passion is the biggest moat">
+
+*Cat Wu (Claude Code + Cowork at Anthropic)*
+Wu shared the Claude Fable 5 extension announcement, which drew over 1,900 likes and hundreds of replies from the community.
+- <https://x.com/_catwu/status/2076358263688569314|"Enjoy!">
+
+*Nikunj Kothari (FPV Ventures partner)*
+Kothari offered a grounding take on the "tokenmaxxing" trend: he meets plenty of people in SF claiming to have subagents looping constantly, but few can say clearly what they're building or for whom. Even in the AI era, simplicity and direction still matter most. "Before you let your tokens go brrr, take some time to think if what you're building is actually important. Time is literally the only thing you don't get back." He also reflected on outbound sales as one of the most underrated and increasingly important skills to develop.
+- <https://x.com/nikunj/status/2076458876816540144|On tokenmaxxing and building with purpose>
+- <https://x.com/nikunj/status/2076370608833827124|On outbound sales as a critical skill>
+
+*Swyx (AI engineer, Latent Space)*
+Swyx riffed on AI inference with a dry Einstein joke: "the definition of insanity is doing multiple rollouts with no expectation of advantage"—playing on the distinction between approaches that use introspection/backpropagation vs. brute-force rollouts. He also pointed to a new Latent Space writeup.
+- <https://x.com/swyx/status/2076345087634620528|On introspection vs. rollouts in AI inference>
+- <https://x.com/swyx/status/2076216180529156097|Latent Space writeup>
+
+*Peter Steinberger (OpenClaw + OpenAI)*
+Steinberger shared a UI facelift he worked on over the weekend and revealed his multi-machine setup: he shards work across ~5 machines via Jump Desktop, running as many Claude sessions as his Mac Studio can handle.
+- <https://x.com/steipete/status/2076551622227095828|Weekend UI facelift>
+- <https://x.com/steipete/status/2076552605262872904|Max sessions on Mac Studio>
+- <https://x.com/steipete/status/2076553742883930455|Multi-machine setup via Jump Desktop>
+
+*Dan Shipper (Every CEO)*
+Shipper reacted to the Fable 5 extension with a brief "capitalism stays winning!" and flagged another unspecified result as "spectacularly questionable."
+- <https://x.com/danshipper/status/2076351869782286707|"capitalism stays winning!">
+- <https://x.com/danshipper/status/2076455432546066826|"a spectacularly questionable result">
+
+*Matt Turck (FirstMark Capital VC)*
+No notable AI posts today.
+
+*Garry Tan (YC President & CEO)*
+No notable AI posts today.
+
 
 *PODCASTS*
 
-*No Priors — Travel Through the Lens of AI with Booking.com CEO Glenn Fogel*
+*No Priors — How Nuclear Will Unlock Energy Abundance with Valar Atomics Founder Isaiah Taylor*
 
-*The Takeaway:* Incumbents with deep operational complexity and regulatory depth may be harder to displace with AI than outsiders assume — and could be among its biggest beneficiaries.
+*The Takeaway:* Valar Atomics just became the first startup in history to generate power from a nuclear reactor, proving that nuclear's missing ingredient isn't better design—it's hardware iteration at startup speed.
 
-Glenn Fogel has spent 27 years at Booking Holdings, watching the company grow from a few hundred million in market cap (when it was just Priceline) to over $100B. He's lived through the dot-com boom and bust, and draws sharp parallels to today's AI moment without being naive or dismissive.
+Isaiah Taylor founded Valar Atomics less than three years ago with no formal nuclear credentials, driven by frustration that no one was moving fast enough. His diagnosis of why the US largely stopped building reactors after Three Mile Island in 1979: the nuclear industry became a "modeling and simulation industry" rather than a hardware-building one. His fix: apply SpaceX-style hardware iteration to nuclear fission.
 
-His core insight on AI in travel: the value isn't in replacing platforms like Booking.com, it's in eliminating the friction that makes complex trip planning miserable. Fogel describes using Priceline's own agentic AI tool, Penny, to plan a multi-city family Europe trip — managing split cabin preferences, frequent flyer miles vs. cash tradeoffs, same-day hotel layovers, restaurant picks — and coming away genuinely impressed. Penny adoption has reportedly doubled month-over-month for several consecutive months, with measurable lifts in conversion, shorter booking paths, and lower cancellation rates.
+Valar tracks what they call "tick rate"—the time between major milestones. From founding to first atom split: two years and four months. From that first split to their second reactor making power: seven months. The goal is to compress that interval to minutes.
 
-On competition and moats, Fogel is refreshingly blunt: "There is no such thing as a moat. There is no such thing as somewhere you're gonna be protected against innovation." But he argues that newcomers systematically underestimate what it takes to operate at scale in travel — 25,000 employees actively working with hotel partners, global regulatory compliance across dozens of jurisdictions, 8.6 million alternative accommodation listings approaching Airbnb's count. None of this is in a database you can scrape; it's years of operational work.
+Their regulatory shortcut surprised even nuclear veterans: most people don't know the DOE was originally founded as a nuclear _testing_ agency—a direct spinout of the Atomic Energy Commission. A Trump executive order (EO14301) directed three advanced reactors to go critical by July 4th using the DOE testing pathway, bypassing the slower NRC commercial pathway that trips up most startups.
 
-The AI ROI is already showing up: customer service costs per contact are down 10%, customer satisfaction is up. Booking Holdings is investing roughly $700M this year. On the jobs question, Fogel watched translation jobs vanish at Booking.com around 2005 when machine translation matured — a 40-language human operation that simply stopped needing people. He's cautious about AI displacement not because it won't happen, but because the speed of change may outpace society's ability to adapt. His response: double down on internal upskilling, which he thinks corporate programs can deliver better than government retraining historically has.
+On safety, Valar takes a different philosophy: instead of reducing the odds of a meltdown through active systems, they design so a meltdown physically cannot happen even if everything fails. Their Triso-fueled, graphite-moderated, helium-cooled reactor uses passive physics—natural convection, no pumps, no operator input—to safely remove decay heat over two days after shutdown.
 
-His vision for the endgame: a personalized travel agent that knows everything about you, never forgets, and can look ahead to prevent problems before they cascade — no human concierge could match it on breadth or speed.
+Their vertical integration philosophy is ruthless. When a vendor quoted $5M and 2.5 years to build a Reactor Protection System (the brain of the reactor), a five-person Valar team built their own in six weeks for $400K. As Taylor put it: _"Everywhere in nuclear is like this—totally fake costs from an industry that is just totally anemic. It doesn't know how to build anything anymore."_
 
-<https://www.youtube.com/watch?v=8nj_0wZkbtA|Watch on YouTube>
+They also ran a first: an NVIDIA Blackwell GPU powered directly from their Ward 250 nuclear reactor, hosting nuclearwebsite.com while the plant ran.
+
+Taylor's long-game thesis: as automation converts human labor into energy consumption, energy cost becomes the cost of almost everything. Make energy 10x cheaper, and the world changes. Nuclear fission is how you get there.
+
+https://www.youtube.com/watch?v=5Xvbq_zvOQ4
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
