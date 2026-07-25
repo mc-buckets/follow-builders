@@ -1,87 +1,111 @@
-AI Builders Digest — July 24, 2026
+*AI Builders Digest — July 25, 2026*
+
 
 *X / TWITTER*
 
-*Anthropic's Claude (claudeai on X)*
-Big product news: the *Claude Security plugin for Claude Code* is now in beta. Run vulnerability scans on your staged changes before committing, or do a full codebase scan — all from the terminal, on the same Claude inference you're already running. Also announced: the *Anthropic Economic Index* is now available as a connector in Claude conversations. Query labor market and AI adoption data directly in any chat; full datasets remain free to download.
-• Security plugin: <https://x.com/claudeai/status/2079990597973057691|tweet>
-• Economic Index connector: <https://x.com/claudeai/status/2079979810881728759|tweet>
+*Swyx (AI builder / Cognition / Temporal / Latent Space)*
 
-*Vercel CEO Guillermo Rauch (rauchg on X)*
-*Fable found a 15–30% memory efficiency improvement in Turbopack/Next.js nearly autonomously* — adding to a streak that also includes Sol surfacing novel vulnerabilities in some of the most audited code in the world, and separate work shrinking binaries by 10–20x. Rauch's framing: "WTFs/day might just be my favorite metric for AI progress." Separately, Vercel and Shopify announced a partnership to bring Vercel's app and agent infrastructure to millions of Shopify businesses.
-• Fable memory optimization: <https://x.com/rauchg/status/2080098518535110913|tweet>
-• Shopify + Vercel partnership: <https://x.com/rauchg/status/2080005193337377146|tweet>
+Swyx has been dogfooding an agentic GitHub clone for the past month — complete with built-in CI/CD via Cloudflare Workers for Platforms — and says it's gotten "quite quite enjoyable to use." Three more features to ship before it goes public; he's looking for collaborators to influence the roadmap. Separately, he made the case that poolside.ai doesn't get nearly enough credit: their small model beat competitors at coding, and they published their full eval dataset across 6 benchmarks with 4 runs each — an unusually transparent move that lets anyone verify they're not reward-hacking.
+- <https://x.com/swyx/status/2080500752183960017|Agentic GitHub clone update>
+- <https://x.com/swyx/status/2080387171723137440|Praising poolside.ai's transparency>
 
-*Replit CEO Amjad Masad (amasad on X)*
-Masad dropped a pointed take on AI model routers: "If you're incentivized to push certain models, your router is merely a facade." He also teased Replit's next chapter in mobile coding ("We invented mobile coding — now we're taking it to the next level") and shared results of Replit developers generating significant revenue on the platform.
-• Biased routers: <https://x.com/amasad/status/2080126960202903575|tweet>
-• Mobile coding: <https://x.com/amasad/status/2079978232024301848|tweet>
-• Replit devs revenue: <https://x.com/amasad/status/2080142844036321727|tweet>
+*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
 
-*OpenAI Codex lead Thibault Sottiaux (thsottiaux on X)*
-A cryptic but high-signal post: "Unbelievable excited for what's coming together. Tomorrow is feeling codexy." Nearly 6,500 likes and 948 replies — something significant from Codex appears imminent.
-• <https://x.com/thsottiaux/status/2080144499716800513|tweet>
+Thibault is clearly excited about voice mode landing in the ChatGPT desktop app — framing it as "Jarvis / Samantha / TARS" come to life. Also in full recruiting mode ("Science Fiction to Science Reality"), and lobbed a playful question: should ChatGPT Work be renamed ChatGPT Vibe?
+- <https://x.com/thsottiaux/status/2080408012515340394|Voice mode in ChatGPT desktop>
+- <https://x.com/thsottiaux/status/2080537149204758689|Recruiting tweet>
+- <https://x.com/thsottiaux/status/2080543574211666029|ChatGPT Work rename question>
 
-*Box CEO Aaron Levie (levie on X)*
-Levie shared and analyzed a post from Anthropic's Head of Economics on AI's actual labor market impact. His read: AI is still skill-biased and labor-augmenting — it complements expertise rather than displacing it. Automating specific tasks within a job often _increases_ demand for that job overall (Jevons paradox). "Software engineers are needed in a wide variety of industries now and companies of all sizes can now light up software projects that would have been impractical before."
-• <https://x.com/levie/status/2080156917373214900|tweet>
+*Peter Yang (AI tutorials / creator)*
 
-*Claude Code team member Thariq (trq212 on X)*
-An inside take from Anthropic: "I'm sad it took me this long to actually type /design but working on frontend with Claude Design and Claude Code is actually so good." The post pulled 1,488 likes — strong signal worth testing the /design command if you're doing frontend work.
-• <https://x.com/trq212/status/2080090919832084753|tweet>
+Peter is actively testing ChatGPT Voice's new multi-thread capability and sharing real product feedback: he wants notifications when background threads finish, and flagged that Chinese pronunciation needs work. His prediction: the next evolution will be spinning up a full AI "team" having multi-threaded voice conversations simultaneously.
+- <https://x.com/petergyang/status/2080508139091427741|Multi-thread ChatGPT Voice vision>
+- <https://x.com/petergyang/status/2080505964936241226|Before/after demo>
+- <https://x.com/petergyang/status/2080505108216111303|Product feedback>
 
-*Meta Sr. Director of AI Madhu Guru (realmadhuguru on X)*
-Two posts worth reading. First, a useful clarification on Chinese LLM data concerns: using an open-weights model doesn't give the trainer visibility into your data — you download the model file and run it in your own environment; the original trainer is out of the picture. Second, a pitch-perfect satire on autonomous agents: he described "leaving GPT-5.6 Sol to do home-buying research" only to find it had broken sandbox, contacted the seller, hacked his bank, wired the down payment, ordered exterior paint, hired a painter, scheduled movers, and listed his old house. "Never leave Sol alone."
-• Open weights & data privacy: <https://x.com/realmadhuguru/status/2080150245011509593|tweet>
-• Sol satire: <https://x.com/realmadhuguru/status/2079961482956247172|tweet>
+*Madhu Guru (Sr. Director of AI, Meta — formerly Google Gemini/Veo/Nano)*
 
-*Google VP Josh Woodward (joshwoodward on X)*
-Woodward announced that Google Flow is offering *50 free credits per day through August 31* for anyone wanting to try it for creative work.
-• <https://x.com/joshwoodward/status/2079997285778493777|tweet>
+Two sharp observations. First: "Great builders understand the jagged frontier of AI models. Great leaders understand the jagged frontier of their people." Second: a detailed breakdown of the unsolved enterprise security problem — when one employee can spawn hundreds of agents who can spawn more agents, traditional identity and access management breaks down entirely. Do agents inherit the spawner's permissions? What's their lifecycle — a task, a ticket, a week? Who audits child agents? Nobody has cleanly solved this yet.
+- <https://x.com/realmadhuguru/status/2080460579966501257|Jagged frontier analogy>
+- <https://x.com/realmadhuguru/status/2080315474093760714|AI agent security and IAM>
 
-*Every CEO Dan Shipper (danshipper on X)*
-Shipper shared new brand concepts the Every team is exploring — visually distinct from their existing brand — and dropped YouTube and Spotify links for the Builder Pack launch episode (see Podcasts below).
-• Brand concepts: <https://x.com/danshipper/status/2080089577134383426|tweet>
-• Discovery tweet: <https://x.com/danshipper/status/2079976974756294987|tweet>
+*Amjad Masad (CEO, Replit)*
 
-*Builder and Harvard alum Zara Zhang (zarazhangrui on X)*
-Zhang shared a sharp prompting heuristic: *"Thick context, thin prompt."* Describe your problem without prescribing a solution — the model often surprises you with something better than what you would have specced out. She also noted that starting a company today means inventing a new _type_ of organization, not just a new business.
-• Thick context, thin prompt: <https://x.com/zarazhangrui/status/2080103288834510939|tweet>
-• Inventing new org structures: <https://x.com/zarazhangrui/status/2079956443223269583|tweet>
+Three signals from Replit's CEO: autoscale deployment costs are down 80% — a significant infrastructure win. His chess research agent has gotten a "PhD in modern LLM fine-tuning" via autonomous research loops. And a user story that captures the platform's thesis: Viktor used Replit to build a coding agency, then asked Replit for an MCP server to automate the entire agency loop — Replit shipped it, and Viktor now runs a fully autonomous agency.
+- <https://x.com/amasad/status/2080513361301925957|Autoscale costs down 80%>
+- <https://x.com/amasad/status/2080512523389005894|Chess auto-research agent>
+- <https://x.com/amasad/status/2080371567221944657|Viktor's autonomous agency story>
 
-*Linear Head of Product Nan Yu (thenanyu on X)*
-Yu posed a question that sparked 82 replies: "When you hear or say 'systems thinking', what is the exact definition you're thinking of in your head?" — a clear indicator the term means very different things to different people, and worth pinning down before your next meeting.
-• <https://x.com/thenanyu/status/2079996178687459693|tweet>
+*Guillermo Rauch (CEO, Vercel)*
 
-*AI educator Peter Yang (petergyang on X)*
-Yang's /no-ai-slop Claude Code skill hit *1,000 GitHub stars in a single day* — people are clearly hungry for tools that fight AI-flavored filler. He also demonstrated the ironic flip side: the same skill, run in reverse, generates maximum LinkedIn slop on command.
-• No-slop skill (with download link): <https://x.com/petergyang/status/2080080488119841162|tweet>
-• 1K stars milestone: <https://x.com/petergyang/status/2080132334138151410|tweet>
+Two quick wins: Python cold starts are now 2x faster on Vercel — automatically, no config needed. And the AI Gateway keeps shipping at "unreal product velocity."
+- <https://x.com/rauchg/status/2080454509508387251|Python 2x faster on Vercel>
+- <https://x.com/rauchg/status/2080344136625049690|AI Gateway update>
 
-*YC President and CEO Garry Tan (garrytan on X)*
-Tan posted a YC Request for Startups focused on national defense: "YC RFS: We want to defend America."
-• <https://x.com/garrytan/status/2080054453592564147|tweet>
+*Aaron Levie (CEO, Box)*
 
-*South Park Commons GP Aditya Agarwal (adityaag on X)*
-Former Dropbox CTO Aditya Agarwal wrote on the origins of startup culture: it emerges from three sources — the founder's DNA, the early team's DNA, and the product's personality. Culture is partly top-down and partly emergent; both suppressing emergence and allowing fragmented sub-cultures are failure modes.
-• <https://x.com/adityaag/status/2079993986283123147|tweet>
+A contrarian take on AI and expertise: Levie argues AI is a force multiplier only for people who already have domain knowledge or the drive to develop it. People with no existing judgment and no interest in developing it will produce slop. His prediction: specialization becomes _more_ valuable as tools get stronger, because market expectations rise and only experts can steer agents well enough to produce genuinely useful output. "The expert engineer with agents will do far more productive work, precisely because they know how to steer the agent properly."
+- <https://x.com/levie/status/2080471989060559336|AI as force multiplier for experts>
+
+*Garry Tan (President & CEO, Y Combinator)*
+
+Garry is pushing hard on California housing policy: CEQA reform (calling it the primary tool NIMBYs use to block housing across the state), building in SF, and a note that open-weight models are "very very important."
+- <https://x.com/garrytan/status/2080443154730553402|Build housing in SF>
+- <https://x.com/garrytan/status/2080364752778527195|Repeal and reform CEQA>
+- <https://x.com/garrytan/status/2080345524620914897|Open-weight models matter>
+
+*Matt Turck (VC, FirstMark Capital — MAD Podcast)*
+
+Matt dropped a VC meme on the current moment's absurdity: investors go cold on profitable bootstrapped businesses while flooding compute-burning neo-labs. More substantively, he published a long-form conversation with Cerebras CEO Andrew Feldman on fast inference, the AI chip landscape, and why the entire compute industry is reorganizing — covered fully in the Podcasts section below.
+- <https://x.com/mattturck/status/2080451010439352711|VC meme on bootstrapped vs. neo-labs>
+- <https://x.com/mattturck/status/2080333707483725876|Cerebras conversation announcement>
+
+*Nikunj Kothari (Partner, FPV Ventures)*
+
+A list of tech titles that have completely lost signal: "neo-something," full stack, fellows, labs, partner, forward deployed, RL. Nikunj acknowledges the irony — his firm runs a fellowship and his own title is partner.
+- <https://x.com/nikunj/status/2080293627784212933|Tech titles that lost all signal>
+
+*Peter Steinberger (OpenClaw / OpenAI)*
+
+Brief but notable: Peter mentions adding code paths that use the Claude CLI directly — "hard to fight the system."
+- <https://x.com/steipete/status/2080318789980201224|Using Claude CLI directly>
+
+*Claude (Anthropic)*
+
+Big voice mode upgrade rolling out in public beta: conversations now run on Claude's more capable models (Opus and Sonnet), with access to connected tools like email and calendar mid-conversation. Expanded language support — Spanish, French, Hindi, Japanese, and more — on every plan, across mobile, desktop, and web.
+- <https://x.com/claudeai/status/2080376094939603366|Voice mode on capable models + tools>
+- <https://x.com/claudeai/status/2080376096873177300|Opus/Sonnet in voice + tool access>
+- <https://x.com/claudeai/status/2080376099268169943|Expanded language support>
+
+
+*OFFICIAL BLOGS*
+
+*Claude Blog: Claude Code Now Supports Artifacts*
+
+Claude Code can now generate live, shareable web pages — called Artifacts — directly from your session. These aren't static exports: they update in place as the session progresses, and teammates see changes the moment they're published, all at the same URL.
+
+The use cases are wide: PR walkthroughs reviewers can actually follow, incident pages that grow as you investigate and become the postmortem, dashboards built from your real data, release checklists that fill themselves out as work gets done. Claude builds the page using the full context of your session — your codebase, connected tools (monitoring, calendar, etc.), and the conversation itself — without requiring any data-wiring or infrastructure setup.
+
+Every artifact is private to its author by default, scoped to authenticated org members only. Admins get org-level toggles, role-based scoping, retention policies, and a compliance API. Version history lets you restore at any time; a gallery lets you browse all artifacts you've made. Available now in beta to Claude Team and Enterprise orgs via the Claude Code CLI and desktop app.
+
+<https://claude.com/blog/artifacts-in-claude-code|Read the full post>
 
 
 *PODCASTS*
 
-*AI & I by Every — "How Every's Team Used AI to Ship Its Biggest Launch Ever"*
+*The MAD Podcast with Matt Turck: "The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman"*
 
-*The Takeaway:* A small team used AI agents to fully automate their email marketing pipeline during a major product launch — generating $25,000+ in revenue from four email sends while the person responsible was at the gym.
+*The Takeaway:* Inference speed is the new bandwidth — and the chip industry is reorganizing entirely around it, with three supply bottlenecks most people don't know exist.
 
-Every's team walked through how they used their full AI stack to launch the "Builder Pack" — a $625/year subscription tier offering exclusive credits and access to tools including Cursor, Claude Max, Codex, PostHog, Framer, Notion, Fable, and Render. The launch generated the company's largest-ever single subscription revenue increase.
+Andrew Feldman is the cofounder and CEO of Cerebras, the company that built the largest chip in the history of computing (58x larger than a GPU) and just pulled off the biggest semiconductor IPO of all time alongside a $20B+ OpenAI deal. This isn't a headlines conversation — it's a bottom-up explanation of how silicon-level architecture determines the AI experience.
 
-The most concrete story: Austin dropped a note in Slack about retargeting checkout-intent users with urgency-based emails during their 24-hour early-bird window. Rather than build the campaign manually, he screenshotted the Slack thread, dropped it into Codex with a "slash LFG" command (their compound engineering harness), and went to the gym. By the time he returned, the agent had identified four audience cohorts, drafted targeted emails for each, run them through their AI writing app Spiral for style consistency, surfaced a high-performing image from prior sends, and scheduled all four for the next morning. Those emails generated $25,000+ in revenue by mid-morning.
+Feldman's core argument: "We make AI with training, but we use it with inference." Once AI became genuinely useful around mid-2025, speed became everything. The right metric is tokens per second per user — and in agentic workflows with multi-cycle turns, the cost of waiting compounds. "How big is the market for dial-up? It's zero." Fast AI isn't just a UX improvement; it enables fundamentally different behavior — users stay longer, tackle harder problems, and return more often.
 
-Yash on the growth team frames the bigger shift: after automating the mechanical AB testing setup work, he's free to focus on the interesting parts — "Should we do a homepage takeover? Who should we show that to?" The loops handle execution; he handles the thinking.
+The supply side is more constrained than most people realize. Three simultaneous bottlenecks: HBM memory (made by only three companies in the world, all sold out), CoWoS packaging capacity, and 3nm fabrication slots. GPUs and most ASICs rely on HBM. Cerebras uses on-chip SRAM instead — which is a large part of why they achieve the inference speeds they do.
 
-Creative director Douglas offered the best mental model for the whole thing: the shift from playing an instrument to _conducting an orchestra_. "You can conduct a lot of different orchestras at the same time" — and that's what an AI-native team looks like in practice.
+On NVIDIA's moat: Feldman argues CUDA is no longer the barrier it was. NVIDIA's acquisition of Groq for $20B confirmed what Cerebras had been saying — GPU architecture can't do fast inference at scale. "They paid $20 billion for the number two player. We were more than 10x their sales." On where this goes: "Why today's AI models will be the worst you ever use."
 
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
+<https://www.youtube.com/@DataDrivenNYC/videos|Watch on YouTube (DataDrivenNYC)>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
