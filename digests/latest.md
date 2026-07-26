@@ -1,111 +1,177 @@
-*AI Builders Digest — July 25, 2026*
+*AI Builders Digest — July 26, 2026*
 
 
 *X / TWITTER*
 
-*Swyx (AI builder / Cognition / Temporal / Latent Space)*
+*Swyx* (swyx on X) — founder at smol_ai, co-host of Latent Space
 
-Swyx has been dogfooding an agentic GitHub clone for the past month — complete with built-in CI/CD via Cloudflare Workers for Platforms — and says it's gotten "quite quite enjoyable to use." Three more features to ship before it goes public; he's looking for collaborators to influence the roadmap. Separately, he made the case that poolside.ai doesn't get nearly enough credit: their small model beat competitors at coding, and they published their full eval dataset across 6 benchmarks with 4 runs each — an unusually transparent move that lets anyone verify they're not reward-hacking.
-- <https://x.com/swyx/status/2080500752183960017|Agentic GitHub clone update>
-- <https://x.com/swyx/status/2080387171723137440|Praising poolside.ai's transparency>
+Swyx teased 4 new features coming to SmolForge, including customizable skins and spritesheet animations. He's also building what he describes as a new GSuite alternative, citing "extremely stupid defaults" in existing tools as his motivation.
+- https://x.com/swyx/status/2080750437133901925
+- https://x.com/swyx/status/2080705334587605122
 
-*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
 
-Thibault is clearly excited about voice mode landing in the ChatGPT desktop app — framing it as "Jarvis / Samantha / TARS" come to life. Also in full recruiting mode ("Science Fiction to Science Reality"), and lobbed a playful question: should ChatGPT Work be renamed ChatGPT Vibe?
-- <https://x.com/thsottiaux/status/2080408012515340394|Voice mode in ChatGPT desktop>
-- <https://x.com/thsottiaux/status/2080537149204758689|Recruiting tweet>
-- <https://x.com/thsottiaux/status/2080543574211666029|ChatGPT Work rename question>
+*Josh Woodward* (joshwoodward on X) — VP at Google Labs, Gemini, and Google AI Studio
 
-*Peter Yang (AI tutorials / creator)*
+Woodward announced Gemini Spark is live for all Google AI Pro subscribers in the US, with global expansion next. His demo use case: drop in a school calendar PDF and tell Gemini to add every "No School" day to Google Calendar — done.
+- https://x.com/joshwoodward/status/2080771183944073347
 
-Peter is actively testing ChatGPT Voice's new multi-thread capability and sharing real product feedback: he wants notifications when background threads finish, and flagged that Chinese pronunciation needs work. His prediction: the next evolution will be spinning up a full AI "team" having multi-threaded voice conversations simultaneously.
-- <https://x.com/petergyang/status/2080508139091427741|Multi-thread ChatGPT Voice vision>
-- <https://x.com/petergyang/status/2080505964936241226|Before/after demo>
-- <https://x.com/petergyang/status/2080505108216111303|Product feedback>
 
-*Madhu Guru (Sr. Director of AI, Meta — formerly Google Gemini/Veo/Nano)*
+*Boris Cherny* (bcherny on X) — Claude Code at Anthropic
 
-Two sharp observations. First: "Great builders understand the jagged frontier of AI models. Great leaders understand the jagged frontier of their people." Second: a detailed breakdown of the unsolved enterprise security problem — when one employee can spawn hundreds of agents who can spawn more agents, traditional identity and access management breaks down entirely. Do agents inherit the spawner's permissions? What's their lifecycle — a task, a ticket, a week? Who audits child agents? Nobody has cleanly solved this yet.
-- <https://x.com/realmadhuguru/status/2080460579966501257|Jagged frontier analogy>
-- <https://x.com/realmadhuguru/status/2080315474093760714|AI agent security and IAM>
+Cherny called out what he finds most exciting about Opus 5 beyond the eval scores: it's Anthropic's least prompt injectable model yet. When layering defenses — strong model alignment, prompt injection probes, and Auto Mode in Claude Code — the success rate for prompt injection attacks drops to ~0%. "This is new and exciting! More about this soon."
+- https://x.com/bcherny/status/2080713091688583312
 
-*Amjad Masad (CEO, Replit)*
 
-Three signals from Replit's CEO: autoscale deployment costs are down 80% — a significant infrastructure win. His chess research agent has gotten a "PhD in modern LLM fine-tuning" via autonomous research loops. And a user story that captures the platform's thesis: Viktor used Replit to build a coding agency, then asked Replit for an MCP server to automate the entire agency loop — Replit shipped it, and Viktor now runs a fully autonomous agency.
-- <https://x.com/amasad/status/2080513361301925957|Autoscale costs down 80%>
-- <https://x.com/amasad/status/2080512523389005894|Chess auto-research agent>
-- <https://x.com/amasad/status/2080371567221944657|Viktor's autonomous agency story>
+*Thibault Sottiaux* (thsottiaux on X) — Codex and ChatGPT at OpenAI
 
-*Guillermo Rauch (CEO, Vercel)*
+Sottiaux announced ChatGPT Work is now globally available for all paid plans across mobile, web, and desktop. His framing: "Puts a jetpack on your ChatGPT." He also kicked off a viral pet photo thread that drew 1,000+ replies.
+- https://x.com/thsottiaux/status/2080876712439747052
 
-Two quick wins: Python cold starts are now 2x faster on Vercel — automatically, no config needed. And the AI Gateway keeps shipping at "unreal product velocity."
-- <https://x.com/rauchg/status/2080454509508387251|Python 2x faster on Vercel>
-- <https://x.com/rauchg/status/2080344136625049690|AI Gateway update>
 
-*Aaron Levie (CEO, Box)*
+*Peter Yang* (petergyang on X) — AI tutorials and product strategy
 
-A contrarian take on AI and expertise: Levie argues AI is a force multiplier only for people who already have domain knowledge or the drive to develop it. People with no existing judgment and no interest in developing it will produce slop. His prediction: specialization becomes _more_ valuable as tools get stronger, because market expectations rise and only experts can steer agents well enough to produce genuinely useful output. "The expert engineer with agents will do far more productive work, precisely because they know how to steer the agent properly."
-- <https://x.com/levie/status/2080471989060559336|AI as force multiplier for experts>
+Yang shared a workflow he's been enjoying: lying in bed talking to ChatGPT Voice to drive coding work in Codex, noting that doing it well requires remembering the names of long-running threads. He also endorsed the view that pure software has become very hard to monetize for indie developers — "You need software + something else (e.g., services)" — and asked for counterexamples.
+- https://x.com/petergyang/status/2080793867960643823
+- https://x.com/petergyang/status/2080669643577176573
 
-*Garry Tan (President & CEO, Y Combinator)*
 
-Garry is pushing hard on California housing policy: CEQA reform (calling it the primary tool NIMBYs use to block housing across the state), building in SF, and a note that open-weight models are "very very important."
-- <https://x.com/garrytan/status/2080443154730553402|Build housing in SF>
-- <https://x.com/garrytan/status/2080364752778527195|Repeal and reform CEQA>
-- <https://x.com/garrytan/status/2080345524620914897|Open-weight models matter>
+*Madhu Guru* (realmadhuguru on X) — Sr Director of AI at Meta, previously led Gemini, Veo, and Nano at Google
 
-*Matt Turck (VC, FirstMark Capital — MAD Podcast)*
+Guru identified a major underappreciated opportunity: people who know how to take messy real-world workflows and adapt foundation models to them. The skillset requires understanding how work actually gets done, designing evals, post-training models, and building continuous feedback loops. "That's how a general-purpose model becomes exceptional for a specific domain. Today, that skillset is still concentrated in a handful of labs."
+- https://x.com/realmadhuguru/status/2080707454422413487
 
-Matt dropped a VC meme on the current moment's absurdity: investors go cold on profitable bootstrapped businesses while flooding compute-burning neo-labs. More substantively, he published a long-form conversation with Cerebras CEO Andrew Feldman on fast inference, the AI chip landscape, and why the entire compute industry is reorganizing — covered fully in the Podcasts section below.
-- <https://x.com/mattturck/status/2080451010439352711|VC meme on bootstrapped vs. neo-labs>
-- <https://x.com/mattturck/status/2080333707483725876|Cerebras conversation announcement>
 
-*Nikunj Kothari (Partner, FPV Ventures)*
+*Cat Wu* (_catwu on X) — Claude Code and Cowork at Anthropic
 
-A list of tech titles that have completely lost signal: "neo-something," full stack, fellows, labs, partner, forward deployed, RL. Nikunj acknowledges the irony — his firm runs a fellowship and his own title is partner.
-- <https://x.com/nikunj/status/2080293627784212933|Tech titles that lost all signal>
+Wu highlighted Claude Opus 5 as especially strong for long-running autonomous work, inviting people to try it out and share feedback.
+- https://x.com/_catwu/status/2080707593115516985
 
-*Peter Steinberger (OpenClaw / OpenAI)*
 
-Brief but notable: Peter mentions adding code paths that use the Claude CLI directly — "hard to fight the system."
-- <https://x.com/steipete/status/2080318789980201224|Using Claude CLI directly>
+*Thariq* (trq212 on X) — Claude Code at Anthropic
 
-*Claude (Anthropic)*
+Thariq had the most-liked AI tweet of the day (10K+). He shared that Anthropic removed ~80% of the Claude Code system prompt for their newest models, and published lessons learned about writing system prompts, skills, and CLAUDE.md files for them. He also called Opus 5 "an incredible daily driver" — recommending pairing it with Fable 5 for planning, brainstorming, and the hardest bugs.
+- <https://x.com/trq212/status/2080710971228918066|Removing ~80% of the Claude Code system prompt>
+- <https://x.com/trq212/status/2080711577867845645|Claude Blog writeup>
+- <https://x.com/trq212/status/2080703339306913985|Opus 5 as daily driver>
 
-Big voice mode upgrade rolling out in public beta: conversations now run on Claude's more capable models (Opus and Sonnet), with access to connected tools like email and calendar mid-conversation. Expanded language support — Spanish, French, Hindi, Japanese, and more — on every plan, across mobile, desktop, and web.
-- <https://x.com/claudeai/status/2080376094939603366|Voice mode on capable models + tools>
-- <https://x.com/claudeai/status/2080376096873177300|Opus/Sonnet in voice + tool access>
-- <https://x.com/claudeai/status/2080376099268169943|Expanded language support>
+
+*Amjad Masad* (amasad on X) — CEO of Replit
+
+Masad publicly called on Anthropic to clarify its position on a letter opposing bans on open weight models: "If you work at Anthropic worth asking your leadership to sign or make their position clear." He also teased big changes to Replit ("you're in for a big surprise") and noted that early Etched investors will face less dilution now that VCs have finally taken notice.
+- https://x.com/amasad/status/2080850075358826871
+- https://x.com/amasad/status/2080848381967212975
+- https://x.com/amasad/status/2080864869130416320
+
+
+*Guillermo Rauch* (rauchg on X) — CEO of Vercel
+
+Rauch expressed enthusiasm for Figma2React ("It's good"), tested out a model's new capabilities, and questioned the industry's ambition level.
+- https://x.com/rauchg/status/2080646549336678597
+- https://x.com/rauchg/status/2080706974476583337
+- https://x.com/rauchg/status/2080714333793972498
+
+
+*Alex Albert* (alexalbert__ on X) — Research at Anthropic
+
+Albert shared two highlights from the Opus 5 launch. First, a contrast with just 6 months ago: Opus 5 now produces "near-superhuman level spreadsheets and slide decks that match what a consultant would make." Second, he shared graphs showing the team's work on token efficiency — making Opus 5 more efficient across domains while still raising the intelligence bar. He says he prefers it over Fable 5 for many coding tasks.
+- https://x.com/alexalbert__/status/2080731979528679617
+- https://x.com/alexalbert__/status/2080703118086693121
+
+
+*Aaron Levie* (levie on X) — CEO of Box
+
+Levie published Box's benchmark results for Opus 5 on enterprise document work using their internal "Complex Work Eval": due diligence +17%, life sciences +30%, legal +12%, technology +19%, healthcare +13% compared to Opus 4.8. He described the pattern as "complete, precise, multi-step analysis over messy source material." Levie also wrote a detailed argument for why open weights AI is good for the entire industry: "Open vs. closed is not a zero sum battle. The reason why you want strong open weights models is because it pushes the entire AI industry forward."
+- <https://x.com/levie/status/2080704871934931221|Box Opus 5 benchmark results>
+- <https://x.com/levie/status/2080675210991443982|Case for open weights AI>
+- https://x.com/levie/status/2080761484305654091
+
+
+*Garry Tan* (garrytan on X) — President and CEO of Y Combinator
+
+Tan raised a pointed historical analogy: how fast a country adopted new technology over the last 200 years accounts for at least 25% of why nations are rich or poor today — "The Ottomans got the printing press eventually but eventually cost them a lot." He also offered a contrarian take on AI productivity timelines: expect 10 years, not 2, because macro gains require managers and CEOs to greenlight "radically different staffing and workflow plans" — and they haven't done it yet. YC Startup School 2026 kicks off this weekend at Chase Center in San Francisco.
+- https://x.com/garrytan/status/2080849953413541982
+- https://x.com/garrytan/status/2080699367883980924
+- https://x.com/garrytan/status/2080807733184586232
+
+
+*Matt Turck* (mattturck on X) — VC at FirstMark Capital
+
+Turck flagged it as a "big week in model routing": Stripe rumored to acquire OpenRouter for $10B, plus new routers from Cursor, Runway, Databricks, Vercel, Cloudflare, Dataiku, AWS, and Google all in the same week. He also noted what he called an under-discussed irony: the world's top AI researchers are building recursive auto-research that could eventually eliminate their own jobs.
+- https://x.com/mattturck/status/2080645582209663049
+- https://x.com/mattturck/status/2080738638065729741
+
+
+*Zara Zhang* (zarazhangrui on X) — independent builder
+
+Zhang argued that the #1 thing she wants from models right now is _speed_ — intelligence is already good enough, but the 1-5 minute wait per task creates "the worst possible window: too short for deep work, too long to just stare at the screen. Agents are making all of us more ADHD." She also made an interesting observation: agents level the playing field between verbal and written communicators, since chat history and meeting transcripts become PRDs when your agent is in the room.
+- https://x.com/zarazhangrui/status/2080829737044439444
+- https://x.com/zarazhangrui/status/2080617484261249160
+
+
+*Peter Steinberger* (steipete on X) — OpenClaw at OpenAI
+
+Steinberger hit a new record with his autoreview skill: 66 rounds on a gnarly refactor. He also posted a viral tweet (2,400+ likes) asking "am I a graph engineer now" after apparently crossing into graph work.
+- https://x.com/steipete/status/2080899298838098034
+- https://x.com/steipete/status/2080779917130858598
+
+
+*Dan Shipper* (danshipper on X) — CEO of Every
+
+Shipper published the most nuanced Opus 5 take of the day: "It's a poor man's Fable. It has many of Fable's personality quirks without Fable's genius." Key finding: it breaks backward compatibility — it stops early, misses instructions, and doesn't play well with existing skills and workflows. But start from scratch and use lower thinking effort (not just switching to Sonnet), and you get dramatically better results. His current verdict: Opus 5 doesn't fit cleanly into his two-slot workflow (Fable for genius tasks, GPT-5.6 for everything else), so he'll use it mainly when Fable tokens run out. Full vibe check on Every.
+- https://x.com/danshipper/status/2080700057892815114
+- https://x.com/danshipper/status/2080709090909503775
+
+
+*Sam Altman* (sama on X) — CEO of OpenAI
+
+Altman expressed support for the US winning in both open source and proprietary AI. He also asked users to try and share feedback on "pro-ultra-superhard" mode.
+- https://x.com/sama/status/2080683363174945065
+- https://x.com/sama/status/2080683119959757243
+
+
+*Claude* (claudeai on X) — Anthropic's official account
+
+The Claude account shared three key facts about Opus 5: available now on all paid plans and the API at Opus 4.8 pricing, default on Claude Max, strongest on Claude Pro, and offered in Fast mode at ~2.5× the default speed. It's also Anthropic's most aligned model to date — lowest rates of reckless or deceptive behavior and strongest adherence to Claude's Constitution. On the security side: stronger than Opus 4.8 at cybersecurity tasks, while remaining substantially behind Mythos 5 at developing exploits.
+- https://x.com/claudeai/status/2080699515271528827
+- https://x.com/claudeai/status/2080699508401328462
+- https://x.com/claudeai/status/2080699512205537648
 
 
 *OFFICIAL BLOGS*
 
-*Claude Blog: Claude Code Now Supports Artifacts*
+*Anthropic Engineering — "How we contain Claude across products"*
+<https://www.anthropic.com/engineering/how-we-contain-claude>
 
-Claude Code can now generate live, shareable web pages — called Artifacts — directly from your session. These aren't static exports: they update in place as the session progresses, and teammates see changes the moment they're published, all at the same URL.
+A detailed, candid post-mortem on how Anthropic has contained Claude across three agentic products — claude.ai, Claude Code, and Claude Cowork — and what security failures they encountered along the way.
 
-The use cases are wide: PR walkthroughs reviewers can actually follow, incident pages that grow as you investigate and become the postmortem, dashboards built from your real data, release checklists that fill themselves out as work gets done. Claude builds the page using the full context of your session — your codebase, connected tools (monitoring, calendar, etc.), and the conversation itself — without requiring any data-wiring or infrastructure setup.
+The core framing: as agents gain access sufficient to take down internal services, the engineering question isn't whether to deploy but how to cap the blast radius. Three isolation patterns emerged:
 
-Every artifact is private to its author by default, scoped to authenticated org members only. Admins get org-level toggles, role-based scoping, retention policies, and a compliance API. Version history lets you restore at any time; a gallery lets you browse all artifacts you've made. Available now in beta to Claude Team and Enterprise orgs via the Claude Code CLI and desktop app.
+- _Ephemeral containers (claude.ai)_: Server-side gVisor containers per session. Minimal blast radius, minimal capability ceiling.
+- _Human-in-the-loop sandbox (Claude Code)_: OS-level sandboxing (Seatbelt on macOS, bubblewrap on Linux), cutting permission prompts by 84%. Works because the average Claude Code user is a developer who can actually evaluate bash commands.
+- _Sealed VM (Claude Cowork)_: A full virtual machine for non-technical knowledge workers who shouldn't be expected to judge `find . -name "*.tmp" -exec rm {} \;`. Hard boundary, always-on.
 
-<https://claude.com/blog/artifacts-in-claude-code|Read the full post>
+The real value is three disclosed security failures: (1) Code in a cloned repo executed via `.claude/settings.json` hooks _before_ the trust prompt appeared — fix: defer project config parsing until after trust is established. (2) An employee phished into pasting a prompt exfiltrated AWS credentials 24 out of 25 attempts — model-layer defenses are blind when the user is the injection vector; only egress controls stop this. (3) An attacker used the `api.anthropic.com` allowlist to upload workspace files to their own Anthropic account — fix: a MITM proxy inside the VM that only passes requests carrying the VM's own session token.
+
+The repeating lesson: "The weakest layer is the one you built yourself." Battle-tested hypervisors and containers held. Custom proxies and allowlists failed.
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck: "The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman"*
+*No Priors — "Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang"*
 
-*The Takeaway:* Inference speed is the new bandwidth — and the chip industry is reorganizing entirely around it, with three supply bottlenecks most people don't know exist.
+_The Takeaway:_ DoorDash has been a robotics company since 2018 — and the only reason they succeeded where others failed is that they started from the customer use case and worked backwards, instead of building technology and hoping a problem would fit.
 
-Andrew Feldman is the cofounder and CEO of Cerebras, the company that built the largest chip in the history of computing (58x larger than a GPU) and just pulled off the biggest semiconductor IPO of all time alongside a $20B+ OpenAI deal. This isn't a headlines conversation — it's a bottom-up explanation of how silicon-level architecture determines the AI experience.
+Stanley Tang and Andy Fang co-founded DoorDash and began quietly investing in autonomous delivery in 2018, starting with just half an engineer's time as a skunkworks project. Fast forward: DoorDash Dot is a 300-pound, 20 mph fully autonomous robot (L4) that has been making real deliveries in Phoenix for over two years.
 
-Feldman's core argument: "We make AI with training, but we use it with inference." Once AI became genuinely useful around mid-2025, speed became everything. The right metric is tokens per second per user — and in agentic workflows with multi-cycle turns, the cost of waiting compounds. "How big is the market for dial-up? It's zero." Fast AI isn't just a UX improvement; it enables fundamentally different behavior — users stay longer, tackle harder problems, and return more often.
+The insight that drove their hardware design: sidewalk robots are too slow (2-3 mph) for 3-5 mile suburban deliveries, and robotaxis are too big and designed for a completely different pickup/drop-off problem. "If you were to start from first principles," Tang says, "it's not a sidewalk robot. It's not a robotaxi. It's probably something in between — the right metaphor is an autonomous motorcycle or scooter." Since no one was building that, they built it themselves.
 
-The supply side is more constrained than most people realize. Three simultaneous bottlenecks: HBM memory (made by only three companies in the world, all sold out), CoWoS packaging capacity, and 3nm fabrication slots. GPUs and most ASICs rely on HBM. Cerebras uses on-chip SRAM instead — which is a large part of why they achieve the inference speeds they do.
+Their data advantage is concrete and specific: 10 billion deliveries of ground truth — including exactly where human Dashers drop packages at each front door. "That data doesn't exist anywhere else. Not even in Google Maps." That first-and-last-100-feet problem is unsolvable without it.
 
-On NVIDIA's moat: Feldman argues CUDA is no longer the barrier it was. NVIDIA's acquisition of Groq for $20B confirmed what Cerebras had been saying — GPU architecture can't do fast inference at scale. "They paid $20 billion for the number two player. We were more than 10x their sales." On where this goes: "Why today's AI models will be the worst you ever use."
+On agentic commerce: their "Ask DoorDash" feature shows 50% of restaurant discovery sessions lead to orders from places users have never ordered before — historically one of DoorDash's hardest metrics to move. Grocery basket sizes are 40% larger via conversational ordering. Fang also shared that DoorDash AI spend went up 20× from January to June 2026, prompting them to publish DashBench — a coding benchmark to measure ROI on that spend.
 
-<https://www.youtube.com/@DataDrivenNYC/videos|Watch on YouTube (DataDrivenNYC)>
+Tang's counterintuitive prediction: in a world where robotics and drones are everywhere, DoorDash will have _more_ Dashers in ten years, not fewer — because the business will grow faster than any single modality can scale.
+
+https://www.youtube.com/watch?v=vNpcg_Ma-FA
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
