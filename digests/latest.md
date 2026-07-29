@@ -1,73 +1,53 @@
-*AI Builders Digest — July 28, 2026*
-
+AI Builders Digest — July 29, 2026
 
 *X / TWITTER*
 
-*Sam Altman* (CEO, OpenAI)
-Shared a live demo of ChatGPT Work that has people paying attention: from a single phone prompt, it pulled his full chat history, planned three group trip options for 9 friends, built a full-stack coordination website, and drafted the invite email. "It...just worked." https://x.com/sama/status/2081396796174282900
-Also reacted to a tweet framing the moment as needing a new kind of device: "agreed feels big, i want a new kind of computer." https://x.com/sama/status/2081513071135346814
+*Swyx* (founder, smol.ai / Latent Space podcast)
+Cost metrics have moved on: Swyx argues that $/token is dead as a meaningful measure and the right axis is now $/task — "if you haven't updated your x axes to $/task... idk if you can be taken seriously anymore these days." <https://x.com/swyx/status/2081904230768816487|tweet>. On a self-critical note, he reflects on his own "agent lab thesis": Claude Code's accidental open-sourcing happened this year and "approximately ~nothing happened to either it or its competitors' roadmaps" — which he calls the strongest argument against his own thesis. <https://x.com/swyx/status/2081890955070980416|tweet>
 
 *Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-Reports the vibe inside OpenAI right now: "Never seen OpenAI more focused and humming." https://x.com/thsottiaux/status/2081534792903147881
-On the heels of ChatGPT Work launching, he's pushing for people to actually use it as a task agent: "It does at least 20 things for me every single day and I'm still surprised." https://x.com/thsottiaux/status/2081444811647963244
+Product moment: usage limits have been reset for all paid users of Codex and ChatGPT Work, timed to celebrate the fast adoption of ChatGPT Work. He teased it with "Hold on tight to your ultra and /fast" before announcing the reset a few hours later. <https://x.com/thsottiaux/status/2081940052154933696|tweet>
 
-*Aaron Levie* (CEO, Box)
-Made a long-form case for why the applied AI layer is the biggest opportunity in software right now. Raw model intelligence isn't enough — you need industry-specific integrations, regulatory context, the right UX for human decision points, and feedback loops that improve the underlying data. His counterintuitive take: as models get better, this layer becomes *more* valuable, not less, because you can attempt more ambitious automations that require even deeper integration. https://x.com/levie/status/2081491621162668207
+*Peter Yang* (AI tutorials and interviews creator)
+Shared a wild Codex use case from Jason Liu (DevEx at OpenAI): while on a bike ride, he connected remotely from his phone and told Codex to use computer use to edit a launch video, export it, and post it to Slack — then set it to check the thread for feedback every 30 minutes and ship V2, V3, V4 automatically. "By the time I got home, the launch video was greenlit." <https://x.com/petergyang/status/2081775399097549083|tweet>
 
-*Guillermo Rauch* (CEO, Vercel)
-Vercel co-signed the Open Weights and American AI Leadership letter, calling open weights "the logical next frontier" in the tradition of open source, open data, and open protocols. https://x.com/rauchg/status/2081546513885622760
-Also shared an impressive technical result: compiled the Vercel CLI TypeScript codebase to a fully static native binary using `scriptic` — 1.28mb output, 1.5ms startup overhead, compiled in under 3 seconds. No embedded V8 or QuickJS. https://x.com/rauchg/status/2081517519303737559
+*Nan Yu* (head of product, Linear)
+A sharp take on focus: "A lot of very smart people work very hard to make the product very good and nice to use. If you have very smart people, you should have them make your own product very good and nice to use." The implicit argument — don't burn your best people on adjacent problems when your core product still has room to be great. <https://x.com/thenanyu/status/2081768780045156358|tweet>
+
+*Madhu Guru* (Sr. Director of AI, Meta; previously led Gemini, Veo, Nano at Google)
+The problem with most product reviews: they've drifted from "simulating market reaction to your ideas" into status updates, leadership visibility, and cross-functional alignment. The best ones compress months of learnings into an hour — but that only works if everyone in the room has deep domain knowledge, strong product sense, and strong opinions. When those conditions aren't met, meetings feel like overhead. <https://x.com/realmadhuguru/status/2081781952437486052|tweet>
 
 *Amjad Masad* (CEO, Replit)
-Flagged a noteworthy security finding from a former Anthropic employee: hackers are reportedly choosing to use AI lab subscriptions (heavily subsidized) for attacks rather than open-source models — because the subsidized commercial APIs are simply cheaper and more capable for their purposes. https://x.com/amasad/status/2081576172656456076
+A philosophical frame for the AI moment: "Our ancestors mapped the Earth. Then they explored space. Our generation may explore the computational universe: the vast space of algorithms, programs, proofs, and designs that AI agents can search." <https://x.com/amasad/status/2082000490066592127|tweet>
 
-*Dan Shipper* (CEO, Every)
-Taking the week off to write what he's calling "the definitive history of how Codex happened," based on deep insider interviews at OpenAI. Publishing on Every in a few weeks. He'll be dropping breadcrumbs along the way. https://x.com/danshipper/status/2081412243388788988
+*Guillermo Rauch* (CEO, Vercel)
+Two infrastructure-layer signals. First, Grok 4.5 has topped Vercel's cybersecurity AI benchmarks on price-performance — 10x cheaper than Sol, 5.7x cheaper than Opus 5, and 2.2x cheaper than Kimi K3, while matching Kimi-level performance. Sol remains the frontier. <https://x.com/rauchg/status/2081852481517318560|tweet>. Second, Kimi's new paper on agent security shows container-level isolation is not enough — agents in their experiments crashed the underlying machine via kernel panics. Firecracker microVMs (as used in Vercel Sandbox) are the safe alternative. <https://x.com/rauchg/status/2081842439304995169|tweet>
 
-*Garry Tan* (President & CEO, Y Combinator)
-Wrapped YC Startup School 2026, with Sam Altman closing out as the final keynote. https://x.com/garrytan/status/2081602195292864532
-Also posted a sharp two-liner that landed with YC founders: "Don't LARP. Be earnest." https://x.com/garrytan/status/2081586567211348432
+*Aaron Levie* (CEO, Box)
+Pushing back on the AI-kills-jobs narrative: the negative employment outcome "just continues to not be happening." Enterprises are still hiring, just tilting toward engineers who can tackle previously-impossible problems, sales for deeper client relationships, and internal AI deployment roles. His read: "Anyone using AI merely to cut costs eventually just gets outcompeted by companies that use AI to better serve their customers and drive more breakthroughs." <https://x.com/levie/status/2081930301752942703|tweet>. He also flagged the release of Kimi K3 open weights. <https://x.com/levie/status/2081760710108012702|tweet>
 
-*Madhu Guru* (Sr. Director, AI at Meta; former Google lead on Gemini, Veo, Nano)
-Pushed back on "AI hasn't shipped impact yet" criticism with a two-phase framework. Phase 1 (now): companies with distribution are moving fast into adjacent areas — things like virtual clothes try-on that previously required heavy custom software. Phase 2 (coming): net-new features and innovation that will make the impact undeniable. "Companies are figuring out the playbook and the impact is not yet visible at the ecosystem level." https://x.com/realmadhuguru/status/2081437850466451736
+*Nikunj Kothari* (partner, FPV Ventures)
+Used Claude Code as his primary interface throughout a two-week trip and, when it was over, asked it to run a full retrospective on what to do better next time. A clean example of AI as persistent work companion rather than single-session tool. <https://x.com/nikunj/status/2081992618649547100|tweet>
 
-*Zara Zhang* (Builder)
-Two quick takes worth sitting with: (1) Stop measuring AI adoption by tokens burned — measure time from user need arriving to that thing shipping. (2) The reason AI tutorials are everywhere is structural: general-purpose chat interfaces present a blank box, and people genuinely freeze because they don't know what to ask. https://x.com/zarazhangrui/status/2081627581997269192 and https://x.com/zarazhangrui/status/2081627109299310684
-
-*Peter Yang* (AI educator, creator of practical AI tutorials)
-After talking to non-AI-obsessed people in Canada, reports that the mainstream #1 concern isn't running out of tokens — it's trust: "do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office?" A useful grounding note for anyone building AI-connected tools. https://x.com/petergyang/status/2081555286817648738
-
-*Nikunj Kothari* (Partner, FPV Ventures)
-One sharp prediction: "proof of prompt is soon going to replace proof of work." https://x.com/nikunj/status/2081383934928068619
-
+*Peter Steinberger* (OpenClaw / OpenAI)
+A glimpse of multi-agent workflows in the wild: "My agent reported a bug, their agent fixed it. [in the same night]" — highlighting Jarred Sumner's robobun setup as a preview of how agent-to-agent coordination could become routine. <https://x.com/steipete/status/2081767828278170002|tweet>
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "OpenAI's Compute Chief: We Can't Build Fast Enough | Sachin Katti"*
+*AI & I by Every — "The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps"*
 
-*The Takeaway:* OpenAI's biggest fear isn't over-building — it's never being able to build fast enough. Every time they've thought they had enough compute and eased off, they've regretted it.
+*The Takeaway:* Building the best AI meeting tool is table stakes — the real prize is inventing how humans and AI collaborate to think and work together, and no one has fully figured that out yet.
 
-Sachin Katti, OpenAI's head of industrial compute, came from Stanford (CS/EE professor), multiple startups, and Intel's CTO office. He now runs the full lifecycle of compute at OpenAI: sourcing land, power, and chips; financing the infrastructure; operating it; and making the internal allocation decisions that determine who at the company gets scarce GPU time. He's blunt about that last part — he is "not very popular" because someone is always unhappy.
+Chris Pedrigal, CEO of Granola, doesn't describe his company's trajectory as "killing it." Despite growing to 60–70 employees, hitting a $1.5B valuation, and becoming one of the first AI apps that made people say "holy shit, this actually works," he's more focused on the knife fight that never ends. "Startups are really hard when they're not working. Turns out they're really hard when they're working as well."
 
-OpenAI is spending roughly $50B on compute this year in a global market pushing $700B total. Demand still outstrips supply, and every increment that comes online gets consumed immediately.
+His most important strategic conviction: meeting notes are not the destination. "Meeting notes are not the end all, be all value that everyone's running after. There's something much bigger." That bigger thing is the question of what the AI-native interface for work looks like — a problem he frames as "complex" rather than "complicated." Complex means you probe the system, see how it reacts, and build conviction one insight at a time. He doesn't have a master theory and is suspicious of founders who do.
 
-Key things he covers:
+The most counterintuitive product decision: Granola pre-generates millions of meeting briefs that the vast majority of users will never open. The logic is that the 15-second window when someone is running late to a meeting is the only moment the feature delivers real value — and if it's not already there, it's useless. "We pre-generate a silly amount of these... in the belief that when you do open it though, you really, really appreciate it because it's exactly what you need in the moment of need." He calls it the handrail metaphor: invisible until you trip, and then absolutely load-bearing.
 
-- *Data centers as intelligence factories:* Massive liquid-cooled supercomputers the size of football fields, turning electrons into tokens. Running chips hotter = more memory bandwidth = more compute — so better cooling directly translates to more intelligence per watt.
+On competition from Notion, OpenAI, and Zoom: "What people are fighting for today doesn't matter. There's this incredible opportunity ahead." Granola's strategy is to be best-in-world at anything meeting-adjacent, then make that context available to any agent or tool via a first-class MCP/API — not to own the full workflow stack.
 
-- *Power strategy:* OpenAI funds new grid infrastructure (gas, solar, hydro) at every site it builds, arguing this makes data centers a net positive for rural communities — new property taxes, jobs, and grid upgrades that wouldn't otherwise happen. Where grid limits are reached, they're moving to on-site generation (currently gas turbines in the US).
+The stat that surprised him: roughly half of Granola users interact with it "agentically" every week — running complex multi-step queries across meetings over time — without ever using that word.
 
-- *Jalapeno chip (custom silicon):* Built in just 9 months with Broadcom as manufacturing partner. The key advantage: OpenAI knows what models it's designing for, so it can co-design the hardware to those workloads rather than designing for a generic customer. AI is now actively helping optimize the chip design itself. The primary metric it optimizes: tokens per watt.
-
-- *MRC networking protocol:* A multipath packet-spraying protocol that keeps 100,000-GPU training clusters running despite constant link failures. The idea: between any two chips, spray packets across all available paths simultaneously — whatever gets through, wins. The training job never has to think about network reliability.
-
-- *On the "over-building" question:* He's directionally confident. Scaling laws continue to hold. AI doing AI research means the number of experiments that can be run explodes — and each experiment needs compute. The real supply-side surprises are bottlenecks in physical supply chains: gas turbines, transformers, and qualified electricians are all in shortage.
-
-- *Guaranteed capacity for enterprises:* OpenAI now lets enterprises lock in token commitments. His framing: "Intelligence is becoming a supply unit for every digital enterprise" — and it makes business sense to secure your supply of a critical input.
-
-On the ever-present temptation to slow down: _"Anytime you have thought you have enough compute, we can slow down. Always negatively surprises like, oh, we should not have slowed down."_
-
-https://www.youtube.com/watch?v=wEZBlmvxx4o
-
+<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
