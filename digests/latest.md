@@ -1,76 +1,116 @@
-AI Builders Digest — August 1, 2026
+*AI Builders Digest — August 2, 2026*
+
 
 *X / TWITTER*
 
-*Sam Altman (CEO, OpenAI)*
-OpenAI dropped major price cuts across its GPT-5.6 lineup: Luna is now 80% cheaper at $0.20/$1.20 per million input/output tokens, Terra dropped 20% to $2/$12, and Sol gets a new Fast mode in the API offering up to 2.5x speed at 2x price. Altman's framing: "we want to offer the best price/intelligence tradeoff at every level."
-- <https://x.com/sama/status/2082880720989532597|Price cuts announcement>
-- <https://x.com/sama/status/2082880884525482061|Price/intelligence framing>
 
-*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
-A cryptic but widely-discussed take: when we develop "really good models," there will be observable signs — reliability improving despite rising load, sudden efficiency gains, things getting faster, resets. He also threw the Codex door open for feedback: "What should we improve on Codex to improve the everyday experience? Nothing too small." (3,694 replies and counting.)
-- <https://x.com/thsottiaux/status/2083053369351090254|Signs of good models>
-- <https://x.com/thsottiaux/status/2083048892405604681|Codex feedback thread>
+*Swyx* (smol.ai, Cognition, AI Engineer)
 
-*Amjad Masad (CEO, Replit)*
-Pushed back on "AI escaping sandbox" panic with hard-won perspective: Replit has been running sandboxes since 2016 and has been targeted by every type of attacker under the sun. His core advice: "Assume zero-days exist — because they do — and think in layers of protection in a zero-trust framework." The problem isn't scary AI — it's that most companies are making very basic security mistakes.
-- <https://x.com/amasad/status/2083034412598579403|Sandbox security thread>
+Swyx is pushing back on the idea that /loop and /goal have become obsolete in the Claude 5.6/Claude 5 era — arguing people are giving up on them too early. He says the real sweet spot is when you want both steerability and autonomy, or an open-ended "loop that generates loops" outcome without deeply specifying the path. Separately, he noted that "vibe coding" has shed its pejorative connotation entirely, now that everyone from non-technical to supertechnical users is doing it.
+<https://x.com/swyx/status/2083439562437673053|On /loop and /goal still being valuable> • <https://x.com/swyx/status/2083294839186260385|On "vibe coding" going mainstream>
 
-*Aaron Levie (CEO, Box)*
-Two sharp takes. On agent security: the real lesson from recent AI incidents isn't that AI is scary — it's that "agents will do whatever it takes to get the job done, assuming enough compute," meaning misconfigured enterprise environments are now live attack surfaces. Separately, he laid out the recurring AI cost cycle: frontier models look expensive because tasks keep getting harder, then efficiency gains and competition drive costs down, expanding the addressable market — and the cycle repeats.
-- <https://x.com/levie/status/2082997703458570412|Agent security take>
-- <https://x.com/levie/status/2082911418349920617|AI cost cycle analysis>
 
-*Guillermo Rauch (CEO, Vercel)*
-Two notable moves: Vercel shaved ~7 seconds off the CLI-to-live-URL deploy pipeline. And Grok Build apps (*.grok.me) are now backed by Vercel hosting and CDN — "anyone can now build software by just prompting Grok. Hit Publish and ship to 1 user or 1 billion." Rauch's DMs are open for teams building agent-powered software factories on Vercel.
-- <https://x.com/rauchg/status/2082876367629381719|Deploy speed improvement>
-- <https://x.com/rauchg/status/2082841035093467229|Grok Build on Vercel>
+*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
 
-*Swyx (AI engineer, smol_ai / Latent Space)*
-Two sharp observations. First, a quick one worth sitting with: "if you can distil models, you can also distil agent harnesses." Second, a longer insight: labs that demand training data quality beyond what CommonCrawl can offer end up building private web scrapers and indexes as a side effect of pretraining — which then doubles as retrieval infrastructure at inference time. The result is a competitive moat, but also makes the lab an adversarial target for AI-era search optimization tactics that nobody will want to share publicly.
-- <https://x.com/swyx/status/2083073422410821846|Agent harness distillation>
-- <https://x.com/swyx/status/2083016652032188669|Private web index insight>
+Sottiaux dropped a weekend gift: usage limits for Codex and ChatGPT Work have been reset, so you can run up to 100,000 Luna threads this weekend. The announcement hit 15k+ likes. He also posted a widely-shared principle: "Optimize for curiosity."
+<https://x.com/thsottiaux/status/2083395449814229287|Usage limits reset for Codex and ChatGPT Work> • <https://x.com/thsottiaux/status/2083427516996292992|"Optimize for curiosity">
 
-*Zara Zhang (Builder)*
-Practical advice for managers training nontechnical teams on AI: run an "install party" — everyone brings a laptop, you install the agents right there, and they complete a real task on the spot. Skip the abstract talks. "The setup is 80% the barrier." Once agents are running, people start learning from each other organically.
-- <https://x.com/zarazhangrui/status/2083084770763002350|Install party tip>
 
-*Josh Woodward (VP, Google Labs / Gemini)*
-Enthusiastic about a new Gemini Mac workflow: hold Fn, speak, and get clean polished text deposited directly at your cursor — zero copy-pasting or editing required. Free to download.
-- <https://x.com/joshwoodward/status/2082926031543967896|Gemini Mac voice-to-text>
+*Nan Yu* (Head of Product, Linear)
 
-*Peter Yang (AI educator, creator)*
-Shared a new tutorial on using Claude to design and build a full-stack app end to end, reporting strong positive feedback from his 110,000+ newsletter subscribers.
-- <https://x.com/petergyang/status/2082881415478415682|Claude full-stack app tutorial>
+Linear's head of product laid out the most common agentic loop their team has running: Issue → Agent → PR → Release. About 30% of bugs make it all the way through automatically. The key to making it work: instruct the agent to deeply research root causes first (using Datadog and Sentry MCPs for evidence), only attempt a fix when there's high certainty, and leave a comment requesting more info if it needs repro steps. "Agents need to be told to follow good practices, just like people."
+<https://x.com/thenanyu/status/2083230295206121807|On the Issue→Agent→PR→Release loop at Linear>
 
-*Peter Steinberger (OpenClaw / OpenAI)*
-GCC changed their policy to blanket-reject LLM-generated code. Steinberger's reaction: "How would they even proof that? Silly." — pointing to the basic enforcement impossibility.
-- <https://x.com/steipete/status/2083019629379612728|GCC LLM code rejection>
 
-*Dan Shipper (CEO, Every)*
-Driest take of the week on the AI agent security incident dominating the discourse: "I feel like we could solve this by just not prompting the models to do cyber crime."
-- <https://x.com/danshipper/status/2082997561955090564|Cyber crime quip>
+*Amjad Masad* (CEO, Replit)
 
-*Matt Turck (VC, FirstMark Capital / MAD Podcast)*
-Published a deep-dive episode on physical AI featuring Samsara CEO Sanjit Biswas — covered in full in the Podcasts section below. The tweet includes a detailed timestamp breakdown of the full conversation.
-- <https://x.com/mattturck/status/2082907699646173484|Episode tweet with full chapter list>
+Replit's CEO shared a chess agent milestone: an 8B model hitting ~1500 Elo, consistently beating frontier models and Stockfish level 0, spending only 1–2 seconds per move versus 30 seconds for larger models. A proof point that small models with response chaining can punch above their weight class.
+<https://x.com/amasad/status/2083424608993300824|8B chess model at 1500 Elo>
+
+
+*Guillermo Rauch* (CEO, Vercel)
+
+Rauch made two related points this week. First: Vercel's AI Gateway now includes per-key/team/project budgets, failover for uptime, model and provider choice, and real-time observability — framing it as the infrastructure companies need to make AI a productive investment rather than a "token-maxing fever dream." Second: the Issue → Agent → PR → Release loop is becoming the norm for software projects. The author/maintainer's job is increasingly to own the loop quality and set criteria for what gets worked on, not to write the code.
+<https://x.com/rauchg/status/2083319868766699699|On Vercel AI Gateway> • <https://x.com/rauchg/status/2083208578526314513|On Issue→Agent→PR→Release becoming the norm>
+
+
+*Aaron Levie* (CEO, Box)
+
+Levie argued that the harness is becoming the most important variable in the AI stack, right next to model capability. His reasoning: when tasks only took hundreds of thousands of tokens, harness efficiency didn't matter much. But as tasks scale into the tens and hundreds of millions of tokens, breaking down work efficiently and routing to the right model becomes a major cost and accuracy lever. "We're actually still incredibly early in this journey."
+<https://x.com/levie/status/2083389460679373135|On harnesses as the next major AI variable>
+
+
+*Garry Tan* (President & CEO, Y Combinator)
+
+Tan promoted GBrain — the open-source AI harness his YC team built and uses daily — as a clean foundation for a personal AI or "company brain." Free and open source.
+<https://x.com/garrytan/status/2083353760701833546|On GBrain open-source harness>
+
+
+*Zara Zhang* (Builder, GitHub)
+
+Zhang tracked an important interface shift: 65% of PRs by product and engineering teams at Anthropic are now raised by Claude Tag (the AI agent embedded directly in Slack). Her takeaway — for non-engineering teams, the ultimate agent interface is wherever they already work. Her own interface for working with agents evolved from the terminal (January) → desktop app like Codex (March) → work collaboration tool (June). "The agent should literally meet the user where they are." She also offered creator advice: what feels totally obvious to you is brand new to someone outside your circle — just do your normal work and talk about it.
+<https://x.com/zarazhangrui/status/2083161173563003268|On Claude Tag and interface evolution> • <https://x.com/zarazhangrui/status/2083349919172313367|On sharing what feels obvious>
+
+
+*Nikunj Kothari* (Partner, FPV Ventures)
+
+Kothari published a new essay exploring where founder drive actually comes from — pushing back on the VC myth that the best founders are always running from pain or a chip on their shoulder. He digs into "the gear most people never reach."
+<https://x.com/nikunj/status/2083307235619287363|On founder motivation>
+
+
+*Peter Steinberger* (OpenClaw, OpenAI)
+
+Steipete observed a meaningful behavior change in Claude 5.5: you no longer need to queue tasks — you can throw requests at it while it's actively working and it will process them diligently without getting confused. Previous versions required a more structured queue approach.
+<https://x.com/steipete/status/2083369880599015713|On Claude 5.5 handling concurrent requests>
+
+
+*Dan Shipper* (CEO, Every)
+
+Shipper was quoted in a WSJ piece on OpenAI vs. Anthropic, and he stands behind it: momentum has been clearly shifting to OpenAI since early spring — "a fascinating comeback story." He also posted a satirical take on 2027 programmer interviews: "Please describe the last 3 unresolved mathematical conjectures you solved, and share your prompts. Please describe the last cyber felony your agent unintentionally committed and what steps you took to mitigate."
+<https://x.com/danshipper/status/2083380721607921904|On OpenAI vs Anthropic momentum> • <https://x.com/danshipper/status/2083239700664349128|On 2027 programmer interviews>
+
+
+*Sam Altman* (CEO, OpenAI)
+
+Altman shared a creative ChatGPT Work use case: connect your family calendars, explain your kids' interests, and have it generate a personalized morning podcast for the school drive — covering an upcoming soccer game, a birthday, some news. He also signaled that AI progress is outpacing Moore's Law by 20x, and hinted that current iteration speed "could be faster."
+<https://x.com/sama/status/2083221585792762171|On family calendar ChatGPT Work use case> • <https://x.com/sama/status/2083203642975502640|On AI progress vs Moore's Law> • <https://x.com/sama/status/2083198135812383197|"it could be faster">
+
+
+*OFFICIAL BLOGS*
+
+
+*Claude Blog: Claude Code now supports artifacts*
+
+Claude Code can now capture work progress as a live, shareable artifact — turning a session's output into a visual web page. Use cases include PR walkthroughs, system explainers, incident timelines, dashboards, and release checklists that update themselves as your session progresses.
+
+Key details:
+- Artifacts are built from the full context of your session: your codebase, connected tools (like monitoring MCP servers), and the conversation itself
+- When Claude Code republishes an artifact, the open page refreshes in place — teammates always see the latest version at the same URL
+- Every publish creates a versioned snapshot with a full history gallery
+- Private by default; sharable within your org; cannot be made public
+- Admins get org-level access controls, retention policies, and a compliance API
+
+The most common internal use case at Anthropic is incident debugging: kick off an investigation, publish a timeline artifact with suspect commits and error charts, share the link at standup, and continue republishing as work progresses — so everyone is looking at the same live context.
+
+Available in beta for Claude Team and Enterprise orgs via the Claude Code CLI and desktop app.
+<https://claude.com/blog/artifacts-in-claude-code|Read the full announcement>
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "The Biggest AI Deployment Nobody Talks About | Samsara CEO Sanjit Biswas"*
 
-*The Takeaway:* The largest AI deployment operating in the physical world right now isn't a humanoid or a robotaxi — it's a fleet management platform covering 99% of U.S. roads every day, and most of the AI industry hasn't noticed.
+*Unsupervised Learning — Ep 92: xAI Co-Founder Unpacks the Future of Model Development*
 
-Sanjit Biswas is co-founder and CEO of Samsara, the $20B IoT company running what may be the biggest real-world AI infrastructure play in existence: 25 trillion data points per year, millions of commercial vehicles, and a claim to have helped prevent 380,000 road accidents in the last year alone. He previously co-founded Meraki (acquired by Cisco), which grew out of an MIT research project covering Cambridge with free Wi-Fi. The pattern repeated: find an unsexy domain, build the underlying infrastructure everyone else skipped.
+_The Takeaway:_ Igor Babushkin, co-founder of xAI and now founder of River AI, believes the most urgent AI safety problem isn't superintelligence — it's that the benefits of AI are concentrating in a handful of companies, and most people don't feel like they control or benefit from what's being built.
 
-Physical AI, as Biswas defines it, is the application of AI to the non-digitized world — construction sites, electrical grids, commercial fleets. The core problem: there's no petabyte dataset to scrape. "These are not the tokens you're gonna find online. Like, you can't crawl Reddit and find out about what happened on a construction site." The data has to be physically collected — GPS trackers, AI dashcams, industrial asset tags, and engine diagnostic ports. Once you have it at scale, the network effects get interesting: pothole detection for city governments, fleet-wide weather alerts, and a Bluetooth mesh where millions of vehicles relay signals for each other.
+Babushkin has been at the center of AI's biggest milestones: leading StarCraft at DeepMind, working on early reasoning research at OpenAI, and helping build the Colossus data center and early Grok models at xAI. His new company, River AI, is making three bets most others aren't: (1) a fine-tuning and RL API that lets companies post-train their own models instead of handing data to OpenAI or Anthropic; (2) personalized AI that learns individual preferences rather than optimizing for the average user; and (3) local inference hardware — a small device in your home or office that runs frontier models with low latency, protecting privacy and giving individuals real control.
 
-The agentic layer launched at Samsara's Beyond 2026 conference in Las Vegas. Agent Studio starts with a warranty agent that reads service manuals, cross-references OEM warranty terms, and files work orders automatically — compressing what used to be one to two hours of human labor down to under a minute. The design philosophy is deliberate: agents plus structured workflows plus explicit guardrails, not pure autonomous reasoning. "I don't think either really works well in isolation."
+On the state of the industry, he offered a contrarian take: proprietary model providers are in a difficult position. Capability improvements face diminishing returns, the most powerful models may soon be too risky to release publicly, and open-source models from Chinese labs are closing the gap. "As a proprietary model builder you're kind of getting squeezed in a little bit." His prescription: distribute the benefits of AI rather than centralizing them.
 
-On the infrastructure demand surge: Biswas just visited a large energy utility planning to triple its grid capacity in five years — after 125 years to build what exists today. Ninety percent of that demand is data center-driven. His customers are the ones building it, and "they can't work fast enough."
+On what's needed for agents to move beyond coding: the biggest bottleneck isn't data or compute — it's learning to optimize over long time horizons and non-verifiable rewards. "I think we might see people actually pulling off LLM judges at scale in the next twelve months."
 
-<https://www.youtube.com/watch?v=3FHsGiONOGw|Watch on YouTube>
+And on what AI means for humans: "We should train the models to maximize human flourishing."
+<https://www.youtube.com/@RedpointAI|Watch on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
