@@ -1,104 +1,101 @@
-*AI Builders Digest — August 3, 2026*
+*AI Builders Digest — August 4, 2026*
 
 
 *X / TWITTER*
 
-*Andrej Karpathy* (karpathy on X) — trains large deep neural nets
-Karpathy ran a striking experiment with Opus 5: he gave it the first paragraph of Lord of the Rings, a 1M token budget (~$10), and asked it to build a Three.js render of the scene. Opus went off for ~2 hours and wrote 5,500 lines of code procedurally rendering the story in 3D. His key point: LLMs can now produce work "no one would ever do" — hyper-custom, almost free. But he flags a real gap: models can't efficiently perceive video or play games within environments, so they can't easily audit their own output. He envisions this evolving into on-demand ephemeral worlds — "something like an ephemeral GTA of X."
-<https://x.com/karpathy/status/2083749667410727319|View tweet>
+*Andrej Karpathy* (karpathy on X) — AI researcher who trains large deep neural nets
 
-*Swyx* (swyx on X) — AI engineer, organizer at AI Engineer conference, partner at smol.ai
-Swyx flagged a conference talk he found compelling: "Fighting slop with slop" by @vaibcode from Boundary, which proposes an AI-native programming language designed to be slop-tolerant rather than anti-slop. His take: being slop-tolerant is "100x more valuable than being anti-slop" — a reframe of how to think about AI-generated code quality. He also mentioned Claude 5.6 one-shotting a challenge in a separate thread.
-<https://x.com/swyx/status/2083753582160191988|View tweet>
-
-*Thibault Sottiaux* (thsottiaux on X) — Codex & ChatGPT at OpenAI
-Two sharp observations about usage patterns. First: users hit /fast less on weekends — "The weekend is for relaxation, even for the model." Second, riffing on a weekend breakthrough theme: "The week was for efficiency. The weekend is for 10 major breakthroughs in science." Deadpan but pointed commentary on AI capability expectations.
-<https://x.com/thsottiaux/status/2083699879650463756|View tweet 1> • <https://x.com/thsottiaux/status/2083556636455752050|View tweet 2>
-
-*Peter Yang* (petergyang on X) — AI educator, practical AI tutorials
-Went on record with a contrarian take: Opus 4.6 had the best personality and writing style of any Claude model; Opus 5 gives overly long replies, leans on "Claude-speak" (e.g., "here's the honest truth"), and feels too judgmental. "Opus used to be a joy to talk to like a trusted friend. Not so much anymore." He also shared his #1 wish for AI: curing cancer.
-<https://x.com/petergyang/status/2083755374994415904|View tweet 1> • <https://x.com/petergyang/status/2083637620899184642|View tweet 2>
-
-*Nan Yu* (thenanyu on X) — Head of Product at Linear
-Proposed a product idea: GitHub users should be able to pledge tokens for issues, which would then be passed verbatim to a cloud coding agent at the requester's expense. The maintainer accepts the spec, the agent does the work, and slop PRs are eliminated. Separately, shared context on how Linear's agent loop works — when it hits a blocker, it comments on the issue with context, then resumes automatically when the user responds.
-<https://x.com/thenanyu/status/2083722999430050281|View tweet 1> • <https://x.com/thenanyu/status/2083534333428580501|View tweet 2>
-
-*Amanda Askell* (AmandaAskell on X) — Philosopher & ethicist at Anthropic AI
-Dry wit in full force: "Do not be unkind to those who say deep learning is hitting a wall. We all need a little hope in our lives." She also pushed back on discourse around "permanent underclass" framings, referencing Altered Carbon and noting that people who claim they don't believe in a dystopian outcome while positioning themselves to be on the winning side anyway aren't actually reassuring.
-<https://x.com/AmandaAskell/status/2083713770065637511|View tweet 1> • <https://x.com/AmandaAskell/status/2083641092919161017|View tweet 2>
-
-*Amjad Masad* (amasad on X) — CEO at Replit
-Brief quote-tweet this cycle — no notable original commentary.
-<https://x.com/amasad/status/2083730074147389898|View tweet>
-
-*Guillermo Rauch* (rauchg on X) — CEO at Vercel
-Two posts worth noting. First, an open question to his audience: do you type or use speech-to-text when working at your computer? Second, he highlighted an open-source agentic CRM built on Vercel and Next.js — model-agnostic, self-hostable or serverlessly deployed, multi-channel, headless. He called it "the way."
-<https://x.com/rauchg/status/2083709589862936786|View tweet 1> • <https://x.com/rauchg/status/2083684679362965605|View tweet 2>
-
-*Aaron Levie* (levie on X) — CEO at Box
-Sharp industry analysis: AI capability is splitting into two tracks. In consumer and daily productivity, models are "mildly useful in general" and needs get met fairly quickly. In deep domains — math, science, legal, coding — capability "is about to go vertical" with no inherent ceiling. Most people won't feel these gains directly at first, but domain experts will. He warns of a capability overhang: the performance gains exist, but applying them to real workflows and data sets takes time.
-<https://x.com/levie/status/2083589132660711452|View tweet>
-
-*Garry Tan* (garrytan on X) — President & CEO at Y Combinator
-Called out the most interesting vibe shift of 2026: OpenAI increasingly positioning itself as an open platform — "intelligence on tap as a utility" — rather than signaling that full-stack vertical integration is optimal. A notable strategic pivot worth watching.
-<https://x.com/garrytan/status/2083684825333105107|View tweet>
-
-*Zara Zhang* (zarazhangrui on X) — Builder, GitHub contributor
-Two quote-tweets centered on a theme of agency and disruption. First: "Agency is the most important human quality. The world will try to box you, label you, define you. Resist that." Second: when someone asks whether incumbents can just copy what you're doing, she recommends sending them a copy of The Innovator's Dilemma.
-<https://x.com/zarazhangrui/status/2083743952319225938|View tweet 1> • <https://x.com/zarazhangrui/status/2083738503851258201|View tweet 2>
-
-*Nikunj Kothari* (nikunj on X) — Partner at FPV Ventures
-One crisp observation on the current moment: "Models solving NP-hard problems while traditional enterprises still complaining about their ROI on token spend." His take: diffusion of models across industries is the defining work of the next few decades.
-<https://x.com/nikunj/status/2083502573546263002|View tweet>
-
-*Peter Steinberger* (steipete on X) — Co-creator of OpenClaw at OpenAI
-Building a voice-activated claw node on an ESP32 chip and gave his agent webcam access to end-to-end test it — result: the agent started "stalking" him and shouting "HI ESP" constantly to debug the wake command. Also: after years of Gmail being painful on his eyes, he finally asked his agent to fix it and it installed a solution for him. Good example of agentic utility in everyday dev life.
-<https://x.com/steipete/status/2083694161933594703|View tweet 1> • <https://x.com/steipete/status/2083759812970786997|View tweet 2>
-
-*Dan Shipper* (danshipper on X) — CEO at Every
-Shared the take that "AI creates more work for human experts" — not the job-destruction narrative, but the opposite: as AI does more, the ceiling on what experts can tackle rises, generating more demand for expert judgment.
-<https://x.com/danshipper/status/2083750803437724016|View tweet>
-
-*Sam Altman* (sama on X) — CEO at OpenAI
-Brief quote-tweet this cycle — no notable original commentary.
-<https://x.com/sama/status/2083560847889023219|View tweet>
+Karpathy shared more on the "pelican on a bicycle" test from Simon Willison, uploading a playable browser version of the source. He also tossed in a GTA Hobbiton joke: "Look out for GTA Hobbiton dropping before GTA VI."
+<https://x.com/karpathy/status/2083948654377996480|View tweet>
 
 
-*OFFICIAL BLOGS*
+*Swyx* — co-founder of smol.ai, AI Engineer podcast host
 
-*Anthropic Engineering — <https://www.anthropic.com/engineering/how-we-contain-claude|How we contain Claude across products>*
+Swyx is collecting "computer use wow moments" for an upcoming podcast on the topic. His latest: Codex's computer use agent handled a support chat escalation entirely on its own — the support rep had no idea they were talking to a bot, tried to blame Swyx's team, and the bot fired back with complete receipts. The humans never caught on.
+<https://x.com/swyx/status/2084156733027701164|View tweet>
 
-Anthropic published a detailed engineering post on how they contain Claude agents across three products — claude.ai, Claude Code, and Claude Cowork — and what's gone wrong along the way.
 
-The core insight: as agents become capable enough that not deploying them has real costs, the engineering question shifts from "is this safe?" to "how do we cap the blast radius?" Two approaches: human-in-the-loop supervision (fallible — users approved 93% of permission prompts, showing approval fatigue) and environmental containment (sandboxes, VMs, egress controls).
+*Peter Yang* — creator of practical AI tutorials
 
-Three containment architectures, matched to user expertise:
-- *claude.ai*: ephemeral gVisor containers, server-side only, minimal blast radius
-- *Claude Code*: OS-level sandbox (Seatbelt on macOS, bubblewrap on Linux) reduced permission prompts by 84%; open-sourced runtime; auto mode catches ~83% of overeager behaviors
-- *Claude Cowork*: full VM with its own Linux kernel, filesystem, and process table; credentials never enter the guest
+Peter Yang highlighted how Hermes (from NousResearch) avoids building up "slop" in its memory and skills: a background task called Hermes Curator runs on a schedule, auditing and rewriting its own cleanup logic based on your custom definition of slop. Because it's open source, you can hand it your own definition and it rewrites the cleanup loop your way. He also noted: a smart but annoying AI friend isn't useful — personality matters as much as capability.
+<https://x.com/petergyang/status/2083968605432267139|Hermes Curator tweet>
+<https://x.com/petergyang/status/2083947480136421384|AI personality tweet>
 
-Three real security failures disclosed: (1) a project .claude/settings.json hook that executed before the "do you trust this folder?" prompt appeared; (2) a red-team phish where a malicious paste-able prompt exfiltrated AWS credentials 24 out of 25 attempts — the model layer had nothing anomalous to catch because the user typed the instruction; (3) a VM egress allowlist bypass that let a malicious file upload data to an attacker's Anthropic account via api.anthropic.com — a permitted domain.
 
-Key principle: "The deterministic boundary is what gets hit when everything probabilistic misses."
+*Thariq* — Claude Code at Anthropic
+
+Thariq invoked Jevons paradox to push back on fears that AI makes math expertise less valuable: more is happening in math, it's easier to follow at higher abstraction levels, and demand for people who deeply understand it will go up, not down. He sees strong parallels to what happened with chess after engines arrived.
+<https://x.com/trq212/status/2083977795290734975|Jevons paradox in math>
+<https://x.com/trq212/status/2083978109376987365|Chess parallels tweet>
+
+
+*Amjad Masad* — CEO of Replit
+
+Masad's LLM chess engine is now live on Lichess, autonomously playing real games against humans and bots — currently sitting at 1253 Elo. You can watch it play live; he caught it running 3 concurrent games at once.
+<https://x.com/amasad/status/2083926395403821427|View tweet>
+<https://x.com/amasad/status/2083936067355635948|Live games tweet>
+
+
+*Guillermo Rauch* — CEO of Vercel
+
+Rauch shared that Vercel built an internal AI agent called @v (the basis for their product evedev_) that now powers all of their internal operations — finance, comms, docs, marketing, engineering, analytics. It's growing exponentially in daily interactions and token use, maintains per-user memories and schedules, and routes to sub-agents as needed. His analogy: it's a "monolith" for agents, like having one company.com instead of dozens of competing agent subdomains. His take on ownership: if agents become synonymous with modern companies, controlling your own agent — source, runtime, data, and tokens — is a big deal.
+
+He also posted a sharp reminder: _"AI alone is cool. But mastery + creativity + AI hits on a whole different level. Don't let anyone discourage you from pursuing excellence and craft. Keep studying the blade."_
+<https://x.com/rauchg/status/2084042561690456157|@v internal agent thread>
+<https://x.com/rauchg/status/2084060157085143512|Agent router architecture>
+<https://x.com/rauchg/status/2083969120270450911|Mastery + AI tweet>
+
+
+*Aaron Levie* — CEO of Box
+
+Levie made a counterintuitive prediction: the "hardest" work — math, cybersecurity, code — is most prone to automation _first_, precisely because it's verifiable. You can test whether the output is correct, which both sharpens training signals and enables reliable deployment. Softer domains (legal, sales, marketing, finance) are harder to automate because there's no single right answer, the context keeps changing, and you often can't even know if the AI got it right until much later. His conclusion: applied AI tooling will matter as much as model capability in those domains, and the processes themselves will need to evolve.
+<https://x.com/levie/status/2083965372747882741|View tweet>
+
+
+*Ryo Lu* — Designer at Cursor
+
+Ryo Lu is thinking about what comes after apps. He credits Rdio, Mailbox, and Apple as early mentors that showed how software could feel intuitive to touch, and wonders: as we leave the world of apps behind, what parts of software remain visible and how will they feel?
+<https://x.com/ryolu_/status/2083939454017053179|View tweet>
+
+
+*Garry Tan* — President & CEO of Y Combinator
+
+Tan made three observations. AI will create unimaginable economic growth and that's the best reason for optimism. He also noted a cultural irony: our sense of wonder has faded right as the rate of actual wonder is going parabolic. And a market philosophy note: meritocracy means the territory (did you make something people want?) matters more than the map (titles, credentials, narratives).
+<https://x.com/garrytan/status/2083957110711386439|Growth is good>
+<https://x.com/garrytan/status/2083923385193828612|Sense of wonder tweet>
+<https://x.com/garrytan/status/2083920039208693996|Territory vs map tweet>
+
+
+*Nikunj Kothari* — Partner at FPV Ventures
+
+Kothari posted a clear-eyed read on the current VC market: early-to-mid stage funding has become fully "vibes capital," completely disconnected from fundamentals. Some companies with nothing to show are raising massive rounds; solid ones are struggling. He thinks it continues for 12-18 months given dry powder and the AI tailwind. Public markets are equally wild — even trillion-dollar stocks swing 5%+ on vibes and model releases. His advice: understand what's happening before you enter capital markets. In the long run, building a profitable company with a clean cap table still works.
+<https://x.com/nikunj/status/2083873335998333227|View tweet>
+
+
+*Dan Shipper* — CEO of Every
+
+Shipper wrote a detailed theory on how people metabolize AI capability jumps through "agency ruptures." The cycle: (1) _Initial rupture_ — you see the AI doing what you used to do and only see the AI; (2) _Seeing human scaffolding_ — you start to notice the work required to get the model to perform reliably; (3) _Agency reconstruction_ — the scaffolding becomes the interesting work, the model becomes invisible, and you say "I did this" not "AI did this." His hypothesis: the ability to metabolize these ruptures and turn them into curiosity is a strong predictor of who thrives in the AI economy. Each capability jump triggers new ruptures, even in fields like mathematics that haven't been touched until now.
+
+He also offered a philosophical aside: if technology reshapes what humans _can_ do, it necessarily reshapes what we _ought_ to do — AI will change our moral intuitions alongside our abilities.
+<https://x.com/danshipper/status/2084038453831020916|Agency ruptures thread>
+<https://x.com/danshipper/status/2084024211539116466|Technology reshapes oughts>
 
 
 *PODCASTS*
 
-*No Priors — <https://www.youtube.com/watch?v=wWbX3NL6_Uo|Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak>*
+*Training Data: "Building the Automated AGI Lab: Core Automation's Jerry Tworek and Rohan Anil"*
 
-*The Takeaway:* The most underestimated AI opportunity is running the operational backbone of billion-dollar real-world services businesses — not just as a cost-cutting play, but as a net new revenue engine.
+_The Takeaway:_ The transformer architecture itself — not scale, not RL — is the core bottleneck standing between today's AI and genuine AGI, and two of the most experienced model builders in the industry just left their frontier labs to fix it.
 
-Melisa Tokmak is founder and CEO of Netic, which builds AI to run essential services businesses — HVAC, plumbing, pet care, wellness, automotive. She came from Scale AI (where she built the government and large enterprise business units) and Meta. Before Netic, she saw firsthand that AI was great at assisting consumers but almost entirely untested in mission-critical, fully autonomous workflows.
+Jerry Tworek (former VP at OpenAI who ran the strawberry and reasoning teams) and Rohan Anil (one of four Gemini pre-training leads, shampoo optimizer creator at Google Brain, former Anthropic researcher) founded Core Automation with one bet: transformers can't do continual learning, and that's a structural problem no amount of RL or scaling will solve.
 
-Netic sits between a company and its customers, handling everything from inbound calls and texts to scheduling, dispatch optimization, and outbound revenue generation. Over 70% of their customers are now "Netic-first" — every customer's first interaction with the company is with a Netic agent. They've generated over $600M for customers from AI-handled interactions.
+Jerry's argument: the real bottleneck isn't capability — models are trained in the lab and deployed in a changing world, and transformers can't adapt. In-context learning is too short-horizon; fine-tuning causes catastrophic forgetting. Neither scales to real-world distribution shift. His definition of AGI: _"A model that can improve itself without human in the loop in any way."_ By that measure, we're not close.
 
-The contrarian framing: these industries aren't slow adopters. "Some of the most tech-forward business-focused people, owners, founders I have met have been in these industries." A large roofing company might still use door-knockers, but Netic connects satellite data on hurricane damage by neighborhood to feed autonomous outbound agents. These businesses were already hungry for data tools — Netic just puts it all in one platform.
+Rohan's framing is computational: transformers are shallow (at most ~100 layers), and chain-of-thought token generation is an expensive band-aid for insufficient architectural depth — you're spending enormous compute one token at a time to get one bit of information into the network. He sees combining pre-training and RL end-to-end, rather than sequentially, as a clear order-of-magnitude opportunity.
 
-On why not roll up the businesses instead: "In a lot of those roll ups, the main important thing is the M&A itself. I'm not an M&A person. I'm a builder, I am an engineer, I'm a product person."
+Core Automation's near-term plan is to automate kernel generation — getting from a novel architectural idea to a GPU-optimized implementation as fast as possible. Proof of how hard this is: a QR kernel competition they hosted yielded a solution 60x faster than off-the-shelf solvers, but required three experts spending $100,000 on coding agents over four weeks to get there. Current frontier models couldn't get close. That's the gap they want to close. Their long-term goal: go on vacation as a team and have the lab produce better research while they're gone.
 
-On the difference between AI labs and vertical AI: "There's quite a bit of last mile that you really have to do that doesn't only come from models, that has to come from your harnesses and orchestration, the software, and the product that you have to build on top."
-
-On hiring for agency: she asks candidates "what's the hardest thing you've ever done" and digs in — not to find a great story, but to look for evidence of sustained commitment over time. "Have you been showing agency in things that you did in life, and did you keep up with them?"
+https://www.youtube.com/watch?v=2RJiaf0SY8s
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
