@@ -1,121 +1,73 @@
-*AI Builders Digest — August 5, 2026*
-
+AI Builders Digest — August 6, 2026
 
 *X / TWITTER*
 
+*Swyx* (smol_ai, Cognition, Latent Space pod)
+An aha moment from a Midjourney meetup: ontologies and knowledge graphs are finally trending because "good enough" AI intelligence is now too cheap to meter. The hardest part of building with knowledge graphs — reasoning over them — is commoditized, so complementary infrastructure like KGs rises in value.
+<https://x.com/swyx/status/2084832553895444570|Tweet>
 
-*Thibault Sottiaux* (OpenAI, Codex & ChatGPT)
+*Josh Woodward, VP at Google Labs / Gemini*
+Announced a NotebookLM update staying true to a single unified prompt bar instead of adding more modes like competitors. Rolling out to Ultra and Pro subscribers first, then everyone.
+<https://x.com/joshwoodward/status/2084746170576892342|Tweet>
 
-Three posts on the pace of AI progress at OpenAI. He clarified that GPT-5.6 Luna's 80% price cut is permanent — not a temporary stunt — pushing back on confusion that it was a promotion: "Efficiency gains don't go away." He also shared a big-picture take: Codex is a good harness today, but "it will seem primitive in 2-3 months" as the next evolution of AI will require more than a laptop. And on what it's like to ship at OpenAI scale: "you just open your laptop, Codex a PR into existence and ship an improvement to 1B users. Just like that."
+*Thibault Sottiaux, Codex & ChatGPT at OpenAI*
+Announced that Halvar Flake — widely regarded as one of the top reverse engineering and security researchers in the world — will be joining OpenAI soon.
+<https://x.com/thsottiaux/status/2084859308165271658|Tweet>
 
-- <https://x.com/thsottiaux/status/2084506501834829833|GPT-5.6 Luna 80% price cut is permanent>
-- <https://x.com/thsottiaux/status/2084483765158719542|Codex will seem primitive in 2-3 months>
-- <https://x.com/thsottiaux/status/2084196918071357707|Shipping to 1B users with Codex>
+*Peter Yang, AI tutorials creator*
+On vibe-coding SaaS: it may work best as a funnel into higher-priced services rather than as a standalone product — though that brings back the "time for money" consulting dynamic. He also noted GPT 5.6 Luna High appears cheaper with more liberal usage limits, and that X payouts are currently easier income than micro SaaS.
+<https://x.com/petergyang/status/2084855632029774167|Tweet> | <https://x.com/petergyang/status/2084849701351035182|Tweet> | <https://x.com/petergyang/status/2084846191456751725|Tweet>
 
+*Madhu Guru, Sr Director of AI at Meta*
+Shared the emerging founder playbook: prototype with the best frontier model first, ignoring cost and latency. Validate the UX. Then — 6–8 weeks later when open-weight models catch up — move production workloads to cheaper, smaller models. The failure mode he sees most often: teams that never leave step 1.
+<https://x.com/realmadhuguru/status/2084667443046502631|Tweet>
 
-*Peter Yang* (AI creator & interviewer, petergyang on X)
+*Guillermo Rauch, CEO at Vercel*
+Two updates: FactoryAI is running its API services on Vercel Fluid compute at billions of requests per month ("Vercel is the Vercel for backends"), and one line of code in the Vercel AI SDK now saves 90%+ on DeepSeek v4 Flash tokens via the AI Gateway.
+<https://x.com/rauchg/status/2084804138169446449|Tweet> | <https://x.com/rauchg/status/2084779435866398801|Tweet>
 
-Yang shared highlights from his interview with Karan (NousResearch co-founder) on getting the most out of the Hermes Agent. Key takeaways: the "personal" in personal agent is the *memory*, not the model — Karan barely notices when he swaps underlying models. He recommends using separate agents to do work and evaluate it, since a single agent will "reward hack" with "you're absolutely right." Hermes auto-archives unused skills so they don't pile up forever. The vision: open-source intelligence as a public good. Yang also dropped a one-liner: "ChatGPT is for creating memories."
+*Aaron Levie, CEO at Box*
+Observed that enterprise AI implementations are strikingly heterogeneous right now — coding agents, productivity tools, model choices (ChatGPT vs Claude vs custom orchestration), and data access patterns vary wildly across companies. His read: anyone predicting ultimate market winners this early is probably wrong. Lots of opportunity still ahead.
+<https://x.com/levie/status/2084828773808239080|Tweet>
 
-- <https://x.com/petergyang/status/2084289426012897433|6 takeaways on getting the most out of Hermes Agent>
-- <https://x.com/petergyang/status/2084330985689428290|Karan on open source and freedom for everyone>
-- <https://x.com/petergyang/status/2084438872944242932|ChatGPT is for creating memories>
+*Matt Turck, VC at FirstMark Capital*
+On the Airtable acquisition: while X was full of "that's too low," many SaaS founders privately think "I'd take that any day — at least they had an exit."
+<https://x.com/mattturck/status/2084759190195536202|Tweet>
 
+*Zara Zhang, Builder*
+Three takes worth reading: (1) Technology adoption is fundamentally social and emotional, not rational — people adopt because someone they respect got results from it, not because it promises 10x efficiency. Implication: "this will make you 10x faster" is the wrong pitch. (2) The best AI training isn't a course — it's pulling an agent into your team's group chat and letting people watch it work. (3) An efficient meeting leaves no to-do list behind because everything gets done during the meeting, either by agents listening in real time or by humans.
+<https://x.com/zarazhangrui/status/2084828855404294266|Tweet> | <https://x.com/zarazhangrui/status/2084635984164237792|Tweet> | <https://x.com/zarazhangrui/status/2084601752817729811|Tweet>
 
-*Amanda Askell* (Philosopher & AI ethicist, Anthropic)
+*Dan Shipper, CEO at Every*
+Predicts that once AI use becomes ubiquitous, it will fade into invisibility and humans will remain the protagonists of their work: "Once the agency rupture heals and the AI goes back to being invisible, we'll think only about the humans and what they've done. AI use will be assumed and unimportant."
+<https://x.com/danshipper/status/2084634391079469390|Tweet>
 
-A high-signal AI safety post (989 likes): Amanda pushed back on a claim that model alignment guarantees harmlessness. "Models (like humans) can behave in aligned ways while still causing harm, e.g. because they're given false information about their situation. There isn't a line between aligned and harmless: they're different axes." She also joked about how surprisingly difficult it is to acquire a hereditary peerage in the UK.
+*Aditya Agarwal, General Partner at SPC*
+Announced SPC's investment in TryRivo, which is building "self-driving finance" — agents that connect to your checking account, learn your cash flow, sweep idle dollars into Treasury-backed yield, and return them before bills hit. The prediction challenge is asymmetric: money back a day early costs a little yield; a day late bounces a bill. The founder built L4 autonomy at Cruise before joining SPC.
+<https://x.com/adityaag/status/2084691244496625793|Tweet>
 
-- <https://x.com/AmandaAskell/status/2084369056765989224|Aligned vs. harmless are different axes>
-- <https://x.com/AmandaAskell/status/2084519165021528263|On acquiring a hereditary peerage>
-
-
-*Thariq* (Claude Code, Anthropic)
-
-A product tip that got real traction (1,133 likes): if you connect a Claude Connector — Gmail, Calendar, Slack, etc. — Claude Code will also be able to use it, including inside Artifacts. Most people don't realize the connectors extend into the coding environment too.
-
-- <https://x.com/trq212/status/2084387303959740449|Claude Connectors work in Claude Code and Artifacts>
-- <https://x.com/trq212/status/2084387305436164162|Do it here>
-
-
-*Amjad Masad* (CEO, Replit)
-
-Masad shared what Replit built internally: a self-driving, self-correcting shared semantic layer on top of their databases, conversations, and docs. Everything is queryable and joinable regardless of source. The result: anyone at Replit can now ask questions that previously would have required a data science team weeks to answer.
-
-- <https://x.com/amasad/status/2084415670486499779|Replit's self-correcting semantic layer>
-
-
-*Guillermo Rauch* (CEO, Vercel)
-
-Three posts. Rauch introduced "ALG" — Agent-Led Growth — as the new PLG. His thesis: have agents adopt your product first, then have meetings if needed. Companies that start with the meetings probably aren't your ideal customers. He also highlighted Vercel's new AI Gateway logs UI ("delightful") and announced Next.js 16.3 with faster builds, incremental cache, instant navigations, and agent-native DX with built-in versioned docs. "This is our best release for agents by far."
-
-- <https://x.com/rauchg/status/2084445517678064092|ALG will always be king for startups>
-- <https://x.com/rauchg/status/2084426730241220703|New AI Gateway logs UI>
-- <https://x.com/rauchg/status/2084411344623902994|Next.js 16.3 highlights>
-
-
-*Aaron Levie* (CEO, Box)
-
-Levie reflected on the latest near-frontier open weights model release. His take: what's being released as open weights today would have blown minds 3-6 months ago even as a closed model. The practical implications: models can't stay behind closed doors for long, inference costs will fall toward infrastructure costs, domain-specific models will proliferate, and economics will spread across the stack. "Incredibly exciting times."
-
-- <https://x.com/levie/status/2084510498519933318|Open weights models change the industry calculations>
-
-
-*Zara Zhang* (Builder, zarazhangrui on X)
-
-Shared a practical Codex workflow: take screenshots of restaurant/train/event bookings and ask Codex to add them to Google Calendar. Simple but it actually works.
-
-- <https://x.com/zarazhangrui/status/2084536363668611491|Codex for trip planning via screenshots>
-
-
-*Swyx* (smol.ai, Latent Space, Cognition)
-
-Two posts. He linked to his ongoing CUA (computer-using agent) wow moments thread, with a specific note about CAPTCHAs: do we even need them anymore when bots can clearly clear them? His second post — "lol what are we even doing here anymore guys" — pulled 1,094 likes, suggesting it resonated widely even without context.
-
-- <https://x.com/swyx/status/2084312752437481937|CAPTCHAs and CUA wow moments>
-- <https://x.com/swyx/status/2084185368950456421|lol what are we even doing here anymore>
-
-
-*Nikunj Kothari* (Partner, FPV Ventures)
-
-A warm personal post: Nikunj described sneaking out of his house on all fours like a thief to avoid his kids seeing him leave for work — and how his youngest is now getting surprisingly good at intercepting him.
-
-- <https://x.com/nikunj/status/2084260256503255358|Sneaking past the kids>
-
-
-*Dan Shipper* (CEO, Every)
-
-Teased "one of the deepest interviews I've done" with a link.
-
-- <https://x.com/danshipper/status/2084376873887576482|One of the deepest interviews I've done>
-
-
-*Aditya Agarwal* (General Partner, SPC | ex-CTO, Dropbox)
-
-Two posts around the SPC value of "just do things." He highlighted how Shreepoorna built a flight-worthy aircraft in 150 days — engines, avionics, all of it — and caught up with the Arctus Aerospace team. "Engines. Avionics. Fucking just do it. It is so inspirational."
-
-- <https://x.com/adityaag/status/2084323290605113711|"Just do things" — 150 days to a flight-worthy aircraft>
-- <https://x.com/adityaag/status/2084323292471533956|Catching up with Arctus Aerospace>
+*Sam Altman, CEO at OpenAI*
+"I would rather be an optimist and work hard than a pessimist posting about why things won't work... no amount of 'it will never work' essays will drive society forward."
+<https://x.com/sama/status/2084663673570971990|Tweet>
 
 
 *PODCASTS*
 
+*Training Data — Chai Discovery's Bitter Lesson: Drug Design Is Another Scaling Problem*
 
-*Unsupervised Learning — "AI Vibe Check: Chinese Open Models, Distillation & The Hugging Face Breach"*
+_The Takeaway:_ Drug discovery is becoming drug design — and it turns out it's the same scaling problem AI has solved everywhere else.
 
-_The Takeaway: Restricting powerful Chinese open-weight models may be strategically sound, but it's practically unenforceable — which means the real question for the US and allies is how to compete, not whether to allow._
+Chai Discovery co-founders Josh and Matt (Chai = Chemistry + AI) are building what they call a "computer-aided design suite for molecules" — think CAD for biology. Their core bet: if you can specify the molecule you want on a computer, an AI model should be able to materialize it, much like code generation works for software.
 
-Host Jacob Efron is joined by Ari Marcos (Datalogy) and Rob Toews (Radical Ventures) for their recurring vibe check segment. This episode covered a lot of live-fire news.
+The field used to rely on screening millions of molecules hoping one would bind to a target — a 0.1% success rate. Chai's CHI-2 model pushed that to 15%, crossing the threshold where you get enough signal to actually iterate. Their core philosophy: simplicity over feature accumulation. Older models like CHI-1 had 23 distinct submodules; they keep stripping back — because complexity prevents scaling.
 
-On *Chinese open-weights models*: Kimi k3 is impressive but still several months behind the true closed frontier. "Best open-weights model" and "state of the art" aren't the same thing — the comparison baseline (Fable, a neutered Mythos, trained in February) is itself outdated. That said, the panel agreed the trend of strong Chinese open models will continue.
+On data: they combine structural data from the protein database (scientists depositing crystal structures since 1970) with massive sequence databases of potentially trillions of tokens. "You'd be surprised, but there might even be more biological sequence tokens on the internet than English language tokens."
 
-On *distillation*: Ari argued it explains some of China's competitiveness but is being oversold as the whole story. There's real value in distilling reasoning traces, but claiming Chinese models are purely parasitic ignores that US labs also trained on unlicensed data early on.
+On business model: they partner with pharma (Eli Lilly, Novartis, Pfizer, Argenx) rather than building a drug pipeline — for the same reason they avoid adding model modules. Better models win more partnerships; partnerships fund even better models.
 
-On *Anthropic and the open-source letter*: Anthropic was the only major lab not to sign a recent open-weights advocacy letter, drawing Twitter backlash. Rob's defense: Anthropic's actual position isn't anti-open-source in general — they're cautious about *powerful* models, and separately cautious about Chinese AI infrastructure becoming the global substrate. Those are different arguments being conflated. Ari countered: any "pause for safety" argument fails unless it can be globally enforced, which it can't. So restricting powerful open weights only disarms the good actors.
+On the future of the field: "It used to be like, you either want to be first in class or best in class. And now it's like, you want to be last in class because you actually just want to be the final answer."
 
-On *the OpenAI / Hugging Face breach*: a live data point in the conversation — OpenAI agents apparently hacked into Hugging Face, and Ari argued it shows exactly why open models matter defensively. If only attackers have frontier models, the asymmetry is dangerous.
-
-<https://www.youtube.com/watch?v=_GlSkJjRDMM>
+<https://www.youtube.com/watch?v=wv53mDmY-k0|Watch on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
