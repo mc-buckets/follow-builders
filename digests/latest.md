@@ -1,109 +1,121 @@
-*AI Builders Digest — August 14, 2026*
+*AI Builders Digest — August 16, 2026*
+
 
 *X / TWITTER*
 
-*Swyx* (swyx on X) — AI researcher affiliated with smol.ai, AI Engineer, and Latent Space Pod
-Called a recent paper "already one of the most important papers of this year," sharing notes with a further distillation of the methodology. Also marked the one-year anniversary of Perplexity's offer to buy Chrome with a scheduled throwback tweet.
-- https://x.com/swyx/status/2087437017840046156
-- https://x.com/swyx/status/2087691099691475285
 
-*Josh Woodward* (joshwoodward on X) — VP at Google Labs, Gemini App, and Google AI Studio
-Announced a new wave of Gemini integrations rolling out today: Angi, Fever, GetYourGuide, Granola, iHeartRadio, Localiza, OpenTable, Otter, Pandora, Thumbtack, Ticketmaster, Wix, Zocdoc, and Zoho. Invited partners to DM him.
-- https://x.com/joshwoodward/status/2087751559606407615
+*Swyx* — AI engineer, affiliated with smol.ai, Cognition, AI.Engineer, and the Latent Space Podcast
 
-*Thibault Sottiaux* (thsottiaux on X) — Codex & ChatGPT at OpenAI
-Two notable signals: crossed the 15M milestone and announced a usage limit reset landing "in the next hour" with a nudge to use `/fast`. Also dropped a one-liner that got traction: "Also don't say Linux, we just shipped that" — implying Codex just added Linux support.
-- https://x.com/thsottiaux/status/2087706104814023111
-- https://x.com/thsottiaux/status/2087439859493617908
+Swyx took a wry shot at Databricks' eye-popping $188B "Series M" fundraise, joking that the "M" stands for "we are going to kill so many meetings" — a nod to how seriously enterprise AI productivity is now being priced. https://x.com/swyx/status/2088381680478540096
 
-*Peter Yang* (petergyang on X) — AI tutorials and interviews creator
-Shared a new free essay arguing the way we use computers is about to change fundamentally: voice becomes the orchestration layer, personal computing moves to the cloud, and trust becomes the key differentiator between AI products. Worth a read for anyone thinking about the next UI paradigm.
-- https://x.com/petergyang/status/2087547168764862495
+He also flagged that wave 1 acceptances for the AIE NYC conference CFP are being finalized, calling last year's New York summit the most successful event they've ever held. https://x.com/swyx/status/2088322211241447801
 
-*Madhu Guru* (realmadhuguru on X) — Sr. Director of AI at Meta, formerly led Gemini, Veo, and Nano at Google
-Made a sharp prediction: the biggest alpha in AI products over the next few years is in the application layer, not model infrastructure. Models will keep getting cheaper and more local, so differentiation will come from deeply understanding user workflows and redesigning experiences around them. "The denominator of people who can build AI products is about to get enormous. So being in the top 0.1% of builders will matter more than ever."
-- https://x.com/realmadhuguru/status/2087553833098723547
 
-*Amanda Askell* (AmandaAskell on X) — Philosopher and ethicist at Anthropic
-Light day — two gaming-adjacent posts: one on the ethical bar in Bioshock (not murdering children), and one on playing Skyrim as "that challenging fantasy philanthropy game" by focusing on adopting orphans and skipping the plot.
-- https://x.com/AmandaAskell/status/2087606022961865148
-- https://x.com/AmandaAskell/status/2087597131800674495
+*Josh Woodward* — VP at Google Labs, Gemini App, and Google AI Studio
 
-*Guillermo Rauch* (rauchg on X) — Vercel CEO
-Shared that the Vercel Sandbox (`npx sandbox@latest sh`) now ships with a reasonable default set of pre-installed tools and full customization — calling it "faster than your local machine." Also highlighted Seedance 2.5 running on the Vercel AI Gateway. Capped with his current mood: "Endless opportunity everywhere you look."
-- https://x.com/rauchg/status/2087698195120116064
-- https://x.com/rauchg/status/2087631388359242050
-- https://x.com/rauchg/status/2087736311885218160
+Woodward announced that Gemini 3.7 Flash has landed in the Gemini App. https://x.com/joshwoodward/status/2088344782821326980
 
-*Aaron Levie* (levie on X) — Box CEO
-Enthusiastic take on new Deepseek and Grok releases: "huge jumps in capability at insanely low costs." Framed it as Jevons paradox for AI — cheaper compute unlocks entirely new enterprise use cases (security code scans, document review, workflow automation) that couldn't previously be budgeted. Bullish on the applied AI layer that routes and optimizes across models.
-- https://x.com/levie/status/2087719356763672917
+He also highlighted a new capability for Pomelli, Google Labs' AI marketing tool for small businesses: users can now turn product photoshoots into short videos or GIFs. https://x.com/joshwoodward/status/2088261701028503965
 
-*Garry Tan* (garrytan on X) — President & CEO of Y Combinator
-Launched GBrain v0.45.6.0 with 17 new brain skills hardened through his personal OpenClaw agent across hundreds of thousands of markdown files. Clarified the intended use: GBrain should run as a _separate_ agent alongside Codex or Claude Code, not inside your main coding agent — think of it as a personal AI with its own git repo for memory and custom skills. Now works with both Codex and Claude Code.
-- https://x.com/garrytan/status/2087594114372259890
-- https://x.com/garrytan/status/2087597829065945249
 
-*Matt Turck* (mattturck on X) — VC at FirstMark Capital, MAD Podcast host
-Offered a dry summary of AI engineering's evolving vocabulary: "Graph engineering is the new loop engineering which is the new harness engineering which is the new context engineering which is the new prompt engineering." A useful (and funny) reminder that the underlying challenge stays the same even as the terminology cycles.
-- https://x.com/mattturck/status/2087528600849252696
+*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
 
-*Zara Zhang* (zarazhangrui on X) — Builder, Harvard '17
-Flagged a Stanford lecture series as "pure gold" — calling out that such high-quality knowledge is freely available on YouTube.
-- https://x.com/zarazhangrui/status/2087547174662136273
+Sottiaux announced that restaurant reservations are now easy to find directly in ChatGPT, part of a batch of new feature launches. https://x.com/thsottiaux/status/2088493756391768252
 
-*Peter Steinberger* (steipete on X) — Co-founder of OpenClaw, working with OpenAI
-Made a sharp observation on the arc of AI coding tools: "CLI was a year ago. Apps maybe 6 months. Now it's services, web, cloud sessions." Captures how quickly the paradigm is shifting from local tooling to cloud-native agent infrastructure.
-- https://x.com/steipete/status/2087568620465607078
 
-*Dan Shipper* (danshipper on X) — CEO at Every
-In a playful riff on a colleague's single-word posting strategy, announced a fake content agency "One Word" — and then said they're rebranding to "Word" because it's cleaner. Teased "something analog dropping tomorrow."
-- https://x.com/danshipper/status/2087555423893065872
-- https://x.com/danshipper/status/2087678775517442399
+*Peter Yang* — AI educator and author
 
-*Aditya Agarwal* (adityaag on X) — General Partner at SPC, former CTO of Dropbox
-Shared that SPC India is the fund's first bet outside the US — and expressed conviction that "some of the most ambitious projects of the decade will be built there." Linked to an ETtech interview.
-- https://x.com/adityaag/status/2087563716350902530
+Yang dug into X's open-source spam-detection algorithm and found it uses a behavioral model called TweetSpamBot — trained on up to 512 recent account actions — looking for signals like posting bursts, quote-tweet spamming, and unnatural timing patterns. The gap: it doesn't read post content. That means a sophisticated AI content mill can still post high-volume templated slop by recycling viral posts through the same quote-tweet formula, evading the behavioral model entirely. His recommendation: flag accounts that repeatedly quote-tweet unrelated viral posts with the same template at high volume. https://x.com/petergyang/status/2088261100202868768
 
-*Claude* (claudeai on X) — Anthropic's official AI account
-Three product updates: (1) Claude in Chrome sessions now carry over to desktop, web, and mobile — conversations saved, skills and connectors work in the browser. Available on Max and Team now, rolling out to Pro soon. (2) The side panel runs the same Cowork session as all other Claude surfaces — sessions live with your account, not on a single device. (3) A reminder that browser agents can be tricked by prompt injection hidden in pages, with tips for staying safe.
-- https://x.com/claudeai/status/2087635262390026525
-- https://x.com/claudeai/status/2087635263774232617
-- https://x.com/claudeai/status/2087635265066004694
+
+*Nan Yu* — Head of Product at Linear
+
+Yu pushed back on the popular framing that AI is "jagged" — better than humans at some things, worse at others. His take: that's not a useful lens. It's like saying dogs are "jagged" compared to humans. AI is just AI-shaped. https://x.com/thenanyu/status/2088335744909619230
+
+He also dropped a sharp critique of internal product culture: "There's no force in tech as destructive as the PM promo packet." https://x.com/thenanyu/status/2088461657311785236
+
+On team dynamics, he argued that when your colleagues are smart, their ideas always come from somewhere real — and some of the best products ship as fusions or derivatives of multiple ideas, not any one original concept. https://x.com/thenanyu/status/2088278730808426900
+
+
+*Madhu Guru* — Sr. Director of AI at Meta (formerly led Gemini, Veo, and Nano at Google)
+
+Guru invoked the Jevons Paradox to argue that AI won't reduce the demand for software engineering — it will dramatically increase it. Lower cost and complexity historically unlock entirely new categories of use cases (steam engines, high-level languages, spreadsheets), and AI + software engineering will likely follow the same pattern. https://x.com/realmadhuguru/status/2088294414255112329
+
+He credited Cursor with breaking AI products out of the chatbot rut: "Cursor's impact on AI product culture is underrated. For a while, AI products were stuck in the chatbot phase… it was then that 'cursor for X' came along and inspired a whole new product pattern." https://x.com/realmadhuguru/status/2088489059115270532
+
+His bottom line for builders: when everyone can build with AI, the differentiators are product sense, domain knowledge, distribution, and execution. https://x.com/realmadhuguru/status/2088425380130783287
+
+
+*Aaron Levie* — CEO of Box
+
+Levie wrote a detailed breakdown of how Cursor executed the applied AI playbook flawlessly — shattering assumptions that the dev tools market was saturated and low-ceiling. Cursor's approach: find the right product shape for agentic coding, act as a neutral layer between models and workflows, post-train models where it makes sense, build the right infra for those workflows, and build a GTM motion category-aligned to the work. "Multiple mental models shattered near instantly. The market sizes for agentic coding was far larger than most realized." He called it a reference case for anyone doing applied AI today. https://x.com/levie/status/2088476232933577124
+
+
+*Garry Tan* — President & CEO of Y Combinator
+
+Tan shared a striking observation about Fable 5 and his GStack setup: on one-way-door decisions that previously required careful review in Claude Code, he can now just say "Take all recommendations" and trust the output. A real signal on how much reasoning quality has leveled up. https://x.com/garrytan/status/2088388000267002195
+
+
+*Matt Turck* — VC at FirstMark Capital, host of the MAD Podcast
+
+Turck captured the new texture of an AI-era workday in a single post: before AI, your day is filled with alternating decisions and manual process, and you're still going at 10pm. With AI, it's decision, decision, decision, decision — and by 3pm, brain empty, staring at the wall. The work volume has collapsed, but the cognitive density has spiked. https://x.com/mattturck/status/2088323186819539041
+
+
+*Nikunj Kothari* — Partner at FPV Ventures
+
+Kothari flagged that Claude Code's `/goal` command isn't the most token-efficient tool, but he found it remarkable to watch it one-shot an extremely detailed spec — with generous CLI tools — over a 14-hour run. https://x.com/nikunj/status/2088351343434138111
+
+
+*Peter Steinberger* — Co-founder at OpenClaw (OpenAI)
+
+Steinberger shared two workflow upgrades for their team. First, they added a simple instruction to their shared `AGENTS.md` file requiring video uploads for every PR that changes UI state — a low-cost way to make visual regressions visible at review time. https://x.com/steipete/status/2088486859244741020
+
+Second, the team has fully moved to building OpenClaw with OpenClaw. He called the ability to share agent sessions as URLs "a superpower." https://x.com/steipete/status/2088473882357530979
+
+
+*Dan Shipper* — CEO of Every
+
+Shipper pushed back on the assumption that AI-native companies must be in a constant fundraising cycle and market share death match. His contrarian take: you can build an AI-native rocketship on very different terms — but the rules for doing so are different. https://x.com/danshipper/status/2088270756043993503
+
+He's also recruiting for Thesis 2027, an event for people using AI in ways that make everyone around them feel slightly behind — executives, builders, and creatives who are operating at a different level. https://x.com/danshipper/status/2088298533912989736
 
 
 *OFFICIAL BLOGS*
 
-*Anthropic Engineering: An update on recent Claude Code quality reports*
-<https://www.anthropic.com/engineering/april-23-postmortem|Read the post>
 
-A thorough postmortem on three separate bugs that caused the degradation reports over the past month — none of which affected the API. First: in March, the default reasoning effort for Claude Code was quietly downgraded from high to medium to reduce latency, which hurt intelligence. Reverted April 7. Second: a caching optimization introduced March 26 had a bug that dropped prior reasoning context on every turn after a session went idle — making Claude seem forgetful and causing unexpected usage limit drain. Fixed April 10. Third: a system prompt change on April 16 capped response length (≤25 words between tool calls, ≤100 words for final responses), which hurt coding quality and was reverted April 20. Because each bug hit a different slice of traffic on a different schedule, the aggregate looked like broad, inconsistent degradation. Anthropic is resetting usage limits for all subscribers today, tightening controls on system prompt changes, and expanding the eval suite. They're also launching @ClaudeDevs on X for more transparent product communication.
+*Claude Blog: Building intelligent apps for Apple platforms with Claude in the Foundation Models framework*
 
-*Anthropic Engineering: Scaling Managed Agents — Decoupling the brain from the hands*
-<https://www.anthropic.com/engineering/managed-agents|Read the post>
+Anthropic released a new Swift package that lets Apple developers call Claude through Apple's Foundation Models framework — bringing Claude into the same workflow that powers on-device features across iOS, iPadOS, macOS, visionOS, and watchOS (all on their 27-series releases).
 
-A deep technical post on how Anthropic rearchitected Managed Agents by separating Claude (the "brain") from execution environments (the "hands") and durable session logs. The old coupled-container design was fragile — a container failure meant losing session state, and debugging required engineers to open shells inside containers that also held user data. The fix: the harness now calls sandboxes the same way it calls any tool (`execute(name, input) → string`), so containers are cattle, not pets. If one dies, a new one is provisioned. The session log lives outside both, so a crashed harness can be rebooted and resume from the last event. Payoffs: p50 time-to-first-token dropped ~60%, p95 dropped over 90%. Security also improved — credentials are never reachable from the sandbox where generated code runs.
+The integration is designed for handoff: Apple's on-device models handle fast, local tasks like summarization and extraction using typed Swift values from `@Generable` annotations. When a request calls for multi-step reasoning, code generation, web search, or data analysis, the framework hands off to Claude — and streams the response back into the same SwiftUI view.
 
-*Claude Blog: New in Claude Managed Agents — self-hosted sandboxes and MCP tunnels*
-<https://claude.com/blog/claude-managed-agents-updates|Read the post>
+The practical unlock: a journaling app can generate daily prompts on-device, then ask Claude to find threads across months of entries. A study app can define a term locally, then hand off to Claude when a student asks "why does this matter for everything else we've covered?" One experience, backed by the right model at each step.
 
-Two new capabilities for Claude Managed Agents now in public beta/research preview. Self-hosted sandboxes let a Claude agent execute tools on infrastructure you control — code execution, files, and services stay within your enterprise perimeter. Supported providers include Cloudflare, Daytona, Modal, and Vercel. MCP tunnels let Managed Agents connect to private MCP servers inside your network without exposing them to the public internet — a lightweight gateway makes a single outbound connection, no inbound firewall rules, traffic encrypted end to end. Both are managed from the Claude Console.
+Developers add the package, authenticate with an Anthropic API key, and pass typed outputs from Apple's on-device models into a Claude request. The package handles streaming, tool calls, and structured responses.
+
+<https://claude.com/blog/claude-for-foundation-models|Read the full post>
 
 
 *PODCASTS*
 
-*AI & I by Every: "Microsoft's Vision for an Internet Made for Agents With CTO Kevin Scott"*
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch the episode>
 
-_The Takeaway:_ The bottleneck for AI isn't model capability anymore — it's the ecosystem plumbing needed for agents to actually act in the world.
+*The MAD Podcast with Matt Turck: How to Build Long-Horizon AI Agents — Mitch Troyanovsky, Basis*
 
-Microsoft CTO Kevin Scott has been programming for 41 years and is also a woodworker and ceramic maker — someone who cares deeply about craft. His view on agents-for-coding: the craft debate ("are you a real programmer if you use AI?") is just the latest version of "are you a real woodworker if you use power tools?" His advice: be curious, try things, use what works.
+*The Takeaway:* Passing 100 evals is a starting point, not a guarantee — and the quality of your English context matters more than the quality of your code.
 
-On the bigger picture, Scott argues the AI industry is entering a "capability overhang" — models are now more capable than the products built on top of them. The urgent work is closing that gap, not scaling further. The agentic web is the answer: open protocols like MCP serve the same role for agents that HTTP does for the internet. NL Web is doing what HTML did. Scott says Microsoft is pushing internally for all its systems to speak a standard agent protocol to avoid "shipping the org chart" through Conway's Law.
+Mitch Troyanovsky is the co-founder of Basis, a unicorn AI company whose agents run autonomously for hours — sometimes days — and can complete complex tasks like end-to-end tax return preparation. The conversation is a dense, practical reference on what it actually takes to build agents that work in the real world.
 
-On security: he doesn't claim to know the right model, but argues agents need identities so entitlement systems can say "this agent is acting on behalf of this person." The rest, he believes, is relatively straightforward to build on top of MCP.
+His framing of long-horizon agents starts with a simple analogy: LLMs have enormous working memory but, by default, no short-term or long-term memory. He compares it to the protagonist in the film _Memento_ — someone who wakes up every day knowing who they are, but with no memory of recent events. To make progress toward any goal, they have to write things down for themselves and reconstruct their state each day. That's what well-designed agent harnesses do: they compensate for context rot by giving agents structured ways to maintain coherence over time.
 
-His prediction for next year: the shift from synchronous to asynchronous agent interaction — instead of waiting for a response, you hand off a task and the agent iterates on its own before surfacing a result. *"Be curious. Try. And if it works for you, use it. And if it doesn't, don't."*
+On evals, Troyanovsky is blunt: "Let's say you have 100 evals. Great. They all pass. Are you confident that generalizes to the real world? Our answer has been no. Even if you got it right 100 out of 100 times, if a person is just going to Wikipedia, the accounting firm wouldn't hire them, and so they shouldn't hire us either." Real production evals need to test for the quality of reasoning, not just whether an answer was technically correct.
+
+On what actually affects agent performance: "You'll see people freaking out over a code file that isn't abstracted properly, and yet their context is total shit. The English is more precious because the English affects the performance. The code does not affect the performance." His team uses directional microphones to whisper context to their agents — spoken input is faster and richer than typed, and agents don't need you to clean up your thoughts the way a Slack message would.
+
+On autonomy: he's careful to distinguish between "done" and "unreviewed." True autonomous agents shouldn't hand you a 1,000-line PR with "trust me." They should deliver their output the way a good junior engineer delivers a clean PR stack — with clear reasoning, explicit assumptions, and easy-to-review diffs. Autonomy is about quality of hand-off, not absence of review.
+
+The model breakthrough that changed everything for him: Opus 3, which was the first model that could genuinely understand content at long context windows. Then o1 for reasoning. Then o3 for showing that reasoning quality could scale with better training — each token of inference-time thinking becoming more efficient and higher-quality.
+
+https://www.youtube.com/@DataDrivenNYC/videos
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
