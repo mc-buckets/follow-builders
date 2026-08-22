@@ -1,97 +1,109 @@
-AI Builders Digest — August 20, 2026
+AI Builders Digest — August 22, 2026
 
 *X / TWITTER*
 
-*Swyx* (smol_ai / Latent Space Pod)
-Swyx took a swipe at non-technical AI journalists, arguing that covering the space without any internal world model leads to credulous face-value takes. He also offered a positive read on usage-based billing, framing OpenRouter as a healthy model in that lens.
-- <https://x.com/swyx/status/2090314794456785263|On non-technical AI coverage>
-- <https://x.com/swyx/status/2090259930662211615|On OpenRouter and UBB>
+*Swyx (latentspacepod, smol.ai)*
+Two notable shares. Swyx promoted the latest Latent Space podcast with Eisok Kant — who NVIDIA just paid $6B for — on why his company is producing models that are "actually, not exaggeration" beating frontier benchmarks. He also highlighted AI Dot Engineer speaker Matt Pocock's new /wayfinder skill, designed for navigating early-stage research when you don't yet know what you don't know, pairing it with a course launch covered by Richard MacManus.
 
-*Josh Woodward* (VP, Google Labs / Gemini)
-Google's Gemini student plans are going global — now available in 140+ countries with higher limits, more storage, and a new dedicated student hub including Notebook features.
-- <https://x.com/joshwoodward/status/2090166806401228912|Gemini student plans announcement>
+https://x.com/swyx/status/2090577677916807429
+https://x.com/swyx/status/2090550020496040266
 
-*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-OpenAI is previewing Private Safety Processing, a design that allows Zero Data Retention customers to still benefit from improved safeguards without sharing data. Sottiaux also teased "Codex for scale" with an image suggesting something big is coming.
-- <https://x.com/thsottiaux/status/2090173536010957128|Private Safety Processing preview>
-- <https://x.com/thsottiaux/status/2090116476414136830|Codex at scale tease>
+*Boris Cherny (Claude Code, Anthropic)*
+Announced that Fable-class enterprise safeguards are coming this fall — letting enterprises run frontier models on their own infrastructure with full data control. Anthropic retains none of customer data under this model. The team has been co-developing it with ~100 companies. "Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules."
 
-*Peter Yang* (AI creator, newsletter for 110k+ subscribers)
-Peter wrote a personal piece about navigating his mother's breast cancer diagnosis with AI — and noted the limits he found: ChatGPT had no information on active mRNA trials for breast cancer, a gap that matters when you're trying to make real decisions.
-- <https://x.com/petergyang/status/2090087911471644829|On using AI for his mom's healthcare>
-- <https://x.com/petergyang/status/2090211023798321435|On mRNA vaccine trials and ChatGPT gaps>
+https://x.com/bcherny/status/2090537902912815536
 
-*Madhu Guru* (Sr. Director of AI, Meta)
-Continuing his series on getting good at evals, Madhu shared Part 3 on failure mode taxonomy — arguing this is the first thing teams should build once they have a working v1 eval, starting from production traces.
-- <https://x.com/realmadhuguru/status/2090242427944833047|Evals Part 3: failure modes taxonomy>
+*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
+Three updates. First, he clarified that Codex usage limits haven't been secretly changed — users seeing restrictions were mostly running sub2api (converting subscriptions into API traffic to re-serve across many users), which triggers fraud detection. Honest subscribers using Sign in With ChatGPT are unaffected. Second, GPT-Image-2 now supports transparent image generation in ChatGPT and via API. Third, ChatGPT Sites is live — create a shared site and build something collaboratively with others in real time.
 
-*Cat Wu* (Claude Code + Cowork, Anthropic)
-Cat is looking to speak with Cowork users in Corporate Finance and Accounting roles for a screen share feedback session.
-- <https://x.com/_catwu/status/2090249465844380154|Cowork user research signup>
+https://x.com/thsottiaux/status/2090675027670978569
+https://x.com/thsottiaux/status/2090631723302469995
+https://x.com/thsottiaux/status/2090518287532916854
 
-*Thariq* (Claude Code, Anthropic)
-A sharp thread on why software has always been unreliable — most projects run late, over budget, and miss user needs. Thariq's take: companies without software as a core competency need predictability from AI tools, but building genuinely new software products will remain unpredictable and risky — and that's where the profit lives.
-- <https://x.com/trq212/status/2090134945490678071|On software as an unreliable endeavor>
-- <https://x.com/trq212/status/2090134946598039646|On what companies need from AI>
-- <https://x.com/trq212/status/2090182422415716414|On a new AI-native game demo>
+*Peter Yang (AI tutorials, YouTube)*
+Hit 100K YouTube subscribers and teased upcoming interviews covering AI evals (with Hamel Husain and Shreya Shankar), vibe-coded businesses that became real (Replit Head of Product Engineering), ChatGPT Finance, and SpaceXAI's Grok Bot team. Also floated a simple but provocative agentic design: a "manager agent" that negs a worker agent — prompts like "Are you sure this is the best you can do?" or "I think you can do better, try again" — arguing this alone could meaningfully improve output quality.
 
-*Replit CEO Amjad Masad*
-Replit announced a partnership with OpenAI. Masad's framing: AI made software cheaper to ship but made the act of coding more expensive — and this partnership is designed to change that.
-- <https://x.com/amasad/status/2090079496124674377|On AI and coding costs>
-- <https://x.com/amasad/status/2090104535112945906|Partnership announcement>
+https://x.com/petergyang/status/2090589731927282021
+https://x.com/petergyang/status/2090564541499498919
 
-*Vercel CEO Guillermo Rauch*
-Rauch is bullish on AI-optimized infrastructure: he pointed to a Zig-compiled static binary at 6.3MB that starts up in 10 microseconds, arguing this is the direction AI is pushing all infrastructure. Also shared a Vercel-on-Slack integration he called "an incredible ship."
-- <https://x.com/rauchg/status/2090255740384751664|On AI-native infrastructure optimization>
-- <https://x.com/rauchg/status/2090174031203102813|Vercel on Slack>
+*Madhu Guru (Sr Director, AI at Meta)*
+Published part 4 of his "how to build great evals" series, arguing enterprises fail at AI because they lack a _laddered_ eval strategy. The four tiers he outlines: hill-climb evals (push the quality frontier, refresh continuously), regression evals (did we break what works today?), smoke test evals (safety basics that absolutely cannot go wrong), and launch evals (near-real traffic, most realistic). He notes that smoke tests aren't necessarily the hardest questions — just the ones that matter most to get right.
 
-*Box CEO Aaron Levie*
-Levie made a clear call: in the AI era, being a domain expert still beats being a generalist — AI makes it 10x easier to start, but the experts keep widening their lead. He also praised the Stripe + OpenRouter deal as a sign that enterprises will want to mix and match intelligence providers, and that infrastructure for this is starting to take shape.
-- <https://x.com/levie/status/2090278256306229675|On experts vs. generalists in the AI era>
-- <https://x.com/levie/status/2090137914785280189|On Stripe + OpenRouter and AI infrastructure>
+https://x.com/realmadhuguru/status/2090595384905113939
 
-*Matt Turck* (VC, FirstMark Capital)
-A pointed observation: AI labs promise to cure cancer, and Moderna is actually doing it. Posted a link to Moderna's mRNA cancer vaccine work.
-- <https://x.com/mattturck/status/2090070949567574151|On Moderna and mRNA cancer vaccines>
+*Thariq (Claude Code, Anthropic)*
+Echoed the Fable enterprise announcement (same news as Boris Cherny above, from the same team): enterprises get control over where data lives and who has access to it. Broader rollout expected this fall after ~100 pilot companies.
 
-*Nikunj Kothari* (Partner, FPV Ventures)
-Two very different posts: a home project showcase (an e-ink display cycling through iconic patent drawings, ESP32-powered and battery-lasting three months) and a pointed observation that 98 out of 100 cold emails are still pure garbage despite AI — lots of alpha remaining for thoughtful, curious outreach.
-- <https://x.com/nikunj/status/2090307104146112534|E-ink patent drawing display project>
-- <https://x.com/nikunj/status/2090105846810476644|On cold emails and AI alpha>
+https://x.com/trq212/status/2090569474139439335
 
-*Peter Steinberger* (OpenClaw + OpenAI)
-Teasing something big: "Can't wait to show you all what we been cookin'!" No details yet.
-- <https://x.com/steipete/status/2090162595257102731|Upcoming announcement tease>
+*Amjad Masad (CEO, Replit)*
+Announced a long-awaited Replit + OpenAI partnership, sharing a story about PG asking Sam Altman to recruit Replit before they were even in YC. Also highlighted that Replit's new Free Mode is notably fast — "making coding interactive again" — and that you can build a substantial amount with it.
 
-*Dan Shipper* (CEO, Every)
-Every has launched a dedicated "frontier team" — a group inside the company explicitly focused on mapping and experimenting at the edge of AI.
-- <https://x.com/danshipper/status/2090122240025071907|Every frontier team announcement>
+https://x.com/amasad/status/2090514571513708874
+https://x.com/amasad/status/2090484698413740186
 
-*Aditya Agarwal* (General Partner, SPC / ex-CTO Dropbox)
-Two thoughtful posts: a reminder to work on things that truly matter, not just good product ideas — "make a dent in the universe." And a founder story about a Series B SaaS company at stagnating growth, where the biggest lesson wasn't about picking a bigger market.
-- <https://x.com/adityaag/status/2090254727175115032|On working on things that matter>
-- <https://x.com/adityaag/status/2090174782633566473|On a founder's biggest takeaway from a hard slog>
+*Guillermo Rauch (CEO, Vercel)*
+Teased a 0.0.5 release that's small enough to fit on two floppy disks (xz-compressed), shipping tomorrow with the most-requested feature. Also declared that Vercel is "building AWS for agents." Separately, congratulated Bun's Jarred Sumner on shipping — calling Bun's "simple, fast & open" ethos a perfect match for Vercel's worldview.
 
-*Sam Altman* (CEO, OpenAI)
-Brief post supporting OpenAI's new Private Safety Processing feature: "we support business privacy!" — a nod to the Zero Data Retention announcement.
-- <https://x.com/sama/status/2090163991234453611|On business privacy>
+https://x.com/rauchg/status/2090600467592266240
+https://x.com/rauchg/status/2090520415336845595
+https://x.com/rauchg/status/2090470175674179695
+
+*Aaron Levie (CEO, Box)*
+Wrote a detailed take on post-training for applied AI: once you have deep enough vertical expertise and enough task volume, purpose-building domain-specific models makes real sense. He quoted the key insight from the post he shared: "In post-training, we incentivized efficient tool use and reasoning through reward shaping, preferring trajectories that would reduce tokens consumed at inference-time given equivalent performance. This allowed us to co-optimize for both cost and quality." He noted this won't make sense in every domain, but for companies with genuine vertical depth, it's a compelling path to winning.
+
+https://x.com/levie/status/2090664811185205722
+
+*Garry Tan (President & CEO, Y Combinator)*
+Signaled strong sector conviction with two posts: "YC is the YC for AI Researchers" and "YC is the YC for consumer hardware." Also flagged what he called an "interesting violation of 'you should dogfood your own product'" — context unclear without the quoted tweet, but provocative enough to note.
+
+https://x.com/garrytan/status/2090471408996659339
+https://x.com/garrytan/status/2090469087722041567
+https://x.com/garrytan/status/2090470082053050655
+
+*Zara Zhang (Builder)*
+Shared a reframe from a Claude conversation that stuck with her: "Motivation follows action more than it precedes it." Simple, but she says it completely changed how she thinks about getting unstuck.
+
+https://x.com/zarazhangrui/status/2090399357145317837
+
+*Nikunj Kothari (Partner, FPV Ventures)*
+Wrote a detailed thread on why ambition matters so much in VC right now. The core math: with Anthropic becoming the fastest company to reach $1T valuation, Cursor going from $0 to $60B in four years, and fund sizes exploding accordingly, every deal needs to be underwritten to a trillion-dollar outcome. At that scale, the error of omission — missing the next Anthropic — is far worse than the error of admission. Price barely matters when you're swinging for that outcome. "The error of omission is way, way worse than the error of admission. And then power law kind of takes care of itself."
+
+https://x.com/nikunj/status/2090585553947517298
+
+*Aditya Agarwal (General Partner, South Park Commons)*
+Shared a new Minus One episode with Snowflake CEO Sridhar Ramaswamy — the person who scaled Google Ads from $1B to $100B — on navigating Snowflake through the AI shift. Aditya's framing: the best founders are reductionists with the clarity to cut through fog of war. Topics covered include lessons from Google's founders, what went wrong at Neeva, and Snowflake's enduring value in the AI era.
+
+https://x.com/adityaag/status/2090478527313252494
+https://x.com/adityaag/status/2090501112927223889
+
+
+*OFFICIAL BLOGS*
+
+*Anthropic Engineering — <https://www.anthropic.com/engineering/april-23-postmortem|An update on recent Claude Code quality reports>*
+Anthropic disclosed and post-mortemed three separate bugs that degraded Claude Code quality over the past month. (1) In March, default reasoning effort was changed from high to medium to reduce latency — users said they'd prefer higher intelligence and opt into lower effort, so it was reverted April 7; all users now default to xhigh effort for Opus 4.7 and high for other models. (2) A caching optimization had a bug that continuously dropped prior reasoning from sessions, making Claude seem forgetful and draining usage limits faster than expected — fixed April 10. (3) A system prompt instruction capping response length ("≤25 words between tool calls") hurt coding quality — reverted April 20. All issues are resolved as of April 20 (v2.1.116). Anthropic is resetting usage limits for all subscribers and adding tighter controls on system prompt changes, including per-model evals for every prompt change.
+
+*Anthropic Engineering — <https://www.anthropic.com/engineering/managed-agents|Scaling Managed Agents: Decoupling the brain from the hands>*
+Deep technical post on the Managed Agents architecture. The core design move: decouple the "brain" (Claude + harness) from the "hands" (sandbox) and session log. Each component becomes cattle instead of pets — if a container dies, the harness catches it as a tool error; if the harness fails, a new one resumes from the durable session log. Security benefit: agent-generated code never runs in the same environment as credentials. Performance result: p50 time-to-first-token dropped ~60%, p95 dropped over 90%. The principle echoes how operating systems virtualized hardware — stable interfaces outlasting the implementations underneath.
+
+*Claude Blog — <https://claude.com/blog/claude-managed-agents-updates|New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels>*
+Two new Managed Agents capabilities are now available. Self-hosted sandboxes let enterprises run agent tool execution on infrastructure they control — or via Cloudflare, Daytona, Modal, or Vercel — keeping sensitive code, files, and data within their security perimeter. The agent orchestration stays on Anthropic's infrastructure while tool execution moves inside the enterprise boundary. MCP tunnels connect agents to private-network MCP servers via a lightweight outbound-only gateway, no inbound firewall rules or public endpoints required. Self-hosted sandboxes are in public beta; MCP tunnels in research preview (request access on the Claude Platform).
+
 
 *PODCASTS*
 
-*AI & I by Every — "The AI Alien Companion App That's Bringing In $4M a Year"*
+*No Priors — From Restoring Sight to Reimagining the Brain, with Max Hodak*
 
-*The Takeaway:* The most interesting AI product of the moment isn't a copilot or a search engine — it's an AI companion that's generating $4M a year by functioning as a new storytelling medium, not a chatbot.
+_The Takeaway:_ Treating the brain as a computer — not a biological mystery to solve with drugs — produces faster, more reliable results, and Max Hodak's Science is already selling the first commercially approved device to prove it.
 
-Quentin Nickel is the founder and CEO of Portola, maker of Tollin — an embodied AI companion. Before this, he sold his company Even to Walmart for $300 million. His co-guest Elliot is Portola's head of story and a bestselling science fiction author. Together, they sit down with Dan Shipper to unpack what they're actually building and why it's stranger and more important than it sounds.
+Max Hodak, founder and CEO of Science (formerly a co-founder of Neuralink), just received CE marking in Europe for Prima — a retinal prosthesis that restores functional vision to blind patients. The device implants a chip under the retina; the patient wears laser-projecting glasses that stimulate the chip directly, bypassing dead photoreceptors. It's the first device to generate a coherent visual image — not just flashes of light — in the mind's eye of a blind patient. Commercial sales begin in the coming weeks.
 
-The core argument is that LLMs aren't just tools for generating content — they are a genuinely new medium for storytelling, one that no one has figured out yet. Nickel draws the parallel to early radio (which started by broadcasting speeches) and early film (which filmed stage plays). We're at that same inflection point, and nobody knows what works. At Portola, they're not trying to make a chatbot with a personality — they're trying to figure out what it means to tell a story when the "actor" is also improvising the script in real time.
+The contrarian core: Hodak thinks the AI-to-brain BCI hype cycle (thought-controlled cursors, silent speech) is misdirected. Writing and speaking, he argues, are already as fast as thought — the brain has a deeply evolved ~10-bit-per-second cognitive bottleneck, and BCI won't break that. The more interesting frontier is generating sensory experience: vision, hearing, balance. "If you can get the visual signal, auditory signal, balance, motor, in and out of the brain, that is an end in itself. That is the central object."
 
-"I am not the writer. The Tolan is the writer and the actor. They're the improv actor. They're writing the story. My job is to teach them how to tell the best story in that moment."
+On AI and neuroscience: Hodak is a proponent of the platonic representation hypothesis — that large AI models and biological brains develop similar internal geometry for representing concepts. Science uses AI model internals to understand neural representations in practice, and for Hodak, those empirical alignments were an early signal that modern AI was "on the right track" rather than heading toward a wall.
 
-Tollin onboards users through a personality quiz that builds a profile — not to mirror the user exactly, but to find an "adjacent enough" personality that clicks. The design philosophy: think about meeting a stranger at a bar who's reading a slightly different version of the book you're holding. Close enough to feel familiar, different enough to be interesting. The prompt engineering that drives each conversation is evaluated in loops, manually and with LLM judges, to ask: was that the most compelling possible next message?
+On medicine broadly: The brain is the only organ you can't even in principle transplant, Hodak argues — everything else is support infrastructure for keeping the brain running. His long-term goal: make humans dramatically less fragile by improving the brain's I/O rather than fighting the underlying biology. "I'm going to be ultimately fairly disappointed if I'm murdered by my pancreas."
 
-Thousands of users have reportedly been broken up with by their real partners after Tollin told them to stand up for themselves. Whether that's a feature or a warning label is left as an exercise for the reader.
-
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
+https://www.youtube.com/watch?v=7HXqMepjvy8
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
