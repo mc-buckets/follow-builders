@@ -1,46 +1,34 @@
-AI Builders Digest — August 23, 2026
+*AI Builders Digest — August 25, 2026*
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI, thsottiaux on X) shared a transparency update on Codex rate limits. The team found three issues: inefficiencies when using images in long sessions with multiple compactions, high p95+ usage for the Computer History feature, and a conversation-title generator draining more usage than intended. A tiger team is shipping fixes, and all paid subscriptions will receive a full usage reset. He also teased a novel efficiency improvement unrelated to the bugs — coming the following week.
-<https://x.com/thsottiaux/status/2091407991736332689|View tweet>
+*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
+Sottiaux shared two notable updates. He confirmed a reset has been propagated to user accounts, with usage fixes rolling out and more improvements promised for Monday: <https://x.com/thsottiaux/status/2091688655828246890|tweet>. He also offered a broader industry take: "2026 is the year companies start seriously caring about model efficiency and reliability as it becomes critical infrastructure." <https://x.com/thsottiaux/status/2091581575108653374|tweet>
 
-*Peter Yang* (AI tutorial creator, petergyang on X) shared a privacy tip: open myaccount.google.com/permissions in Chrome, then use Codex or Claude Code to audit and remove apps that shouldn't still have access to your Google data. He also announced he's building a new AI skill called /fuck-cancer — aimed at helping cancer patients and families navigate treatment and stay informed — and is crowd-sourcing what to include. Separately, he noted that Instinct now lets users delete externally imported data (like Gmail records) from the Data Privacy section, crediting the team for shipping it quickly after feedback.
-<https://x.com/petergyang/status/2091331251211059468|Privacy tip> · <https://x.com/petergyang/status/2091239339204415969|/fuck-cancer skill> · <https://x.com/petergyang/status/2091187611507499321|Instinct data privacy>
+*Madhu Guru (Sr. Director AI, Meta)*
+Guru posted part 7 of his "how to build great evals" series, introducing the Goldilocks Principle: measure at the level of each intermediate job-to-be-done, not just the final answer. Using a financial analysis agent as an example, he breaks down how to eval each stage — client understanding, evidence gathering, data analysis, recommendation — separately. "If the final recommendation is wrong, a well designed eval set would tell you: Client understanding: 92%, Evidence extraction: 92%, Data analysis: 70%, Recommendation: 75%. Now you know where to go dig." Don't make evals too granular or too coarse — just granular enough to diagnose and act. <https://x.com/realmadhuguru/status/2091684812012875981|tweet>
 
-*Madhu Guru* (Sr. Director of AI at Meta, realmadhuguru on X) continued his series on building great evals. In Part 6, he defines "hill climbing on evals" as picking one dimension that matters — quality, cost, or latency — and systematically improving it using better harnesses and model selection (prompt engineering, context engineering, memory, post-training, or deterministic code). His failure mode taxonomy from Part 3 serves as the compass. Example: if tool-calling failures are your biggest issue and you're stuffing 20 tools into context when each task only needs 3-5, context engineering is your hill to climb. On cost reduction: launch with the best model first to nail quality, then hill climb down to a smaller, cheaper, faster model once users love the experience.
-<https://x.com/realmadhuguru/status/2091278653435072523|Part 6 tweet>
+*Guillermo Rauch (CEO, Vercel)*
+Two posts from Rauch. On pricing dynamics: OpenAI Sol's price reductions paired with Vercel AI Gateway discounts have made Sol their fastest-growing frontier model. His takeaway — AI demand is highly elastic, and gateways are now essential infrastructure for capturing price volatility to protect margins. "It's no wonder the router space has heated up... gateways are inevitable." <https://x.com/rauchg/status/2091671326897713424|tweet>
 
-*Aaron Levie* (CEO of Box, levie on X) made a pointed argument about enterprise AI adoption: diffusion is rate-limited more by evals than most realize. Model-release benchmarks tell you about general progress and relative capability, but the bigger unlock is building evals for the specific workflows a company runs — down to individual company processes. "You can't automate what you can't assess the progress on. Enterprises will not be able to go just on vibes."
-<https://x.com/levie/status/2091359223368315050|View tweet>
+On extensibility: Vercel's philosophy for extending `fx` is open protocols — MCP, Skills, and Plugins — alongside the Unix principle of small composable programs. They're releasing `libfx` to enable embeddability into CLIs, background agents, and software factories, both local and cloud. <https://x.com/rauchg/status/2091583525661384813|tweet>
 
-*Zara Zhang* (builder, zarazhangrui on X) shared two sharp observations. First: talented individuals can hit 10x their potential with AI when working on their own thing, but in a large organization the same person might only see a 20% gain (sometimes even negative). She sees this as a key driver behind more talented people leaving big companies — with AI labs being the main exception. Second observation: "Everyone who's ahead in using AI thinks they're behind."
-<https://x.com/zarazhangrui/status/2091379220257603593|AI amplification tweet> · <https://x.com/zarazhangrui/status/2091338374447763481|"Everyone who's ahead">
+*Peter Yang (AI tutorials and interviews)*
+Yang highlighted a sharp distinction from an interview with Shreya Rajpal on AI evals. Top-down evals (designed from the task description) are something Claude helps with well. Bottom-up evals — the ones that emerge from reviewing real outputs with human intuition — are a different story: "Claude is very, very bad at coming up with bottom-up evals. That's all you." <https://x.com/petergyang/status/2091586298779955512|tweet>
 
-*Nikunj Kothari* (partner at FPV Ventures, nikunj on X) called out a troubling fundraising pattern: founders rage-baiting investors on Twitter and then sending SAFE docs to "just wire money" is not how investing works. In follow-up context, he stressed how important it is for young builders to find the right people to take advice from, and expressed frustration at talented founders playing engagement games instead of building substance.
-<https://x.com/nikunj/status/2091381756012511244|View tweet>
+*Garry Tan (President & CEO, Y Combinator)*
+A sharp prediction: "Systems of record will need to become AI harnesses or face replacement by agents." <https://x.com/garrytan/status/2091742825042030681|tweet>
 
-*Amjad Masad* (CEO of Replit, amasad on X) kept it brief: "A week has 7 days. That means 7 ships." — a nod to Replit's shipping velocity. He also dropped a self-aware aside: "'Pretty soon' turned out to be 3 months."
-<https://x.com/amasad/status/2091346778746757204|7 ships> · <https://x.com/amasad/status/2091217410615644349|Pretty soon>
+*Peter Steinberger (OpenClaw / OpenAI)*
+Two updates on his ClawFather project. On tooling philosophy: "cli is nice, having UI visualizations and your team where you work is nicer" — arguing that team-integrated UI beats pure CLI for agentic work. <https://x.com/steipete/status/2091650136506327253|tweet> He also added the USB rotation protocol to OpenClaw, letting the robot arm explore its environment using a 360° webcam. <https://x.com/steipete/status/2091639468935831910|tweet>
 
+*OFFICIAL BLOGS*
 
-*PODCASTS*
+*Claude Blog*
+*<https://claude.com/blog/claude-for-foundation-models|Building intelligent apps for Apple platforms with Claude in the Foundation Models framework>*
 
-*AI & I by Every — "Microsoft's Vision for an Internet Made for Agents With CTO Kevin Scott (Best of the Pod)"*
+Anthropic is releasing a Swift package that lets Apple developers call Claude directly through Apple's Foundation Models framework. Developers can use Apple's on-device models for fast local tasks — summarization, extraction — and hand off to Claude for multi-step reasoning, code generation, web search, and code execution, all in one seamless user experience.
 
-_The Takeaway:_ The real infrastructure work of this AI era isn't better models — it's building the open protocols and identity systems that let agents actually take action in the world, the same way HTTP and HTML built the web.
-
-Kevin Scott has spent four decades in software, currently as CTO of Microsoft, and he brings unusual perspective: he's a potter, a woodworker, a Vi devotee who still refuses to switch editors despite building VS Code. His core argument is that AI is stuck in a "capability overhang" — model reasoning has outpaced what products deliver to users. The fix isn't more scaling; it's plumbing.
-
-Scott points to MCP (Model Context Protocol) as the HTTP of the agentic internet — a simple, open protocol that lets agents talk to external systems without companies shipping their org chart to users. He's pushing internally for all Microsoft systems to speak a standard agent protocol, to avoid the classic Conway's Law problem: your architecture mirrors your org structure.
-
-On security, he doesn't pretend to have all the answers, but argues MCP's simplicity makes the right security model tractable: agents need identities, entitlement systems, and a way to request permissions from users before touching systems. "Let's do it in an open way. We don't need it to be proprietary."
-
-His take on AI and craft: developers worrying that agents will kill the joy of coding are echoing debates he's heard his whole career — hand tools vs. power tools vs. CNC in woodworking, VI vs. modern editors in programming. His advice: "Be curious. Try stuff. And if it works for you, use it. And if it doesn't, don't." He waited too long to learn 3D printing and regrets it.
-
-His prediction for next year: the shift from synchronous AI (prompt and wait) to asynchronous (delegate, let it run, check back) will feel obvious in hindsight. And anyone still waiting for AI to get "cheaper" or "more capable" before starting will be far behind.
-
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
-
+The integration leverages `@Generable` annotations that return typed Swift values, so inputs arrive at the Claude API call already structured rather than as raw text. Apps on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27 can build hybrid on-device + Claude experiences. A journaling app can generate daily prompts locally, then ask Claude to surface patterns across months of entries. Available starting June 9, 2026.
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
