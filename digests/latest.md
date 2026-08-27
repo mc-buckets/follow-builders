@@ -1,34 +1,88 @@
-*AI Builders Digest — August 25, 2026*
+*AI Builders Digest — August 27, 2026*
 
 *X / TWITTER*
 
-*Thibault Sottiaux (Codex & ChatGPT, OpenAI)*
-Sottiaux shared two notable updates. He confirmed a reset has been propagated to user accounts, with usage fixes rolling out and more improvements promised for Monday: <https://x.com/thsottiaux/status/2091688655828246890|tweet>. He also offered a broader industry take: "2026 is the year companies start seriously caring about model efficiency and reliability as it becomes critical infrastructure." <https://x.com/thsottiaux/status/2091581575108653374|tweet>
+*Claude (claudeai on X)*
+The official Claude account launched unified memory across Chat and Claude Cowork — set something once and it persists everywhere. Memory is on by default for Free, Pro, and Max plans. Sensitive topics like health or religious beliefs stay out of memory unless you opt in, and you can review, edit, or delete stored memories anytime in Settings.
+- <https://x.com/claudeai/status/2092299704864284888|Claude now has one memory across chat and Claude Cowork>
+- <https://x.com/claudeai/status/2092299707653439497|Memory updates on its own as you chat>
+- <https://x.com/claudeai/status/2092299710002319742|Sensitive topics stay out of memory unless turned on>
 
-*Madhu Guru (Sr. Director AI, Meta)*
-Guru posted part 7 of his "how to build great evals" series, introducing the Goldilocks Principle: measure at the level of each intermediate job-to-be-done, not just the final answer. Using a financial analysis agent as an example, he breaks down how to eval each stage — client understanding, evidence gathering, data analysis, recommendation — separately. "If the final recommendation is wrong, a well designed eval set would tell you: Client understanding: 92%, Evidence extraction: 92%, Data analysis: 70%, Recommendation: 75%. Now you know where to go dig." Don't make evals too granular or too coarse — just granular enough to diagnose and act. <https://x.com/realmadhuguru/status/2091684812012875981|tweet>
+*Boris Cherny (bcherny on X)* — Claude Code at Anthropic
+Announced that memory in Claude Code is now "simpler and more powerful."
+- <https://x.com/bcherny/status/2092355642363453943|Memory is now simpler and more powerful>
 
-*Guillermo Rauch (CEO, Vercel)*
-Two posts from Rauch. On pricing dynamics: OpenAI Sol's price reductions paired with Vercel AI Gateway discounts have made Sol their fastest-growing frontier model. His takeaway — AI demand is highly elastic, and gateways are now essential infrastructure for capturing price volatility to protect margins. "It's no wonder the router space has heated up... gateways are inevitable." <https://x.com/rauchg/status/2091671326897713424|tweet>
+*Cat Wu (_catwu on X)* — Claude Code + Cowork at Anthropic
+Confirmed the unified memory launch from the product side: "Now, you can tell Claude to remember something once and it'll have that context across surfaces!"
+- <https://x.com/_catwu/status/2092337156455051345|Unified memory across Chat and Cowork>
 
-On extensibility: Vercel's philosophy for extending `fx` is open protocols — MCP, Skills, and Plugins — alongside the Unix principle of small composable programs. They're releasing `libfx` to enable embeddability into CLIs, background agents, and software factories, both local and cloud. <https://x.com/rauchg/status/2091583525661384813|tweet>
+*Thariq (trq212 on X)* — Claude Code at Anthropic
+Teased upcoming work on making Claude Code more "hackable" — more details coming soon.
+- <https://x.com/trq212/status/2092303682616627311|Making Claude Code more hackable>
 
-*Peter Yang (AI tutorials and interviews)*
-Yang highlighted a sharp distinction from an interview with Shreya Rajpal on AI evals. Top-down evals (designed from the task description) are something Claude helps with well. Bottom-up evals — the ones that emerge from reviewing real outputs with human intuition — are a different story: "Claude is very, very bad at coming up with bottom-up evals. That's all you." <https://x.com/petergyang/status/2091586298779955512|tweet>
+*Sam Altman (sama on X)* — OpenAI CEO
+Cryptic but significant: "we made a chip and it is fast" — a nod to OpenAI's custom silicon development.
+- <https://x.com/sama/status/2092339694210040187|we made a chip and it is fast>
 
-*Garry Tan (President & CEO, Y Combinator)*
-A sharp prediction: "Systems of record will need to become AI harnesses or face replacement by agents." <https://x.com/garrytan/status/2091742825042030681|tweet>
+*Thibault Sottiaux (thsottiaux on X)* — Codex & ChatGPT at OpenAI
+Announced ChatGPT Teams, designed for small companies: all Pro features (ChatGPT, Codex, Work), integrations with Google Workspace / Slack / GitHub / Microsoft 365, SAML/SSO/MFA, centralized billing, usage analytics, and no 5-hour limits. Also quipped: "Good products take time. At least 34 days."
+- <https://x.com/thsottiaux/status/2092345330272780499|ChatGPT Teams announcement>
+- <https://x.com/thsottiaux/status/2092487667426738179|Good products take time. At least 34 days.>
 
-*Peter Steinberger (OpenClaw / OpenAI)*
-Two updates on his ClawFather project. On tooling philosophy: "cli is nice, having UI visualizations and your team where you work is nicer" — arguing that team-integrated UI beats pure CLI for agentic work. <https://x.com/steipete/status/2091650136506327253|tweet> He also added the USB rotation protocol to OpenClaw, letting the robot arm explore its environment using a 360° webcam. <https://x.com/steipete/status/2091639468935831910|tweet>
+*Peter Yang (petergyang on X)* — AI educator and tutorial creator
+Open-sourced /fuck-cancer, a free AI skill to help patients and caregivers navigate cancer diagnosis and treatment. It creates a living brief with patient/care-team info, next actions (limited to three), confirmed vs. unclear facts, plain-English medical term glossary, and a running care log. Works with ChatGPT/Codex and Claude Code, saves locally or syncs to Google Docs for the whole family.
+- <https://x.com/petergyang/status/2092249012913258946|Introducing /fuck-cancer>
+- <https://x.com/petergyang/status/2092311110871617915|Example brief the skill creates>
 
-*OFFICIAL BLOGS*
+*Madhu Guru (realmadhuguru on X)* — Sr. Director of AI at Meta (prev. Google, led Gemini and Veo)
+Posted Part 9 of his eval series: "The Eval Roadmap Problem." Core thesis: most evals fail because they're static while user behavior evolves. A financial research agent starts with "summarize this report" and months later needs to "monitor my portfolio and alert me." Build evals that track your usage evolution — short-context → long-context, single-turn → multi-turn, reactive → proactive agent. Also compiled the full 9-part series index.
+- <https://x.com/realmadhuguru/status/2092426017118028266|Part 9: The Eval Roadmap Problem>
+- <https://x.com/realmadhuguru/status/2092461206783373758|Full eval series index (Parts 1–9)>
 
-*Claude Blog*
-*<https://claude.com/blog/claude-for-foundation-models|Building intelligent apps for Apple platforms with Claude in the Foundation Models framework>*
+*Guillermo Rauch (rauchg on X)* — Vercel CEO
+Two launches: (1) *Run SDK* — a lightweight QuickJS secure context for executing agent-generated code without a full sandbox; faster and more cost-efficient for Code Mode eval (`npm i run`). (2) *Vercel Connect* is now GA — run `vercel connect create notion` to get an MCP client that queries services on behalf of authenticated users. Calls secure agent connectivity "the hardest problem in building agents."
+- <https://x.com/rauchg/status/2092382653161107534|Run SDK: secure eval for dynamic Code Mode execution>
+- <https://x.com/rauchg/status/2092352411839193234|Vercel Connect is GA>
 
-Anthropic is releasing a Swift package that lets Apple developers call Claude directly through Apple's Foundation Models framework. Developers can use Apple's on-device models for fast local tasks — summarization, extraction — and hand off to Claude for multi-step reasoning, code generation, web search, and code execution, all in one seamless user experience.
+*Aaron Levie (levie on X)* — Box CEO
+Shared analysis on the applied AI opportunity: there's a wide gap between raw models and actual enterprise workflows, and the premium will go to companies that can "diffuse intelligence through every aspect of civilization." The work involves change management, multi-model routing, vertical integrations, UX for agent-user handoffs, and domain-specific evals — all value well beyond the model itself.
+- <https://x.com/levie/status/2092466424694649066|Applied AI strategy at scale>
 
-The integration leverages `@Generable` annotations that return typed Swift values, so inputs arrive at the Claude API call already structured rather than as raw text. Apps on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27 can build hybrid on-device + Claude experiences. A journaling app can generate daily prompts locally, then ask Claude to surface patterns across months of entries. Available starting June 9, 2026.
+*Google Labs (GoogleLabs on X)*
+Launched "Play with Putty" — a collaborative vibe coding tool for building websites and tools together in real time. Waitlist open at labs.google/putty, US only, ages 18+.
+- <https://x.com/GoogleLabs/status/2092293667688173593|Play with Putty announcement>
+
+*Swyx (swyx on X)* — AI builder (smol.ai, Latent Space, Cognition)
+PSA: avoid Codex "locked use" capabilities on macOS right now. It's causing macOS keychain lockouts — happened twice in one week. Acknowledged as a known bug in Apple developer forums. Cloud isn't quite there yet as a full substitute either.
+- <https://x.com/swyx/status/2092492963435946494|Do not use Codex locked use capabilities on macOS>
+
+*Nikunj Kothari (nikunj on X)* — Partner at FPV Ventures
+Built and launched "El Niño situation monitor" (elneenyo.com) — a real-time tracker pulling from government sources with regional impact data, historical records, and a glossary. Built with ChatGPT Codex and Railway.
+- <https://x.com/nikunj/status/2092383834470002922|El Niño situation monitor>
+- <https://x.com/nikunj/status/2092384774459674957|Built with ChatGPT Codex and Railway>
+
+*Aditya Agarwal (adityaag on X)* — General Partner at SPC, former CTO at Dropbox
+Pushes back on AI industry self-sabotage: public backlash against datacenter buildout makes sense because AI currently mostly benefits knowledge workers. The shift will come when AI can tackle diseases that affect everyone. Calls out the industry for leading with fear-mongering instead of a positive vision of the future.
+- <https://x.com/adityaag/status/2092290497826173186|On public perception of AI and datacenter buildout>
+
+*Garry Tan (garrytan on X)* — President & CEO at Y Combinator
+Reacted to the Claude memory launch: "You need to be cross-harness memory maxxing."
+- <https://x.com/garrytan/status/2092277912053657722|Cross-harness memory maxxing>
+
+*PODCASTS*
+
+*Training Data — Parallel's Parag Agrawal: Building a New Web for AI Agents*
+
+_The Takeaway:_ Human click data is a bug — and the entire economics of the web need to be rebuilt from scratch for an agent-first world.
+
+Parag Agrawal, former Twitter CEO and now founder of Parallel Web Systems, is building search infrastructure specifically for AI agents. His core argument: the web was designed around human laziness (two incomplete keywords, SEO-optimized intermediaries, slow PDFs) and those design choices are wrong for agents that issue precise, long-form queries and need authoritative excerpts rather than pages optimized for human eyeballs. "Our view at Parallel is that human click data is a bug. An agent doing work with search should rely on agent feedback, not human feedback."
+
+Parallel didn't try to build a full web index on day one. They launched as a search *agent* product first — trading latency for depth on real customer use cases like insurance underwriting, sales enrichment, and financial modeling — and built their index incrementally on the back of actual usage. Now they've shipped TurboNow, claiming the fastest, highest-quality agentic web search on the market.
+
+The most ambitious piece is a new internet business model. Ad economics break when agents — not humans — do the browsing. Parag's answer is Shapley values: a game theory framework that estimates the incremental value each piece of content contributed to an agent's output, enabling differential pricing where unique, high-value content earns more, and high-value agent work (a banker using your data) pays more than low-value work. He estimates this math becomes meaningful for a wide range of content owners within 12–24 months.
+
+Parallel also announced a partnership with Google Cloud: it's now an alternative search and grounding provider alongside Google Search for agents built on GCP.
+
+https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
