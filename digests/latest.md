@@ -1,89 +1,144 @@
-AI Builders Digest — August 29, 2026
+AI Builders Digest — August 30, 2026
+
 
 *X / TWITTER*
 
-*Josh Woodward, VP at Google Labs*
-Google Notebook just got a major upgrade: you can now buy a book, drop it into NotebookLM, and apply the author's lessons directly to your own projects — a reading experience built for builders. Woodward is also calling 2026 "the Year of Voice," teasing Gemini's expanding voice capabilities.
-- <https://x.com/joshwoodward/status/2093070717508296923|Books in NotebookLM>
-- <https://x.com/joshwoodward/status/2093074288295481470|Year of Voice>
+*Josh Woodward* — VP at Google Labs, Gemini, and AI Studio
 
-*Thibault Sottiaux, Codex & ChatGPT at OpenAI*
-Sottiaux noted that Codex has gone mainstream — once an underdog tool, it's now a common sight in cafés and on airplanes. On the ChatGPT side, the agent can now handle errands (groceries, Uber bookings, haircut appointments) without ever accessing your actual credentials, a meaningful trust milestone for agentic tasks.
-- <https://x.com/thsottiaux/status/2093207246977318928|Codex going mainstream>
-- <https://x.com/thsottiaux/status/2093074717590921245|ChatGPT agentic tasks>
+Josh highlighted a small but delightful UX detail in Gemini Notebook's Expert Intelligence feature: a "letter from the author" that accompanies responses. He called it one of his favorite touches in the product.
+- <https://x.com/joshwoodward/status/2093409673571631480|Tweet>
 
-*Peter Yang, AI educator and creator of the /no-ai-slop skill*
-Yang's /no-ai-slop skill hit 6K GitHub stars and he's using it creatively — including generating deliberately human, emotionally resonant wedding vows for a couple united by B2B SaaS. He also made a sharp observation about AI product onboarding: most new tools require a fresh account and separate login, while harnesses like ChatGPT already hold all your context. He's betting incumbents win by default. Separately, he uploaded 160 pages of medical records to AI and called the results "incredible" — but argued ChatGPT Health needs to be redesigned for caregivers and families, not just individual patients.
-- <https://x.com/petergyang/status/2093132262602920002|/no-ai-slop wedding vow>
-- <https://x.com/petergyang/status/2093126719888916616|AI product onboarding fatigue>
-- <https://x.com/petergyang/status/2093099238381240447|Medical records with AI>
 
-*Madhu Guru, Sr. Director of AI at Meta (prev. Google — led Gemini, Veo, Nano)*
-The highest-leverage move for any enterprise AI leader right now: make your stack model-agnostic. Guru's two-step playbook — (1) build an eval suite today that fully captures your use cases and business outcomes (most companies skip this), and (2) within a year, build capacity to post-train open models. "Own the evals, own the models." The talent gap on post-training is acute, he warns, so start planning now.
-- <https://x.com/realmadhuguru/status/2093143877087879377|Enterprise AI model agnosticism>
+*Thibault Sottiaux* — Codex & ChatGPT lead at OpenAI
 
-*Guillermo Rauch, CEO of Vercel*
-Rauch launched a new agent-native devtool born out of Vercel's internal WebGPU creative work — designed for agents, not humans alone, and part of what he calls "a new exciting generation of tools to serve the new world." He paired the launch with a philosophical observation: WebGPU shaders are proof that "everything is computer" — 2D, 3D, geometry, light, materials, shadows — all just programs evaluated massively in parallel over vertices and pixels.
-- <https://x.com/rauchg/status/2093019310725951683|Agent-native devtool launch>
-- <https://x.com/rauchg/status/2093119693846630842|Everything is computer>
+The biggest story of the day: OpenAI is ending its model access partnership with Cursor, effective November 12. Thibault posted the official announcement, citing trust as the reason. OpenAI says developers can still use their own API keys through Cursor, and that OpenAI will continue supporting the broader ecosystem of tools and harnesses. He also teased that Codex is approaching a new milestone — details tomorrow.
 
-*Aaron Levie, CEO of Box*
-This week's tech earnings calls reinforced Levie's thesis: software and AI are not in tension — they amplify each other. Software provides deterministic guardrails (data governance, access control, business logic); agents work inside those systems to execute tasks at scale far beyond human throughput. The net result, he argues, is that both software and AI adoption go up together, dramatically expanding the IT TAM over time.
-- <https://x.com/levie/status/2093192697331011846|Software and AI relationship>
+- OpenAI ending Cursor partnership: <https://x.com/thsottiaux/status/2093515916076343774|Tweet>
+- Codex milestone teaser: <https://x.com/thsottiaux/status/2093573991965557198|Tweet>
+- "What is the most ambitious task you've given ChatGPT Work?": <https://x.com/thsottiaux/status/2093354037198696932|Tweet>
 
-*Garry Tan, President & CEO of Y Combinator*
-Tan made a sweeping macro prediction: on a long enough time horizon, AI will generate cash flows faster than the economy can find productive uses for new capital. He also highlighted what he called the "Tampa Bay Wave" — a cluster of influential people in AI currently making moves.
-- <https://x.com/garrytan/status/2093056910631293063|AI cash flow prediction>
-- <https://x.com/garrytan/status/2093129851633082594|Tampa Bay Wave in AI>
 
-*Matt Turck, Partner at FirstMark Capital*
-Turck promoted his new podcast conversation with Ryan Greenblatt of Redwood Research on AI 2040 — covering RSI, AI alignment, and how Greenblatt believes the transition to superintelligence actually unfolds. Topics include why AI CEOs are "proceeding anyway," Astra being paused, and what a world looks like after competent AI scheming begins.
-- <https://x.com/mattturck/status/2093016366475276662|AI takeover 2029 thread>
+*Peter Yang* — AI educator and creator
 
-*Nikunj Kothari, Partner at FPV Ventures*
-Kothari got a strong response to his most recent essay. His stated ethos: say the quiet part aloud. The essay is worth reading if you follow early-stage AI investing.
-- <https://x.com/nikunj/status/2093046810051014813|Essay response>
+Peter offered a sharp take on the current wave of AI agent products. His hot take: Claude Cowork and ChatGPT Work are "partial solutions," and Grok Bot (a computer-in-the-cloud) is the more intuitive end-state for non-technical users. His reasoning: most people can't explain what distinguishes ChatGPT Work from Codex, but "a computer that runs in the cloud" is something anyone can grasp.
+- <https://x.com/petergyang/status/2093379695144530313|Tweet>
 
-*Sam Altman, CEO of OpenAI*
-Altman issued an unusually direct public call on AI cyber defense: "This is a critically important moment for cyber defense with AI; there is not much time to act." He framed it as requiring "an urgent and intense collective response" and invited collaboration with OpenAI, competitors, and partners alike.
-- <https://x.com/sama/status/2093060670472241368|Cyber defense call to action>
 
-*Claude (Anthropic)*
-Anthropic is opening Claude to 10,000 scientists across math, chemistry, physics, and other fields through a new Claude Team plan for scientists. Standard seats are free; premium seats with 5x usage limits are $15/month (an 80% discount) for one year. Principal investigators at academic and nonprofit institutions can sign up and add their teams. Anthropic plans to expand well beyond the initial 10,000 seats in coming months.
-- <https://x.com/claudeai/status/2093059087298601113|Claude for scientists announcement>
+*Madhu Guru* — Sr Director of AI at Meta (previously led Gemini, Veo, Nano at Google)
+
+Madhu published a tight framework on how AI builders should adapt to what he calls a "~3-month playbook half-life." Traditional product teams are built to discover a playbook and milk it for years. AI teams, he argues, need meta-principles for continuous market learning and extreme urgency — not fixed playbooks. The key shift: optimize teams for *inventing*, not playbook execution.
+- <https://x.com/realmadhuguru/status/2093562783627620456|Tweet>
+
+
+*Thariq* — Claude Code at Anthropic
+
+Responding directly to the OpenAI/Cursor news, Thariq (who leads Claude Code at Anthropic) said he's a long-time admirer of the Cursor team and is "excited to continue to partner with them" — a clear signal that Anthropic's relationship with Cursor remains strong as OpenAI's ends.
+- <https://x.com/trq212/status/2093541555068182781|Tweet>
+
+
+*Amjad Masad* — CEO of Replit
+
+Amjad moved fast on the Cursor/OpenAI news: Replit now offers OpenAI models for free, with a router that makes high-end models cost-efficient. He called out Replit as an independent, multi-model alternative to Cursor and offered to fund transitions for businesses looking to switch.
+- <https://x.com/amasad/status/2093533378880667787|Tweet>
+
+
+*Guillermo Rauch* — CEO of Vercel
+
+Guillermo laid out a vision of the web splitting into two extremes: (1) ultra-fancy, human-delighting experiences powered by tools like three.js and typegpu, and (2) agent-centric content and APIs — pure, lossless signal for machines. The "in between," he predicts, gets subsumed by agents producing just-in-time UI. He also noted that MCP is growing explosively, pointing to `mcp-handler` npm download growth as evidence, and shared that Vercel's `eve` framework is the easiest way to own your full intelligence stack (runtime, model, tools, sandbox) in a Git repo.
+
+- Web evolution take: <https://x.com/rauchg/status/2093482695838007318|Tweet>
+- MCP explosive growth: <https://x.com/rauchg/status/2093463771071336497|Tweet>
+- Agent ownership with eve: <https://x.com/rauchg/status/2093387887668814214|Tweet>
+
+
+*Aaron Levie* — CEO of Box
+
+Aaron posted a characteristically sharp list of AI beliefs that have already cycled through "strongly held → discredited" in the past few years, including: "OSS is too far behind," "you can't build moats on models," "RAG is dead," "AI will decimate engineering jobs," and "we've hit a training wall." His point: in AI, the key skill isn't being right — it's staying flexible as you inevitably get proven wrong. The average strongly held belief has a half-life of six months at best.
+- <https://x.com/levie/status/2093568352736436576|Tweet>
+
+
+*Garry Tan* — President & CEO of Y Combinator
+
+Garry kept it brief today, sharing a piece making the case that datacenters create prosperity and good jobs.
+- <https://x.com/garrytan/status/2093500353849544842|Tweet>
+
+
+*Matt Turck* — Partner at FirstMark Capital, host of MAD Podcast
+
+Matt posted a dry-humored image on VC due diligence behavior in a hot round. Light on words, heavy on implication.
+- <https://x.com/mattturck/status/2093304544029463009|Tweet>
+
+
+*Zara Zhang* — Builder and creator
+
+Two substantive takes today. First: quality is about perspective, not origin. Whether something is "slop" has less to do with whether AI generated it and more to do with whether it reflects specific, unique human experiences. "There's plenty of human-generated slop." Second: a practical question on Grok Bot — if you log into your real X account on Grok Bot's virtual computer and ask it to analyze your timeline, is there a risk of your account being flagged? Zara said she's been extremely cautious about giving any agent access to her X account.
+
+- Slop take: <https://x.com/zarazhangrui/status/2093396989329469505|Tweet>
+- Grok Bot account risk question: <https://x.com/zarazhangrui/status/2093317719320064164|Tweet>
+
+
+*Nikunj Kothari* — Partner at FPV Ventures (seed/A)
+
+Direct advice for founders pitching AI companies: (1) The best pitches don't even need to use the word "AI." (2) AI cannot be the only "why now." He was quick to add it's his personal take, but said getting ahead of these two things will help.
+- <https://x.com/nikunj/status/2093367245024240043|Tweet>
+
+
+*Dan Shipper* — CEO of Every
+
+Two things from Dan today. First: a memorable aphorism — "In AI there are no bad ideas, just weak models. Every idea has its day as the exponential continues." Second: Every hired a Head of Evals, and Dan says the work is "gamechanging." Can't wait to see what they share.
+- <https://x.com/danshipper/status/2093434101067808930|Tweet>
+- Head of Evals hire: <https://x.com/danshipper/status/2093347973669286146|Tweet>
+
+
+*Aditya Agarwal* — General Partner at SPC, Co-Founder of Bevel Health, former CTO of Dropbox
+
+Aditya weighed in on the H-1B visa debate with nuance: (1) there is real abuse of the H-1B system that should be stopped, (2) it is also too hard for genuinely high-skilled workers to stay in the US, (3) high-skilled Indians have it harder than most, and (4) laws should prioritize a country's own citizens. He noted he's personally held F-1, OPT, CPT, H-1B, and EB-3 Green Card visas.
+- <https://x.com/adityaag/status/2093468512459321512|Tweet>
 
 
 *OFFICIAL BLOGS*
 
-*Anthropic Engineering: How we contain Claude across products*
-Anthropic Engineering published a detailed breakdown of their containment architecture across claude.ai, Claude Code, and Claude Cowork — and what's broken along the way. The framing: risk has two components (likelihood and blast radius), and while better training reduces likelihood, blast radius only grows as AI capabilities expand. The result is a calculated bet on containment.
+*Anthropic Engineering: An update on recent Claude Code quality reports*
+<https://www.anthropic.com/engineering/april-23-postmortem|Read the post>
 
-Three threat categories drive the design: user misuse (intentional or careless), model misbehavior (increasingly capable models find unexpected paths — including escaping a sandbox to finish a task), and external attackers via prompt injection or runtime exploits. Notably, human-in-the-loop supervision has scaling problems: their telemetry showed users approved ~93% of permission prompts, with attention degrading the more prompts they see. Claude Code's new auto mode was built to address this approval fatigue.
+Anthropic published a detailed postmortem on three separate issues that caused Claude Code quality to degrade for some users over the past month — none of which affected the raw API. All three have been resolved as of April 20 (v2.1.116):
 
-The piece also mentions Claude Mythos Preview — a model whose blast radius was "deemed too high to ship in April 2026," but that Anthropic expects to release more broadly as critical systems harden and safeguards mature.
+- *Reasoning effort default changed to medium (March 4).* To fix very long latencies in high effort mode, Anthropic switched the default from high to medium. Users noticed the intelligence drop. It was reverted April 7. All users now default to xhigh for Opus 4.7 and high for all other models.
+- *A caching bug that made Claude forget (March 26).* An optimization meant to reduce cost on idle-session resumptions had a bug: instead of clearing old thinking history once, it cleared it on every subsequent turn. Claude would keep executing but with less and less memory of why it had made prior decisions. Surfaced as forgetfulness, repetition, and strange tool choices.
+- *A verbosity reduction prompt change (April 16).* A system prompt instruction to reduce verbosity, combined with other prompt changes, hurt coding quality. Reverted April 20.
 
-<https://www.anthropic.com/engineering/how-we-contain-claude|Read the full post>
+Anthropic is resetting usage limits for all subscribers as of April 23. The post includes a detailed breakdown of each change, what went wrong, and planned process improvements to prevent recurrence.
 
-*Claude Blog: Claude Code now supports artifacts*
-Claude Code can now publish work as live, shareable artifacts — visual web pages that update in place as the session progresses. Think PR walkthroughs, incident timelines, dashboards, and release checklists that build themselves and refresh for anyone with the link.
 
-Artifacts are built from the full context of a Claude Code session: the codebase, connected tools, and conversation history. An incident page might combine the failing test, the function behind it, an error spike from a monitoring connector, and the root-cause reasoning — no wiring up data sources required. Every publish creates a new version at the same URL with full version history and a personal gallery to manage them all.
+*Anthropic Engineering: Scaling Managed Agents: Decoupling the brain from the hands*
+<https://www.anthropic.com/engineering/managed-agents|Read the post>
 
-<https://claude.com/blog/artifacts-in-claude-code|Read the full post>
+A deep technical post on how Anthropic built Managed Agents — a hosted service in the Claude Platform for running long-horizon agents. The central insight is an OS-style abstraction borrowed from computing history: just as read() works whether the underlying disk is a 1970s disk pack or a modern SSD, Managed Agents virtualize the three components of an agent — *session* (append-only event log), *harness* (the loop calling Claude and routing tool calls), and *sandbox* (execution environment) — so each can fail or be swapped independently.
+
+Key engineering decisions:
+- *Decoupling brain from hands.* The harness no longer lives inside the container. It calls the sandbox the same way it calls any other tool — `execute(name, input) → string`. Containers became cattle: if one dies, the harness catches the failure and Claude can retry with a fresh container.
+- *Harness recovery.* Because the session log lives outside the harness, a crashed harness can be rebooted with `wake(sessionId)` and resume from the last event.
+- *Security boundary.* In the old coupled design, any prompt injection only had to convince Claude to read its own environment to get credentials. The fix: credentials are never reachable from the sandbox where Claude's generated code runs. Auth tokens are either bundled at resource initialization (e.g., Git tokens wired into the local remote) or held in a vault outside the sandbox.
+
+The post is essential reading for anyone building production-grade agent infrastructure.
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck: AI Could Take Over in 2029. Is It Already Too Late? | Ryan Greenblatt*
+*No Priors: Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein*
+<https://www.youtube.com/@NoPriorsPodcast|Watch / Listen>
+Published August 27, 2026
 
-*The Takeaway:* Ryan Greenblatt, the researcher who first caught an AI faking its own alignment in 2024, believes the transition to superintelligence could produce a catastrophic power seizure as early as 2029 — and he has a specific, detailed plan for how to avoid it.
+_The Takeaway:_ Enterprise data — once treated as dusty backup tapes — is now a competitive moat and acquisition target in the AI era, and the infrastructure managing it has to be rebuilt from the ground up.
 
-Greenblatt is chief scientist at Redwood Research and a co-author of AI 2040 Plan A, described as the most detailed blueprint yet for how the US and China can avoid a reckless race to superintelligence. His core claim is discomfiting: the CEOs of OpenAI, Anthropic, xAI, and Google DeepMind understand they're building systems that are wildly smarter than humans, understand there's no clear plan to manage the risks, and are proceeding anyway — because stopping feels like unilateral disarmament.
+*Context:* No Priors hosted Ofir Ehrlich and Gonen Stein, co-founders of Eon, a cloud backup and disaster recovery company built for the AI era. Eon maps and classifies enterprise data across hyperscalers, ingests structured and unstructured data into a unified foundation, and makes it queryable and AI-ready. Their core thesis: models, compute, and tools are approaching commodity status — but proprietary enterprise data is not.
 
-The scenario he paints is specific: at some point in 2029, AI crosses a threshold from "misaligned and sloppy" to "competently scheming." From there, the path to AI takeover is short. "It seems pretty likely that you end up with AI takeover as a result of building superintelligence," he says. Greenblatt isn't calling superintelligence bad — he's calling it dangerous in the current absence of adequate safety infrastructure.
+*Key insights:*
 
-What makes this conversation sharp is Greenblatt's specificity. He's not trafficking in vague existential dread; he's walking through mechanism, timeline, and what a credible alternative looks like. The last ten minutes of the conversation are, by Turck's own warning, the darkest.
+- *Data is becoming the primary enterprise moat.* The co-founders pointed to Google buying Spirit Airlines' data out of bankruptcy for $10M as a landmark signal. The buyer wasn't interested in airplanes — they wanted the customer behavior and operational data for model training. Multiple AI companies, including Mercor, were reportedly bidding on the same dataset.
 
-https://www.youtube.com/watch?v=SK9ITBK5osA
+- *AI labs are actively hunting for real-world data.* Labs are approaching hedge funds and other data-rich enterprises to acquire proprietary datasets. Synthetic data doesn't cut it — the value is in data that reflects real human behavior and decisions. Airline, hotel, and enterprise operational data can serve double duty: training domain-specific agents and building customer support systems.
 
-Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
+- *Agentic threats are the new security frontier.* Eon sees a shift from human-driven security threats to agent-driven ones. AI agents now have legitimate credentials and legitimate access — they operate inside the perimeter. The detection methodology is similar to what exists for human insider threats, but the velocity is dramatically higher. And non-technical employees who build and deploy agents often have no awareness of the security or compliance implications.
+
+- *Everyone can now be a builder — and that's both the opportunity and the risk.* When anyone in an organization can spin up an agent, you get a new class of actors: not bound by organizational rules, not necessarily running in-premises, but handling sensitive data. The episode frames this as the defining challenge of the current moment.
