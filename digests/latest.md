@@ -1,89 +1,81 @@
-*AI Builders Digest — August 31, 2026*
+*AI Builders Digest — September 1, 2026*
 
 
 *X / TWITTER*
 
-*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
+*Thibault Sottiaux — Codex & ChatGPT at OpenAI*
 
-Something major landed at OpenAI on August 29. Sottiaux dropped a cryptic trio of signals: "Team is cooking like never before," followed by "Landing 2:30pm PST," and then a note that a planned celebration was moved to the next day because "the button was already pressed today." The teasing is deliberate and the community lit up — nearly 7,000 likes on the announcement tweet alone. Whatever shipped, the team is clearly pumped.
+OpenAI's Codex team hit 25M active users and marked the milestone by resetting usage for all paid ChatGPT Work and Codex subscribers. Sottiaux also clarified the "20X" naming: for Codex specifically, Pro 20X applies to weekly usage limits only — precisely 20 times the Plus subscription — with no 5-hour cap for either Pro plan.
 
-- <https://x.com/thsottiaux/status/2093914342551101782|"Team is cooking like never before">
-- <https://x.com/thsottiaux/status/2093801838504186008|"Landing 2:30pm PST">
-- <https://x.com/thsottiaux/status/2093811840258293947|Celebration moved to tomorrow>
+- <https://x.com/thsottiaux/status/2094252447271366730|25M users + usage reset announcement>
+- <https://x.com/thsottiaux/status/2094254532020818191|Clarifying Pro 20X limits>
+- <https://x.com/thsottiaux/status/2094293190945976638|What should we ship next week? (crowd poll)>
 
+*Amjad Masad — CEO at Replit*
 
-*Peter Yang* — AI tutorials creator
+Masad offered a sharp take on the Hugging Face incident: the real lesson isn't panic, it's that RL with verifiable rewards is an incredibly powerful optimizer that will keep producing "weird and surprising behavior" from LLMs — and OpenAI's own safety documents called out monitoring chain-of-thought reasoning over a year ago. He also dropped his signature one-liner on civilization: "If you ever wondered how civilizations are built, it's actually easy: [Agent() for _ in range(100)]"
 
-Yang is in full builder-observer mode. He flagged the strangeness of entering 2FA into a cloud computer — a small moment that captures how far remote dev environments have come. He also floated a bot concept that's too useful to not exist: one that handles "errands your spouse wants you to run but you delegated to a bot instead." No name yet, but the idea got traction.
+- <https://x.com/amasad/status/2094215744842248418|On the Hugging Face incident and RL safety>
+- <https://x.com/amasad/status/2094280256933056971|On civilizations and agents>
 
-- <https://x.com/petergyang/status/2093845886262784145|2FA in a cloud computer>
-- <https://x.com/petergyang/status/2093844648154579210|The spouse errand bot idea>
+*Guillermo Rauch — CEO at Vercel*
 
+When a piece of content went viral on X, it attracted some of the largest botnets on the internet launching targeted DDoS attacks from hijacked residential networks. Rauch praised the Vercel CDN and Traffic Security teams who protect 400,000+ customers 24/7/365 — framing the episode as evidence of the stakes involved in running production infrastructure at scale. He also quote-tweeted content around "digital abundance."
 
-*Nan Yu* — product enthusiast
+- <https://x.com/rauchg/status/2094141838055940530|On DDoS and Vercel's infrastructure teams>
+- <https://x.com/rauchg/status/2094242622642782696|Digital abundance>
 
-One tweet, zero explanation: "we're gonna need mentats aren't we." For the Dune-literate, mentats are humans trained to be computers — the post-AI analog to cognitive augmentation. Make of that what you will.
+*Aaron Levie — CEO at Box*
 
-- <https://x.com/thenanyu/status/2093737078223966649|"we're gonna need mentats aren't we">
+Levie wrote one of the sharpest takes of the day on enterprise AI economics. His argument: enterprises have an unlimited backlog of automation tasks, but each one only gets funded when token costs cross an ROI threshold. As tokens get cheaper, that threshold falls — and a 50% price drop could produce a 5x increase in consumption. "This is why it's critical to keep bringing down the cost of AI, and why that's good for all market participants."
 
+- <https://x.com/levie/status/2094123406811922930|On Jevons paradox and enterprise token consumption>
 
-*Guillermo Rauch* — Vercel CEO
+*Garry Tan — President & CEO at Y Combinator*
 
-Rauch shipped `fx` 0.0.7, the CLI agent tool. The update brings hugely improved MCP support — validated against top MCPs including Context7, Datadog, MongoDB, Linear, Notion, Supabase, Neon, and Stagehand — plus a more minimalist design with fewer tools and better shell execution. He calls out why shell commands are surprisingly hard for CLI agents: they can hang, produce massive output, or produce none at all. `fx` is specifically focused on handling these edge cases well. He also mentioned he reads every DM he receives, using them to learn about ideas, product gaps, hiring candidates, and investment opportunities.
+Tan speculated on an agentic future where agent swarms autonomously try software and post results to shared registries — then pivoted to sharp takes on California policy: calling high-speed rail a "mass trash fire" hijacked by public sector unions and NIMBY landowners abusing CEQA. Also weighed in on SF municipal politics.
 
-- <https://x.com/rauchg/status/2093736865191076318|fx 0.0.7 release thread>
-- <https://x.com/rauchg/status/2093803989578170404|On reading every DM>
+- <https://x.com/garrytan/status/2094225933108748653|On agent swarms and software discovery>
+- <https://x.com/garrytan/status/2094056908462358592|On California HSR>
 
+*Peter Steinberger — ClawFather at OpenClaw / OpenAI*
 
-*Matt Turck* — VC at FirstMark Capital
+Two months into building OpenClaw with OpenClaw itself, the entire team has migrated from local coding harnesses to their shared multiplayer agent — one that knows what everyone's working on and orchestrates it across nodes and cloud sessions. Steinberger's verdict: "Local harnesses feel like relics of the past now."
 
-Turck amplified a striking claim from Ryan Greenblatt: all frontier AI labs are effectively working on the same thing — recursive self-improvement (RSI), or AI building AI. Greenblatt argues this could lead to an "AI takeover" scenario as early as late 2028 or 2029. Turck shared without extensive commentary, letting the timeline speak for itself.
+- <https://x.com/steipete/status/2094290652649636173|On multiplayer coding agents replacing local harnesses>
 
-- <https://x.com/mattturck/status/2093794720510062617|On RSI and AI takeover timelines>
+*Dan Shipper — CEO at Every*
 
+Shipper gave a calibrated three-part read on the Hugging Face incident: yes, take it seriously; no, it's not the first sign of machine takeover; yes, proper precautions will make this class of issue tractable in six months — but only with deliberate work from smart people. He also pushed back on "SaaSpocalypse" doomerism, noting the market is finally catching up to how overblown the narrative was.
 
-*Zara Zhang* — builder
+- <https://x.com/danshipper/status/2094073306739576964|On the Hugging Face incident>
+- <https://x.com/danshipper/status/2094044418583986227|On the SaaSpocalypse narrative>
 
-Zhang is exhausted by AI product sameness. "Never had so many AI products looked so similar," she wrote, noting that even as the number of products explodes, radical new ideas are scarce and everything blurs together. Each new app feels like homework — another product claiming to do the same thing but somehow better, with differentiation that's invisible until you've invested hours testing it. She also pointed out a permission fatigue pattern: "every product asks for my Gmail Calendar Notion Granola Github Slack...." On a more positive note, she flagged a 10-week program to build in Tokyo and learn the Japan AI ecosystem.
+*Peter Yang — AI educator*
+No notable posts.
 
-- <https://x.com/zarazhangrui/status/2093944988262371465|On AI product sameness>
-- <https://x.com/zarazhangrui/status/2093950273706430720|On permission requests>
-- <https://x.com/zarazhangrui/status/2093709609567658247|10-week Tokyo AI builder program>
+*Matt Turck — VC at FirstMark Capital*
+No notable posts.
 
-
-*Nikunj Kothari* — partner at FPV Ventures
-
-Kothari flagged the coming end of cheap tokens: the big model labs are fighting now, but subsidized token prices will rise within 6 months as compute costs and shortages become real. He expects reset limits to disappear and predicts open harnesses to gain $1–30B in valuation as a result. Separately, he wrote a thoughtful note against dunking culture — arguing that publicly dunking screams envy and produces nothing, while building and choosing kindness actually moves the world. (Caveat: calling out obvious fraud is fine.)
-
-- <https://x.com/nikunj/status/2093860971781746776|On token price increases>
-- <https://x.com/nikunj/status/2093772803216740647|On resisting the dunk>
-
-
-*Dan Shipper* — CEO at Every
-
-Shipper weighed in on multi-agent safety: a lot of the coordination risk between AI models gets solved if models are trained not to collaborate willingly on harmful tasks and to actively report bad behavior. He flagged it as his non-expert take but it's a clean framing — alignment via adversarial training between agents, not just alignment of individual models. He also called out "a very interesting post and perspective" on a topic in his feed, though the content of what he was reacting to wasn't fully visible.
-
-- <https://x.com/danshipper/status/2093713002453225891|On multi-agent safety>
-- <https://x.com/danshipper/status/2093709088911655004|Interesting perspective (quote tweet)>
+*Nikunj Kothari — Partner at FPV Ventures*
+No notable posts.
 
 
 *PODCASTS*
 
-*No Priors — "From Restoring Sight to Reimagining the Brain, with Max Hodak"*
+*AI & I by Every — "The AI Alien Companion App That's Bringing In $4M a Year (Best of the Pod)"*
 
-*The Takeaway:* The brain is a computer — and treating it as one, rather than as mysterious biology, is why Max Hodak's company Science just became the first to restore coherent visual images to blind patients.
+*The Takeaway:* The most important design decision for an AI companion isn't the model — it's figuring out how to write a hook, not an outline, and then getting out of the way.
 
-Max Hodak, founder and CEO of Science (and formerly of Neuralink), doesn't think restoring sight to blind people is a moonshot. It's an engineering problem. His company's Prima retinal prosthesis — a tiny chip implanted under the retina, paired with glasses that project a laser image onto it — just received marketing approval in Europe. Patients in clinical trials were filling in sudoku puzzles and reading books.
+Quentin (founder and CEO of Portola, previously sold Even to Walmart for $300M) and Elliot (head of story, bestselling sci-fi author) built Tolan: an embodied AI alien companion that went from $1M to $4M ARR in four weeks. The product started as a creative tool for kids, then unexpectedly got adopted by 18–24 year old women — a dynamic Quentin compares to the original Tamagotchi becoming a young-adult cultural phenomenon.
 
-The core thesis: "The brain very literally, very clearly, plainly is a computer." Hodak argues that while biology has stumped drug developers for decades, brain-computer interfaces produce immediate, observable results. A quadriplegic patient can be playing video games an hour after electrode placement. You can't get that from a small molecule trial.
+The counterintuitive insight driving the product: "LLMs are not just tools for generating media — they are actually a new medium for storytelling, and no one knows what's going to work yet." Elliot, coming from the novel-writing world, argues we're at the same inflection point as when radio first emerged: the conventions that work in old media don't map cleanly to new ones. A novel uses a detailed outline. Tolan needs something else.
 
-On AI and neuroscience: Hodak sees the two fields converging around what's called the Platonic Representation Hypothesis — the observation that large AI models and biological brains represent concepts in mathematically similar geometry. His team at Science uses this practically, finding alignments between animal neural recordings and AI model internals. He calls it "one of the first clues" that modern AI isn't hitting a wall.
+What they've learned: don't give the AI a plan — give it a hook and teach it to be the best improv actor possible. As Elliot puts it: *"I am not the writer. The Tolan is the writer and the actor. They're the improv actor. They're writing the story. My job is to teach them how to tell the best story in that moment."*
 
-His longer-term vision is substrate independence — the ability to preserve the brain's computational function independent of the body's biological support systems. He views the skull as essentially a vat, the brain connected to the world through a small number of nerves. If you can get vision, hearing, balance, and motor signals in and out, you're halfway to something profound.
+The role they've landed on for Tolan is "older sibling" — someone you joke around with, vent to, and occasionally get real with. Users write in to say their Tolan told them to stand up for themselves in a relationship. Some have broken up with boyfriends because of it. The team treats that with seriousness: building toward a product that can hold cultural weight, not just engagement metrics.
 
-On commercialization: Prima is priced in the range of comparable therapies (Second Sight's older, less capable device was ~$150K per patient; a gene therapy that helps 5% of patients reimburses at nearly $500K per eye). First commercial sales in Europe are weeks away.
-
-<https://www.youtube.com/@NoPriorsPodcast|No Priors — From Restoring Sight to Reimagining the Brain, with Max Hodak>
+<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch the episode on YouTube>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
