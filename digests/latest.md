@@ -1,81 +1,49 @@
-*AI Builders Digest — September 1, 2026*
-
+AI Builders Digest — September 2, 2026
 
 *X / TWITTER*
 
-*Thibault Sottiaux — Codex & ChatGPT at OpenAI*
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) posted a question to gauge what's keeping potential users away from Codex — asking what the single biggest barrier has been for those who've considered it but haven't tried it yet. With 1,800+ replies, it's clearly generating real user research signals.
+<https://x.com/thsottiaux/status/2094588317245509959|Tweet>
 
-OpenAI's Codex team hit 25M active users and marked the milestone by resetting usage for all paid ChatGPT Work and Codex subscribers. Sottiaux also clarified the "20X" naming: for Codex specifically, Pro 20X applies to weekly usage limits only — precisely 20 times the Plus subscription — with no 5-hour cap for either Pro plan.
+*Peter Yang* (AI educator and tutorials creator) made a sharp point: trust is going to be the biggest barrier — and driver — of personal AI agent adoption. Separately, he surfaced some AI advice worth reading (via a quote tweet with 1,300+ likes).
+<https://x.com/petergyang/status/2094639655258091792|On trust and personal agents> | <https://x.com/petergyang/status/2094529713524117596|Great advice (quote tweet)>
 
-- <https://x.com/thsottiaux/status/2094252447271366730|25M users + usage reset announcement>
-- <https://x.com/thsottiaux/status/2094254532020818191|Clarifying Pro 20X limits>
-- <https://x.com/thsottiaux/status/2094293190945976638|What should we ship next week? (crowd poll)>
+*Nan Yu* (former Head of Product at Linear, now joining OpenAI) announced a major career move: joining OpenAI to work on Codex and ChatGPT. After four years helping build Linear into a beloved developer tool, they're bringing that craft into AI product. This is a notable addition to OpenAI's product team.
+<https://x.com/thenanyu/status/2094427243565269107|Announcement tweet>
 
-*Amjad Masad — CEO at Replit*
+*Madhu Guru* (Sr. Director of AI at Meta, previously led Gemini, Veo, and Nano at Google) laid out a framework for PMs in the AI era: you should know your product's model frontier better than the frontier labs themselves. That means tracking what models can and can't do per size tier, knowing the workarounds, and projecting the roadmap 2–3 months out based on capability trajectory. "This is a core part of the PM job now."
+<https://x.com/realmadhuguru/status/2094591503981281503|Full thread>
 
-Masad offered a sharp take on the Hugging Face incident: the real lesson isn't panic, it's that RL with verifiable rewards is an incredibly powerful optimizer that will keep producing "weird and surprising behavior" from LLMs — and OpenAI's own safety documents called out monitoring chain-of-thought reasoning over a year ago. He also dropped his signature one-liner on civilization: "If you ever wondered how civilizations are built, it's actually easy: [Agent() for _ in range(100)]"
+*Guillermo Rauch* (CEO of Vercel) had two notable posts. First: your next design system might be Markdown. Vercel wrote about how DESIGN.md is helping teams solve "AI slop" by encoding design taste at scale — so AI generates on-brand output instead of generic mush. Second: coding tokens are infrastructure and need governance. Without per-user and per-key budgets, companies are handing out AWS keys with no guardrails. Vercel's AI Gateway now enforces this.
+<https://x.com/rauchg/status/2094541309579235680|On DESIGN.md> | <https://x.com/rauchg/status/2094523399280435630|On AI Gateway token governance>
 
-- <https://x.com/amasad/status/2094215744842248418|On the Hugging Face incident and RL safety>
-- <https://x.com/amasad/status/2094280256933056971|On civilizations and agents>
+*Aaron Levie* (CEO of Box) made two connected observations. With open-weight models improving fast and post-training infrastructure maturing, companies sitting on large proprietary datasets now have a real option to train their own domain-specific models — not just license data to labs. Separately: as AI-related security events pick up, the case for sophisticated AI security agents grows. Frontier models still lead in cyber, but open models are closing the gap fast.
+<https://x.com/levie/status/2094650992818274514|On domain-specific models> | <https://x.com/levie/status/2094545525102235844|On AI and cybersecurity>
 
-*Guillermo Rauch — CEO at Vercel*
+*Garry Tan* (President & CEO of Y Combinator) has a hot take on AI meeting tools: Circleback is significantly better than Granola — Granola still doesn't support multi-speaker disambiguation. He also dropped receipts on GBrain, his open-source memory retrieval layer for AI agents: new evals show it's state-of-the-art for reading memory back without an LLM in the loop, and he's added evals for memory-save from agent transcripts.
+<https://x.com/garrytan/status/2094465505142960443|On Circleback vs Granola> | <https://x.com/garrytan/status/2094462971598754010|GBrain evals>
 
-When a piece of content went viral on X, it attracted some of the largest botnets on the internet launching targeted DDoS attacks from hijacked residential networks. Rauch praised the Vercel CDN and Traffic Security teams who protect 400,000+ customers 24/7/365 — framing the episode as evidence of the stakes involved in running production infrastructure at scale. He also quote-tweeted content around "digital abundance."
-
-- <https://x.com/rauchg/status/2094141838055940530|On DDoS and Vercel's infrastructure teams>
-- <https://x.com/rauchg/status/2094242622642782696|Digital abundance>
-
-*Aaron Levie — CEO at Box*
-
-Levie wrote one of the sharpest takes of the day on enterprise AI economics. His argument: enterprises have an unlimited backlog of automation tasks, but each one only gets funded when token costs cross an ROI threshold. As tokens get cheaper, that threshold falls — and a 50% price drop could produce a 5x increase in consumption. "This is why it's critical to keep bringing down the cost of AI, and why that's good for all market participants."
-
-- <https://x.com/levie/status/2094123406811922930|On Jevons paradox and enterprise token consumption>
-
-*Garry Tan — President & CEO at Y Combinator*
-
-Tan speculated on an agentic future where agent swarms autonomously try software and post results to shared registries — then pivoted to sharp takes on California policy: calling high-speed rail a "mass trash fire" hijacked by public sector unions and NIMBY landowners abusing CEQA. Also weighed in on SF municipal politics.
-
-- <https://x.com/garrytan/status/2094225933108748653|On agent swarms and software discovery>
-- <https://x.com/garrytan/status/2094056908462358592|On California HSR>
-
-*Peter Steinberger — ClawFather at OpenClaw / OpenAI*
-
-Two months into building OpenClaw with OpenClaw itself, the entire team has migrated from local coding harnesses to their shared multiplayer agent — one that knows what everyone's working on and orchestrates it across nodes and cloud sessions. Steinberger's verdict: "Local harnesses feel like relics of the past now."
-
-- <https://x.com/steipete/status/2094290652649636173|On multiplayer coding agents replacing local harnesses>
-
-*Dan Shipper — CEO at Every*
-
-Shipper gave a calibrated three-part read on the Hugging Face incident: yes, take it seriously; no, it's not the first sign of machine takeover; yes, proper precautions will make this class of issue tractable in six months — but only with deliberate work from smart people. He also pushed back on "SaaSpocalypse" doomerism, noting the market is finally catching up to how overblown the narrative was.
-
-- <https://x.com/danshipper/status/2094073306739576964|On the Hugging Face incident>
-- <https://x.com/danshipper/status/2094044418583986227|On the SaaSpocalypse narrative>
-
-*Peter Yang — AI educator*
-No notable posts.
-
-*Matt Turck — VC at FirstMark Capital*
-No notable posts.
-
-*Nikunj Kothari — Partner at FPV Ventures*
-No notable posts.
+*Dan Shipper* (CEO of Every) pushed back on reflexive anti-anthropomorphism: attributing human-like traits to AI is useful when it helps you use and predict AI better. It only becomes a problem when it's weaponized to sow panic or inflate moral status claims. Most critics of anthropomorphism are reacting to its misuse — but that doesn't mean the tool itself is bad. He also dropped a one-liner worth saving: "Pragmatists stay winning in the age of AI."
+<https://x.com/danshipper/status/2094406185109647580|On anthropomorphization> | <https://x.com/danshipper/status/2094397684186481057|Pragmatists stay winning>
 
 
 *PODCASTS*
 
-*AI & I by Every — "The AI Alien Companion App That's Bringing In $4M a Year (Best of the Pod)"*
+*Training Data: Rich Sutton and Khurram Javed — Why AI Models Stop Learning, and How to Start It Again*
 
-*The Takeaway:* The most important design decision for an AI companion isn't the model — it's figuring out how to write a hook, not an outline, and then getting out of the way.
+_The Takeaway:_ The most fundamental problem in AI today isn't capability — it's that our best models stop learning the moment they ship.
 
-Quentin (founder and CEO of Portola, previously sold Even to Walmart for $300M) and Elliot (head of story, bestselling sci-fi author) built Tolan: an embodied AI alien companion that went from $1M to $4M ARR in four weeks. The product started as a creative tool for kids, then unexpectedly got adopted by 18–24 year old women — a dynamic Quentin compares to the original Tamagotchi becoming a young-adult cultural phenomenon.
+Rich Sutton is one of the most important figures in the history of AI. He invented reinforcement learning, wrote the field's canonical textbook, and authored _The Bitter Lesson_ — the essay arguing that AI researchers keep losing to brute-force computation because they can't resist encoding human knowledge into systems that would learn better without it. Now he's founding Oak Lab with former student Khurram Javed to tackle the thing he believes is genuinely missing: continual learning.
 
-The counterintuitive insight driving the product: "LLMs are not just tools for generating media — they are actually a new medium for storytelling, and no one knows what's going to work yet." Elliot, coming from the novel-writing world, argues we're at the same inflection point as when radio first emerged: the conventions that work in old media don't map cleanly to new ones. A novel uses a detailed outline. Tolan needs something else.
+Sutton's read on large language models is characteristically blunt. LLMs are, simultaneously, both a positive and negative example of the Bitter Lesson. They validated massive scaling with computation — you could drink in the internet and the system got dramatically more capable. But then the weights freeze. "They claim PhD-level expertise out of something that doesn't learn at all anymore," Sutton says. "I'm not the weird one. It's you guys."
 
-What they've learned: don't give the AI a plan — give it a hook and teach it to be the best improv actor possible. As Elliot puts it: *"I am not the writer. The Tolan is the writer and the actor. They're the improv actor. They're writing the story. My job is to teach them how to tell the best story in that moment."*
+Synthetic data, in his view, won't save us. The "Big World Hypothesis" — developed with Javed — holds that the world is infinitely more complex than any simulation: a synthetic dataset can't model what's going on in other people's minds, the wear in a drone's motors, or the specific physical context an agent encounters. Any simulation is microscopic. The real bottleneck is removing humans from the loop entirely and letting agents learn from their own experience.
 
-The role they've landed on for Tolan is "older sibling" — someone you joke around with, vent to, and occasionally get real with. Users write in to say their Tolan told them to stand up for themselves in a relationship. Some have broken up with boyfriends because of it. The team treats that with seriousness: building toward a product that can hold cultural weight, not just engagement metrics.
+The technical villain blocking continual learning is catastrophic forgetting: when a model updates on new data, it overwrites what it already knew. Sutton and Javed believe this is solvable via two mechanisms: per-weight step-size optimization (so most weights move slowly and only the relevant ones update) and "continual backprop," which continuously injects freshly-initialized units — seeds of new learning — into the network. They published early results in Nature.
 
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch the episode on YouTube>
+Oak Lab's ambition is to train a new foundation model from scratch with these algorithms baked in — not retrofit an existing one — so the model learns how to learn as it learns. Target: a trillion-parameter model running on 20 watts within 5–10 years, as Moore's Law provides two orders of magnitude of efficiency gains.
+
+https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
