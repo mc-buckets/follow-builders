@@ -1,49 +1,100 @@
-AI Builders Digest — September 2, 2026
+*AI Builders Digest — September 3, 2026*
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) posted a question to gauge what's keeping potential users away from Codex — asking what the single biggest barrier has been for those who've considered it but haven't tried it yet. With 1,800+ replies, it's clearly generating real user research signals.
-<https://x.com/thsottiaux/status/2094588317245509959|Tweet>
+*Boris Cherny* (Claude Code at Anthropic)
+The Fable 5.1 release is live and Cherny highlighted three improvements in a thread: writing quality is better with less "Claude-speak," safeguards are now dramatically less trigger-happy (85% fewer biology fallbacks, ~60% fewer cyber interventions per Claude Code session), and cache read prices dropped to $0.25/M tokens — up to 38% cheaper for a typical session.
+- <https://x.com/bcherny/status/2094864064648536068|On writing & tone improvements>
+- <https://x.com/bcherny/status/2094864063478276288|On safeguard improvements>
+- <https://x.com/bcherny/status/2094864062186426373|On price cuts>
 
-*Peter Yang* (AI educator and tutorials creator) made a sharp point: trust is going to be the biggest barrier — and driver — of personal AI agent adoption. Separately, he surfaced some AI advice worth reading (via a quote tweet with 1,300+ likes).
-<https://x.com/petergyang/status/2094639655258091792|On trust and personal agents> | <https://x.com/petergyang/status/2094529713524117596|Great advice (quote tweet)>
+*Claude (claudeai)* (Anthropic's official account)
+The official Fable 5.1 launch thread. Claude Fable 5.1 is available everywhere; Claude Mythos 5.1 (targeted at cyberdefenders and life scientists) is in trusted-access programs. Enterprise Frontier Safeguards (EFS) are also launching — giving enterprise customers zero data retention privacy alongside state-of-the-art adversarial-use prevention. Rollout starts this fall.
+- <https://x.com/claudeai/status/2094848592812917122|Launch announcement>
+- <https://x.com/claudeai/status/2094848591617483020|Safeguard improvements>
+- <https://x.com/claudeai/status/2094848590245965931|Enterprise Frontier Safeguards>
 
-*Nan Yu* (former Head of Product at Linear, now joining OpenAI) announced a major career move: joining OpenAI to work on Codex and ChatGPT. After four years helping build Linear into a beloved developer tool, they're bringing that craft into AI product. This is a notable addition to OpenAI's product team.
-<https://x.com/thenanyu/status/2094427243565269107|Announcement tweet>
+*Alex Albert* (Research at Anthropic)
+Albert called out Enterprise Frontier Safeguards as a sleeper-important announcement: EFS is "ZDR++," zero data retention designed for a world with agents. A company's data stays in its own cloud while an automated monitoring layer flags risky patterns across sessions — something traditional ZDR couldn't do. He predicts EFS becomes a standard enterprise requirement. Separately, he's been using Fable 5.1 to generate cinematic video walkthroughs from a single lot photo via Blender headless.
+- <https://x.com/alexalbert__/status/2094889286990446769|On Enterprise Frontier Safeguards>
+- <https://x.com/alexalbert__/status/2094860187743986169|On Fable 5.1 video generation>
 
-*Madhu Guru* (Sr. Director of AI at Meta, previously led Gemini, Veo, and Nano at Google) laid out a framework for PMs in the AI era: you should know your product's model frontier better than the frontier labs themselves. That means tracking what models can and can't do per size tier, knowing the workarounds, and projecting the roadmap 2–3 months out based on capability trajectory. "This is a core part of the PM job now."
-<https://x.com/realmadhuguru/status/2094591503981281503|Full thread>
+*Cat Wu* (Claude Code + Cowork at Anthropic)
+Encouraging builders to use Fable 5.1 for more ambitious projects — ones that previously would have taken months. Applies across Claude Code, Claude Cowork, and Claude Tag.
+- <https://x.com/_catwu/status/2094933602228416603|On taking bigger bets with Fable 5.1>
 
-*Guillermo Rauch* (CEO of Vercel) had two notable posts. First: your next design system might be Markdown. Vercel wrote about how DESIGN.md is helping teams solve "AI slop" by encoding design taste at scale — so AI generates on-brand output instead of generic mush. Second: coding tokens are infrastructure and need governance. Without per-user and per-key budgets, companies are handing out AWS keys with no guardrails. Vercel's AI Gateway now enforces this.
-<https://x.com/rauchg/status/2094541309579235680|On DESIGN.md> | <https://x.com/rauchg/status/2094523399280435630|On AI Gateway token governance>
+*Thariq* (Claude Code at Anthropic)
+Practical tip on Fable 5.1: try it on _lower effort_ for tasks that need less verification or have fewer edge cases. Bonus: switching effort levels no longer breaks prompt cache.
+- <https://x.com/trq212/status/2094945951865520458|On using lower effort mode>
 
-*Aaron Levie* (CEO of Box) made two connected observations. With open-weight models improving fast and post-training infrastructure maturing, companies sitting on large proprietary datasets now have a real option to train their own domain-specific models — not just license data to labs. Separately: as AI-related security events pick up, the case for sophisticated AI security agents grows. Frontier models still lead in cyber, but open models are closing the gap fast.
-<https://x.com/levie/status/2094650992818274514|On domain-specific models> | <https://x.com/levie/status/2094545525102235844|On AI and cybersecurity>
+*Aaron Levie* (Box CEO)
+Box ran Fable 5.1 against their complex enterprise work eval and saw a 7-point improvement over Fable 5 on unstructured data tasks. Specific wins: financial services (+17%, correct capital-allowance ordering), technology (+37%, ambiguous metric normalization handled correctly), and public sector (+16%, weighted-mean educational data rankings). On AI and security: frontier models are getting so good at finding and exploiting vulnerabilities that AI-driven triage and automated fixes — with human oversight — is "essentially the only way forward." He sees this as a major job creator for security professionals.
+- <https://x.com/levie/status/2094851976769257770|On Fable 5.1 enterprise eval results>
+- <https://x.com/levie/status/2095024699441119612|On AI for cybersecurity>
 
-*Garry Tan* (President & CEO of Y Combinator) has a hot take on AI meeting tools: Circleback is significantly better than Granola — Granola still doesn't support multi-speaker disambiguation. He also dropped receipts on GBrain, his open-source memory retrieval layer for AI agents: new evals show it's state-of-the-art for reading memory back without an LLM in the loop, and he's added evals for memory-save from agent transcripts.
-<https://x.com/garrytan/status/2094465505142960443|On Circleback vs Granola> | <https://x.com/garrytan/status/2094462971598754010|GBrain evals>
+*Sam Altman* (OpenAI CEO)
+A substantive statement on the current moment: OpenAI has been sprinting on safety priorities over the summer, believes "caution is warranted," and has been slowing some model releases to allow sufficient safety and alignment work. Astra — their next model — has been done training for a while, is a "significant step forward in both capabilities and alignment," and is launching soon. The meta-point: "AI is getting extremely capable; no one fully understands the consequences of this." The company is trying to manage an iterative loop where society and technology evolve together.
+- <https://x.com/sama/status/2094934592062959832|Full statement on safety and Astra>
 
-*Dan Shipper* (CEO of Every) pushed back on reflexive anti-anthropomorphism: attributing human-like traits to AI is useful when it helps you use and predict AI better. It only becomes a problem when it's weaponized to sow panic or inflate moral status claims. Most critics of anthropomorphism are reacting to its misuse — but that doesn't mean the tool itself is bad. He also dropped a one-liner worth saving: "Pragmatists stay winning in the age of AI."
-<https://x.com/danshipper/status/2094406185109647580|On anthropomorphization> | <https://x.com/danshipper/status/2094397684186481057|Pragmatists stay winning>
+*Guillermo Rauch* (Vercel CEO)
+Three updates: (1) Vercel is partnering with and investing in Tanner Linsley and the TanStack team — committing to top-tier support for both Next.js and TanStack regardless of which customers choose. (2) Fable 5.1 is now available on the Vercel AI Gateway. (3) Vercel's unified "Fluid" compute platform is what enables their build performance, sandbox reliability, 30-minute function durations, and more — he frames it as "one global and unified compute platform, with only known physics as the limiting factor."
+- <https://x.com/rauchg/status/2094901483414372716|On TanStack partnership>
+- <https://x.com/rauchg/status/2094867652573528074|On Fable 5.1 on Vercel AI Gateway>
+- <https://x.com/rauchg/status/2094831747037085978|On Fluid compute platform>
+
+*Madhu Guru* (Sr. Director of AI at Meta, prev. Google Gemini/Veo/Nano)
+Two threads worth noting. First, he cheered on the Shopify ML team's results as a great example of enterprises building their own post-training systems, evals, and data flywheels — "more enterprises should be doing this." Second, a framework for "self-improving products": you need crisp metric definitions (primary, secondary, guardrail), a strategy and roadmap doc, a knowledge base of past decisions, connections to internal product systems (dashboards, APIs, MCPs), and an end-to-end product development harness. He suggests most teams can prototype with simple versions of each.
+- <https://x.com/realmadhuguru/status/2094973690576576675|On enterprise post-training (Shopify example)>
+- <https://x.com/realmadhuguru/status/2094817857821704659|On self-improving products framework>
+
+*Peter Yang* (AI skills and tutorials creator)
+Practical tips on managing Claude skills. His hot take: less is more — he's down to about a dozen skills (mostly his own) and regularly prunes unused ones. He's also grappling with skill drift: when you iterate manually with AI to get something right, then ask it to update the skill to one-shot that task, the skill overfits on that thread over time. No clean solution yet — he's asking the community. Separately, he recommends running `/claude-api prompt-audit` on your skills after upgrading to Fable 5.1 to find redundancies and rules you can remove.
+- <https://x.com/petergyang/status/2094999358525821099|On keeping skills minimal>
+- <https://x.com/petergyang/status/2094995775952740795|On the skill drift problem>
+- <https://x.com/petergyang/status/2094987791566622971|On the prompt-audit tip for Fable 5.1>
+
+*Nan Yu* (incoming OpenAI product staff, prev. Head of Product at Linear)
+A sharp product insight in response to Fable 5.1's writing improvements: "There's a lot of alpha in making your agents _less annoying_. If you want users to get to value they need to stop rage-quitting." He calls out an untapped opportunity for UX designers to become conversation/rhetoric designers.
+- <https://x.com/thenanyu/status/2094928205753040999|On less-annoying agents>
+
+*Dan Shipper* (CEO of Every)
+Pointed readers to Every's Fable 5.1 "vibe check" article. Also mused about the pace of abstraction: "remember when we used to have to type out low level code like this?"
+- <https://x.com/danshipper/status/2094855479167996036|On the Fable 5.1 vibe check>
+
+*Nikunj Kothari* (Partner at FPV Ventures)
+Shared a demo of WebMCP — a protocol that gives agents tool calls to interact with websites natively, including UI/UX support and interactive elements. His demo: an El Niño situation tracker where agents create their own views, preserve human edits, and generate shareable links for other agents or humans. Built with Codex and Railway.
+- <https://x.com/nikunj/status/2094922789128196314|On WebMCP demo>
+
+*Zara Zhang* (Builder, prev. GitHub)
+Posted a maxim worth clipping: "Be a person, not a persona."
+- <https://x.com/zarazhangrui/status/2094812574395371857|Be a person, not a persona>
+
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
+No notable posts — high-engagement tweets but no substantive content to summarize.
+
+*Matt Turck* (VC at FirstMark Capital)
+No notable posts.
 
 
 *PODCASTS*
 
-*Training Data: Rich Sutton and Khurram Javed — Why AI Models Stop Learning, and How to Start It Again*
+*Training Data — Making Cities Awesome: Peregrine's Nick Noone & Ben Rudolph*
 
-_The Takeaway:_ The most fundamental problem in AI today isn't capability — it's that our best models stop learning the moment they ship.
+_The Takeaway:_ The right way to build AI for government isn't to maximize data collection — it's to help institutions use the data they already have, with strict governance, while handing all the credit to the customer.
 
-Rich Sutton is one of the most important figures in the history of AI. He invented reinforcement learning, wrote the field's canonical textbook, and authored _The Bitter Lesson_ — the essay arguing that AI researchers keep losing to brute-force computation because they can't resist encoding human knowledge into systems that would learn better without it. Now he's founding Oak Lab with former student Khurram Javed to tackle the thing he believes is genuinely missing: continual learning.
+Nick Noone and Ben Rudolph founded Peregrine after stints at opposite ends of high-stakes technology: Noone at Palantir deploying into national security operations in The Middle East, Rudolph with the UN Refugee Agency at the Sudanese and Colombian borders. Both arrived at the same thesis — that technology's most important role is in the communities where people actually live, and that public safety is the foundation everything else rests on.
 
-Sutton's read on large language models is characteristically blunt. LLMs are, simultaneously, both a positive and negative example of the Bitter Lesson. They validated massive scaling with computation — you could drink in the internet and the system got dramatically more capable. But then the weights freeze. "They claim PhD-level expertise out of something that doesn't learn at all anymore," Sutton says. "I'm not the weird one. It's you guys."
+Peregrine sells AI to city and county governments — police, fire, emergency management, health services. Their core philosophy inverts the traditional government-tech model. Where companies like Flock or Axon built businesses on collecting and storing data as the primary product, Peregrine explicitly doesn't want customers' data. They join disparate data sources the city already owns, govern it tightly, and build on top. As Noone put it: _"We are actually not in any shape or form in the business of bringing more data to the customer that they don't already have."_
 
-Synthetic data, in his view, won't save us. The "Big World Hypothesis" — developed with Javed — holds that the world is infinitely more complex than any simulation: a synthetic dataset can't model what's going on in other people's minds, the wear in a drone's motors, or the specific physical context an agent encounters. Any simulation is microscopic. The real bottleneck is removing humans from the loop entirely and letting agents learn from their own experience.
+The forward deployed engineering model they inherited from Palantir — and deliberately refined — treats every customer deployment as an R&D operation. Two categories of discoveries emerge: platform primitives (one engineer's workaround using comment parsing to enable field editing became a feature request that made it into the product) and pure innovation lab work (a new hire built a hurricane simulator and a fire-department placement tool in her first month).
 
-The technical villain blocking continual learning is catastrophic forgetting: when a model updates on new data, it overwrites what it already knew. Sutton and Javed believe this is solvable via two mechanisms: per-weight step-size optimization (so most weights move slowly and only the relevant ones update) and "continual backprop," which continuously injects freshly-initialized units — seeds of new learning — into the network. They published early results in Nature.
+The AI use cases they've found in the field couldn't have been predicted from headquarters. A Florida county facing an unusual number of water rescues used Peregrine to surface a pattern: three consecutive days of a specific weather pattern create sand channels that produce rip currents — actionable intelligence no keyword search would have found. A detective investigating synagogue threats used semantic search to surface a pattern of anti-Semitic incidents that keyword matching would have missed entirely.
 
-Oak Lab's ambition is to train a new foundation model from scratch with these algorithms baked in — not retrofit an existing one — so the model learns how to learn as it learns. Target: a trillion-parameter model running on 20 watts within 5–10 years, as Moore's Law provides two orders of magnitude of efficiency gains.
+On cold cases: Peregrine built an agent that runs for 30-60 minutes over 200-300 GB of evidence (video, audio, images, PDFs). They validated it by feeding it a case where a man had been wrongly convicted — and the agent reproduced the exoneration result. In a Wisconsin case, the agent placed a suspect at both the crime scene and the body location using a handful of cell call detail records buried in gigabytes of data.
 
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+On the question of facial recognition: Noone's view is that Silicon Valley shouldn't impose general-purpose decisions on institutions. Most public safety agencies choose not to implement it; Peregrine follows the customer, follows the law, and works to give them the context they need to make their own decisions.
+
+<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch the episode>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
