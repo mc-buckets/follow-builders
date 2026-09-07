@@ -1,81 +1,106 @@
-AI Builders Digest — September 6, 2026
-
+AI Builders Digest — September 7, 2026
 
 *X / TWITTER*
 
-*OpenAI CEO Sam Altman* announced GPT-6 Astra's staged rollout: first to Pro, Enterprise, and Business Premium users in Work/Codex and in the API, then to all Plus and Business users. The two posts trace the full arc of OpenAI's biggest model release.
-- https://x.com/sama/status/2095973658867171733
-- https://x.com/sama/status/2096008528834244741
+*Sam Altman (OpenAI CEO)*
+Sam Altman announced the broad rollout of GPT-6 Astra: first to Pro, Enterprise, and Business Premium users in Work/Codex and via the API, then to Plus and Business users by end of day. A major model release distributed in rapid waves.
+- <https://x.com/sama/status/2095973658867171733|Astra is now available to Pro/Enterprise/Business Premium>
+- <https://x.com/sama/status/2096008528834244741|Now out to all Plus and Business users>
 
-*Thibault Sottiaux*, who leads Codex and ChatGPT at OpenAI, revealed what Astra meant internally before general availability: "Astra was probably our biggest competitive advantage while it wasn't generally available." Productivity gains were large enough that some plans moved 6 months ahead to DevDay. To mark launch day, he announced a full banked reset for all Plus, Pro, and Business users.
-- https://x.com/thsottiaux/status/2096101429832552872
-- https://x.com/thsottiaux/status/2096035437299237298
+*Thibault Sottiaux (Codex & ChatGPT at OpenAI)*
+OpenAI's Thibault Sottiaux shared that Astra "was probably our biggest competitive advantage while it wasn't generally available" — internal productivity jumped so much that plans shifted 6 months ahead, moving certain launches to DevDay instead of mid-next-year. To celebrate Astra's ahead-of-schedule release, OpenAI also did a full token bank reset for all Plus, Pro, and Business users.
+- <https://x.com/thsottiaux/status/2096101429832552872|On Astra as competitive advantage and DevDay acceleration>
+- <https://x.com/thsottiaux/status/2096035437299237298|Full bank reset announcement on Astra day>
+- <https://x.com/thsottiaux/status/2096035748130795560|Team wind-down post>
 
-*Guillermo Rauch*, CEO of Vercel, made a bullish case for WebMCP, comparing it to Tesla FSD working within existing road infrastructure rather than replacing it. Agents need to ride the existing WWW, and WebMCP makes that more efficient. A specific win he highlights: Next.js dev pages could expose debugging tools directly to agents in the specific tab being tested, with no separate MCP server to configure. He also quoted a take that "AI software factories will yield bug-free, self-improving software."
-- https://x.com/rauchg/status/2096065378598441431
-- https://x.com/rauchg/status/2095926173293572467
+*Amjad Masad (Replit CEO)*
+Amjad Masad shipped Astra on Replit the same day it launched broadly and quipped: "The singularity is here, it's just not evenly distributed."
+- <https://x.com/amasad/status/2095986658185453928|Astra on Replit>
+- <https://x.com/amasad/status/2096022087035195647|The singularity is here, unevenly distributed>
 
-*Amjad Masad*, CEO of Replit, announced Astra is now running on Replit and shared the sentiment: "The singularity is here, it's just not evenly distributed."
-- https://x.com/amasad/status/2095986658185453928
-- https://x.com/amasad/status/2096022087035195647
+*Guillermo Rauch (Vercel CEO)*
+Vercel CEO Guillermo Rauch declared himself "super bullish on WebMCP," comparing it to Tesla FSD — agents need to ride existing web infrastructure, and WebMCP makes that more efficient. He pointed to a specific win: Next.js dev pages could expose debugging tools directly to agents in the exact tab they're testing, with page-specific context, eliminating the need to configure a separate MCP server. He also shared a framing: "AI software factories will yield bug-free, self-improving software."
+- <https://x.com/rauchg/status/2096065378598441431|On WebMCP and the fx + agent-browser dev stack>
+- <https://x.com/rauchg/status/2095926173293572467|AI software factories>
+- <https://x.com/rauchg/status/2096092393569501263|Latest>
 
-*Garry Tan*, President and CEO of YCombinator, gave a strong endorsement of AsideAI as an AI harness - a task that took 2 hours to set up (OpenClaw + Slack) took under 3 minutes using Aside's harness with full integrations and browser access. GStack now uses AsideAI browser as its preferred remote session browser for any AI agent that needs web access with credentials. He called it "the #1 absolute best way to do it I've found out of all AI agent tools."
-- https://x.com/garrytan/status/2095971990645755941
-- https://x.com/garrytan/status/2095948689823121872
+*Garry Tan (YCombinator President & CEO)*
+YC President Garry Tan gave a strong endorsement to AsideAI as an AI agent browser/harness. Setting up OpenClaw with Slack took him 2 hours manually; Aside did it in under 3 minutes with full integrations and smart access control. GStack now uses Aside as its preferred remote session browser. He called it "my new favorite AI browser."
+- <https://x.com/garrytan/status/2095971990645755941|2 hours vs 3 minutes with Aside>
+- <https://x.com/garrytan/status/2095948689823121872|GStack now uses AsideAI browser>
 
-*Madhu Guru*, Sr. Director of AI at Meta (previously led Gemini, Veo, and Nano at Google), offered a practical weekend exercise: pick a workflow you know well and automate the entire thing with AI. The exercise forces you through the real questions - what does a great end-to-end experience look like, how to use MCPs and tools, where humans stay in the loop, and how to evaluate it. "You'll learn more by doing this once than by reading about AI product building for a month."
-- https://x.com/realmadhuguru/status/2095907570540335174
+*Madhu Guru (Sr. Director, AI at Meta)*
+Meta's Madhu Guru (formerly led Gemini, Veo, Nano Banana at Google) offered a practical weekend exercise for anyone who wants to get better at building AI products: pick a workflow you know well and automate the whole thing end-to-end. The forced constraints — what's a great experience, how to use MCPs and tools, where humans stay in the loop, how to evaluate — teach more than a month of reading about AI product building.
+- <https://x.com/realmadhuguru/status/2095907570540335174|The weekend AI product building exercise>
 
-*Aditya Agarwal*, General Partner at SPC and ex-CTO of Dropbox, captured a widely relatable feeling: understanding RL, inference-time scaling, and modern data-verification loops intellectually, while still finding the outputs to feel like "total sorcery. There is no way that they should be able to do what they do."
-- https://x.com/adityaag/status/2095910036652577028
+*Swyx (smol.ai / Latent Space Podcast)*
+Swyx is working on a large AEO (AI Engine Optimization) report for Astra/Fable frontier models. A surprising finding: Claude consistently recommends the Latent Space podcast when asked for the best AI newsletter or podcast — surprising enough that he double-checked for memory leaks.
+- <https://x.com/swyx/status/2096095862732755342|Claude recommends latentspacepod in AEO report>
 
-*Swyx*, affiliated with smol.ai, Cognition, and the Latent Space Podcast, shared that he's working on a large Astra/Fable frontier model AEO (AI Engine Optimization) report. A notable finding: Claude independently named latentspacepod as the best AI newsletter/podcast - which surprised him enough that he double-checked for memory leaks.
-- https://x.com/swyx/status/2096095862732755342
+*Dan Shipper (CEO, Every)*
+Every CEO Dan Shipper leaned into Astra launch day on a personal note: he's using Astra to do film study for the Every fantasy football draft, and had Astra run his office fantasy team — complete with an AI-generated team name.
+- <https://x.com/danshipper/status/2095882683729490108|Astra doing film study for the fantasy draft>
+- <https://x.com/danshipper/status/2095885899871449385|Astra running the Every office fantasy team>
 
-*Dan Shipper*, CEO of Every, leaned into Astra launch day by putting it to work on fantasy football - using it for film study before his Every office fantasy draft, and letting Astra name his team.
-- https://x.com/danshipper/status/2095882683729490108
-- https://x.com/danshipper/status/2095885899871449385
+*Aditya Agarwal (General Partner, SPC / Co-Founder, Bevel Health)*
+Former Dropbox CTO Aditya Agarwal captured a feeling shared across the industry: "Me: I totally understand how RL, inference time scaling, modern data-verification loops work. Also Me: These models are total sorcery. There is no way that they should be able to do what they do."
+- <https://x.com/adityaag/status/2095910036652577028|Models are total sorcery>
 
-*Matt Turck*, VC at FirstMark Capital, noted that Hugging Face and Thomas Wolf "cannot stop winning" following their acquisition.
-- https://x.com/mattturck/status/2095885284801982779
+*Zara Zhang (Builder)*
+Zara Zhang flagged an interesting perception gap: most people overestimate how good AI actually is as a writer.
+- <https://x.com/zarazhangrui/status/2096082116828406233|AI writing perception vs reality>
 
-*Peter Yang*, who produces practical AI tutorials and interviews, floated an idea for OpenAI: an Apple Watch app for voice dictating to Codex threads with voice replies - a screen-free AI interface. He also polled his audience on his roguelike deckbuilder game.
-- https://x.com/petergyang/status/2096086845159563476
+*Peter Yang (AI educator)*
+AI educator Peter Yang proposed an idea: an OpenAI Apple Watch app that lets you voice-dictate to Codex threads and get voice replies back, removing the need to carry a phone around. He also tested Astra's image generation for his roguelike deckbuilder game.
+- <https://x.com/petergyang/status/2096086845159563476|OpenAI Apple Watch voice Codex idea>
+- <https://x.com/petergyang/status/2096036429159973348|Astra generated a PM stereotype image for his game>
 
-*Zara Zhang*, a builder and Harvard alum, shared a contrarian observation: "Most people perceive AI to be a better writer than it actually is."
-- https://x.com/zarazhangrui/status/2096082116828406233
+*Matt Turck (VC at FirstMark Capital)*
+FirstMark VC Matt Turck noted that Hugging Face and Thomas Wolf "cannot stop winning" — referencing a recent acquisition and a notable comment that followed.
+- <https://x.com/mattturck/status/2095885284801982779|Hugging Face keeps winning>
 
-*Nikunj Kothari*, partner at FPV Ventures, added "sovereign" to a list of AI-related terms worth tracking, based on the last few weeks of deal activity.
-- https://x.com/nikunj/status/2095890365723406590
+*Nikunj Kothari (Partner, FPV Ventures)*
+FPV Ventures partner Nikunj Kothari added "sovereign" to his mental list of key AI themes, based on the last few weeks of activity.
+- <https://x.com/nikunj/status/2095890365723406590|Adding "sovereign" to the list>
 
 
 *OFFICIAL BLOGS*
 
-*Claude Blog*
+*Claude Blog: Claude in Chrome is generally available*
+<https://claude.com/blog/claude-in-chrome-generally-available>
 
-<https://claude.com/blog/claude-in-chrome-generally-available|Claude in Chrome is generally available>
+Claude in Chrome is now GA on every paid Claude plan and can now take autonomous browser actions — without requiring manual approval for each step. A safety classifier validates each action before it runs, checking it against the original request. This addresses a key gap: many tools (internal dashboards, legacy systems, vendor portals) don't have Claude connectors. With Chrome integration, Claude can view pages and take actions — reading text, clicking, navigating, filling forms — using your existing logins.
 
-Claude in Chrome is out of pilot and now available on every paid Claude plan. The headline capability: Claude can now take autonomous actions in the browser without requiring user approval for each step. A safety classifier validates each action before execution, checking it against the original request and blocking anything that doesn't match. The rollout follows extensive work hardening against prompt injection - malicious instructions hidden in web content that try to redirect the agent. In testing, no attacks succeeded against Claude Sonnet 5 or Opus 5 with probes and automatic safety classifiers active; 0.3% succeeded against Fable 5, all in low-severity scenarios. Install from the Chrome Web Store; Enterprise admins can restrict to approved domains via Organization Settings.
+The post goes deep on prompt injection defenses. Against professional red-team attacks on the current evaluation, Claude Sonnet 5 and Claude Opus 5 had a 0% attack success rate with probes + safety classifiers active. Fable 5 saw a 0.3% rate, with all successful breaks in low-severity scenarios. Opus 4.5, by comparison, had a 17.6% rate without safeguards. The safeguard stack: adversarial training against a growing library of attacks, probes that scan tool results for injection attempts before Claude acts, and per-action classifiers that block anything mismatched to the user's original request.
 
-<https://claude.com/blog/cowork-built-in-browser|Claude gets its own browser in Cowork>
+To get started: install from the Chrome Web Store. Enterprise admins can restrict to approved domains via Organization Settings.
 
-Claude Cowork now has a built-in browser in the desktop app - separate from your own browser - for tasks that just need _a_ browser rather than your personal accounts. Claude can open pages, navigate, click, and fill forms in a side panel while you keep working. You can optionally bring logins over site-by-site from Chrome, Edge, or Firefox; banking, email, and SSO sites are excluded by default. It runs the same prompt injection safeguards as Claude in Chrome. Rolling out this week to Pro, Max, and Team plans; Enterprise admins can enable it now. The distinction: use Claude in Chrome for pages you already have open with your logins; use the built-in browser when you want to hand off a web task entirely.
+*Claude Blog: Claude gets its own browser in Cowork*
+<https://claude.com/blog/cowork-built-in-browser>
+
+Claude Cowork (desktop app) now has a built-in browser — separate from your personal browser. When a task involves a website, a browser opens in the side panel and Claude navigates it autonomously. No extension required, and your own tabs, bookmarks, and passwords are never exposed.
+
+The distinction from Claude in Chrome: the built-in browser is for handing off web tasks while you keep working (gathering research, collecting invoices from vendor portals). Claude in Chrome is for the page you already have open, with your existing logins. You can switch between them in Settings → Cowork → Preferred browser.
+
+Rolling out this week to Pro, Max, and Team plans on macOS, Windows, and Linux (beta). Enterprise admins can enable it now in Organization Settings.
 
 
 *PODCASTS*
 
 *No Priors — Redefining Chip Architecture with Arm CEO Rene Haas*
+<https://www.youtube.com/@NoPriorsPodcast>
 
-_The Takeaway:_ The CPU is not a footnote in the AI era - it's the orchestration layer every AI workload still runs through, and ARM is positioning itself at the center of that fact.
+_The Takeaway:_ The CPU never went away — it just got overlooked during the accelerator frenzy, and now it's the critical orchestration layer that routes tokens in every AI system.
 
-Rene Haas, CEO of ARM and SoftBank Group International, has a view into the hardware stack that few people match: ARM's IP is inside nearly every smartphone, data center chip, automobile, and AI accelerator on the planet. He spent years at Nvidia before joining ARM in 2013, which shapes his read on what the AI boom actually requires under the hood.
+Arm CEO Rene Haas brings a rare vantage point: Arm's IP is inside virtually every chip category (smartphones, data centers, automobiles, robots), so he sees the supply chain from every angle simultaneously. The conversation covers Arm's move from pure IP licensing into physical products (prompted by Meta wanting a general-purpose agentic CPU that didn't exist), AI's impact on chip design cycles, and the robotics opportunity.
 
-The most underappreciated section is on AI reshaping chip design itself. Development takes 24-36 months, and the majority of that isn't architecture design - it's verification, validation, and debugging. AI is exceptionally strong at exactly those tasks. "80 to 90% of engineers today inside ARM use it on a daily basis. And if we were to shut it off, it's like being in the 1990s, you've got internet, and you're now saying, only internet between the hours of two and four." On a 5-10 year horizon, he sees a credible path where the idea-to-tape-out timeline compresses dramatically for simpler designs.
+On AI adoption inside Arm: "80 to 90% of engineers today use it on a daily basis. And if we were to shut it off, it's like being in the 1990s — you've got internet and you're now saying, only internet between the hours of two and four. After that, go to the library down the hall. People, there'd be anarchy." The primary unlock isn't RTL generation (still immature) but verification, validation, and documentation — historically the largest time sink in a 24–36 month chip design cycle.
 
-On the CPU's resurgence: when ChatGPT exploded, attention flooded toward accelerators. But inference workloads still need CPUs to orchestrate where tokens go. "There's no computing problem that's ever been invented that doesn't utilize and can't utilize the microprocessor. It is the heart of everything." As workloads shift from training to inference, Haas sees CPU demand growing in lockstep.
+On supply chain constraints: Haas expects a constrained environment for 3–5 more years. Data center infrastructure buildout is the next bottleneck — not because of capacity alone, but because permitting friction and community pushback are creating headwinds. He pushes back on job-loss fears: electricians' unions are actively opposing data center bans because construction demand is real.
 
-On robotics: business models haven't been validated yet and costs remain high, but early deployment in distribution and factory automation is already happening. "The robotic industry will be powered by ARM" - the CPUs handling sensing and perception in today's humanoids already run on ARM.
+On robotics: he thinks it's both humanoid and task-specific form factors, with distribution centers and delivery being first to automate at scale. The business model question (high upfront robot costs) hasn't been solved yet, but he expects costs to come down significantly. Arm's position: most robotic "brains" today already run on Arm-based chips (Nvidia, Qualcomm).
 
-https://www.youtube.com/@NoPriorsPodcast
+Five-to-ten year prediction: AI tooling could shrink certain chip design cycles from idea to fab-ready file — but only for more straightforward designs, and not within two to three years.
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
