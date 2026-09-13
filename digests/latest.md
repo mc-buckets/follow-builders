@@ -1,144 +1,77 @@
-AI Builders Digest — September 12, 2026
+AI Builders Digest — September 13, 2026
 
 *X / TWITTER*
 
-*Boris Cherny* — Claude Code at Anthropic
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
 
-Boris Cherny shared two high-signal posts. First, he flagged Anthropic's latest Threat Intelligence report as "absolutely terrifying and important": as models grow more capable, dual-use risks scale with them — a model that codes well can hack critical infrastructure; one that assists biology research can engineer pandemics. He called these issues "complex, thorny, and increasingly important for everyone to understand."
-<https://x.com/bcherny/status/2098281805770309686|Threat Intelligence report post>
+It was a massive product week at OpenAI — Sottiaux listed five Astra-powered launches: Images 2.5, GPT-Live-1, the Agents API, Data Agent, and ChatGPT for Financial Services, with more still to come before DevDay. <https://x.com/thsottiaux/status/2098639827084480864|tweet>
 
-He also wrote a detailed response to a common question about AI code quality, distinguishing throw-away code (black box is fine if the blast radius is low) from production code (should meet a higher bar than human-written code). At Anthropic, guardrails include lint rules, Claude-driven end-to-end tests, Claude-powered daily fuzzers, and automated code and security reviews. His advice for when Claude's output doesn't meet the bar: use the latest frontier model (Opus 5 or Fable 5.1), increase effort to high or xhigh, invest in your CLAUDE.md, or steer more actively. "Your job is to hold the bar on code quality."
-<https://x.com/bcherny/status/2098217573276131577|Code quality response>
-<https://x.com/bcherny/status/2098217571153838124|Original question thread>
+He also posted a detailed rollback/fix notice for Astra users, identifying three root causes behind recently-reported quality issues: overly-aggressive skill triggers from old model configs, an opt-in context management experiment that caused early stops or replies to stale messages (disabled; ~4–5k users affected), and misconfigured engines degrading a long tail of traffic. All three are now fixed, and a model reset landed by midnight. <https://x.com/thsottiaux/status/2098612714704891959|tweet>
 
-*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
+OpenAI also acquired the Git AI team (Aidan and Sasha), who built an open-source tool that helps developers understand how coding agents contribute to their codebase. The tool will stay open source and be integrated into Codex. <https://x.com/thsottiaux/status/2098569976143806918|tweet>
 
-OpenAI has paused new subscriptions to their $200/month "Astra" Pro plan due to overwhelming demand — existing accounts are unaffected and all other plans and the API remain available. The company said it's "the smallest step that allows us to continue giving the broadest access possible" while adding capacity.
-<https://x.com/thsottiaux/status/2098113585683808624|Astra subscription pause>
+*Peter Yang* (AI educator and content creator)
 
-He also revealed the infrastructure under ChatGPT Work: "scaled agents on demand," now available as an API so developers can get started in under a minute.
-<https://x.com/thsottiaux/status/2098238138334548260|Scaled agents on demand API>
+Yang is skeptical of the "software factory" framing. He argues AI can't self-improve a product or build features end-to-end without a human in the loop — one wrong assumption overnight ruins the whole run. He's asking for concrete examples of features built end-to-end with no human defining requirements or checking work. <https://x.com/petergyang/status/2098565668241334366|tweet>
 
-And promoted the internal OpenAI dashboard tool — the way everyone at OpenAI makes dashboards and learns about the business.
-<https://x.com/thsottiaux/status/2098165551554240764|Internal dashboard tool>
+On tooling, he's making a clean split: all local scheduled tasks go to Codex, all cloud tasks porting over to Grok Bot. <https://x.com/petergyang/status/2098614492066435228|tweet>
 
-*Josh Woodward* — VP at Google Labs, Gemini App, Google AI Studio
+*Madhu Guru* (Sr. Director of AI at Meta; previously led Gemini, Veo, and Nano at Google)
 
-Gemini is now available on Windows.
-<https://x.com/joshwoodward/status/2098131750660772342|Gemini on Windows announcement>
+Guru laid out why most enterprise AI efforts fail: leaders reuse old playbooks (the trusted lieutenant + central platform team model), under-invest in evals, and build AI for the business from the outside rather than embedding builders inside the functions they're trying to transform. His prescription: hire leaders who have shipped AI products, make evals a first-class citizen, and embed your best AI builders directly inside finance, sales, and support. <https://x.com/realmadhuguru/status/2098448235048378456|tweet>
 
-*Peter Yang* — Practical AI content creator
+*Thariq* (Claude Code at Anthropic)
 
-One concise take on the Astra vs. Sol debate: "In my humble opinion, for getting shit done Sol > Astra."
-<https://x.com/petergyang/status/2098215935467544604|Sol vs Astra>
+Anthropic's Claude Code team shipped plugin evals — a way to test whether your skills still work correctly after new model releases. Run `claude plugin eval init` in your plugin folder to get started. <https://x.com/trq212/status/2098531560643539440|tweet>
 
-*Nan Yu* — Incoming product staff at OpenAI, formerly head of product at Linear
+Separately, Thariq pushed back on benchmark culture: pass/fail eval scores are increasingly hard to interpret because many failures stem from overly strict hidden tests, and in some cases the model's answer is actually better than the expected eval result. <https://x.com/trq212/status/2098490139798655427|tweet>
 
-Nan posted a sharp reminder about AI's growth ceiling: normies use Google, Instagram, Zillow, and DoorDash all day — yet barely touch AI. "Still. Early." Separately, offered a euphemism for a down-round acquisition: "Don't call it a private equity acquisition for a huge discount from peak valuation. Call it an Italian goodbye."
-<https://x.com/thenanyu/status/2098216215525331353|Still early>
-<https://x.com/thenanyu/status/2098094411465048497|Italian goodbye>
+*Amjad Masad* (CEO at Replit)
 
-*Madhu Guru* — Sr. Director of AI at Meta (previously led Gemini, Veo, Nano Banana at Google)
+Replit announced it acquired a business that was itself entirely built on Replit — Masad calls it the first of many. <https://x.com/amasad/status/2098548464452055437|tweet>
 
-Part 10 of his series on building great evals: measure the steps, not just the result. Two agent trajectories might both produce the correct answer, but one makes 4 clean tool calls while the other makes 17 redundant ones, searches the same thing 3 times, and recovers from 2 errors. The better process is obvious — and your evals should reflect it. Practical advice: define your whole workflow, define tasks per step, measure each step separately, define median and hard tasks, and study steps before final results.
-<https://x.com/realmadhuguru/status/2098064969464217720|Evals tip #10>
+Also shipping: Routines with budgets — giving scheduled agents spending limits. <https://x.com/amasad/status/2098317466682179643|tweet>
 
-*Thariq* — Claude Code at Anthropic (prev YC W20, MIT Media Lab)
+*Guillermo Rauch* (CEO at Vercel)
 
-Shared a useful prompt for giving Claude deep personal context through an in-depth interview saved to memory: "Interview me in depth using free text, or askuserquestion tool when multiple choice works, about relevant parts of my life you don't know about yet and save it all to memory."
-<https://x.com/trq212/status/2098157600361861579|Claude memory interview prompt>
+Tailscale's model router runs on Vercel AI Gateway as its underlying infrastructure. Rauch's take: "AI Gateways are the new CDNs. You could go direct to origin, but it's brittle. You could DIY, but it's painful and costly." <https://x.com/rauchg/status/2098531157230969062|tweet>
 
-*Google Labs* — Google's home for latest AI tools and experiments
+*Aaron Levie* (CEO at Box)
 
-Dreambeans, Google's AI-powered daily story generator, is now free for all US users 18+ on iOS and Android — no subscription required. New: connect it to Gemini for even more personalized stories that build on the nuance from your chats.
-<https://x.com/GoogleLabs/status/2098110018289803558|Dreambeans launch>
+Box can now be mounted to agent sandboxes, letting AI agents read and write files directly — no human proxy needed. Levie frames this as a key enterprise primitive: "As AI agents execute critical workflows in the enterprise, they're going to need the same primitives that people have had." <https://x.com/levie/status/2098478938003841123|tweet>
 
-*Amjad Masad* — CEO of Replit
+*Ryo Lu* (Designer at Cursor; previously Notion, Stripe)
 
-Pushed back firmly on AI extinction narratives: "Lots of risk with AI. I worry a lot about cybersecurity for example. However, 'extinction risk' — literally 100% of humans die — is not remotely one of them." Also promoted Replit's new AI chat experiences including conversations with various personalities.
-<https://x.com/amasad/status/2098171265924116732|AI extinction risk take>
-<https://x.com/amasad/status/2098171773413929322|ETN bros chat>
-<https://x.com/amasad/status/2098171501505581559|PG in London chat>
+Cursor shipped long-lived agents for big ideas, and Lu (who just moved to Taipei) flagged it. <https://x.com/ryolu_/status/2098324260867772806|tweet>
 
-*Guillermo Rauch* — CEO of Vercel
+*Zara Zhang* (Builder, Harvard '17)
 
-Major infrastructure milestone: Vercel's CDN global metadata store is now 91% faster at p99 — handling ~10 million daily deployments (2.35 billion total to date) under growing pressure from agentic workloads. The improvement covers the build→deploy pipeline end to end. He also teased an upcoming product direction: "A computer for every agent, in every region."
-<https://x.com/rauchg/status/2098091056302833837|CDN 91% faster at p99>
-<https://x.com/rauchg/status/2098158541932794222|Computer for every agent>
-<https://x.com/rauchg/status/2098066258155708851|Deployments faster again>
+Zhang thinks the "one-person company" idea is overrated. AI dramatically amplifies individual leverage, but building something new is profoundly lonely — you need co-founders to brainstorm with, suffer with, and celebrate with. "It is extremely easy to lose motivation when you don't tie yourself to the mast together with somebody else." <https://x.com/zarazhangrui/status/2098483800456179923|tweet>
 
-*Aaron Levie* — CEO of Box
+*Peter Steinberger* (OpenClaw + OpenAI)
 
-Posted a detailed enterprise AI field report after meeting with dozens of technology leaders across banking, media, insurance, and consulting. Top trends:
+Steinberger demoed Astra running in a cloud session playing Doom via CUA (Computer Use Agent) — "not quite AGI yet, but probably beats fly brain." Also submitted a patch to the @trycua framework to fix key handling on Linux. <https://x.com/steipete/status/2098527519213604889|tweet>
 
-- *Cyber anxiety*: Everyone is nervous about growing AI-driven vulnerabilities, especially following the OpenAI/Hugging Face incident. Conversation is pragmatic, not existential.
-- *Multi-model reality*: Most enterprises deploy multiple frontier models. Standardizing on one is too hard; open weights still in infancy at enterprise scale.
-- *Agent identity & security*: New challenge — agents need controlled identities to access systems, but sometimes need to act exactly as the user.
-- *Process reengineering = real ROI*: Companies that restructure workflows around agents get far more value than those who just layer agents onto existing flows.
-- *Rapid vendor switching*: Innovation is moving so fast that no one waits for a vendor to fix something — they just move on.
-- *Evals still early*: Very few companies have a good grasp of how to measure AI performance against their actual workflows.
+*Dan Shipper* (CEO at Every)
 
-He also announced Box is partnering more deeply with OpenAI for secure access to enterprise Box content from within ChatGPT.
-<https://x.com/levie/status/2098218284139311615|Enterprise AI field report>
-<https://x.com/levie/status/2098135659714085281|Box x OpenAI partnership>
+Every is moving beyond vibe checks on new models. Shipper's team built an internal platform for all staff to create personal benchmarks based on their real day-to-day work — starting to get quantitative alongside the qualitative. <https://x.com/danshipper/status/2098481799047647715|tweet>
 
-*Matt Turck* — VC at FirstMark Capital, MAD Podcast host
-
-Promoted his new episode with Richard Socher on recursive self-improvement and scientific progress. (See Podcasts section below.)
-<https://x.com/mattturck/status/2098081448330674182|Podcast episode breakdown>
-<https://x.com/mattturck/status/2098081452839637480|Listen on Spotify/Apple/YouTube>
-
-*Zara Zhang* — Builder
-
-One blunt frustration: "Why is computer use still so painfully slow??"
-<https://x.com/zarazhangrui/status/2098136119154254287|Computer use frustration>
-
-*Nikunj Kothari* — Partner at FPV Ventures
-
-Shared a wry venture capital reality check: "Three truths in early stage venture right now: 1) everyone wants to raise a $50 million seed, 2) everyone thinks they will hit $30 million ARR next year, 3) every hot tranched seed round magically ends up at the ~$300 million valuation." Also shared a behind-the-scenes look at a fast-turnaround post: voice memo while driving → more voice memos throughout the day → 30 minutes of furious writing → quick read-through and publish.
-<https://x.com/nikunj/status/2098078391065018816|Venture truths>
-<https://x.com/nikunj/status/2098255116751257663|Fast publishing behind the scenes>
-
-*Peter Steinberger* — OpenClaw and OpenAI
-
-Highlighted a widely-resonant observation about AI-era coding: "Duplicating logic is no longer painful. Abstractions still are." (2,293 likes.) Also noted that Astra demand is growing fast — flagging the capacity crunch before the subscription pause announcement.
-<https://x.com/steipete/status/2098089196800098798|Duplicating logic vs abstractions>
-<https://x.com/steipete/status/2098088917782413740|Astra demand growing>
-
-*Dan Shipper* — CEO of Every
-
-Reacted to OpenAI pausing Astra Pro subscriptions with "I'm so sorry" and expressed excitement about an upcoming capability he's eager to experiment with.
-<https://x.com/danshipper/status/2098120649701204416|Reaction to Astra pause>
-<https://x.com/danshipper/status/2098116268671025210|Excited to experiment>
-
-*Aditya Agarwal* — General Partner at SPC, ex-CTO of Dropbox
-
-Posed a high-stakes framing for AI investment: "If you had a machine capable of doing only 1 thing: Finding cures to our most pressing diseases. How much of your GDP would you devote to this machine? I think the answer is: very high. This is the world we live in now."
-<https://x.com/adityaag/status/2098112281267843264|GDP for disease-curing machine>
-
-*Claude* (claudeai by Anthropic)
-
-Fable 5.1 Build Days kick off this week — the Claude community is hosting buildathons in cities worldwide from September 11–25. Bring a problem, an idea, or just show up.
-<https://x.com/claudeai/status/2098138736642933143|Fable 5.1 Build Days>
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "When AI Improves Itself | Richard Socher (Recursive)"*
+*No Priors — "Coinbase's Everything Exchange: Agentic Finance, Stablecoins, and Tokenization with CEO Brian Armstrong"*
 
-_The Takeaway:_ Anything that can be simulated, AI will solve — and recursive self-improvement means we're entering a loop where AI making better AI will unlock scientific discovery at a pace no human institution can match.
+_The Takeaway:_ Crypto rails aren't just for humans — they may be the essential financial infrastructure for the AI agent economy, and Coinbase is betting its future on that.
 
-Richard Socher, one of the most cited AI researchers in history, just raised $650M for Recursive, a company explicitly built to create AI that improves AI. His new book _The Eureka Machine_ argues that scientific progress has slowed not from lack of talent or funding, but from fragmentation: knowledge has become a "labyrinth" of 34,000 specialized journals with "no trespassing signs." No one can be the Renaissance generalist anymore — a biology PhD studying proteins may know nothing about the tissue or cell levels of the same field.
+Brian Armstrong, Coinbase co-founder and CEO, makes a case that most people haven't fully internalized: AI agents are going to need bank accounts. Seventy-six percent of agentic e-commerce transactions are under $0.30 — far too small for credit card rails that start at a flat $0.30 fee. Stablecoin micropayments aren't a nice-to-have; for an agent economy to function, they're structurally necessary. "We don't want the AIs to be unbanked." Coinbase has released a simple tool — a single-prompt paste — that lets any AI agent spin up its own self-custodial financial account using crypto rails, no KYC required.
 
-His solution is not just faster AI — it's a four-pillar "Eureka Machine": (1) LLMs that ingest the world's knowledge, (2) models trained on scientific measurements humans can't perceive directly (gravitational waves, gamma rays), (3) simulation environments where AI can experiment endlessly, and (4) robotic lab automation to collect real-world data and verify hypotheses. On top sits an agent swarm that explores ideas the way evolution does — in parallel, with open-ended recombination.
+Beyond agent wallets, Armstrong walked through three big bets: the Everything Exchange (stocks, crypto, derivatives, prediction markets, all tokenized and cross-margined in one place — 88% of Coinbase revenue now comes from non-Bitcoin products), stablecoin payments growing even when Bitcoin is down, and Agentic Finance (AIFi), which includes an AI advisor in the Coinbase app and an X402 micropayment protocol now supported by Google, Cloudflare, and AWS.
 
-One genuinely counterintuitive claim: hallucination is sometimes a _feature_, not a bug. "How reasonable or just outside of the distribution in some interesting way are your predictions?" is exactly what you want to ask when generating novel proteins. Temperature-dialing a model is conceptually similar to how psychedelic states have historically produced scientific leaps — Socher points out that history's great scientists sometimes made breakthroughs in altered states.
+Internally, Coinbase is pursuing recursive self-improvement: every time an agent touches a service, it ingests that service's "brain" — a structured memory of incidents, AB tests, financial controls, and PR history. When a human corrects an agent's output, that correction feeds back into the brain, so future agents start with richer context. Armstrong says one-shotted PR acceptance rates have been rising as a result. Their internal agent harness, called Toshi, can now orchestrate parallel agent swarms — he described spinning up 10 agents in parallel to execute phase one of a complex feature plan, all completing within two minutes.
 
-He pushed back hard on "hard takeoff" narratives: biology will still take time because clinical trials require real-world data you can't simulate away. But the structural economics of drug discovery are already changing — companies now enter late-stage trials with 8+ drug candidates in 18 months instead of 1 candidate after 8 years.
+On his longevity company New Limit: the first phase 1 clinical trial (targeting alcoholic liver disease with epigenetic reprogramming) is launching next year. The underlying platform aims eventually to let healthy people restore the cellular function they had in their 20s — liver, vasculature, immune system, potentially brain.
 
-At Recursive, $410M of the $650M raise is committed to compute (Amazon). His view: compute is civilization's resource allocation question. "Before you know it, you're in this recursive self improvement loop and we believe that that will be a great unlock."
+<https://www.youtube.com/watch?v=uLDK4l_-gUE>
 
-"Boy, are we far away from the true upper bounds of any of the spaces of intelligence. And there is still so much further that AI can go."
-
-https://www.youtube.com/@DataDrivenNYC/videos
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
