@@ -1,52 +1,85 @@
-AI Builders Digest — September 15, 2026
+*AI Builders Digest — September 17, 2026*
 
 *X / TWITTER*
 
-• *Boris Cherny* (Claude Code, Anthropic)
-Highlighted a creative use case: Fable solved the Cyphral Distich — a 370-year-old cipher — using Claude. https://x.com/bcherny/status/2099322487603634395
+*Josh Woodward* — VP at Google Labs / Gemini App
+Google Notebook just got two useful student-focused upgrades: live spoken Q&A with class materials in ~100 languages, and automatic audio note saving for recorded lectures. University students in 140+ countries can access a free Google AI Plan with bigger limits.
+- <https://x.com/joshwoodward/status/2099921866014306633|View tweet>
 
-• *Peter Yang* (AI educator and content creator)
-Shared a striking stat from Brex CEO Pedro Franceschi: 84% of the world has never used AI. Of those who have, 16% use free chatbots, ~0.3% pay $20/month, and only 0.04% use AI agents effectively. The takeaway: even now, adoption is barely off the starting line. Full episode: https://x.com/petergyang/status/2099200231820963891
+*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
+Teasing an efficiency-themed moment: "2026 is the year of efficiency and Tuesday is for random swag drops on your door handle." Likely hinting at a Codex or OpenAI product drop.
+- <https://x.com/thsottiaux/status/2099922755655479624|View tweet>
 
-• *Amjad Masad* (Replit CEO)
-Celebrated that AI coding is free again after a painful stretch where pricing was locking users out. https://x.com/amasad/status/2099197117013340450
+*Peter Yang* — AI educator and solopreneur
+Shared bot access codes with his community, spotlighting use cases like automated ad account monitoring, Jira blocker flagging, support ticket triage, hotel booking flow testing, and research desk automation. His advice to solopreneurs: design the business so you're doing work you enjoy, and delegate the boring stuff to bots. Also joined the Grok bot live stream.
+- <https://x.com/petergyang/status/2099968897323778416|On solopreneur advice>
+- <https://x.com/petergyang/status/2100027487681953834|Bot use cases roundup>
 
-• *Guillermo Rauch* (Vercel CEO)
-Quote of the day (2,500+ likes): "You don't get it, I build software to relax." https://x.com/rauchg/status/2099248037507797164
+*Thariq* — Claude Code at Anthropic
+Bold take: MCPs are now better than CLIs for most integrations. With models improving at tool calling, stateless MCP, and deferred tools, the tradeoffs have shifted. His tip: add `query` params to MCP tools when you need to compose or filter data.
+- <https://x.com/trq212/status/2099958388230873165|View tweet>
 
-• *Aaron Levie* (Box CEO)
-Nuanced take on AI "pacing": the word triggers people because it sounds like arbitrary slowdown or regulatory capture — but the underlying need is real. AI will underpin financial trading, medical devices, biotech, defense, and government workflows. Getting safety right without killing innovation or handing incumbents a moat is "one of the most complex questions of the 21st century." https://x.com/levie/status/2099167992835924301
+*Amjad Masad* — CEO of Replit
+Asked why, if your output domain is known in advance, you wouldn't just train a model to produce logprobs over enums instead of using structured generation. Also skewered AI movement naming: "AI Safety firm made AI unsafe. Effective Altruists are both ineffective and enabling criminal activity. Irregular is regularly incompetent."
+- <https://x.com/amasad/status/2100056178705514703|On logprobs vs enums>
+- <https://x.com/amasad/status/2099760428314411232|On AI naming curse>
 
-• *Zara Zhang* (builder)
-Flagged a frustrating Astra behavior: when corrected ("you should do Y instead"), Astra agrees — then doesn't do Y. Other models actually take action. https://x.com/zarazhangrui/status/2099348631291883945
+*Guillermo Rauch* — CEO of Vercel
+Launched Vercel Labs publicly — Vercel's in-public research and experimentation arm — to share what they're supporting, researching, and what didn't pan out. Also: "The future is multi-model. Trying to hide the choice confuses and hurts customers." Noted Safari 27's new JSPI WebAssembly support as a sign that more native code going through the browser will make WebAssembly increasingly important.
+- <https://x.com/rauchg/status/2099911447598059812|Vercel Labs launch>
+- <https://x.com/rauchg/status/2099905740505055680|On multi-model future>
 
-• *Nikunj Kothari* (FPV Ventures partner)
-Warning for founders and job seekers: a high entry valuation is often a bug, not a feature. Companies have to grow into their valuations — and many don't. Personal lesson: he worked at a company that raised $60M from a top investor and folded three years in with all equity wiped out. Evaluate traction, realistic exit value, and 409a prices, not the headline round. https://x.com/nikunj/status/2099198567923765357
+*Aaron Levie* — CEO of Box
+Published a detailed thread on the growing gap between AI model power and enterprise workflow automation. His thesis: the applied AI layer must connect intelligence to workflows, reengineer processes, aggregate data, handle human-in-the-loop moments, drive change management, run domain-specific evals, and manage security. "Even as models improve at incredible rates, this layer still must exist — and may become even more important." See the Training Data podcast below for the full conversation.
+- <https://x.com/levie/status/2099976021311398230|View tweet>
 
-Also shared a practical list of questions to ask before joining a startup: https://x.com/nikunj/status/2099272635926671532
+*Garry Tan* — President & CEO of Y Combinator
+Bullish on Muse winning the AI assistant race. Also sharing results with capy.ai: it finished a set of GitHub issue/PR fixes in about half the time that raw Codex or Claude Code would have taken, using the same frontier models.
+- <https://x.com/garrytan/status/2099980972641124629|On Muse>
+- <https://x.com/garrytan/status/2099964487667454097|On capy.ai>
 
-• *Peter Steinberger* (OpenClaw / OpenAI)
-Shipping: the next release does git worktrees ~80% faster via filesystem-level clones (APFS/btrfs/xfs/ReFS) and saves significant disk space. Written entirely in Rust. If testing confirms it helps most users, he plans to land it in Codex. https://x.com/steipete/status/2099197266636783989
+*Nikunj Kothari* — Partner at FPV Ventures
+Warning for founders: don't assume the funding spigot always flows. Advice: first lock in the default path that keeps your company alive and self-sustaining, then map out how capital abundance or scarcity changes that picture. Capital markets over the next 6–18 months are an unknown.
+- <https://x.com/nikunj/status/2100008917980102863|View tweet>
 
-• *Sam Altman* (OpenAI CEO)
-Major statement on AI risk and pacing. Two failure modes to avoid: (1) AI seizing control from humanity, and (2) dangerous power concentration — one person, company, or country using powerful AI to impose their worldview. On pace: _"it should be slower than it otherwise could be; interventions like safety cases and monitoring have significant costs"_ — but the cost is worth it. OpenAI now builds explicit safety cases before significant reinforcement learning runs and is calling for shared industry standards on misalignment, monitoring, and safety. https://x.com/sama/status/2099348812305473766 https://x.com/sama/status/2099352016988614852
+*Dan Shipper* — CEO of Every
+Flagged a model worth watching: one that produces probabilities rather than words as output. In Every's testing it's 25x faster and 600x cheaper than a Fable-level model while working well as an LLM judge. He called it "the kind of thing that will be obviously indispensable in 6–12 months."
+- <https://x.com/danshipper/status/2099947471518474522|View tweet>
 
+*Aditya Agarwal* — General Partner at SPC
+Profound, which started at SPC and has grown to a $1.8B valuation, announced a $180M Series D co-led by Sequoia and Kleiner Perkins. The AI marketing platform now runs at one third of the Fortune 100.
+- <https://x.com/adityaag/status/2099939685657141257|View tweet>
+
+*Sam Altman* — CEO of OpenAI
+Teasing a big ship week followed by even more releases at DevDay. No details, just ships.
+- <https://x.com/sama/status/2099872600977760451|View tweet>
+
+*Claude* — Anthropic's AI assistant
+Salesforce in Claude launched in beta, bringing accounts, opportunities, and pipeline data directly into Claude with 37 pre-built sales skills. Use it to prep calls, review deals, create pipeline dashboards, or send forecasts without leaving the conversation.
+- <https://x.com/claudeai/status/2099876514330206578|View tweet>
+
+*OFFICIAL BLOGS*
+
+*Claude Blog — "Claude for Small Business launches new workflows, integrations, and training programs"*
+
+Claude for Small Business added 43 new workflows and 27 new integrations — including Shopify, Salesforce, TikTok, Atlassian, Zoom, Xero, Gusto, Square, Stripe, and Zapier — pushing coverage from back-office automation into business growth: lead generation, inbound inquiry handling, and proposal writing. The product has been installed more than 900,000 times since its May launch. A fall in-person workshop tour covers 10 US cities, with 150+ certified trainers running 750+ additional community sessions.
+
+Owners who've used it report results like: "$20,000 in the last month and a half using Claude to do professional proposals" and cutting 120-hour tasks down to 5 minutes.
+
+<https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs|Read the full post>
 
 *PODCASTS*
 
-*No Priors — Redefining Chip Architecture with Arm CEO Rene Haas*
+*Training Data — "Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion"*
 
-_The Takeaway:_ AI is already transforming chip design from inside ARM — 80–90% of its engineers use it daily, and the CEO calls it a genie that can't go back in the bottle.
+_The Takeaway:_ Between a frontier model and a fully automated enterprise workflow sits a massive, underappreciated gap — and filling that gap is where the biggest business opportunity in AI currently lives.
 
-Rene Haas leads ARM, the UK company whose processor architecture powers virtually every smartphone, data center, automobile, and soon robot on the planet. He came up through Nvidia and joined ARM in 2013 when it had no physical products and 98.5% gross margins ("no inventory, no RMA, no scrap — what's not to like?"). Today ARM also makes its own chips, after Meta approached them wanting a general-purpose agentic CPU nobody else could provide.
+Box CEO Aaron Levie, who has spent 20 years building content and collaboration infrastructure for enterprises, argues that application layer companies — not just the model labs — are where the real value of this AI wave accumulates. His reasoning: AI models may be getting smarter fast, but real-world adoption constraints have nothing to do with model intelligence. Enterprises still need someone to connect the model to legacy data systems, manage access controls, retrain workflows, drive change management, and run domain-specific evals. "The model could be the most intelligent superintelligence in the world, but that workflow still requires you to connect up to other data systems, still requires moments where there's a human in the loop."
 
-On AI in chip design: the 24–36 month development cycle is dominated not by architecture but by verification, validation, and debugging — exactly where AI excels. Haas estimates 80–90% of ARM engineers now use AI daily. _"If we were to shut it off, it's like being in the 1990s, you've got internet and you're now saying, only internet between the hours of two and four. After that, go to the library that we have down the hall. People, there'd be anarchy."_
+On the coding-vs-everything-else diffusion gap: coding agents spread fast because code's value is almost entirely in the text it produces, the audience is technical, the data lives in GitHub, and productivity gains are immediately measurable. Every other knowledge domain is harder — a sales rep's output is constrained by whether customers respond, not by how fast they type. Levie predicts 90% of enterprise tokens in five years will be tasks a user never kicked off; they'll just see a result show up.
 
-Where AI still falls short: RTL generation and best-in-class physical implementation, because models train on public data and the most valuable knowledge is proprietary. ARM is working with model makers to close this gap — its IP portfolio includes not just the chip designs but the documentation and test benches that make them trainable.
+Box runs domain-specific evals across life sciences, financial services, and tech, and ships a Box-tuned agent that consistently outperforms generic LLM calls on document-centric work. On the model race: Fable 5.1 is currently top for document tasks; Gemini over-indexes on tool use; open weights are growing but still quirky. His verdict: "I just don't know that one or two labs get 95% of the value creation — there's going to be a much more dynamic environment."
 
-Looking ahead: in 5–10 years, AI may take a chip from idea to GDS-II file autonomously for simpler designs. On robotics, distribution centers and delivery will automate first — and nearly every humanoid robot brain today, from Nvidia or Qualcomm, already runs on ARM.
-
-https://www.youtube.com/@NoPriorsPodcast
-
+<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
