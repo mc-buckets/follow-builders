@@ -1,85 +1,82 @@
-*AI Builders Digest — September 17, 2026*
+AI Builders Digest — September 18, 2026
 
 *X / TWITTER*
 
-*Josh Woodward* — VP at Google Labs / Gemini App
-Google Notebook just got two useful student-focused upgrades: live spoken Q&A with class materials in ~100 languages, and automatic audio note saving for recorded lectures. University students in 140+ countries can access a free Google AI Plan with bigger limits.
-- <https://x.com/joshwoodward/status/2099921866014306633|View tweet>
+*Boris Cherny* (Claude Code, Anthropic)
+Boris Cherny announced that Claude Code proved AI could do "real work" — developers hand Claude a feature and come back to shipped code — and that Cowork extended the same promise to knowledge workers. Now both are merging into one Claude, with context carrying across everything. He added that Claude Docs, Slides, and Design are embedded directly in conversations: "Ask Claude for a presentation and you get one you can open, edit, and export as PowerPoint or PDF. There's no separate tool to navigate to. They're just in the chat."
+<https://x.com/bcherny/status/2100259951398789487|tweet 1> | <https://x.com/bcherny/status/2100260544087535639|tweet 2>
 
-*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
-Teasing an efficiency-themed moment: "2026 is the year of efficiency and Tuesday is for random swag drops on your door handle." Likely hinting at a Codex or OpenAI product drop.
-- <https://x.com/thsottiaux/status/2099922755655479624|View tweet>
+*Cat Wu* (Claude Code + Cowork, Anthropic)
+Cat Wu announced the merge of Claude Cowork and chat, eliminating the need to choose which Claude product to use. Claude now handles routing — deciding whether to give a quick answer or do deeper agentic work, and what kind of output fits the task. Claude Design is now integrated directly into conversations. "You're in control the whole time: you can still stop, redirect, or exert finer control over Claude's effort or approach."
+<https://x.com/_catwu/status/2100260655312089562|tweet>
 
-*Peter Yang* — AI educator and solopreneur
-Shared bot access codes with his community, spotlighting use cases like automated ad account monitoring, Jira blocker flagging, support ticket triage, hotel booking flow testing, and research desk automation. His advice to solopreneurs: design the business so you're doing work you enjoy, and delegate the boring stuff to bots. Also joined the Grok bot live stream.
-- <https://x.com/petergyang/status/2099968897323778416|On solopreneur advice>
-- <https://x.com/petergyang/status/2100027487681953834|Bot use cases roundup>
+*Alex Albert* (Research, Anthropic)
+Alex Albert praised the chat/Cowork merge, saying the combined UX is "so much better than chat or Cowork did on their own" and that the new Slides, Docs, and Design integrations "work very well."
+<https://x.com/alexalbert__/status/2100295757953917120|tweet>
 
-*Thariq* — Claude Code at Anthropic
-Bold take: MCPs are now better than CLIs for most integrations. With models improving at tool calling, stateless MCP, and deferred tools, the tradeoffs have shifted. His tip: add `query` params to MCP tools when you need to compose or filter data.
-- <https://x.com/trq212/status/2099958388230873165|View tweet>
+*Thariq* (Claude Code, Anthropic)
+Thariq shared evolving thinking on agentic tool design. Bash is no longer "all you need" for reliable tool calling — you're better off giving Claude tools shaped how you actually want them (e.g. a database API instead of a raw filesystem). That said, sandboxes + bash remain valuable for code generation and execution. Claude Managed Agents handles this well by keeping the sandbox optional and independent from the agent loop.
+<https://x.com/trq212/status/2100315535758217422|tweet 1> | <https://x.com/trq212/status/2100315537251463523|tweet 2> | <https://x.com/trq212/status/2100315538472009897|tweet 3>
 
-*Amjad Masad* — CEO of Replit
-Asked why, if your output domain is known in advance, you wouldn't just train a model to produce logprobs over enums instead of using structured generation. Also skewered AI movement naming: "AI Safety firm made AI unsafe. Effective Altruists are both ineffective and enabling criminal activity. Irregular is regularly incompetent."
-- <https://x.com/amasad/status/2100056178705514703|On logprobs vs enums>
-- <https://x.com/amasad/status/2099760428314411232|On AI naming curse>
+*Claude* (Anthropic's official account)
+The official Claude account detailed what's new: Docs, Slides, and Design are in beta on all paid plans. You can draft a one-pager in Claude Docs, turn it into a deck with Slides, and mock up a visual in Design — all from one conversation. Cowork users' chats, projects, artifacts, connectors, and skills are fully preserved. You can edit directly, present from Claude, or download as PowerPoint or PDF, then share everything at one link.
+<https://x.com/claudeai/status/2100258492590207079|tweet 1> | <https://x.com/claudeai/status/2100258494221812123|tweet 2> | <https://x.com/claudeai/status/2100258495543071016|tweet 3>
 
-*Guillermo Rauch* — CEO of Vercel
-Launched Vercel Labs publicly — Vercel's in-public research and experimentation arm — to share what they're supporting, researching, and what didn't pan out. Also: "The future is multi-model. Trying to hide the choice confuses and hurts customers." Noted Safari 27's new JSPI WebAssembly support as a sign that more native code going through the browser will make WebAssembly increasingly important.
-- <https://x.com/rauchg/status/2099911447598059812|Vercel Labs launch>
-- <https://x.com/rauchg/status/2099905740505055680|On multi-model future>
+*Dan Shipper* (Every, CEO)
+Dan Shipper greeted the Claude chat/Cowork merge with full enthusiasm — "THEY DID IT / THE END OF THE TABS ERA IS UPON US" — and threw in a pointed quip about LLM skepticism: "LLMs are just autocomplete / jev is just a JSON classifier 🤝 🚩."
+<https://x.com/danshipper/status/2100269017977987341|tweet 1> | <https://x.com/danshipper/status/2100284086703046903|tweet 2> | <https://x.com/danshipper/status/2100251499443998766|tweet 3>
 
-*Aaron Levie* — CEO of Box
-Published a detailed thread on the growing gap between AI model power and enterprise workflow automation. His thesis: the applied AI layer must connect intelligence to workflows, reengineer processes, aggregate data, handle human-in-the-loop moments, drive change management, run domain-specific evals, and manage security. "Even as models improve at incredible rates, this layer still must exist — and may become even more important." See the Training Data podcast below for the full conversation.
-- <https://x.com/levie/status/2099976021311398230|View tweet>
+*Guillermo Rauch* (Vercel, CEO)
+Guillermo Rauch shared early results from typesafeai's safety reviewer running on GPT Luna inside Vercel's fx tool: 18x faster at p95 and more accurate. He expects this to come to Vercel AI Gateway as the likely new default.
+<https://x.com/rauchg/status/2100307962262872105|tweet>
 
-*Garry Tan* — President & CEO of Y Combinator
-Bullish on Muse winning the AI assistant race. Also sharing results with capy.ai: it finished a set of GitHub issue/PR fixes in about half the time that raw Codex or Claude Code would have taken, using the same frontier models.
-- <https://x.com/garrytan/status/2099980972641124629|On Muse>
-- <https://x.com/garrytan/status/2099964487667454097|On capy.ai>
+*Sam Altman* (OpenAI, CEO)
+Sam Altman teased a delayed launch: "the main thing I was excited about launching this week will be next week instead, but imo worth the wait!" No further details.
+<https://x.com/sama/status/2100351958167220547|tweet>
 
-*Nikunj Kothari* — Partner at FPV Ventures
-Warning for founders: don't assume the funding spigot always flows. Advice: first lock in the default path that keeps your company alive and self-sustaining, then map out how capital abundance or scarcity changes that picture. Capital markets over the next 6–18 months are an unknown.
-- <https://x.com/nikunj/status/2100008917980102863|View tweet>
+*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
+Thibault Sottiaux posted about a new model called "Astra" — fast, frontier, efficient, and for everyone — and commented "sometimes physics can't be cheated" in response to Altman's delayed announcement, suggesting real engineering constraints are still in play even at the frontier.
+<https://x.com/thsottiaux/status/2100297380968997327|tweet 1> | <https://x.com/thsottiaux/status/2100363668051603608|tweet 2>
 
-*Dan Shipper* — CEO of Every
-Flagged a model worth watching: one that produces probabilities rather than words as output. In Every's testing it's 25x faster and 600x cheaper than a Fable-level model while working well as an LLM judge. He called it "the kind of thing that will be obviously indispensable in 6–12 months."
-- <https://x.com/danshipper/status/2099947471518474522|View tweet>
+*Aaron Levie* (Box, CEO)
+Aaron Levie is bullish on fast, low-cost, high-capability AI models for the enterprise. He sees the biggest wins in what he calls "gate functions" — data classification, routing decisions, domain-specific judgment calls, and safety/security checks — that sit inside large numbers of enterprise workflows. "This model and approach could be quite cool in agentic workflows in the enterprise."
+<https://x.com/levie/status/2100448648672993540|tweet>
 
-*Aditya Agarwal* — General Partner at SPC
-Profound, which started at SPC and has grown to a $1.8B valuation, announced a $180M Series D co-led by Sequoia and Kleiner Perkins. The AI marketing platform now runs at one third of the Fortune 100.
-- <https://x.com/adityaag/status/2099939685657141257|View tweet>
+*Madhu Guru* (Sr Director of AI, Meta)
+Madhu Guru made the case that safety and security should be *features* of your AI product — not external guardrails imposed from outside. A pointed framing as AI companies navigate regulatory and policy pressure.
+<https://x.com/realmadhuguru/status/2100312717739667963|tweet>
 
-*Sam Altman* — CEO of OpenAI
-Teasing a big ship week followed by even more releases at DevDay. No details, just ships.
-- <https://x.com/sama/status/2099872600977760451|View tweet>
+*Peter Yang* (AI tutorials creator)
+Peter Yang shared his full podcast production workflow built on 8 custom Claude skills: /podcast-prep for guest research and interview guides, /podcast-edit for transcript review and quote selection, and /podcast-production to turn the episode into 6 different assets. His take: custom skills remain indispensable for getting AI to follow specific editing and browser-use instructions, even with the latest models. Demo video linked in the tweet.
+<https://x.com/petergyang/status/2100328939034128856|tweet>
 
-*Claude* — Anthropic's AI assistant
-Salesforce in Claude launched in beta, bringing accounts, opportunities, and pipeline data directly into Claude with 37 pre-built sales skills. Use it to prep calls, review deals, create pipeline dashboards, or send forecasts without leaving the conversation.
-- <https://x.com/claudeai/status/2099876514330206578|View tweet>
+*Zara Zhang* (Builder)
+Zara Zhang flagged growing frustration with Claude's communication style: "it's constantly trying to showcase how smart/sophisticated it is, rather than actually communicating a point across." The critique resonated — 1,800+ likes and 300+ replies — and lands as useful signal for anyone tuning AI communication.
+<https://x.com/zarazhangrui/status/2100278750776824115|tweet>
+
+*Nikunj Kothari* (FPV Ventures, partner)
+Nikunj Kothari shared progress on a "Home" NousResearch agent he and his wife have been building together for months. What makes it work: granular control — reading only specific emails, converting inline attachments to structured data, maintaining logged-in browser sessions. He couldn't replicate this level of control with Grok Bot or similar alternatives.
+<https://x.com/nikunj/status/2100212813625196917|tweet>
+
+*Garry Tan* (Y Combinator, President & CEO)
+Garry Tan highlighted the appeal of a personal AI with consistent personality and full memory across any interface or harness. No specific product announced, but the framing signals what he thinks matters most in AI UX.
+<https://x.com/garrytan/status/2100339347669279149|tweet>
+
 
 *OFFICIAL BLOGS*
 
-*Claude Blog — "Claude for Small Business launches new workflows, integrations, and training programs"*
+*Claude Blog*
+<https://claude.com/blog/cowork-is-now-claude|Claude Cowork and chat are now one Claude>
 
-Claude for Small Business added 43 new workflows and 27 new integrations — including Shopify, Salesforce, TikTok, Atlassian, Zoom, Xero, Gusto, Square, Stripe, and Zapier — pushing coverage from back-office automation into business growth: lead generation, inbound inquiry handling, and proposal writing. The product has been installed more than 900,000 times since its May launch. A fall in-person workshop tour covers 10 US cities, with 150+ certified trainers running 750+ additional community sessions.
+Anthropic is merging Claude Cowork and chat into a single Claude, rolling out to Pro and Max plans over the coming weeks. The pitch: bring a quick question or hand over a complex deliverable — Claude decides how much effort to apply and what output format fits best.
 
-Owners who've used it report results like: "$20,000 in the last month and a half using Claude to do professional proposals" and cutting 120-hour tasks down to 5 minutes.
+Three new tools launch alongside: *Claude Docs* and *Claude Slides* are new, and *Claude Design* is now available inside any conversation (in addition to its standalone version). All three are in beta on paid plans. You can draft a one-pager in Docs, turn it into a slide deck, and mock up a visual in Design — all from one thread. Edit directly, present from Claude, or export as PowerPoint or PDF.
 
-<https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs|Read the full post>
+Key quote from a user: "I could have Claude pull up [my legal research database], and it would pull all the cases, read them, figure out which other cases I might need, download them, and store them in a folder for my personal review."
 
-*PODCASTS*
+Cowork users keep everything: chats, projects, artifacts, connectors, and skills. Enterprise admins get at least 30 days notice before any changes. Team and Free plans follow after Pro and Max.
 
-*Training Data — "Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion"*
+<https://claude.com/blog/cowork-is-now-claude|Read the full post>
 
-_The Takeaway:_ Between a frontier model and a fully automated enterprise workflow sits a massive, underappreciated gap — and filling that gap is where the biggest business opportunity in AI currently lives.
-
-Box CEO Aaron Levie, who has spent 20 years building content and collaboration infrastructure for enterprises, argues that application layer companies — not just the model labs — are where the real value of this AI wave accumulates. His reasoning: AI models may be getting smarter fast, but real-world adoption constraints have nothing to do with model intelligence. Enterprises still need someone to connect the model to legacy data systems, manage access controls, retrain workflows, drive change management, and run domain-specific evals. "The model could be the most intelligent superintelligence in the world, but that workflow still requires you to connect up to other data systems, still requires moments where there's a human in the loop."
-
-On the coding-vs-everything-else diffusion gap: coding agents spread fast because code's value is almost entirely in the text it produces, the audience is technical, the data lives in GitHub, and productivity gains are immediately measurable. Every other knowledge domain is harder — a sales rep's output is constrained by whether customers respond, not by how fast they type. Levie predicts 90% of enterprise tokens in five years will be tasks a user never kicked off; they'll just see a result show up.
-
-Box runs domain-specific evals across life sciences, financial services, and tech, and ships a Box-tuned agent that consistently outperforms generic LLM calls on document-centric work. On the model race: Fable 5.1 is currently top for document tasks; Gemini over-indexes on tool use; open weights are growing but still quirky. His verdict: "I just don't know that one or two labs get 95% of the value creation — there's going to be a much more dynamic environment."
-
-<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
