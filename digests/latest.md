@@ -1,54 +1,41 @@
-AI Builders Digest — September 20, 2026
+AI Builders Digest — September 21, 2026
 
 *X / TWITTER*
 
-*Anthropic's Thariq (Claude Code team)* dropped the week's biggest developer news: Claude Code now supports AGENTS.md. Starting in version 2.1.277, if there's no CLAUDE.md in a folder, Claude will check for and use AGENTS.md instead. The feature is built on top of Claude Code mods — an upcoming way to customize the Claude Code harness — and can be toggled in /config. The announcement pulled 25,000+ likes and 2,000+ retweets.
-- Announcement: <https://x.com/trq212/status/2101009392611278961>
-- Mods context: <https://x.com/trq212/status/2101009393731223817>
-- Source code: <https://x.com/trq212/status/2101009395052343462>
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) dropped one of the most-liked tweets of the weekend with a single line: "2026 is the year of linux desktop" — a nod to the long-running joke that Linux desktop adoption is always "next year." With nearly 10K likes, it clearly landed. <https://x.com/thsottiaux/status/2101431497437950458|View tweet>
 
-*OpenAI's Thibault Sottiaux* (Codex & ChatGPT team) teased a packed upcoming keynote, working alongside Romain Huet and Sam Altman. He called the lineup of new things "a bit ridiculous all in quick succession" and promised some items next week so the wait isn't too long.
-- <https://x.com/thsottiaux/status/2101157729037586694>
+*Peter Yang* (AI educator and creator of practical AI tutorials) is building personal taste infrastructure. He shared a setup where a markdown file + a custom `/tastemaker` skill tracks his ratings for movies, TV shows, and books, then surfaces relevant new releases each week — and asked whether he should open source it. He's also teasing an upcoming podcast episode with the ChatGPT Finances product lead at OpenAI on six practical personal finance prompts: proactive tax savings, credit card reward maximization, financial independence forecasting, and more. <https://x.com/petergyang/status/2101503916743749878|Tastemaker skill tweet> · <https://x.com/petergyang/status/2101342055352201519|Podcast preview tweet>
 
-*Peter Yang*, creator of AI tutorials and guides, spotlighted Meta's Muse personal agent with a compelling real-world example: Muse called his Comcast customer support line and negotiated $288 in annual savings on his cable bill. He says most companies' customer support lines "are NOT ready for agents" and believes Muse could become Meta's next billion-user app. He also shared a wry observation: AI getting smarter seems inversely correlated with humans' ability to write coherent sentences.
-- Muse demo video: <https://x.com/petergyang/status/2101033599319613533>
-- Bill negotiation transcript: <https://x.com/petergyang/status/2101083891507593576>
-- Spelling joke: <https://x.com/petergyang/status/2101104320897040627>
+*Nan Yu* (joining OpenAI product staff, formerly head of product at Linear) flagged an apparent rollout issue: both Muse and Instinct are reporting they're unable to place calls. <https://x.com/thenanyu/status/2101383106372805103|View tweet>
 
-*Vercel CEO Guillermo Rauch* shared a striking data point from Vercel AI Gateway: open models hit 78.4% of token volume vs. 21.6% for closed models — possibly a record. On spend, Moonshot AI and DeepSeek together now surpass OpenAI. He's also enthusiastic about Jev adoption, calling the anecdata "shocking" and framing it as downstream of the "AI is too expensive/slow" zeitgeist driving people to optimize and deploy AI in more places.
-- Open model share data: <https://x.com/rauchg/status/2101186741042663579>
-- Jev adoption: <https://x.com/rauchg/status/2101079472732848510>
+*Guillermo Rauch* (CEO at Vercel) made a sharp observation about the current AI moment: "The coolest thing about the recent wave of AI is that everyone is excited about building. All short-term drama aside, this is an immeasurably good development for the world. The people want to create and ship, not just consume." <https://x.com/rauchg/status/2101397206595231765|View tweet>
 
-*Box CEO Aaron Levie* demoed Jev integrated with Box for enterprise document automation: the agent pulls an incident report, decides whether it's customer-facing and how severe it is, moves the file into the right folder (escalate/monitor/review), and sets metadata — all nearly instantly and at almost no cost. He sees applications across insurance claims, contract management, loan processing, and security reviews.
-- <https://x.com/levie/status/2101007708044574906>
+*Aaron Levie* (CEO at Box) laid out a bold thesis on where consumer tech is headed: personal agents are the biggest platform shift since the App Store. His argument — the new attention to compete for is not from users, it's from agents. Products that let agents transact, navigate, connect via MCP/CLI, and interact with data will win. "The form factor of a product like Muse is you want to be able to hand off a task to the agent and ensure that it is fully completed end to end." The companies best positioned to serve agents — for ordering food, booking flights, e-commerce, local economy — will capture the next wave. <https://x.com/levie/status/2101427997597446636|View tweet>
 
-*Nikunj Kothari*, partner at FPV Ventures, built a community site called Jevable to showcase weekend Jev demos, filterable by category with a + button for submissions. He also shared his own demo: scoring 3,000 kid snacks against multiple criteria in 28 seconds for $0.11.
-- Jevable site: <https://x.com/nikunj/status/2101077053567332618>
-- Kid snack scoring demo: <https://x.com/nikunj/status/2101006585481073093>
+*Nikunj Kothari* (seed/Series A partner at FPV Ventures) pushed back on the idea that VCs don't need to get their hands dirty with AI. He spends ~2 hours a day programming and tinkering, and argues it's non-negotiable in this environment: "Things are moving SO fast that if you don't do this, I simply don't understand how folks will ever learn what's coming next." His framework for what to pay attention to: (1) model capabilities and technical paper research, (2) tools that help agents complete long-horizon tasks, (3) harness capabilities that enable autonomous company-building at the app layer. <https://x.com/nikunj/status/2101340098356990058|View tweet>
 
-*Zara Zhang*, a builder focused on AI products, offered a sharp take on content quality: "It's hard not to create slop when most things you consume are slop. To fix output, first fix input."
-- <https://x.com/zarazhangrui/status/2101123389528457596>
+*Aditya Agarwal* (General Partner at SPC, former CTO at Dropbox) raised a blunt security concern: "After seeing the rush of announcements by Gemini (Google), OpenAI and Anthropic about even more agent intrusions... I take it for 100% granted that a number of major companies have been penetrated by nation states without them knowing about it." <https://x.com/adityaag/status/2101426570850451914|View tweet>
 
-*Peter Steinberger* (OpenClaw + OpenAI) shared updates on his roboclaw project: the agent now runs their team server, lives on Discord, talks with GPT Live, and tracks all active and past coding sessions simultaneously. Team members can query it for session context during meetings.
-- <https://x.com/steipete/status/2101141707375227372>
 
 *PODCASTS*
 
-*No Priors — Why Diffusion Will Win AI Inference*
-Episode: "Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon"
+*The MAD Podcast with Matt Turck — "When AI Improves Itself | Richard Socher (Recursive)"*
 
-*The Takeaway:* Diffusion models — built for massively parallel inference — may be the "transformer moment" for AI generation, making autoregressive models look like the old sequential RNNs they replaced.
+_The Takeaway:_ Recursive self-improvement — AI that improves AI — is the unlock that will eventually reshape every scientific field, but don't expect a "hard takeoff." Real-world constraints in biology, medicine, and clinical trials mean progress will accelerate without going vertical overnight.
 
-Stefano Ermon is one of the fathers of diffusion models, a Stanford professor since 2014 and now CEO of Inception, a ~50-person AI lab building diffusion-based language models. His bet: speed and efficiency will define the next wave of AI, and diffusion models are structurally better positioned for inference-time scaling than the autoregressive transformers every major lab currently uses.
+Richard Socher is one of the most-cited AI researchers alive and the inventor of prompt engineering (his 2018 "DecaNLP" paper, which proposed one neural network for any task, was widely rejected at the time). He just raised $650M for Recursive, a company built to automate knowledge discovery through recursive self-improvement, and published a new book, _The Eureka Machine_.
 
-The core insight is architectural. Autoregressive models generate text one token at a time — sequential, memory-bound, poorly matched to how GPUs actually work. Diffusion models generate many tokens simultaneously, creating an inference workload that maps naturally to GPU parallelism. "The bitter lesson is that the more parallel solution is the one that is eventually going to win," Ermon says.
+Socher's core argument: scientific progress has slowed because knowledge has fractured into 34,000 journals with "no trespassing signs." AI is what calculus was to physics — a tool that weaves complex subsystems back together. He's particularly bullish on biology becoming an engineering science, pointing to Profluent (spun out of his Salesforce lab) creating novel proteins already outperforming CRISPR Cas9, and early clinical trials where AI designs individualized drug cocktails for each patient.
 
-Inception's Mercury models now match the quality of frontier "flash/mini" models (Haiku, GPT-4o mini equivalents) while being significantly faster. One voice agent customer, Open Call, switched from Cerebras custom chips to Inception's diffusion LLMs and got equivalent speed on standard NVIDIA GPUs — more available and cheaper.
+On the hard takeoff debate: "I'm not a believer in this crazy hard takeoff. Things will accelerate, but there are certain things that will just require time because of physics and constraints in the real world — like long-term trials that you want to know whether people have some issue three years after they stop taking the drug."
 
-What's counterintuitive: diffusion models may also be easier to control than autoregressive ones. Because generation is coarse-to-fine rather than sequential, you can steer the output midway through using external reward signals — something that's much harder when you have to wait until the full sequence is complete.
+His Eureka Machine has four pillars: (1) LLMs ingesting the world's knowledge, (2) scientific measurements as a model of reality, (3) simulation, and (4) robotic real-world experimentation. An agent swarm sits on top. On AI creativity: "Anything you can simulate, AI will solve." On hallucination: he argues it's a feature for scientific exploration — the ability to generate novel proteins outside the training distribution is exactly what drug discovery needs.
 
-Beyond speed, Ermon hints at emerging advantages: better data efficiency (each training example is augmented by many noisy views) and potentially stronger scaling during RL post-training, since inference is the bottleneck for generating rollouts. "We don't know what we're going to find," he says — and that uncertainty is the point.
+On jobs and illustrators vs. programmers: demand elasticity is everything. Illustrations didn't scale 1000x when AI made them cheap. Code did — and still is, via the Jevons paradox.
 
-<https://www.youtube.com/@NoPriorsPodcast>
+Recursive's first products are expected before year-end, with early benchmarks showing their system already outperforming months of human AI research on specific problems, and generating novel CUDA kernels benchmarked against NVIDIA's SoLExec bench.
+
+<https://www.youtube.com/@DataDrivenNYC/videos|The MAD Podcast with Matt Turck>
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
