@@ -1,41 +1,62 @@
-AI Builders Digest — September 21, 2026
+*AI Builders Digest — September 22, 2026*
+
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) dropped one of the most-liked tweets of the weekend with a single line: "2026 is the year of linux desktop" — a nod to the long-running joke that Linux desktop adoption is always "next year." With nearly 10K likes, it clearly landed. <https://x.com/thsottiaux/status/2101431497437950458|View tweet>
+- - -
 
-*Peter Yang* (AI educator and creator of practical AI tutorials) is building personal taste infrastructure. He shared a setup where a markdown file + a custom `/tastemaker` skill tracks his ratings for movies, TV shows, and books, then surfaces relevant new releases each week — and asked whether he should open source it. He's also teasing an upcoming podcast episode with the ChatGPT Finances product lead at OpenAI on six practical personal finance prompts: proactive tax savings, credit card reward maximization, financial independence forecasting, and more. <https://x.com/petergyang/status/2101503916743749878|Tastemaker skill tweet> · <https://x.com/petergyang/status/2101342055352201519|Podcast preview tweet>
+*Peter Yang* (petergyang on X) — AI tutorials creator with 110K+ newsletter subscribers — laid out a detailed breakdown of the personal agent race. His take: Meta's Muse is poised to become the leader, helped by aggressive cross-platform promotion and an intuitive standalone app. ChatGPT still leads on raw user count (1B+) but is hampered by the awkward Work/Codex product split. Google's Spark is a sleeping giant that needs urgency it doesn't yet have. The biggest gap nobody has solved: multiplayer AI — you still can't loop in a spouse or coworker into the same agent thread. His practical advice: "Everyone should design their personal skills and files so they're easy to port between harnesses and agents."
+<https://x.com/petergyang/status/2101862331345154469>
 
-*Nan Yu* (joining OpenAI product staff, formerly head of product at Linear) flagged an apparent rollout issue: both Muse and Instinct are reporting they're unable to place calls. <https://x.com/thenanyu/status/2101383106372805103|View tweet>
+In a follow-up, he flagged Apple's structural disadvantage: "The iteration speed for Siri (from the outside) just feels far too slow to compete" — the annual release cycle and closed feedback loop make it hard to keep pace.
+<https://x.com/petergyang/status/2101865476145959373>
 
-*Guillermo Rauch* (CEO at Vercel) made a sharp observation about the current AI moment: "The coolest thing about the recent wave of AI is that everyone is excited about building. All short-term drama aside, this is an immeasurably good development for the world. The people want to create and ship, not just consume." <https://x.com/rauchg/status/2101397206595231765|View tweet>
+- - -
 
-*Aaron Levie* (CEO at Box) laid out a bold thesis on where consumer tech is headed: personal agents are the biggest platform shift since the App Store. His argument — the new attention to compete for is not from users, it's from agents. Products that let agents transact, navigate, connect via MCP/CLI, and interact with data will win. "The form factor of a product like Muse is you want to be able to hand off a task to the agent and ensure that it is fully completed end to end." The companies best positioned to serve agents — for ordering food, booking flights, e-commerce, local economy — will capture the next wave. <https://x.com/levie/status/2101427997597446636|View tweet>
+*Guillermo Rauch* (rauchg on X) — CEO of Vercel — shared a striking observation about agent-powered QA. When he flagged a mobile rendering issue, the agent drilled deep: reproducing the bug, simulating conditions, fixing it, deploying, and verifying — including spinning up an ephemeral Vercel deployment to test on an iPhone simulator. His conclusion: "Humans could simply never match this level of intensity. We'd run out of energy, we'd extrapolate, we'd hope it'd work out. The software of the future will be of a quality and performance we've never experienced before."
+<https://x.com/rauchg/status/2101846262840799251>
 
-*Nikunj Kothari* (seed/Series A partner at FPV Ventures) pushed back on the idea that VCs don't need to get their hands dirty with AI. He spends ~2 hours a day programming and tinkering, and argues it's non-negotiable in this environment: "Things are moving SO fast that if you don't do this, I simply don't understand how folks will ever learn what's coming next." His framework for what to pay attention to: (1) model capabilities and technical paper research, (2) tools that help agents complete long-horizon tasks, (3) harness capabilities that enable autonomous company-building at the app layer. <https://x.com/nikunj/status/2101340098356990058|View tweet>
+- - -
 
-*Aditya Agarwal* (General Partner at SPC, former CTO at Dropbox) raised a blunt security concern: "After seeing the rush of announcements by Gemini (Google), OpenAI and Anthropic about even more agent intrusions... I take it for 100% granted that a number of major companies have been penetrated by nation states without them knowing about it." <https://x.com/adityaag/status/2101426570850451914|View tweet>
+*Aaron Levie* (levie on X) — CEO of Box — reacted to something with a two-word verdict: "Literally impenetrable from agent swarms." No further context given, but 2,600+ likes suggest it resonated — likely riffing on the challenge of making systems agent-accessible (or agent-proof, depending on the goal).
+<https://x.com/levie/status/2101731574668747081>
 
+- - -
+
+*Matt Turck* (mattturck on X) — VC at FirstMark Capital — offered a dry read on AI model hype cycles: "Everyone is obsessed with Jev now, but I'm old enough to remember when people couldn't shut up about Instinct, all the way back to mid last week. Simpler times." Sharp commentary on how fast the discourse moves in AI.
+<https://x.com/mattturck/status/2101820308009206077>
+
+- - -
+
+*Swyx* (swyx on X) — founder of smol.ai, co-host of Latent Space Pod — teased an upcoming episode with Jev, calling it "Jev pod tomorrow" and pointing followers to Apple Podcasts and YouTube.
+<https://x.com/swyx/status/2101873256097804529>
+
+- - -
+
+*Peter Steinberger* (steipete on X) — AI builder, creator of OpenClaw at OpenAI — dropped two announcements back-to-back: a new benchmark release (no additional context given) and a new OpenClaw capability — your AI claw agent can now FaceTime you. Both generated significant engagement.
+<https://x.com/steipete/status/2101748820237500557>
+<https://x.com/steipete/status/2101748928274419843>
+
+- - -
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "When AI Improves Itself | Richard Socher (Recursive)"*
+- - -
 
-_The Takeaway:_ Recursive self-improvement — AI that improves AI — is the unlock that will eventually reshape every scientific field, but don't expect a "hard takeoff." Real-world constraints in biology, medicine, and clinical trials mean progress will accelerate without going vertical overnight.
+*No Priors — "Coinbase's Everything Exchange: Agentic Finance, Stablecoins, and Tokenization with CEO Brian Armstrong"*
 
-Richard Socher is one of the most-cited AI researchers alive and the inventor of prompt engineering (his 2018 "DecaNLP" paper, which proposed one neural network for any task, was widely rejected at the time). He just raised $650M for Recursive, a company built to automate knowledge discovery through recursive self-improvement, and published a new book, _The Eureka Machine_.
+_The Takeaway:_ Crypto isn't just for humans anymore — AI agents need financial infrastructure, and stablecoins are the only rails that work at micropayment scale.
 
-Socher's core argument: scientific progress has slowed because knowledge has fractured into 34,000 journals with "no trespassing signs." AI is what calculus was to physics — a tool that weaves complex subsystems back together. He's particularly bullish on biology becoming an engineering science, pointing to Profluent (spun out of his Salesforce lab) creating novel proteins already outperforming CRISPR Cas9, and early clinical trials where AI designs individualized drug cocktails for each patient.
+Brian Armstrong, co-founder and CEO of Coinbase, made a pointed argument: the emerging AI agent economy runs on micropayments, often under 30¢, which are too small for traditional credit card rails (minimum fee: 30¢ flat plus a percentage). Roughly 76% of agent ecommerce transactions at Coinbase fall below that threshold. Stablecoins — fast, cheap, borderless — are the natural fit. Armstrong's framing: "We don't want the AIs to be unbanked. If we wanna bank the AIs, they deserve financial services as well."
 
-On the hard takeoff debate: "I'm not a believer in this crazy hard takeoff. Things will accelerate, but there are certain things that will just require time because of physics and constraints in the real world — like long-term trials that you want to know whether people have some issue three years after they stop taking the drug."
+Coinbase has built a tool that lets any AI agent open its own financial account with a single prompt, using self-custodial wallets and crypto rails — no KYC, no bank branch required. A new protocol called X402 (incubated at Coinbase and now in the Linux Foundation) is already handling real agent-to-agent payments, with Google, Cloudflare, and AWS as partners.
 
-His Eureka Machine has four pillars: (1) LLMs ingesting the world's knowledge, (2) scientific measurements as a model of reality, (3) simulation, and (4) robotic real-world experimentation. An agent swarm sits on top. On AI creativity: "Anything you can simulate, AI will solve." On hallucination: he argues it's a feature for scientific exploration — the ability to generate novel proteins outside the training distribution is exactly what drug discovery needs.
+Internally, Coinbase runs an agent harness called Toshi, backed by a team "brain" — a living knowledge base of incident history, AB test results, and accepted/rejected PRs for every service. Each time an agent modifies a service, it updates the brain. Over time, the one-shot PR acceptance rate climbs. Armstrong's description of his personal workflow now: he prompts a high-end model to break a feature into three phases of ten tasks each, spins up ten parallel agents, and gets a ping when everything is done — often before a meeting starts.
 
-On jobs and illustrators vs. programmers: demand elasticity is everything. Illustrations didn't scale 1000x when AI made them cheap. Code did — and still is, via the Jevons paradox.
+On the longevity side, Armstrong's biotech company New Limit has ~60 people in South San Francisco building a platform to reprogram cells to function as they did when younger. Their first human trial — for alcohol-related liver disease — is planned for next year.
 
-Recursive's first products are expected before year-end, with early benchmarks showing their system already outperforming months of human AI research on specific problems, and generating novel CUDA kernels benchmarked against NVIDIA's SoLExec bench.
+<https://www.youtube.com/@NoPriorsPodcast>
 
-<https://www.youtube.com/@DataDrivenNYC/videos|The MAD Podcast with Matt Turck>
-
+- - -
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
