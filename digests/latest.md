@@ -1,89 +1,61 @@
-*AI Builders Digest — September 23, 2026*
-
+*AI Builders Digest — September 24, 2026*
 
 *X / TWITTER*
 
+*Boris Cherny* — Claude Code engineer at Anthropic — had the most technically striking posts of the day. He used Opus 5.5 to formally verify the Claude Agent SDK using Lean, generating 16 PRs that fixed bugs and race conditions from just a couple of short prompts. He noted that combining Lean and TLA+ works well for finding concurrency and state management issues, and that Claude is excellent at both even if you don't know the languages well. He also shared a head-to-head: both Opus 5.5 and Fable 5.1 ported HAProxy from C to Rust, passing nearly all tests, but Opus 5.5 finished in 9.5 hours vs. Fable's 12 hours — and at 51% less cost.
+- https://x.com/bcherny/status/2102543349102338309
+- https://x.com/bcherny/status/2102439069053747549
 
-*Swyx* (latentspacepod co-host, smol_ai, Cognition affiliate)
+*Cat Wu* — Claude Code and Cowork engineer at Anthropic — announced that Claude Opus 5.5 is now the default model in Claude Code and the Claude app for Pro, Max, and Team plans. Effort medium mode is comparable to Fable 5.1 on intelligence but faster, and rate limits go 25% further compared to Opus 5.
+- https://x.com/_catwu/status/2102437713781944397
 
-New @latentspacepod episode with Allen Park is out now. Available on email, Apple Podcasts, and YouTube.
-<https://x.com/swyx/status/2102160025666101658|View tweet>
+*Alex Albert* — Researcher at Anthropic — shared a Blender project powered by Opus 5.5: a historically accurate 3D recreation of San Francisco's Market Street as it stood on April 17, 1906, the afternoon before the earthquake. The full prompt — sourcing Sanborn fire insurance maps, the Miles Brothers film, period photographs, and USGS topography — is worth reading. His takeaway: better 3D modeling and vision in Opus 5.5 means you can build an entire world from a single prompt.
+- https://x.com/alexalbert__/status/2102466523164274839
+- https://x.com/alexalbert__/status/2102466524934271381
 
+*Thariq* — Claude Code engineer at Anthropic — pushed back on how builders are using model capability gains. His contrarian take: the right move isn't to ship 10x more features to production, but to spend more time understanding users, running experiments, and building prototypes so you ship things that actually work. He also noted that Fable-level intelligence at workflow-friendly costs has changed how he uses Claude day to day.
+- https://x.com/trq212/status/2102548686303854790
+- https://x.com/trq212/status/2102477527688388752
 
-*Thibault Sottiaux* — Codex & ChatGPT product at OpenAI
+*Thibault Sottiaux* — on the Codex and ChatGPT team at OpenAI — announced GPT-6 Sol and Luna. Significant capability improvements across the board, plus a 50% permanent API price reduction. OpenAI is also loading a banked reset into Plus, Pro, and Business accounts. He framed it as the payoff of investing in frontier models: you build capability at the top, then use it to bring intelligence to everything else more cheaply.
+- https://x.com/thsottiaux/status/2102463847714247142
+- https://x.com/thsottiaux/status/2102440619616682120
 
-Dropping a cryptic but high-engagement tease: "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday." This racked up 12,500+ likes and 760 retweets, suggesting a significant Codex or ChatGPT launch is imminent.
-<https://x.com/thsottiaux/status/2102254445082116335|View tweet>
+*Aaron Levie* — CEO of Box — called it an "insane day in AI" as Opus 5.5 price cuts landed alongside the GPT-6 price drop. He framed the dynamic as Jevons paradox for agents: every time AI gets cheaper, the addressable use cases for agents expand dramatically. Box ran their own Opus 5.5 enterprise tests and saw: 63% fewer tokens used, 42% less verbosity, 30% faster vs. Opus 5 — with large accuracy gains on financial services due diligence, cloud cost analysis, client account management, and clinical data analysis tasks.
+- https://x.com/levie/status/2102477253070430322
+- https://x.com/levie/status/2102448415775051790
 
+*Guillermo Rauch* — CEO of Vercel — ran fresh Next.js evals: Opus 5.5, GPT-6 Sol, and Fable 5.1 all scored 97%, with Grok 4.7 at 94% but at 2-7x lower cost. He also made a broader point: "Software will never die again. You liked Google Reader? Cool, you can generate and deploy your own. Yours, forever." And he praised Anthropic's design taste in shipping, calling it Next.js at its finest.
+- https://x.com/rauchg/status/2102519097770885231
+- https://x.com/rauchg/status/2102594015669756323
+- https://x.com/rauchg/status/2102438365455167883
 
-*Peter Yang* — AI tutorials and interviews creator
+*Dan Shipper* — CEO of Every — shared two pieces worth reading: a vibe check on Opus 5.5 vs. GPT-6 Sol, and a piece on why AI automation creates more (not less) valuable work for human experts. He gained nearly 10k followers in one day, likely from the model launch coverage.
+- https://x.com/danshipper/status/2102556723244564715
 
-Yang is sounding alarms on the ad market: if agents browse the web and complete tasks without a human ever seeing a display ad, targeted advertising loses its audience entirely. He's also been leaning into agentic finance — sharing a story about ChatGPT Finances catching an erroneous hotel charge and getting a reimbursement, and noting he used an agent to cancel a hotel booking for his parents and monitor replies until the refund came through. His summary of where his attention lives now: "I no longer live in email or text, I live in the chat with my agent(s)."
-<https://x.com/petergyang/status/2102215701255844074|View tweet>
-<https://x.com/petergyang/status/2102186174911746151|View tweet>
-<https://x.com/petergyang/status/2102181024507765167|View tweet>
+*Garry Tan* — President and CEO of YCombinator — recommended Capy (capydotai) as a tool that lets him ship PRs much faster than Codex or Claude Code alone. He also pushed the broader mission: teaching the world to prompt and maximally use AI so everyone can see how it gives them wings.
+- https://x.com/garrytan/status/2102544711647129902
+- https://x.com/garrytan/status/2102501556348440983
 
+*Peter Yang* — AI newsletter creator with 110k subscribers — said Opus 5.5 is the most excited he's been about a Claude model in a while.
+- https://x.com/petergyang/status/2102577425838485916
 
-*Thariq* — Claude Code at Anthropic
+*Peter Steinberger* — co-creator of OpenClaw at OpenAI — shared that Astra (Google DeepMind's AI assistant) found a roughly 14-year-old bug in libuv that was causing ChatGPT to crash on macOS 27. A notable example of AI catching deep, long-lived infrastructure bugs.
+- https://x.com/steipete/status/2102501642176528743
 
-One pithy, high-resonance prompt tip: "I now type 'use big pictures and few words' several times a day." 1,759 likes suggests this lands widely as a prompt-engineering instinct for multimodal AI work.
-<https://x.com/trq212/status/2102186805034635576|View tweet>
+*Sam Altman* — CEO of OpenAI — posted a quick correction: he meant to say VOICE not VIDEO in an earlier post (and said sorry for the disappointment). He also commented on startups being naturally good at something that's hard to maintain at scale — no further detail, but it sparked significant engagement.
+- https://x.com/sama/status/2102512794235207758
+- https://x.com/sama/status/2102469008079679640
 
+*Aditya Agarwal* — General Partner at SPC and co-founder of Bevel Health — hosted Dmitri Dolgov from Waymo for a fireside. His highlight: Waymo's extensive eval and testing infrastructure for releasing 2-ton robots at 30mph through city streets. His 9-year-old asked to attend — a signal of how compelling physical-world robotics can be.
+- https://x.com/adityaag/status/2102457464432284019
 
-*Amjad Masad* — CEO of Replit
+*Claude* — official Anthropic account — announced Opus 5.5's availability and showcased Artifacts: an algorithmic drawing program (every drawing unique per seed) and a toy brick-building app that turns a photo or description into a buildable model.
+- https://x.com/claudeai/status/2102471892099866883
+- https://x.com/claudeai/status/2102471889092276516
+- https://x.com/claudeai/status/2102471885061812714
 
-Brief but bold: "AI is reviving the American Dream." Shared as a quote tweet, pointing to the democratizing potential of AI-powered building.
-<https://x.com/amasad/status/2102120769232978174|View tweet>
-
-
-*Guillermo Rauch* — CEO of Vercel
-
-Two things caught his attention: First, he put Grok 4.7 through a hard reverse-engineering problem involving a running binary and was impressed — "Beautifully solved. And it's so fast!" Second, Vercel's AI SDK now supports Jev over HTTP in AI Gateway alongside its type-safe TypeScript API.
-<https://x.com/rauchg/status/2102089968860721335|View tweet>
-<https://x.com/rauchg/status/2102205684544852121|View tweet>
-
-
-*Aaron Levie* — CEO of Box
-
-Levie is thinking hard about the infrastructure layer for the agent economy — and posted two dense threads worth reading together. Thread one: AI agents will use software 100x more than humans ever did, which makes data platforms (CRM, ERP, unstructured data) more important, not less. The platforms that can act as security layers, manage data for agents, and orchestrate business logic have a huge opportunity — for startups and incumbents alike. Thread two: personal agents that transact on your behalf represent a massive monetization surface. As people get comfortable delegating simple tasks, they'll hand over more complex (and higher-spend) ones. This creates opportunity for agent providers and for whoever builds the commerce/services layer that agents interact with.
-<https://x.com/levie/status/2102235949430354273|View tweet>
-<https://x.com/levie/status/2102253246807261579|View tweet>
-
-
-*Garry Tan* — President & CEO of Y Combinator
-
-Tan has a new agentic coding secret weapon: Capy.ai. He says it handles multi-step workflows and large PRs faster than Codex or Claude Code on its own, with clear task delineation, automatic parallelization, and clean GitHub PR/CI integration — and shared an example PR on his GBrain project as proof. Separately, he's still bullish on Cluely's concept as a "realtime thought helper and semi-adversarial assistant with ongoing context," even as the company has pivoted.
-<https://x.com/garrytan/status/2102095924893827501|View tweet>
-<https://x.com/garrytan/status/2102096495847551011|View tweet>
-<https://x.com/garrytan/status/2102233173833007536|View tweet>
-
-
-*Nikunj Kothari* — Partner at FPV Ventures
-
-Kothari is all-in on Codex for Mac computer use, calling it "simply undefeated" for one-shotting manual workflows — and says Instinct and Muse are the best options for browser-based tasks on mobile with zero setup. He's also pushing back on "tokenmaxxing" as a product strategy: "companies boasting about tokenmaxxing have the worst product experiences." His take: good products are about curation and gardening, not throwing the kitchen sink at agents. Less is more.
-<https://x.com/nikunj/status/2102186665863463199|View tweet>
-<https://x.com/nikunj/status/2102049065504739366|View tweet>
-
-
-*Peter Steinberger* — OpenClaw co-founder, OpenAI
-
-Clarifying the record on the "Meta uses OpenClaw" story circulating online: Meta built their own agent inspired by OpenClaw, they didn't adopt it directly. Steinberger gave kudos to Nat and the Meta team. He also shared that OpenClaw passed a third-party security audit with nothing critical found — and made a pointed remark about platform independence: "The beauty of running a claw yourself: they cannot block you."
-<https://x.com/steipete/status/2102116206371315854|View tweet>
-<https://x.com/steipete/status/2102049706830647467|View tweet>
-<https://x.com/steipete/status/2102044040397238286|View tweet>
-
-
-*OFFICIAL BLOGS*
-
-
-*Claude Blog — Claude in Chrome is generally available*
-
-Claude in Chrome is now GA on all paid Claude plans. The big new capability: Claude can now take autonomous actions in Chrome — clicking, typing, navigating, filling forms — without requiring approval for every step, using your existing logins. This matters most for tools that don't connect to Claude natively: internal dashboards, legacy systems, vendor portals.
-
-The centerpiece of the announcement is Anthropic's prompt injection defense stack, which has been substantially hardened since the pilot launched. Three layers work together: Claude is trained against a growing library of real-world injection attacks; probes scan web content before Claude acts on it and flag suspicious instructions; and a safety classifier reviews each action against the original user request before it runs. On their current red-team evaluation, no attacks succeeded against Claude Sonnet 5 or Opus 5 with probes plus the classifier active. Fable 5 showed a 0.3% success rate, with all confirmed breaks in low-severity scenarios.
-
-Install from the Chrome Web Store. Enterprise admins can restrict it to approved domains.
-<https://claude.com/blog/claude-in-chrome-generally-available|Read the full post>
-
+*Josh Woodward* — VP at Google Labs and the Gemini App — celebrated a "big milestone" without details.
+- https://x.com/joshwoodward/status/2102498448364954083
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
