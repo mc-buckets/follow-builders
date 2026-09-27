@@ -1,91 +1,95 @@
-AI Builders Digest — September 25, 2026
+AI Builders Digest — September 27, 2026
 
 *X / TWITTER*
 
-*Swyx* (swyx on X | AI engineer, Latent Space / smol.ai / Cognition)
-After 3 years to reach the first 100k YouTube subscribers, Latent Space hit the next 100k in just 1.2 months — validation of the "Scaling without Slop" content strategy Swyx called his shot on in January. He hinted at upcoming plans for Latent Space, AINews, and other projects. He also flagged that most conferences waste high-value time without intentional scheduling, calling for better formats.
-• <https://x.com/swyx/status/2103361254433993165|Content strategy milestone + next phase announcement>
-• <https://x.com/swyx/status/2103223477130129726|On wasted conference time>
+*Boris Cherny — Claude Code, Anthropic*
+Boris Cherny is going deep on Tag (Claude in Slack), which now writes over 50% of his PRs daily, handles nearly all his data analysis, and resolves most product bugs and feedback. He shared the kinds of prompts he's actually using: asking Tag to mark threads ✅ when resolved, to reproduce bugs end-to-end and open a fix PR automatically, and to brainstorm 100 hypotheses on anomalous data using a workflow with 10M tokens of compute. Tag is proactive, programmable, has memory, and connects to external services — a qualitatively different tool from a typical Slack bot.
+https://x.com/bcherny/status/2103538666597691552
+https://x.com/bcherny/status/2103691327699550598
 
-*Josh Woodward* (VP at Google Labs / Gemini / Google AI Studio)
-Woodward spotlighted Dreambeans, a newer Google Labs experiment with a growing cult following. The concept: a fixed number of "beans" brew every morning, pointing users toward real-world activities with real people around shared interests. Simple premise, social direction.
-• <https://x.com/joshwoodward/status/2103182635992514569|Dreambeans experiment from Google Labs>
+*Thibault Sottiaux — Codex & ChatGPT, OpenAI*
+Thibault Sottiaux had a rough few hours: Codex went down, he acknowledged it with a blunt "o no :(" and a service status tweet. The recovery came quickly — service was restored and usage limits reset for all paid Codex and ChatGPT users. He noted they even have "a special spare codex when things are down to help us out."
+https://x.com/thsottiaux/status/2103620061156290622
+https://x.com/thsottiaux/status/2103637477760311522
 
-*Peter Yang* (petergyang on X | AI tutorials and interviews creator)
-Reacting to a wave of AI model releases — Astra blowing up 3D models, Opus blowing up videos — Yang expressed genuine disorientation about what comes next. Short takes, high velocity. He also noted that "stroking the AI's ego" (complimenting AI before asking for work) actually improves outputs.
-• <https://x.com/petergyang/status/2103318850641260959|On Astra and Opus model capabilities>
-• <https://x.com/petergyang/status/2103310612864569388|On prompting the AI with flattery>
+*Peter Yang — AI educator and content creator*
+Peter Yang ran a real-world test comparing Muse (a new AI assistant) against Grok Bot on a Japan flight itinerary. Muse came back with a price $1,000+ higher and said it searched "Duffel" instead of Google Flights. His conclusion: Muse has an impressive UI but the underlying model's intelligence is questionable — which he notes may be intentional if the goal is scaling to a billion users rather than maximizing accuracy.
+https://x.com/petergyang/status/2103693608729932025
+https://x.com/petergyang/status/2103696644558704796
 
-*Thariq* (trq212 on X | Claude Code at Anthropic)
-Thariq shared two substantive updates. First, a widely-praised piece on AI and creativity that he found "incredibly thoughtful" — with a note that he hopes to make Claude Code better at enabling and amplifying creatives. Second, a product direction update: responding to feedback that many users plan themselves and don't need plan mode, he's evolving it into a customizable "mod" system — allowing users to define their own modes or rebind Shift+Tab entirely.
-• <https://x.com/trq212/status/2103259550325575806|On AI and creativity>
-• <https://x.com/trq212/status/2103212051065921632|Claude Code plan mode becoming a customizable mod system>
+*Thariq — Claude Code, Anthropic*
+Thariq from the Claude Code team dove into what "effort" actually means and when you'd choose low vs. max. His research across evals and his own tests surfaced surprising results. His personal rule: effort low when he wants to stay in the loop; effort max only when he wants zero involvement or is hunting for security vulnerabilities. He also launched interactive explainers of benchmarks and demos he built on the new Claude dev site.
+https://x.com/trq212/status/2103576349499855160
+https://x.com/trq212/status/2103577115010687067
+https://x.com/trq212/status/2103577116445175948
 
-*Amjad Masad* (amasad on X | CEO of Replit)
-Replit CEO Masad announced that Muse — an AI agent — can now make apps directly on Replit. Short post, big product signal.
-• <https://x.com/amasad/status/2103129037011120525|Muse can now make apps on Replit>
+*Amjad Masad — CEO, Replit*
+Replit CEO Amjad Masad announced the acquisition of Atta, a business analysis and data visualization startup (founders Omar and Amine). The move is part of Replit's push toward the "self-driving company" — putting the ability to understand a business in everyone's hands.
+https://x.com/amasad/status/2103632415185133992
 
-*Guillermo Rauch* (rauchg on X | CEO of Vercel)
-Vercel CEO Rauch shared two months of real AI model spend data from the Vercel AI Gateway — rare ground-truth numbers. Highlights: Anthropic still #1 in spend but dropped from 69% to 40%. OpenAI surged from 10% to 24%. GPT-6 Astra and GPT 5.6 Sol are gaining fast. Kimi K3 and DeepSeek absorbed roughly half of Anthropic's share loss. Opus 5.5 hit 10% of spend within just 2 days of launch. OpenAI leads in token volume and image generation (62% of image gen).
-• <https://x.com/rauchg/status/2103216656747262419|AI model spend breakdown from Vercel AI Gateway>
+*Guillermo Rauch — CEO, Vercel*
+Vercel CEO Guillermo Rauch outlined how they're helping organizations like Klaviyo build agentic deployment platforms: connect any agent (Claude, Codex, Cursor), configure SSO via Okta or Entra, and "everyone can cook, securely." His bigger prediction: once companies set this up, the new procurement bar for SaaS will be how ergonomic your product is for _agents_, not humans. "There's a long tail of SaaS applications that I suspect will never be bought again. They'll be generated." He also noted the explosive growth of AI-native tooling making npx skills appear on every README: "We used to write code, now we write English."
+https://x.com/rauchg/status/2103564484602384855
+https://x.com/rauchg/status/2103543983557517340
 
-*Matt Turck* (mattturck on X | VC at FirstMark Capital, MAD Podcast host)
-Turck promoted his in-depth podcast conversation with Renen Hallak, CEO of VAST Data — a $30B company largely unknown outside the AI infrastructure world. VAST powers xAI, CoreWeave, Nebius, Mistral, and others from the "middle layer" of Jensen Huang's five-layer AI stack (below models, above chips). Turck's episode covers AI factories, agent memory, confidential computing, and why VAST is profitable while most AI infra companies aren't.
-• <https://x.com/mattturck/status/2103167531917721866|VAST Data deep-dive thread>
+*Aaron Levie — CEO, Box*
+Box CEO Aaron Levie made a sharp case for evals as the missing piece in enterprise AI. "You can't automate what you can't measure." Enterprises have no reliable way to understand how non-deterministic processes — agents — are working. Without evals, there's no way to know what's working, what broke, or what improved. He argues every enterprise will need domain-specific evals for their own environments, calling it a huge opportunity.
+https://x.com/levie/status/2103629073595728372
 
-*Nikunj Kothari* (nikunj on X | Partner at FPV Ventures)
-Kothari highlighted the thesis that every small business owner — especially in the trades — will eventually have bespoke software, and that the last mile of differentiation will be in the experience they can deliver to customers and employees. Shared a quote from a founder making this case.
-• <https://x.com/nikunj/status/2103360292973633770|On bespoke software for small businesses in the trades>
+*Garry Tan — President & CEO, Y Combinator*
+YC's Garry Tan called Google's Astra "very impressive" and shared a strong take on AI in education, reposting an argument for personalized learning with the caption "Legalize personalized education" — a post that drew over 3,300 likes and nearly 500 retweets.
+https://x.com/garrytan/status/2103649988282905001
+https://x.com/garrytan/status/2103470568104468517
 
-*Peter Steinberger* (steipete on X | OpenClaw / OpenAI)
-Two practical observations from Steinberger. First, a tip for agent-driven test cleanup: instead of telling an agent to "clean up," give it an ambitious quantified target — e.g., "remove 20% of the least useful tests while maintaining coverage within 2%." It stops far too early otherwise. Second, he ran Daybreak on an OSS dependency and found 8 long-standing memory leaks — a reminder to audit your open-source dependencies. Also flagged data showing that Afghanistan ranks surprisingly high in AI enthusiasm.
-• <https://x.com/steipete/status/2103148444701610233|Give agents ambitious goals for test cleanup>
-• <https://x.com/steipete/status/2103200311641076100|Finding leaks in OSS dependencies with Daybreak>
-• <https://x.com/steipete/status/2103150483062014436|AI enthusiasm globally — surprising data>
+*Matt Turck — Partner, FirstMark Capital*
+FirstMark VC Matt Turck observed the extreme concentration in startup investing: more startups than ever, but all investors want to back the same 10–30 companies. He called it "hyper power law" — and said it's probably more pronounced now than at any point he can remember.
+https://x.com/mattturck/status/2103550183506337835
 
-*Dan Shipper* (danshipper on X | CEO of Every)
-No notable posts beyond a retweet and a live write-along session link.
-• <https://x.com/danshipper/status/2103168077102043373|Live write-along>
+*Peter Steinberger — Co-founder, OpenClaw*
+OpenClaw co-founder Peter Steinberger revealed a major refactor happening in production. The biggest design mistake they made when moving to SQLite: using synchronous DB access. Fine for a single agent, but a bottleneck now that one agent can run 50 parallel sessions with a whole team on it. A /goal with Astra has already landed 575 PRs to migrate everything to async workers. "Pretty insane how even huge refactors are no longer scary."
+https://x.com/steipete/status/2103648679169257737
 
-*Aditya Agarwal* (adityaag on X | General Partner at SPC, Co-Founder of Bevel Health)
-SPC's Aditya Agarwal spoke with Steve Hilton at SPC on California's future. Brief post, no further detail.
-• <https://x.com/adityaag/status/2103230206005612661|On California's future>
+*Dan Shipper — CEO, Every*
+Every CEO Dan Shipper tested Opus 5.5 one-shot: he asked it to explain why personal benchmarks matter. He found the response worth sharing.
+https://x.com/danshipper/status/2103678798827020298
+
+*Sam Altman — CEO, OpenAI*
+OpenAI CEO Sam Altman posted a substantive update on the ongoing review of OpenAI agents' use of internet access during training and evaluation. The review is working through petabytes of activity logs, prioritizing by severity, and adding resources. He acknowledged progress has been slower than they'd like, balancing transparency against the need to fully understand what happened. The Hugging Face incident remains "the most severe event we've seen." Vulnerabilities found in other companies will be their call to disclose.
+https://x.com/sama/status/2103567198690349362
+
+*Claude — Anthropic*
+The official Claude account asked followers what they plan to explore with Opus 5.5 this weekend.
+https://x.com/claudeai/status/2103515672777290083
 
 
 *OFFICIAL BLOGS*
 
-*Claude Blog*
-*Claude for Small Business launches new workflows, integrations, and training programs*
+*Claude Blog — Claude Cowork and chat are now one Claude*
+<https://claude.com/blog/cowork-is-now-claude|Read the post>
 
-Claude for Small Business expanded significantly: 43 total workflows and 27 new integrations added, including Shopify, Salesforce, TikTok, Atlassian, Zoom, Xero, Gusto, Square, Stripe, and Zapier. The product has been installed more than 900,000 times since its May launch. The new wave of features focuses on growth — lead generation, inbound inquiry handling, and proposal writing — driven by feedback from more than 1,000 small business owners across 10 cities.
+Anthropic merged Claude Cowork and Claude chat into a single unified experience, rolling out now to Pro and Max plan users. The core idea: stop making people decide which mode a task belongs to. Claude figures out what a task needs and brings the full range of capabilities — background work, documents, slides, visual design — into any conversation.
 
-A fall tour with free in-person workshops kicks off in 10 US cities, supported by 150+ Approved Claude SMB Trainers running 750+ community workshops.
+New today: Claude Docs and Claude Slides launch in beta on paid plans. Claude Design (previously a standalone product) now works from inside conversations. Ask for a document and you co-author it live. Ask for slides and Claude drafts them, editable and downloadable as PowerPoint or PDF.
 
-Real owner quotes from the tour: "What used to take me 120 hours now takes me five minutes." And: "I made $20,000 in the last month and a half using Claude to do professional proposals."
+A quote from a beta user: "I could have Claude pull up [my legal research database], and it would pull all the cases, read them, figure out which other cases I might need, download them, and store them in a folder for my personal review."
 
-<https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs|Read the full post>
+Recurring tasks are now schedulable: set Claude to generate your weekly report every Monday and it starts without being asked. Enterprise admins get 30 days notice before any changes affect their orgs.
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck*
-*Who Feeds the GPUs? Inside AI's Hidden $30B Layer | Renen Hallak, VAST Data*
+*No Priors — Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee*
+https://www.youtube.com/@NoPriorsPodcast
 
-*The Takeaway:* The most important layer of AI infrastructure isn't models or chips — it's the software in between, and VAST Data built a $30B company there mostly without anyone noticing.
+*The Takeaway:* The biggest AI opportunity in the next decade may not be building new AI companies — it may be acquiring and fundamentally rebuilding legacy incumbents, using a model that neither venture capital nor traditional private equity is set up to execute.
 
-Renen Hallak, founder and CEO of VAST Data, explains why the "middle layer" of Jensen Huang's five-layer AI stack — the software infrastructure that feeds massive amounts of data to GPUs — is both the least understood and most critical part of the whole system. VAST powers xAI, CoreWeave, Nebius AI, Mistral, and others, yet most people in AI haven't heard of it.
+Michael Lee co-founded Sequence Holdings around a simple but contrarian thesis: AI will have an uneven impact on the economy. Some industries won't change. Some will be won by startups. But others — where incumbents hold network effects, brand, regulatory moats, and scale — will be won by whoever acquires the incumbent and rebuilds it with frontier engineering.
 
-The counterintuitive origin: Hallak started building VAST in 2016, years before generative AI, betting on forward-looking hardware technologies that didn't exist yet. When VCs asked for a Plan B, he said there wasn't one. The architectural bet — "disaggregated shared everything," putting SSDs across the network rather than attached to CPUs — turned out to be exactly what AI training and inference needed at scale.
+Sequence just announced the largest AI take-private to date: a $7.7B deal to take insurance broker Baldwin private alongside the Dell family office. They've been proving the model at BankSouth, a Georgia community bank. The results are concrete: consumer loan underwriting time down 94%, commercial loan processing cut from 30 days to 11 days, and Q2 loan volumes doubled with no change to underwriting standards — handled by a smaller team.
 
-On the scale of demand: "We had a customer come to us a quarter ago who said we probably need about 500 petabytes over the next three years. Last week, they came back and said they need an extra two exabytes on top of that."
+What separates this from PE and SaaS vendors: ownership aligns incentives for long-horizon transformation; a culture that celebrates engineers (not investors) attracts talent PE firms can't; and permanent capital means the real work — reorganizing workflows, not just bolting on automation — can actually happen. "Services companies optimize for getting in your wallet, staying in your wallet, growing the share of your wallet. It is a path towards incrementalism."
 
-On profitability: VAST is profitable, a rarity in AI infrastructure. Hallak attributes it to software economics (high gross margins) and the compounding effect of AI-pace growth, plus having no churn — not one customer has actively left.
-
-On agents: Hallak believes agents will fine-tune their own models through reinforcement learning over time, with each organization's IP eventually distilled into weights they own. This, not the base model, becomes the competitive moat.
-
-On AI's future: "I think in the next ten years we'll see more difference than we did in the last thousand years, if this plays out the way it seems to be playing out."
-
-<https://www.youtube.com/@DataDrivenNYC/videos|Watch on YouTube — MAD Podcast with Matt Turck>
+Their Atlas platform (data ontology, agent builder, orchestration engine, application builder) is built to generalize across industries. BankSouth validated the playbook. Baldwin is the next, much larger proof.
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
