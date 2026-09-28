@@ -1,4 +1,4 @@
-AI Builders Digest — September 27, 2026
+AI Builders Digest — September 28, 2026
 
 *X / TWITTER*
 
