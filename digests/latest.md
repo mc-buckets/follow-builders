@@ -1,89 +1,53 @@
-*AI Builders Digest — September 23, 2026*
-
+AI Builders Digest — September 27, 2026
 
 *X / TWITTER*
 
+*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
+After what appears to be a service incident, Sottiaux gave the all-clear in a short post that drew over 13,900 likes: "Resets all propagated. That will be all. Have a fantastic weekend." Cryptic and minimal, but clearly the message a lot of people were waiting for.
+<https://x.com/thsottiaux/status/2103911959544610829>
 
-*Swyx* (latentspacepod co-host, smol_ai, Cognition affiliate)
+*Peter Yang* (AI educator and tutorial creator)
+Noticed Claude's usage limits dramatically loosened — "they went from barely usable to basically unlimited" — and separately shared he's building a Japanese language learning app using Google's Gemini audio API (10 lessons, 10 phrases each). Also ran into an ambiguous support situation while trying out the new Google audio tools via @antigravity.
+- <https://x.com/petergyang/status/2104066667361992892>
+- <https://x.com/petergyang/status/2104059554204188833>
 
-New @latentspacepod episode with Allen Park is out now. Available on email, Apple Podcasts, and YouTube.
-<https://x.com/swyx/status/2102160025666101658|View tweet>
+*Thariq* (Claude Code, Anthropic)
+Marked roughly one year since posting early experiments using Claude Code to generate videos. Reflected on how much manual iteration was required back then — pointing out specific errors, nudging the model on details — compared to where things stand today. "Crazy how far things have come."
+<https://x.com/trq212/status/2103897226154328502>
 
+*Guillermo Rauch* (Vercel CEO)
+Made a pointed case against AI-generated slop — and extended the concern beyond code. He's worried that _reading_ itself gets devalued as people grow exhausted by constant low-quality AI prose. He cited a viral thread where an AI tool explained in the PR description that a performance improvement wasn't due to a compiler change — but the developer missed it and attributed it to the compiler anyway. His bottom line: "I want AI in the service of understanding the universe and enhancing human cognition and creativity."
+<https://x.com/rauchg/status/2103939888513274147>
 
-*Thibault Sottiaux* — Codex & ChatGPT product at OpenAI
+*Garry Tan* (YCombinator President & CEO)
+Shared his current favorite workflow for fixing production bugs: @capydotai with GStack /autoplan, running on GPT-6 medium reasoning. No lengthy explanation — just enthusiasm for the approach.
+<https://x.com/garrytan/status/2103989902476259702>
 
-Dropping a cryptic but high-engagement tease: "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday." This racked up 12,500+ likes and 760 retweets, suggesting a significant Codex or ChatGPT launch is imminent.
-<https://x.com/thsottiaux/status/2102254445082116335|View tweet>
+*Peter Steinberger* (OpenClaw, OpenAI)
+Reacted to a demo with notable enthusiasm: "Now I see why some people talk about AGI. This is so clever!" Not often you see that reaction from a seasoned engineer without caveats.
+<https://x.com/steipete/status/2103883264054505493>
 
+*Dan Shipper* (Every, CEO)
+Experimenting with Claude Opus 5.5 as a film director: wrote a novelization of Plato's Protagoras, then had Opus 5.5 adapt it into a short film scene by scene. A low-key but genuinely interesting test of what frontier models can do with classical narrative.
+- Scene 1: <https://x.com/danshipper/status/2103850415930708437>
+- Scene 2: <https://x.com/danshipper/status/2103894152316645620>
 
-*Peter Yang* — AI tutorials and interviews creator
+*PODCASTS*
 
-Yang is sounding alarms on the ad market: if agents browse the web and complete tasks without a human ever seeing a display ad, targeted advertising loses its audience entirely. He's also been leaning into agentic finance — sharing a story about ChatGPT Finances catching an erroneous hotel charge and getting a reimbursement, and noting he used an agent to cancel a hotel booking for his parents and monitor replies until the refund came through. His summary of where his attention lives now: "I no longer live in email or text, I live in the chat with my agent(s)."
-<https://x.com/petergyang/status/2102215701255844074|View tweet>
-<https://x.com/petergyang/status/2102186174911746151|View tweet>
-<https://x.com/petergyang/status/2102181024507765167|View tweet>
+*No Priors — "Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon"*
 
+*The Takeaway:* The most widely used architecture for language models — generating text one word at a time — has a structural bottleneck at inference that diffusion models are built to avoid, and the Stanford researcher who helped invent diffusion thinks that gap will only matter more as AI scales.
 
-*Thariq* — Claude Code at Anthropic
+Stefano Ermon spent a decade at Stanford developing generative models before they were fashionable. His lab's 2019 work on score-based generative models became the mathematical foundation for diffusion — the approach behind Stable Diffusion, Midjourney, Sora, and essentially every serious image and video generation tool today. In 2024, his lab demonstrated that diffusion could match the quality of a 1B-parameter autoregressive language model while generating text roughly 10x faster. That result led him to co-found Inception.
 
-One pithy, high-resonance prompt tip: "I now type 'use big pictures and few words' several times a day." 1,759 likes suggests this lands widely as a prompt-engineering instinct for multimodal AI work.
-<https://x.com/trq212/status/2102186805034635576|View tweet>
+The core argument is about hardware efficiency. Today's language models generate text sequentially — one token at a time, left to right — which means GPUs sit mostly idle while weights are shuffled through memory. Diffusion models generate many tokens simultaneously, which maps far better to how GPUs actually work. "The bitter lesson is that the more parallel solution is the one that is eventually going to win."
 
+Inception's Mercury models are already in production, reaching quality comparable to fast frontier models (Claude Haiku, GPT-4o mini class) while running significantly faster. One customer, Open Call — a voice agent company — switched from running autoregressive models on custom Cerebras chips to Mercury on standard NVIDIA GPUs, getting comparable speed at lower cost with broader availability.
 
-*Amjad Masad* — CEO of Replit
+Beyond speed, Ermon points to controllability as an underappreciated structural advantage. Autoregressive models finish generating before you can evaluate the output against any reward or constraint. Diffusion models generate coarse-to-fine, meaning external signals can steer the output from the very beginning — potentially a meaningful edge for enterprise use cases where outputs need to stay on-brand or within guardrails.
 
-Brief but bold: "AI is reviving the American Dream." Shared as a quote tweet, pointing to the democratizing potential of AI-powered building.
-<https://x.com/amasad/status/2102120769232978174|View tweet>
+Inception is 50 people, two years old, and still mostly R&D-heavy — building training pipelines, a custom serving engine, and post-training infrastructure from scratch since nothing in the open-source ecosystem handles diffusion-based LLMs. The closed-source bet is intentional: Ermon sees the serving stack itself as defensible IP.
 
-
-*Guillermo Rauch* — CEO of Vercel
-
-Two things caught his attention: First, he put Grok 4.7 through a hard reverse-engineering problem involving a running binary and was impressed — "Beautifully solved. And it's so fast!" Second, Vercel's AI SDK now supports Jev over HTTP in AI Gateway alongside its type-safe TypeScript API.
-<https://x.com/rauchg/status/2102089968860721335|View tweet>
-<https://x.com/rauchg/status/2102205684544852121|View tweet>
-
-
-*Aaron Levie* — CEO of Box
-
-Levie is thinking hard about the infrastructure layer for the agent economy — and posted two dense threads worth reading together. Thread one: AI agents will use software 100x more than humans ever did, which makes data platforms (CRM, ERP, unstructured data) more important, not less. The platforms that can act as security layers, manage data for agents, and orchestrate business logic have a huge opportunity — for startups and incumbents alike. Thread two: personal agents that transact on your behalf represent a massive monetization surface. As people get comfortable delegating simple tasks, they'll hand over more complex (and higher-spend) ones. This creates opportunity for agent providers and for whoever builds the commerce/services layer that agents interact with.
-<https://x.com/levie/status/2102235949430354273|View tweet>
-<https://x.com/levie/status/2102253246807261579|View tweet>
-
-
-*Garry Tan* — President & CEO of Y Combinator
-
-Tan has a new agentic coding secret weapon: Capy.ai. He says it handles multi-step workflows and large PRs faster than Codex or Claude Code on its own, with clear task delineation, automatic parallelization, and clean GitHub PR/CI integration — and shared an example PR on his GBrain project as proof. Separately, he's still bullish on Cluely's concept as a "realtime thought helper and semi-adversarial assistant with ongoing context," even as the company has pivoted.
-<https://x.com/garrytan/status/2102095924893827501|View tweet>
-<https://x.com/garrytan/status/2102096495847551011|View tweet>
-<https://x.com/garrytan/status/2102233173833007536|View tweet>
-
-
-*Nikunj Kothari* — Partner at FPV Ventures
-
-Kothari is all-in on Codex for Mac computer use, calling it "simply undefeated" for one-shotting manual workflows — and says Instinct and Muse are the best options for browser-based tasks on mobile with zero setup. He's also pushing back on "tokenmaxxing" as a product strategy: "companies boasting about tokenmaxxing have the worst product experiences." His take: good products are about curation and gardening, not throwing the kitchen sink at agents. Less is more.
-<https://x.com/nikunj/status/2102186665863463199|View tweet>
-<https://x.com/nikunj/status/2102049065504739366|View tweet>
-
-
-*Peter Steinberger* — OpenClaw co-founder, OpenAI
-
-Clarifying the record on the "Meta uses OpenClaw" story circulating online: Meta built their own agent inspired by OpenClaw, they didn't adopt it directly. Steinberger gave kudos to Nat and the Meta team. He also shared that OpenClaw passed a third-party security audit with nothing critical found — and made a pointed remark about platform independence: "The beauty of running a claw yourself: they cannot block you."
-<https://x.com/steipete/status/2102116206371315854|View tweet>
-<https://x.com/steipete/status/2102049706830647467|View tweet>
-<https://x.com/steipete/status/2102044040397238286|View tweet>
-
-
-*OFFICIAL BLOGS*
-
-
-*Claude Blog — Claude in Chrome is generally available*
-
-Claude in Chrome is now GA on all paid Claude plans. The big new capability: Claude can now take autonomous actions in Chrome — clicking, typing, navigating, filling forms — without requiring approval for every step, using your existing logins. This matters most for tools that don't connect to Claude natively: internal dashboards, legacy systems, vendor portals.
-
-The centerpiece of the announcement is Anthropic's prompt injection defense stack, which has been substantially hardened since the pilot launched. Three layers work together: Claude is trained against a growing library of real-world injection attacks; probes scan web content before Claude acts on it and flag suspicious instructions; and a safety classifier reviews each action against the original user request before it runs. On their current red-team evaluation, no attacks succeeded against Claude Sonnet 5 or Opus 5 with probes plus the classifier active. Fable 5 showed a 0.3% success rate, with all confirmed breaks in low-severity scenarios.
-
-Install from the Chrome Web Store. Enterprise admins can restrict it to approved domains.
-<https://claude.com/blog/claude-in-chrome-generally-available|Read the full post>
-
+https://www.youtube.com/@NoPriorsPodcast
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
