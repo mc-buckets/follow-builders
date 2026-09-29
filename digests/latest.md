@@ -1,53 +1,101 @@
-AI Builders Digest — September 28, 2026
+AI Builders Digest — September 29, 2026
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-After what appears to be a service incident, Sottiaux gave the all-clear in a short post that drew over 13,900 likes: "Resets all propagated. That will be all. Have a fantastic weekend." Cryptic and minimal, but clearly the message a lot of people were waiting for.
-<https://x.com/thsottiaux/status/2103911959544610829>
+*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
 
-*Peter Yang* (AI educator and tutorial creator)
-Noticed Claude's usage limits dramatically loosened — "they went from barely usable to basically unlimited" — and separately shared he's building a Japanese language learning app using Google's Gemini audio API (10 lessons, 10 phrases each). Also ran into an ambiguous support situation while trying out the new Google audio tools via @antigravity.
-- <https://x.com/petergyang/status/2104066667361992892>
-- <https://x.com/petergyang/status/2104059554204188833>
+The concept of a code freeze before releases is becoming obsolete. Sottiaux argues that in the near future, code itself might be generated dynamically per request according to constraints — making traditional release-gating practices increasingly irrelevant.
 
-*Thariq* (Claude Code, Anthropic)
-Marked roughly one year since posting early experiments using Claude Code to generate videos. Reflected on how much manual iteration was required back then — pointing out specific errors, nudging the model on details — compared to where things stand today. "Crazy how far things have come."
-<https://x.com/trq212/status/2103897226154328502>
+- <https://x.com/thsottiaux/status/2104108167806550046|View tweet>
 
-*Guillermo Rauch* (Vercel CEO)
-Made a pointed case against AI-generated slop — and extended the concern beyond code. He's worried that _reading_ itself gets devalued as people grow exhausted by constant low-quality AI prose. He cited a viral thread where an AI tool explained in the PR description that a performance improvement wasn't due to a compiler change — but the developer missed it and attributed it to the compiler anyway. His bottom line: "I want AI in the service of understanding the universe and enhancing human cognition and creativity."
-<https://x.com/rauchg/status/2103939888513274147>
+*Guillermo Rauch* — Vercel CEO
 
-*Garry Tan* (YCombinator President & CEO)
-Shared his current favorite workflow for fixing production bugs: @capydotai with GStack /autoplan, running on GPT-6 medium reasoning. No lengthy explanation — just enthusiasm for the approach.
-<https://x.com/garrytan/status/2103989902476259702>
+Rauch ported his Mini web browser from Electron to Rust & Swift using Claude Opus 5.5, and says the result is faster, more secure, and easier to iterate on. He used the `cef` Rust crate to bundle Chromium, embedded an agent via the `fx acp` protocol talking to a local CLI over ACP, and gained Liquid Glass, faster boot times, and Mac-native behavior. His broader thesis: "Native is the future, both on the desktop and in the cloud. I suspect the entire software world will 'nativify' faster than people realize."
 
-*Peter Steinberger* (OpenClaw, OpenAI)
-Reacted to a demo with notable enthusiasm: "Now I see why some people talk about AGI. This is so clever!" Not often you see that reaction from a seasoned engineer without caveats.
-<https://x.com/steipete/status/2103883264054505493>
+- <https://x.com/rauchg/status/2104428800134013205|View tweet>
 
-*Dan Shipper* (Every, CEO)
-Experimenting with Claude Opus 5.5 as a film director: wrote a novelization of Plato's Protagoras, then had Opus 5.5 adapt it into a short film scene by scene. A low-key but genuinely interesting test of what frontier models can do with classical narrative.
-- Scene 1: <https://x.com/danshipper/status/2103850415930708437>
-- Scene 2: <https://x.com/danshipper/status/2103894152316645620>
+*Aaron Levie* — Box CEO
+
+Levie sketched a framework for how agents will reshape markets. Some sectors benefit from friction (switching costs create moats) — agents will erode those advantages and spike competition. But many markets suffer from friction — healthcare, travel, local services — and agents will unlock entirely new economic activity there. "A future meaningfully mediated by agents that work tirelessly for us and our goals can't possibly function exactly the same as today."
+
+- <https://x.com/levie/status/2104350592290406849|View tweet>
+
+*Garry Tan* — President & CEO at Y Combinator
+
+Tan is bullish on AI agents navigating the web, pushing back on the anti-bot status quo. He called anti-bot measures "for losers" and noted that CDP-based automation hits a wall against real anti-bot systems. His pro-builder/pro-AI stance extends to SF civic politics: "Do not nerf. Made in San Francisco."
+
+- <https://x.com/garrytan/status/2104402742517420517|Anti-bot tweet>
+- <https://x.com/garrytan/status/2104231083701420282|Do not nerf>
+
+*Matt Turck* — VC at FirstMark Capital
+
+A pointed observation: AI researchers — the people who actually understand how the technology works — tend to hold nuanced views, believing in neither doom nor runaway acceleration. Non-researchers, by contrast, hold the most certain and extreme opinions. Worth sitting with.
+
+- <https://x.com/mattturck/status/2104331402385002831|View tweet>
+
+*Thariq* — Claude Code at Anthropic
+
+A sobering productivity concern: "I am most afraid of us eating the productivity gains of agents by just becoming lazier." The worry isn't that agents won't work — it's that humans will adjust their baseline expectations downward rather than doing more with the freed capacity.
+
+- <https://x.com/trq212/status/2104273243599405395|View tweet>
+
+*Amjad Masad* — CEO at Replit
+
+Replit is showing up in unexpected places. Masad shared that Replit is gaining traction in the Chan-Zuckerberg household, a small signal that developer tools built for accessibility are crossing into the broader culture.
+
+- <https://x.com/amasad/status/2104428789417857436|View tweet>
+
+*Peter Yang* — AI tutorials creator
+
+A cultural observation on software staying power: nobody has fond memories of the SaaS tools they used at work, but everyone remembers their favorite games. Games win the long-term memory test. LLM models, Yang suggests, might be the inverse — highly memorable and personal in a way business software never was.
+
+- <https://x.com/petergyang/status/2104414495376564517|View tweet>
+
+*Zara Zhang* — Builder
+
+Two sharp takes. On posting without monetization: "Self-expression is an innate human instinct that requires no justification or utilitarian motive. Influence is so much more valuable than money." On tech hype: "New technology can be so dazzling and flashy that it blinds us to the ways in which it's not working — and sometimes makes you feel that if something is not working, it's probably your fault."
+
+- <https://x.com/zarazhangrui/status/2104253882025341231|On posting>
+- <https://x.com/zarazhangrui/status/2104112917264126195|On tech hype>
+
+*Nikunj Kothari* — Partner at FPV Ventures
+
+Kothari is impressed with Google's Astra: "Give it decently hard verifiable end to end tasks with the right tools and watch it just fly." He's watching closely as multi-modal, tool-using agents move from demos into real workflows.
+
+- <https://x.com/nikunj/status/2104444216017637575|View tweet>
+
+*Peter Steinberger* — OpenClaw + OpenAI
+
+Steinberger is rethinking CI from the ground up. His plan: let Codex decide which tests actually need to run based on the change, "drastically nix CI," and move to hourly test runs instead. Using AI to triage the test suite rather than running everything on every commit.
+
+- <https://x.com/steipete/status/2104305554760114488|View tweet>
+
+*Dan Shipper* — CEO at Every
+
+A single sharp line that landed: "industry built on modeling humans as rational agents panics as humans adopt rational agents." Behavioral economics meets the AI moment.
+
+- <https://x.com/danshipper/status/2104302924251951553|View tweet>
+
 
 *PODCASTS*
 
-*No Priors — "Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon"*
+*Training Data: Box's Aaron Levie — On Reinventing Yourself in the AI Age and Enterprise Diffusion*
 
-*The Takeaway:* The most widely used architecture for language models — generating text one word at a time — has a structural bottleneck at inference that diffusion models are built to avoid, and the Stanford researcher who helped invent diffusion thinks that gap will only matter more as AI scales.
+*The Takeaway:* The bridge between AI models and real enterprise workflows is where the next trillion dollars of software value will be created — and it won't be built by the model labs.
 
-Stefano Ermon spent a decade at Stanford developing generative models before they were fashionable. His lab's 2019 work on score-based generative models became the mathematical foundation for diffusion — the approach behind Stable Diffusion, Midjourney, Sora, and essentially every serious image and video generation tool today. In 2024, his lab demonstrated that diffusion could match the quality of a 1B-parameter autoregressive language model while generating text roughly 10x faster. That result led him to co-found Inception.
+Aaron Levie has been running Box for nearly two decades, sitting on hundreds of billions of enterprise files for some of the largest companies in the world. That vantage point gives him an unusually grounded read on where AI actually lands versus where the hype says it should.
 
-The core argument is about hardware efficiency. Today's language models generate text sequentially — one token at a time, left to right — which means GPUs sit mostly idle while weights are shuffled through memory. Diffusion models generate many tokens simultaneously, which maps far better to how GPUs actually work. "The bitter lesson is that the more parallel solution is the one that is eventually going to win."
+His central argument: everyone in the AI world is "research pilled" — obsessed with model intelligence as the only thing that matters. But when you go into a real bank, hospital, or law firm, you hit five to ten blocking problems that have nothing to do with intelligence: legacy data systems, human-in-the-loop requirements, change management, idle agents waiting on approvals, decades of unmodernized process. "The model could be the most intelligent, super intelligence in the world, but that workflow still requires you to connect up to other data systems."
 
-Inception's Mercury models are already in production, reaching quality comparable to fast frontier models (Claude Haiku, GPT-4o mini class) while running significantly faster. One customer, Open Call — a voice agent company — switched from running autoregressive models on custom Cerebras chips to Mercury on standard NVIDIA GPUs, getting comparable speed at lower cost with broader availability.
+Levie's historical comparison is clarifying: "If you were to go back ten years ago and look at what AWS was building, I guarantee you would not have predicted Snowflake or Databricks existing. You would have been like, the infrastructure just already does that. The same thing is going to be true for intelligence."
 
-Beyond speed, Ermon points to controllability as an underappreciated structural advantage. Autoregressive models finish generating before you can evaluate the output against any reward or constraint. Diffusion models generate coarse-to-fine, meaning external signals can steer the output from the very beginning — potentially a meaningful edge for enterprise use cases where outputs need to stay on-brand or within guardrails.
+On the strategic tension between model labs and the application layer, he's direct: the fox-guarding-the-henhouse problem means enterprises don't want the token seller deciding which model runs their most critical workflows. He expects token subsidization to end when the big labs go public and face real gross margin pressure.
 
-Inception is 50 people, two years old, and still mostly R&D-heavy — building training pipelines, a custom serving engine, and post-training infrastructure from scratch since nothing in the open-source ecosystem handles diffusion-based LLMs. The closed-source bet is intentional: Ermon sees the serving stack itself as defensible IP.
+He's also candid about "work slop" — AI-generated content that reads like a Claude prompt. His take is that we're in a transitional moment where content is still a proxy for the person's judgment, and when AI writes it, that signal breaks down. "I'm reading it once for the substance, and I'm also reading it for the calculation of: did the person write it, or am I just literally reading a Claude prompt?" He doesn't think this lasts — pointing to financial models as the precedent: nobody cares if a spreadsheet formula wrote your numbers, but they still want to discuss the analysis.
 
-https://www.youtube.com/@NoPriorsPodcast
+Box is now deploying agents against that unstructured data at scale — contract extraction, document Q&A, workflow automation — and running evals across every major model. His current read on the frontier: Fable 5.1 is the best he's seen, Gemini overperforms on certain enterprise document tasks, and "it's a total race right now."
+
+<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch on YouTube>
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
