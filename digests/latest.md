@@ -1,100 +1,76 @@
-AI Builders Digest — October 4, 2026
+AI Builders Digest — October 5, 2026
 
 *X / TWITTER*
 
-*Sam Altman* (CEO, OpenAI)
-Sam Altman confirmed OpenAI's partnership with Cerebras: "Cerebras is a close partner, and we have a deep engagement pushing on the frontiers of speed." He also declared dot his favorite OpenAI product yet, praising how it "learns more of my workflow and style" every day and handles the tasks he dreads. On a personal note, he reflected on the strange contrast between high-stakes decision calls and coming home to small children who want to "laugh and play and show you every discovery they made that day."
-- <https://x.com/sama/status/2106147184693620924|On the OpenAI–Cerebras partnership>
-- <https://x.com/sama/status/2106085986606403684|On dot being his favorite OpenAI product>
-- <https://x.com/sama/status/2106189841813934140|On the work/life contrast>
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) — Announced a sharp product direction: only simplifications, efficiency improvements, groundbreaking features, or new models are being worked on going forward. "Sometimes you have to invest ahead of the curve, but feedback is clear that you all want things to get simpler. On it." He also shared a hands-on moment: used a personal AI agent to finally achieve inbox zero — it deleted unneeded email categories in batch, created labels for different work types, and walked him through emails needing replies while searching for relevant context in the background.
+<https://x.com/thsottiaux/status/2106610099720720811>
+<https://x.com/thsottiaux/status/2106602729875685780>
 
-*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-Sottiaux dropped a timely tease: "Fortunately our future models will be much better at code deletion and simplification. Just in time." He also addressed a Pro 500 usage-reset issue that didn't fire as expected, confirmed it fixed, and said he'd make up for it.
-- <https://x.com/thsottiaux/status/2106252868307271752|On future models and code deletion>
-- <https://x.com/thsottiaux/status/2106239435461579088|Pro 500 issue fixed>
+*Madhu Guru* (Sr. Director of AI at Meta) — AI adoption is largely a product problem today. Even among the 2% paying for AI, depth of usage is shallow. His diagnosis: most AI products look like airplane cockpits with 100 levers — connectors, permissions, model selection, token usage. He expects this to change materially in the next 12 months as product teams mature.
+<https://x.com/realmadhuguru/status/2106450089938157720>
 
-*Garry Tan* (President & CEO, Y Combinator)
-Garry Tan articulated his vision for GBrain: "I want our agents to feel as native, expressive, and inevitable as the web eventually did — not as a chatbot feature, but as a personal Jiminy Cricket that knows you and helps you 24/7, always on, always thinking ahead, always improving." He also highlighted a cross-session Capy coordination win — his collaborator Sina's fix wave was automatically steering around work Garry was already handling across multiple threads, all model-agnostic.
-- <https://x.com/garrytan/status/2106063850453991758|GBrain vision>
-- <https://x.com/garrytan/status/2106092289173213444|On Capy cross-session coordination>
+*Amjad Masad* (CEO at Replit) — Shared a deep, somewhat technical conversation with Alex Atallah of OpenRouter on AI model routing infrastructure. Also posted "Replit Drift" — a tease that appears to be a new Replit product or feature.
+<https://x.com/amasad/status/2106450234369085609>
+<https://x.com/amasad/status/2106406812316827874>
 
-*Swyx* (AI Engineer / Founder, smol_ai / Latent Space)
-Swyx teased OpenAI's "dots" product with a "don't forget the one more thing..." framing, noting they've been working on it for a while. He also promoted the 2nd AI Security Summit (with Snyk as founding partner), arguing the landscape has "completely transformed" since last year — rogue agents, more breaches, AI-driven attacks — and that security must now be at the center of the AI conversation.
-- <https://x.com/swyx/status/2106103958657958298|On dots>
-- <https://x.com/swyx/status/2106042773510177256|AI Security Summit>
+*Guillermo Rauch* (CEO at Vercel) — Made a big macro call: "AI will make everything free, including itself. The last domino to fall will be free energy, which is humanity's final frontier." Separately, argued that security is becoming a larger and more strategic function in software companies — both because AI adversaries are more sophisticated and because small teams can now disrupt vast areas of the market that were previously untouchable.
+<https://x.com/rauchg/status/2106503460384538793>
+<https://x.com/rauchg/status/2106516538836856945>
 
-*Thariq* (Claude Code, Anthropic)
-Thariq highlighted the "You should know" mod as a standout example of what Claude Code customization enables, calling it a great way to stay on top of what's possible. "You can really make Claude Code yours."
-- <https://x.com/trq212/status/2106119299484221762|On Claude Code mods>
+*Aaron Levie* (CEO at Box) — Detailed breakdown of where AI agent adoption actually stands: bimodal. Coding and coding-adjacent tasks have taken off; everything else remains very early. Even within coding, most developers still work with agents 1:1 — only a small percentage run background agents in parallel. The rest of knowledge work requires workflows to be rebuilt from scratch, new data wiring, rethought accountability and governance. His prediction: expect 100X more agent adoption from where we are today.
+<https://x.com/levie/status/2106583814709633413>
 
-*Peter Yang* (AI educator / content creator)
-Peter Yang canceled a $300/year YouTube research tool after Claude built the core feature set he actually needed in five minutes. He's also teaching a free lightning lesson on building AI systems that take work off your plate.
-- <https://x.com/petergyang/status/2106072698564874410|Claude replaced his $300/year tool>
-- <https://x.com/petergyang/status/2106071235696447660|Free AI systems lesson>
+*Ryo Lu* (Designer at Cursor) — Published a long, thoughtful essay on what happens when everyone copies everyone else: convergence to the mean. Key argument — AI makes this feedback loop frictionless; it can reference more than any human could see in a lifetime, but that access to every perspective isn't the same as having one. His case: approach software-making more like an artist. Develop a point of view through the work itself, not by borrowing from a competitor's roadmap. "What is the point of everyone being able to make something, if we all end up making the same thing?"
+<https://x.com/ryolu_/status/2106337039201505453>
 
-*Nikunj Kothari* (Partner, FPV Ventures)
-Nikunj shared a home automation prompt he's been running on Claude Code / Codex: sniffing network packets to discover all automatable devices in the house and building out an agent framework around them. Worth borrowing if you have a smart home setup.
-- <https://x.com/nikunj/status/2106072546206773574|Home automation prompt for Claude Code>
+*Peter Steinberger* (OpenClaw at OpenAI) — Noted wryly that everyone in AI is building the same thing. Also flagged a real operational problem: OpenClaw's Android app has been stuck in Google Play review limbo for over a week, and he's publicly asking if anyone at Google can help move it along.
+<https://x.com/steipete/status/2106489264443981978>
+<https://x.com/steipete/status/2106446147791597774>
 
-*Peter Steinberger* (OpenClaw / OpenAI)
-Steinberger called out his favorite slide from OpenAI DevDay — no further commentary, but 1,200 likes suggest it resonated.
-- <https://x.com/steipete/status/2106076508020506722|Favorite DevDay slide>
+*Aditya Agarwal* (General Partner at SPC) — Argued that AI is uniquely powerful because it simultaneously democratizes access AND makes time unlimited. Even the world's best cancer doctor can only give 20–30 minutes to a patient regardless of how much money they have. AI removes that scarcity entirely. "This is the practical effect of intelligence too cheap to meter."
+<https://x.com/adityaag/status/2106503075209044336>
 
-*Guillermo Rauch* (CEO, Vercel)
-Rauch celebrated the Vercel team shipping fast and shared a writeup on Jev + Python.
-- <https://x.com/rauchg/status/2106133123973214497|Vercel team shipping>
-- <https://x.com/rauchg/status/2106139305131569178|Writeup on Jev + Python>
+*Sam Altman* (OpenAI) — Raised a safety concern: people ascribing religious force to AI models, or surrendering human judgment to them. He called it a real safety issue, not just a philosophical one.
+<https://x.com/sama/status/2106388373221118198>
 
-*Matt Turck* (VC, FirstMark Capital)
-Dry observation of the week: "People call the Bay Area a monoculture, but that's totally unfair: it has both neo-clouds AND neo-labs."
-- <https://x.com/mattturck/status/2106076198027890750|Neo-clouds and neo-labs>
+*Nikunj Kothari* (Partner at FPV Ventures) — Observed the innovator's dilemma playing out in real time with personal agents: Amazon is protecting its ads cash cow and keeping agents out, while DoorDash (smaller, less to lose) is slowly opening up via CLI and text-based ordering. As personal agents become inevitable, this divergence will matter a lot.
+<https://x.com/nikunj/status/2106488814940414455>
 
-*Madhu Guru* (Sr. Director of AI, Meta)
-Brief but pointed: "Underrated — the feeling of reading great writing that is 100% human written. Just love that human-written smell in a doc."
-- <https://x.com/realmadhuguru/status/2106102222501376050|On human-written content>
+*Peter Yang* (AI tutorials and interviews) — Noted a telling contrast on X: the Google CEO actually uses the app and replies to user feedback, while the YouTube CEO uses it purely as a broadcast channel for announcements.
+<https://x.com/petergyang/status/2106505635017986394>
 
-*Aditya Agarwal* (General Partner, SPC)
-Celebrated a second portfolio company IPO this week — Moneyview, founded by Puneet and Sanjay. Reflected on the founder journey: "to create something new is the highest form of purpose."
-- <https://x.com/adityaag/status/2106019411635376471|Moneyview IPO>
-
-*Claude* (Anthropic official)
-The official Claude account showcased two generative demos: an interactive 3D jet engine you can cut away and pull apart, built with Opus 5.5, and a pop-up paper city where each building is a fold drawn on a flat canvas, built with Sonnet 5.5.
-- <https://x.com/claudeai/status/2106125478956507480|Interactive 3D jet engine (Opus 5.5)>
-- <https://x.com/claudeai/status/2106125477710901276|Pop-up paper city (Sonnet 5.5)>
-
-*Dan Shipper* (CEO, Every)
-Posted a dev day vlog from OpenAI DevDay.
-- <https://x.com/danshipper/status/2106043635947225392|DevDay vlog>
+*Zara Zhang* (builder) — Sparked a 61-reply thread with a single open question: "How will the world change if coding agents get 10x better?"
+<https://x.com/zarazhangrui/status/2106405482852434359>
 
 
 *OFFICIAL BLOGS*
 
-*Claude Blog: Claude for Small Business Launches New Workflows, Integrations, and Training Programs*
+*Claude Blog* — <https://claude.com/blog/cowork-is-now-claude|Claude Cowork and chat are now one Claude>
 
-Claude for Small Business has grown to 43 workflows and 27 new integrations, adding Shopify, Salesforce, TikTok, Atlassian, Zoom, Xero, Gusto, Square, Stripe, and Zapier alongside original partners (Intuit QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, Microsoft 365). The product has been installed over 900,000 times since its May launch.
-
-The new workflows expand from back-office tasks into growth: generating leads, qualifying inbound inquiries, writing proposals, handling marketing, and closing the books. The spring SMB Tour (1,000+ owners, 10 cities) drove the roadmap — about a third asked for help growing the business. This fall, a new tour kicks off with free workshops in 10 US cities and 750+ sessions run by Approved Claude SMB Trainers.
-
-Owner results were striking: "What used to take me 120 hours now takes me five minutes." Another reported $20,000 in new business from AI-generated proposals. One owner's Claude runs a daily 6am briefing that scans the CRM and emails a prioritized to-do list.
-
-<https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs|Read the full post>
+Claude's Cowork and chat are merging into a single unified product, rolling out to Pro and Max plans over the coming weeks. The update also introduces Claude Docs, Claude Slides, and Claude Design — now available directly inside any conversation. Ask for a document and Claude writes it with you; ask for a deck and it drafts slides you can present, download as PowerPoint or PDF, or share via link. The big UX shift: instead of deciding which Claude product to use, Claude figures out what the task needs. Users can schedule recurring work (e.g., a weekly report), control Claude's autonomy level (confirm each action vs. only check in when needed), and monitor progress from their phone. Team and Free plans follow soon; Enterprise admins get at least 30 days notice before anything changes for their orgs.
 
 
 *PODCASTS*
 
-*No Priors: Frontier Chips for Frontier AI Labs, with Walter Goodwin, Founder/CEO of Fractile*
+*The MAD Podcast with Matt Turck* — <https://www.youtube.com/watch?v=awoR908Yu5Y|Who Feeds the GPUs? Inside AI's Hidden $30B Layer | Renen Hallak, VAST Data>
 
-_The Takeaway:_ The chip company that can maintain a structural 3–6 month architectural lead over competitors will win the AI deployment era — and that requires owning the entire silicon stack, not handing off to a Broadcom.
+*The Takeaway:* The unsexy middle layer of the AI stack — storage and software infrastructure — is becoming one of the highest-value positions in the entire AI economy, and VAST Data is quietly at the center of it.
 
-Walter Goodwin founded Fractile in 2022 with a thesis that inference speed, not training scale, would define the coming era. Four years in, the company is building something most chip startups don't: a truly full-stack operation, from workload architecture and front-end design through physical layout and advanced packaging. Most AI chip efforts — including hyperscaler internal projects like Google's TPU, Meta's MTIA, and OpenAI's Jalapeno — rely on Broadcom as a backend delivery partner. That handoff, Goodwin argues, creates structural drag that limits how fast you can iterate.
+Renen Hallak is the founder and CEO of VAST Data, a company valued at $30B that powers xAI and major AI clouds but has stayed largely under the radar. VAST sits in what Jensen Huang calls the "software infrastructure" layer — the part that feeds massive amounts of data to GPUs — and Hallak argues it's the most important layer nobody talks about.
 
-Fractile's biggest architectural bet is moving away from on-chip SRAM (the approach taken by Groq and Cerberus) toward novel high-bandwidth DRAM memory. The reason: context length. SRAM is blindingly fast but tiny — it doesn't scale to the long contexts that agents need. Fractile's new platform, ramping in the second half of next year, targets a memory architecture that combines SRAM-class bandwidth with the capacity of DRAM.
+The insights most worth paying attention to:
 
-"The place where speed really moves the dial isn't a snappier chatbot — that's the faster horses. The real value is taking very long-running agents and making them radically faster."
+- *AI demand is exploding faster than any forecast.* One customer planned for 500 petabytes over three years. Last week they came back asking for an extra two exabytes on top of that. Hallak expects them to return again asking for double-digit exabytes. "Sometimes it scares me."
 
-On market structure, Goodwin makes a counterintuitive case for why frontier labs will always need third-party chip partners: going all-in on proprietary silicon is existentially dangerous. If a competitor finds a breakthrough that only runs on a different chip architecture, you could die in the 9-month lag before you can pivot and ramp new hardware. The rational play is shared platforms — which means a permanent market for independent inference chip companies with genuine capability advantages. "If you can just find a way to structurally carve out a three to six months advantage, you will be winning all of those deployments."
+- *Enterprise IP will live in model weights, not databases.* Every organization's knowledge will eventually be distilled into fine-tuned models they own — not shared with OpenAI or Anthropic — for the same reason companies never wanted proprietary data leaving their premises.
 
-<https://www.youtube.com/@NoPriorsPodcast|Watch on No Priors>
+- *Confidential computing is the unlock for enterprise AI.* VAST's recent announcement: enterprises can now run inference on their own premises without exposing data to model builders. Model builders' weights stay encrypted via NVIDIA hardware, so enterprises can't extract them either. Both sides get what they need.
+
+- *The old fast-vs-large storage tradeoff is broken.* Hallak built VAST in 2016 on a "disaggregated shared everything" architecture — SSDs on the far side of the network rather than attached directly to CPUs. The bet paid off because AI data isn't rows in a table; it's video, images, and natural language at 4–5 orders of magnitude more volume than legacy systems were designed for. They now have one customer cluster at multiple exabytes delivering tens of terabytes per second.
+
+"Bad things should be stated loudly and often, and good things once and softly." — Renen Hallak, on running a fast-moving organization.
+
+<https://www.youtube.com/watch?v=awoR908Yu5Y>
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
