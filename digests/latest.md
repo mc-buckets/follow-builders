@@ -1,76 +1,83 @@
-AI Builders Digest — October 5, 2026
+*AI Builders Digest — October 6, 2026*
+
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) — Announced a sharp product direction: only simplifications, efficiency improvements, groundbreaking features, or new models are being worked on going forward. "Sometimes you have to invest ahead of the curve, but feedback is clear that you all want things to get simpler. On it." He also shared a hands-on moment: used a personal AI agent to finally achieve inbox zero — it deleted unneeded email categories in batch, created labels for different work types, and walked him through emails needing replies while searching for relevant context in the background.
-<https://x.com/thsottiaux/status/2106610099720720811>
-<https://x.com/thsottiaux/status/2106602729875685780>
 
-*Madhu Guru* (Sr. Director of AI at Meta) — AI adoption is largely a product problem today. Even among the 2% paying for AI, depth of usage is shallow. His diagnosis: most AI products look like airplane cockpits with 100 levers — connectors, permissions, model selection, token usage. He expects this to change materially in the next 12 months as product teams mature.
-<https://x.com/realmadhuguru/status/2106450089938157720>
-
-*Amjad Masad* (CEO at Replit) — Shared a deep, somewhat technical conversation with Alex Atallah of OpenRouter on AI model routing infrastructure. Also posted "Replit Drift" — a tease that appears to be a new Replit product or feature.
-<https://x.com/amasad/status/2106450234369085609>
-<https://x.com/amasad/status/2106406812316827874>
-
-*Guillermo Rauch* (CEO at Vercel) — Made a big macro call: "AI will make everything free, including itself. The last domino to fall will be free energy, which is humanity's final frontier." Separately, argued that security is becoming a larger and more strategic function in software companies — both because AI adversaries are more sophisticated and because small teams can now disrupt vast areas of the market that were previously untouchable.
-<https://x.com/rauchg/status/2106503460384538793>
-<https://x.com/rauchg/status/2106516538836856945>
-
-*Aaron Levie* (CEO at Box) — Detailed breakdown of where AI agent adoption actually stands: bimodal. Coding and coding-adjacent tasks have taken off; everything else remains very early. Even within coding, most developers still work with agents 1:1 — only a small percentage run background agents in parallel. The rest of knowledge work requires workflows to be rebuilt from scratch, new data wiring, rethought accountability and governance. His prediction: expect 100X more agent adoption from where we are today.
-<https://x.com/levie/status/2106583814709633413>
-
-*Ryo Lu* (Designer at Cursor) — Published a long, thoughtful essay on what happens when everyone copies everyone else: convergence to the mean. Key argument — AI makes this feedback loop frictionless; it can reference more than any human could see in a lifetime, but that access to every perspective isn't the same as having one. His case: approach software-making more like an artist. Develop a point of view through the work itself, not by borrowing from a competitor's roadmap. "What is the point of everyone being able to make something, if we all end up making the same thing?"
-<https://x.com/ryolu_/status/2106337039201505453>
-
-*Peter Steinberger* (OpenClaw at OpenAI) — Noted wryly that everyone in AI is building the same thing. Also flagged a real operational problem: OpenClaw's Android app has been stuck in Google Play review limbo for over a week, and he's publicly asking if anyone at Google can help move it along.
-<https://x.com/steipete/status/2106489264443981978>
-<https://x.com/steipete/status/2106446147791597774>
-
-*Aditya Agarwal* (General Partner at SPC) — Argued that AI is uniquely powerful because it simultaneously democratizes access AND makes time unlimited. Even the world's best cancer doctor can only give 20–30 minutes to a patient regardless of how much money they have. AI removes that scarcity entirely. "This is the practical effect of intelligence too cheap to meter."
-<https://x.com/adityaag/status/2106503075209044336>
-
-*Sam Altman* (OpenAI) — Raised a safety concern: people ascribing religious force to AI models, or surrendering human judgment to them. He called it a real safety issue, not just a philosophical one.
-<https://x.com/sama/status/2106388373221118198>
-
-*Nikunj Kothari* (Partner at FPV Ventures) — Observed the innovator's dilemma playing out in real time with personal agents: Amazon is protecting its ads cash cow and keeping agents out, while DoorDash (smaller, less to lose) is slowly opening up via CLI and text-based ordering. As personal agents become inevitable, this divergence will matter a lot.
-<https://x.com/nikunj/status/2106488814940414455>
-
-*Peter Yang* (AI tutorials and interviews) — Noted a telling contrast on X: the Google CEO actually uses the app and replies to user feedback, while the YouTube CEO uses it purely as a broadcast channel for announcements.
-<https://x.com/petergyang/status/2106505635017986394>
-
-*Zara Zhang* (builder) — Sparked a 61-reply thread with a single open question: "How will the world change if coding agents get 10x better?"
-<https://x.com/zarazhangrui/status/2106405482852434359>
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
+OpenAI's Sottiaux announced a 28-day public sprint: the team will ship one meaningful improvement per day for Codex/Work users — or do a full reset. A rare public accountability commitment from a product lead.
+- <https://x.com/thsottiaux/status/2106845241357824205|Tweet>
 
 
-*OFFICIAL BLOGS*
+*Peter Yang* (AI educator and interviewer)
+Yang pushed back on OpenAI's ChatGPT complexity, calling the Work launch a mistake — drawing a comparison to how Claude folded its "Cowork" brand back into Chat. He also shared clips from his interview with Sam, co-founder of Granola, on two themes: (1) Granola made peace with enterprise users bypassing their UI to use the MCP directly: "At this point we're at peace with the fact that for a bunch of workflows, the best way to use Granola is to capture the context, then use it through your internal agent." (2) On building quality in an AI-easy world: "The easier it gets to build stuff, the more it matters to really sweat the details and go the extra mile."
+- <https://x.com/petergyang/status/2106926956554195018|On ChatGPT complexity>
+- <https://x.com/petergyang/status/2106897211766530299|On Granola's MCP approach>
+- <https://x.com/petergyang/status/2106825485624004691|On sweating the details>
 
-*Claude Blog* — <https://claude.com/blog/cowork-is-now-claude|Claude Cowork and chat are now one Claude>
 
-Claude's Cowork and chat are merging into a single unified product, rolling out to Pro and Max plans over the coming weeks. The update also introduces Claude Docs, Claude Slides, and Claude Design — now available directly inside any conversation. Ask for a document and Claude writes it with you; ask for a deck and it drafts slides you can present, download as PowerPoint or PDF, or share via link. The big UX shift: instead of deciding which Claude product to use, Claude figures out what the task needs. Users can schedule recurring work (e.g., a weekly report), control Claude's autonomy level (confirm each action vs. only check in when needed), and monitor progress from their phone. Team and Free plans follow soon; Enterprise admins get at least 30 days notice before anything changes for their orgs.
+*Guillermo Rauch* (Vercel CEO)
+Rauch shared two sharp takes. First, on Rust vs. Go: Vercel's Turborepo migration from Go to Rust had "quite controversial" ROI — the human migration costs were substantial, even if Rust was technically superior. His conclusion: "The calculus has now changed. What's 'best for humans' is no longer necessarily 'best for business.'" He also offered a rule of thumb for the AI era: READMEs and blogs should be written by humans for humans; internal documentation can be "AI English" for agents. "It's the story-telling moment where you want to connect with other humans through their words."
+- <https://x.com/rauchg/status/2106863842450133114|On the Rust vs. Go calculus>
+- <https://x.com/rauchg/status/2106848085267902815|On human vs. AI writing>
+- <https://x.com/rauchg/status/2106885457212825983|On harness performance improvements>
+
+
+*Aaron Levie* (Box CEO)
+Levie made an underappreciated point about AI job creation: while everyone counts jobs being replaced, the new roles being created — AI engineers, agent deployment specialists, AI services firms, repositioned data/research roles inside enterprises — are largely undercounted in published stats. Every major bank, law firm, and manufacturer is quietly building internal AI talent. On consumer AI economics, he argued the real monetization model will be commerce, ads, or device/service bundles — not subscriptions — suggesting current subscriber metrics may overstate the category's long-term subscription potential.
+- <https://x.com/levie/status/2106893015063421357|On AI job creation>
+- <https://x.com/levie/status/2106802940879192260|On consumer AI monetization>
+
+
+*Ryo Lu* (Designer, formerly Cursor/Notion/Stripe)
+Shared early design work: a full-bleed desktop layout with a side dock — "lil computer in your pocket."
+- <https://x.com/ryolu_/status/2106777615801713054|Tweet>
+
+
+*Garry Tan* (Y Combinator President & CEO)
+On the wave of AI OS and agent primitives being built simultaneously across teams: "When everyone is building the same primitives it does speak to needs that will only intensify from here. And we will eventually converge on the correct OS."
+- <https://x.com/garrytan/status/2106901111106097210|Tweet>
+
+
+*Matt Turck* (FirstMark Capital VC)
+Flagged the most underappreciated truth in AI: "models are grown, not built" — and we don't truly understand how they work. Highlighted the urgent need for better interpretability research, pointing to work from Goodfire AI.
+- <https://x.com/mattturck/status/2106821381765956044|Tweet>
+
+
+*Zara Zhang* (builder and investor)
+Marveled at Claude Opus 5.5's long-horizon performance: it "silently goes off to make something for 20+ minutes and comes back with a complete masterpiece." Also noted a hiring trend: X profiles are increasingly replacing traditional resumes.
+- <https://x.com/zarazhangrui/status/2106876921082712250|On Opus 5.5>
+- <https://x.com/zarazhangrui/status/2106782239493427588|On X profiles as resumes>
+
+
+*Nikunj Kothari* (FPV Ventures partner)
+Made a contrarian case for in-person founder diligence: visiting an office reveals team energy, co-founder chemistry, beta product state, and collaboration dynamics that Zoom never shows. "Founders often tell me I'm the only one that has ever asked" to visit their office.
+- <https://x.com/nikunj/status/2106957269212742135|Tweet>
+
+
+*Dan Shipper* (Every CEO)
+Has been using OpenAI's dot as his primary AI interface, his agent named "boo." But he predicts the personality-layer era is temporary: just like people loved their early OpenClaw agents' quirks but moved on as soon as something more powerful arrived, AI agent personalities will fade when functional capability leaps ahead.
+- <https://x.com/danshipper/status/2106892868564431255|Tweet>
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck* — <https://www.youtube.com/watch?v=awoR908Yu5Y|Who Feeds the GPUs? Inside AI's Hidden $30B Layer | Renen Hallak, VAST Data>
 
-*The Takeaway:* The unsexy middle layer of the AI stack — storage and software infrastructure — is becoming one of the highest-value positions in the entire AI economy, and VAST Data is quietly at the center of it.
+*No Priors — "Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee"*
 
-Renen Hallak is the founder and CEO of VAST Data, a company valued at $30B that powers xAI and major AI clouds but has stayed largely under the radar. VAST sits in what Jensen Huang calls the "software infrastructure" layer — the part that feeds massive amounts of data to GPUs — and Hallak argues it's the most important layer nobody talks about.
+*The Takeaway:* AI transformation of incumbents requires ownership, not services — and the biggest bottleneck isn't the technology, it's human engineering.
 
-The insights most worth paying attention to:
+Michael Lee co-founded Sequence Holdings twenty months ago with a thesis that cuts against the venture-first instinct: the biggest AI opportunity isn't in startups displacing incumbents, it's in partnering with incumbents that already have scale, brand, and regulatory moat — and refounding them with AI from the inside. Sequence just closed the largest AI take-private to date, acquiring insurance broker Baldwin Insurance for $7.7B alongside the Dell family office.
 
-- *AI demand is exploding faster than any forecast.* One customer planned for 500 petabytes over three years. Last week they came back asking for an extra two exabytes on top of that. Hallak expects them to return again asking for double-digit exabytes. "Sometimes it scares me."
+The key insight is structural. Traditional PE firms are fund-structure businesses incentivized to deploy capital and exit in 3-5 years. Sequence is a permanent holding company — no LPs, no deployment pressure, one deal per year. "We're not an investment shop. We partner with great companies to forge leaders." That long-horizon alignment makes deep AI transformation possible: engineers build for 10-year architectures instead of handoff-ready systems.
 
-- *Enterprise IP will live in model weights, not databases.* Every organization's knowledge will eventually be distilled into fine-tuned models they own — not shared with OpenAI or Anthropic — for the same reason companies never wanted proprietary data leaving their premises.
+The proof point is BankSouth, their first investment. In six months post-close, Sequence reduced average consumer loan underwriting time by 94% and cut commercial loan timelines from 30 days to 11. When loan volume doubled in Q2, the bank absorbed it without adding headcount.
 
-- *Confidential computing is the unlock for enterprise AI.* VAST's recent announcement: enterprises can now run inference on their own premises without exposing data to model builders. Model builders' weights stay encrypted via NVIDIA hardware, so enterprises can't extract them either. Both sides get what they need.
+Lee is candid about what's actually hard: "We have two problems here at Sequence — an engineering problem and a human engineering problem, and the human engineering problem is much more difficult." Getting employees to feel elevated — not threatened — is the durable competitive advantage.
 
-- *The old fast-vs-large storage tradeoff is broken.* Hallak built VAST in 2016 on a "disaggregated shared everything" architecture — SSDs on the far side of the network rather than attached directly to CPUs. The bet paid off because AI data isn't rows in a table; it's video, images, and natural language at 4–5 orders of magnitude more volume than legacy systems were designed for. They now have one customer cluster at multiple exabytes delivering tens of terabytes per second.
+On talent: Sequence deliberately celebrates engineers the way Blackstone celebrates investors. That cultural orientation drives recruitment of Scale AI and Palantir veterans who build their shared Atlas platform (data ontology, agent builder, orchestration, application layer) across portfolio companies.
 
-"Bad things should be stated loudly and often, and good things once and softly." — Renen Hallak, on running a fast-moving organization.
-
-<https://www.youtube.com/watch?v=awoR908Yu5Y>
+https://www.youtube.com/watch?v=TCpRwJBQvW0
 
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
