@@ -1,83 +1,29 @@
-*AI Builders Digest — October 6, 2026*
-
+*AI Builders Digest — October 7, 2026*
 
 *X / TWITTER*
 
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) called yesterday "my best day so far at oai" with "ridiculous amounts of fun and intensity" — hinting that something significant is in the works. <https://x.com/thsottiaux/status/2107311729768353844|tweet>. He also flagged colleague Sergio's work on a collaborative space feature coming to ChatGPT, noting the product is improving "leaps and bounds every day." <https://x.com/thsottiaux/status/2107200530477101461|tweet>
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
-OpenAI's Sottiaux announced a 28-day public sprint: the team will ship one meaningful improvement per day for Codex/Work users — or do a full reset. A rare public accountability commitment from a product lead.
-- <https://x.com/thsottiaux/status/2106845241357824205|Tweet>
+*Peter Yang* (practical AI tutorials) released a new tutorial on building an AI language learning app for Japanese using live voice calls. The walkthrough covers using his spec skill for design, setting up Gemini Live APIs for voice, and creating art with Nano Banana — and can be adapted to learn 100 phrases in any language before a trip. <https://x.com/petergyang/status/2107108755699900459|tweet>
 
+*Nan Yu* (product for Codex at OpenAI) dropped a brief but optimistic note: "You can just fix things." <https://x.com/thenanyu/status/2107262460675891640|tweet>
 
-*Peter Yang* (AI educator and interviewer)
-Yang pushed back on OpenAI's ChatGPT complexity, calling the Work launch a mistake — drawing a comparison to how Claude folded its "Cowork" brand back into Chat. He also shared clips from his interview with Sam, co-founder of Granola, on two themes: (1) Granola made peace with enterprise users bypassing their UI to use the MCP directly: "At this point we're at peace with the fact that for a bunch of workflows, the best way to use Granola is to capture the context, then use it through your internal agent." (2) On building quality in an AI-easy world: "The easier it gets to build stuff, the more it matters to really sweat the details and go the extra mile."
-- <https://x.com/petergyang/status/2106926956554195018|On ChatGPT complexity>
-- <https://x.com/petergyang/status/2106897211766530299|On Granola's MCP approach>
-- <https://x.com/petergyang/status/2106825485624004691|On sweating the details>
+*Madhu Guru* (Sr. Director of AI at Meta; previously led Gemini, Veo, and Nano Banana at Google) shared a pointed product insight: teams commonly treat evals as an afterthought tacked onto QA, but AI products are different. "Your evals are your product spec." <https://x.com/realmadhuguru/status/2107292113214091355|tweet>
 
+*Thariq* (Claude Code at Anthropic) shared two technical observations. On token efficiency: using a structured planning layer is far more efficient than generating raw HTML — the model reuses components, state machines, diagrams, and code snippets instead of rebuilding them each time. <https://x.com/trq212/status/2107294499282293017|tweet> On architecture: he named the pattern where Claude runs in the cloud but accesses your local files "local hands," and noted it's coming to Cowork. <https://x.com/trq212/status/2107229483015258493|tweet>
 
-*Guillermo Rauch* (Vercel CEO)
-Rauch shared two sharp takes. First, on Rust vs. Go: Vercel's Turborepo migration from Go to Rust had "quite controversial" ROI — the human migration costs were substantial, even if Rust was technically superior. His conclusion: "The calculus has now changed. What's 'best for humans' is no longer necessarily 'best for business.'" He also offered a rule of thumb for the AI era: READMEs and blogs should be written by humans for humans; internal documentation can be "AI English" for agents. "It's the story-telling moment where you want to connect with other humans through their words."
-- <https://x.com/rauchg/status/2106863842450133114|On the Rust vs. Go calculus>
-- <https://x.com/rauchg/status/2106848085267902815|On human vs. AI writing>
-- <https://x.com/rauchg/status/2106885457212825983|On harness performance improvements>
+*Amjad Masad* (CEO at Replit) noted the US is catching up on open-weights models, and expressed pride in how many family-run businesses are now powered by Replit. <https://x.com/amasad/status/2107222388429766970|tweet> <https://x.com/amasad/status/2107222889946898893|tweet>
 
+*Guillermo Rauch* (CEO at Vercel) announced *gdp-ts* — Ghosts of Departed Proofs for TypeScript — a library, linter, and AI skill for safer API design. The pattern (borrowed from Haskell) requires sensitive functions to receive typed "proofs" that callers have completed authorization checks, which the TypeScript compiler verifies at compile time. His argument: as agents write more code than humans can review, tight, compile-time constraints become essential for preventing catastrophic security bugs. <https://x.com/rauchg/status/2107119811444748555|tweet>
 
-*Aaron Levie* (Box CEO)
-Levie made an underappreciated point about AI job creation: while everyone counts jobs being replaced, the new roles being created — AI engineers, agent deployment specialists, AI services firms, repositioned data/research roles inside enterprises — are largely undercounted in published stats. Every major bank, law firm, and manufacturer is quietly building internal AI talent. On consumer AI economics, he argued the real monetization model will be commerce, ads, or device/service bundles — not subscriptions — suggesting current subscriber metrics may overstate the category's long-term subscription potential.
-- <https://x.com/levie/status/2106893015063421357|On AI job creation>
-- <https://x.com/levie/status/2106802940879192260|On consumer AI monetization>
+*Aaron Levie* (CEO at Box) argued that agent adoption is being bottlenecked by the inability to test agents in realistic environments — real files, CRM systems, email threads. Every enterprise must build this infrastructure from scratch right now, one by one. He predicts dedicated eval teams, infrastructure, and simulated environments will become standard, calling it "a huge space." <https://x.com/levie/status/2107283615247999257|tweet>
 
+*Ryo Lu* (designer at Cursor; previously Notion and Stripe) shared two things. A heartfelt remembrance of Steve Jobs on the anniversary of his passing, tracing how seeing the iMac G4 as a child in Canada inspired a career in interface design. And on the practical side: ryOS Subtitles, a Chrome extension that lets you watch Netflix with two simultaneous subtitle languages plus pronunciation guides for Japanese, Chinese, and Korean. <https://x.com/ryolu_/status/2107246891977335049|tweet> <https://x.com/ryolu_/status/2107146629338042853|tweet>
 
-*Ryo Lu* (Designer, formerly Cursor/Notion/Stripe)
-Shared early design work: a full-bleed desktop layout with a side dock — "lil computer in your pocket."
-- <https://x.com/ryolu_/status/2106777615801713054|Tweet>
+*Garry Tan* (President & CEO at Y Combinator) made the case that lab-built agent harnesses have a structural incentive to burn tokens, while startup-built harnesses can turn that into a real advantage. His example: Grep automatically converts token-heavy agent actions into deterministic, tested code by observing agent behavior. He also noted Halmos is building infrastructure for "AGI science loops" — the automated research cycles AI will eventually run. <https://x.com/garrytan/status/2107129959550685660|tweet> <https://x.com/garrytan/status/2107173670699622830|tweet>
 
+*Dan Shipper* (CEO at Every) summed up his publication's mission in one line: "as the frontier advances, so do you." <https://x.com/danshipper/status/2107173061313388636|tweet>
 
-*Garry Tan* (Y Combinator President & CEO)
-On the wave of AI OS and agent primitives being built simultaneously across teams: "When everyone is building the same primitives it does speak to needs that will only intensify from here. And we will eventually converge on the correct OS."
-- <https://x.com/garrytan/status/2106901111106097210|Tweet>
-
-
-*Matt Turck* (FirstMark Capital VC)
-Flagged the most underappreciated truth in AI: "models are grown, not built" — and we don't truly understand how they work. Highlighted the urgent need for better interpretability research, pointing to work from Goodfire AI.
-- <https://x.com/mattturck/status/2106821381765956044|Tweet>
-
-
-*Zara Zhang* (builder and investor)
-Marveled at Claude Opus 5.5's long-horizon performance: it "silently goes off to make something for 20+ minutes and comes back with a complete masterpiece." Also noted a hiring trend: X profiles are increasingly replacing traditional resumes.
-- <https://x.com/zarazhangrui/status/2106876921082712250|On Opus 5.5>
-- <https://x.com/zarazhangrui/status/2106782239493427588|On X profiles as resumes>
-
-
-*Nikunj Kothari* (FPV Ventures partner)
-Made a contrarian case for in-person founder diligence: visiting an office reveals team energy, co-founder chemistry, beta product state, and collaboration dynamics that Zoom never shows. "Founders often tell me I'm the only one that has ever asked" to visit their office.
-- <https://x.com/nikunj/status/2106957269212742135|Tweet>
-
-
-*Dan Shipper* (Every CEO)
-Has been using OpenAI's dot as his primary AI interface, his agent named "boo." But he predicts the personality-layer era is temporary: just like people loved their early OpenClaw agents' quirks but moved on as soon as something more powerful arrived, AI agent personalities will fade when functional capability leaps ahead.
-- <https://x.com/danshipper/status/2106892868564431255|Tweet>
-
-
-*PODCASTS*
-
-
-*No Priors — "Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee"*
-
-*The Takeaway:* AI transformation of incumbents requires ownership, not services — and the biggest bottleneck isn't the technology, it's human engineering.
-
-Michael Lee co-founded Sequence Holdings twenty months ago with a thesis that cuts against the venture-first instinct: the biggest AI opportunity isn't in startups displacing incumbents, it's in partnering with incumbents that already have scale, brand, and regulatory moat — and refounding them with AI from the inside. Sequence just closed the largest AI take-private to date, acquiring insurance broker Baldwin Insurance for $7.7B alongside the Dell family office.
-
-The key insight is structural. Traditional PE firms are fund-structure businesses incentivized to deploy capital and exit in 3-5 years. Sequence is a permanent holding company — no LPs, no deployment pressure, one deal per year. "We're not an investment shop. We partner with great companies to forge leaders." That long-horizon alignment makes deep AI transformation possible: engineers build for 10-year architectures instead of handoff-ready systems.
-
-The proof point is BankSouth, their first investment. In six months post-close, Sequence reduced average consumer loan underwriting time by 94% and cut commercial loan timelines from 30 days to 11. When loan volume doubled in Q2, the bank absorbed it without adding headcount.
-
-Lee is candid about what's actually hard: "We have two problems here at Sequence — an engineering problem and a human engineering problem, and the human engineering problem is much more difficult." Getting employees to feel elevated — not threatened — is the durable competitive advantage.
-
-On talent: Sequence deliberately celebrates engineers the way Blackstone celebrates investors. That cultural orientation drives recruitment of Scale AI and Palantir veterans who build their shared Atlas platform (data ontology, agent builder, orchestration, application layer) across portfolio companies.
-
-https://www.youtube.com/watch?v=TCpRwJBQvW0
-
+*Aditya Agarwal* (General Partner at South Park Commons) mused that running the Muse/Dot "computer" environment locally could make for a better agent operating environment than increasingly locked-down macOS. He also announced that robotics ML researcher Sergey Levine — Berkeley EECS faculty since 2016 and co-founder of Physical Intelligence — is visiting SPC. <https://x.com/adityaag/status/2107133989941387282|tweet> <https://x.com/adityaag/status/2107171588194152936|tweet>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
