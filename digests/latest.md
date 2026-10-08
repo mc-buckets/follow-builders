@@ -1,29 +1,61 @@
-*AI Builders Digest — October 7, 2026*
+AI Builders Digest — October 8, 2026
+
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) called yesterday "my best day so far at oai" with "ridiculous amounts of fun and intensity" — hinting that something significant is in the works. <https://x.com/thsottiaux/status/2107311729768353844|tweet>. He also flagged colleague Sergio's work on a collaborative space feature coming to ChatGPT, noting the product is improving "leaps and bounds every day." <https://x.com/thsottiaux/status/2107200530477101461|tweet>
+*Boris Cherny* — Claude Code engineer at Anthropic — pushed back on the idea that prompting Claude requires heavy scaffolding or elaborate structure. His take: "Talk to Claude the way you would a coworker." He shared actual screenshots of his own prompts to make the point that there's no secret technique, no need for over-engineered templates. <https://x.com/bcherny/status/2107565388250874193|Read the thread>
 
-*Peter Yang* (practical AI tutorials) released a new tutorial on building an AI language learning app for Japanese using live voice calls. The walkthrough covers using his spec skill for design, setting up Gemini Live APIs for voice, and creating art with Nano Banana — and can be adapted to learn 100 phrases in any language before a trip. <https://x.com/petergyang/status/2107108755699900459|tweet>
+*Thariq* — Claude Code engineer at Anthropic — shared a vision for how local AI agents will evolve: Claude's "brains" live in the cloud, while Claude gets "local hands" to operate on your computer. He flagged a real technical challenge: if Claude can only access local files when your computer is on, it may be effectively blocked from doing background work. He also noted that working at higher levels of abstraction still requires understanding the lower levels — coding agents don't change that. <https://x.com/trq212/status/2107580785456976085|Thread> (he discussed this further on Latent Space)
 
-*Nan Yu* (product for Codex at OpenAI) dropped a brief but optimistic note: "You can just fix things." <https://x.com/thenanyu/status/2107262460675891640|tweet>
+*Dan Shipper* — CEO of Every — announced that his team built the @every company agent using Claude Managed Agents. Every runs as much work as possible through agents; when a new model drops, the agent helps the whole team share skills. He also flagged a new featured app in the Slack Marketplace. <https://x.com/danshipper/status/2107575089441181861|Tweet> | <https://x.com/danshipper/status/2107507471807881262|Slack app>
 
-*Madhu Guru* (Sr. Director of AI at Meta; previously led Gemini, Veo, and Nano Banana at Google) shared a pointed product insight: teams commonly treat evals as an afterthought tacked onto QA, but AI products are different. "Your evals are your product spec." <https://x.com/realmadhuguru/status/2107292113214091355|tweet>
+*Claude* (@claudeai) — Anthropic's official account — highlighted two things: the Every team's agent built on Claude Managed Agents (with a full video interview), and a new Google Workspace integration in Claude where you can paste a Google file link or ask for a new doc/sheet/deck and it opens beside the chat for collaborative editing. Currently in beta. <https://x.com/claudeai/status/2107574195978641911|Every agent> | <https://x.com/claudeai/status/2107522599530139767|Google integration>
 
-*Thariq* (Claude Code at Anthropic) shared two technical observations. On token efficiency: using a structured planning layer is far more efficient than generating raw HTML — the model reuses components, state machines, diagrams, and code snippets instead of rebuilding them each time. <https://x.com/trq212/status/2107294499282293017|tweet> On architecture: he named the pattern where Claude runs in the cloud but accesses your local files "local hands," and noted it's coming to Cowork. <https://x.com/trq212/status/2107229483015258493|tweet>
+*Josh Woodward* — VP at Google Labs / Gemini — shared a preview of mask-based editing, calling it his favorite from what Google shipped, with more coming soon. <https://x.com/joshwoodward/status/2107679061854273656|Tweet>
 
-*Amjad Masad* (CEO at Replit) noted the US is catching up on open-weights models, and expressed pride in how many family-run businesses are now powered by Replit. <https://x.com/amasad/status/2107222388429766970|tweet> <https://x.com/amasad/status/2107222889946898893|tweet>
+*Thibault Sottiaux* — Codex engineer at OpenAI — teased Day 3 of what appears to be a multi-day OpenAI event. His team shipped four things rated "good to great," but community feedback demanded a reset. He reassured that prior improvements won't be unshipped. <https://x.com/thsottiaux/status/2107676072871600470|Tweet>
 
-*Guillermo Rauch* (CEO at Vercel) announced *gdp-ts* — Ghosts of Departed Proofs for TypeScript — a library, linter, and AI skill for safer API design. The pattern (borrowed from Haskell) requires sensitive functions to receive typed "proofs" that callers have completed authorization checks, which the TypeScript compiler verifies at compile time. His argument: as agents write more code than humans can review, tight, compile-time constraints become essential for preventing catastrophic security bugs. <https://x.com/rauchg/status/2107119811444748555|tweet>
+*Nan Yu* — Head of Product for Codex at OpenAI — raised a concern about AI-accelerated development: "I worry this will cause extreme degradation in systems that no one loves to maintain, but someone has to." <https://x.com/thenanyu/status/2107506074370920796|Tweet>
 
-*Aaron Levie* (CEO at Box) argued that agent adoption is being bottlenecked by the inability to test agents in realistic environments — real files, CRM systems, email threads. Every enterprise must build this infrastructure from scratch right now, one by one. He predicts dedicated eval teams, infrastructure, and simulated environments will become standard, calling it "a huge space." <https://x.com/levie/status/2107283615247999257|tweet>
+*Peter Steinberger* — OpenClaw / OpenAI — hooked up his team's AI agent ("claw") to X to trigger work faster. The agent identifies who last worked on related code and pings them automatically. The whole setup was built quickly and is already in use. <https://x.com/steipete/status/2107697554448421160|Tweet>
 
-*Ryo Lu* (designer at Cursor; previously Notion and Stripe) shared two things. A heartfelt remembrance of Steve Jobs on the anniversary of his passing, tracing how seeing the iMac G4 as a child in Canada inspired a career in interface design. And on the practical side: ryOS Subtitles, a Chrome extension that lets you watch Netflix with two simultaneous subtitle languages plus pronunciation guides for Japanese, Chinese, and Korean. <https://x.com/ryolu_/status/2107246891977335049|tweet> <https://x.com/ryolu_/status/2107146629338042853|tweet>
+*Amjad Masad* — Replit CEO — sounded the alarm on AI-powered reverse engineering and decompilation: "Pretty soon all software will be de facto open-source." His take: AI is coming for everything. <https://x.com/amasad/status/2107671204639465961|Tweet>
 
-*Garry Tan* (President & CEO at Y Combinator) made the case that lab-built agent harnesses have a structural incentive to burn tokens, while startup-built harnesses can turn that into a real advantage. His example: Grep automatically converts token-heavy agent actions into deterministic, tested code by observing agent behavior. He also noted Halmos is building infrastructure for "AGI science loops" — the automated research cycles AI will eventually run. <https://x.com/garrytan/status/2107129959550685660|tweet> <https://x.com/garrytan/status/2107173670699622830|tweet>
+*Guillermo Rauch* — Vercel CEO — highlighted a feature he thinks will be "extremely impactful for at-scale AI decision-making": thinking fast and a bit less fast under a confidence threshold — essentially adaptive reasoning based on confidence levels. Also: "At this rate AI will get us GTA 7 before GTA 6." <https://x.com/rauchg/status/2107606246350266469|Tweet>
 
-*Dan Shipper* (CEO at Every) summed up his publication's mission in one line: "as the frontier advances, so do you." <https://x.com/danshipper/status/2107173061313388636|tweet>
+*Aaron Levie* — Box CEO — predicted that cyber will be "one of the most defining domains for AI in the coming years." His point: AI is going to create a whole new layer of security work for enterprises — both threats and responses. <https://x.com/levie/status/2107680435644039269|Tweet>
 
-*Aditya Agarwal* (General Partner at South Park Commons) mused that running the Muse/Dot "computer" environment locally could make for a better agent operating environment than increasingly locked-down macOS. He also announced that robotics ML researcher Sergey Levine — Berkeley EECS faculty since 2016 and co-founder of Physical Intelligence — is visiting SPC. <https://x.com/adityaag/status/2107133989941387282|tweet> <https://x.com/adityaag/status/2107171588194152936|tweet>
+*Garry Tan* — YCombinator CEO — shared a demo of generating a renderer running at 35fps on 640x480 using 8 CPU cores per frame, reached in just a few prompts. <https://x.com/garrytan/status/2107630303644938505|Tweet>
 
-Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
+*swyx* — Smol AI / Cognition / Latent Space — ran a community poll: "What is your default/workhorse coding agent today, Oct 2026?" <https://x.com/swyx/status/2107646238585950540|Vote>
+
+*Sam Altman* — OpenAI CEO — posted a series of philosophical tweets: looking at the stars with awe, thanking "the machines and the structure of reality" for letting us understand a little more. <https://x.com/sama/status/2107691261776052633|Thread>
+
+*Nikunj Kothari* — Partner at FPV Ventures — called out rage baiting and dopamine-chasing among VCs on X: "X is not for nuance, so once you say something, you really can't take it back." He's visiting New York next week and is open to meeting founders or design engineers pushing the frontier — DMs open. <https://x.com/nikunj/status/2107706522457497753|Tweet>
+
+
+*PODCASTS*
+
+*Unsupervised Learning* — <https://www.youtube.com/@RedpointAI|Ep 94: Applied Compute CEO on the Limits of RL, the New AI Hyperscaler & Why Post-Training Wins Inference>
+
+*The Takeaway:* RL is a hill-climbing machine — and the hardest, most strategically sensitive part of using it is defining the hill itself. Guard your evals the way you guard your employees.
+
+Jacob Efron (Redpoint investor) sat down with the CEO of Applied Compute — a 16-month-old post-training and inference infrastructure startup working with frontier AI applications. Applied Compute's thesis: there is a new AI hyperscaler to be built, analogous to how AWS/GCP/Azure commoditized CPU compute. On the GPU substrate, they're going after the software layer between raw compute and intelligent tokens — starting with post-training, then inference, with routing and agent infrastructure further up the stack.
+
+Key insights:
+
+- *Owning your intelligence is about flexibility, not distrust.* The real case for training your own models isn't that labs are malicious — it's about control over where models run, cost/latency tradeoffs, and not being locked in when a lab decides to compete with you directly. That has already happened twice in coding (OpenAI/Windsurf, Anthropic/Windsurf).
+
+- *Post-training wins inference.* The most scaled workloads — where inference bills are highest — are exactly where post-training ROI is greatest. Applied Compute co-optimizes training and inference: how a model is trained (e.g., tool-call parallelization for agent workloads) directly shapes how inference is deployed (prefill/decode disaggregation, chip selection).
+
+- *RL on non-verifiable domains works surprisingly well.* Rubric-based RL — where you grade against expert answers rather than a definitive right/wrong — is effective and already in production. The key constraint: defining the right task, environment (tools available), and verifier. Applied Compute's Harvey case study used expert lawyer rubrics plus synthetic data to train a custom legal review model.
+
+- *Evals are a moat.* If your evals are public, you're essentially giving competitors a roadmap for how to beat you. Treat them like proprietary data — your employees aren't fungible, and neither are your trained models.
+
+- *Token efficiency is an underrated lever.* Instead of cutting inference costs through infra optimization, Applied Compute trains models to be 10% more token-efficient while preserving eval performance. Same outcome, different mechanism.
+
+- *Jevons paradox is real.* When model prices drop, usage spikes sharply. The CEO says he didn't fully appreciate how much cost optimization would outpace capability as a business driver — most open source models can "do everything" for most tasks; the frontier is more niche than people assume.
+
+- *On AI coding:* The CEO (who worked on Codex at OpenAI) supports AI coding but warns against delegating your thinking. His hiring test: let candidates use any AI tools during interviews, then ask deep questions about every decision. If the answer is "Claude did it," that's a red flag. The ability to *explain* your code matters more than syntax.
+
+Worth a listen if you're thinking about when to post-train, how to build RL environments for non-verifiable domains, or where the AI infrastructure stack is heading.
