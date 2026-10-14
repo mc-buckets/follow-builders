@@ -1,59 +1,69 @@
-AI Builders Digest — October 13, 2026
+AI Builders Digest — October 14, 2026
 
 *X / TWITTER*
 
-*Andrej Karpathy*
-Karpathy posted an expansive map of AI adoption worth saving. About 6 billion people have barely touched LLMs. Around 1-2 billion casual users see it as "a better Google search." About 20 million professionals are watching agents complete weeks-long projects in a prompt. And roughly 5,000 people with internal access to frontier-grade systems are seeing something else entirely: swarms of agents collaborating on software mega-projects, minting zero-days, running cyber offenses and defenses at machine speed, and advancing frontier mathematics — "work that would have taken top professionals years." The gap between tiers is widening, driven by problem size (you need big, hard problems to stress these systems), domain jaggedness (capability peaks where tasks are digital and verifiable), and access levels.
-<https://x.com/karpathy/status/2109361546505966046|View tweet>
+*Thibault Sottiaux* (Codex & ChatGPT PM at OpenAI) posted two cryptic but high-engagement hints that something significant is coming: "Good plans are simple. I have one that should result in significantly more usage for everyone." He also announced a "reset" is done — both posts racking up thousands of likes and hundreds of replies with speculation running hot in the comments.
+https://x.com/thsottiaux/status/2109892247580000595
+https://x.com/thsottiaux/status/2109873287853707513
 
-*Thibault Sottiaux (Codex & ChatGPT at OpenAI)*
-Day 7 of what appears to be a running product update thread: GPT-6.1 Sol context length in Codex & Work has been increased to 500k tokens (up ~80% from 272k), with a 1M token maximum. The change targets long-running tasks that struggle with context compaction. OpenAI is also dropping long context fees for GPT-6.1 Sol when usage draws from a subscription. Sottiaux noted that poll results on pricing preferences — rate limits vs. larger caps — surprised him, with the audience less enthusiastic about 2x caps than he expected.
-<https://x.com/thsottiaux/status/2109430343346581527|Context expansion announcement> • <https://x.com/thsottiaux/status/2109430894604026039|No long context fees> • <https://x.com/thsottiaux/status/2109439315570999598|Poll results>
+*Aaron Levie* (Box CEO) had a productive day of takes. On agent swarms: he predicts they'll become core enterprise workflows, with cybersecurity being the biggest beneficiary — AI can test vast permutations of attacks without fatigue, making it a natural fit. He also welcomed Meta entering the frontier AI race, arguing multiple frontier players will accelerate progress and lower costs for even the highest capability tiers. And he flagged research arguing that AI will eventually be better at designing its own agent harness on the fly than humans pre-specifying one — "ultimately must be the eventual architecture of agents."
+https://x.com/levie/status/2109682812811137061
+https://x.com/levie/status/2109711062757216738
+https://x.com/levie/status/2109788979952558255
 
-*Peter Yang (AI educator, 100K+ students)*
-Yang shared a clip from Micky (Rasmic), who teaches building with AI. Micky's take on agent trust: "I'm not at a point where I trust the agent, especially with stuff that people are using." His 4-step workflow uses evidence-driven testing — the agent presents before-and-after evidence for its work so manual review becomes confirmation rather than discovery. Yang also shared he's building a modretro game with his daughter using Codex.
-<https://x.com/petergyang/status/2109433961223180517|Agent trust workflow> • <https://x.com/petergyang/status/2109434554729824397|Modretro game with Codex>
+*Guillermo Rauch* (Vercel CEO) is pushing a CLI called fx — 6MB, starts in milliseconds, model-agnostic, with MCP, Skills, Subagents, and ACP built in. He's pushing back on the trend of coding CLIs growing into daemons, multi-layer TUIs, and client-server architectures: "The whole point of a CLI is to deliver intelligence with zero friction, and be unix-like." He also announced Muse Wonder 1.0 is now available on Vercel AI Gateway.
+https://x.com/rauchg/status/2109734766107099312
+https://x.com/rauchg/status/2109719267344261375
 
-*Thariq (Claude Code at Anthropic)*
-Thariq backed Terrence Tao's argument that we shouldn't settle for opaque superintelligence: "A key signal of intelligence is communication. We should strive to make products and models that build understanding with humans instead of disintermediating them."
-<https://x.com/trq212/status/2109329495341867391|View tweet>
+*Peter Steinberger* (OpenClaw / OpenAI) is enthusiastic about GPT-4.1 Sol Ultrafast over GPT-4o Astra: "same cost but whole different game with 250 tpm." He also doubled down on a take from last year — calling "vibes coding" a slur — drawing over 1,800 likes in agreement.
+https://x.com/steipete/status/2109730774593487009
+https://x.com/steipete/status/2109724776168300631
 
-*Aaron Levie (Box CEO)*
-Responding to Karpathy's funnel, Levie mapped the enterprise angle: most users experience AI as next-gen search, while agent swarms represent "possibly the ultimate form factor." The blockers to enterprise adoption of advanced agents: domain-specific model capability, cost, tooling harnesses, and frontier access. He sees the applied AI layer — built on domain specificity — as the biggest opportunity: "There will be a huge amount of change management necessary to get most areas of work — beyond software and AI research — to benefit from this style of agents. Companies need to upgrade their workflows, data needs to be integrated and migrated into modern platforms."
-<https://x.com/levie/status/2109467575025578330|View tweet>
+*Aditya Agarwal* (General Partner at SPC, ex-CTO of Dropbox) spotted a meaningful gap: "There is a big delta in how frontier lab employees use AI and how even the top 1% of AI orgs use AI." He suspects this gap will persist and sees a company opportunity in being the horizontal accelerant that closes it.
+https://x.com/adityaag/status/2109748501982872003
 
-*Garry Tan (YC CEO)*
-Two AI-related posts: Responding to Karpathy's funnel post, Tan called frontier AI access the "greatest alpha fountain in the history of man" and urged people to be part of the 5,000. Separately, he endorsed replacing LLM calls with deterministic code as "a no brainer" that produces better results more aligned with what users actually want.
-<https://x.com/garrytan/status/2109418482953814026|On the funnel> • <https://x.com/garrytan/status/2109410082769482174|On deterministic code>
+*Ryo Lu* (designer of Cursor, Notion, and Stripe; building ryOS) shipped two new apps: Dictionary (vocabulary, pronunciation, kanji) and Fitness (AI-powered workout planning and body/food tracking). Both sync to your ryOS Account.
+https://x.com/ryolu_/status/2109568690358555064
 
-*Matt Turck (FirstMark Capital VC)*
-An optimistic one-liner on AI and labor: "People were punch card operators then they were Lotus Notes admins, then they were Flash developers and Dreamweaver webmasters, then they were DevOps and Tableau analysts, and now they're becoming agent managers and harness engineers. It will work out just fine."
-<https://x.com/mattturck/status/2109345191010472332|View tweet>
+*Zara Zhang* (builder, Harvard '17) shared a story about what it means to vibe-code with soul: a friend built a cockroach-catching game based on a childhood memory — competing against Mom — and the person it was made for cried playing it. Her framing: "Code is the new medium for storytelling."
+https://x.com/zarazhangrui/status/2109673430245421415
 
-*Zara Zhang (Builder)*
-A useful data point on AI model differentiation: "The only place where I use Gemini these days is in Chrome."
-<https://x.com/zarazhangrui/status/2109483079106740500|View tweet>
+*Peter Yang* (AI educator and creator) has been running Grok bots as persona-based agents rather than chat threads — each persona owns a specific role: one handles customer support for his newsletter, one does YouTube research and prep, one manages family errands, one coaches his workouts. He finds the "hiring employees" model more useful than the standard AI assistant pattern and shared a walkthrough of how he uses the new Grok Bot features.
+https://x.com/petergyang/status/2109803399332213090
 
-*Dan Shipper (Every CEO)*
-Built an automated feed tracking every book he's read since 2012, and is floating the idea of making it a shared team feed at Every.
-<https://x.com/danshipper/status/2109331798282915907|View tweet>
+*Josh Woodward* (VP at Google Labs, Gemini, Google AI Studio) appeared on Lenny Rachitsky's podcast, noting it was the first time they'd met despite years of following each other's work. He said Lenny took the conversation to places Josh has never talked about publicly before.
+https://x.com/joshwoodward/status/2109646793713786970
+
+*Garry Tan* (President & CEO of Y Combinator) kept it punchy: "Nobody is coming to save you / You don't need saving."
+https://x.com/garrytan/status/2109749184639488265
+
+*Swyx* (AI Engineer events / smol.ai) had a packed room at the AI Engineer NYC conference, with a workshop co-hosted with Arize AI. The workshop writeup is now live.
+https://x.com/swyx/status/2109837651893485844
+
+*Dan Shipper* (CEO at Every) is running early tests of Muse Wonder and flagged that Wonder Full is not yet available via the API — only Standard is. He made a rough test video explaining personal benchmarks; all outputs so far have been narrated in an Australian accent for unexplained reasons.
+https://x.com/danshipper/status/2109800647575146906
+https://x.com/danshipper/status/2109778026091209087
+
 
 *PODCASTS*
 
-*No Priors — Frontier Chips for Frontier AI Labs, with Walter Goodwin, Founder/CEO of Fractile*
+*Every Podcast — "How Sam Altman Uses Dots to Take Back His Time"*
 
-_The Takeaway:_ The real battle in AI chips isn't compute — it's memory bandwidth, and the startup that can shorten its chip design cycle by months will capture the deployments that matter.
+_The Takeaway:_ Sam Altman believes AI is more like the Renaissance than the Industrial Revolution — and a single product gave him back his mornings to prove it.
 
-Walter Goodwin founded Fractile in 2022 to build fast inference chips for the world's largest models. "Full-stack" is his company's defining trait: Fractile owns every layer from architecture through physical design, which is rare. Most internal chip efforts — Google TPU, Meta MTIA, Microsoft Maya, OpenAI Jalapeno — outsource physical design to Broadcom and share the same HBM memory and tensor core fundamentals. Goodwin sees this as a structural weakness, not a strength.
+At OpenAI's Dev Day, Altman sat down with Every CEO Dan Shipper to talk about what changes when AI stops being a tool you pull out and starts being something that runs alongside your life. The most concrete example: OpenAI's new Dots feature — a persistent background agent connected to your calendar, Slack, email, and files — gave Altman back the early-morning deep-work window he'd lost to his CEO inbox. Before Dots, checking his phone for overnight emergencies would pollute his thinking for the rest of the morning. Now his Dot filters, handles, and surfaces only what actually needs him.
 
-Fractile's central bet is memory bandwidth. Early on the company worked on SRAM-based chips (fast but low capacity), similar to Groq or Cerebras. The problem: SRAM can't scale to the context lengths that modern agents require. For the past two years Fractile has been working with memory vendors to get "extremely high bandwidth access to higher-capacity DRAM memories" — aiming to combine the speed of today's fast inference chips with GPU-scale memory capacity. Volume production is expected in the second half of next year.
+"The kind of like crazy attention hacking of social media and phones and notifications had gotten way worse than I realized for me personally."
 
-Goodwin's most counterintuitive point: the "snappier chatbot" is the wrong framing for fast inference. "That's kind of the faster horses of kind of fast inference." The real payoff is running multi-trillion parameter models at thousands of tokens per second to accelerate long-running agents — compressing weeks of reasoning into hours. That's where speed becomes a capability multiplier, not just a UX improvement.
+He also uses Dots as a creative collaborator — leaving voice notes before bed and waking to not just a finished version of an idea, but the next seven steps already done. His Dot once kept searching overnight for a screenshot he'd given up finding in Slack, scanning through images until it found it.
 
-On AI for chip design: he halves (and then some) the conventional 10-year estimate for when AI can take an architect's intent all the way to a finished chip layout. The bottleneck won't be intelligence — it'll be conventional computational steps like place-and-route algorithms, which take days and resist easy parallelization. "We're going to be generating a lot of reasoning tokens before we go and place a given circuit."
+On the industry: Altman pushes back hard on the "machines take everything" narrative. His analogy — renaissance vs. industrial revolution — is that the former was fundamentally centered on people, while the latter turned many into cogs. He doesn't want AI to be the industrial revolution. "What I am hopeful for is that this is just a huge new wave of scientific discovery, art, company formation."
 
-On market structure: frontier labs can't safely go all-in on proprietary silicon. If a competitor discovers a computational breakthrough that only works on their chip, you could die in the 9 months before you retool. "It's an irrational and a very dangerous move for anybody that is playing at the frontier." Third-party chip vendors stay relevant precisely because they serve everyone.
+On OpenAI's platform strategy: he acknowledges they haven't cracked the App Store equivalent, but believes deeply that more good ideas exist outside the company than inside it. Dev Day's plugin extensions and bring-your-subscription-anywhere model are bets on that belief.
 
-<https://www.youtube.com/watch?v=OpeCP4wCxkA|Watch on YouTube>
+On speed: he uses Ultrafast for all his prompting and knows most people can't. But his view is that democratizing speed will follow the same curve as democratizing intelligence — relentlessly driving value per dollar upward. "If you lower friction a little bit, people build way more." He ended the conversation saying he wants to ship a plugin himself.
+
+<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
