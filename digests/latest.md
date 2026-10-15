@@ -1,69 +1,99 @@
-AI Builders Digest — October 14, 2026
+AI Builders Digest — October 15, 2026
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (Codex & ChatGPT PM at OpenAI) posted two cryptic but high-engagement hints that something significant is coming: "Good plans are simple. I have one that should result in significantly more usage for everyone." He also announced a "reset" is done — both posts racking up thousands of likes and hundreds of replies with speculation running hot in the comments.
-https://x.com/thsottiaux/status/2109892247580000595
-https://x.com/thsottiaux/status/2109873287853707513
+*Swyx* (swyx on X) — Latent Space Pod host, smol.ai / AI Engineer
 
-*Aaron Levie* (Box CEO) had a productive day of takes. On agent swarms: he predicts they'll become core enterprise workflows, with cybersecurity being the biggest beneficiary — AI can test vast permutations of attacks without fatigue, making it a natural fit. He also welcomed Meta entering the frontier AI race, arguing multiple frontier players will accelerate progress and lower costs for even the highest capability tiers. And he flagged research arguing that AI will eventually be better at designing its own agent harness on the fly than humans pre-specifying one — "ultimately must be the eventual architecture of agents."
-https://x.com/levie/status/2109682812811137061
-https://x.com/levie/status/2109711062757216738
-https://x.com/levie/status/2109788979952558255
+Swyx ran a global hackathon to test if AI can kill a real $43k/year SaaS product — and published the results. 72 teams submitted entries over a weekend using any model, any harness, with both AI and human evaluators. After ~100B tokens, the Latent Space Pod special reveals what's still genuinely hard about replacing "nontrivial, midtier SaaS" and announces the $10,000 winners. He also highlighted AI Engineer's talent density, noting that a single person manages the entire speaker program.
 
-*Guillermo Rauch* (Vercel CEO) is pushing a CLI called fx — 6MB, starts in milliseconds, model-agnostic, with MCP, Skills, Subagents, and ACP built in. He's pushing back on the trend of coding CLIs growing into daemons, multi-layer TUIs, and client-server architectures: "The whole point of a CLI is to deliver intelligence with zero friction, and be unix-like." He also announced Muse Wonder 1.0 is now available on Vercel AI Gateway.
-https://x.com/rauchg/status/2109734766107099312
-https://x.com/rauchg/status/2109719267344261375
+https://x.com/swyx/status/2110065576764686421
 
-*Peter Steinberger* (OpenClaw / OpenAI) is enthusiastic about GPT-4.1 Sol Ultrafast over GPT-4o Astra: "same cost but whole different game with 250 tpm." He also doubled down on a take from last year — calling "vibes coding" a slur — drawing over 1,800 likes in agreement.
-https://x.com/steipete/status/2109730774593487009
-https://x.com/steipete/status/2109724776168300631
 
-*Aditya Agarwal* (General Partner at SPC, ex-CTO of Dropbox) spotted a meaningful gap: "There is a big delta in how frontier lab employees use AI and how even the top 1% of AI orgs use AI." He suspects this gap will persist and sees a company opportunity in being the horizontal accelerant that closes it.
-https://x.com/adityaag/status/2109748501982872003
+*Josh Woodward* (joshwoodward on X) — VP, Google Labs / GeminiApp / Google AI Studio
 
-*Ryo Lu* (designer of Cursor, Notion, and Stripe; building ryOS) shipped two new apps: Dictionary (vocabulary, pronunciation, kanji) and Fitness (AI-powered workout planning and body/food tracking). Both sync to your ryOS Account.
-https://x.com/ryolu_/status/2109568690358555064
+Josh Woodward is demoing Gemini 4 Argon's multimodal capabilities with striking examples. A 24-word prompt built a custom synthesizer that turns galloping horses, rippling water, and hand gestures into music. Separately, the model designed a custom furniture leg — 96mm wide, stacked spheres — with the hardest part apparently being aesthetic, not technical.
 
-*Zara Zhang* (builder, Harvard '17) shared a story about what it means to vibe-code with soul: a friend built a cockroach-catching game based on a childhood memory — competing against Mom — and the person it was made for cried playing it. Her framing: "Code is the new medium for storytelling."
-https://x.com/zarazhangrui/status/2109673430245421415
+https://x.com/joshwoodward/status/2110179883045560674
+https://x.com/joshwoodward/status/2110089824573272547
 
-*Peter Yang* (AI educator and creator) has been running Grok bots as persona-based agents rather than chat threads — each persona owns a specific role: one handles customer support for his newsletter, one does YouTube research and prep, one manages family errands, one coaches his workouts. He finds the "hiring employees" model more useful than the standard AI assistant pattern and shared a walkthrough of how he uses the new Grok Bot features.
-https://x.com/petergyang/status/2109803399332213090
 
-*Josh Woodward* (VP at Google Labs, Gemini, Google AI Studio) appeared on Lenny Rachitsky's podcast, noting it was the first time they'd met despite years of following each other's work. He said Lenny took the conversation to places Josh has never talked about publicly before.
-https://x.com/joshwoodward/status/2109646793713786970
+*Thibault Sottiaux* (thsottiaux on X) — Codex & ChatGPT, OpenAI
 
-*Garry Tan* (President & CEO of Y Combinator) kept it punchy: "Nobody is coming to save you / You don't need saving."
-https://x.com/garrytan/status/2109749184639488265
+Day 9 of shipping: OpenAI rolled out storage optimizations for the ChatGPT and Codex desktop apps that cut disk usage by 60%. A small but real fix driven by power user feedback on running out of space.
 
-*Swyx* (AI Engineer events / smol.ai) had a packed room at the AI Engineer NYC conference, with a workshop co-hosted with Arize AI. The workshop writeup is now live.
-https://x.com/swyx/status/2109837651893485844
+https://x.com/thsottiaux/status/2110151780478927344
 
-*Dan Shipper* (CEO at Every) is running early tests of Muse Wonder and flagged that Wonder Full is not yet available via the API — only Standard is. He made a rough test video explaining personal benchmarks; all outputs so far have been narrated in an Australian accent for unexplained reasons.
-https://x.com/danshipper/status/2109800647575146906
-https://x.com/danshipper/status/2109778026091209087
+
+*Amjad Masad* (amasad on X) — CEO, Replit
+
+Replit CEO Amjad Masad made a pointed observation about AI diffusion timelines: even if you paused frontier research today, it would take another 10 years for AI to fully spread through the economy. Replit's bet is on accelerating that adoption curve through solutions partners — not waiting on the frontier to move.
+
+https://x.com/amasad/status/2110128937049452575
+
+
+*Guillermo Rauch* (rauchg on X) — CEO, Vercel
+
+Vercel CEO Guillermo Rauch reacted to Gemini 4 Argon's release with a clear take: never bet against Google, who built transformers and has unmatched data, engineering talent, and compute. His bigger point was about strategy — everyone has rightly pivoted back to coding, coding agents are the killer app of AI, and the right move for any individual or company right now is to stay model-agnostic.
+
+https://x.com/rauchg/status/2110044152482365747
+
+
+*Aaron Levie* (levie on X) — CEO, Box
+
+Box CEO Aaron Levie published hard numbers on Gemini 4 Argon after a week of internal testing on Box's Complex Work eval. Gemini 4 Argon jumped 14 percentage points over Gemini 3.1 Pro across enterprise tasks — with standout wins in healthcare (+25 pts), technology (+37 pts), and consumer products (+33 pts). The key differentiator: Gemini 4 actually completes tasks without stopping short, which matters enormously for complex workflows. Gemini 4 Argon will be available in Box AI Studio shortly.
+
+In a separate post, Levie laid out why cybersecurity is one of the biggest upcoming opportunities for AI agents — both as a threat vector (100x expanded attack surface) and as a defense (agent swarms reviewing every line of code, triaging alerts at inhuman scale). "You can never hire enough people or work through the backlog of all known risks. Agents actually give you a chance finally to have far better coverage."
+
+https://x.com/levie/status/2110046686198550539
+https://x.com/levie/status/2110227571090788526
+
+
+*Garry Tan* (garrytan on X) — President & CEO, Y Combinator
+
+YC's Garry Tan recommended AsideAI as a real unlock for AI harnesses — it gives agents access to a real browser with your actual credentials, not a sandboxed simulation.
+
+https://x.com/garrytan/status/2110053836945756234
+
+
+*Dan Shipper* (danshipper on X) — CEO, Every
+
+Every CEO Dan Shipper has mixed signals on Gemini 4. On the "Google is back" wave, he ran his own benchmark: Gemini 4 Argon came in at just 21% on Every's senior engineer task — well below Sol 6 and even Muse. The vibe may be there, but at least on this coding eval, it's not yet at the frontier.
+
+https://x.com/danshipper/status/2110056016872427944
+https://x.com/danshipper/status/2110039417650024592
+
+
+*OFFICIAL BLOGS*
+
+*Anthropic Engineering:* <https://www.anthropic.com/engineering/redesigning-source-control|Redesigning source control at Anthropic>
+
+Anthropic built and fully deployed Scion, an in-house version control system, in five months — because Claude pushed git past its limits. In May 2026, Anthropic averaged ~2,500 code merges per day. By September: over 30,000 per day. The monorepo's main branch history alone hit ~100 GB, and they were performing ~25 million code checkouts per day for CI.
+
+Scion's core insight: git was designed for offline, distributed work. Anthropic's agents are always online. So they built a server-centric system where clients fetch only what they need, commits happen server-side with no locking, and every component scales horizontally. The infrastructure footprint is now *200x smaller* than their previous git mirroring setup in CPU and memory — and CI checkouts went from minutes to seconds, freeing up 25% of CI capacity.
+
+One striking anecdote: an early ingestion pipeline was rewritten from scratch by Claude Mythos Preview with no further instructions — the result was 20x more memory-efficient and 4x faster. A team of seven people built both Scion and Antique (the companion code review tool), while the merge rate grew 10x.
+
+The post closes with a note for the broader ecosystem: Scion won't be open-sourced (too bespoke), but Anthropic is sharing the architecture so GitHub, GitLab, and the OSS community can apply its ideas to git without departing from the overall model.
+
+<https://www.anthropic.com/engineering/redesigning-source-control|Read the full post>
 
 
 *PODCASTS*
 
-*Every Podcast — "How Sam Altman Uses Dots to Take Back His Time"*
+*Training Data:* David Silver and Lasse Espeholt of Ineffable Intelligence: A Superlearner for the Age of Experience
 
-_The Takeaway:_ Sam Altman believes AI is more like the Renaissance than the Industrial Revolution — and a single product gave him back his mornings to prove it.
+_The Takeaway: AlphaGo's creator thinks language models are the wrong path to superintelligence — and he just bet his career on a different approach._
 
-At OpenAI's Dev Day, Altman sat down with Every CEO Dan Shipper to talk about what changes when AI stops being a tool you pull out and starts being something that runs alongside your life. The most concrete example: OpenAI's new Dots feature — a persistent background agent connected to your calendar, Slack, email, and files — gave Altman back the early-morning deep-work window he'd lost to his CEO inbox. Before Dots, checking his phone for overnight emergencies would pollute his thinking for the rest of the morning. Now his Dot filters, handles, and surfaces only what actually needs him.
+David Silver is the researcher who proved superhuman AI was possible by solving the game of Go. Lasse Espeholt built the distributed reinforcement learning architectures that the field still runs on today. Together they co-founded Ineffable Intelligence, a 20-person lab quietly building what they call a "super learner" — an AI that discovers knowledge autonomously, without human data, the way humans collectively discovered language, math, and science from scratch.
 
-"The kind of like crazy attention hacking of social media and phones and notifications had gotten way worse than I realized for me personally."
+Their central bet is that LLMs, for all their power, are fundamentally limited by human priors. Every trillion-token training corpus bakes in our biases, our flat-earth assumptions of an earlier era, our language. Silver's analogy: "Imagine if we were only able to use all of the language that humans used 500 years ago — our agents would believe the world was flat." AlphaZero showed this concretely: after two years building AlphaGo with human data, AlphaZero — trained with no human priors at all — needed just four hours to surpass it in chess.
 
-He also uses Dots as a creative collaborator — leaving voice notes before bed and waking to not just a finished version of an idea, but the next seven steps already done. His Dot once kept searching overnight for a screenshot he'd given up finding in Slack, scanning through images until it found it.
+Ineffable's approach: drop agents into "crucibles," simulated environments with massive emergent complexity (physics engines, millions of interacting agents), give them simple objectives, and let emergence do the work — the same way pursuing basic survival gave rise to human civilization, language, and science. They're not handcrafting puzzles or specifying what the agents should discover.
 
-On the industry: Altman pushes back hard on the "machines take everything" narrative. His analogy — renaissance vs. industrial revolution — is that the former was fundamentally centered on people, while the latter turned many into cogs. He doesn't want AI to be the industrial revolution. "What I am hopeful for is that this is just a huge new wave of scientific discovery, art, company formation."
+Silver's forecast: strong evidence the approach works within a year. First contact with true superintelligence — systems that discover things beyond human knowledge across science, math, technology — within three years.
 
-On OpenAI's platform strategy: he acknowledges they haven't cracked the App Store equivalent, but believes deeply that more good ideas exist outside the company than inside it. Dev Day's plugin extensions and bring-your-subscription-anywhere model are bets on that belief.
+They're the first customers of the largest GPU cluster on GCP (Vera Rubin architecture), which they describe as key: a setup where one rack behaves as one machine with very high bandwidth — critical for the fast iteration cycles RL demands.
 
-On speed: he uses Ultrafast for all his prompting and knows most people can't. But his view is that democratizing speed will follow the same curve as democratizing intelligence — relentlessly driving value per dollar upward. "If you lower friction a little bit, people build way more." He ended the conversation saying he wants to ship a plugin himself.
-
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
-
+https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
