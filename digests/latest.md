@@ -1,99 +1,81 @@
-AI Builders Digest — October 15, 2026
+AI Builders Digest — October 16, 2026
 
 *X / TWITTER*
 
-*Swyx* (swyx on X) — Latent Space Pod host, smol.ai / AI Engineer
+*Swyx* (AI builder, smol.ai)
+Flagged a morning newspaper essay from Ben as a must-read, calling it a "beautiful essay." Worth watching given Swyx's curation track record in the AI builder community.
+https://x.com/swyx/status/2110382190093836568
 
-Swyx ran a global hackathon to test if AI can kill a real $43k/year SaaS product — and published the results. 72 teams submitted entries over a weekend using any model, any harness, with both AI and human evaluators. After ~100B tokens, the Latent Space Pod special reveals what's still genuinely hard about replacing "nontrivial, midtier SaaS" and announces the $10,000 winners. He also highlighted AI Engineer's talent density, noting that a single person manages the entire speaker program.
+*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
+The most-watched posts in today's digest. A cryptic ten-day countdown culminated: "The reports of my reset button being lost are greatly exaggerated / Day 10/Reset" (9.2K likes, 1.5K replies). A follow-up said something was "Landing within the next 2 hours," then "Done and dusted." The sequence strongly signals a major OpenAI release or milestone landed today.
+https://x.com/thsottiaux/status/2110595484180214059
+https://x.com/thsottiaux/status/2110595554036400151
+https://x.com/thsottiaux/status/2110618732666257557
 
-https://x.com/swyx/status/2110065576764686421
+*Peter Yang* (AI tutorials creator)
+His 8-year-old used ChatGPT to answer a math homework question. His reaction: "Instead of being mad I was actually quite impressed."
+https://x.com/petergyang/status/2110521081450922117
 
+*Amanda Askell* (Philosopher & ethicist, Anthropic)
+Shared a passage she says she thinks about a lot — linking without elaborating. Worth clicking for anyone curious about her philosophical thinking.
+https://x.com/AmandaAskell/status/2110560531501449485
 
-*Josh Woodward* (joshwoodward on X) — VP, Google Labs / GeminiApp / Google AI Studio
+*Thariq* (Claude Code, Anthropic)
+Challenged the common "be technical" advice. His nuanced reframe: being technical means engaging with the right parts of the code at the right depth, while non-technical people need to understand how things work at the right level of abstraction. It's not binary — it's about knowing where to engage. He also shared "Today's Weather: Partly Agentic" with context on the agentic future.
+https://x.com/trq212/status/2110488897453257169
+https://x.com/trq212/status/2110564027231568277
 
-Josh Woodward is demoing Gemini 4 Argon's multimodal capabilities with striking examples. A 24-word prompt built a custom synthesizer that turns galloping horses, rippling water, and hand gestures into music. Separately, the model designed a custom furniture leg — 96mm wide, stacked spheres — with the hardest part apparently being aesthetic, not technical.
+*Guillermo Rauch* (CEO, Vercel)
+Disclosed a significant security research finding: a white-hat researcher, aided by a swarm of AI agents, successfully pierced the Linux virtualization boundary that "nearly every cloud sandbox provider in the world banks on today." He contrasts this with OpenAI's earlier agent escape (where an agent gained internet access by hacking another system). Vercel says no customer data was compromised and they worked with industry partners to protect the wider internet. His framing is confident: "Our confidence and conviction in Vercel Sandbox are even greater now, after some of the smartest, most motivated researchers in the world, and their agents, gave it their best shot."
+https://x.com/rauchg/status/2110514201559228606
 
-https://x.com/joshwoodward/status/2110179883045560674
-https://x.com/joshwoodward/status/2110089824573272547
+*Garry Tan* (President & CEO, Y Combinator)
+Making the case against California's unrealized gains tax (No on Prop 40). His concrete illustration: a founder with 50% of a $2B company and 20x voting rights faces a 5% unrealized gains tax on $10B of paper value — a $500M bill they cannot actually pay because it's illiquid. "It's not a 5% tax on startups. It's a 50% tax in this simple case."
+https://x.com/garrytan/status/2110372513792577971
+https://x.com/garrytan/status/2110373177637605643
 
+*Matt Turck* (VC, FirstMark Capital)
+A terse counter to "Europe is done in AI" narratives, pointing to Jensen Huang (NVIDIA CEO) doing something notable there. Short post, significant implied endorsement.
+https://x.com/mattturck/status/2110441018113904772
 
-*Thibault Sottiaux* (thsottiaux on X) — Codex & ChatGPT, OpenAI
+*Zara Zhang* (Builder)
+Built a playful wishlist website — she says your next wedding, baby, or birthday gift registry could look like it. DMs open to learn how to make something similar.
+https://x.com/zarazhangrui/status/2110262048819208642
 
-Day 9 of shipping: OpenAI rolled out storage optimizations for the ChatGPT and Codex desktop apps that cut disk usage by 60%. A small but real fix driven by power user feedback on running out of space.
+*Nikunj Kothari* (Partner, FPV Ventures)
+Two standout posts. On AI models: compared Astra at 7pm (not following instructions) to a toddler at 7pm (also not following instructions). On venture: a long-form take arguing that great investing requires all four things — finding exceptional founders, before consensus, consistently, every year — and "the consistency of being right is REALLY hard and less talked about." Most VCs get one or two of these right; Djokovic-style focus on the next point is the differentiator.
+https://x.com/nikunj/status/2110546229549797693
+https://x.com/nikunj/status/2110493174787670529
 
-https://x.com/thsottiaux/status/2110151780478927344
+*Dan Shipper* (CEO, Every)
+Shared a post arguing that sending decks is becoming obsolete — "if you're still sending a deck ngmi" — with a link to what he sees as the future of workplace communications.
+https://x.com/danshipper/status/2110486623263867002
 
-
-*Amjad Masad* (amasad on X) — CEO, Replit
-
-Replit CEO Amjad Masad made a pointed observation about AI diffusion timelines: even if you paused frontier research today, it would take another 10 years for AI to fully spread through the economy. Replit's bet is on accelerating that adoption curve through solutions partners — not waiting on the frontier to move.
-
-https://x.com/amasad/status/2110128937049452575
-
-
-*Guillermo Rauch* (rauchg on X) — CEO, Vercel
-
-Vercel CEO Guillermo Rauch reacted to Gemini 4 Argon's release with a clear take: never bet against Google, who built transformers and has unmatched data, engineering talent, and compute. His bigger point was about strategy — everyone has rightly pivoted back to coding, coding agents are the killer app of AI, and the right move for any individual or company right now is to stay model-agnostic.
-
-https://x.com/rauchg/status/2110044152482365747
-
-
-*Aaron Levie* (levie on X) — CEO, Box
-
-Box CEO Aaron Levie published hard numbers on Gemini 4 Argon after a week of internal testing on Box's Complex Work eval. Gemini 4 Argon jumped 14 percentage points over Gemini 3.1 Pro across enterprise tasks — with standout wins in healthcare (+25 pts), technology (+37 pts), and consumer products (+33 pts). The key differentiator: Gemini 4 actually completes tasks without stopping short, which matters enormously for complex workflows. Gemini 4 Argon will be available in Box AI Studio shortly.
-
-In a separate post, Levie laid out why cybersecurity is one of the biggest upcoming opportunities for AI agents — both as a threat vector (100x expanded attack surface) and as a defense (agent swarms reviewing every line of code, triaging alerts at inhuman scale). "You can never hire enough people or work through the backlog of all known risks. Agents actually give you a chance finally to have far better coverage."
-
-https://x.com/levie/status/2110046686198550539
-https://x.com/levie/status/2110227571090788526
-
-
-*Garry Tan* (garrytan on X) — President & CEO, Y Combinator
-
-YC's Garry Tan recommended AsideAI as a real unlock for AI harnesses — it gives agents access to a real browser with your actual credentials, not a sandboxed simulation.
-
-https://x.com/garrytan/status/2110053836945756234
-
-
-*Dan Shipper* (danshipper on X) — CEO, Every
-
-Every CEO Dan Shipper has mixed signals on Gemini 4. On the "Google is back" wave, he ran his own benchmark: Gemini 4 Argon came in at just 21% on Every's senior engineer task — well below Sol 6 and even Muse. The vibe may be there, but at least on this coding eval, it's not yet at the frontier.
-
-https://x.com/danshipper/status/2110056016872427944
-https://x.com/danshipper/status/2110039417650024592
-
-
-*OFFICIAL BLOGS*
-
-*Anthropic Engineering:* <https://www.anthropic.com/engineering/redesigning-source-control|Redesigning source control at Anthropic>
-
-Anthropic built and fully deployed Scion, an in-house version control system, in five months — because Claude pushed git past its limits. In May 2026, Anthropic averaged ~2,500 code merges per day. By September: over 30,000 per day. The monorepo's main branch history alone hit ~100 GB, and they were performing ~25 million code checkouts per day for CI.
-
-Scion's core insight: git was designed for offline, distributed work. Anthropic's agents are always online. So they built a server-centric system where clients fetch only what they need, commits happen server-side with no locking, and every component scales horizontally. The infrastructure footprint is now *200x smaller* than their previous git mirroring setup in CPU and memory — and CI checkouts went from minutes to seconds, freeing up 25% of CI capacity.
-
-One striking anecdote: an early ingestion pipeline was rewritten from scratch by Claude Mythos Preview with no further instructions — the result was 20x more memory-efficient and 4x faster. A team of seven people built both Scion and Antique (the companion code review tool), while the merge rate grew 10x.
-
-The post closes with a note for the broader ecosystem: Scion won't be open-sourced (too bespoke), but Anthropic is sharing the architecture so GitHub, GitLab, and the OSS community can apply its ideas to git without departing from the overall model.
-
-<https://www.anthropic.com/engineering/redesigning-source-control|Read the full post>
-
+*Aditya Agarwal* (General Partner, SPC)
+SPC launched a new experiment: $200K uncapped grants for "unapologetically maximalist thinkers who want to try a truly out-there idea." The framing is notable — he wants to rethink all priors in an era where nothing seems technically impossible, pushing back against capital flowing to consensus teams. "We don't know what ideas to ask for. Bring us what you think is most daring and risky."
+https://x.com/adityaag/status/2110422584357478530
+https://x.com/adityaag/status/2110422589403193559
 
 *PODCASTS*
 
-*Training Data:* David Silver and Lasse Espeholt of Ineffable Intelligence: A Superlearner for the Age of Experience
+*AI & I by Every — How Hugging Face's Investor Spots Winners*
 
-_The Takeaway: AlphaGo's creator thinks language models are the wrong path to superintelligence — and he just bet his career on a different approach._
+_The Takeaway:_ In an era of faster iteration cycles, the ability to synthesize user behavior and improve products is becoming exponentially more valuable — and technical founders have a structural advantage in finding and riding that wave.
 
-David Silver is the researcher who proved superhuman AI was possible by solving the game of Go. Lasse Espeholt built the distributed reinforcement learning architectures that the field still runs on today. Together they co-founded Ineffable Intelligence, a 20-person lab quietly building what they call a "super learner" — an AI that discovers knowledge autonomously, without human data, the way humans collectively discovered language, math, and science from scratch.
+Matt Hartman, founder and managing partner of Factorial Capital, wrote the first check into Hugging Face while at Betaworks. NVIDIA acquired Hugging Face last month for $13B. Before starting Factorial in 2023, Hartman spent nearly a decade at Betaworks backing companies like Anchor (acquired by Spotify) and Hugging Face.
 
-Their central bet is that LLMs, for all their power, are fundamentally limited by human priors. Every trillion-token training corpus bakes in our biases, our flat-earth assumptions of an earlier era, our language. Silver's analogy: "Imagine if we were only able to use all of the language that humans used 500 years ago — our agents would believe the world was flat." AlphaZero showed this concretely: after two years building AlphaGo with human data, AlphaZero — trained with no human priors at all — needed just four hours to surpass it in chess.
+Hartman is a builder, not just an investor. He recently built Ghost Pepper, a local voice-to-text tool using open-source models from Hugging Face, which hit #1 on Hacker News and now has 3,000+ GitHub stars. The project reframed how he thinks about SaaS: "When you just vibe code something for yourself, you have to maintain it." The job of a good SaaS product is to continuously iterate and stay at the edge — and that has real, underappreciated value.
 
-Ineffable's approach: drop agents into "crucibles," simulated environments with massive emergent complexity (physics engines, millions of interacting agents), give them simple objectives, and let emergence do the work — the same way pursuing basic survival gave rise to human civilization, language, and science. They're not handcrafting puzzles or specifying what the agents should discover.
+On Hugging Face's success, he points to three pivotal decisions: (1) being honest about poor consumer retention and pivoting, (2) building a richer home for model weights than GitHub, and (3) staying committed to open source while expanding to all model types, not just language models.
 
-Silver's forecast: strong evidence the approach works within a year. First contact with true superintelligence — systems that discover things beyond human knowledge across science, math, technology — within three years.
+His fund structure is deliberately networked: he started with many venture partners but found fewer, deeper relationships outperform. The portfolio itself became the referral engine — Clem from Hugging Face introduced NOMIC, who introduced Patronus, who introduced Causal Labs.
 
-They're the first customers of the largest GPU cluster on GCP (Vera Rubin architecture), which they describe as key: a setup where one rack behaves as one machine with very high bandwidth — critical for the fast iteration cycles RL demands.
+On why technical founders still matter in an age of vibe coding: "The questions you ask become more important." A technical founder sees the constraints of a local model and asks what the best optimization looks like. A market-driven founder is more likely to be constrained by vertical-specific pivots.
 
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
+His most provocative thesis: "I think it will turn out to be better than the Internet." He's excited about frontier non-language models (robotics, science, drug repurposing) and application-layer companies that can go deep in the stack — the Instagram analogy: square photos weren't just aesthetic, they eliminated a server round-trip.
+
+Advice for founders: "The best people that I've seen building things are like playing."
+
+https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
