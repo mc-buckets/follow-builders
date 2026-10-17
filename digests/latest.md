@@ -1,81 +1,68 @@
-AI Builders Digest — October 16, 2026
+AI Builders Digest — October 17, 2026
 
 *X / TWITTER*
 
-*Swyx* (AI builder, smol.ai)
-Flagged a morning newspaper essay from Ben as a must-read, calling it a "beautiful essay." Worth watching given Swyx's curation track record in the AI builder community.
-https://x.com/swyx/status/2110382190093836568
+*Boris Cherny — Claude at Anthropic*
+Cherny highlighted Anthropic's progress on prompt injection and announced a partnership with Gray Swan to host a competition around it. The framing: as AI agents take on more real-world tasks, solving prompt injection becomes urgent across the industry, not just for Anthropic.
+https://x.com/bcherny/status/2110791698611855624
 
-*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-The most-watched posts in today's digest. A cryptic ten-day countdown culminated: "The reports of my reset button being lost are greatly exaggerated / Day 10/Reset" (9.2K likes, 1.5K replies). A follow-up said something was "Landing within the next 2 hours," then "Done and dusted." The sequence strongly signals a major OpenAI release or milestone landed today.
-https://x.com/thsottiaux/status/2110595484180214059
-https://x.com/thsottiaux/status/2110595554036400151
-https://x.com/thsottiaux/status/2110618732666257557
+*Thibault Sottiaux — Codex & ChatGPT at OpenAI*
+Sottiaux posted a cryptic line that lit up replies: "Either we are out of ideas or we are cooking. Time will tell." (2,700+ likes, 899 replies.) He also noted he now programs in French — presumably a flex on the multilingual capabilities of whatever he's building.
+https://x.com/thsottiaux/status/2110971985417441512
+https://x.com/thsottiaux/status/2110864861119045840
 
-*Peter Yang* (AI tutorials creator)
-His 8-year-old used ChatGPT to answer a math homework question. His reaction: "Instead of being mad I was actually quite impressed."
-https://x.com/petergyang/status/2110521081450922117
+*Aaron Levie — CEO at Box*
+Levie dropped a long-form take on where AI automation is heading: we've been in "augmentation mode" for 3+ years, but the next shift is agent swarms running in the background with no human in the loop. He argues most knowledge work is constrained by moving data, reviewing documents, and processing logs — tasks AI can now parallelize at scale. Separately, he called Meta's release of the Muse open-weights model "a huge step forward for OSS" and predicted it will further accelerate AI diffusion as enterprises mix frontier models with cheaper post-trained ones.
+https://x.com/levie/status/2110622982762803449
+https://x.com/levie/status/2110787013809222141
 
-*Amanda Askell* (Philosopher & ethicist, Anthropic)
-Shared a passage she says she thinks about a lot — linking without elaborating. Worth clicking for anyone curious about her philosophical thinking.
-https://x.com/AmandaAskell/status/2110560531501449485
+*Aaron Levie also on the tech optimism wave:*
+"So in fact we actually can get robots, flying cars, superintelligence, fast internet on planes, space travel, space colonies, orbital data centers, unlimited energy, likely cures for nearly every disease, and more all in our life times."
+https://x.com/levie/status/2110975373219688624
 
-*Thariq* (Claude Code, Anthropic)
-Challenged the common "be technical" advice. His nuanced reframe: being technical means engaging with the right parts of the code at the right depth, while non-technical people need to understand how things work at the right level of abstraction. It's not binary — it's about knowing where to engage. He also shared "Today's Weather: Partly Agentic" with context on the agentic future.
-https://x.com/trq212/status/2110488897453257169
-https://x.com/trq212/status/2110564027231568277
+*Garry Tan — President & CEO at Y Combinator*
+Tan flagged the Meta open-weights model drop as a signal: "Open weight models rising." He also co-hosted a Garry's List event with Metis65.
+https://x.com/garrytan/status/2110838867213668587
 
-*Guillermo Rauch* (CEO, Vercel)
-Disclosed a significant security research finding: a white-hat researcher, aided by a swarm of AI agents, successfully pierced the Linux virtualization boundary that "nearly every cloud sandbox provider in the world banks on today." He contrasts this with OpenAI's earlier agent escape (where an agent gained internet access by hacking another system). Vercel says no customer data was compromised and they worked with industry partners to protect the wider internet. His framing is confident: "Our confidence and conviction in Vercel Sandbox are even greater now, after some of the smartest, most motivated researchers in the world, and their agents, gave it their best shot."
-https://x.com/rauchg/status/2110514201559228606
+*Matt Turck — VC at FirstMark Capital*
+Turck promoted a deep-dive MAD Podcast episode with Diogo Almeida, CEO of TypeSafe (the company behind Jev), covering what Jev actually is, why RLHF creates problems for automation, how copycats are missing the hard part, and why benchmarks mislead users. Topics include RLHF vs. RLCD, machine-native AI, composability, and why classification might be "AI-complete."
+https://x.com/mattturck/status/2110799882952831302
 
-*Garry Tan* (President & CEO, Y Combinator)
-Making the case against California's unrealized gains tax (No on Prop 40). His concrete illustration: a founder with 50% of a $2B company and 20x voting rights faces a 5% unrealized gains tax on $10B of paper value — a $500M bill they cannot actually pay because it's illiquid. "It's not a 5% tax on startups. It's a 50% tax in this simple case."
-https://x.com/garrytan/status/2110372513792577971
-https://x.com/garrytan/status/2110373177637605643
+*Nan Yu — Product at Codex, OpenAI*
+Nan challenged the shallow definition of taste: "Taste does not mean taste in aesthetics. That is the shallowest definition of taste, and uninteresting because it's so common." A subtle but pointed pushback on how "taste" gets used in product conversations.
+https://x.com/thenanyu/status/2110730151222980849
 
-*Matt Turck* (VC, FirstMark Capital)
-A terse counter to "Europe is done in AI" narratives, pointing to Jensen Huang (NVIDIA CEO) doing something notable there. Short post, significant implied endorsement.
-https://x.com/mattturck/status/2110441018113904772
+*Dan Shipper — CEO at Every*
+Shipper riffed on the limits of AI interpretability with a Good Will Hunting-style monologue: knowing a neuron lights up for the Eiffel Tower doesn't tell you what the model is planning. Sharp critique of the idea that mechanistic interpretability alone gets us to alignment. Also dropped that something at Every went live.
+https://x.com/danshipper/status/2110831666587713810
 
-*Zara Zhang* (Builder)
-Built a playful wishlist website — she says your next wedding, baby, or birthday gift registry could look like it. DMs open to learn how to make something similar.
-https://x.com/zarazhangrui/status/2110262048819208642
+*Aditya Agarwal — General Partner at SPC*
+Agarwal flagged Goodfire as potentially one of the most important companies out of SPC: "They are showing that interpretability and alignment can be approached as engineering problems." Strong conviction call.
+https://x.com/adityaag/status/2110779602453066224
 
-*Nikunj Kothari* (Partner, FPV Ventures)
-Two standout posts. On AI models: compared Astra at 7pm (not following instructions) to a toddler at 7pm (also not following instructions). On venture: a long-form take arguing that great investing requires all four things — finding exceptional founders, before consensus, consistently, every year — and "the consistency of being right is REALLY hard and less talked about." Most VCs get one or two of these right; Djokovic-style focus on the next point is the differentiator.
-https://x.com/nikunj/status/2110546229549797693
-https://x.com/nikunj/status/2110493174787670529
+*Zara Zhang — Builder*
+Zhang built a Harry Potter-style newspaper where images come to life — "The Toddler Times" — a fun creative AI demo. She also shared an Ezra Klein quote worth saving: "Never underestimate your audience's intelligence and never overestimate their prior knowledge."
+https://x.com/zarazhangrui/status/2110984552743309530
+https://x.com/zarazhangrui/status/2110815456458412179
 
-*Dan Shipper* (CEO, Every)
-Shared a post arguing that sending decks is becoming obsolete — "if you're still sending a deck ngmi" — with a link to what he sees as the future of workplace communications.
-https://x.com/danshipper/status/2110486623263867002
-
-*Aditya Agarwal* (General Partner, SPC)
-SPC launched a new experiment: $200K uncapped grants for "unapologetically maximalist thinkers who want to try a truly out-there idea." The framing is notable — he wants to rethink all priors in an era where nothing seems technically impossible, pushing back against capital flowing to consensus teams. "We don't know what ideas to ask for. Bring us what you think is most daring and risky."
-https://x.com/adityaag/status/2110422584357478530
-https://x.com/adityaag/status/2110422589403193559
 
 *PODCASTS*
 
-*AI & I by Every — How Hugging Face's Investor Spots Winners*
+*The MAD Podcast with Matt Turck*
+*Jev: The AI That Makes Decisions, Not Text - and Why It Changes Everything (Diogo Almeida)*
 
-_The Takeaway:_ In an era of faster iteration cycles, the ability to synthesize user behavior and improve products is becoming exponentially more valuable — and technical founders have a structural advantage in finding and riding that wave.
+*The Takeaway:* The next major AI unlock isn't smarter chatbots — it's AI that plugs reliably into software as a decision-making layer, not a text generator.
 
-Matt Hartman, founder and managing partner of Factorial Capital, wrote the first check into Hugging Face while at Betaworks. NVIDIA acquired Hugging Face last month for $13B. Before starting Factorial in 2023, Hartman spent nearly a decade at Betaworks backing companies like Anchor (acquired by Spotify) and Hugging Face.
+Diogo Almeida, CEO of TypeSafe (the company behind Jev), makes a case that the AI world has been optimizing for the wrong thing. RLHF — reinforcement learning from human feedback, which Almeida co-invented at OpenAI — trained models to sound great, not to be reliable. Models became "95% Einstein, 5% Mr. Bean," and the problem is they don't tell you which mode they're in. That unreliability is why chat-based AI has failed to automate most real workflows despite years of hype.
 
-Hartman is a builder, not just an investor. He recently built Ghost Pepper, a local voice-to-text tool using open-source models from Hugging Face, which hit #1 on Hacker News and now has 3,000+ GitHub stars. The project reframed how he thinks about SaaS: "When you just vibe code something for yourself, you have to maintain it." The job of a good SaaS product is to continuously iterate and stay at the edge — and that has real, underappreciated value.
+Jev's bet is on what Almeida calls "machine-native AI" — models trained to output decisions and probabilities rather than prose. Instead of writing a giant system prompt and hoping the LLM follows it, you build explicit classifiers for each decision point. These are composable, measurable, and code-compatible. The analogy: logic gates. Software became powerful not through smart gates, but by composing simple ones reliably.
 
-On Hugging Face's success, he points to three pivotal decisions: (1) being honest about poor consumer retention and pivoting, (2) building a richer home for model weights than GitHub, and (3) staying committed to open source while expanding to all model types, not just language models.
+He's dismissive of critics who call Jev "just a classifier": "How does Facebook work? Classifiers. How does TikTok work? Classifiers. How does Google work? Classifiers." The point is that classification is the interface between intelligence and software — and if you get it cheap, fast, and reliable, it spreads everywhere (Jevons paradox, hence the name).
 
-His fund structure is deliberately networked: he started with many venture partners but found fewer, deeper relationships outperform. The portfolio itself became the referral engine — Clem from Hugging Face introduced NOMIC, who introduced Patronus, who introduced Causal Labs.
+On copycats emerging just weeks after launch: Almeida says they're copying the interface, not the intelligence. Building a reliable system-one model requires years of work on training methodology, data construction, and calibration — not a weekend of wrapping an LLM's output into a probability score.
 
-On why technical founders still matter in an age of vibe coding: "The questions you ask become more important." A technical founder sees the constraints of a local model and asks what the best optimization looks like. A market-driven founder is more likely to be constrained by vertical-specific pivots.
+One direct quote that lands: _"Pre training is a giant dumpster fire of wasting resources."_ (He didn't do it — TypeSafe raised under $40M before their recent $870M round and built on open-weight models.)
 
-His most provocative thesis: "I think it will turn out to be better than the Internet." He's excited about frontier non-language models (robotics, science, drug repurposing) and application-layer companies that can go deep in the stack — the Instagram analogy: square photos weren't just aesthetic, they eliminated a server round-trip.
-
-Advice for founders: "The best people that I've seen building things are like playing."
-
-https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL
+https://www.youtube.com/@DataDrivenNYC/videos
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
