@@ -1,102 +1,64 @@
-AI Builders Digest — October 18, 2026
+AI Builders Digest — October 19, 2026
 
 *X / TWITTER*
 
-*Swyx* — AI engineer (smol.ai, Cognition, Latent Space Podcast)
-Swyx launched a new show he's been building for almost a year, sharing behind-the-scenes footage from the shoot with collaborators Nehal Agrawal and Kaylin Wardley.
-https://x.com/swyx/status/2111245359125266915
-He also flagged a video he called "near-Kurzgesagt level clarity of explanation" and asked for the prompts behind it.
-https://x.com/swyx/status/2111265627612787023
+*Swyx* — smol.ai founder, Latent Space Pod co-host
+Swyx shared YouTube analytics for AI Engineer (AIE), revealing the channel now serves over 1 million unique viewers a month — a number they've sustained since their EU conference in May. Despite that scale, 68% of viewers aren't subscribed yet, and CTR remains a challenge. He's actively looking to collab with bigger tech creators like Fireship and ThePrimeagen, noting strong audience affinity overlap.
+- <https://x.com/swyx/status/2111350966419411070|Audience stats>
+- <https://x.com/swyx/status/2111351354409300230|Channel affinity>
+- <https://x.com/swyx/status/2111353401363902573|CTR chart>
 
-*Boris Cherny* — Engineer at Anthropic (Claude)
-Cherny highlighted two Claude features he personally relies on. Claude Slides has replaced his old workflow — "no more googling 'iphone frame svg' like the old days."
-https://x.com/bcherny/status/2111158659971699136
-On Claude Code Review: "I could not imagine being productive without it. It runs on all of my PRs, and catches almost every bug before it goes out... a piece of the secret sauce that lets the team and I move so quickly while raising the quality bar."
-https://x.com/bcherny/status/2111158313463525518
+*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
+Thibault posted a genuinely wild real-world multi-agent demo: his work AI agent (named "Burger") coordinated with his personal AI ("Dorito") over email at Dorito's request to retrieve documents, which then looped in his CPA to handle tax filing — all in 20 minutes. His followup: "We're still so early."
+- <https://x.com/thsottiaux/status/2111495392559067199|Multi-agent tax filing demo>
+- <https://x.com/thsottiaux/status/2111566005684289735|Done>
 
-*Thibault Sottiaux* — OpenAI (Codex & ChatGPT)
-Sottiaux announced slides support is now live in ChatGPT, currently rolling out to Pro, Business, and Enterprise users while the team collects feedback.
-https://x.com/thsottiaux/status/2111249810502353152
-He also shared a look at ChatGPT Space and asked the community what they'd like to see built next.
-https://x.com/thsottiaux/status/2111249534072529256
+*Peter Yang* — AI educator and tutorial creator
+Three useful posts from Peter this week. He praised the Claude Code app for getting faster and simpler to use ("arguably simpler than ChatGPT"), while noting missing features: better browser/computer use, remote thread control, and live voice. He also shared a detailed prompt for auditing Google account app connections — useful if you've got 45+ apps connected like he does. And he echoed enthusiasm for AI enabling faster game dev.
+- <https://x.com/petergyang/status/2111496600522805624|Claude Code praise>
+- <https://x.com/petergyang/status/2111508293818671449|Google app audit prompt>
+- <https://x.com/petergyang/status/2111663267995361287|Game dev + AI>
 
-*Peter Yang* — AI educator and newsletter author (110k+ subscribers)
-Yang riffed on the evolving communication stack: docs → slides → video → rap battle as the ultimate format. He's experimenting with remixing content across formats and asked if he should make more.
-https://x.com/petergyang/status/2111263176163783167
+*Nan Yu* — Product lead, Codex at OpenAI (formerly Head of Product at Linear)
+Nan shared a relatable moment from a team offsite: the group found themselves reminiscing about what they paid attention to before AI. The answer? "😅 Front end JavaScript frameworks."
+- <https://x.com/thenanyu/status/2111597172840083574|What we paid attention to before AI>
 
-*Amjad Masad* — CEO at Replit
-Masad announced Replit Private Cloud — a deployment option where your data never leaves your own infrastructure, targeting governments, finance, and healthcare.
-https://x.com/amasad/status/2111267314012496121
-On the AI math milestone, he observed that mathematicians appear to have moved through the full stages of grief — denial, anger, bargaining, depression — and are now entering acceptance.
-https://x.com/amasad/status/2111206044416500159
+*Amjad Masad* — CEO, Replit
+After comments at TechCrunch Disrupt, Amjad clarified Replit's model strategy: the platform remains model-agnostic (users can choose Anthropic and other models), but OpenAI is now their preferred default partner powering Replit Agent — chosen on performance, cost, and partnership depth.
+- <https://x.com/amasad/status/2111494912562888939|Replit model clarification>
 
-*Guillermo Rauch* — CEO at Vercel
-Rauch built a playable, highly accurate simulation recreating the Tesla Roadster demo, retaining IRL details.
-https://x.com/rauchg/status/2111313462987231519
-On the TypeScript front: he noted that scriptc-compiled TypeScript outperforms tsgo by 2-4x, quipping "TypeScript is the new TypeScript."
-https://x.com/rauchg/status/2111274408706965898
+*Guillermo Rauch* — CEO, Vercel
+Guillermo shared a quote he agreed with: "What matters is the end product, whether it's a game or an engine." Short post, but a consistent signal from him that the infra-vs-product debate should be settled in favor of outcomes.
+- <https://x.com/rauchg/status/2111643672274165938|End product quote>
 
-*Aaron Levie* — CEO at Box
-Levie made a bold call: we've crossed a threshold where AI will soon be better at training models than humans are. He sees a flywheel forming — capable models, better agent infrastructure, growing data, and massive parallelization — that will push frontier progress far faster than before. "If you aren't pricing in what RSI will lead to, that's probably a mistake."
-https://x.com/levie/status/2111312141609586862
+*Aaron Levie* — CEO, Box
+Aaron wrote one of the more substantive takes of the week on the "software engineers are doomed" thesis — and flipped it. His argument: the demand for software engineering will grow, not shrink, because AI is converting everything into a software problem. Banks, life sciences, manufacturing — all increasingly shaped like software. "Yes we're not going to be coding manually in the future. But almost everything will be code, which means those that understand it are in a fantastic position."
+- <https://x.com/levie/status/2111525362446520466|Engineers in the AI era>
 
-*Garry Tan* — President & CEO at Y Combinator
-Tan promoted GBrain and a hosted deployment as the easiest way to get started.
-https://x.com/garrytan/status/2111282839740432423
-He also described his new project workflow: agents from capydotai and AsideAI handle both coding the first version and DevOps setup in one step.
-https://x.com/garrytan/status/2111235500568969451
-
-*Dan Shipper* — CEO at Every
-Shipper made a sharp observation: AI generation is now cheap and high quality — the next capability leap will come in editing and oversight, not generation.
-https://x.com/danshipper/status/2111174407637139668
-At Every's show and tell, a colleague demonstrated turning his Codex piece into a visual novel.
-https://x.com/danshipper/status/2111115655647035847
-
-*Aditya Agarwal* — General Partner at SPC (South Park Commons)
-Agarwal announced a fireside chat with Sriram K — who helped build Azure, scaled Meta's mobile ads, led a16z's international expansion, then went to the White House to help write the U.S. AI Action Plan.
-https://x.com/adityaag/status/2111162109933535673
-
-*Sam Altman* — CEO at OpenAI
-Altman celebrated OpenAI's Navier-Stokes math milestone with a look at the commemorative shirt — the back features the last line of the chain-of-thought from the solution itself.
-https://x.com/sama/status/2111139227761266699
-He also gave a shoutout to the new Tesla Roadster reveal.
-https://x.com/sama/status/2111131677351432197
-
-*Claude AI* — Anthropic's AI assistant
-Claude's account highlighted two community builds: Haiku 5.5 writing twenty haiku then animating every frame in JavaScript
-https://x.com/claudeai/status/2111177845846495646
-and a cardiology fellow's 3D tool helping trainees learn to read coronary angiograms.
-https://x.com/claudeai/status/2111177843413807120
-The account also asked what people are making with Claude this weekend.
-https://x.com/claudeai/status/2111177848228823102
-
-*Nikunj Kothari* — Partner at FPV Ventures
-After writing a prediction 7 months ago and meeting roughly 50 startups, Kothari found the one he believes in — and is now leading their Series A.
-https://x.com/nikunj/status/2111292452414103892
-
-*Amanda Askell* — No notable posts
-
-*Ryo Lu* — No notable posts
-
-*Matt Turck* — No notable posts
-
-*Zara Zhang* — No notable posts
+*Nikunj Kothari* — Partner, FPV Ventures
+Nikunj posted a satirical breakdown of the modern VC funding stack: pre-pre-seed, post-pre-seed, mid-seed, pre-post-seed, post-post-seed. A light jab at how fragmented early-stage investing has become.
+- <https://x.com/nikunj/status/2111558586421920134|Modern VC stack>
 
 
 *PODCASTS*
 
-*No Priors — "The Changing Physics of Cybersecurity and Drug Discovery with OpenAI President Greg Brockman"*
+*The MAD Podcast with Matt Turck — "What Happens When Billions of AI Agents Hit Your Database?" (Andy Pavlo)*
+<https://www.youtube.com/@DataDrivenNYC/videos|Listen here>
 
-*The Takeaway:* Greg Brockman thinks security spending should eventually dwarf software spending — and drug discovery, not mathematics, is where AI's biggest human impact will land.
+*The Takeaway:* Databases aren't a solved problem in the age of AI agents — they're the new battleground, and Andy Pavlo thinks most builders are ignoring decades of hard-won database wisdom at their peril.
 
-Brockman, co-founder and president of OpenAI, makes a provocative case about where AI is actually headed. He's enthusiastic about the recent Navier-Stokes math results and hundreds of other long-open problems now solved — but he's quick to redirect: the real signal isn't that machines proved theorems, it's the quality of insights within those proofs. "Domain experts are going through all of that to look for insights... there are these almost very surprising ways of applying ideas." This isn't incomprehensible machine output; it's a different phase of scientific discovery.
+Andy Pavlo is a tenured Carnegie Mellon professor whose database courses — freely available on YouTube — have educated a generation of engineers (and, as it turns out, the AI models themselves). He recently made waves by joining ClickHouse to found ClickHouse Labs.
 
-Drug discovery is his top priority. He draws a pointed parallel: neural networks have no inherent reason to be better at natural language than at biology. If models can crack the "language" of biology the way they cracked English, the payoff would be enormous. The bottleneck isn't model capability — it's data. Wet lab throughput, simulation quality, and regulatory pipelines all need to evolve alongside the AI.
+This episode is a rare deep-dive from someone who actually knows database internals, not just the VC narrative. Key insights:
 
-On cybersecurity, he offers the most contrarian take of the conversation: "Cyber spend, security spend should actually vastly outstrip software spend." His argument is that software is becoming so cheap that the real value is in whether it's reliable and trustworthy. He describes the "defender's window" — a limited period where peak AI capability is available for defense before it diffuses broadly to attackers. OpenAI responded by pulling 25 production engineers off their projects for a dedicated security sprint, using their best model to find and fix vulnerabilities until they ran out of issues to discover.
+- *File systems are databases.* Andy's core provocation: everything that stores data is a database. The question is just whether you're using a good one. For agent memory, he argues strongly for proper database systems over file-based approaches — you get safety guarantees, concurrent reads, and shared state across multiple agents essentially for free.
 
-On the future of interfaces: Brockman's view is that the best UI is no UI. His personal DOTS agent monitors his inbox, Slack, and calendar — surfacing what he said he'd do and scheduling conflicts he never explicitly asked about. The endgame is an AI you just talk to. No text box required.
+- *Postgres still wins by default.* When agents spin up new applications today, they almost universally recommend Postgres — because that's what the training data reflects. For OLAP workloads, it's more nuanced (Snowflake, Databricks, DuckDB, ClickHouse depending on budget and use case). Two database companies privately asked Andy how to get their DB recommended over Postgres. He told them to talk to the model builders, not him — it's basically "database SEO."
 
-https://www.youtube.com/@NoPriorsPodcast
+- *Text-to-SQL is harder than it looks.* Academic benchmarks show impressive numbers, but they're trained on. Real-world: a large bank got 60% accuracy out of the box, then spent years and millions building a rich semantic layer to reach 99.5%. "If you just download something now, it's not gonna be at that level of proficiency." But the ceiling is real — it's just expensive to get there.
 
-Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
+- *MCP is not magic, but it's not going away.* Andy sees MCP (which came out of Anthropic) as basically a standardized REST interface for agents to connect to data systems. Every database has added an MCP server. He's fine with it — it's a sensible abstraction — but it doesn't solve the hard semantic problems underneath.
+
+- *The real danger: agents deleting production databases.* He opened the episode noting that every month there's a story about an agent deleting something it shouldn't have. "It's the wild west for people who don't know their history with databases." The speed of agent development without understanding of database fundamentals is like giving a cheetah cocaine and putting it in a Ferrari.
+
+Published: October 8, 2026
