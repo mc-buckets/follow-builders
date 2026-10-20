@@ -1,64 +1,92 @@
-AI Builders Digest — October 19, 2026
+AI Builders Digest — October 20, 2026
+
 
 *X / TWITTER*
 
-*Swyx* — smol.ai founder, Latent Space Pod co-host
-Swyx shared YouTube analytics for AI Engineer (AIE), revealing the channel now serves over 1 million unique viewers a month — a number they've sustained since their EU conference in May. Despite that scale, 68% of viewers aren't subscribed yet, and CTR remains a challenge. He's actively looking to collab with bigger tech creators like Fireship and ThePrimeagen, noting strong audience affinity overlap.
-- <https://x.com/swyx/status/2111350966419411070|Audience stats>
-- <https://x.com/swyx/status/2111351354409300230|Channel affinity>
-- <https://x.com/swyx/status/2111353401363902573|CTR chart>
+*Swyx* (smol.ai co-founder, Cognition affiliate, Latent Space podcast host) made a pointed case that data engineers are more valuable than AI engineers right now. He argues there's a "starker difference in demand" than anything he's seen in his career — distinguishing a "RAG guy" from someone who deeply understands data-intensive applications. He's hiring for this role (SF preferred, visas ok): jobs@latent.space
+https://x.com/swyx/status/2112073533794971941
 
-*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
-Thibault posted a genuinely wild real-world multi-agent demo: his work AI agent (named "Burger") coordinated with his personal AI ("Dorito") over email at Dorito's request to retrieve documents, which then looped in his CPA to handle tax filing — all in 20 minutes. His followup: "We're still so early."
-- <https://x.com/thsottiaux/status/2111495392559067199|Multi-agent tax filing demo>
-- <https://x.com/thsottiaux/status/2111566005684289735|Done>
 
-*Peter Yang* — AI educator and tutorial creator
-Three useful posts from Peter this week. He praised the Claude Code app for getting faster and simpler to use ("arguably simpler than ChatGPT"), while noting missing features: better browser/computer use, remote thread control, and live voice. He also shared a detailed prompt for auditing Google account app connections — useful if you've got 45+ apps connected like he does. And he echoed enthusiasm for AI enabling faster game dev.
-- <https://x.com/petergyang/status/2111496600522805624|Claude Code praise>
-- <https://x.com/petergyang/status/2111508293818671449|Google app audit prompt>
-- <https://x.com/petergyang/status/2111663267995361287|Game dev + AI>
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI) teased buying a new exciting domain, sparking 777 replies speculating about what's coming. Separately, he shared that his team worked with OpenCode to restore users whose API credits were drained in an attack. He also invited anyone to request "Daybreak Blue" access — OpenAI's cyber permissive setup for defensive security work: "Do not wait until you have to deal with an incident. We're here to help."
+https://x.com/thsottiaux/status/2112039275344941371
+https://x.com/thsottiaux/status/2112034063934742720
 
-*Nan Yu* — Product lead, Codex at OpenAI (formerly Head of Product at Linear)
-Nan shared a relatable moment from a team offsite: the group found themselves reminiscing about what they paid attention to before AI. The answer? "😅 Front end JavaScript frameworks."
-- <https://x.com/thenanyu/status/2111597172840083574|What we paid attention to before AI>
 
-*Amjad Masad* — CEO, Replit
-After comments at TechCrunch Disrupt, Amjad clarified Replit's model strategy: the platform remains model-agnostic (users can choose Anthropic and other models), but OpenAI is now their preferred default partner powering Replit Agent — chosen on performance, cost, and partnership depth.
-- <https://x.com/amasad/status/2111494912562888939|Replit model clarification>
+*Peter Yang* (AI tutorials and interviews creator) is advocating for work trials over interviews as a hiring norm, citing Anthony Pompliano: "We had a specific feature that we wanted to build... He built it. Dude, I don't have to question whether you can work here or not." He's also planning to release a free open source skill and video this week.
+https://x.com/petergyang/status/2111970651326267529
+https://x.com/petergyang/status/2111928620503720334
 
-*Guillermo Rauch* — CEO, Vercel
-Guillermo shared a quote he agreed with: "What matters is the end product, whether it's a game or an engine." Short post, but a consistent signal from him that the infra-vs-product debate should be settled in favor of outcomes.
-- <https://x.com/rauchg/status/2111643672274165938|End product quote>
 
-*Aaron Levie* — CEO, Box
-Aaron wrote one of the more substantive takes of the week on the "software engineers are doomed" thesis — and flipped it. His argument: the demand for software engineering will grow, not shrink, because AI is converting everything into a software problem. Banks, life sciences, manufacturing — all increasingly shaped like software. "Yes we're not going to be coding manually in the future. But almost everything will be code, which means those that understand it are in a fantastic position."
-- <https://x.com/levie/status/2111525362446520466|Engineers in the AI era>
+*Thariq* (Claude Code at Anthropic) shared a thought-provoking observation: he'd rather vibe code parts of games than actually play them — even cerebral ones like League of Legends. He's exploring an open-source game concept where the main hook is creating and vibe-coding your own characters, which then auto-balance and compete: "I'd distribute the game as open source, you could vibe code your own characters & it would balance it."
+https://x.com/trq212/status/2111945336537420259
+https://x.com/trq212/status/2111884199359897953
 
-*Nikunj Kothari* — Partner, FPV Ventures
-Nikunj posted a satirical breakdown of the modern VC funding stack: pre-pre-seed, post-pre-seed, mid-seed, pre-post-seed, post-post-seed. A light jab at how fragmented early-stage investing has become.
-- <https://x.com/nikunj/status/2111558586421920134|Modern VC stack>
+
+*Guillermo Rauch* (Vercel CEO) had a viral hit (6,334 likes) observing that small countries keep striking it rich when their TLD accidentally aligns with tech trends: .co → Colombia, .io → British Indian Ocean Territory, .ai → Anguilla. He also experimented with deepseek-v4.1-flash via AI Gateway for about 30 cents to add sound, collision detection, and a follow camera to a game prototype.
+https://x.com/rauchg/status/2111907375120859243
+https://x.com/rauchg/status/2111929486661018081
+
+
+*Aaron Levie* (Box CEO) made a strong case for why agent swarms will be transformative: many high-value tasks — cybersecurity, life sciences research, trading, QA — are currently bottlenecked purely by how much parallel work can be coordinated. "Agent swarms are the first real ability to parallelize this work in a way where — in theory — the only parameter that matters is how much compute you throw at the problem. This changes a lot of fields as well as even the competitive dynamics in these fields."
+https://x.com/levie/status/2112051081014649303
+
+
+*Garry Tan* (YC President & CEO) predicted that everyone will be using AsideAI with their agents within a year, suggesting it'll become standard infrastructure for agentic workflows.
+https://x.com/garrytan/status/2111971992769565177
+
+
+*Nikunj Kothari* (FPV Ventures partner) remains bullish on Retool (reatools), calling it "truly bonkers 💥" and saying the market is still sleeping on it despite GitHub growth.
+https://x.com/nikunj/status/2111986818057118160
+
+
+*OFFICIAL BLOGS*
+
+*Anthropic Engineering*
+
+*How we contain Claude across products*
+<https://www.anthropic.com/engineering/how-we-contain-claude|Read the full post>
+
+A detailed technical deep-dive into how Anthropic caps the blast radius of its AI agents across claude.ai, Claude Code, and Claude Cowork — three different deployment environments requiring three different containment strategies.
+
+The core insight: "Design for containment at the environment layer first, then steer behavior at the model layer." Model-layer defenses (classifiers, prompts, training) are probabilistic and will never catch 100% of bad actions. Environmental isolation is deterministic: if credentials never enter the sandbox, they can't be exfiltrated.
+
+Three containment patterns:
+- *claude.ai*: Ephemeral gVisor container, server-side, per-session filesystem. Minimal blast radius.
+- *Claude Code*: Human-in-the-loop + OS-level sandbox (Seatbelt on macOS, bubblewrap on Linux). 84% reduction in permission prompts after sandboxing shipped.
+- *Claude Cowork*: Full VM isolation for non-technical knowledge workers who can't evaluate bash commands.
+
+The post is candid about what went wrong. A cloned repo containing a malicious `.claude/settings.json` hook could execute before the user saw the trust dialog. A red-team exercise found a phishing prompt exfiltrated AWS credentials 24 out of 25 times — model defenses can't help when the user is the injection vector. And an attacker embedded their own Anthropic API key in a workspace file, causing Claude to upload files to the attacker's account via `api.anthropic.com` — a domain correctly on the allowlist. The fix: a man-in-the-middle proxy inside the VM that only passes requests carrying the VM's own provisioned session token.
+
+
+*An update on recent Claude Code quality reports*
+<https://www.anthropic.com/engineering/april-23-postmortem|Read the full post>
+
+A public postmortem on three separate bugs that made Claude Code feel degraded over the past month — all now fixed as of April 20 (v2.1.116):
+
+- *Reasoning effort downgrade* (March 4): Default effort was quietly changed from high to medium to reduce long-tail latency. Users noticed the drop in quality. Reverted April 7; all users now default to xhigh effort for Opus 4.7.
+- *Thinking history bug* (March 26): A caching optimization meant to clear old reasoning on idle sessions had a bug that cleared thinking _every turn_ for the rest of the session, making Claude seem forgetful and draining usage limits faster via cache misses. Fixed April 10.
+- *Verbosity system prompt* (April 16): Adding "keep text between tool calls to ≤25 words" to the system prompt caused a 3% drop in coding quality across Opus 4.6 and 4.7. Reverted April 20.
+
+Anthropic is resetting usage limits for all subscribers. Going forward: per-model evals for every system prompt change, ablation tests on each line, soak periods, and gradual rollouts. Notable: when they ran their internal Code Review tool against the offending thinking-bug PR, Opus 4.7 caught it while Opus 4.6 did not.
 
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck — "What Happens When Billions of AI Agents Hit Your Database?" (Andy Pavlo)*
-<https://www.youtube.com/@DataDrivenNYC/videos|Listen here>
+*No Priors — Beam: The Great American Open Model with ReflectionAI Co-Founder and CEO Misha Laskin*
 
-*The Takeaway:* Databases aren't a solved problem in the age of AI agents — they're the new battleground, and Andy Pavlo thinks most builders are ignoring decades of hard-won database wisdom at their peril.
+_The Takeaway:_ Open models aren't just cheaper alternatives to closed ones — they're geopolitically strategic infrastructure, and ReflectionAI is betting the US needs a credible Western open-weight frontier lab the way it needed its own internet protocols.
 
-Andy Pavlo is a tenured Carnegie Mellon professor whose database courses — freely available on YouTube — have educated a generation of engineers (and, as it turns out, the AI models themselves). He recently made waves by joining ClickHouse to found ClickHouse Labs.
+Misha Laskin, co-founder and CEO of ReflectionAI, came from Google DeepMind's reinforcement learning team. His co-founder Janus helped build AlphaGo. About a year into the company, they pivoted from building on top of open models to building them end-to-end — because the best open models were all coming from China, and because RL at scale requires tight coupling with pretraining: "The things are just so tightly coupled that you do need to do both."
 
-This episode is a rare deep-dive from someone who actually knows database internals, not just the VC narrative. Key insights:
+Their first model, *Beam*, is a 500B-parameter mixture-of-experts (23B active) trained on 6,000 GB300 GPUs. Laskin claims it's 3–4x more reasoning-efficient than comparable models — a byproduct of running what he believes is the largest RL run ever documented in open source: 10,000 GB300s for four weeks. "The more reinforcement learning you run, the higher the capability and the faster these systems solve it."
 
-- *File systems are databases.* Andy's core provocation: everything that stores data is a database. The question is just whether you're using a good one. For agent memory, he argues strongly for proper database systems over file-based approaches — you get safety guarantees, concurrent reads, and shared state across multiple agents essentially for free.
+His most contrarian take: open models are Trojan horses for infrastructure. "You have an open model, but that alone is not very useful. So you buy into the entire software ecosystem and infrastructure ecosystem of a given country." Chinese labs keep models open globally because it locks other countries into their compute stack — the same play the US ran with internet protocols and dollar dominance.
 
-- *Postgres still wins by default.* When agents spin up new applications today, they almost universally recommend Postgres — because that's what the training data reflects. For OLAP workloads, it's more nuanced (Snowflake, Databricks, DuckDB, ClickHouse depending on budget and use case). Two database companies privately asked Andy how to get their DB recommended over Postgres. He told them to talk to the model builders, not him — it's basically "database SEO."
+On safety: skeptical of the closed-lab framing. "The state of the world today is that we have a few hundred safety researchers within closed labs... it is impossible to cover the long tail of vulnerabilities." He invokes Linus's law: with enough eyeballs, most security vulnerabilities become shallow.
 
-- *Text-to-SQL is harder than it looks.* Academic benchmarks show impressive numbers, but they're trained on. Real-world: a large bank got 60% accuracy out of the box, then spent years and millions building a rich semantic layer to reach 99.5%. "If you just download something now, it's not gonna be at that level of proficiency." But the ceiling is real — it's just expensive to get there.
+On market shift: token demand has flipped from 70/30 closed/open to 70/30 open/closed over the past six months, and he expects it to keep moving toward open — similar to how Linux now runs 95%+ of servers.
 
-- *MCP is not magic, but it's not going away.* Andy sees MCP (which came out of Anthropic) as basically a standardized REST interface for agents to connect to data systems. Every database has added an MCP server. He's fine with it — it's a sensible abstraction — but it doesn't solve the hard semantic problems underneath.
+https://www.youtube.com/@NoPriorsPodcast
 
-- *The real danger: agents deleting production databases.* He opened the episode noting that every month there's a story about an agent deleting something it shouldn't have. "It's the wild west for people who don't know their history with databases." The speed of agent development without understanding of database fundamentals is like giving a cheetah cocaine and putting it in a Ferrari.
 
-Published: October 8, 2026
+Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
