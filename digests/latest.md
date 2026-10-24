@@ -1,81 +1,95 @@
-*AI Builders Digest — October 23, 2026*
+AI Builders Digest — October 23, 2026
 
 *X / TWITTER*
 
-*Dan Shipper — CEO of Every*
+*Claude (claudeai) — Official Anthropic Claude Account*
 
-Dan Shipper broke the Claude Duet news with a full vibe check: "BREAKING: @AnthropicAI just launched Duet, its always-on personal agent. It's the first personal agent I'd call a pro tool." After two weeks of testing, he's switched from ChatGPT to using it as his primary tool. He also made the case that every company needs a dedicated "frontier team" — a small group whose sole job is to keep up with fast-moving AI, so the rest of the company can focus on execution without distraction. He noted that the frontier team's experiments either become content or get pushed into products when they're ready for wider rollout.
-- <https://x.com/danshipper/status/2112997559463506059|Claude Duet vibe check>
-- <https://x.com/danshipper/status/2113007329990127942|Full review link>
-- <https://x.com/danshipper/status/2113010761786175970|On the frontier team concept>
+Three major announcements landed from Claude's official account. The biggest: starting next week, sessions across Claude web, desktop, and mobile apps will run in *auto mode by default* on Pro, Max, and Team plans — an automated check blocks risky actions rather than prompting you to approve each step (you can switch back to manual anytime). <https://x.com/claudeai/status/2113360845409583307|Tweet>
 
-*Cat Wu — Claude Code + Cowork at Anthropic*
+Claude Models on Google Cloud (Anthropic managed) is now generally available — full Claude Platform features with Google Cloud IAM credentials, billing, and commitment retirement. <https://x.com/claudeai/status/2113380122468454765|Tweet>
 
-Anthropic's Cat Wu shared what's behind Claude Duet: "We heard your feedback that you want Claude to proactively take more off your plate! Claude Duet is a large step in this direction — it'll notice work that needs to be done, and then do it before you ask." Early preview, waitlist-based on Pro and Max plans in the US.
-- <https://x.com/_catwu/status/2112988751576330487|Claude Duet announcement>
+Fast mode for Opus 5.5, code execution, and the Skills API are now available on the native Claude Platform the same day they go live. <https://x.com/claudeai/status/2113380126561800305|Tweet>
 
-*Claude — Anthropic's official AI account*
+*Thibault Sottiaux — Codex & ChatGPT at OpenAI*
 
-The official Claude account shared details on Duet's design: it's built on Claude Opus 5.5 and is engineered to judge what needs you, what can wait, and when to check first. Safety features include a new classifier to guard against sharing sensitive information. It inherits memory, skills, and connected apps. Important caveat: "It can still misjudge what's urgent, and we'll keep tuning it based on what early users tell us."
-- <https://x.com/claudeai/status/2112984669943968099|On limitations and tuning>
-- <https://x.com/claudeai/status/2112984667758510197|On safety design>
-- <https://x.com/claudeai/status/2112984666437546104|On Opus 5.5 and capabilities>
+Sottiaux has been teasing a big drop, posting cryptic "Lands tomorrow before 10am PST" messages that generated massive engagement. His Day 18 recap included: Decisions API going GA, OpenResponses joining the Linux Foundation, performance improvements, and Uber going all-in on Codex — then added "But yes… that's a reset!" alongside another teaser for something shipping imminently. <https://x.com/thsottiaux/status/2113492187770175603|Day 18 tweet> <https://x.com/thsottiaux/status/2113492502355562875|Landing tomorrow tweet>
 
-*Guillermo Rauch — CEO of Vercel*
+*Boris Cherny — Claude at Anthropic*
 
-Rauch had a busy day on two fronts. First, on Node.js security: Vercel proactively rolled out firewall-level mitigations for a Node.js RCE vulnerability ahead of the official patch. He also praised the behind-the-scenes industry coordination that happened weeks in advance to protect against the php2shell exploit. Second, on product: DeepSeek v4.1 Flash is now included in Vercel's Token Pass — "Fast, mind-bogglingly cheap, and served with ZDR (zero-data retention)."
-- <https://x.com/rauchg/status/2113050053724221732|On Node.js RCE mitigations>
-- <https://x.com/rauchg/status/2112989629536440400|On industry coordination for php2shell>
-- <https://x.com/rauchg/status/2113010010766913815|DeepSeek v4.1 Flash in Token Pass>
+Cherny announced that Agent Skills — which started as an experiment inside Claude Code — has been donated to the <https://x.com/bcherny/status/2113333859907747871|Agentic AI Foundation>, alongside MCP. He notes the broader industry has adopted the pattern, making a neutral foundation home more appropriate than keeping it inside Anthropic. <https://x.com/bcherny/status/2113333859907747871|Tweet>
 
-*Aaron Levie — CEO of Box*
+*Swyx — Smol AI / Cognition / Temporal / AI Dot Engineer*
 
-Levie made a bold call on AI's next frontier: cybersecurity. "If you wanted to know all the jobs that AI will produce, look no further than cybersecurity. This is going to become one of the biggest investment areas for enterprises going forward." He expanded the point: "We now have a tireless workforce that can hunt down, discover, patch, or attack any system and software ever created. We will use agents to fight agents." The PHP and Node.js vulnerability news this week made his point in real time.
-- <https://x.com/levie/status/2113137032633757773|AI jobs in cybersecurity>
-- <https://x.com/levie/status/2112964214818283917|Agents fighting agents>
+Swyx called out Opus 5.5 as "the best work estimator model I've ever used," praising its calibration as increasingly critical as we delegate more work to AI: "Don't tell me it's going to take 2-3 working days (what a human would do) when for you, an enthusiastic, indefatigable, and embarrassingly parallelizable AGI, can get it done in 2-3 hours." <https://x.com/swyx/status/2113283272130412684|Tweet>
 
-*Peter Steinberger — OpenClaw + OpenAI*
+He also pushed back on blaming AI for surfacing bugs: "This is the right attitude — don't blame AI for finding the bugs, just fucking lock in on clearing all the bugs ASAP." <https://x.com/swyx/status/2113359027682050352|Tweet>
 
-A notable data point on AI-assisted security research: "That PHP vulnerability that's gonna cause havoc this week was found with… GPT-5.6 Sol." AI didn't just help defend — it found the vulnerability in the first place.
-- <https://x.com/steipete/status/2112913060709228764|PHP vulnerability found by GPT>
+*Guillermo Rauch — Vercel CEO*
 
-*Nikunj Kothari — Partner at FPV Ventures*
+Rauch went deep on the week's security chaos. On the internet encryption disaster where a master key's password turned out to be simply "4": "Your aunt's password: 'P4ssword!' (on a Post-it note in the kitchen). The stewards of the internet's encryption's password: '4'. This key could be used to target and decrypt ~everything." <https://x.com/rauchg/status/2113462657059639505|Tweet>
 
-Kothari offered a wry observation on the week's security chaos: "Who knew acquiring super intelligence could lead to the entire fabric and trust of the internet being slowly broken... It's truly wild and batsh!t bananas out there." A succinct take on the double-edged nature of AI-powered tools.
-- <https://x.com/nikunj/status/2113057195948707874|On AI and internet trust>
+His proposed fix: kill static credentials entirely and move the industry to OIDC — short-lived, self-destructing keys like TLS once standardized secure connections. <https://x.com/rauchg/status/2113399539227136084|Tweet>
 
-*Aditya Agarwal — General Partner at SPC, ex-CTO of Dropbox*
+He also highlighted Generative UI via AI Gateway, where adding a single line of code to the AI SDK gives you Google search, weather, stocks, and more as a marketplace of tools. <https://x.com/rauchg/status/2113451268316205515|Tweet>
 
-Agarwal weighed in on the PHP chaos with the one-liner of the day ("Fucking PHP. It's always fucking PHP"), then shared a more reflective observation: his son watched Star Wars for 3 hours but spent 20 hours making games about it with AI. "It does feel like it's just as fun to *make* stuff with AI as it is to 'use' it." Creation vs. consumption is shifting.
-- <https://x.com/adityaag/status/2112977865432240524|On PHP>
-- <https://x.com/adityaag/status/2112923959176106056|On making vs. using AI>
+*Alex Albert — Research at Anthropic*
 
-*Zara Zhang — Builder*
+Albert floated a bold prediction: products like Claude Duet could end up being bigger for small local businesses than Square or Google Maps were. He's actively gathering data, inviting small business owners using Claude to share their use cases. <https://x.com/alexalbert__/status/2113386454907007444|Tweet> <https://x.com/alexalbert__/status/2113386456098197941|Tweet>
 
-Zhang shared a quick demo: turning a photo into a 3D popup card using a single prompt. She also made the case that "Your personal website is the new resume" — a pointed note for anyone in tech still relying on LinkedIn.
-- <https://x.com/zarazhangrui/status/2113055591954526444|3D popup card demo>
-- <https://x.com/zarazhangrui/status/2113148949842534482|Personal website as resume>
+*Aaron Levie — Box CEO*
+
+Levie declared that "security through obscurity is fully over" — especially in a world of autonomous systems that will probe every crevice and try every permutation of attack. He laid out the implication: years of legacy enterprise infrastructure will need to be rebuilt, security practices modernized, and access controls tightened. Agents will help on the defensive side, he says, but "there's a long road ahead" — which is also why AI diffusion timelines will take longer than some expect. <https://x.com/levie/status/2113499900399034689|Tweet>
+
+*Aditya Agarwal — General Partner at SPC*
+
+Agarwal shared insights from a conversation with Physical Intelligence co-founder Sergey Levine: robotics is undergoing the same paradigm shift LLMs did — from fine-tuning to prompting to just telling the model what you want. The pi0.7 model now learns new skills from plain-language coaching. <https://x.com/adityaag/status/2113385971844518124|Tweet> He also noted that a top-university PhD doesn't necessarily produce a great robotics researcher. <https://x.com/adityaag/status/2113332746277789845|Tweet>
+
+*Amjad Masad — Replit CEO*
+
+Masad shared how Replit is protecting user apps from the recent wave of security vulnerabilities. <https://x.com/amasad/status/2113474587166171560|Tweet>
+
+*Garry Tan — YC President & CEO*
+
+Tan highlighted Aside Browser as a real solution for making agents great at using the web. <https://x.com/garrytan/status/2113367007567794563|Tweet> He also shared a stark picture of what happens when AI truly disrupts a powerful SaaS business. <https://x.com/garrytan/status/2113353678895919196|Tweet>
 
 *Matt Turck — VC at FirstMark Capital*
 
-Turck flagged two large rounds: Pigment closed a $250M Series E and Legora closed a $550M Series E. He called Pigment "the platform for continuous financial planning" in an era of tokens, APIs, and agents — a sign that traditional enterprise software categories are getting reframed around AI infrastructure.
-- <https://x.com/mattturck/status/2113026098669777365|Both funding rounds>
-- <https://x.com/mattturck/status/2112927524321726921|On Pigment's vision>
+Turck released a deep-dive podcast conversation with Mistral's Pierre Stock on "Le Chonk" — Mistral's massive new open-weight model. Topics: training on 3,800 GPUs in Mistral's own data centers, mixture of experts architecture, what Mistral borrowed from DeepSeek, and the story of a model that pinged its own trainer during a sandbox test. <https://x.com/mattturck/status/2113311361639829673|Tweet>
+
+He also mapped the AI industry competition dynamic: chip makers compete with inference providers, inference providers compete with neo-clouds, models compete with apps, apps compete with models — "NVIDIA sells to everyone lol." <https://x.com/mattturck/status/2113263905950568730|Tweet>
+
+*Madhu Guru — Sr. Director of AI at Meta*
+
+Guru addressed the career paralysis he's seeing among PMs as AI rapidly reshapes their role: "Clarity is often the consequence of action." His advice — build something, automate a workflow, connect with inspiring people — each action generates feedback and new ideas. <https://x.com/realmadhuguru/status/2113437016818057641|Tweet>
+
+*Nikunj Kothari — Partner at FPV Ventures*
+
+Kothari noted he's seen roughly 10% of seed companies he meets get acquired within months of their first meeting. His take: the seed-to-Series-A squeeze is at an all-time high and not letting up — "Never been easier to dream, never been harder to scale." Essay coming next week. <https://x.com/nikunj/status/2113405034826477910|Tweet>
+
+*Peter Yang — AI Content Creator*
+
+Yang drew a stark contrast between the bleeding-edge AI breakthroughs discussed online and the reality of supporting his mom's cancer treatment: faxing documents and physically delivering imaging on CD-ROMs. <https://x.com/petergyang/status/2113420357726257335|Tweet> He also published a guide using AI to walk you through 6 steps to secure your accounts, including a prompt that generates a personalized security report. <https://x.com/petergyang/status/2113405131106742406|Tweet>
+
+*Dan Shipper — CEO at Every*
+
+Shipper reacted to the week's AI news with "We are living in unprecedented times." <https://x.com/danshipper/status/2113269180279751078|Tweet>
 
 *PODCASTS*
 
-*AI & I by Every — "How a Frontier Team Can Help Your Company Keep Up With AI"*
+*Training Data — David Silver and Lasse Espeholt of Ineffable Intelligence: A Superlearner for the Age of Experience*
 
-*The Takeaway:* Every company needs a dedicated "frontier team" — a small group of experimenters who absorb the chaos of fast-moving AI so everyone else doesn't have to.
+*The Takeaway:* AlphaGo creator David Silver believes the path to superintelligence runs through systems that learn entirely from experience — with no human data — and that the industry's LLM-centric approach is leaving the most important lamppost unlit.
 
-Dan Shipper, CEO of Every, has been quietly running a frontier team for the past few months, and the results have been "kind of transformative." The premise: most people at any company face an impossible dilemma — do you get your work done or do you stay current with every new model and workflow? The frontier team resolves this by creating a clean separation of concerns. Some people are unleashed to experiment at full speed; the rest of the company operates in confidence, knowing they'll hear about what matters when it's actually ready for them.
+Silver co-founded Ineffable Intelligence alongside Lasse Espeholt (who built the foundational large-scale RL architectures the field still uses today) with one mission: build a "super learner" — a system that starts from zero, discovers knowledge autonomously, and keeps learning indefinitely across any domain or environment.
 
-What makes it work is two distinct personality types working together. Shipper calls them *pirates* and *architects*. Pirates move fast and try a billion things — sloppy but generative. Architects take the mess and compress it into something maintainable: "What would it look like to form this into a shape that actually works?" Most experiments get thrown out. The ones that survive get handed off to the broader team in a usable form.
+His core conviction: AlphaZero proved that giving up human priors isn't a sacrifice, it's an unlock. The version of AlphaGo trained on human data took two years to beat Lee Sedol. AlphaZero, trained purely through self-play with no human games, beat that two years of work in four hours at chess. "You have to let go of the human data to allow yourself to discover things that can then shoot past the competition."
 
-The frontier team at Every also has a "head of evals" — someone whose job is to push models to their limits and map out the capability overhang. As Mike Taylor, that head of evals, put it: "The models are able to do much more than we have had time to try."
+Ineffable is building what Silver calls "crucibles" — simulated environments rich with emergent complexity where agents can rediscover everything from language to economics to mathematics from first principles, without being pointed toward any of it. Their bet: a simple reward signal inside a sufficiently complex environment will produce more interesting emergent behavior than any hand-crafted task structure. The evidence from nature: evolution optimized for "fitness" and produced humans. "All in the pursuit of relatively simple goals, this incredible complexity emerged."
 
-Shipper's bottom line: the frontier team doesn't just help you keep up. It builds organizational confidence. "You feel like, hey, I'm going to know when things change. We're going to be able to handle it. And I'm not feeling crazy and frazzled and distracted all the time."
+On alignment: Silver is skeptical that monitoring LLM chains of thought will hold as systems get more powerful — "agents are going to start to overwhelm their priors." His alternative is running the science of superintelligence in simulation first, to understand under what conditions AI systems interact peacefully with each other and with lesser intelligences. Ineffable commits to gating real-world deployment on evidence from that science.
 
-<https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL|Watch on YouTube>
+His timeline forecast: strong evidence their approach is working within one year; true superintelligence within three years, accelerated by AI coding tools. "My timelines have accelerated a little bit."
+
+<https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
