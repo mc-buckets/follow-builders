@@ -1,70 +1,71 @@
-AI Builders Digest — October 26, 2026
+AI Builders Digest — October 27, 2026
+
 
 *X / TWITTER*
 
-*Swyx* (smol.ai, Cognition, Latent Space Pod)
-Swyx is expanding the Latent Space editorial team, hiring writers, reviewers, and reporters — reach out to ricmac and adlinzainal on X. He also opened the door for part-time and one-off guest contributors.
-- https://x.com/swyx/status/2114145315196711194
-- https://x.com/swyx/status/2114149330135519730
 
-*Thibault Sottiaux* (Codex & ChatGPT, OpenAI)
-Something big is coming from the OpenAI Codex team. Sottiaux's cryptic "By midnight PST" and "It is all propagated. Enjoy some mad codexing tomorrow. Fun week ahead too." — paired with "Day 20 / Rest and reset," which went viral at 6,500+ likes — strongly hint at a 30-day codexing challenge reaching a major milestone.
-- https://x.com/thsottiaux/status/2114200152701575656
-- https://x.com/thsottiaux/status/2114200291319124163
-- https://x.com/thsottiaux/status/2114237083652882932
+*Thibault Sottiaux — Codex & ChatGPT engineer at OpenAI*
 
-*Peter Yang* (AI educator, Practical AI tutorials)
-Yang genuinely recommends Once Reading, a kids' literacy app he and his 4-year-old have stuck with for months. His daughter now chooses Once books over YouTube — "the highest compliment." He also flagged news of two Claude insiders (Anthony and Thariq) apparently departing Anthropic, calling it "a huge bummer for Claude users."
-- https://x.com/petergyang/status/2114042708105060501
-- https://x.com/petergyang/status/2114001125636768121
+Sottiaux posted a cryptic, high-engagement tweet — "Day 21/ Wonder what happens the remaining seven days. But today is a reset." — that racked up over 5,100 likes and 280 retweets without any explanation. The countdown framing has people speculating. On a more practical note, he reminded users that ChatGPT's web appearance is fully customizable for a calmer visual experience.
 
-*Guillermo Rauch* (CEO, Vercel)
-Two strong posts. First, a thoughtful observation that AI models have developed a distinct engineering vernacular — words like "gate," "evidence," "culprit," "provenance" — shaped by debugging-heavy work, and wondering what the "minimum viable English" for AI productivity really is (ASD-STE100 uses ~900 words; he suspects we need far fewer). Second, his most-liked post in a while (2,000+ likes): the #0 skill for working with AI is calibrating when to over-guide (it knows better than you) vs. under-guide (it's missing context or going off-track).
-- https://x.com/rauchg/status/2114164830403989880
-- https://x.com/rauchg/status/2114085432749347086
+- <https://x.com/thsottiaux/status/2114588174249071102|Day 21 reset tweet>
+- <https://x.com/thsottiaux/status/2114595002210783279|ChatGPT appearance customization>
 
-*Aaron Levie* (CEO, Box)
-Levie predicts 1,000X more tokens flowing through cyber agents soon. AI agent swarms for security — fanning out across logs, code, infrastructure, and enterprise data to test attacks and process risk — only became possible in the past few months as long-running agents and computer use improved. He sees a massive opportunity across every layer of the security stack: identity, firewall, network, code scanning, and data protection.
-- https://x.com/levie/status/2114187326406766604
 
-*Ryo Lu* (Designer, Cursor / ex-Notion, Stripe)
-Lu wrote a long, moving essay about what's lost when AI removes the difficulty of learning and collaboration. His thesis: the struggle is the lesson — the bug you couldn't fix, the design that failed in someone's hands, the friendship forged by working through a hard problem together. He worries we're optimizing for results before understanding what friction was teaching us, and that agents are making it easier to avoid the discomfort of reaching toward other people. "I don't want a life without struggle. I want people to struggle with."
-- https://x.com/ryolu_/status/2114187405251219954
+*Peter Yang — AI tutorials creator*
 
-*Garry Tan* (President & CEO, Y Combinator)
-Tan teased a Gstack update — his AI-native personal operating system — with a short "What's new in Gstack?" quote tweet. No further detail in the post itself.
-- https://x.com/garrytan/status/2114090740217499854
+Yang shared a workflow for using Claude to clone any video shorts style in minutes: HyperFrames studio added native support for uploading a reference clip, describing what to change, and generating a restyled version. You can swap fonts and colors while keeping the structural idea intact. He links out to a full AI video editing tutorial.
 
-*Zara Zhang* (Builder, Harvard '17)
-A simple, resonant observation: "It is so much easier to give advice to other people than to apply the same advice to yourself."
-- https://x.com/zarazhangrui/status/2114225607022412049
+- <https://x.com/petergyang/status/2114507378532229214|AI video shorts style tutorial>
 
-*Nikunj Kothari* (Partner, FPV Ventures)
-Kothari is looking for Series A infra investors — reach out if you're interested. He also flagged a post that articulated what he calls the evolution from "context → harnesses → judgement" in AI systems, saying it captures his thinking better than he has been able to himself.
-- https://x.com/nikunj/status/2113994081345126486
 
-*Aditya Agarwal* (General Partner, SPC; ex-CTO, Dropbox)
-A counterintuitive effect of going fully AI-pilled: it's made Agarwal treasure IRL time more, not less. "Put on some techno, dance with friends, take your kids to the park. Let the agents cook. But dear god, celebrate humans."
-- https://x.com/adityaag/status/2114135237806760097
+*Nan Yu — Head of Product, Codex at OpenAI (previously Head of Product at Linear)*
+
+Yu flagged a product gap: when the iPhone Duo supports split mode, it's frustrating that unoptimized apps still default to a tiny phone-sized window. Separately, he made a sharp observation on product quality: "By the time it shows up in the data or UXR interviews it's too late. The damage has been done and the reputation tarnished." Both tweets reflect a product leader thinking about the gap between what gets measured and what actually matters.
+
+- <https://x.com/thenanyu/status/2114433404557279435|iPhone Duo split mode tweet>
+- <https://x.com/thenanyu/status/2114427877240488442|Reputation damage tweet>
+
+
+*Aaron Levie — CEO of Box*
+
+Levie laid out a detailed take on enterprise security in the AI era: the risk surface is fragmented, most enterprises can barely keep up with library updates and sprawling infrastructure, and data silos mean you rarely know your real-time risk exposure. His prescription — modernize the data and infra stack first, then deploy AI agent swarms to fan out across identity, firewall, network, code scanning, and data protection. He sees this emerging capability (long-running agents + computer use) as a genuine reason for optimism on the defender side, but is clear: "Everyone does need to do the hard work of getting the basics right at the start."
+
+- <https://x.com/levie/status/2114391265655816315|Enterprise security take>
+
+
+*Matt Turck — VC at FirstMark Capital*
+
+Turck took a dry shot at a recognizable pattern: VCs quietly reframing their 2021 metaverse, gaming, and crypto mining bets as "mission-critical AI infrastructure."
+
+- <https://x.com/mattturck/status/2114507945585328606|VC rebranding tweet>
+
+
+*Zara Zhang — Builder*
+
+Zhang endorsed a creator philosophy of consistency over spectacle: "Most people overestimate the importance of one huge launch and underestimate the power of just showing up every day on the timeline. Develop a system where you make a video every day > spending tens of thousands of dollars on a single launch video."
+
+- <https://x.com/zarazhangrui/status/2114255477907570865|Consistency over big launches>
+
 
 *PODCASTS*
 
-*The MAD Podcast with Matt Turck* — Jev: The AI That Makes Decisions, Not Text - and Why It Changes Everything (Diogo Almeida)
 
-*The Takeaway:* The next major unlock for AI-powered automation isn't better LLMs — it's a model that outputs decisions instead of text, and the AI world has been chasing the wrong target for years because RLHF made models seem far more capable than they actually are.
+*No Priors: "The Changing Physics of Cybersecurity and Drug Development with OpenAI President Greg Brockman"*
 
-Diogo Almeida is the CEO of TypeSafe and co-inventor of RLHF — reinforcement learning from human feedback, the technique that turned raw language models into ChatGPT. He spent two years in stealth building Jev, TypeSafe's "machine native" AI model, and kept quiet while the rest of the AI world chased benchmarks and chat interfaces.
+*The Takeaway:* Security spend should vastly outstrip software spend — and we're in a narrow window right now where defenders have access to peak AI before offensive capabilities become broadly diffused.
 
-His core argument: RLHF made AI incredibly pleasing to humans — too pleasing. It created a massive gap between how smart models seemed versus how reliably they could automate real tasks. "AI is incredible and also incredibly underwhelming," he says. The stylistic polish convinced companies they could automate things they couldn't. Automation empirically didn't happen.
+Greg Brockman, cofounder and president of OpenAI, covers a lot of ground here, but the throughline is this: AI is crossing a threshold where it can generate genuinely new knowledge — and the institutions around it (drug approval, security practices, software development) haven't caught up yet.
 
-Jev takes a different approach. Instead of generating prose, it outputs probabilities and structured decisions — fast, cheap, composable outputs that slot directly into software logic. Think smart if-statements: classifiers you can stack, measure, and tune rather than a monologue that may or may not be right. Almeida frames classifiers not as "old ML" but as the essential interface between intelligence and software — the same way Facebook, TikTok, and Google are all built on classification.
+On *math and science*: OpenAI has now resolved nearly 400 significant open problems, and domain experts reviewing the AI's work are finding surprisingly elegant insights — not just opaque brute-force proofs. Brockman sees this as the proof of concept for applying similar methods to biology and drug discovery. "From first principles, you should be able to really crack the language of biology" the same way neural nets cracked natural language.
 
-The failure of LLMs for automation comes down to calibration: _"95% Einstein, 5% Mr. Bean. And if it doesn't tell you when it's the Mr. Bean, then how are you gonna automate anything?"_ Jev returns probability scores so developers set their own thresholds, not the model. Disney has very different tolerance for edge cases than Character AI.
+On *drug discovery*: He calls it the single clearest application of AI to improve human quality of life. The bottleneck isn't just molecule design — it's every step downstream: regulatory filings, clinical trial design, even finding the one paper in the literature that could cure a rare disease. AI can help at each stage.
 
-His other contrarian takes: pretraining is "a giant dumpster fire of wasting resources." Recursive self-improvement (RSI) is hype recycled from the neural architecture search era. And copycats who shipped decision-model products in the three weeks since Jev launched have "copied the interface without doing the years of training work that makes it reliable."
+On *cybersecurity*: This is where Brockman gets most direct. The internet was "built for resilience, not security," and most organizations have enormous accumulated tech debt. AI now makes formal verification of software practical, and agent-driven security audits are finally possible. OpenAI deployed 25 production engineers to do nothing but security work using its own frontier model, found and fixed issues, then repeated the process with each new model release. He calls the current moment the "defender's window" — peak frontier AI is available to defenders now, before broad offensive diffusion happens. His bold claim: security spend should "vastly outstrip" software spend, because as software gets cheap, the value is in its reliability and trustworthiness.
 
-TypeSafe just raised an $870M Series A at a $7.5B valuation, with a million users per day and a third of the Fortune 500 already using it.
+On *DOTS*: OpenAI's always-on proactive agent knows your calendar, inbox, Slack, and ongoing projects. Brockman uses it to surface things he said he'd do but hasn't, and it catches scheduling conflicts without being asked. He describes it as "a change to form factor, not capability" — but the change in form factor in a workplace setting is a game changer.
 
-https://www.youtube.com/@DataDrivenNYC/videos
+https://www.youtube.com/@NoPriorsPodcast
+
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
