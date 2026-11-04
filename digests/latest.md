@@ -1,107 +1,98 @@
-AI Builders Digest — November 3, 2026
+AI Builders Digest — November 4, 2026
 
 *X / TWITTER*
 
-- - -
+*Swyx* — smol.ai / Cognition / Latent Space
 
-*Andrej Karpathy*
+Swyx is riffing on "weight-space programming" — the emerging idea that you can directly manipulate model weights rather than just prompting. He drew a literary parallel to Ted Chiang's _Exhalation_, saying we're at paragraph two of that story. He's also teeing up what he promises will be a "melt on Twitter" follow-up conversation with CompleteSkeptic and typesafeai.
 
-Karpathy shipped HackerTube over the weekend: a YouTube experience filtered by 43 million Hacker News comments spanning 20 years, surfacing 6,454 videos the HN community keeps recommending. He used Claude Opus 5.5 on medium effort via Claude Code's desktop app and estimates it took about two hours total. His only "manual" contributions were spinning up a VPS, creating a Google Cloud API key, and buying the domain — Claude handled the rest, including deploying, securing, and optimizing the app. "Many awesome projects that would have normally taken weeks/months even can now be few-shotted for breakfast."
+- <https://x.com/swyx/status/2117492548780589510|Weight-space programming post>
+- <https://x.com/swyx/status/2117331535007531009|Upcoming conversation teaser>
 
-• <https://x.com/karpathy/status/2116957135661945283|Weekend hack: HackerTube>
+*Thibault Sottiaux* — Codex & ChatGPT at OpenAI
 
-- - -
+The OpenAI Codex team is now talking publicly about Git capabilities they've been building. Sottiaux also highlighted that ChatGPT's "dot" is now routing tasks across different models automatically — choosing the best model for each part of the work rather than locking users into a single one.
 
-*Peter Yang — AI educator and host of Behind the Craft*
+- <https://x.com/thsottiaux/status/2117412956950638872|On Codex Git capabilities>
+- <https://x.com/thsottiaux/status/2117283355427495983|On dot's model routing>
 
-Peter Yang teased four upcoming guests: Ashley Alexander (VP of Product at OpenAI), Nate Parrott (the Anthropic designer behind Claude's design system), Matt Pocock (whose AI coding agent curriculum has 300K+ GitHub stars), and Jacob Sansbury (who reportedly runs the most AI-pilled gaming company in the world at 10 people and $32M/year in Claude spend). He also shared a sharp quote from a Google Labs product director on the looming question of whether products even need a UI anymore: _"Anything that involves me creating something... there might be a reason for me to interact. Anytime I want to be entertained or consume something, I'm still the one using the product. But there are definitely products that I use today that I would be more than happy to not use."_ On his own AI tool stack: browser/computer use goes to ChatGPT + Codex, design/taste goes to Claude, and 24/7 agents go to Grok Bot.
+*Peter Yang* — AI tutorials and guides
 
-• <https://x.com/petergyang/status/2117059131349868790|Upcoming Behind the Craft guests>
-• <https://x.com/petergyang/status/2116987415319740756|Quote on products and UI>
-• <https://x.com/petergyang/status/2116946320674152810|AI tool stack breakdown>
+Peter Yang ran a head-to-head writing experiment: Gemini's copy-editing suggestions were "actually great" while ChatGPT's were "almost entirely bad." His frustration: Antigravity (ChatGPT's canvas tool) lacks working browser use, so he has to manually copy Gemini's edits back in. His take — the best writing model is being held back by its harness, not its intelligence.
 
-- - -
+- <https://x.com/petergyang/status/2117333424403042330|On Gemini vs ChatGPT for editing>
+- <https://x.com/petergyang/status/2117473529797214279|On AI-native product growth>
 
-*Amjad Masad — CEO of Replit*
+*Nan Yu* — Product at OpenAI Codex (prev Head of Product at Linear)
 
-Replit CEO Amjad Masad issued a blunt warning: if you're on a subsidized AI subscription, expect a rug pull. He also highlighted a Replit product feature — a feedback widget that converts user feedback directly into agent prompts for building, closing the loop between user input and product iteration.
+A sharp take: group chat is a fundamentally broken interface for multiplayer AI. Nan's framing — it's "literally guaranteed slop" except in rare circumstances. Coordinating multiple people around a single AI context creates noise, not signal.
 
-• <https://x.com/amasad/status/2117010858845089805|Warning on subsidized AI subscriptions>
-• <https://x.com/amasad/status/2116998155925360965|Replit feedback widget>
+- <https://x.com/thenanyu/status/2117432599559716940|On group chat and AI>
 
-- - -
+*Thariq* — Formerly Claude Code at Anthropic
 
-*Guillermo Rauch — CEO of Vercel*
+One week into using his own setup: the $200/month plans are "amazing" and you don't need unlimited tokens to do great work. His most striking line: "this is the most expensive intelligence will ever be." He's betting hard on falling costs.
 
-Rauch posted a strong take on AI and ownership: _"Own your intelligence. Anyone that opposes this has something to sell you (perhaps your own intelligence back to you.)"_ He's advocating for local models and open source, arguing that owning your own agents, harness, data, and runtime is the only durable path. He also shared that he's been testing Gemini on v0 with high-complexity projects and finding it impressive.
+- <https://x.com/trq212/status/2117305792923889731|On AI plan value and intelligence costs>
 
-• <https://x.com/rauchg/status/2117000819623243925|Own your intelligence>
-• <https://x.com/rauchg/status/2116988333096370443|Testing Gemini on v0>
+*Replit CEO Amjad Masad*
 
-- - -
+Two sharp posts from Amjad. First, a principled take on AI agent security: agents should run in dedicated, org-controlled environments with minimal permissions for each task — not given the keys to everything. Second, a warning shot to AI use in finance: "the ban hammer is coming down."
 
-*Aaron Levie — CEO of Box*
+- <https://x.com/amasad/status/2117499074496872882|On AI agent security>
+- <https://x.com/amasad/status/2117481616943820843|On AI in finance>
 
-Levie made a sweeping prediction about knowledge work: we're moving from a world where AI helps humans work faster, to a world where humans help AI agents do the work. _"This turns everyone in one of these positions to that of a manager of a team of agents, instead of an individual contributor with just some added leverage from AI."_ The biggest impact zones: coding, cybersecurity, legal, biotech, and engineering. His key insight — the historic link between hours worked and output is breaking, and organizations that figure this out first will see compounding gains.
+*Vercel CEO Guillermo Rauch*
 
-• <https://x.com/levie/status/2117134917847093491|The shift to managing agents>
+Bullish on WebMCP — the emerging standard for connecting web apps to AI agents. His bigger argument: stateless sandboxes are the wrong benchmark for agents. Agents need their full workspace — identity, skills, repos, memories — not a fresh empty box every time. He called out Vercel's Sandbox team for shipping 19 global regions, double-digit weekly growth in demand, and consistent SLO performance while pushing new features weekly.
 
-- - -
+- <https://x.com/rauchg/status/2117419661654720671|On WebMCP>
+- <https://x.com/rauchg/status/2117338179535810957|On stateful agent sandboxes>
 
-*Garry Tan — President and CEO of Y Combinator*
+*YC President & CEO Garry Tan*
 
-YC's Garry Tan flagged Particle-1, a retrieval-focused model that matches much larger models in agentic retrieval tasks at 1/23 the price. He also noted that practical robotics is imminent, and reaffirmed that YC is the go-to for hard tech founders.
+Garry's been using Capy Captains — a multi-agent coordination tool — and says it increased his issue-fixing throughput 5X overnight. The unlock: coordinating across captains and subthreads. He also flagged an interesting use of smaller models: direct weight manipulation. On the policy front, he's pushing hard for CEQA repeal, calling it the "primary NIMBY tool" blocking hospitals, high speed rail, and housing in California.
 
-• <https://x.com/garrytan/status/2117137390016073977|Particle-1 model>
-• <https://x.com/garrytan/status/2116941191526895975|Practical robotics>
-• <https://x.com/garrytan/status/2116909591607099793|YC for hard tech>
+- <https://x.com/garrytan/status/2117410016730964358|On Capy Captains productivity>
+- <https://x.com/garrytan/status/2117384926052135106|On weight manipulation with smaller models>
+- <https://x.com/garrytan/status/2117274654981452000|On CEQA repeal>
 
-- - -
+*Nikunj Kothari* — Partner at FPV Ventures
 
-*Thariq — formerly Claude Code at Anthropic*
+Nikunj is launching a new invite-only SF event series called *Slice for Thought* — 60-minute sessions where he interviews an expert for 45 minutes, then the guest gets to interview him back. First guest: Peter Walker, head of insights at OpenRouter. Wednesday, Nov 4, noon, 10–12 people, pizza included, all off the record. He also dropped a sharp VC observation: the median pipeline from "vague posting revenue numbers" to a fundraise kickoff is about 11 days (n=17).
 
-Thariq is building a game with a new character — a taekwondo master who fights with fire — and updated the art style from 3D models to generated sprites. They shared a highlight intro video and are targeting a vertical slice next week.
+- <https://x.com/nikunj/status/2117413490256433207|On Slice for Thought event series>
+- <https://x.com/nikunj/status/2117362283223687621|On startup fundraise pipeline timing>
 
-• <https://x.com/trq212/status/2116976789046350040|New character and art style update>
-• <https://x.com/trq212/status/2116977363728867664|Highlight intro video>
+*Dan Shipper* — CEO at Every
 
-- - -
+Dan is bullish on Argon (a new Claude model) — linking to Every's vibe check review of it. His read: Argon is so good that Antigravity (ChatGPT) looks stuck in 2025 by comparison, missing the latest capabilities. He's letting the quality differential speak for itself.
 
-*Zara Zhang — Builder*
+- <https://x.com/danshipper/status/2117428596688171450|Linking to Every's Argon vibe check>
+- <https://x.com/danshipper/status/2117363007340609556|On Argon vs Antigravity>
 
-Zara built and shipped a creative demo: a Linktree-style page that renders as an actual tree. Short on words, long on vibes.
+*Aditya Agarwal* — General Partner at SPC (prev CTO at Dropbox)
 
-• <https://x.com/zarazhangrui/status/2117086544586780867|Linktree as an actual tree>
+SPC alumni highlight: Tankots (Tomas Reimers), four-time founder and IOI medalist, is joining SPC's speaker series Nov 12. His company WisprFlow just raised a $280M Series B at a $2B valuation.
 
-- - -
+- <https://x.com/adityaag/status/2117313674981355761|On WisprFlow and SPC alumni>
 
-*Dan Shipper — CEO of Every*
-
-Dan Shipper called out that "argon cooks" (a reference to Argon, likely a tool or product from Every's orbit) and flagged something he considers anti-competitive and "not cool" — though without more context from the linked sources, it's not clear what he's responding to.
-
-• <https://x.com/danshipper/status/2117014507083948453|argon cooks>
-• <https://x.com/danshipper/status/2116978123044688304|anti-competitive call-out>
-
-- - -
 
 *PODCASTS*
 
-- - -
+*Latent Space: Building Legal Agents When You Can't See the Data — Jacob Lauritzen, CTO of Legora*
 
-*Unsupervised Learning — Ep 95: Modal CEO on the Future of Inference, the Chaos of the GPU Market & Origins of the Sandbox Bet*
+_The Takeaway: The most defensible legal AI isn't the most intelligent — it's the one that actually earns lawyer trust by getting citations right, structuring the work, and running on data it can never show you._
 
-*The Takeaway:* The GPU market is still a late-night WhatsApp hustle — and the companies building serious AI infrastructure have to go far deeper into the stack than most people realize, or they'll be commoditized out of existence.
+Jacob Lauritzen built Legora out of a Stockholm basement as an underdog, starting with "ChatGPT with Swedish laws and a search tool." Today it's one of the fastest-growing legal tech companies in history, and he's learned a few things the hard way.
 
-Eric Glyman is the founder and CEO of Modal, a cloud infrastructure platform used by AI teams who need to run serious compute workloads — from model inference to code sandboxes to fine-tuning. He's been building since late 2021, and Modal is now a multi-hundred-million dollar run rate business. The platform was initially built around serverless GPU functions, pivoted hard into Stable Diffusion hosting after ChatGPT, and has since grown into a full platform with inference, sandboxes, training, and storage.
+The hardest problem in legal AI isn't intelligence — it's data access. Law firms won't let you see their most sensitive matters, so Legora operates on-premise, inside clients' environments. You can't train on what you can't read. That constraint forces a different architecture: heavy investment in evals, an in-house team of three engineers and three lawyers, and a heat map tracking model performance across different practice areas and task types. Models improve most things on each release — but they also quietly regress on others more often than you'd expect.
 
-On the GPU market: _"I went to GTC last year. It was like an open air drug market, but, like, GPUs. Walking around, like, talking to people, trying to get GPUs, and meeting people in hotel lobbies, exchanging numbers."_ Modal now does two to three compute deals per week across 25 different clouds, including providers in Indonesia and Europe — many of them former crypto miners who've had to learn uptime the hard way.
+Legora's "Tabular Review" — bulk extraction and review across many agreements — has become industry terminology, with Claude for Legal apparently borrowing the concept. The product has also evolved from pure research assistant to full work orchestration: Lists (like Linear for legal work), Intake (client collaboration), and Portal (lawyer-to-lawyer and agent-to-agent workflows).
 
-What separates Modal from commodity inference providers is infrastructure that took years to build: a proprietary container runtime (no Kubernetes, no Docker), their own file system for blazing fast container image loads, CPU and GPU snapshotting, and a custom RDMA-based peer-to-peer data transfer system to load large models in seconds. _"A massive source of alpha in this market is just not being afraid to do hard things."_
+On model selection, Lauritzen fought off a model picker for a long time before caving. His instinct was right — lawyers don't want to choose between Sonnet and Opus any more than they want to choose their own search algorithm. But power users insisted, and now the picker stays. His prediction: AI won't eliminate lawyers, it'll expand what a small legal team can take on. "We're just gonna be twenty engineers for the rest of the company's history, and we're gonna beat everyone who's much bigger. We're a hundred engineers now, and it feels like we're way too small."
 
-On where the inference market is headed: Glyman thinks straight token-serving is a race to the bottom, and differentiation will come from the platform — sandboxes, training, batch processing, fine-tuning — not from inference speed alone. _"Customers don't wanna buy single trick ponies. They wanna buy a multiproduct set of tools."_ He's also betting on continuing to scale up to Blackwell GPUs while keeping Hoppers busy on older, more cost-efficient workloads. His take on model size: LMs are basically very large lookup tables of facts, and as long as memory constraints keep pushing up, models will keep getting bigger.
+<https://youtube.com/watch?v=bJBEFzlKPoQ>
 
-<https://www.youtube.com/@RedpointAI>
-
-- - -
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
