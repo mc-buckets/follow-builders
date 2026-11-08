@@ -1,83 +1,63 @@
-AI Builders Digest — November 7, 2026
+AI Builders Digest — November 8, 2026
 
 *X / TWITTER*
 
-*Thibault Sottiaux* (OpenAI Codex & ChatGPT engineer)
-Bold prediction on the future of infrastructure: "I can confidently say that humans were not very good at writing secure infrastructure. The endstate will be hypersecure infrastructure and software for all, but we're going to go through some turbulence before we reach that." He also argues that formal proofs for tens of millions of lines of code are "not a ridiculous thing anymore" and should be factored into how new systems are designed.
-- <https://x.com/thsottiaux/status/2118569235953893573|Hypersecure infrastructure is coming>
-- <https://x.com/thsottiaux/status/2118569441860723112|Formal proofs at scale>
+*Swyx* (Latent Space Pod, smol.ai, Cognition)
+Committing to weekly Anthropic IPO coverage alongside VC writer Jamin Ball, dusting off his equity hedge fund analyst background to track one of the most anticipated tech IPOs alongside his AI Engineer lens.
+<https://x.com/swyx/status/2118905788915982341|Tweet>
+
+*Thibault Sottiaux* (OpenAI Codex & ChatGPT PM)
+Went viral Friday with a simple "It's Friday" post (5.7K likes, 1.6K replies). Followed up with "Get me out of the basement" alongside a demo clip, hinting something is cooking internally — and noting "Quite cool what you can do with a single prompt these days."
+<https://x.com/thsottiaux/status/2118871902366441879|It's Friday> · <https://x.com/thsottiaux/status/2118938956301779171|Get me out of the basement>
+
+*Peter Yang* (AI tutorials creator)
+Flagged a consolidation trend: multi-model apps like Cursor are getting acquired by labs, while the ones staying independent are going open source. Wonders if enterprise demand for model-agnostic tools will keep the category alive. Also teasing a "mind-blowing" upcoming episode with a guest who may surpass Steipete as his most impressive interview yet.
+<https://x.com/petergyang/status/2118811231545122998|On lab consolidation> · <https://x.com/petergyang/status/2118852799094206787|Episode teaser>
 
 *Thariq* (formerly Claude Code at Anthropic)
-Shared a high-signal agent prompt pattern that's getting traction: location-based reminders. His example — track when you've done laundry, then bug you 30 minutes after you get home on a weekday until you confirm or delay. Simple idea, but it illustrates what persistent agents can do that apps never could.
-- <https://x.com/trq212/status/2118399561324699655|Location-based agent reminder example>
+Identified a pattern worth watching: creator apps like Instagram Edits and Roblox Studio are now shipping with built-in MCPs, letting agents handle work while power users continue in familiar tools. This "agent + MCP + power user" combo is becoming a blueprint. Also posted a viral quip (2.2K likes): "too many people building agents and not enough people using software to improve the quality of fish."
+<https://x.com/trq212/status/2118822238262853904|MCP pattern> · <https://x.com/trq212/status/2118859267314958761|Fish tweet>
 
-*Replit CEO Amjad Masad*
-Replit's custom kernel build dodges 96% of Linux zero-day vulnerabilities — shared a post on their new sandbox design. Also claimed Replit is the only collaborative AI coding system out there.
-- <https://x.com/amasad/status/2118503241390665776|Replit sandbox design>
-- <https://x.com/amasad/status/2118506378440400951|Only collaborative AI coding system>
+*Guillermo Rauch* (Vercel CEO)
+Demonstrated Generative UI for conversational agents — combining AI SDK with Chat SDK and json-render to route directly from LLM output to native UI on platforms like Slack and Teams. He's calling this the dominant "Human-Agent Interaction" paradigm going forward. Also mused: "Imagine we get gta6.wasm before gta6."
+<https://x.com/rauchg/status/2118856239719608353|Generative UI for agents> · <https://x.com/rauchg/status/2118928276118986991|GTA6.wasm>
 
-*Vercel CEO Guillermo Rauch*
-Sees an emerging creator loop nearly closing: get an X subscription → build with Bot or Cursor → deploy to Vercel → distribute on X → monetize with X Money. He's also highlighting that Grok and Cursor can now build, deploy, and scale on Vercel. Separately, he's bullish on Vercel Schedules as "cron on steroids" for agents that do work over time — referencing Muse and Instinct as examples of agents that consolidate memories at night and remind you in the morning.
-- <https://x.com/rauchg/status/2118474519925158186|The creator loop is closing>
-- <https://x.com/rauchg/status/2118464177211940997|Grok and Cursor deploy to Vercel>
-- <https://x.com/rauchg/status/2118440831355068671|"Doing stuff for you over time" is the killer app>
+*Aaron Levie* (Box CEO)
+Brief and pointed: "The future is files. And GPUs."
+<https://x.com/levie/status/2118723097901846580|Tweet>
 
-*Box CEO Aaron Levie*
-Enterprise AI prediction: we'll have 100X more agents than people working with enterprise data and systems. The core constraint is that 90% of enterprise data is unstructured — living in documents, contracts, and research files. Announced a partnership with NVIDIA for advanced context retrieval in Box, combining lexical and semantic search with enterprise security and access controls so agents can find the right information without overstepping permissions.
-- <https://x.com/levie/status/2118498574497665316|Box × NVIDIA enterprise context retrieval>
+*Garry Tan* (Y Combinator President & CEO)
+Two notable posts: (1) Advocating for eval-driven agent development — he just removed /investigate as a Claude Code skill because Opus 5.5 now handles it natively. "You can feel the AGI tide rising." (2) Highlighted research showing that just 3 million tokens of real moral-dilemma advice from ordinary people reduced AI malicious behavior to 0%, with a 28x efficiency jump across model generations.
+<https://x.com/garrytan/status/2118920030243139596|Eval-driven skills> · <https://x.com/garrytan/status/2118950671886287323|Moral dilemmas research>
 
-*YC President & CEO Garry Tan*
-Post-election take: a rare bipartisan window to curb Big Tech's market power abuse. His argument — inventing powerful AI is only half the job; people need to actually be able to use it, and trillion-dollar distribution moats block that. Calls on Congress to let thousands of startups compete. Also flagged a new "first long horizon benchmark for PE/IB work," saying that solving high finance is on the path to AGI.
-- <https://x.com/garrytan/status/2118557763156733984|Open markets for Little Tech>
-- <https://x.com/garrytan/status/2118527182092071179|High finance benchmark for AGI path>
+*Zara Zhang* (builder)
+Argues the personal website is the new resume: LinkedIn shows titles, your site shows taste, thinking, and actual work — unconstrained by platform defaults.
+<https://x.com/zarazhangrui/status/2118939184841052386|Tweet>
 
-*Peter Steinberger* (OpenClaw + OpenAI)
-Questioning Apple's Safari narrative: "Is my perception off or is Apple just lying here? Anytime I build for or use Safari, it's slower, has fewer features, weird bugs and plenty websites just don't work."
-- <https://x.com/steipete/status/2118492097917628704|Safari vs Chrome take>
+*Nikunj Kothari* (FPV Ventures Partner)
+Re-released "Texts Wrapped" — a Mac tool that analyzes your iMessages, WhatsApp, and phone call history locally with zero AI and no cloud. One terminal command, fully open source. Also posted an epic (satirical) guide to building a $100M company in two weeks before Thanksgiving — every absurd detail is real: "this is satire, but every sentence has personally happened to me."
+<https://x.com/nikunj/status/2118840414853861627|Texts Wrapped> · <https://x.com/nikunj/status/2118758688567792008|Fundraising satire>
 
-*Anthropic (claudeai)*
-Launched Personal Finance in Claude, now in beta for US users. Connect your financial accounts and ask Claude about your balances and transactions in plain language. Access is read-only — Claude can't move, manage, or invest money. No ads, no sponsored recommendations. Rolling out gradually on Pro, Max, and Ultra plans.
-- <https://x.com/claudeai/status/2118403114890137895|Personal Finance launch>
-- <https://x.com/claudeai/status/2118403117779988744|No ads, read-only, gradual rollout details>
-
-*Swyx* (smol_ai, Cognition, Latent Space)
-Provided context on a confusing Sequoia-related situation: says there was a communication gap on his end and inaccuracies in a quoted tweet he can't fully address publicly. Clarifies the situation is unrelated to the broader Sequoia restructuring announced this week. Also recommending Britt Walker as a scout for founders looking for a sharp, experienced partner.
-- <https://x.com/swyx/status/2118538896434999759|Sequoia situation context>
-- <https://x.com/swyx/status/2118542845556691411|Scout recommendation for Britt Walker>
-
-*SPC General Partner Aditya Agarwal*
-Shared a sharp reminder for founders: "Just because someone is willing to invest at a certain valuation doesn't mean it's the right valuation for your company." Also shared a full conversation with Trae Stephens at SPC.
-- <https://x.com/adityaag/status/2118477020325884357|Valuation discipline reminder>
-- <https://x.com/adityaag/status/2118477023891058762|Full conversation with Trae Stephens>
-
-*Every CEO Dan Shipper*
-Announced Thesis 2027, a live event in Brooklyn.
-- <https://x.com/danshipper/status/2118421854666838338|Thesis 2027 — live from Brooklyn>
+*Aditya Agarwal* (SPC General Partner, ex-Dropbox CTO)
+Shared a clip from an SPC conversation with Trae Stephens: "SpaceX didn't build Starship overnight. Ambitious technology demands both urgency & patience."
+<https://x.com/adityaag/status/2118733089887170878|Tweet>
 
 *PODCASTS*
 
-*Unsupervised Learning — Ep 97: Jev Creator on Decision Models, Benchmark Fatigue & Why the Labs Missed It*
+*Latent Space — Controlling Biology: Fabian Theis, Helmholtz Munich*
 
-*The Takeaway:* The AI field is suffering from a kind of Stockholm syndrome — developers plan around whatever model providers ship instead of demanding what they actually need, and that dynamic is holding back software more than any capability gap.
+_The Takeaway: AI isn't just predicting biology anymore — it's actively steering experiments in real time._
 
-Jogo, CEO of TypeSave (makers of JEV), became one of the more watched voices in AI after a viral launch about a month ago. He's building what he calls "system one" decision models — not LLMs optimized for human-readable prose, but models designed for machine consumption: fast, reliable, structured outputs that software can depend on. His core argument: the vast majority of LLM calls in the future will be for computers, not people. Strings are almost never what a computer wants. The field built for the minority use case first.
+Fabian Theis leads the Computational Health Center at Helmholtz Munich, home to 500+ researchers and arguably the largest academic hub for health AI in Europe. His lab built Scanpy and the scVerse ecosystem — tools most computational biologists reach for daily.
 
-His most contrarian takes from the conversation:
+The core of his work: building "perturbation world models" that predict how a cell responds to any input — a drug, a gene knockout, a change in environment. The challenge isn't just the modeling, it's the data. Each cell can be described as a 20,000-dimensional vector (what genes are active, and by how much), and while cell data has scaled massively, the perturbation space — what you can _do_ to cells — is still relatively sparse.
 
-- *Benchmark fatigue arrived faster than expected.* People have already been burned so many times by models that crush benchmarks but disappoint in production that they've stopped caring about new releases. He sees that as bad for the field (genuinely good things get ignored) but good for JEV specifically.
+His newest release is Lab Compass, an inverse generative model that takes a forward world model and tells you what experiments to run to reach a target biological state — closing the loop from mapping → predicting → steering. Theis ran 3-4 iterative lab loops with Cambridge collaborators and showed this actually works. "We can really now start guiding the experimentation."
 
-- *The shape of the task matters less than its reliability.* Everyone rushing to build new "shapes" of models is missing the point — it took about a week to build the architecture; the years of work are in making it actually useful.
+On the linear-vs-deep-learning debate that rocked the field: linear models often still win for simple perturbation settings, but flow-matching approaches (like those in his CellFlow paper, just accepted in Nature Methods) pull ahead on complex cross-tissue and cross-species tasks.
 
-- *Coding agents give 20–40% productivity gains on average* — decent but far from the transformations being priced in. For some tasks it's infinite leverage; for others, it's as slow as writing code by hand.
+The ultimate vision: reinforcement learning in the lab loop — cells as an RL environment.
 
-- *Anthropic's greatest strength may be financial engineering,* not models or product — specifically how they structure compute deals.
-
-- On Anthropic's IPO: "The let them cure cancer is going to be like Marie Antoinette's let them eat cake."
-
-He also went deep on what he calls the "tyranny of the KV cache" — how nearly every coding agent design decision is constrained by the append-only nature of context. His vision: agents that share context in real time, semantic compaction that reorganizes state around the new task instead of blindly truncating, and distributed history shared across a team's coding sessions.
-
-"I get the sense that a lot of the expectations baked in are ones that are not just product level, but based on misunderstandings of the future of AI and what it can do."
-
-<https://www.youtube.com/@RedpointAI|Unsupervised Learning on YouTube>
+<https://www.youtube.com/@LatentSpacePod|Latent Space — Controlling Biology>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
