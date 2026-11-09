@@ -1,63 +1,64 @@
-AI Builders Digest — November 8, 2026
+AI Builders Digest — November 9, 2026
 
 *X / TWITTER*
 
-*Swyx* (Latent Space Pod, smol.ai, Cognition)
-Committing to weekly Anthropic IPO coverage alongside VC writer Jamin Ball, dusting off his equity hedge fund analyst background to track one of the most anticipated tech IPOs alongside his AI Engineer lens.
-<https://x.com/swyx/status/2118905788915982341|Tweet>
+*Andrej Karpathy*
+Karpathy one-shotted a site called <https://t.co/l0KyW1WdNH|TristanTube> in 3 minutes using Claude Code — a curated hub of 47K nerdy YouTube videos with a TV mode for laid-back watching, inspired by Tristan's top channel list. Fast, fun, and a vivid demonstration of what agentic coding looks like in practice.
+- <https://x.com/karpathy/status/2119114537442189652|Tweet>
 
-*Thibault Sottiaux* (OpenAI Codex & ChatGPT PM)
-Went viral Friday with a simple "It's Friday" post (5.7K likes, 1.6K replies). Followed up with "Get me out of the basement" alongside a demo clip, hinting something is cooking internally — and noting "Quite cool what you can do with a single prompt these days."
-<https://x.com/thsottiaux/status/2118871902366441879|It's Friday> · <https://x.com/thsottiaux/status/2118938956301779171|Get me out of the basement>
+*OpenAI's Thibault Sottiaux (thsottiaux on X)*
+Sottiaux, who works on Codex and ChatGPT at OpenAI, clarified ChatGPT Pro plan limits: all Pro tiers have no 5-hour usage caps. Pro 100 gives 10x usage vs. Plus, Pro 200 gives 20x, and Pro 500 gives 50x with access to ultrafast. He then floated the idea of a "Pro 50" tier — drawing over 850 replies debating whether a cheaper mid-tier option would make sense.
+- <https://x.com/thsottiaux/status/2119296267545419987|Pro plan breakdown>
+- <https://x.com/thsottiaux/status/2119305294291612140|Pro 50 discussion>
 
-*Peter Yang* (AI tutorials creator)
-Flagged a consolidation trend: multi-model apps like Cursor are getting acquired by labs, while the ones staying independent are going open source. Wonders if enterprise demand for model-agnostic tools will keep the category alive. Also teasing a "mind-blowing" upcoming episode with a guest who may surpass Steipete as his most impressive interview yet.
-<https://x.com/petergyang/status/2118811231545122998|On lab consolidation> · <https://x.com/petergyang/status/2118852799094206787|Episode teaser>
+*Replit CEO Amjad Masad (amasad on X)*
+Masad shared a positive reaction to visiting Kazakhstan, calling it a "super AI pilled government" and a potential strong candidate for a Network School location. He also quote-tweeted "The Better Lesson" — a piece worth reading for anyone thinking about education and technology's role in it.
+- <https://x.com/amasad/status/2119126064815608270|Kazakhstan post>
+- <https://x.com/amasad/status/2119217304953053419|The Better Lesson>
 
-*Thariq* (formerly Claude Code at Anthropic)
-Identified a pattern worth watching: creator apps like Instagram Edits and Roblox Studio are now shipping with built-in MCPs, letting agents handle work while power users continue in familiar tools. This "agent + MCP + power user" combo is becoming a blueprint. Also posted a viral quip (2.2K likes): "too many people building agents and not enough people using software to improve the quality of fish."
-<https://x.com/trq212/status/2118822238262853904|MCP pattern> · <https://x.com/trq212/status/2118859267314958761|Fish tweet>
+*Box CEO Aaron Levie (levie on X)*
+Two big-picture takes from Levie this week. First: AI productivity gains are now 10–100x pre-AI output levels for the right setup (new codebase, multi-agent fluency, low-friction deploy), and this gap is *compounding* rather than closing as models handle harder problems. Second: AI agents are uniquely tolerant of latency, so inference can run far from users in remote AI factories — which makes datacenter location far more flexible and creates a massive economic opportunity for regions willing to embrace it.
+- <https://x.com/levie/status/2119111328099168409|On 10-100x productivity gains>
+- <https://x.com/levie/status/2118953909524050288|On AI agent datacenter geography>
 
-*Guillermo Rauch* (Vercel CEO)
-Demonstrated Generative UI for conversational agents — combining AI SDK with Chat SDK and json-render to route directly from LLM output to native UI on platforms like Slack and Teams. He's calling this the dominant "Human-Agent Interaction" paradigm going forward. Also mused: "Imagine we get gta6.wasm before gta6."
-<https://x.com/rauchg/status/2118856239719608353|Generative UI for agents> · <https://x.com/rauchg/status/2118928276118986991|GTA6.wasm>
+*YCombinator President Garry Tan (garrytan on X)*
+Tan was vocal on the AI-and-society front: he called AI-driven abundance "the defining political issue of the next decade," framing it as a choice between progress in science and medicine via superintelligence or choosing "the darkness." He also shared a jab at WIRED as "a shell of its former self" and quipped about an essay too pro-development for NIMBY comfort.
+- <https://x.com/garrytan/status/2119146939514278238|On abundance and AI's political stakes>
+- <https://x.com/garrytan/status/2119172824271360124|On WIRED>
 
-*Aaron Levie* (Box CEO)
-Brief and pointed: "The future is files. And GPUs."
-<https://x.com/levie/status/2118723097901846580|Tweet>
+*Builder Zara Zhang (zarazhangrui on X)*
+A sharp reminder that startup outcomes aren't fate: "Startups' fates are MADE, not predetermined." Zhang argues that for any given idea, 100 people will execute 100 different ways — and brilliant execution by brilliant people can create something from nothing, making the impossible look obvious in hindsight.
+- <https://x.com/zarazhangrui/status/2118968862557475298|Tweet>
 
-*Garry Tan* (Y Combinator President & CEO)
-Two notable posts: (1) Advocating for eval-driven agent development — he just removed /investigate as a Claude Code skill because Opus 5.5 now handles it natively. "You can feel the AGI tide rising." (2) Highlighted research showing that just 3 million tokens of real moral-dilemma advice from ordinary people reduced AI malicious behavior to 0%, with a 28x efficiency jump across model generations.
-<https://x.com/garrytan/status/2118920030243139596|Eval-driven skills> · <https://x.com/garrytan/status/2118950671886287323|Moral dilemmas research>
+*FPV Ventures Partner Nikunj Kothari (nikunj on X)*
+Kothari posted a sharp satirical breakdown of how founders engineer Series A FOMO: vague revenue posts, coordinated investor quote-tweets, pay-to-play "articles" in premier publications, decks that don't exist because "we weren't raising," and the magic incantation of "large ambition + long horizon agent swarms." Each line is satire — and also completely true. He's also hosting a live session Nov. 11 in SF with Arcanum Labs co-founder Daniel Rupawalla on the data market (what labs are buying, who's selling, will it last).
+- <https://x.com/nikunj/status/2119162212044742938|Series A FOMO satire>
+- <https://x.com/nikunj/status/2119229917019971879|Nov 11 SF session invite>
 
-*Zara Zhang* (builder)
-Argues the personal website is the new resume: LinkedIn shows titles, your site shows taste, thinking, and actual work — unconstrained by platform defaults.
-<https://x.com/zarazhangrui/status/2118939184841052386|Tweet>
+*OpenAI's Peter Steinberger (steipete on X)*
+Steinberger, who works on OpenClaw at OpenAI, pushed back on the Asahi Linux project adding new restrictions that make it harder for downstream projects to build on the work. The Asahi project was founded on openness; adding barriers — including an AI rejection — runs counter to its original spirit.
+- <https://x.com/steipete/status/2119264334627090514|Tweet>
 
-*Nikunj Kothari* (FPV Ventures Partner)
-Re-released "Texts Wrapped" — a Mac tool that analyzes your iMessages, WhatsApp, and phone call history locally with zero AI and no cloud. One terminal command, fully open source. Also posted an epic (satirical) guide to building a $100M company in two weeks before Thanksgiving — every absurd detail is real: "this is satire, but every sentence has personally happened to me."
-<https://x.com/nikunj/status/2118840414853861627|Texts Wrapped> · <https://x.com/nikunj/status/2118758688567792008|Fundraising satire>
-
-*Aditya Agarwal* (SPC General Partner, ex-Dropbox CTO)
-Shared a clip from an SPC conversation with Trae Stephens: "SpaceX didn't build Starship overnight. Ambitious technology demands both urgency & patience."
-<https://x.com/adityaag/status/2118733089887170878|Tweet>
+*SPC General Partner Aditya Agarwal (adityaag on X)*
+If datacenter construction gets harder politically, Agarwal argues the logical trade is going long on hyperscalers with existing capacity. Demand for compute isn't going anywhere; the spice holders win. What suffers is the rate of new model training — which means the AI frontier may pace itself whether the labs want it to or not.
+- <https://x.com/adityaag/status/2119157297167372646|Tweet>
 
 *PODCASTS*
 
-*Latent Space — Controlling Biology: Fabian Theis, Helmholtz Munich*
+*No Priors — Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev*
 
-_The Takeaway: AI isn't just predicting biology anymore — it's actively steering experiments in real time._
+*The Takeaway:* Robinhood is quietly becoming one of the most ambitious AI-native financial platforms, and Vlad Tenev's obsession with democratized ownership extends all the way from agentic trading accounts to a math superintelligence startup.
 
-Fabian Theis leads the Computational Health Center at Helmholtz Munich, home to 500+ researchers and arguably the largest academic hub for health AI in Europe. His lab built Scanpy and the scVerse ecosystem — tools most computational biologists reach for daily.
+Tenev, who co-founded Robinhood and also co-founded Harmonic (an AI math startup), has an unusually wide-ranging view of what financial infrastructure should look like in an AI world. He frames Robinhood as "the ownership company" — a platform that ties together everything from zero-commission stocks to prediction markets to private company access to tokenized assets on Robinhood Chain, its own blockchain.
 
-The core of his work: building "perturbation world models" that predict how a cell responds to any input — a drug, a gene knockout, a change in environment. The challenge isn't just the modeling, it's the data. Each cell can be described as a 20,000-dimensional vector (what genes are active, and by how much), and while cell data has scaled massively, the perturbation space — what you can _do_ to cells — is still relatively sparse.
+On agentic trading: Robinhood launched an MCP-based product this year that lets AI agents execute trades on behalf of users. Adoption is striking — over 150,000 customers have opened agentic trading accounts, generating roughly 30 million tool calls per day. The platform now includes Robinhood Agents, an in-app harness for running trading loops and strategies, plus an app store for plugging in satellite data or other signals.
 
-His newest release is Lab Compass, an inverse generative model that takes a forward world model and tells you what experiments to run to reach a target biological state — closing the loop from mapping → predicting → steering. Theis ran 3-4 iterative lab loops with Cambridge collaborators and showed this actually works. "We can really now start guiding the experimentation."
+On Harmonic: Tenev co-founded the startup to build mathematical superintelligence. Their model, Aristotle, earned a gold medal at the International Math Olympiad last year, and has since been used to attack unsolved problems. But Tenev's concern is centralization: he worries that AI labs making all the discoveries internally, in secret data centers, is a "dystopian outcome." He'd rather see tools in the hands of individuals making their own breakthroughs.
 
-On the linear-vs-deep-learning debate that rocked the field: linear models often still win for simple perturbation settings, but flow-matching approaches (like those in his CellFlow paper, just accepted in Nature Methods) pull ahead on complex cross-tissue and cross-species tasks.
+On tokenization: Robinhood Chain has become (by his account) the fastest-growing blockchain by several metrics. Stock tokens — tokenized US equities — are now fully DeFi-enabled, letting anyone globally with a smartphone get exposure to US markets without a traditional brokerage account.
 
-The ultimate vision: reinforcement learning in the lab loop — cells as an RL environment.
+His formula for staying levelheaded through it all: "The best approach to all of these challenges is just grow thick skin. You can control that about yourself, but you can't control the outside world."
 
-<https://www.youtube.com/@LatentSpacePod|Latent Space — Controlling Biology>
+<https://www.youtube.com/@NoPriorsPodcast|No Priors Podcast>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
