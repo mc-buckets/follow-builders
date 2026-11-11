@@ -1,64 +1,118 @@
-AI Builders Digest — November 9, 2026
+AI Builders Digest — November 10, 2026
+
+The big story today: Claude Fable 5.2 launched, and the entire builder community dropped what they were doing to test it. Alongside the model launch, a deep data-labeling episode from Latent Space reveals how AI training has evolved from $10/hr college students to domain experts authoring simulated financial worlds.
 
 *X / TWITTER*
 
-*Andrej Karpathy*
-Karpathy one-shotted a site called <https://t.co/l0KyW1WdNH|TristanTube> in 3 minutes using Claude Code — a curated hub of 47K nerdy YouTube videos with a TV mode for laid-back watching, inspired by Tristan's top channel list. Fast, fun, and a vivid demonstration of what agentic coding looks like in practice.
-- <https://x.com/karpathy/status/2119114537442189652|Tweet>
+*Swyx* — AI podcaster (Latent Space) and smol.ai founder
 
-*OpenAI's Thibault Sottiaux (thsottiaux on X)*
-Sottiaux, who works on Codex and ChatGPT at OpenAI, clarified ChatGPT Pro plan limits: all Pro tiers have no 5-hour usage caps. Pro 100 gives 10x usage vs. Plus, Pro 200 gives 20x, and Pro 500 gives 50x with access to ultrafast. He then floated the idea of a "Pro 50" tier — drawing over 850 replies debating whether a cheaper mid-tier option would make sense.
-- <https://x.com/thsottiaux/status/2119296267545419987|Pro plan breakdown>
-- <https://x.com/thsottiaux/status/2119305294291612140|Pro 50 discussion>
+The Fable 5.2 launch had Swyx in full hype mode. Someone proved Fermat's Last Theorem as a demo during the launch — and apparently has "something bigger" planned for an upcoming talk. Swyx also noted that Anthropic's $ANT IPO roadshow on Wall Street started the same day as the launch. "They had this in the chamber." He's separately opening signups for a new project aimed at media creators.
+- https://x.com/swyx/status/2119935240202539147
+- https://x.com/swyx/status/2119878742063641056
+- https://x.com/swyx/status/2119990961459921395
 
-*Replit CEO Amjad Masad (amasad on X)*
-Masad shared a positive reaction to visiting Kazakhstan, calling it a "super AI pilled government" and a potential strong candidate for a Network School location. He also quote-tweeted "The Better Lesson" — a piece worth reading for anyone thinking about education and technology's role in it.
-- <https://x.com/amasad/status/2119126064815608270|Kazakhstan post>
-- <https://x.com/amasad/status/2119217304953053419|The Better Lesson>
+*Boris Cherny* — engineer at Anthropic (Claude)
 
-*Box CEO Aaron Levie (levie on X)*
-Two big-picture takes from Levie this week. First: AI productivity gains are now 10–100x pre-AI output levels for the right setup (new codebase, multi-agent fluency, low-friction deploy), and this gap is *compounding* rather than closing as models handle harder problems. Second: AI agents are uniquely tolerant of latency, so inference can run far from users in remote AI factories — which makes datacenter location far more flexible and creates a massive economic opportunity for regions willing to embrace it.
-- <https://x.com/levie/status/2119111328099168409|On 10-100x productivity gains>
-- <https://x.com/levie/status/2118953909524050288|On AI agent datacenter geography>
+Anthropic is rewarding long-time subscribers with Fable 5.2: the longer you've been subscribed, the more "Fable resets" you get. Pro users get one reset; Max, Ultra, and Team Premium get up to three. Boris framed it simply: "We wanted to do more for the people who've been with us the longest."
+- https://x.com/bcherny/status/2119873095129550880
+- https://x.com/bcherny/status/2119890820186976763
 
-*YCombinator President Garry Tan (garrytan on X)*
-Tan was vocal on the AI-and-society front: he called AI-driven abundance "the defining political issue of the next decade," framing it as a choice between progress in science and medicine via superintelligence or choosing "the darkness." He also shared a jab at WIRED as "a shell of its former self" and quipped about an essay too pro-development for NIMBY comfort.
-- <https://x.com/garrytan/status/2119146939514278238|On abundance and AI's political stakes>
-- <https://x.com/garrytan/status/2119172824271360124|On WIRED>
+*Thibault Sottiaux* — product at OpenAI (Codex & ChatGPT)
 
-*Builder Zara Zhang (zarazhangrui on X)*
-A sharp reminder that startup outcomes aren't fate: "Startups' fates are MADE, not predetermined." Zhang argues that for any given idea, 100 people will execute 100 different ways — and brilliant execution by brilliant people can create something from nothing, making the impossible look obvious in hindsight.
-- <https://x.com/zarazhangrui/status/2118968862557475298|Tweet>
+ChatGPT's Dots agent can now control multiple machines, not just the cloud computer OpenAI provides by default. No elaboration, but this is a significant expansion of Dots' computer-use reach.
+- https://x.com/thsottiaux/status/2120021043876106429
 
-*FPV Ventures Partner Nikunj Kothari (nikunj on X)*
-Kothari posted a sharp satirical breakdown of how founders engineer Series A FOMO: vague revenue posts, coordinated investor quote-tweets, pay-to-play "articles" in premier publications, decks that don't exist because "we weren't raising," and the magic incantation of "large ambition + long horizon agent swarms." Each line is satire — and also completely true. He's also hosting a live session Nov. 11 in SF with Arcanum Labs co-founder Daniel Rupawalla on the data market (what labs are buying, who's selling, will it last).
-- <https://x.com/nikunj/status/2119162212044742938|Series A FOMO satire>
-- <https://x.com/nikunj/status/2119229917019971879|Nov 11 SF session invite>
+*Peter Yang* — AI educator
 
-*OpenAI's Peter Steinberger (steipete on X)*
-Steinberger, who works on OpenClaw at OpenAI, pushed back on the Asahi Linux project adding new restrictions that make it harder for downstream projects to build on the work. The Asahi project was founded on openness; adding barriers — including an AI rejection — runs counter to its original spirit.
-- <https://x.com/steipete/status/2119264334627090514|Tweet>
+Sharing playful Fable 5.2 experiments: turned his 8-year-old's drawings into kart racers, and is upgrading music. Lighthearted content, but illustrative of how creative consumers are using the new model.
+- https://x.com/petergyang/status/2120020729546862979
+- https://x.com/petergyang/status/2120026112722137345
 
-*SPC General Partner Aditya Agarwal (adityaag on X)*
-If datacenter construction gets harder politically, Agarwal argues the logical trade is going long on hyperscalers with existing capacity. Demand for compute isn't going anywhere; the spice holders win. What suffers is the rate of new model training — which means the AI frontier may pace itself whether the labs want it to or not.
-- <https://x.com/adityaag/status/2119157297167372646|Tweet>
+*Nan Yu* — head of product at OpenAI (Codex)
+
+A quick but useful PSA: ChatGPT has a global dictation setting buried in preferences that uses the same fast, accurate transcription path as the in-app dictation. Worth enabling if you're a heavy ChatGPT user.
+- https://x.com/thenanyu/status/2120037431261184454
+
+*Madhu Guru* — Sr. Director of AI at Meta (prev. led Gemini, Veo)
+
+A thoughtful framework for AI-augmented product management. Madhu argues PMs should use AI to go _deeper_ across every phase of the product lifecycle — not replace adjacent roles, but raise their own bar. Market research, rapid prototyping, codebase exploration, self-serve analytics, GTM fluency. "This is about raising the bar on the PM role, so they combine their breadth with much greater depth."
+- https://x.com/realmadhuguru/status/2119999748086362466
+
+*Amjad Masad* — CEO of Replit
+
+Three threads converging: (1) He showed Paul Graham "vibe coding" before the term existed in July 2024 — shared Graham's enthusiastic reaction. (2) An "Enterprise Vibe Coding" book from Japan's SMFL launches November 27, with Amjad on the cover. (3) His answer to "who maintains vibe-coded apps?": self-healing software.
+- https://x.com/amasad/status/2119965240066752682
+- https://x.com/amasad/status/2119909166764667292
+- https://x.com/amasad/status/2119893236747780567
+
+*Guillermo Rauch* — CEO of Vercel
+
+Two big posts. First, Fable 5.2: "astonishingly brilliant." His key insight — to fully leverage this generation of models, you need cloud sandboxes. "Your bottleneck is now ① your ambition and ② your parallel computing power." Second, a bullish take on MCP extending beyond AI: even without AI, getting all systems communicating through one universal open protocol would be "a civilization-scale accomplishment." Vercel is adding support for MCP Events — pub/sub callbacks across sessions — so agents can subscribe to events like `deployment.succeeded` instead of polling.
+- https://x.com/rauchg/status/2119878364794372162
+- https://x.com/rauchg/status/2119891138450755670
+
+*Alex Albert* — research at Anthropic
+
+Three standout posts. His most-viral tip for new model launches: run "Read this entire project and find everything that's broken, inconsistent, inefficient, or no longer needed. Fix what you're sure about and list the rest for me to review." He also fed Fable 5.2 a PDF of Leonardo da Vinci's 500-year-old notebooks and had it make the inventions interactive — "such an exciting time for education." And a one-liner with teeth: "robotics will fall to the bitter lesson too."
+- https://x.com/alexalbert__/status/2119884951550386671
+- https://x.com/alexalbert__/status/2119916954337349737
+- https://x.com/alexalbert__/status/2119869925288558799
+
+*Aaron Levie* — CEO of Box
+
+A macro take: coding and computer use advances, combined with industry-specific reasoning, will bring software-style automation to fields that haven't had their "Claude Code moment" yet — animation, film, gaming, manufacturing, architecture, robotics, product design. "Software is eating the world is finally in a much bigger way happening because of AI."
+- https://x.com/levie/status/2119987129204047894
+
+*Garry Tan* — President & CEO of Y Combinator
+
+"Red letter day: New frontier model = every one of your projects gets a step function improvement. I'm not sure if I'll ever get sick of frontier model release days." Short but captures the builder energy around new model launches.
+- https://x.com/garrytan/status/2119882192088391751
+
+*Nikunj Kothari* — partner at FPV Ventures
+
+A sharp observation: people can tell when you're just feeding everything to AI and regurgitating it back — because they're probably using the same agents and getting the same outputs. Referencing Niklas Gruhn's article on AI-generated sameness. The differentiation gap is closing fast.
+- https://x.com/nikunj/status/2119850705901191339
+
+*Dan Shipper* — CEO of Every
+
+The most detailed Fable 5.2 field report of the day. Key findings from Every's team during early access:
+- *Coding:* Kieran Klaassen built Everycut, a full video editor combining Premiere + Descript features, in 3 days. "A new era of professionals building their own professional tools."
+- *Games:* Jack Cheng turned a photo of his toddler's messy playroom into a playable racing game — stray shoe as obstacle, sippy cup as power-up.
+- *Knowledge work:* Matt Hammer turned his research into a documentary. "The most productive 3 weeks of his career."
+- *How to use it:* Give it a big job, let it run overnight/weekend. Set the goal, the budget, and define what "done" means.
+- *The catch:* Slow and expensive — 20% cheaper than Fable 5.1, but not for everyday tasks. "For quick back-and-forth coding, I'd usually reach for something else."
+- *Best signal:* When early access ended, one team member stopped working on projects rather than build them with a different model.
+- https://x.com/danshipper/status/2119869228207546638
+
+*Aditya Agarwal* — General Partner at SPC (prev. CTO of Dropbox)
+
+Teasing a launch from the Nuance AI team. Limited detail in the tweet, but worth watching if you follow enterprise AI tooling.
+- https://x.com/adityaag/status/2119858043869683935
+
+*Claude AI* — official Anthropic account
+
+Announced Fable 5.2 availability on all paid plans. Also shared that Fable 5.2 solved two novel physics problems: (1) an abrupt phase transition in very small simulated universes, and (2) the exact limit of "modular bootstrapping" — a 15-year-old technique used to rule out candidate theories of quantum gravity. Both results are written up in preprints.
+- https://x.com/claudeai/status/2119899492778398163
+- https://x.com/claudeai/status/2119899491310432269
+- https://x.com/claudeai/status/2119899488995131439
 
 *PODCASTS*
 
-*No Priors — Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev*
+*Latent Space* — "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team"
+https://www.youtube.com/@LatentSpacePod
 
-*The Takeaway:* Robinhood is quietly becoming one of the most ambitious AI-native financial platforms, and Vlad Tenev's obsession with democratized ownership extends all the way from agentic trading accounts to a math superintelligence startup.
+*The Takeaway:* The AI training data market has exploded from $1B to $10B in three years — and the work has transformed from students drawing boxes around images to domain experts authoring entire simulated worlds.
 
-Tenev, who co-founded Robinhood and also co-founded Harmonic (an AI math startup), has an unusually wide-ranging view of what financial infrastructure should look like in an AI world. He frames Robinhood as "the ownership company" — a platform that ties together everything from zero-commission stocks to prediction markets to private company access to tokenized assets on Robinhood Chain, its own blockchain.
+Swyx sits down with Garrett Lord (CEO), Nishant, and Sahil from Handshake AI to go deep on the state of frontier training data. The conversation covers how the job has evolved and what it actually takes to build high-quality agentic training environments today.
 
-On agentic trading: Robinhood launched an MCP-based product this year that lets AI agents execute trades on behalf of users. Adoption is striking — over 150,000 customers have opened agentic trading accounts, generating roughly 30 million tool calls per day. The platform now includes Robinhood Agents, an in-app harness for running trading loops and strategies, plus an app store for plugging in satellite data or other signals.
+The key shift: in 2022, college students could train early LLMs because the models produced gibberish and low-level feedback was fine. Now models are sophisticated enough that only real domain experts — investment bankers, lawyers, doctors — can evaluate whether outputs are genuinely good or subtly wrong.
 
-On Harmonic: Tenev co-founded the startup to build mathematical superintelligence. Their model, Aristotle, earned a gold medal at the International Math Olympiad last year, and has since been used to attack unsolved problems. But Tenev's concern is centralization: he worries that AI labs making all the discoveries internally, in secret data centers, is a "dystopian outcome." He'd rather see tools in the hands of individuals making their own breakthroughs.
+The harder problem is building the environments themselves. To train an agent on investment banking tasks, Handshake AI must simulate the full toolkit: Outlook, Excel, PowerPoint, Bloomberg, FactSet, SEC Edgar — all in Docker containers, since you can't use real software at scale. They populate these environments with synthetic-but-realistic data, guided by experts, because pure synthetic generation produces "slop" that fails internal consistency checks. A financial model might look plausible but have numbers that don't tie across 20 files the way a real company's would.
 
-On tokenization: Robinhood Chain has become (by his account) the fastest-growing blockchain by several metrics. Stock tokens — tokenized US equities — are now fully DeFi-enabled, letting anyone globally with a smartphone get exposure to US markets without a traditional brokerage account.
+The 95% rule came up repeatedly: in expert knowledge work, 95% accurate is effectively 100% wrong, because fixing a flawed output takes as long as doing it from scratch.
 
-His formula for staying levelheaded through it all: "The best approach to all of these challenges is just grow thick skin. You can control that about yourself, but you can't control the outside world."
+The frontier of data is now about authoring entire simulated worlds — defining what "good" looks like in complex, long-horizon tasks — and that's genuinely hard to codify. Most knowledge work doesn't have perfectly verifiable answers, which is why the high-paying expert jobs exist in the first place.
 
-<https://www.youtube.com/@NoPriorsPodcast|No Priors Podcast>
+Garrett's market call: this was a $1B market three years ago, it's $10B now, and he doesn't see how it's not $100B in three more years.
 
-Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
+Handshake AI is hiring across SF, New York, Berlin, London, Bangalore, and North Africa. Contact: garrett@joinhandshake.com
