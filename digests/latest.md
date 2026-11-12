@@ -1,118 +1,153 @@
-AI Builders Digest — November 10, 2026
+AI Builders Digest — November 12, 2026
 
-The big story today: Claude Fable 5.2 launched, and the entire builder community dropped what they were doing to test it. Alongside the model launch, a deep data-labeling episode from Latent Space reveals how AI training has evolved from $10/hr college students to domain experts authoring simulated financial worlds.
 
 *X / TWITTER*
 
-*Swyx* — AI podcaster (Latent Space) and smol.ai founder
 
-The Fable 5.2 launch had Swyx in full hype mode. Someone proved Fermat's Last Theorem as a demo during the launch — and apparently has "something bigger" planned for an upcoming talk. Swyx also noted that Anthropic's $ANT IPO roadshow on Wall Street started the same day as the launch. "They had this in the chamber." He's separately opening signups for a new project aimed at media creators.
-- https://x.com/swyx/status/2119935240202539147
-- https://x.com/swyx/status/2119878742063641056
-- https://x.com/swyx/status/2119990961459921395
+*Swyx* (AI Engineer, Latent Space Pod, smol_ai / Cognition)
 
-*Boris Cherny* — engineer at Anthropic (Claude)
+Swyx is hyping Thursday's AI Engineer World's Fair keynote, teasing that he had to sign an embargo just to preview it — "you guys don't know what you're in for." The all-day live stream runs 9am–6pm PT Wednesday and Thursday. He also sparked a conversation by asking Zeno Rocha (CEO of Resend / AEO) why AI agents keep defaulting to Resend even when you don't want them to — a pointed jab at how tools are getting baked into agentic default behaviors.
 
-Anthropic is rewarding long-time subscribers with Fable 5.2: the longer you've been subscribed, the more "Fable resets" you get. Pro users get one reset; Max, Ultra, and Team Premium get up to three. Boris framed it simply: "We wanted to do more for the people who've been with us the longest."
-- https://x.com/bcherny/status/2119873095129550880
-- https://x.com/bcherny/status/2119890820186976763
+- <https://x.com/swyx/status/2120372817720197357|AIE World's Fair keynote hype>
+- <https://x.com/swyx/status/2120260228902264872|Why agents keep choosing Resend>
+- <https://x.com/swyx/status/2120376333142569316|Engines thread>
 
-*Thibault Sottiaux* — product at OpenAI (Codex & ChatGPT)
 
-ChatGPT's Dots agent can now control multiple machines, not just the cloud computer OpenAI provides by default. No elaboration, but this is a significant expansion of Dots' computer-use reach.
-- https://x.com/thsottiaux/status/2120021043876106429
+*Josh Woodward* (VP, Google Labs / Gemini App / Google AI Studio)
 
-*Peter Yang* — AI educator
+Announced that Gemini 4 Carbon is now rolling out in the Gemini App for Ultra subscribers worldwide.
 
-Sharing playful Fable 5.2 experiments: turned his 8-year-old's drawings into kart racers, and is upgrading music. Lighthearted content, but illustrative of how creative consumers are using the new model.
-- https://x.com/petergyang/status/2120020729546862979
-- https://x.com/petergyang/status/2120026112722137345
+- <https://x.com/joshwoodward/status/2120186249281778135|Gemini 4 Carbon launch>
 
-*Nan Yu* — head of product at OpenAI (Codex)
 
-A quick but useful PSA: ChatGPT has a global dictation setting buried in preferences that uses the same fast, accurate transcription path as the in-app dictation. Worth enabling if you're a heavy ChatGPT user.
-- https://x.com/thenanyu/status/2120037431261184454
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
 
-*Madhu Guru* — Sr. Director of AI at Meta (prev. led Gemini, Veo)
+Sottiaux polled his audience on small business ownership — likely building toward a Codex/ChatGPT use case pitch — and celebrated an apparent cross-lab collaboration moment with a "Labs innovating together ftw," reacting to Anthropic's Claude interactive connectors launch.
 
-A thoughtful framework for AI-augmented product management. Madhu argues PMs should use AI to go _deeper_ across every phase of the product lifecycle — not replace adjacent roles, but raise their own bar. Market research, rapid prototyping, codebase exploration, self-serve analytics, GTM fluency. "This is about raising the bar on the PM role, so they combine their breadth with much greater depth."
-- https://x.com/realmadhuguru/status/2119999748086362466
+- <https://x.com/thsottiaux/status/2120267268517249036|Small business poll>
+- <https://x.com/thsottiaux/status/2120266880963473789|Labs innovating together>
 
-*Amjad Masad* — CEO of Replit
 
-Three threads converging: (1) He showed Paul Graham "vibe coding" before the term existed in July 2024 — shared Graham's enthusiastic reaction. (2) An "Enterprise Vibe Coding" book from Japan's SMFL launches November 27, with Amjad on the cover. (3) His answer to "who maintains vibe-coded apps?": self-healing software.
-- https://x.com/amasad/status/2119965240066752682
-- https://x.com/amasad/status/2119909166764667292
-- https://x.com/amasad/status/2119893236747780567
+*Peter Yang* (AI skills and tutorials)
 
-*Guillermo Rauch* — CEO of Vercel
+Yang is defending the use of AI in game development, calling out developers and gamers who oppose it as "idiotic" and drawing a distinction between tasteful and distasteful AI use. He also shared a link to an updated game he's been building, and expressed bullishness on Anthropic's potential to accelerate cures for serious diseases — prioritizing the mission over the stock price.
 
-Two big posts. First, Fable 5.2: "astonishingly brilliant." His key insight — to fully leverage this generation of models, you need cloud sandboxes. "Your bottleneck is now ① your ambition and ② your parallel computing power." Second, a bullish take on MCP extending beyond AI: even without AI, getting all systems communicating through one universal open protocol would be "a civilization-scale accomplishment." Vercel is adding support for MCP Events — pub/sub callbacks across sessions — so agents can subscribe to events like `deployment.succeeded` instead of polling.
-- https://x.com/rauchg/status/2119878364794372162
-- https://x.com/rauchg/status/2119891138450755670
+- <https://x.com/petergyang/status/2120370522622181809|Defending AI in game dev>
+- <https://x.com/petergyang/status/2120326994579931419|Updated game>
+- <https://x.com/petergyang/status/2120320377163501817|Bullish on Anthropic's disease-cure potential>
 
-*Alex Albert* — research at Anthropic
 
-Three standout posts. His most-viral tip for new model launches: run "Read this entire project and find everything that's broken, inconsistent, inefficient, or no longer needed. Fix what you're sure about and list the rest for me to review." He also fed Fable 5.2 a PDF of Leonardo da Vinci's 500-year-old notebooks and had it make the inventions interactive — "such an exciting time for education." And a one-liner with teeth: "robotics will fall to the bitter lesson too."
-- https://x.com/alexalbert__/status/2119884951550386671
-- https://x.com/alexalbert__/status/2119916954337349737
-- https://x.com/alexalbert__/status/2119869925288558799
+*Nan Yu* (Product, Codex at OpenAI; former Head of Product at Linear)
 
-*Aaron Levie* — CEO of Box
+Yu shared a note about an Apple dictation feature mapping that few other dictation apps get right — highlighting thoughtful UX details as differentiators in AI tooling.
 
-A macro take: coding and computer use advances, combined with industry-specific reasoning, will bring software-style automation to fields that haven't had their "Claude Code moment" yet — animation, film, gaming, manufacturing, architecture, robotics, product design. "Software is eating the world is finally in a much bigger way happening because of AI."
-- https://x.com/levie/status/2119987129204047894
+- <https://x.com/thenanyu/status/2120203450223104012|Apple dictation mapping detail>
+- <https://x.com/thenanyu/status/2120203911265218969|Cost comparison thread>
 
-*Garry Tan* — President & CEO of Y Combinator
 
-"Red letter day: New frontier model = every one of your projects gets a step function improvement. I'm not sure if I'll ever get sick of frontier model release days." Short but captures the builder energy around new model launches.
-- https://x.com/garrytan/status/2119882192088391751
+*Thariq* (formerly Claude Code at Anthropic)
 
-*Nikunj Kothari* — partner at FPV Ventures
+A pointed take: "we need fewer one shot demos and more tools that show how you can collaborate with models to bring your vision to life." A call for the industry to mature past impressive demos into genuine human-AI collaboration workflows.
 
-A sharp observation: people can tell when you're just feeding everything to AI and regurgitating it back — because they're probably using the same agents and getting the same outputs. Referencing Niklas Gruhn's article on AI-generated sameness. The differentiation gap is closing fast.
-- https://x.com/nikunj/status/2119850705901191339
+- <https://x.com/trq212/status/2120223476279869875|Fewer demos, more collaboration tools>
 
-*Dan Shipper* — CEO of Every
 
-The most detailed Fable 5.2 field report of the day. Key findings from Every's team during early access:
-- *Coding:* Kieran Klaassen built Everycut, a full video editor combining Premiere + Descript features, in 3 days. "A new era of professionals building their own professional tools."
-- *Games:* Jack Cheng turned a photo of his toddler's messy playroom into a playable racing game — stray shoe as obstacle, sippy cup as power-up.
-- *Knowledge work:* Matt Hammer turned his research into a documentary. "The most productive 3 weeks of his career."
-- *How to use it:* Give it a big job, let it run overnight/weekend. Set the goal, the budget, and define what "done" means.
-- *The catch:* Slow and expensive — 20% cheaper than Fable 5.1, but not for everyday tasks. "For quick back-and-forth coding, I'd usually reach for something else."
-- *Best signal:* When early access ended, one team member stopped working on projects rather than build them with a different model.
-- https://x.com/danshipper/status/2119869228207546638
+*Guillermo Rauch* (CEO, Vercel)
 
-*Aditya Agarwal* — General Partner at SPC (prev. CTO of Dropbox)
+Two sharp posts. First, Rauch praised Rust as a great language and ecosystem — especially impressive given it predates agentic coding — while hinting that new languages optimized for the agentic era may emerge. Second, a week-one stat drop for Vercel Security Review: 57,897 vulnerabilities identified, 6,029 of them critical. Those are notable numbers for a brand-new product.
 
-Teasing a launch from the Nuance AI team. Limited detail in the tweet, but worth watching if you follow enterprise AI tooling.
-- https://x.com/adityaag/status/2119858043869683935
+- <https://x.com/rauchg/status/2120337388178379178|Rust + agentic coding>
+- <https://x.com/rauchg/status/2120188488628977819|Vercel Security Review stats>
 
-*Claude AI* — official Anthropic account
 
-Announced Fable 5.2 availability on all paid plans. Also shared that Fable 5.2 solved two novel physics problems: (1) an abrupt phase transition in very small simulated universes, and (2) the exact limit of "modular bootstrapping" — a 15-year-old technique used to rule out candidate theories of quantum gravity. Both results are written up in preprints.
-- https://x.com/claudeai/status/2119899492778398163
-- https://x.com/claudeai/status/2119899491310432269
-- https://x.com/claudeai/status/2119899488995131439
+*Aaron Levie* (CEO, Box)
+
+Levie is bullish on agent swarms as the next major leap in AI output — predicting a "clear separation" between companies that embrace them and those that don't. He's also betting on a future where agents interact with enterprise files 100x more than humans do today, which is driving Box's latest partnership announcement.
+
+- <https://x.com/levie/status/2120385739342897469|Agent swarms = next AI leap>
+- <https://x.com/levie/status/2120261416733036905|Box + agents + enterprise files partnership>
+
+
+*Ryo Lu* (Designer, Cursor; formerly Notion, Stripe)
+
+A philosophical pair of posts from Ryo. The first argues that software should be built to let humans flourish — not just optimize or complete tasks. The second warns against siloed agents: "working together with other humans is where the magic happens, not each of us running our own army of agents." Also dropped a new journal post available in English, Chinese, and Japanese.
+
+- <https://x.com/ryolu_/status/2120380317429350654|Software to let humans flourish>
+- <https://x.com/ryolu_/status/2120337691661443081|Against siloed agent armies>
+- <https://x.com/ryolu_/status/2120090087715426614|Journal post (EN/CN/JP)>
+
+
+*Zara Zhang* (Builder)
+
+Two solid frameworks for builders. First: when users don't return, 80% of the time it's because they forgot your product exists — not because they dislike it. Retention is a memory problem. Second: share work in progress, don't wait until it's done. Progress attracts the people worth attracting.
+
+- <https://x.com/zarazhangrui/status/2120235104194932841|Retention is a memory problem>
+- <https://x.com/zarazhangrui/status/2120041030951297033|Share WIP, don't wait for done>
+
+
+*Nikunj Kothari* (Partner, FPV Ventures)
+
+Mostly ambient posts — a MLK Jr. quote on character under pressure, a reaction to something that apparently impressed him ("Mic drop / Gulp / Wow"), and a Fable AI video generation test for Wrap2026.
+
+- <https://x.com/nikunj/status/2120386979389157530|MLK Jr. on character>
+- <https://x.com/nikunj/status/2120260803295363388|Reaction post>
+- <https://x.com/nikunj/status/2120165833993322497|Fable video test>
+
+
+*Peter Steinberger* (OpenClaw + OpenAI)
+
+Flagged a striking stat: a company ran diagnostics on 700 systems and found 10,500 vulnerabilities — triggering an emergency press conference. No editorial, just the signal.
+
+- <https://x.com/steipete/status/2120228665946710248|10,500 vulnerabilities in 700 systems>
+
+
+*Dan Shipper* (CEO, Every)
+
+Shipper ran a live "vibe check" of Gemini 4 Carbon after Google dropped it today, noting it's a better coder than Argon — but he's staying on Argon for his own workflows for now. Linked to a full write-up.
+
+- <https://x.com/danshipper/status/2120187507396530309|Gemini 4 Carbon vibe check>
+- <https://x.com/danshipper/status/2120186731114778688|Live vibe check>
+- <https://x.com/danshipper/status/2120294319773073919|Full write-up>
+
+
+*Aditya Agarwal* (General Partner, SPC; former CTO, Dropbox)
+
+No notable posts beyond a brief observation that highly successful people tend to have intense hobbies.
+
+- <https://x.com/adityaag/status/2120249412685607254|Successful people + intense hobbies>
+
+
+*Claude AI* (Anthropic)
+
+Three product announcements rolling out today. Claude Whiteboard is launching. Interactive connectors now let you open full versions of tools — Adobe, Atlassian, and others — directly inside Claude. And Claude Data (formerly Dashboards) is now generally available on paid plans, letting Claude draft data tables and charts alongside conversations.
+
+- <https://x.com/claudeai/status/2120206379315261702|Claude Whiteboard launch>
+- <https://x.com/claudeai/status/2120206375137484875|Interactive connectors (Adobe, Atlassian, etc.)>
+- <https://x.com/claudeai/status/2120206372478566799|Claude Data now generally available>
+
 
 *PODCASTS*
 
-*Latent Space* — "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team"
-https://www.youtube.com/@LatentSpacePod
 
-*The Takeaway:* The AI training data market has exploded from $1B to $10B in three years — and the work has transformed from students drawing boxes around images to domain experts authoring entire simulated worlds.
+*Latent Space — "Designing for Agents — Zeno Rocha, Resend"*
 
-Swyx sits down with Garrett Lord (CEO), Nishant, and Sahil from Handshake AI to go deep on the state of frontier training data. The conversation covers how the job has evolved and what it actually takes to build high-quality agentic training environments today.
+_The Takeaway: Email infrastructure is a full-stack systems problem disguised as a commodity — and the people who figured that out built the category._
 
-The key shift: in 2022, college students could train early LLMs because the models produced gibberish and low-level feedback was fine. Now models are sophisticated enough that only real domain experts — investment bankers, lawyers, doctors — can evaluate whether outputs are genuinely good or subtly wrong.
+Zeno Rocha started his career as a front-end guy who made the Dracula theme that every developer has used at some point. No email background. No infra chops. He just looked at SendGrid, Mailchimp, and MailGun and thought: "someone should actually care about developers here."
 
-The harder problem is building the environments themselves. To train an agent on investment banking tasks, Handshake AI must simulate the full toolkit: Outlook, Excel, PowerPoint, Bloomberg, FactSet, SEC Edgar — all in Docker containers, since you can't use real software at scale. They populate these environments with synthetic-but-realistic data, guided by experts, because pure synthetic generation produces "slop" that fails internal consistency checks. A financial model might look plausible but have numbers that don't tie across 20 files the way a real company's would.
+That instinct became Resend. As of this episode's recording, Resend powers 4.3 million users and has crossed $10M ARR — including Warner Bros., HBO, and a Japanese criminal organization that showed up with 20,000 domains across 20,000 TLDs. (They were caught.)
 
-The 95% rule came up repeatedly: in expert knowledge work, 95% accurate is effectively 100% wrong, because fixing a flawed output takes as long as doing it from scratch.
+What most people miss: email deliverability is not a simple API call. It's a complex infrastructure game involving IP block reputation, batch timing, engagement-first queue ordering, and the constant reverse-engineering of how spammers behave — so you can do the opposite. "You need to do exactly what an abuser wouldn't do," Zeno says. Abusers buy fresh domains, blast at high volume, then go quiet. Resend builds the infrastructure to do the opposite at scale: warmup curves, distributed IP pools, reputation monitoring.
 
-The frontier of data is now about authoring entire simulated worlds — defining what "good" looks like in complex, long-horizon tasks — and that's genuinely hard to codify. Most knowledge work doesn't have perfectly verifiable answers, which is why the high-paying expert jobs exist in the first place.
+One counterintuitive move that boosted deliverability: auto-generating plain-text email versions from HTML using AI. Plain text has no open tracking (can't embed a 1px GIF), but it's dramatically easier for spam filters to parse. The tradeoff was worth it.
 
-Garrett's market call: this was a $1B market three years ago, it's $10B now, and he doesn't see how it's not $100B in three more years.
+On support: when Resend hit 1M users, Zeno introduced a rule — you can only respond to a support ticket with a link. No direct answers. Write the docs first, then send the link. It slowed individual responses but multiplied the value of each one. By 4M users, that knowledge base was doing real work.
 
-Handshake AI is hiring across SF, New York, Berlin, London, Bangalore, and North Africa. Contact: garrett@joinhandshake.com
+On family: Zeno made a deliberate choice to move back to Brazil and slow down growth to stay close to his daughter. "I would rather live in that reality than live in a reality where we're a $100M company and my daughter doesn't wanna play with me." He's explicit that it might be the wrong call — but it's the call he made.
+
+The episode closes with a sharp discussion on category creation vs. category dominance. Resend owns developer email. But Zeno himself admits it's not true category creation yet — there's no two-word phrase that owns the concept the way "inbound marketing" does for HubSpot. That's his next frontier.
+
+<https://www.youtube.com/@LatentSpacePod>
+
+
+Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
