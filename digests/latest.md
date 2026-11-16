@@ -1,65 +1,70 @@
-AI Builders Digest — November 15, 2026
+AI Builders Digest — November 16, 2026
 
 *X / TWITTER*
 
-*Peter Yang* (petergyang on X) — AI tutorials and interviews creator
-Peter Yang shared a practical tool for a devastating situation: a /fuck-cancer skill for Claude and ChatGPT that lets anyone upload a loved one's medical records, create a one-page brief, and research clinical trials. He also weighed in on the WSJ's reporting on Alice Huang, sharing a Singapore government statement that casts doubt on whether she's actually a spy — calling the reporting questionable and urging people to do their own research.
-- https://x.com/petergyang/status/2121430386685395022
-- https://x.com/petergyang/status/2121430819667579031
+*Box CEO Aaron Levie* (levie on X)
+Levie made the case that AI agents are on an accelerating path in knowledge work — not because models will eventually know everything, but because work itself will become "coding-shaped" to fit what agents do well. He argues the real unlock is the combination of tool use with deep domain expertise: agents using or generating software in specialized fields like life sciences, finance, and cybersecurity. As more outputs (video, 3D models, games) become code-generated, the ceiling on automated knowledge work keeps rising.
+<https://x.com/levie/status/2121686564078297461|Read the full take>
 
-*Amjad Masad* (amasad on X) — Replit CEO
-Amjad Masad is rallying behind Jensen Huang: he signed the #StandWithJensen letter and personally worked with the page owner to raise rate limits on the Replit-hosted petition site so it could scale to the surge in traffic. He also highlighted Replit's expanding partnership with Visa on agentic commerce, with more features coming.
-- https://x.com/amasad/status/2121377395244749097
-- https://x.com/amasad/status/2121389001546567837
-- https://x.com/amasad/status/2121428406764204199
+*Vercel CEO Guillermo Rauch* (rauchg on X)
+Rauch shared excitement about subagents on fx.land, describing a workflow where the smartest model plans and fast model subagents execute — configured in a single line in his AGENTS.md file. He also highlighted a demo of uisdk with Gemini Argon, where two prompts produced a full web app using 14 UI SDK behaviors (drag, resizing, ARIA, hotkeys, and more) with zero framework dependencies.
+<https://x.com/rauchg/status/2121739228698886454|On subagents and fast model delegation>
+<https://x.com/rauchg/status/2121804295381377342|On uisdk + Gemini Argon demo>
 
-*Guillermo Rauch* (rauchg on X) — Vercel CEO
-Vercel CEO Guillermo Rauch called Workflow SDK 5 and Vercel Workflows a "monumental step forward for agents" — highlighting dramatically faster step execution, improved encryption and security, battle-tested reliability at scale, and a new open-source `durable-harness` library that makes the underlying durability log reusable for any agent harness. He also teased Vercel Sandbox and co-signed the Stand with Jensen letter.
-- https://x.com/rauchg/status/2121277727940776114
-- https://x.com/rauchg/status/2121347136965210286
-- https://x.com/rauchg/status/2121351007615811799
+*Replit CEO Amjad Masad* (amasad on X)
+Masad dropped three connected thoughts: autonomous businesses have arrived; technology has always been recursively self-improving (citing Douglas Engelbart), with AI as an accelerant rather than the origin of this trend; and we've entered a world where, with billions of interdependent processes running at once, rare failures become daily events. A sobering frame for anyone building on top of AI systems.
+<https://x.com/amasad/status/2121765647168483589|On autonomous businesses>
+<https://x.com/amasad/status/2121549054173757554|On recursive self-improvement>
+<https://x.com/amasad/status/2121519931741127144|On Murphy's world>
 
-*Garry Tan* (garrytan on X) — YCombinator President & CEO
-YCombinator's Garry Tan ran a real benchmark on 52 coding tasks in Claude Code and found Opus 5.5 is the better deal: Fable 5.2 solved roughly the same percentage of tasks (82.7% vs 84.6%) but costs 2.80x more per solved task. His recommendation: keep Opus 5.5 as your coding default. He shared his open-source harness eval repo. He also signed the #StandWithJensen letter, calling for due process.
-- https://x.com/garrytan/status/2121464508225053153
-- https://x.com/garrytan/status/2121463161069228382
-- https://x.com/garrytan/status/2121462697787342932
+*Google Gemini VP Josh Woodward* (joshwoodward on X)
+Woodward announced that Gemini can now connect to Google Wallet for personal finance insights — instant spend visualizations, spotting subscription price hikes, and building holiday budgets from actual past spending. Rolling out to US users first.
+<https://x.com/joshwoodward/status/2121755282326102417|Gemini + Google Wallet announcement>
 
-*Matt Turck* (mattturck on X) — VC at FirstMark Capital
-One dry observation: VCs were about to opine on the FAA nationwide airport ground stop.
-- https://x.com/mattturck/status/2121358328169132503
+*YC President Garry Tan* (garrytan on X)
+Tan highlighted Aside Browser as a major unlock for AI agents, and separately called for modernizing the FAA — pointing to paper charts and copper wire as signs of a brittle, under-engineered system failing the public.
+<https://x.com/garrytan/status/2121824006819258485|On Aside Browser for AI agents>
+<https://x.com/garrytan/status/2121727702025765094|On FAA modernization>
 
-*Nikunj Kothari* (nikunj on X) — Partner at FPV Ventures
-Nikunj Kothari noted the FAA ground stop was only the third in modern history — after 9/11 and the 2023 NOTAM outage. He also pushed back on AI benchmark-maxxing, arguing the field should know better by now: the only benchmarks that matter are the ones that reflect your actual workflow, and the rest is marketing posturing that won't last.
-- https://x.com/nikunj/status/2121366466905981435
-- https://x.com/nikunj/status/2121320899161010360
+*FirstMark Capital VC Matt Turck* (mattturck on X)
+Turck flagged a take on NVIDIA's unusual position in the AI landscape — a well-resourced player with a clear business interest in open weights AI and the willingness to make founder-sized bets on it.
+<https://x.com/mattturck/status/2121608999053492408|On NVIDIA and open weights AI>
 
-*Dan Shipper* (danshipper on X) — Every CEO
-Dan Shipper shared two thought-provoking posts: a piece on why teams still pay for software even when Fable 5.2 can "vibe code anything," and a musing on what he calls "the most important formula in AI." He also flagged something he described as an increasingly common problem in AI that's "extremely important to get fixed."
-- https://x.com/danshipper/status/2121248233510818003
-- https://x.com/danshipper/status/2121243400293007866
-- https://x.com/danshipper/status/2121367890095960507
+*AI educator Peter Yang* (petergyang on X)
+Yang shared two useful Claude Code prompts compatible with Fable 5.2: `/doctor prompt-audit` for auditing your full Claude Code setup (CLAUDE.md, skills, commands) and `/claude-api prompt-audit [skill name]` for a deep dive on a single skill. He also pointed to a tutorial on using Fable and Opus together.
+<https://x.com/petergyang/status/2121649295950762363|On Claude Code prompt-audit prompts>
 
-*Aditya Agarwal* (adityaag on X) — General Partner at SPC, Co-Founder of Bevel Health
-Aditya Agarwal highlighted seven SPC portfolio companies named to the AI 100: Baseten, Render, Profound, Replit, Gamma, Cog, and Density.
-- https://x.com/adityaag/status/2121281677238604148
+*Every CEO Dan Shipper* (danshipper on X)
+Shipper showed Fable drafting an email and shared the experiment writeup and code behind it. He also promoted Every's frontier feed — a stream of raw experiments and short writeups from Every's team for anyone who wants unfiltered AI alpha.
+<https://x.com/danshipper/status/2121652571211510094|Fable writing an email>
+<https://x.com/danshipper/status/2121620539655819305|Every frontier feed>
 
+*OpenAI Codex & ChatGPT team member Thibault Sottiaux* (thsottiaux on X)
+Sottiaux put out a feedback call for Daybreak, OpenAI's cyber research environment — specifically asking for input on models, Codex plugins, documentation, and red teaming and defense tooling.
+<https://x.com/thsottiaux/status/2121845965997101118|Feedback request for Daybreak>
+
+*FPV Ventures partner Nikunj Kothari* (nikunj on X)
+Kothari posted a 2026 Startup Bookshelf recommendation list for founders.
+<https://x.com/nikunj/status/2121640157443215824|2026 Startup Bookshelf>
+
+*Swyx* (swyx on X) — AI engineer, Latent Space host
+Swyx flagged that AI UX is currently "so suboptimal it's crazy," especially given how cheap models have become. The implication: cheap inference unlocks UX patterns we haven't built yet.
+<https://x.com/swyx/status/2121757606801023085|On AI UX being suboptimal>
 
 *PODCASTS*
 
-*Training Data — A Model For Everyone: How Ronak From Trajectory Is Building Products For Continual Learning*
+*Unsupervised Learning — Ep 97: Jev Creator on Decision Models, Benchmark Fatigue & Why the Labs Missed It*
 
-_The Takeaway:_ Continual learning — AI models that improve continuously from real-world use, the way humans do — is the missing layer between today's powerful but static foundation models and tomorrow's AI that actually gets better on the job.
+_The Takeaway:_ The AI field is so obsessed with benchmark performance and string outputs that it's largely ignored what software actually needs — structured, machine-native decision-making — and the creator of JEV built a model around that blind spot.
 
-Ronak (Founder & CEO of Trajectory) makes the case that most companies are stuck renting intelligence from closed-source frontier models instead of owning it. Trajectory's platform changes that: AI-native companies bring their production traces and define what "good" looks like, and get a one-click training interface that handles the rest. The results are concrete — Harvey used it to train a model that's 6x cheaper than the frontier and jumped from 4% to 18% accuracy on a legal benchmark. Rogo used it to train a model that handles finance tasks at a fraction of the token cost.
+Jojo (CEO of TypeSave, the company behind JEV) spent years at OpenAI quietly bothered by a question that most people treated as settled: when LLMs are called by software, what percentage of those outputs are actually meant for humans? His answer: almost none. Computers operate on bits, not prose. Yet the entire industry optimized for language fluency.
 
-The technical unlock worth understanding: today's dominant training algorithm (gRPO) requires replaying the same task up to 16 times in a simulation to learn from it. Trajectory has pushed toward "group size one" — learning from a single real-world trajectory — which eliminates the need for a replay environment entirely and dramatically lowers the infrastructure bar. They're also working on reducing the labeling burden: rather than hand-labeling all 10,000 traces, they smartly select 100 representative ones, have users label those densely, and train a meta-grader that propagates reward across the full set.
+JEV is built from that insight — a "decision model" designed for machine-native consumption, structured output that software can actually use without heroic prompt engineering. The name "system one model" was internally controversial, since system-one thinking carries baggage as the impulsive, error-prone part of human cognition. But Jojo's argument is that AI actually compresses to that shape, and being honest about it is a feature, not an admission of failure.
 
-The philosophical bet: continual learning, not recursive self-improvement (RSI), is the safer path to increasingly capable agents. RSI is a black box that improves itself without humans in the loop. Continual learning improves from actual interaction with humans — keeping alignment baked in by design.
+One of his sharpest observations: "Why can we solve Millennium Prize problems in math but not automate anything touching accounting? That should be really weird to a lot of people." His answer is jaggedness — models are spectacular in some areas and bafflingly unreliable in adjacent ones, and the field tends to paper over that with benchmarks rather than confront it.
 
-> "I want this paradigm to propagate, where the unit of work that we think about is a trajectory... the tasks of economic value that are happening."
+On Anthropic's upcoming IPO, he's cautious: "I get the sense that a lot of the expectations baked in are based on misunderstandings of the future of AI... The 'let them cure cancer' is going to be like Marie Antoinette's 'let them eat cake.'" On the broader developer ecosystem, he's frustrated that builders accept whatever model providers give them rather than demanding the AI behavior they actually need: "People plan around AI changing, but they don't have a sense of agency of where to take the field."
 
-https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8
-
+<https://www.youtube.com/@RedpointAI|Unsupervised Learning — Redpoint AI on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
