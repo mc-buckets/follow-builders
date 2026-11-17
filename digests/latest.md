@@ -1,70 +1,53 @@
-AI Builders Digest — November 16, 2026
+AI Builders Digest — November 17, 2026
 
 *X / TWITTER*
 
-*Box CEO Aaron Levie* (levie on X)
-Levie made the case that AI agents are on an accelerating path in knowledge work — not because models will eventually know everything, but because work itself will become "coding-shaped" to fit what agents do well. He argues the real unlock is the combination of tool use with deep domain expertise: agents using or generating software in specialized fields like life sciences, finance, and cybersecurity. As more outputs (video, 3D models, games) become code-generated, the ceiling on automated knowledge work keeps rising.
-<https://x.com/levie/status/2121686564078297461|Read the full take>
+*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
+Big news from the Codex team: they may have fixed the "model at capacity" errors that have been frustrating users. <https://x.com/thsottiaux/status/2122206990101536852|View tweet>
 
-*Vercel CEO Guillermo Rauch* (rauchg on X)
-Rauch shared excitement about subagents on fx.land, describing a workflow where the smartest model plans and fast model subagents execute — configured in a single line in his AGENTS.md file. He also highlighted a demo of uisdk with Gemini Argon, where two prompts produced a full web app using 14 UI SDK behaviors (drag, resizing, ARIA, hotkeys, and more) with zero framework dependencies.
-<https://x.com/rauchg/status/2121739228698886454|On subagents and fast model delegation>
-<https://x.com/rauchg/status/2121804295381377342|On uisdk + Gemini Argon demo>
+*Guillermo Rauch* (Vercel CEO)
+Rauch shipped two interesting things. First: _xeet_, a hermetic, pixel-perfect X post renderer written in safe Rust/wasm — zero browser, zero network, renders a post to PNG in ~1ms. It's structured as an "autorepo" built around verification engineering, with a CI canary that watches layout rule changes and files signed PRs for agents to act on. <https://x.com/rauchg/status/2122184794209714368|View tweet>
 
-*Replit CEO Amjad Masad* (amasad on X)
-Masad dropped three connected thoughts: autonomous businesses have arrived; technology has always been recursively self-improving (citing Douglas Engelbart), with AI as an accelerant rather than the origin of this trend; and we've entered a world where, with billions of interdependent processes running at once, rare failures become daily events. A sobering frame for anyone building on top of AI systems.
-<https://x.com/amasad/status/2121765647168483589|On autonomous businesses>
-<https://x.com/amasad/status/2121549054173757554|On recursive self-improvement>
-<https://x.com/amasad/status/2121519931741127144|On Murphy's world>
+Second: a lighthearted observation that AI models are getting good at naming things — Claude named his system-slowdown CLI tool _hog_ — prompting him to joke that computer science's two hardest problems (naming things and cache invalidation) may now be solved. <https://x.com/rauchg/status/2122127120055034258|View tweet>
 
-*Google Gemini VP Josh Woodward* (joshwoodward on X)
-Woodward announced that Gemini can now connect to Google Wallet for personal finance insights — instant spend visualizations, spotting subscription price hikes, and building holiday budgets from actual past spending. Rolling out to US users first.
-<https://x.com/joshwoodward/status/2121755282326102417|Gemini + Google Wallet announcement>
+*Dan Shipper* (CEO at Every)
+Shipper's team has been working on "compounding skills" — skills that improve every time you use them. He made a skill to write context window summaries, then used autoresearch to iterate it until it hit 80% of his taste baseline vs. a no-skill control. Full writeup on the Every frontier feed: <https://x.com/danshipper/status/2122091033001337134|View tweet>
 
-*YC President Garry Tan* (garrytan on X)
-Tan highlighted Aside Browser as a major unlock for AI agents, and separately called for modernizing the FAA — pointing to paper charts and copper wire as signs of a brittle, under-engineered system failing the public.
-<https://x.com/garrytan/status/2121824006819258485|On Aside Browser for AI agents>
-<https://x.com/garrytan/status/2121727702025765094|On FAA modernization>
+*Peter Yang* (AI tutorials and interviews)
+Yang shared two clips from an interview with Nate Parrott (designer at Anthropic) about Claude's design tendencies. On Claude's repetitive visual style: _"It's going to be serif text, an off-white background, orange, and these bars on the edges of the cards. Because in Claude's mind, it's only ever done this once, so it thinks this is totally original."_ Parrott says telling Claude it has these biases in the system prompt helps break the pattern. On prototyping cycles: what used to take weeks at The Browser Company (building Arc) now takes one to two days at Anthropic — but what hasn't compressed is putting things in users' hands and learning if they'll actually use them. <https://x.com/petergyang/status/2122132596352327816|View tweet> <https://x.com/petergyang/status/2122060856498524510|View tweet>
 
-*FirstMark Capital VC Matt Turck* (mattturck on X)
-Turck flagged a take on NVIDIA's unusual position in the AI landscape — a well-resourced player with a clear business interest in open weights AI and the willingness to make founder-sized bets on it.
-<https://x.com/mattturck/status/2121608999053492408|On NVIDIA and open weights AI>
+*Swyx* (smol_ai / latentspacepod)
+Swyx shared a recap of a recent talk written up by Clanker. <https://x.com/swyx/status/2122031563961684032|View tweet>
 
-*AI educator Peter Yang* (petergyang on X)
-Yang shared two useful Claude Code prompts compatible with Fable 5.2: `/doctor prompt-audit` for auditing your full Claude Code setup (CLAUDE.md, skills, commands) and `/claude-api prompt-audit [skill name]` for a deep dive on a single skill. He also pointed to a tutorial on using Fable and Opus together.
-<https://x.com/petergyang/status/2121649295950762363|On Claude Code prompt-audit prompts>
+*Nan Yu* (Product at OpenAI Codex, ex-Linear)
+Yu is thinking about home automation and wants to use Codex to control everything — asking for a hub that Codex can treat like just another computer. <https://x.com/thenanyu/status/2122096965865664924|View tweet>
 
-*Every CEO Dan Shipper* (danshipper on X)
-Shipper showed Fable drafting an email and shared the experiment writeup and code behind it. He also promoted Every's frontier feed — a stream of raw experiments and short writeups from Every's team for anyone who wants unfiltered AI alpha.
-<https://x.com/danshipper/status/2121652571211510094|Fable writing an email>
-<https://x.com/danshipper/status/2121620539655819305|Every frontier feed>
+*Amjad Masad* (CEO at Replit)
+Masad had an eventful 48 hours — cryptic post with no detail but high engagement. <https://x.com/amasad/status/2122185760799609017|View tweet>
 
-*OpenAI Codex & ChatGPT team member Thibault Sottiaux* (thsottiaux on X)
-Sottiaux put out a feedback call for Daybreak, OpenAI's cyber research environment — specifically asking for input on models, Codex plugins, documentation, and red teaming and defense tooling.
-<https://x.com/thsottiaux/status/2121845965997101118|Feedback request for Daybreak>
+*Nikunj Kothari* (Partner at FPV Ventures)
+Kothari is hosting the next session in his weekly series on Nov 20th in SF — 60 minutes with Kanav Gupta (co-founder of Core Auto) on all things RL: methods, synthetic data, loops, and automation. First 45 min is Nikunj asking spicy questions, last 15 is the guest asking about venture. 15 spots available. Register: <https://x.com/nikunj/status/2122042319419609105|View tweet>
 
-*FPV Ventures partner Nikunj Kothari* (nikunj on X)
-Kothari posted a 2026 Startup Bookshelf recommendation list for founders.
-<https://x.com/nikunj/status/2121640157443215824|2026 Startup Bookshelf>
+*Zara Zhang* (Builder, Harvard '17)
+Zhang reposted a take that being good at LinkedIn probably makes you bad at X — the two platforms reward opposite instincts. <https://x.com/zarazhangrui/status/2122021380745290202|View tweet>
 
-*Swyx* (swyx on X) — AI engineer, Latent Space host
-Swyx flagged that AI UX is currently "so suboptimal it's crazy," especially given how cheap models have become. The implication: cheap inference unlocks UX patterns we haven't built yet.
-<https://x.com/swyx/status/2121757606801023085|On AI UX being suboptimal>
+*Aditya Agarwal* (General Partner at SPC)
+Agarwal shared a photo from one of SPC's portfolio aerospace companies in India — a plane on a remote runway on an early Sunday morning. First flight. <https://x.com/adityaag/status/2122003237335343457|View tweet>
 
 *PODCASTS*
 
-*Unsupervised Learning — Ep 97: Jev Creator on Decision Models, Benchmark Fatigue & Why the Labs Missed It*
+*No Priors — Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev*
 
-_The Takeaway:_ The AI field is so obsessed with benchmark performance and string outputs that it's largely ignored what software actually needs — structured, machine-native decision-making — and the creator of JEV built a model around that blind spot.
+*The Takeaway:* Vlad Tenev believes that if AI discoveries are made exclusively by centralized labs and owned by a small group of investors, it creates a fragile society — and he's building Robinhood to distribute ownership of both assets and the AI-driven future.
 
-Jojo (CEO of TypeSave, the company behind JEV) spent years at OpenAI quietly bothered by a question that most people treated as settled: when LLMs are called by software, what percentage of those outputs are actually meant for humans? His answer: almost none. Computers operate on bits, not prose. Yet the entire industry optimized for language fluency.
+Tenev grew up in Bulgaria during the Soviet collapse, watching 2000% annualized inflation wipe out savings and his grandfather stockpile copper cookware as a store of value. That formative experience with broken financial systems is the engine behind Robinhood's core thesis: ownership, broadly distributed, makes societies stable.
 
-JEV is built from that insight — a "decision model" designed for machine-native consumption, structured output that software can actually use without heroic prompt engineering. The name "system one model" was internally controversial, since system-one thinking carries baggage as the impulsive, error-prone part of human cognition. But Jojo's argument is that AI actually compresses to that shape, and being honest about it is a feature, not an admission of failure.
+Today Robinhood operates in 120+ countries and has expanded from zero-commission stocks into a broad ownership platform spanning prediction markets, tokenized real-world assets, and agentic trading. On tokenization: Robinhood launched stock tokens — tokenized US equities — with full DeFi compatibility and introduced Robinhood Chain, which Tenev says has become one of the fastest-growing blockchains by developer activity. On agentic trading: _"Over 150,000 customers have opened agentic trading accounts with us"_ in the months since launch, with ~30 million tool calls per day. The vision is putting hedge-fund-grade quant capabilities into the pockets of retail investors.
 
-One of his sharpest observations: "Why can we solve Millennium Prize problems in math but not automate anything touching accounting? That should be really weird to a lot of people." His answer is jaggedness — models are spectacular in some areas and bafflingly unreliable in adjacent ones, and the field tends to paper over that with benchmarks rather than confront it.
+Tenev is also co-founder of Harmonic, the math superintelligence startup whose model Aristotle won a gold medal at the International Math Olympiad. His concern: AI math breakthroughs are too centralized. _"It's too centralized — AI companies with their big data centers and their employees using secret models to do all this work."_ He believes the more accepted and durable outcome is a lay person making the discovery using public tools, not an internal research team at an AI lab.
 
-On Anthropic's upcoming IPO, he's cautious: "I get the sense that a lot of the expectations baked in are based on misunderstandings of the future of AI... The 'let them cure cancer' is going to be like Marie Antoinette's 'let them eat cake.'" On the broader developer ecosystem, he's frustrated that builders accept whatever model providers give them rather than demanding the AI behavior they actually need: "People plan around AI changing, but they don't have a sense of agency of where to take the field."
+On AI ownership: he draws a sharp contrast between crypto (distributed from day one, retail-first, politically vocal) and AI (private, institutional, unowned by the public). Robinhood Ventures is his attempt to fix that — a publicly traded VC fund that lets retail investors access seed and Series A companies, with OpenAI, Crusoe, and others already in Fund I.
 
-<https://www.youtube.com/@RedpointAI|Unsupervised Learning — Redpoint AI on YouTube>
+https://www.youtube.com/@NoPriorsPodcast
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
