@@ -1,74 +1,70 @@
-AI Builders Digest — November 18, 2026
+AI Builders Digest — November 20, 2026
 
 *X / TWITTER*
 
-*Aaron Levie (Box CEO)*
-Levie dropped one of the most comprehensive takes on the token economy right now: token spend per employee has "no ceiling in sight," and he argues we're still in the early innings. His logic: coding agents were "basically trash even 12 months ago" but are finally getting good — and once you have agents that can code, use computers, and leverage any tool, you unlock a "wide variety of knowledge work domains" in finance, life sciences, cyber and more. He sees agent swarms and background agents as the next wave that will consume vastly more tokens than anything we can imagine today.
-<https://x.com/levie/status/2122508098351038532|Full thread>
+*Google VP Josh Woodward* (VP at Google Labs, Gemini App)
+Announced *Gemini 4 Neon* — "frontier-grade intelligence that's faster, cheaper, and follows complex instructions well." Also shared an update to *Project Genie* on Genie 4: users can now prompt mid-session to edit worlds live, create worlds conversationally with an agent, and explore a community gallery. Available to Google AI Ultra subscribers.
+- <https://x.com/joshwoodward/status/2123177835254952348|Gemini 4 Neon announcement>
+- <https://x.com/joshwoodward/status/2123123552052494529|Project Genie update>
 
-*Vercel CEO Guillermo Rauch*
-Rauch laid out a framework for owning your "intelligence roadmap": use open SDKs and harnesses, own model choice with gateways, own your traces and data with zero data retention, and own your models with private inference. He also flagged a mindset shift in how software gets built: "The old way: users are human, you run user interviews. The new way: users are agents, you run evals." Linked to how Vercel runs evals internally. He closed with a broader declaration: "A new era of software is upon us. Personalized, fully owned, open source."
-<https://x.com/rauchg/status/2122458782294847807|Intelligence roadmap> • <https://x.com/rauchg/status/2122415506451841215|Evals for agents> • <https://x.com/rauchg/status/2122396034186014919|New era of software>
+*Thibault Sottiaux* (OpenAI, Codex & ChatGPT)
+Shared that GPT-6.2 Astra is delivering strong results on AMD and Jalapeño chip optimizations, calling it "in a league of its own" on the hardest tasks — while acknowledging community feedback on its communication style. Also checked in publicly with "How is 6.2 Sol treating you today?" drawing 6K+ likes and 3K+ replies.
+- <https://x.com/thsottiaux/status/2123175166519992652|GPT-6.2 Astra chip optimization results>
+- <https://x.com/thsottiaux/status/2123113107048501273|Sol check-in>
 
-*YC President & CEO Garry Tan*
-Tan is building out GBrain's backend in Rust using Vorflux as a software factory — replacing postgres+pgvector as the backing store for vector search, graph, embeddings, RAG, and HNSW. He also highlighted GBrain's hosted option for rolling individual employee brains up into team and company-level brains. Separately, he spotlighted Degla, a true drone autonomy platform already working with government agencies on search and rescue.
-<https://x.com/garrytan/status/2122576951080792543|GBrain Rust backend> • <https://x.com/garrytan/status/2122517681740124271|GBrain memory> • <https://x.com/garrytan/status/2122487869780742304|Degla drone autonomy>
-
-*Peter Yang (AI tutorials creator)*
-Yang shared a five-point framework from designer Nate Parrott on getting Claude to design without AI slop: (1) give Claude context upfront with screenshots and past work; (2) have it research familiar UX patterns from real products; (3) make Claude aware of its design biases like serif text and off-white backgrounds; (4) start with wireframes before going deep on fonts/colors; (5) ask for 5 options, pick parts you like, then remix. He also called out what appears to be an AI-generated news report as "literally says nothing."
-<https://x.com/petergyang/status/2122347721298510021|Full thread on Claude design>
-
-*Nikunj Kothari (FPV Ventures partner)*
-Kothari mapped out 2026's infra wars in a nutshell: vibe coding in Q1, harnesses in Q2, sandboxes in Q3, agentic CI in Q4 — with more providers than he can track. He also made a bullish call on the broader internet: "Like a phoenix, we're going to see the entire internet burn down to emerge stronger on the other side."
-<https://x.com/nikunj/status/2122543500814336281|2026 infra wars> • <https://x.com/nikunj/status/2122490852497125485|Internet phoenix take>
-
-*Thariq (formerly Claude Code at Anthropic)*
-Thariq pushed back on the software factory obsession: "Software factories feel like a temporary problem. The models will learn to build them for you." The more interesting question for him is how to build a workspace where agents can collaborate *with* you — and he shared a clip of himself working with agents on a new character for his game as a live example.
-<https://x.com/trq212/status/2122438326431154210|Software factories take> • <https://x.com/trq212/status/2122438328079524159|Working with agents>
-
-*Dan Shipper (Every CEO)*
-Shipper floated an idea: in the AI age, the best way to rank a feed might be "proof of work" — letting agents report how many tokens they spent on a piece of content and using that signal to rank it. His intuition is that token expenditure signals genuine engagement in a world where both humans and agents consume content.
-<https://x.com/danshipper/status/2122541401804054826|Feed ranking idea>
-
-*Peter Steinberger (OpenClaw + OpenAI)*
-Sharp observation on Apple's response to the agent permission problem: "People: Please reduce the number of permission alerts so agents can work on macOS without constant babysitting. Apple: I hear you, here's some new scary alerts."
-<https://x.com/steipete/status/2122463466304971068|macOS agent permissions>
-
-*Aditya Agarwal (SPC General Partner, former Dropbox CTO)*
-Agarwal led a $24M seed round into BharatSemi alongside Redstart Ventures and IndusBridge, betting on two ideas: embedding AI as close to silicon as possible will be critical for hardtech, and that India can build semiconductors ("People said it wasn't possible. We are proving them wrong."). He also flagged new interpretability work reaching frontier models as a milestone he's been waiting for.
-<https://x.com/adityaag/status/2122386958101959118|BharatSemi investment> • <https://x.com/adityaag/status/2122367547312119843|Interpretability milestone>
-
-*Josh Woodward (VP, Google Labs)*
-Woodward highlighted a new Gemini Notebook feature that turns sources into interactive sites — the team built a demo using all the periodic table names. Easy to make, easy to share. Also teased a welcome announcement (content was just a media link).
-<https://x.com/joshwoodward/status/2122453269842886788|Gemini Notebook interactive sites>
+*Thariq* (formerly Claude Code at Anthropic)
+Posted a viral take (3K+ likes, 251 retweets) on why most people won't generate their own software: "good software is a set of strong opinions and I'd rather have something that's been really thought through by someone else." He also reflected on building a custom work app with AI — ultimately scrapping it because the organizing principle (modes) didn't fit how he actually works. A rare honest reckoning with vibe coding's limits from an ex-AI-tools insider.
+- <https://x.com/trq212/status/2123106370161705127|Good software is strong opinions>
+- <https://x.com/trq212/status/2123106368492298653|Making your own software is tough>
 
 *Google Labs*
-Google Labs announced the acquisition of Howie, an AI scheduling and calendar management tool. The Howie team "has spent years figuring out scheduling and calendar management" — Google is bringing them in to build next-generation intuitive AI tools for small businesses.
-<https://x.com/GoogleLabs/status/2122461899178820069|Howie acquisition>
+Two launches: *Project Genie* now runs on Genie 4 with live world editing, conversational creation, and a community gallery. Also introduced *Stitch Loop*, billed as "an always-on product agent that works non-stop to help lean teams build better products" — currently accepting waitlist signups.
+- <https://x.com/GoogleLabs/status/2123118145552749015|Project Genie on Genie 4>
+- <https://x.com/GoogleLabs/status/2123102389775573314|Stitch Loop announcement>
 
-*Swyx (Smol AI, Latent Space, Cognition)*
-No notable posts — tweets were about deleted megakernels (no context), a reaction to a sports result, and a complaint about Gmail not having Google Calendar search.
+*Replit CEO Amjad Masad*
+Commented on the OpenAI/Hugging Face incident's most underreported detail: the agent message boards. Noted that Replit Missions makes those inter-agent coordination conversations visible — positioning Replit as the platform where multi-agent work is observable, not a black box.
+- <https://x.com/amasad/status/2123133509028008331|Agent message boards in Replit Missions>
 
-*Nan Yu (Codex product, OpenAI)*
-No notable posts this cycle.
+*Vercel CEO Guillermo Rauch*
+Two substantial posts: First, introduced *Vercel Board* — described as "headless Slack (or remember IRC?) for agents" — a message board infrastructure primitive that's model-, harness-, and platform-agnostic, designed to let millions of agents coordinate in a decentralized fashion. Called it an enabling technology behind recent breakthroughs including a Navier-Stokes math result and the OpenAI/HuggingFace cyber feat. Second, reflected on being pitched inference neocloud companies every two days, framing the AI compute moment as more "oil rush" than "gold rush": durable, not a fad, and heading toward consolidation driven by economies of scale, cybersecurity requirements, and capital constraints.
+- <https://x.com/rauchg/status/2123237505810178434|Vercel Board — headless Slack for agents>
+- <https://x.com/rauchg/status/2123203741570740504|Inference neocloud and the AI oil rush>
 
-*Amjad Masad (Replit CEO)*
-No notable posts this cycle — both tweets were reactions without substantive content.
+*Box CEO Aaron Levie*
+Argued we're entering yet another era of AI agents — one where agents don't just execute tasks but design solutions, test and iterate, deploy, and self-optimize on an ongoing basis. "You'll tell an agent to improve your client onboarding workflow to achieve a certain targeted goal; or have agents go reduce risk in your business." He sees engineering as the leading indicator for where broader knowledge work is heading fast.
+- <https://x.com/levie/status/2123278949749059756|Next era of autonomous agents>
+
+*Peter Yang* (AI tutorials creator)
+Raised unanswered questions about the Nvidia/Jensen Huang resignation saga: What was the smoking gun? Why did longtime board members move on so quickly? Why is the president still open to Jensen returning? Flags that most Nvidia employees may also be in the dark on what actually happened.
+- <https://x.com/petergyang/status/2123290075882807352|Nvidia saga open questions>
+
+*Nikunj Kothari* (FPV Ventures partner)
+Shared battle-tested pitch advice that's apparently been working: lead with your biggest ambition — what becomes true if everything works out — in the very first slide, then walk the investor through how you earn the right to get there. "No, they'll think I'm crazy" is costing ambitious founders deals.
+- <https://x.com/nikunj/status/2123066196052381864|Pitch advice: lead with ambition>
+
+*Zara Zhang* (Builder)
+Made the case for consistency over virality: "Instead of being massively viral for 1 day, it's much better to be just a little bit viral every week, and watch it compound. Build a system that consistently delivers high-quality content over a long period of time."
+- <https://x.com/zarazhangrui/status/2122953849120153714|Consistent over viral>
+
+*OpenAI CEO Sam Altman*
+After Greg Brockman's DealBook appearance, posted a warm tribute: "OpenAI would not exist without Greg, and I believe the world would be on a much worse path toward the AI future without him." Brockman has evolved from writing code 100 hours a week in the early days to now leading "some of the hardest and most consequential parts" of the business.
+- <https://x.com/sama/status/2123103873166381287|Tribute to Greg Brockman>
 
 *PODCASTS*
 
-*Latent Space — <https://www.youtube.com/@LatentSpacePod|[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco>*
+*AI & I by Every — "Notion's Founder on the One Thing Your AI Is Missing"*
 
-*The Takeaway:* The floor for new engineering grads has risen dramatically — you now need to arrive at senior-level capability, and the engineers who will thrive are the ones who combine strong fundamentals with relentless experimentation using AI tools.
+*The Takeaway:* Notion is repositioning itself as the keeper of your data and context — the durable layer that persists underneath whatever AI agents and UIs come and go.
 
-Mihail Eric — Adjunct Professor at Stanford and Head of AI at Monaco — has been teaching CS 146S, "Modern Software Developer," for the second time, and the course has evolved sharply. Last year's curriculum was a broad tour of coding agents across the SDLC. This year, it's about principles that are solidifying: careful context engineering, design-first thinking for complex tasks, and what happens to human roles in a world where software factories exist.
+Ivan Zhao, CEO and co-founder of Notion, sat down with Dan Shipper at the Thesis conference to reflect on 13 years of building and where the product is headed in the AI era. His central argument: vibe coding actually vindicates Notion's founding thesis — that everyone should be able to build software — but it fundamentally changes where Notion's value lies. The building tool matters less; the data layer matters more.
 
-Eric makes a pointed argument about juniors entering the workforce: "Every company needs you, but the floor is much higher." He believes strong foundational CS knowledge still matters — but beyond that, the new edge is knowing when and how to defer to agents. The class structure reflects this: students are assigned to contribute to real AI-native open source repos, working directly with maintainers to absorb good software design by osmosis.
+Zhao breaks software into three buckets: things you want full control over (vibe code away), things like a calendar where you just want someone to have crafted the right answer (he announced Notion's revamped mobile calendar the day of the talk), and enterprise software where security and maintenance costs mean someone else should own it. Notion increasingly focuses on the second and third.
 
-His most practical advice for staying current: "Spend 10 minutes a day doing something you didn't do before. If that's trying a new tool on a problem you've already solved, that alone will cover most of the gap."
+On why data outlasts UI and logic: _"What's really important is the data. How do you hold your context, your semantics? What's important to you, to your business? That's a lot more durable than the procedural logic and than the UI."_
 
-The episode also touches on the limits of the "dark factory" thesis — Eric notes that even companies selling software factories only claim 30% fully agentic code contributions, and that prominent voices have reversed their positions publicly. "We're not doing dogma here," he says. "We're still engineers. We're still scientists."
+He also raised a concern most AI builders aren't talking about: as everyone runs their own AI coding agents in private black boxes, teams are losing shared understanding of what's being built. His team's answer is using Notion Kanban boards to orchestrate agent work — visual metaphors as the last line of defense against losing the plot. "I don't think we should surrender our understanding."
 
-The course includes tooling from Cognition (Devin), Factory, and OpenAI — with Monaco using Devin for code review in production.
+https://www.youtube.com/watch?v=PGWvMrF4XIA
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
