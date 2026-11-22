@@ -1,74 +1,38 @@
-*AI Builders Digest — November 21, 2026*
+AI Builders Digest — November 22, 2026
 
 *X / TWITTER*
 
-*Swyx* (swyx on X | affiliated with smol.ai, Cognition, Latent Space)
-Sharp critique of X's incentive structure for AI commentary: you can tweet "odds of reaching SOTA have dropped to zero," collect thousands of likes, then post an apology when SOTA is reached and collect even more. "There's no consequences at all for inaccuracy and every incentive for hyperbole and the x algorithm is tuned for this." A useful frame for calibrating bold AI takes in your feed.
-https://x.com/swyx/status/2123591875349422435
+*Swyx* — co-founder of smol.ai, affiliated with Cognition and Latent Space — is asking questions about the AI dev tools landscape. He's curious whether <https://x.com/swyx/status/2123690305736396925|anyone has seriously used Cursor AI's origin feature> and whether it has actions or CI/CD yet. He also flagged an upcoming conversation worth watching: <https://x.com/swyx/status/2123843282082132335|why @j_schottenstein left dbt for LangChain to help build it into a $3B startup> — and how they're now having to reinvent the content, context, and software factory from scratch.
 
-*Josh Woodward* (VP at Google Labs, Gemini App, Google AI Studio)
-Announced that the Gemini app on Mac can now do tasks on your computer — a top-requested feature that brings computer use to Mac users.
-https://x.com/joshwoodward/status/2123534862569324703
+*Josh Woodward* — VP at Google Labs, Gemini App, and Google AI Studio — announced a new feature shipped over the holiday week. <https://x.com/joshwoodward/status/2123943606906138868|Long-clicking the model picker on Gemini's web interface now surfaces Gemini Neon>, a feature the team prototyped on a Friday afternoon after being inspired by a community post. Fast from inspiration to prod.
 
-*Thibault Sottiaux* (Codex & ChatGPT at OpenAI)
-OpenAI is rolling out a redesigned mobile experience for ChatGPT, starting with Pro users. The new design gives users a dedicated "dot" tab with pinnable shortcuts for Codex, Projects, Images, and more. Thibault called it "Le ChatGPT 2.0" and reflected on the audacity of the effort: "Team is crazy enough to think they can succeed at improving the experience used by 1.2B users in place." Toggle it in Settings > New ChatGPT Design.
-https://x.com/thsottiaux/status/2123557171321561133
-https://x.com/thsottiaux/status/2123612889416339762
+*Thibault Sottiaux* — Codex and ChatGPT at OpenAI — posted that the team is <https://x.com/thsottiaux/status/2123861214644347122|shipping a ChatGPT desktop app update> that is faster, simpler, and "a lot more pleasant to use." He also teased that the team internally created something "a bit too fun" — everyone is playing with it instead of working. <https://x.com/thsottiaux/status/2123997735326232775|They might not recover from this.>
 
-*Peter Yang* (AI tutorials and comparisons, petergyang on X)
-Compared Gemini 4 Neon vs Opus 5.5 across 5 use cases: Neon matches or beats Opus on writing and personality, but Opus still leads on 3D and design. His practical verdict: Gemini 4 Neon covers 99% of daily tasks (skipping the slower Carbon model), and the $100/month Gemini Ultra subscription is a "steal" bundling YouTube Premium Family, 20 TB storage, and more. He also flagged Google's underrated competitive advantage: 100,000+ employees as internal beta testers — large enough to run statistically significant A/B tests before wide release.
-https://x.com/petergyang/status/2123540875733315815
-https://x.com/petergyang/status/2123648490844897389
+*Nan Yu* — Head of Product at Codex, OpenAI (previously Head of Product at Linear) — posted a brief but pointed update: <https://x.com/thenanyu/status/2123983081577267264|big performance and quality-of-life wins for actions you do dozens to hundreds of times a day>. No specifics, but reads as a Codex shipping note.
 
-*Thariq* (formerly Claude Code at Anthropic)
-Speaking at the AI Engineer Code conference, he reframed the moment: "Software is both art and utility. AI is both an Industrial Revolution and a Renaissance. Factories are for utilities" — and his talk focused on how builders can use AI to make better art, not just more efficient software factories.
-https://x.com/trq212/status/2123524052195463568
+*Peter Yang* — creator of AI tutorials and interviews for practitioners — shared a practical tip: <https://x.com/petergyang/status/2123879309463228445|Antigravity (Neon) can be added to your iPhone home screen for a mobile remote control experience>. Go to the web app, tap "see more," then "share," then "Add to Home Screen" — and you can reach all your threads on mobile even without a native app.
 
-*Amjad Masad* (CEO at Replit)
-Two agent paradigm posts: Replit now lets you build a Muse-like personal agent with one prompt. And Masad predicts that "having a contract with your agent" — an explicit agreement framework between user and AI — is a UX pattern many products will copy from Replit.
-https://x.com/amasad/status/2123535544718418191
-https://x.com/amasad/status/2123535362568134894
+*Madhu Guru* — Senior Director, AI at Meta (previously led Gemini, Veo, and Nano Banana at Google) — is <https://x.com/realmadhuguru/status/2123972492645777629|looking for interesting AI people to meet in Chennai at the end of November through early December>. If you're in the region, worth reaching out.
 
-*Guillermo Rauch* (CEO at Vercel)
-Strong take on the new engineering value distribution: "An outcome-oriented, creative engineer is now a 1000x engineer. A tabs-vs-spaces-debating, miss-forest-for-trees engineer is now a -10x engineer." He argues coding is the #1 killer app of AI, with engineers and software factories consuming exponentially more tokens ahead. On Vercel Board (their agent management product): it's a "headless Slack for agents" — no opinionated UI, pure infrastructure. Teams generate their own factory interfaces per use case — TUIs, Slack agents, whatever fits. "The board is like the Redux state manager of your agents."
-https://x.com/rauchg/status/2123505400591106113
-https://x.com/rauchg/status/2123468825538789380
+*Thariq* — formerly on the Claude Code team at Anthropic, now indie game dev — announced he has <https://x.com/trq212/status/2123909358828539965|named his new game "Home Ground."> The concept: a sports anime game where the sport is elemental bending. <https://x.com/trq212/status/2123909357071159327|Players fight in tournaments with a squad, and between matches the squad members have their own storylines, like Mass Effect or Dragon Age.> An interesting post-AI-company creative pivot.
 
-*Garry Tan* (President & CEO at YCombinator)
-Quoted Nick Bostrom: "if nobody builds it, everyone dies" — adding "Hard agree." A concise signal of where YC leadership stands on AI development urgency.
-https://x.com/garrytan/status/2123496208316694669
+*Amjad Masad* — CEO of Replit — reacted to the simultaneous emergence of two Riemann hypothesis proofs — one from an AI, one from a human mathematician. <https://x.com/amasad/status/2123874539218010491|He's most curious about the difference in elegance between the two approaches.> An AI solving one of math's biggest open problems is big; the stylistic comparison is a window into how AI and human mathematical thinking diverge.
 
-*Nikunj Kothari* (Partner at FPV Ventures)
-Detailed proposal for protecting elderly people from AI-powered scam attacks, organized into four layers: (1) a secure browser blocking unsafe links from texts; (2) a network-level device (Pi-hole style) blocking dangerous sites; (3) a payments layer flagging scam transactions before money moves; (4) phone-level monitoring with AI voice clone detection via providers like Reality Defender. He envisions packaging this with insurance, sold to the adult children of elderly parents — who get alerts when something looks off. No solution today ties all four layers together.
-https://x.com/nikunj/status/2123426647273800172
+*Guillermo Rauch* — CEO of Vercel — shared two notable updates. First: <https://x.com/rauchg/status/2123879031049449791|personal shopping agents have crossed a "hello world" moment into genuine usefulness> — his original demo now works end-to-end, with agent card infrastructure, iMessage/WhatsApp channels, and much better performance. Second: <https://x.com/rauchg/status/2123869175085191298|Vercel's AI infrastructure is now ISO 42001:2023 certified> — the first global standard for how companies build, evaluate, monitor, and govern AI systems. He's calling it "the SOC2 of AI."
 
-*Peter Steinberger* (OpenClaw + OpenAI)
-Shipped a fix in OpenClaw for people using the embedded harness instead of Codex — most other harnesses haven't yet picked up the update.
-https://x.com/steipete/status/2123487048250327497
+*Aaron Levie* — CEO of Box — observed a meaningful shift in how AI agents are deployed in 2026. <https://x.com/levie/status/2123686350410912145|A year ago you needed to tell agents precisely how to design and develop your product idea. Now the systems understand the problem well enough that you can describe what you want and they figure out the how.> The move from procedural to goal-based agent instructions is one of the clearest markers of capability progress this year. He also noted that <https://x.com/levie/status/2123792233535332448|today looks like a big day in math> — likely referencing the Riemann proof news.
 
-*Aditya Agarwal* (General Partner at SPC, former CTO at Dropbox)
-Celebrated a significant Anthropic milestone by spotlighting two SPC alumni who helped build the company: Tom Brown, who joined SPC in 2016 with no ML background and went on to co-found Anthropic, and Thariq, who transitioned from a wound-down gaming company to interpretability work before helping build Claude Code. "If you put ambitious people next to each other, it leads to extraordinary things." He also shared RoleCUA from Fig — a dataset mapping expert roles across months of real-world computer use, with every action tied to the task and objective it serves, aimed at pushing agents from single tasks to whole jobs.
-https://x.com/adityaag/status/2123494873919783073
-https://x.com/adityaag/status/2123479646629183631
+*Garry Tan* — President and CEO of Y Combinator — weighed in on California's proposed asset seizure tax. <https://x.com/garrytan/status/2123796297836896292|His take: the state doesn't need new taxes, it needs to encourage new startups and then spend wisely on people.> Policy commentary, but relevant for founders thinking about where to build.
+
+*Matt Turck* — VC at FirstMark Capital — shared a first-person story that captures the current awkward state of agentic email. <https://x.com/mattturck/status/2123777488786538982|A founder's AI agent emailed him three times in quick succession after he replied once — which read as intense interest. When they ran into each other at a conference, the founder had no idea what Matt was talking about.> The agent was running autonomously, without the founder's awareness. As agentic email tools proliferate, this kind of disconnect is going to happen constantly.
+
+*Zara Zhang* — builder and investor — made a sharp point about AI-generated deliverables: <https://x.com/zarazhangrui/status/2123813583339532321|don't send clients Claude Artifacts or ChatGPT-generated sites.> It signals that the work could have been done by them directly with a prompt, undercutting the perceived value. She also dropped a one-liner worth chewing on: <https://x.com/zarazhangrui/status/2123692630655873269|"If you curate, you should create.">
+
+*Dan Shipper* — CEO of Every, the AI publication — posted a cryptic quote: <https://x.com/danshipper/status/2123795694557315556|"one dawn across science of something far greater"> — with a link. Likely a reaction to the Riemann proof news or something related to AI and scientific discovery breaking through, but no context given.
+
+*Aditya Agarwal* — General Partner at SPC, co-founder of Bevel Health, former CTO of Dropbox — captured the moment well: <https://x.com/adityaag/status/2124019178843894078|"We are solving Riemann and also crushing pancreatic cancer with a pill. But sure, let's debate whether the 'AI trade' is good lol."> He also promoted <https://x.com/adityaag/status/2123800766163173511|SPC India on November 25th>, highlighting founders like Trisha K (Unit21, $14B+ in financial crime caught) and Kavitha Iyer Rodrigues (Zumutor, cancer drug discovery in India) as examples of the kind of builders SPC backs.
 
 
 *PODCASTS*
 
-*No Priors: "Superintelligence Needs the Physical World with CEO and Co-Founder of Arda Bob McGrew"*
-https://www.youtube.com/watch?v=_wLzJINt9iQ
-
-*The Takeaway:* Superintelligence can't happen in a data center alone — the real bottleneck to recursive AI improvement is the physical world, not the number of researchers.
-
-Bob McGrew spent years as Chief Research Officer at OpenAI before co-founding Arda, a company applying AI to American manufacturing. His central argument cuts against one of AI's most popular narratives: that automating researchers will trigger a runaway self-improvement loop. McGrew thinks this is "straightforwardly wrong."
-
-His reasoning: researchers aren't the bottleneck. GPUs are. Even at peak OpenAI, the limiting factor wasn't hiring enough PhDs — it was physical compute: how many GPUs you had, how well-connected they were, how efficiently experiments ran on them. Automating researchers is a large one-time gain — maybe as impactful as the jump from GPT-4o to o3 — but it doesn't kick off recursive acceleration. It's one more S-curve, not a singularity.
-
-"I don't think you are actually gonna be able to get to superintelligence without changes in the physical world."
-
-When intelligence becomes cheap, its complements become scarce. That means wet labs for biology, compute infrastructure for AI research, and manufacturing capacity for everything else. The frontier labs have no comparative advantage in building wet labs, which is why McGrew sees physical-world infrastructure as the true unlock — and why startups, not AI giants, will likely dominate it.
-
-Arda's approach: they're building the equivalent of "Cursor for manufacturing engineers." There was no IDE for manufacturing, so they built one first — a structured data system (think: Git for factory floor plans). Then they layered AI agents on top. Working embedded with Androl (the defense manufacturer), they went from zero to their first user completing a virtual build in 90 minutes instead of days. They're now deployed across all of Androl's product divisions, working on drones, missiles, and the Fury collaborative combat aircraft.
-
-The longer arc: as AI intelligence cheapens and manufacturing gets smarter, McGrew sees factories building factories — eventually machines that self-replicate and explore the stars. He frames this not as a threat but as a mandate. Physical intelligence is what lets a "country of geniuses in a data center" (Dario Amodei's phrase) actually escape the data center and do things in the world.
-
-Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
+Latent Space has no new episodes this week.
