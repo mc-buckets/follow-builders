@@ -1,38 +1,78 @@
-AI Builders Digest — November 22, 2026
+AI Builders Digest — November 23, 2026
 
 *X / TWITTER*
 
-*Swyx* — co-founder of smol.ai, affiliated with Cognition and Latent Space — is asking questions about the AI dev tools landscape. He's curious whether <https://x.com/swyx/status/2123690305736396925|anyone has seriously used Cursor AI's origin feature> and whether it has actions or CI/CD yet. He also flagged an upcoming conversation worth watching: <https://x.com/swyx/status/2123843282082132335|why @j_schottenstein left dbt for LangChain to help build it into a $3B startup> — and how they're now having to reinvent the content, context, and software factory from scratch.
+*Thariq (formerly Claude Code at Anthropic)*
+Thariq pushed back on the trend of fully automating humans out of the AI loop. In a three-tweet thread, he argued that collaborating with models is itself a deeply technical skill — one that shows no signs of diminishing returns. "Yes, Claude is doing a lot of the technical work. And yes, maybe future models will one-shot 'prove the Riemann hypothesis' or 'make javascript a static language' — but I believe collaborating with models to push the frontier is a deeply technical skill in its own right." His take: as models get more capable, the people who know how to work with them effectively become more valuable, not less.
+https://x.com/trq212/status/2124239684536840682
+https://x.com/trq212/status/2124239686482923553
+https://x.com/trq212/status/2124239688013914132
 
-*Josh Woodward* — VP at Google Labs, Gemini App, and Google AI Studio — announced a new feature shipped over the holiday week. <https://x.com/joshwoodward/status/2123943606906138868|Long-clicking the model picker on Gemini's web interface now surfaces Gemini Neon>, a feature the team prototyped on a Friday afternoon after being inspired by a community post. Fast from inspiration to prod.
+*Replit CEO Amjad Masad*
+Two notable posts. First, a high school kid is reportedly recompiling GTA6 to run on PC — and what caught Amjad's attention is how GitHub issues are being used to coordinate tasks across agent swarms. He flagged it as potentially a new model for open source collaboration. Second, Amuse (a project built by Replit Missions) has gone open source.
+https://x.com/amasad/status/2124345037408686228
+https://x.com/amasad/status/2124277564596519355
 
-*Thibault Sottiaux* — Codex and ChatGPT at OpenAI — posted that the team is <https://x.com/thsottiaux/status/2123861214644347122|shipping a ChatGPT desktop app update> that is faster, simpler, and "a lot more pleasant to use." He also teased that the team internally created something "a bit too fun" — everyone is playing with it instead of working. <https://x.com/thsottiaux/status/2123997735326232775|They might not recover from this.>
+*Box CEO Aaron Levie*
+Levie wrote a long reaction to the AI-assisted Riemann Hypothesis breakthrough, arguing it signals something fundamental: AI decouples human context limits from the ability to drive discoveries. "For the first time ever we can decouple the human context limits and ability to work through information from our ability to drive productivity or discoveries." His point — the solutions may be less elegant than those humans produce alone, but we'll have far more of them, and this applies across cybersecurity, life sciences, math, and enterprise knowledge work.
+https://x.com/levie/status/2124252844710887549
 
-*Nan Yu* — Head of Product at Codex, OpenAI (previously Head of Product at Linear) — posted a brief but pointed update: <https://x.com/thenanyu/status/2123983081577267264|big performance and quality-of-life wins for actions you do dozens to hundreds of times a day>. No specifics, but reads as a Codex shipping note.
+*YC CEO Garry Tan*
+Three threads of note. He's been using a tool (linking to a ChatGPT/Codex update) for about half his software factory work and called it his best desktop/mobile/cloud experience yet. He also predicted that GTA VI's hated design decisions could be undone by a vibe-coded hobbyist PC port within "a month or two with enough tokens." And separately, he echoed a theme from several builders this week: automating your work is surprisingly easy right now.
+https://x.com/garrytan/status/2124151626286170609
+https://x.com/garrytan/status/2124154280450134231
+https://x.com/garrytan/status/2124265097313046867
 
-*Peter Yang* — creator of AI tutorials and interviews for practitioners — shared a practical tip: <https://x.com/petergyang/status/2123879309463228445|Antigravity (Neon) can be added to your iPhone home screen for a mobile remote control experience>. Go to the web app, tap "see more," then "share," then "Add to Home Screen" — and you can reach all your threads on mobile even without a native app.
+*Swyx (AI engineer at smol.ai / Latent Space)*
+Swyx flagged a concerning story about AI providers secretly "phoning home" and asked whether there's any benign explanation. The post sparked 109 replies, suggesting it touched a nerve in the community.
+https://x.com/swyx/status/2124147427313861009
 
-*Madhu Guru* — Senior Director, AI at Meta (previously led Gemini, Veo, and Nano Banana at Google) — is <https://x.com/realmadhuguru/status/2123972492645777629|looking for interesting AI people to meet in Chennai at the end of November through early December>. If you're in the region, worth reaching out.
+*OpenAI Codex & ChatGPT PM Thibault Sottiaux*
+After a major update to the ChatGPT/Codex desktop app, Sottiaux is openly soliciting feedback — his team is already preparing the next update and wants to know what still needs work.
+https://x.com/thsottiaux/status/2124322968499282388
 
-*Thariq* — formerly on the Claude Code team at Anthropic, now indie game dev — announced he has <https://x.com/trq212/status/2123909358828539965|named his new game "Home Ground."> The concept: a sports anime game where the sport is elemental bending. <https://x.com/trq212/status/2123909357071159327|Players fight in tournaments with a squad, and between matches the squad members have their own storylines, like Mass Effect or Dragon Age.> An interesting post-AI-company creative pivot.
+*OpenAI Codex product lead Nan Yu (product, Codex at OpenAI, prev head of product at Linear)*
+Posted cryptically: "Forget second brain. Third brain." — with no additional context, leaving followers to speculate on what's coming.
+https://x.com/thenanyu/status/2124241838358008184
 
-*Amjad Masad* — CEO of Replit — reacted to the simultaneous emergence of two Riemann hypothesis proofs — one from an AI, one from a human mathematician. <https://x.com/amasad/status/2123874539218010491|He's most curious about the difference in elegance between the two approaches.> An AI solving one of math's biggest open problems is big; the stylistic comparison is a window into how AI and human mathematical thinking diverge.
+*Peter Yang (AI educator and tutorials creator)*
+Shared a practical tip for the new ChatGPT mobile app: if you rely on Codex threads, go to the rightmost tab and long-press to pin Codex to the bottom nav. He noted it's not obvious at all in the redesign.
+https://x.com/petergyang/status/2124217176655843483
 
-*Guillermo Rauch* — CEO of Vercel — shared two notable updates. First: <https://x.com/rauchg/status/2123879031049449791|personal shopping agents have crossed a "hello world" moment into genuine usefulness> — his original demo now works end-to-end, with agent card infrastructure, iMessage/WhatsApp channels, and much better performance. Second: <https://x.com/rauchg/status/2123869175085191298|Vercel's AI infrastructure is now ISO 42001:2023 certified> — the first global standard for how companies build, evaluate, monitor, and govern AI systems. He's calling it "the SOC2 of AI."
+*FirstMark Capital VC Matt Turck*
+Took a dry jab at the Riemann Hypothesis hype cycle: "The art of tweeting excitedly about AI solving the Riemann Hypothesis when you have no idea what the Riemann Hypothesis is." Also shared a wrap-up from Slush, calling it the best startup conference — organized by students, geopolitically charged given proximity to Russia, and effective because attendees actually stay put at the venue.
+https://x.com/mattturck/status/2124239403107459490
+https://x.com/mattturck/status/2124119755485245539
 
-*Aaron Levie* — CEO of Box — observed a meaningful shift in how AI agents are deployed in 2026. <https://x.com/levie/status/2123686350410912145|A year ago you needed to tell agents precisely how to design and develop your product idea. Now the systems understand the problem well enough that you can describe what you want and they figure out the how.> The move from procedural to goal-based agent instructions is one of the clearest markers of capability progress this year. He also noted that <https://x.com/levie/status/2123792233535332448|today looks like a big day in math> — likely referencing the Riemann proof news.
+*Every CEO Dan Shipper*
+Two posts worth noting. He called out what he considered a historically bad technology take, comparing it to the apocryphal patent officer who said "everything that will be invented has been invented." He also made the point that benchmark numbers going up doesn't always mean what you think — the more revealing signal is watching how AI-native teams actually deploy capabilities in practice.
+https://x.com/danshipper/status/2124315217936945171
+https://x.com/danshipper/status/2124292892168475086
 
-*Garry Tan* — President and CEO of Y Combinator — weighed in on California's proposed asset seizure tax. <https://x.com/garrytan/status/2123796297836896292|His take: the state doesn't need new taxes, it needs to encourage new startups and then spend wisely on people.> Policy commentary, but relevant for founders thinking about where to build.
+*Vercel CEO Guillermo Rauch*
+Posted that we need a "guinness.com"-style record book for AI feats — a place to track and celebrate AI achievements the way Guinness tracks human ones.
+https://x.com/rauchg/status/2124386118661738994
 
-*Matt Turck* — VC at FirstMark Capital — shared a first-person story that captures the current awkward state of agentic email. <https://x.com/mattturck/status/2123777488786538982|A founder's AI agent emailed him three times in quick succession after he replied once — which read as intense interest. When they ran into each other at a conference, the founder had no idea what Matt was talking about.> The agent was running autonomously, without the founder's awareness. As agentic email tools proliferate, this kind of disconnect is going to happen constantly.
-
-*Zara Zhang* — builder and investor — made a sharp point about AI-generated deliverables: <https://x.com/zarazhangrui/status/2123813583339532321|don't send clients Claude Artifacts or ChatGPT-generated sites.> It signals that the work could have been done by them directly with a prompt, undercutting the perceived value. She also dropped a one-liner worth chewing on: <https://x.com/zarazhangrui/status/2123692630655873269|"If you curate, you should create.">
-
-*Dan Shipper* — CEO of Every, the AI publication — posted a cryptic quote: <https://x.com/danshipper/status/2123795694557315556|"one dawn across science of something far greater"> — with a link. Likely a reaction to the Riemann proof news or something related to AI and scientific discovery breaking through, but no context given.
-
-*Aditya Agarwal* — General Partner at SPC, co-founder of Bevel Health, former CTO of Dropbox — captured the moment well: <https://x.com/adityaag/status/2124019178843894078|"We are solving Riemann and also crushing pancreatic cancer with a pill. But sure, let's debate whether the 'AI trade' is good lol."> He also promoted <https://x.com/adityaag/status/2123800766163173511|SPC India on November 25th>, highlighting founders like Trisha K (Unit21, $14B+ in financial crime caught) and Kavitha Iyer Rodrigues (Zumutor, cancer drug discovery in India) as examples of the kind of builders SPC backs.
-
+*Builder Zara Zhang (Harvard '17)*
+Shared a simple but pointed sentiment: "Build for yourself."
+https://x.com/zarazhangrui/status/2124309178982572442
 
 *PODCASTS*
 
-Latent Space has no new episodes this week.
+*No Priors — Powering AI-Driven Drug Discovery with President of Isomorphic Labs Max Jaderberg*
+
+*The Takeaway:* AI won't just speed up drug discovery — it may fundamentally change what's discoverable, by replacing empirical trial-and-error with computer-based simulation at experimental accuracy.
+
+Max Jaderberg is president and co-founder of Isomorphic Labs, the Alphabet-backed company (spun out of DeepMind) that is trying to solve all disease using AI. He came up through machine learning, did a PhD in computer vision, sold a company to DeepMind in 2014, worked on AlphaGo and AlphaStar, and helped found Isomorphic when AlphaFold proved deep learning could generalize meaningfully in biology.
+
+His most striking argument: the pharma industry's core problem isn't regulation or funding — it's that drug development has always been empirical. You have a hypothesis, you synthesize a molecule, you test it in the real world, you iterate. That process is slow, expensive, and hits a ceiling because the design space is combinatorially massive. AI changes this by replacing real-world experiments with predictive models that aim for "experimental accuracy" — meaning the model's output is as reliable as the lab result. When you reach that threshold, you can iterate in silico and go into the real world only to validate, not to discover.
+
+He also made a counterintuitive point about why drugs fail: it's not usually that they don't work — it's that toxicity and off-target effects only show up in humans, too late. Animal models are only about 30% predictive of human clinical toxicity. His take: forget animals as the gold standard. Combine in vitro endpoints, AI predictive models, and new experimental platforms like organoids and organs-on-a-chip to model human clinical toxicity directly.
+
+"The really big opportunity is to have much more of that understanding before you go into patients."
+
+Isomorphic is internally focused on oncology and immunology, but their models are disease-agnostic and modality-agnostic. They both run internal drug programs and partner with pharma companies on problems those companies have sometimes been stuck on for 10–20 years.
+
+https://www.youtube.com/watch?v=IiKf3BgBezE
+
+Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
