@@ -1,111 +1,63 @@
-*AI Builders Digest — November 24, 2026*
-
+*AI Builders Digest — November 25, 2026*
 
 *X / TWITTER*
 
-*Swyx* (swyx — founder, Latent Space / AI Engineer at Cognition)
+*Boris Cherny (Claude at Anthropic)*
+Claude Code engineer Boris Cherny announced *Claude Ship*, now in beta for Team and Enterprise plans. The tool bundles three features: Code Review (finds bugs), PR Steward (works on fixes and failing checks), and Claude Approvals (approves PRs based on team policy). "I use it all day every day and can't imagine shipping without it," he writes, adding that it multiplies velocity by eliminating the need to babysit PRs or wait on code review. Team/Enterprise admins can enable it per GitHub repo; Approvals runs in observe mode until you trust it.
+- <https://x.com/bcherny/status/2124961485801836573|Launch tweet>
+- <https://x.com/bcherny/status/2124961487454384442|How it works>
+- <https://x.com/bcherny/status/2124961488691740941|How to use /ship>
 
-Swyx flagged an unusually detailed founder-to-acquisition breakdown — from IP assignment pitfalls to how to draw investor interest to the mechanics of clearing acquisition roadblocks — and noted that too few founders document the full arc. On AI progress: he's wrestling with whether 2026 has seen more AI advancement than all of 2022–2025 combined, based on benchmark curves, while acknowledging the feeling doesn't quite match the data. He also highlighted OpenAI's proposal to use perplexity as a universal, lab-agnostic metric for AI self-regulation and pacing: "Given that the main way new surprising capabilities emerge is by progress on compression, a measure rooted in perplexity could give us a shared benchmark for general intelligence." He called the chart showing the last four years of pretraining progress "one of the most beautiful ways to tell the story."
+*Claude (Anthropic official)*
+Two significant launches. First: *Plugins* are now live — connectors and skills are unified into a single plugin system with 10,000+ plugins available on Free, Pro, Max, and Ultra plans (Team and Enterprise coming soon). <https://x.com/claudeai/status/2124970294523945328|Tweet>
 
-- <https://x.com/swyx/status/2124730733147390347|Founder journey breakdown post>
-- <https://x.com/swyx/status/2124590240539259381|AI progress this year vs 2022–2025>
-- <https://x.com/swyx/status/2124583459356373052|OpenAI perplexity proposal>
+Second: *Enterprise Frontier Safeguards (EFS)* with zero data retention (ZDR) entered public beta. EFS detects misuse across many requests while remaining compatible with ZDR, developed with 100+ customers. Available on Claude Platform, Claude on AWS, Amazon Bedrock, and Google Cloud. <https://x.com/claudeai/status/2124929944530587712|Tweet>
 
+*Amjad Masad (Replit CEO)*
+Replit published new research on *scaling laws for agent swarms*. Key findings: Opus 5.5 went from a 3.7x speedup on NumPy with 1 agent to 18.9x with 32 agents; GPT-6.2 Astra was the strongest solo agent but showed _negative_ scaling beyond 8 agents; decentralized swarms outperformed centralized coordination; and individual model intelligence turned out to be a poor predictor of collective intelligence. Replit is open-sourcing Optimization-Bench to advance this research. <https://x.com/amasad/status/2124969305674748175|Tweet>
 
-*Peter Yang* (petergyang — creator, AI tutorials and interviews)
+Masad also shared that he met with VP JD Vance to discuss American AI leadership and open-weight AI: "America could win the frontier AI race and still lose the global AI ecosystem." He flagged that allies want sovereign AI and are increasingly looking at Chinese open models. <https://x.com/amasad/status/2125008810041610359|Tweet>
 
-Peter shared a sharp quote from Microsoft Copilot EVP on what happens when agents become the main software users: "Agents are very harsh customers — they will look for the best performance, price, and reliability." The implication is that APIs and UX will evolve toward agent-first modes — returning thousands of results instead of ten links, optimizing for throughput over human readability.
+*Thibault Sottiaux (Codex & ChatGPT at OpenAI)*
+Sottiaux previewed incoming ChatGPT improvements: "You should feel a significant jump in quality of answers on ChatGPT once rolled out to you," alongside a push to simplify the app, make it faster, and merge chat & work. <https://x.com/thsottiaux/status/2124998553856844186|Tweet> He also noted that "dots" — OpenAI's internal agent system — are now "the primary way to get things done" at the company, with dots building the dots system itself. <https://x.com/thsottiaux/status/2124923055072043052|Tweet>
 
-- <https://x.com/petergyang/status/2124669298191090033|Agents as harsh customers>
+*Aaron Levie (Box CEO)*
+Levie argued that agents fundamentally change the economics of services businesses. Historically, scaling meant adding headcount — now output can be decoupled from time input. "A single engineer can have the output of dozens of engineers before." He sees this reshaping cybersecurity, advertising, marketing, legal, accounting, and IT transformation, with experts still needed on the front end to ensure the right outcomes. "It's a great time if you're starting one of these businesses, or if you have the capability to transform an existing one." <https://x.com/levie/status/2125089009018040779|Tweet>
 
+*Guillermo Rauch (Vercel CEO)*
+Rauch ran a "personal eval" using Fable — asking it to study all his v0.dev coding sessions and decide whether Opus or Gemini Neon performed better. Fable picked Neon. His reaction: "Google being so, so back seems widely (and wildly) under-discussed." <https://x.com/rauchg/status/2124880074168242369|Tweet> He also announced Vercel is doubling down on Japan. <https://x.com/rauchg/status/2125057274213507253|Tweet>
 
-*Nan Yu* (thenanyu — product, Codex at OpenAI, prev Head of Product at Linear)
+*Sam Altman (OpenAI CEO)*
+One word, 85k likes: "Jensen!" — reacting to Jensen Huang's return to Nvidia. <https://x.com/sama/status/2124887162206495228|Tweet>
 
-A one-liner worth saving: "I found a secret prompt that makes all your vibecoded projects scale and perform better, with higher reliability. 'Use Postgres'." A dry but pointed reminder that the fundamentals still matter no matter how AI-assisted your stack is.
+*Madhu Guru (Sr. Director AI at Meta, ex-Google Gemini/Veo)*
+Guru pushed back on the "data as coal" framing. "Great data encodes incredibly high value knowledge, taste and expertise, often articulated and structured in ways that did not exist previously." He argues the word "data" massively undersells what it represents in model development, and that it will remain central to the intelligence industry. <https://x.com/realmadhuguru/status/2125102190196859156|Tweet>
 
-- <https://x.com/thenanyu/status/2124592238974156861|"Use Postgres">
+*Thariq (formerly Claude Code at Anthropic)*
+Two posts worth noting. A thesis on future software companies: "X payouts are such a good model — keep a lean core team and pay the users who help it grow, get better with feedback, sell, etc." <https://x.com/trq212/status/2124987187406275037|Tweet> Plus the most-liked post of the batch (10k+ likes): "they cut the scene in Hitchhiker's Guide where the computer follows 42 with 500 million pages of Lean." <https://x.com/trq212/status/2124767804247379968|Tweet>
 
+*Peter Yang (AI educator)*
+Shared a critical first impression of ChatGPT Dots: "it sends emails without me reviewing and randomly just stops responding. I really want to like this product but maybe I'm prompting it wrong?" <https://x.com/petergyang/status/2125060785667969399|Tweet>
 
-*Amjad Masad* (amasad — CEO, Replit)
+*Garry Tan (YCombinator President & CEO)*
+Tactical survival heuristic for startups: ask yourself "are we dying?" on a loop. "If you ask you might spot the thing killing you and avert it." <https://x.com/garrytan/status/2124905972296560973|Tweet>
 
-Replit Desktop landed Christie's — the auction house — as a customer for secure agentic work, citing a world-class security model built in partnership with Windows. Masad positioned this as a contrast to the broader "security and privacy nightmare" of most desktop AI apps. He also posted a one-word "Spectacle" that racked up 164 likes, likely pointing to a product demo or announcement worth watching.
+*Zara Zhang (Builder)*
+Shared a resource on how to prevent AI slop in design — even without being a designer. <https://x.com/zarazhangrui/status/2125074988210463019|Tweet> Also reflected on the myth that posting publicly means being an open book: she shares less than 1% of her life online. "The key is to find out which 1% is at the intersection of 'interesting to others' and 'comfortable for you'." <https://x.com/zarazhangrui/status/2124905740095885414|Tweet>
 
-- <https://x.com/amasad/status/2124604574606795002|Replit Desktop security + Christie's>
-- <https://x.com/amasad/status/2124671335700091020|"Spectacle">
+*Dan Shipper (Every CEO)*
+Pointed followers toward building a "personal benchmark" to evaluate AI models for their own use case — shared a guide from Every's team. <https://x.com/danshipper/status/2124886826909622653|Tweet>
 
+*Nikunj Kothari (FPV Ventures Partner)*
+Coined the 2027 job title lexicon for the swarm era: Swarm Overlord (Founder), Swarm Rider (PM), Swarm Choreographer (Designer), Swarm Architect (Systems Engineer), Swarm Speculator (VC). <https://x.com/nikunj/status/2125033540287131901|Tweet>
 
-*Guillermo Rauch* (rauchg — CEO, Vercel)
+*Aditya Agarwal (SPC General Partner, ex-Dropbox CTO)*
+Reacted to Nvidia's situation after its recent board crisis: "Most good organizations when faced with an existential crisis that doesn't destroy them will return meaner and out for blood. Nvidia isn't going to hold back now." <https://x.com/adityaag/status/2125112140260638905|Tweet>
 
-Two sharp takes in quick succession. First: AI proofs and research should aim for human-understandability — the intermediate representation (the paper, the walkthrough, the new concepts) matters, not just the output. "Much like the intermediate representation of high-level code is desirable even in a world where LLMs go straight to CPU instructions." Second and more urgent: Rauch warned that "stealth models" offering free inference under a ZDR banner may be mechanisms for industrial-scale data exfiltration to nation-state programs, citing Dragos research. Vercel AI Gateway deliberately avoided those shortcuts, with more trust and privacy improvements to come.
+*Swyx (smol.ai / Cognition / AI Engineer)*
+Reacted to what appears to be Microsoft joining a cross-lab AI effort, calling himself "a Mustafa Suleyman stan" and hoping Alexandr Wang would join to reach a tipping point for all labs to unite on the initiative. <https://x.com/swyx/status/2124780264916423021|Tweet>
 
-- <https://x.com/rauchg/status/2124654108124848350|AI should target human-understandability>
-- <https://x.com/rauchg/status/2124595496849445079|Warning on stealth model data exfiltration>
-
-
-*Aaron Levie* (levie — CEO, Box)
-
-Levie responded to a thread on agentic orchestration with a substantive take: as agents parallelize long-running project work in swarms, the architecture for orchestration, knowledge sharing, task tracking, and human coordination has to evolve significantly. He sees parallels to how people already work together (shared files, inboxes, chats) but notes agents need primitives that operate at far higher throughput while managing new security risks — with both horizontal and vertical opportunities ahead.
-
-- <https://x.com/levie/status/2124658150771188157|Agent orchestration and coordination>
-
-
-*Ryo Lu* (ryolu_ — designer of Cursor, Notion, Stripe; building ryOS)
-
-Ryo shipped ryOS Karaoke — a native iOS app that turns a folded iPhone Duo into a mini karaoke machine, almost one-shotted using airbuild. A small but delightful proof point for the "anyone can make software" thesis he's been pursuing.
-
-- <https://x.com/ryolu_/status/2124473853858725907|ryOS Karaoke on iOS>
-
-
-*Matt Turck* (mattturck — VC, FirstMark Capital)
-
-A wry observation: AI has solved a lot of hard problems, but not the most intractable VC math — how to return multi-billion-dollar funds when entry valuations are over $1B pre-product. He also noted that in 2026, tech street advertising has fully taken over NYC the way it long dominated SF: billboards, subway cars, taxis. He's not thrilled about it.
-
-- <https://x.com/mattturck/status/2124671699245257037|AI fails to solve VC math>
-- <https://x.com/mattturck/status/2124515224946422095|Tech ads taking over NYC>
-
-
-*Nikunj Kothari* (nikunj — partner, FPV Ventures)
-
-Nikunj posted what he's calling "the worst cold email" — high engagement, no further context needed. He also noted the apparent vindication of DocuSign stockholders in 2026, implying the e-signature company has held up better than expected in an era of AI disruption.
-
-- <https://x.com/nikunj/status/2124646168428966181|Worst cold email post>
-- <https://x.com/nikunj/status/2124597844808196252|DocuSign stockholders>
-
-
-*Dan Shipper* (danshipper — CEO, Every)
-
-Shipper flagged a troubling scenario: if adversaries can mess with an airplane's weight, fuel, and location data via AI-assisted cyberattack, the security measures put in place post-9/11 for human hijackers become largely irrelevant. He acknowledged not being an expert but called the threat vector "extremely tricky when visibility is bad" and asked followers with domain knowledge to weigh in.
-
-- <https://x.com/danshipper/status/2124567533449613819|AI-assisted aviation cyberattack risk>
-
-
-*Sam Altman* (sama — CEO, OpenAI)
-
-Altman proposed that AI labs adopt perplexity as a shared industry metric for pacing development — an observable, lab-agnostic measure tied directly to how capabilities emerge. The full proposal: "I'd like an industry standard that specifies a first limit on development, measured by some key metric we can track across labs, and what concretely we'd need to achieve before going beyond it." He connected this to the White House Accords framework and called for industry coordination on red-teaming and shared transparency standards.
-
-- <https://x.com/sama/status/2124551883130114403|Perplexity as industry pacing standard>
-- <https://x.com/sama/status/2124558713646428663|White House Accords + perplexity>
-
-
-*PODCASTS*
-
-*AI & I by Every — "A New Vision for Human Work After Automation"*
-
-*The Takeaway:* What makes human work valuable in the age of AI isn't what you know — it's the unique perspective and responsibility you bring to ranking and filtering what AI produces.
-
-Every CEO Dan Shipper closed his company's first-ever conference with a thesis that cuts against the standard "AI is replacing us" narrative. His framing: there are two ways to think about AI's impact. The _aggregate_ view (benchmarks, capability curves, GDP evals) shows AI beating human experts 83% of the time on expert tasks in 2026. That view, he argues, has to freeze humans in place to make the comparison — and that's exactly where it misleads.
-
-The _intimate_ view is different. When Shipper ran Every's quarterly customer survey, every person on his team used the same data and the same Claude — and each found something completely different. His growth engineer found a churn problem tied to email volume. His marketing head found that readers feel isolated in their AI enthusiasm. His senior editor made a Claymation Family Feud to present findings. None of them produced the default Claude response.
-
-The punchline: Claude can predict what Shipper would say in Slack 93% of the time — but only if it generates 400 answers simultaneously. It can't rank. And ranking is exactly what a human with a specific responsibility and perspective does.
-
-"Generation is really cheap, but ranking is hard."
-
-Shipper calls the emerging dynamic the _allocation economy_: rather than being replaced, people who thrive will be those who can allocate AI to their specific domain with their specific perspective, and filter the results down to what actually matters. The floor of default AI capability rises for everyone — which means the floor becomes commoditized. The alpha is in how you push the model using your own lens.
-
-The practical implication: the benchmark for AI progress should shift from "how well does it do consensus tasks" (math, code — things we can validate) to "how well does it do _my_ work from _my_ perspective" — which is by definition harder to measure, and by definition where humans still have an edge.
-
-<https://www.youtube.com/watch?v=WstNofgQF5Q>
-
+*Matt Turck (FirstMark Capital VC)*
+Mostly reacting to Jensen Huang's return to Nvidia: "People on LinkedIn are going to go WILD when they hear about Jensen returning, next week." <https://x.com/mattturck/status/2124908682626613368|Tweet>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
