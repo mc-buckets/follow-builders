@@ -1,63 +1,83 @@
-*AI Builders Digest — November 25, 2026*
+AI Builders Digest — November 26, 2026
 
 *X / TWITTER*
 
-*Boris Cherny (Claude at Anthropic)*
-Claude Code engineer Boris Cherny announced *Claude Ship*, now in beta for Team and Enterprise plans. The tool bundles three features: Code Review (finds bugs), PR Steward (works on fixes and failing checks), and Claude Approvals (approves PRs based on team policy). "I use it all day every day and can't imagine shipping without it," he writes, adding that it multiplies velocity by eliminating the need to babysit PRs or wait on code review. Team/Enterprise admins can enable it per GitHub repo; Approvals runs in observe mode until you trust it.
-- <https://x.com/bcherny/status/2124961485801836573|Launch tweet>
-- <https://x.com/bcherny/status/2124961487454384442|How it works>
-- <https://x.com/bcherny/status/2124961488691740941|How to use /ship>
+*Boris Cherny (Claude engineer, Anthropic)*
+Major Claude Code platform move: MCP servers can now ship with their own skills, so Claude Code knows how to use them out of the box — no manual configuration needed. The announcement drew 5,100+ likes and 200+ retweets, signaling broad developer excitement about this DX improvement.
+<https://x.com/bcherny/status/2125292098165612585|View tweet>
 
-*Claude (Anthropic official)*
-Two significant launches. First: *Plugins* are now live — connectors and skills are unified into a single plugin system with 10,000+ plugins available on Free, Pro, Max, and Ultra plans (Team and Enterprise coming soon). <https://x.com/claudeai/status/2124970294523945328|Tweet>
+*Thibault Sottiaux (Codex & ChatGPT PM, OpenAI)*
+Holiday gift for ChatGPT Business teams: OpenAI is offering a banked reset and fast mode at no extra charge through December 31. The announcement pulled 5,200+ likes and 1,000+ replies — clearly a popular move heading into end of year.
+<https://x.com/thsottiaux/status/2125299248782778588|View tweet>
 
-Second: *Enterprise Frontier Safeguards (EFS)* with zero data retention (ZDR) entered public beta. EFS detects misuse across many requests while remaining compatible with ZDR, developed with 100+ customers. Available on Claude Platform, Claude on AWS, Amazon Bedrock, and Google Cloud. <https://x.com/claudeai/status/2124929944530587712|Tweet>
+*Replit CEO Amjad Masad*
+Two big frameworks from Masad this week: (1) America can win the frontier model race and still lose the global AI race if it doesn't meet sovereign AI demand from governments worldwide — Jensen Huang's backing of open models is crucial, or China fills the gap the same way Huawei captured global telecom infrastructure. (2) Token demand grows in step functions as harness innovation unlocks new use cases: autocomplete → chat → agent → long-running agents → swarms, with a lag each time for users to figure out what to do with the new capability.
+<https://x.com/amasad/status/2125353849057853876|Open models tweet> | <https://x.com/amasad/status/2125287538911072753|Token demand tweet>
 
-*Amjad Masad (Replit CEO)*
-Replit published new research on *scaling laws for agent swarms*. Key findings: Opus 5.5 went from a 3.7x speedup on NumPy with 1 agent to 18.9x with 32 agents; GPT-6.2 Astra was the strongest solo agent but showed _negative_ scaling beyond 8 agents; decentralized swarms outperformed centralized coordination; and individual model intelligence turned out to be a poor predictor of collective intelligence. Replit is open-sourcing Optimization-Bench to advance this research. <https://x.com/amasad/status/2124969305674748175|Tweet>
+*Box CEO Aaron Levie*
+Sharp observation: AI is creating unprecedented within-company productivity splits. Unlike past enterprise tech (where adoption was firm-level), AI adoption is team-level — teams in the same company can show a 10X productivity delta based on how well they've integrated agents into workflows. This is a new and strange phenomenon, currently concentrated in coding but spreading to anything "coding-adjacent." Expect wild internal dynamics as the gap widens.
+<https://x.com/levie/status/2125442246543814686|View tweet>
 
-Masad also shared that he met with VP JD Vance to discuss American AI leadership and open-weight AI: "America could win the frontier AI race and still lose the global AI ecosystem." He flagged that allies want sovereign AI and are increasingly looking at Chinese open models. <https://x.com/amasad/status/2125008810041610359|Tweet>
+*YCombinator CEO Garry Tan*
+Tan threads through two reasons AI adoption may be hitting friction: first, models have already reached (and exceeded) what some customers need today — though a step function in agency and taste is still ahead; second, society hits limits on how fast it can absorb tech changes — people resist having their cheese moved, even when the new thing is better.
+<https://x.com/garrytan/status/2125247943540142577|View tweet> | <https://x.com/garrytan/status/2125247972158193792|View tweet>
 
-*Thibault Sottiaux (Codex & ChatGPT at OpenAI)*
-Sottiaux previewed incoming ChatGPT improvements: "You should feel a significant jump in quality of answers on ChatGPT once rolled out to you," alongside a push to simplify the app, make it faster, and merge chat & work. <https://x.com/thsottiaux/status/2124998553856844186|Tweet> He also noted that "dots" — OpenAI's internal agent system — are now "the primary way to get things done" at the company, with dots building the dots system itself. <https://x.com/thsottiaux/status/2124923055072043052|Tweet>
+*Swyx (AI builder, smol.ai / Latent Space)*
+Called out Silicon Valley's chaotic state mid-week, while also surfacing useful agent infrastructure primitives from builder John: local-cloud environments and sandboxes, session vs conversation stores, user approval inboxes, stream listeners, and artifact support for everyone — a useful checklist for anyone building agent harnesses.
+<https://x.com/swyx/status/2125444028527468699|SV tweet> | <https://x.com/swyx/status/2125431392226148670|Agent infra tweet>
 
-*Aaron Levie (Box CEO)*
-Levie argued that agents fundamentally change the economics of services businesses. Historically, scaling meant adding headcount — now output can be decoupled from time input. "A single engineer can have the output of dozens of engineers before." He sees this reshaping cybersecurity, advertising, marketing, legal, accounting, and IT transformation, with experts still needed on the front end to ensure the right outcomes. "It's a great time if you're starting one of these businesses, or if you have the capability to transform an existing one." <https://x.com/levie/status/2125089009018040779|Tweet>
+*Peter Yang (AI educator & newsletter)*
+Spent the weekend with Gemini 4 Neon and Antigravity and published a free 17-minute video course. Key highlights: Orchestrator and /swarm excel at multi-agent planning (he ran 42 agents simultaneously at one point); /grill-me is a built-in skill that asks clarifying questions before you build; Antigravity's remote control keeps every thread active by default, and adding it to your phone's home screen is a killer productivity move.
+<https://x.com/petergyang/status/2125246815884984398|View tweet>
 
-*Guillermo Rauch (Vercel CEO)*
-Rauch ran a "personal eval" using Fable — asking it to study all his v0.dev coding sessions and decide whether Opus or Gemini Neon performed better. Fable picked Neon. His reaction: "Google being so, so back seems widely (and wildly) under-discussed." <https://x.com/rauchg/status/2124880074168242369|Tweet> He also announced Vercel is doubling down on Japan. <https://x.com/rauchg/status/2125057274213507253|Tweet>
+*Meta AI Sr. Director Madhu Guru*
+Sharp media critique on the Jensen saga: the news cycle rewards certainty, speed, and brashness — not accuracy. Prominent VCs, analysts, and experts flipped predictions multiple times, each time with the same confidence. "People often have far less certainty than their tone suggests — they just form a view, stake out a position and say it loudly." A useful calibration event for figuring out whose commentary is actually worth following.
+<https://x.com/realmadhuguru/status/2125355549202194801|View tweet>
 
-*Sam Altman (OpenAI CEO)*
-One word, 85k likes: "Jensen!" — reacting to Jensen Huang's return to Nvidia. <https://x.com/sama/status/2124887162206495228|Tweet>
+*FPV Ventures Partner Nikunj Kothari*
+Two distinct takes: (1) A satirical hierarchy of 2026 AI pitches — "He who controls the sand [chips] controls the universe" all the way up to "He who owns the workflow controls the universe" — a clean map of where everyone thinks moat lives right now. (2) A reminder via Ratatouille that generational talent defies pattern-matching: "Not everyone can become a great artist, but a great artist can come from anywhere." Applies to founders, operators, and investors alike.
+<https://x.com/nikunj/status/2125376105024758112|AI pitch hierarchy> | <https://x.com/nikunj/status/2125270251491520702|Talent tweet>
 
-*Madhu Guru (Sr. Director AI at Meta, ex-Google Gemini/Veo)*
-Guru pushed back on the "data as coal" framing. "Great data encodes incredibly high value knowledge, taste and expertise, often articulated and structured in ways that did not exist previously." He argues the word "data" massively undersells what it represents in model development, and that it will remain central to the intelligence industry. <https://x.com/realmadhuguru/status/2125102190196859156|Tweet>
-
-*Thariq (formerly Claude Code at Anthropic)*
-Two posts worth noting. A thesis on future software companies: "X payouts are such a good model — keep a lean core team and pay the users who help it grow, get better with feedback, sell, etc." <https://x.com/trq212/status/2124987187406275037|Tweet> Plus the most-liked post of the batch (10k+ likes): "they cut the scene in Hitchhiker's Guide where the computer follows 42 with 500 million pages of Lean." <https://x.com/trq212/status/2124767804247379968|Tweet>
-
-*Peter Yang (AI educator)*
-Shared a critical first impression of ChatGPT Dots: "it sends emails without me reviewing and randomly just stops responding. I really want to like this product but maybe I'm prompting it wrong?" <https://x.com/petergyang/status/2125060785667969399|Tweet>
-
-*Garry Tan (YCombinator President & CEO)*
-Tactical survival heuristic for startups: ask yourself "are we dying?" on a loop. "If you ask you might spot the thing killing you and avert it." <https://x.com/garrytan/status/2124905972296560973|Tweet>
+*Vercel CEO Guillermo Rauch*
+Shared the architecture philosophy behind a Vercel CLI tool: it's a thin wrapper around _libfx_, designed to be the "smallest and most intelligent coding agent kernel" embeddable across any surface — browsers, servers, mobile, desktop, OS, and agent development environments. Also open-sourced a background effect builder this week.
+<https://x.com/rauchg/status/2125320020666565096|CLI/libfx tweet> | <https://x.com/rauchg/status/2125426206183239770|bg effect builder>
 
 *Zara Zhang (Builder)*
-Shared a resource on how to prevent AI slop in design — even without being a designer. <https://x.com/zarazhangrui/status/2125074988210463019|Tweet> Also reflected on the myth that posting publicly means being an open book: she shares less than 1% of her life online. "The key is to find out which 1% is at the intersection of 'interesting to others' and 'comfortable for you'." <https://x.com/zarazhangrui/status/2124905740095885414|Tweet>
+"The clarity of a product's positioning is inversely proportional to the number of words it takes to explain what it is in plain language." Clean heuristic worth bookmarking for product and pitch work.
+<https://x.com/zarazhangrui/status/2125256097925865639|View tweet>
 
-*Dan Shipper (Every CEO)*
-Pointed followers toward building a "personal benchmark" to evaluate AI models for their own use case — shared a guide from Every's team. <https://x.com/danshipper/status/2124886826909622653|Tweet>
+*FirstMark Capital VC Matt Turck*
+Deadpan note on AI valuations: "Look at Anthropic below IPO price, they've been at it for almost SIX years now and they are BARELY a trillion dollar company." A satirical take on how the goalposts for AI company success keep moving.
+<https://x.com/mattturck/status/2125275072802029631|View tweet>
 
-*Nikunj Kothari (FPV Ventures Partner)*
-Coined the 2027 job title lexicon for the swarm era: Swarm Overlord (Founder), Swarm Rider (PM), Swarm Choreographer (Designer), Swarm Architect (Systems Engineer), Swarm Speculator (VC). <https://x.com/nikunj/status/2125033540287131901|Tweet>
+*OpenClaw founder Peter Steinberger*
+Year-in-review reflection: OpenClaw found its niche in prosumer and enterprise adoption, with multiplayer team features as best-in-class. The hardest part has been shipping reliable open-source while handling daily user complaints. Memory system is live; OpenClaw ID is coming soon. "Shipping reliable and free open source is also really really hard, and waking up to countless user complaints every day is an emotional challenge."
+<https://x.com/steipete/status/2125422797304549672|View tweet>
 
-*Aditya Agarwal (SPC General Partner, ex-Dropbox CTO)*
-Reacted to Nvidia's situation after its recent board crisis: "Most good organizations when faced with an existential crisis that doesn't destroy them will return meaner and out for blood. Nvidia isn't going to hold back now." <https://x.com/adityaag/status/2125112140260638905|Tweet>
+*Thariq (formerly Claude Code, Anthropic)*
+Brief but widely resonant: "you have to be bad at it for a while" — 2,000+ likes. The kind of reminder that hits different during a period when everyone's comparing their early AI work to others' polished outputs.
+<https://x.com/trq212/status/2125156290494353663|View tweet>
 
-*Swyx (smol.ai / Cognition / AI Engineer)*
-Reacted to what appears to be Microsoft joining a cross-lab AI effort, calling himself "a Mustafa Suleyman stan" and hoping Alexandr Wang would join to reach a tipping point for all labs to unite on the initiative. <https://x.com/swyx/status/2124780264916423021|Tweet>
+*PODCASTS*
 
-*Matt Turck (FirstMark Capital VC)*
-Mostly reacting to Jensen Huang's return to Nvidia: "People on LinkedIn are going to go WILD when they hear about Jensen returning, next week." <https://x.com/mattturck/status/2124908682626613368|Tweet>
+*Unsupervised Learning — Ep 98: China Expert on Jensen's Return*
+
+_The Takeaway: Jensen Huang's reinstatement at NVIDIA isn't a clean ending — it's the opening of a messier geopolitical and legal chapter that will play out for years._
+
+Jordan Schneider (ChinaTalk) joined Redpoint investor Jacob Efron for an emergency breakdown of the Jensen Huang saga — the firing, the spy story, the reinstatement, and what it all means for the US-China AI race.
+
+Schneider's read on why Jensen got his job back: Trump likely signaled a combination of a ~$25M settlement and pardons for NVIDIA's role in facilitating chip sales that ended up in Chinese military hands — including exports routed through Malaysia-based data centers to Alibaba subsidiaries doing PLA research. Jensen's affair with a Chinese executive who had contact with Chinese intelligence (MSS) created blackmail exposure. Bessent and Rubio were furious; the board acted.
+
+The more important story, in Schneider's view, isn't the affair — it's years of willful blindness to chip smuggling. Jensen has publicly claimed smuggling can't happen ("the servers are too heavy") while Super Micro executives were using hair dryers to remove labels from server racks to ease export into China. NVIDIA sold billions of chips to Super Micro, whose C-suite was accused of facilitating the smuggling.
+
+A new rule passed last Friday would have closed many of these loopholes — including cutting off Malaysian neo-cloud operators that relay compute to Chinese firms within 90 days. Jensen's return likely puts enforcement of that rule in question. Democrats and some Republicans are furious and looking to legislate the export controls so they can't be rescinded by executive action.
+
+On robotics: Schneider came away from the CORL machine learning conference deeply unimpressed. After years of hype, humanoids can barely pick up a muffin — "so embarrassing watching them not work in person." China is ahead on hardware, and the entire US robotics stack depends on Chinese rare earths and magnets — a dependency almost no company is close to solving.
+
+His predictions for the next emergency pod: a US cyber event enabled by AI-powered attacks, or China locking down its own AI ecosystem the way the US reacted to its Hugging Face moment.
+
+> "If the Western ecosystem has 15 times the amount of compute, all the co-development crap is just a rounding error."
+
+<https://www.youtube.com/watch?v=gkd5eOQGASU|Watch on YouTube>
 
 Generated through the Follow Builders skill: https://github.com/mc-buckets/follow-builders
